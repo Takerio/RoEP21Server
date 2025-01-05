@@ -30965,7 +30965,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set #CASHPOINTS,#CASHPOINTS+1; 
+      set amount,countitem(61006);
+      
+      set #CASHPOINTS,#CASHPOINTS+amount+1;
+      delitem 61006,amount; 
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
   - Id: 61007
     AegisName: Cash_Points_10
@@ -30975,7 +30978,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set #CASHPOINTS,#CASHPOINTS+10; 
+      set amount,countitem(61007);
+      
+      set #CASHPOINTS,#CASHPOINTS+amount*10+10;
+      delitem 61007,amount; 
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
   - Id: 61008
     AegisName: Cash_Points_50
@@ -30985,7 +30991,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set #CASHPOINTS,#CASHPOINTS+50; 
+      set amount,countitem(61008);
+      
+      set #CASHPOINTS,#CASHPOINTS+amount*50+50;
+      delitem 61008,amount; 
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
   - Id: 61009
     AegisName: Cash_Points_100
@@ -30995,7 +31004,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set #CASHPOINTS,#CASHPOINTS+100; 
+      set amount,countitem(61009);
+      
+      set #CASHPOINTS,#CASHPOINTS+amount*100+100;
+      delitem 61009,amount; 
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
   - Id: 61031
     AegisName: Cash_Points_1000
@@ -31005,7 +31017,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set #CASHPOINTS,#CASHPOINTS+1000; 
+      set amount,countitem(61031);
+      
+      set #CASHPOINTS,#CASHPOINTS+amount*1000+1000;
+      delitem 61031,amount; 
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
 
   - Id: 61011
