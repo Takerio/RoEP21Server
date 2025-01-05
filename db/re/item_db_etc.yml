@@ -2349,13 +2349,13 @@ Body:
     Name: 水晶鏡子
     Type: Etc
     Buy: 15000
-    Weight: 50
+    Weight: 1
   - Id: 748
     AegisName: Witherless_Rose
     Name: 永恆玫瑰
     Type: Etc
     Buy: 55000
-    Weight: 10
+    Weight: 1
   - Id: 749
     AegisName: Frozen_Rose
     Name: 冰雕玫瑰
