@@ -59,7 +59,7 @@
 # Refine 所需項目的細化級別。 （默認值：0）
 ###########################################################################
 # Body:
-#   - Name: Pharmacist Merchant 
+#   - Name: Pharmacist Merchant
 #     Map: geffen
 #     X: 117
 #     Y: 72
@@ -81,84 +81,79 @@
 Header:
   Type: BARTER_DB
   Version: 1
-  
+
 Body:
 
 Footer:
   Imports:
-  - Path: npc/腳本/barters/物品互換服務員.yml
-  - Path: npc/腳本/barters/裝備打洞.yml
-  - Path: npc/腳本/barters/埃克拉珠手套.yml
-  - Path: npc/腳本/barters/馬來港符紋.yml
+    - Path: npc/腳本/barters/物品互換服務員.yml
+    - Path: npc/腳本/barters/裝備打洞.yml
+    - Path: npc/腳本/barters/埃克拉珠手套.yml
+    - Path: npc/腳本/barters/馬來港符紋.yml
 
-  - Path: npc/腳本/barters/寶石鑲崁.yml
-  - Path: npc/腳本/barters/每日服飾.yml
-  - Path: npc/腳本/barters/每周服飾.yml
+    - Path: npc/腳本/barters/寶石鑲崁.yml
+    - Path: npc/腳本/barters/每日服飾.yml
+    - Path: npc/腳本/barters/每周服飾.yml
 
-  - Path: npc/腳本/barters/洛克理奇岩嶺裝備.yml
-  - Path: npc/腳本/barters/幻色童話裝備.yml
-  - Path: npc/腳本/barters/星火同盟裝備.yml
-  - Path: npc/腳本/barters/幻象裝備.yml
-  - Path: npc/腳本/barters/全自動裝備.yml
-  - Path: npc/腳本/barters/灰狼裝備.yml
-  - Path: npc/腳本/barters/雪花防具冰川武器.yml
-  - Path: npc/腳本/barters/冰河防具.yml
+    - Path: npc/腳本/barters/洛克理奇岩嶺裝備.yml
+    - Path: npc/腳本/barters/幻色童話裝備.yml
+    - Path: npc/腳本/barters/星火同盟裝備.yml
+    - Path: npc/腳本/barters/幻象裝備.yml
+    - Path: npc/腳本/barters/全自動裝備.yml
+    - Path: npc/腳本/barters/灰狼裝備.yml
+    - Path: npc/腳本/barters/雪花防具冰川武器.yml
+    - Path: npc/腳本/barters/冰河防具.yml
 
-  - Path: npc/腳本/barters/幻影空間裝備.yml
-  - Path: npc/腳本/barters/恐怖玩具工廠裝備.yml
-  - Path: npc/腳本/barters/機械工匠套裝.yml
-  - Path: npc/腳本/barters/戰魂頭盔.yml
-  - Path: npc/腳本/barters/時光戰靴.yml
-  - Path: npc/腳本/barters/戰死者頭盔.yml
-  - Path: npc/腳本/barters/施密特裝備.yml
-  - Path: npc/腳本/barters/超時空頭冠.yml
-  - Path: npc/腳本/barters/撒旦&聖光飾品裝備.yml
+    - Path: npc/腳本/barters/幻影空間裝備.yml
+    - Path: npc/腳本/barters/恐怖玩具工廠裝備.yml
+    - Path: npc/腳本/barters/機械工匠套裝.yml
+    - Path: npc/腳本/barters/戰魂頭盔.yml
+    - Path: npc/腳本/barters/時光戰靴.yml
+    - Path: npc/腳本/barters/戰死者頭盔.yml
+    - Path: npc/腳本/barters/施密特裝備.yml
+    - Path: npc/腳本/barters/超時空頭冠.yml
+    - Path: npc/腳本/barters/撒旦&聖光飾品裝備.yml
 
-  - Path: npc/腳本/barters/幽靈皇宮裝備.yml
-  - Path: npc/腳本/barters/吉芬魔法大賽裝備.yml
-  - Path: npc/腳本/barters/吉芬夜間鬥技場裝備.yml
-  - Path: npc/腳本/barters/無限空間裝備.yml
-  - Path: npc/腳本/barters/懺悔之墓裝備.yml
-  - Path: npc/腳本/barters/飛行船墜落地裝備.yml
-  - Path: npc/腳本/barters/深淵湖水裝備.yml
-  - Path: npc/腳本/barters/艾音貝赫礦山洞穴裝備.yml
-  - Path: npc/腳本/barters/穆卡達斯武器.yml
+    - Path: npc/腳本/barters/幽靈皇宮裝備.yml
+    - Path: npc/腳本/barters/吉芬魔法大賽裝備.yml
+    - Path: npc/腳本/barters/吉芬夜間鬥技場裝備.yml
+    - Path: npc/腳本/barters/無限空間裝備.yml
+    - Path: npc/腳本/barters/懺悔之墓裝備.yml
+    - Path: npc/腳本/barters/飛行船墜落地裝備.yml
+    - Path: npc/腳本/barters/深淵湖水裝備.yml
+    - Path: npc/腳本/barters/艾音貝赫礦山洞穴裝備.yml
+    - Path: npc/腳本/barters/穆卡達斯武器.yml
 
-  - Path: npc/腳本/barters/堅硬&邪惡&精確裝備.yml
-  - Path: npc/腳本/barters/星座之塔裝備.yml
-  - Path: npc/腳本/barters/霸肋門德裝備.yml
-  - Path: npc/腳本/barters/霸肋門德深層套裝.yml
-  - Path: npc/腳本/barters/時序象限裝備.yml
+    - Path: npc/腳本/barters/堅硬&邪惡&精確裝備.yml
+    - Path: npc/腳本/barters/星座之塔裝備.yml
+    - Path: npc/腳本/barters/霸肋門德裝備.yml
+    - Path: npc/腳本/barters/霸肋門德深層套裝.yml
+    - Path: npc/腳本/barters/時序象限裝備.yml
 
-  - Path: npc/腳本/barters/日本RO企劃社裝備.yml
-  - Path: npc/腳本/barters/20周年活動.yml
-  - Path: npc/腳本/barters/見習武器.yml
-  - Path: npc/腳本/barters/仙境武器.yml
-  - Path: npc/腳本/barters/貴族&帝國&恩典裝備.yml
-  - Path: npc/腳本/barters/轉蛋保底商店.yml
-  - Path: npc/腳本/barters/綿綿島服飾.yml
-  - Path: npc/腳本/barters/綿綿島硬幣.yml
-  - Path: npc/腳本/barters/紅利轉蛋保底商店.yml
-  - Path: npc/腳本/barters/凱薩再臨.yml
-  - Path: npc/腳本/barters/道館頭飾.yml
-  - Path: npc/腳本/barters/服飾(道館).yml
-  - Path: npc/腳本/barters/消耗品合成箱預覽.yml
-  - Path: npc/腳本/barters/1新式裝備預覽員.yml
-  - Path: npc/腳本/barters/聲望任務商店.yml
+    - Path: npc/腳本/barters/日本RO企劃社裝備.yml
+    - Path: npc/腳本/barters/20周年活動.yml
+    - Path: npc/腳本/barters/見習武器.yml
+    - Path: npc/腳本/barters/仙境武器.yml
+    - Path: npc/腳本/barters/塔諾斯武器.yml
+    - Path: npc/腳本/barters/貴族&帝國&恩典裝備.yml
+    - Path: npc/腳本/barters/轉蛋保底商店.yml
+    - Path: npc/腳本/barters/綿綿島服飾.yml
+    - Path: npc/腳本/barters/綿綿島硬幣.yml
+    - Path: npc/腳本/barters/紅利轉蛋保底商店.yml
+    - Path: npc/腳本/barters/凱薩再臨.yml
+    - Path: npc/腳本/barters/道館頭飾.yml
+    - Path: npc/腳本/barters/服飾(道館).yml
+    - Path: npc/腳本/barters/消耗品合成箱預覽.yml
+    - Path: npc/腳本/barters/1新式裝備預覽員.yml
+    - Path: npc/腳本/barters/聲望任務商店.yml
 
-  - Path: npc/腳本/barters/歡慶開服活動.yml
-  - Path: npc/腳本/barters/推廣商店.yml
-  - Path: npc/腳本/barters/王家狩獵.yml
-  - Path: npc/腳本/barters/贊助服飾.yml
-  - Path: npc/腳本/barters/王卡碎片.yml
+    - Path: npc/腳本/barters/歡慶開服活動.yml
+    - Path: npc/腳本/barters/推廣商店.yml
+    - Path: npc/腳本/barters/王家狩獵.yml
+    - Path: npc/腳本/barters/贊助服飾.yml
+    - Path: npc/腳本/barters/王卡碎片.yml
 
-  - Path: npc/腳本/barters/神器製作.yml
-  - Path: npc/腳本/barters/時間庭園兌換商店.yml
-  - Path: npc/腳本/barters/凱渥寶樂格兌換商店.yml
-  - Path: npc/腳本/barters/喬樂斯加爾夫兌換商店.yml
-
-
-
-
-
-
+    - Path: npc/腳本/barters/神器製作.yml
+    - Path: npc/腳本/barters/時間庭園兌換商店.yml
+    - Path: npc/腳本/barters/凱渥寶樂格兌換商店.yml
+    - Path: npc/腳本/barters/喬樂斯加爾夫兌換商店.yml
