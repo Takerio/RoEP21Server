@@ -107,7 +107,7 @@ vdistrict1,11,27,4	script	欺詐別墅(困難)#glastfd6	4_m_brz_jaci,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_45 < gettime(8) ){
-	set Instance_Bout_45,3;
+	set Instance_Bout_45,10;
 	set day_Instance_Bout_45,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_45 < 1) {
@@ -217,7 +217,7 @@ OnStart:
 
 	//挑戰次數
 	if ( day_Instance_Bout_46 < gettime(8) ){
-	set Instance_Bout_46,3;
+	set Instance_Bout_46,10;
 	set day_Instance_Bout_46,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_46 < 1) {

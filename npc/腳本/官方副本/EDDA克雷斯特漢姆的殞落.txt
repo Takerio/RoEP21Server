@@ -9,7 +9,7 @@ case 1:
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_51 < gettime(8) ){
-	set Instance_Bout_51,3;
+	set Instance_Bout_51,10;
 	set day_Instance_Bout_51,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_51 < 1) {

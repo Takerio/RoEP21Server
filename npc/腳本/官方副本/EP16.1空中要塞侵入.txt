@@ -20,7 +20,7 @@ vdistrict1,9,74,4	script	空中要塞侵入管理者	573,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_26 < gettime(8) ){
-	set Instance_Bout_26,3;
+	set Instance_Bout_26,10;
 	set day_Instance_Bout_26,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_26 < 1) {

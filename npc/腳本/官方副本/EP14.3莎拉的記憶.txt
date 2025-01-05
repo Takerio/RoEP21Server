@@ -11,7 +11,7 @@ vdistrict1,34,65,4	script	莎拉的記憶管理者	945,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_14 < gettime(8) ){
-	set Instance_Bout_14,3;
+	set Instance_Bout_14,10;
 	set day_Instance_Bout_14,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_14 < 1) {

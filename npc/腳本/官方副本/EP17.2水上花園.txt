@@ -30,7 +30,7 @@ vdistrict1,25,33,4	script	水上花園管理者	10353,{
 	case 1:
 	//挑戰次數
 	if ( day_Instance_Bout_32 < gettime(8) ){
-	set Instance_Bout_32,3;
+	set Instance_Bout_32,10;
 	set day_Instance_Bout_32,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_32 < 1) {
@@ -148,7 +148,7 @@ vdistrict1,25,33,4	script	水上花園管理者	10353,{
 	case 2:
 	//挑戰次數
 	if ( day_Instance_Bout_33 < gettime(8) ){
-	set Instance_Bout_33,3;
+	set Instance_Bout_33,10;
 	set day_Instance_Bout_33,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_33 < 1) {

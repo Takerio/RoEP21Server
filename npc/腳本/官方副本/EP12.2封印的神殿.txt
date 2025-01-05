@@ -12,7 +12,7 @@ vdistrict1,31,60,4	script	巴風特的墳墓	406,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_0 < gettime(8) ){
-	set Instance_Bout_0,3;
+	set Instance_Bout_0,10;
 	set day_Instance_Bout_0,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_0 < 1) {

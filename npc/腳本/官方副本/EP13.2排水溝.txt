@@ -25,7 +25,7 @@ vdistrict1,22,69,4	script	排水溝管理者	545,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_02 < gettime(8) ){
-	set Instance_Bout_02,3;
+	set Instance_Bout_02,10;
 	set day_Instance_Bout_02,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_02 < 1) {

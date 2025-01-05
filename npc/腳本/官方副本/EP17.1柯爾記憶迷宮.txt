@@ -15,7 +15,7 @@ vdistrict1,31,39,4	script	柯爾記憶迷宮管理者	10198,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_30 < gettime(8) ){
-	set Instance_Bout_30,3;
+	set Instance_Bout_30,10;
 	set day_Instance_Bout_30,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_30 < 1) {

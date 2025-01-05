@@ -153,7 +153,7 @@ vdistrict1,26,57,4	script	潘利爾與莎拉管理者	4_F_FENRIR,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_16 < gettime(8) ){
-	set Instance_Bout_16,3;
+	set Instance_Bout_16,10;
 	set day_Instance_Bout_16,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_16 < 1) {

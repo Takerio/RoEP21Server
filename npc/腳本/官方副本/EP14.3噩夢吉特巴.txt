@@ -11,7 +11,7 @@ vdistrict1,6,93,4	script	噩夢吉特巴管理者	10039,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_17 < gettime(8) ){
-	set Instance_Bout_17,3;
+	set Instance_Bout_17,10;
 	set day_Instance_Bout_17,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_17 < 1) {

@@ -22,7 +22,7 @@ vdistrict1,37,62,4	script	保羅協夫的實驗室管理者	866,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_04 < gettime(8) ){
-	set Instance_Bout_04,3;
+	set Instance_Bout_04,10;
 	set day_Instance_Bout_04,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_04 < 1) {

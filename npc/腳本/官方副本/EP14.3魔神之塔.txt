@@ -11,7 +11,7 @@ vdistrict1,31,68,4	script	魔神之塔管理者	512,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_18 < gettime(8) ){
-	set Instance_Bout_18,3;
+	set Instance_Bout_18,10;
 	set day_Instance_Bout_18,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_18 < 1) {

@@ -10,7 +10,7 @@ vdistrict1,12,87,4	script	魔神殿管理者	510,{
 	erasequest 32051; }
 	//挑戰次數
 	if ( day_Instance_Bout_19 < gettime(8) ){
-	set Instance_Bout_19,3;
+	set Instance_Bout_19,10;
 	set day_Instance_Bout_19,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_19 < 1) {

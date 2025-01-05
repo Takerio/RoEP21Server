@@ -99,7 +99,7 @@ vdistrict1,26,42,4	script	星座之塔管理者	20994,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_40 < gettime(8) ){
-	set Instance_Bout_40,3;
+	set Instance_Bout_40,10;
 	set day_Instance_Bout_40,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_40 < 1) {

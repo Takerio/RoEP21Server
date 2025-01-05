@@ -14,7 +14,7 @@ vdistrict1,39,39,4	script	生命殿堂管理者#Con1	10527,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_56 < gettime(8) ){
-	set Instance_Bout_56,2;
+	set Instance_Bout_56,10;
 	set day_Instance_Bout_56,gettime(8);	//一年中的一天
 	end; }
 	//if (Instance_Bout_56 < 1) {

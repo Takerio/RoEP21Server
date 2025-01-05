@@ -4,7 +4,7 @@ vdistrict1,28,36,4	script	死亡之塔管理者	10246,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_38 < gettime(8) ){
-	set Instance_Bout_38,3;
+	set Instance_Bout_38,10;
 	set day_Instance_Bout_38,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_38 < 1) {

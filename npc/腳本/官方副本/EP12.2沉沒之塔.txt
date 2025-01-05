@@ -51,7 +51,7 @@ vdistrict1,28,63,4	script	沉沒之塔	406,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_00 < gettime(8) ){
-	set Instance_Bout_00,3;
+	set Instance_Bout_00,10;
 	set day_Instance_Bout_00,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_00 < 1) {
@@ -903,7 +903,7 @@ function	script	F_Tower_Monster	{
 		areamonster .@map$,181,9,191,45,"闇●超魔導師",1639,2,.@label$;
 		areamonster .@map$,181,9,191,45,"闇●騎士領主",1634,2,.@label$;
 		areamonster .@map$,181,9,191,45,"闇●神官",1637,2,.@label$;
-		areamonster .@map$,181,9,191,45,"闇●十字刺客",1635,2,.@label$;
+		areamonster .@map$,181,9,191,45,"闇●十字刺客",1635,2,.@label$;
 		areamonster .@map$,181,9,191,45,"闇●神工匠",1636,2,.@label$;
 		areamonster .@map$,181,9,191,45,"闇●神射手",1638,2,.@label$;
 		break;
@@ -917,7 +917,7 @@ function	script	F_Tower_Monster	{
 			else if (.@mob_ran == 3) 
 				areamonster .@map$,267,9,277,45,"闇●神官",1637,2,.@label$;
 			else if (.@mob_ran == 4) 
-				areamonster .@map$,267,9,277,45,"闇●十字刺客",1635,2,.@label$;
+				areamonster .@map$,267,9,277,45,"闇●十字刺客",1635,2,.@label$;
 			else if (.@mob_ran == 5) 
 				areamonster .@map$,267,9,277,45,"闇●神工匠",1636,2,.@label$;
 			else if (.@mob_ran == 6) 

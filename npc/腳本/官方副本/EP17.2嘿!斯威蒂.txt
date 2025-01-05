@@ -13,7 +13,7 @@ vdistrict1,19,27,4	script	嘿!斯威蒂管理者	10347,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_37 < gettime(8) ){
-	set Instance_Bout_37,3;
+	set Instance_Bout_37,10;
 	set day_Instance_Bout_37,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_37 < 1) {

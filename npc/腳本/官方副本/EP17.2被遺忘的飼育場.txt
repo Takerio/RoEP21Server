@@ -14,7 +14,7 @@ vdistrict1,16,24,4	script	被遺忘的飼育場管理者	10357,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_36 < gettime(8) ){
-	set Instance_Bout_36,3;
+	set Instance_Bout_36,10;
 	set day_Instance_Bout_36,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_36 < 1) {

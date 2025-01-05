@@ -61,7 +61,7 @@ vdistrict1,23,76,4	script	驚駭森靈巢穴管理者	4_M_SAGE_C,{
 
 	//挑戰次數
 	if ( day_Instance_Bout_20 < gettime(8) ){
-	set Instance_Bout_20,3;
+	set Instance_Bout_20,10;
 	set day_Instance_Bout_20,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_20 < 1) {

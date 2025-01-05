@@ -19,7 +19,7 @@ vdistrict1,15,84,4	script	摩洛斯洞穴管理者	730,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_15 < gettime(8) ){
-	set Instance_Bout_15,3;
+	set Instance_Bout_15,10;
 	set day_Instance_Bout_15,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_15 < 1) {

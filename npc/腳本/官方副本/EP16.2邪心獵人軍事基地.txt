@@ -14,7 +14,7 @@ vdistrict1,18,57,4	script	茹茹#swa	10198,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_28 < gettime(8) ){
-	set Instance_Bout_28,3;
+	set Instance_Bout_28,10;
 	set day_Instance_Bout_28,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_28 < 1) {

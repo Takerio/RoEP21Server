@@ -13,7 +13,7 @@ vdistrict1,17,33,4	script	飛空艇墜落管理者	617,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_41 < gettime(8) ){
-	set Instance_Bout_41,3;
+	set Instance_Bout_41,10;
 	set day_Instance_Bout_41,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_41 < 1) {

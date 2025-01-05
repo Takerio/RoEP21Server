@@ -36,7 +36,7 @@ vdistrict1,14,30,4	script	聖域凈化管理者	4_F_TRAINEE,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_44 < gettime(8) ){
-	set Instance_Bout_44,3;
+	set Instance_Bout_44,10;
 	set day_Instance_Bout_44,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_44 < 1) {

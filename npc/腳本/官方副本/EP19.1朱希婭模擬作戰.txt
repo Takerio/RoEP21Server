@@ -82,7 +82,7 @@ vdistrict1,18,42,4	script	阿羅#Con1	21513,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_47 < gettime(8) ){
-	set Instance_Bout_47,3;
+	set Instance_Bout_47,10;
 	set day_Instance_Bout_47,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_47 < 1) {
@@ -485,7 +485,7 @@ function	script	unitskilluseid4	{
 			}
 			break;
 			
-		// 崩裂術(十字)
+		// 崩裂術(十字)
 		case 3:
 			.@range = 5;
 			for(.@i=1; .@i<9; .@i++)

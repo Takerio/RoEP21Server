@@ -85,7 +85,7 @@ vdistrict1,12,36,4	script	列爾#Con1	4_ep19_rgan_sr3,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_49 < gettime(8) ){
-	set Instance_Bout_49,3;
+	set Instance_Bout_49,10;
 	set day_Instance_Bout_49,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_49 < 1) {

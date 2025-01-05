@@ -26,7 +26,7 @@ vdistrict1,18,65,4	script	最後的房間管理者	4_M_BLUEMAN,{ //616
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_24 < gettime(8) ){
-	set Instance_Bout_24,3;
+	set Instance_Bout_24,10;
 	set day_Instance_Bout_24,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_24 < 1) {

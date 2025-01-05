@@ -82,7 +82,7 @@ vdistrict1,15,39,4	script	雷恩#Con1	21519,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_48 < gettime(8) ){
-	set Instance_Bout_48,3;
+	set Instance_Bout_48,10;
 	set day_Instance_Bout_48,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_48 < 1) {

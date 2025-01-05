@@ -57,7 +57,7 @@ vdistrict1,7,39,4	script	克雷斯特漢姆挑戰模式管理者	10307,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_39 < gettime(8) ){
-	set Instance_Bout_39,3;
+	set Instance_Bout_39,10;
 	set day_Instance_Bout_39,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_39 < 1) {
@@ -632,7 +632,7 @@ OnTimer5000:
 		}
 		sleep 1000;
 			break;
-	case 2: //十字地震術
+	case 2: //十字地震術
 		unittalk 'BossID, "!！";
 		sleep 1000;
 		monster .@map$,.@x+9,.@y+3,"--ja--",3095,1,.@label$;

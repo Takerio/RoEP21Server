@@ -56,7 +56,7 @@ vdistrict1,26,73,4	script	吉芬魔法大賽管理者	899,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_10 < gettime(8) ){
-	set Instance_Bout_10,3;
+	set Instance_Bout_10,10;
 	set day_Instance_Bout_10,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_10 < 1) {
@@ -3165,7 +3165,7 @@ OnTouch:
 		sleep 500;
 		npctalk "然後對手是...";
 		sleep 500;
-		npctalk "名門的貴公子！雖然看起來不強但鬥志十足！";
+		npctalk "名門的貴公子！雖然看起來不強但鬥志十足！";
 		sleep 500;
 		npctalk "年輕的參賽者，假面的雅樂西！";
 		sleep 500;
@@ -3319,7 +3319,7 @@ OnTouch:
 		donpcevent instance_npcname("萊采尼芮#1") + "::OnActivate";
 		end;
 	case 20:
-		npctalk "那麼這就讓我們開始A組比賽的第十回合！";
+		npctalk "那麼這就讓我們開始A組比賽的第十回合！";
 		sleep 500;
 		npctalk "雖是初次參賽，但已擊敗眾多實力選手的，";
 		sleep 500;

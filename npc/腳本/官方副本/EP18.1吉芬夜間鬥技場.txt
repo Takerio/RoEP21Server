@@ -13,7 +13,7 @@ vdistrict1,23,39,4	script	吉芬夜間鬥技場管理者	853,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_43 < gettime(8) ){
-	set Instance_Bout_43,3;
+	set Instance_Bout_43,10;
 	set day_Instance_Bout_43,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_43 < 1) {

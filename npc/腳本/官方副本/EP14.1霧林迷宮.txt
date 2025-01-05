@@ -11,7 +11,7 @@ vdistrict1,40,59,4	script	林迷宮管理者	447,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_08 < gettime(8) ){
-	set Instance_Bout_08,3;
+	set Instance_Bout_08,10;
 	set day_Instance_Bout_08,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_08 < 1) {

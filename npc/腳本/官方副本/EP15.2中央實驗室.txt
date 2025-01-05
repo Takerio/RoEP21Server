@@ -4,7 +4,7 @@ vdistrict1,15,68,4	script	中央實驗室管理者	4_LGTSCIENCE,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_23 < gettime(8) ){
-	set Instance_Bout_23,3;
+	set Instance_Bout_23,10;
 	set day_Instance_Bout_23,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_23 < 1) {

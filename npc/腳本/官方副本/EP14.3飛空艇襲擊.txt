@@ -11,7 +11,7 @@ vdistrict1,9,90,4	script	­¸ªÅ¸¥Å§À»ºÞ²zªÌ	406,{
 OnStart:
 	//¬D¾Ô¦¸¼Æ
 	if ( day_Instance_Bout_12 < gettime(8) ){
-	set Instance_Bout_12,3;
+	set Instance_Bout_12,10;
 	set day_Instance_Bout_12,gettime(8);	//¤@¦~¤¤ªº¤@¤Ñ
 	end; }
 	if (Instance_Bout_12 < 1) {
@@ -180,7 +180,7 @@ OnEnable:
 1@air1,235,57,5	script	ªâ¨½º¸#air11	664,{
 	cutin "fenrir_b.bmp",2;
 	mes "[ªâ¨½º¸]";
-	mes "¿©±â´Â Á¦°¡ ³ðµéÀ» »ó´ëÇÏ°Ú¾î¿ä. ¬dº¸´µ´Ô, ·RÄRµ·´Ô°ú ÇÔ²² ¾î¼­ ºñ°øÁ¤ ¾Æ·¡ÃþÀ¸·Î!";
+	mes "¿©±â´Â Á¦°¡ ³ðµéÀ» »ó´ë?Ï°Ú¾î¿?. ¬dº¸´µ´Ô, ·RÄRµ·´Ô°ú ?Ô²? ¾î¼­ ºñ°øÁ¤ ¾Æ·¡ÃþÀ¸·Î!";
 	close2;
 	cutin "fenrir_b.bmp",255;
 	end;
@@ -924,7 +924,7 @@ OnTimer2000:
 	cutin "h_iris02.bmp",2;
 	mes "[·RÄRµ·]";
 	mes "¼P....";
-	mes "ÇªÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇÏ";
+	mes "?ªÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇÏÇ?";
 	next;
 	mes "[·RÄRµ·]";
 	mes "­þ¨Óªº¤@¸s²Â³J?!";
@@ -1126,7 +1126,7 @@ OnEnable:
 	//disablenpc "warp3a#air1_0op"
 	next;
 	donpcevent instance_npcname("¤p§¯ºë#2aair")+"::OnEffect";
-	mes "- Æã! ÆÛÆã!";
+	mes "- ??! ?ÛÆ?!";
 	next;
 	cutin "h_iris01.bmp",2;
 	mes "[·RÄRµ·]";
@@ -1732,7 +1732,7 @@ OnEnable:
 1@air2,61,88,5	script	®È¦æ¤¤ªº¸Ö¤H#air2	51,{
 	mes "[®È¦æ¤¤ªº¸Ö¤H]";
 	mes "µo¥Í¤F¤°»ò¨Æ±¡¶Ü?";
-	mes "Æø§ÚÁÙ¬OÄ~Äò¼g§Úªººq¦±§a";
+	mes "?ø§ÚÁÙ¬OÄ~Äò¼g§Úªººq¦±§a";
 	close;
 OnInstanceInit:
 	donpcevent instance_npcname("®È¦æ¤¤ªº¸Ö¤H#air2")+"::OnEnable";

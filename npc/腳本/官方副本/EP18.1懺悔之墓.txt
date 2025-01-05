@@ -13,7 +13,7 @@ vdistrict1,20,36,4	script	懺悔之墓管理者	640,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_42 < gettime(8) ){
-	set Instance_Bout_42,3;
+	set Instance_Bout_42,10;
 	set day_Instance_Bout_42,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_42 < 1) {

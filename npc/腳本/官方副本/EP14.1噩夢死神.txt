@@ -12,7 +12,7 @@ vdistrict1,6,85,4	script	噩夢死神管理者	569,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_06 < gettime(8) ){
-	set Instance_Bout_06,3;
+	set Instance_Bout_06,10;
 	set day_Instance_Bout_06,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_06 < 1) {

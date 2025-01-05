@@ -13,7 +13,7 @@ vdistrict1,15,60,4	script	中樞室管理者	10181,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_29 < gettime(8) ){
-	set Instance_Bout_29,3;
+	set Instance_Bout_29,10;
 	set day_Instance_Bout_29,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_29 < 1) {

@@ -20,7 +20,7 @@ vdistrict1,6,77,4	script	儀式之間管理者	735,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_27 < gettime(8) ){
-	set Instance_Bout_27,3;
+	set Instance_Bout_27,10;
 	set day_Instance_Bout_27,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_27 < 1) {

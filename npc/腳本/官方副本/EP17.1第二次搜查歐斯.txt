@@ -16,7 +16,7 @@ vdistrict1,34,42,4	script	第二次搜查歐斯管理者	10193,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_31 < gettime(8) ){
-	set Instance_Bout_31,3;
+	set Instance_Bout_31,10;
 	set day_Instance_Bout_31,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_31 < 1) {

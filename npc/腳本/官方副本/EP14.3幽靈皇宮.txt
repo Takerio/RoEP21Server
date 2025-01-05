@@ -11,7 +11,7 @@ vdistrict1,28,71,4	script	幽靈皇宮管理者	686,{
 OnStart:
 	//挑戰次數
 	if ( day_Instance_Bout_11 < gettime(8) ){
-	set Instance_Bout_11,3;
+	set Instance_Bout_11,10;
 	set day_Instance_Bout_11,gettime(8);	//一年中的一天
 	end; }
 	if (Instance_Bout_11 < 1) {
