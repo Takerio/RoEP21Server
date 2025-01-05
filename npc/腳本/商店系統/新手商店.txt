@@ -1305,7 +1305,7 @@ Rac_netx:
 	}
 }
 
-	case 10:
+	case 11:
 	close;
 	}
 
