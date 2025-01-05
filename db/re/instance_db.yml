@@ -962,7 +962,7 @@ Body:
       2@fort: true
 
   - Id: 220
-    Name: 黃道十二宮
+    Name: 黃道十二宮
     TimeLimit: 7200
     IdleTimeOut: 600
     Enter:

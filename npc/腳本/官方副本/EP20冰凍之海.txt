@@ -9,7 +9,7 @@
 1@slug	mapflag	restricted	9
 
 
-prontera,156,168,4	script	冰凍之海管理者	10458,{
+vdistrict1,29,30,4	script	冰凍之海管理者	10458,{
 
 	.@playtime = checkquest(71019,PLAYTIME);
 	if(.@playtime == 2) erasequest 71019;

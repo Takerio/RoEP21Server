@@ -7,7 +7,7 @@
 1@ep21b	mapflag	noicewall
 1@ep21b	mapflag	restricted	6
 
-luna_sf2,260,44,4	script	伊爾澤#Con1	10586,{
+vdistrict1,32,33,4	script	伊爾澤#Con1	10586,{
 
 
 	set .@party_id,getcharid(1);
