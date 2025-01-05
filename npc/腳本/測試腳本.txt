@@ -26,7 +26,7 @@ setarray .@questRequiredAmount[0],30;
     end;
     }
 
-trinity,127,93,6	script	卡片升級任務員123#li	643,{
+trinity,127,93,6	script	卡片升級任務員#li	643,{
     set .@mvpcard1,30;
 	mes "[卡片升級任務員]";
 	mes "我是負責卡片升級任務的學者";
