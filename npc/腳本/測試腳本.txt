@@ -1159,6 +1159,7 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
             mes "那你想要接取什麼特殊任務呢？";
             switch(select("服飾大雜燴","回報所有特殊任務"))
             {
+  //1 服飾大雜燴
             case 1:
 			    if(checkquest(80000,HUNTING)>=0)
                 {
@@ -1185,8 +1186,37 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
                 }
 			    mes "任務接取完成";
 			    close;
+  //2 寵物蛋抽抽樂箱
+            case 2:
+			    if(checkquest(80002,HUNTING)>=0)
+                {
+                    mes "[每日任務情報員]";
+                    mes "您已經接了這個任務了唷~!";
+                    close;
+                }
+			    if(checkquest(80003,PLAYTIME)==0)
+                {
+                    mes "[每日任務情報員]";
+                    mes "你今天已經接取過這個任務了";
+                    close;
+                }
+			    if(checkquest(80002,PLAYTIME)==1)
+                {
+                    mes "[每日任務情報員]";
+                     mes "你今天已經接取過這個任務了";
+                     close;
+                }
+			    setquest 80002;
+			    if(checkquest(80003,PLAYTIME)==2)
+                {
+                    erasequest 80003;
+                }
+			    mes "任務接取完成";
+			    close;
+//回報特殊任務
 
             case 2:
+     // 服飾大雜燴回報
             if(checkquest(80000,HUNTING)==2)
             {              
                 erasequest 80000;
@@ -1195,7 +1225,23 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
                 dispbottom "已完成今日服飾大雜燴任務";
             }  
                 close;
+     // 寵物蛋抽抽樂箱回報
+            if(checkquest(80002,HUNTING)==2)
+            {              
+                erasequest 80002;
+                setquest 80003;
+                getitem 959999,3;
+                dispbottom "已完成今日寵物蛋抽抽樂箱任務";
+            }  
+                close;
+
+
+
+
+
+// -------------
             }
+
 
 // 回報任務
 

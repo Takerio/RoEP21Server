@@ -2729,3 +2729,11 @@ Body:
   - Id: 80001
     Title: 服飾大雜燴任務-等候
     TimeLimit: +24h
+  - Id: 80002
+    Title: 寵物蛋抽抽樂箱任務
+    Targets:
+      - Id: 1
+        Count: 300
+  - Id: 80003
+    Title: 寵物抽抽樂箱任務-等候
+    TimeLimit: +24h
