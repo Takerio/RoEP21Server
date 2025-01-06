@@ -47,27 +47,27 @@ Body:
     Value: 5
 
   - Name: HAT_EF_Cosmic_Connection
-    Value: 222 
+    Value: 222
   - Name: HAT_EF_C_Baby_Gloom
-    Value: 223 
+    Value: 223
   - Name: HAT_EF_WinterNightBells
-    Value: 224 
+    Value: 224
   - Name: HAT_EF_NightSkyOfRutie
-    Value: 225 
+    Value: 225
   - Name: FOOTPRINT_EF_BASE
-    Value: 226 
+    Value: 226
   - Name: FOOTPRINT_EF_STR_BASE
-    Value: 227 
+    Value: 227
   - Name: FOOTPRINT_EF_purplestar
-    Value: 228 
+    Value: 228
   - Name: FOOTPRINT_EF_yellowstar
-    Value: 229 
+    Value: 229
   - Name: FOOTPRINT_EF_redstar
-    Value: 230 
+    Value: 230
   - Name: HAT_EF_RAINBOW_POISON_MASTER
-    Value: 231 
+    Value: 231
 
-#自創特效
+  #自創特效
   - Name: HAT_EF_BLUE_WAVE2
     Value: 301
   - Name: HAT_EF_MAP_MAGICZONE3
@@ -202,7 +202,7 @@ Body:
   - Name: HAT_EF_sy_plumbossom
     Value: 366
 
-#自創新增
+  #自創新增
   - Name: IG_Hair_Ddbox_TW
     Value: 6
   - Name: IG_Sprout_Pot_TW
@@ -300,10 +300,7 @@ Body:
   - Name: IG_Mocadas_Slabs23
     Value: 1043
 
-
-
-
-#精靈屬性箱
+  #精靈屬性箱
   - Name: IG_FullTemp_S_Rand_Box_TW
     Value: 1046
   - Name: IG_FullPene_S_Rand_Box_TW
@@ -318,26 +315,26 @@ Body:
     Value: 1051
   - Name: IG_R_B_S_Op_Box
     Value: 1052
-#影子進階突擊轉換箱
+  #影子進階突擊轉換箱
   - Name: IG_BlitzShadow_Mix
     Value: 1053
-#影子力量天然精靈屬性箱
+  #影子力量天然精靈屬性箱
   - Name: IG_Du_S_RanOpt_Box_TW
     Value: 1054
-#影子智慧魔力精靈屬性箱
+  #影子智慧魔力精靈屬性箱
   - Name: IG_Cl_S_RanOpt_Box_TW
     Value: 1055
-#影子進階突擊精靈屬性箱
+  #影子進階突擊精靈屬性箱
   - Name: IG_S_Mega_Blitz_Box_TW
     Value: 1056
-#鬥魂
+  #鬥魂
   - Name: IG_Battle_Aura_TW
     Value: 1057
-#符文碑刻
+  #符文碑刻
   - Name: R_Ep17_Box
     Value: 1058
 
-#舊神器附魔
+  #舊神器附魔
   - Name: IG_Mjo_UP_TW
     Value: 100713
   - Name: IG_Brysing_UP_TW
@@ -347,11 +344,11 @@ Body:
   - Name: IG_Magin_Up_TW
     Value: 100716
 
-#聖潔石
+  #聖潔石
   - Name: IG_21_Anni_Stone3_TW
     Value: 102629
 
-#新秘笈
+  #新秘笈
   - Name: IG_Bs_Item_M_S_57
     Value: 1157
   - Name: IG_Bs_Item_M_S_58
@@ -371,21 +368,23 @@ Body:
   - Name: IG_GrayWolf_9_Ticket
     Value: 100627
 
-#時間裂隙武器精煉鎚
+  #時間裂隙武器精煉鎚
   - Name: Time_Gap_Refine_Hammer
     Value: 103308
 
-#符文碑刻
+  #符文碑刻
   - Name: 4_RUNESTONE
     Value: 10547
-#EP18地區怪物標籤
+  #EP18地區怪物標籤
   - Name: RC2_EP18
     Value: 10
-#EP19地區怪物標籤
+  #EP19地區怪物標籤
   - Name: RC2_EP19
     Value: 11
 
-
+  #舊版服飾
+  # - Name: IG_HATBOX_1400
+  #   Value: 950000
 Footer:
   Imports:
-  - Path: db/import/const.yml
+    - Path: db/import/const.yml

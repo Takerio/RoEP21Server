@@ -472,7 +472,7 @@ function	script	Job2_Quick	{
 		next;
 		switch(class) {
 		case 1:
-			switch(select("騎士","十字軍")) {
+			switch(select("騎士","十字軍")) {
 			case 1:
 				set @jobchange,7;	break;
 			case 2:
@@ -1020,7 +1020,7 @@ function	script	Job_Skill_Quick	{
 	if ( Class == 12 || Class == 4013 || Class == 4065 || Class == 4101 || Class == 4035 || Class == 4254) {
 		skill 149,1,0; skill 150,1,0; skill 151,1,0; skill 152,1,0; skill 1003,1,0; skill 1004,1,0;
 	}
-//十字軍系列
+//十字軍系列
 	if ( Class == 14 || Class == 4015 || Class == 4073 || Class == 4102 || Class ==  4037 || Class ==  4258) {
 		skill 144,1,0; skill 145,1,0; skill 146,1,0; skill 1002,1,0;
 	}

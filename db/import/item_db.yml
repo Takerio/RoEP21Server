@@ -10462,3 +10462,14 @@ Body:
     Type: DelayConsume
     Script: |
       item_reform();
+  - Id: 950000
+    AegisName: Hat_Box
+    Name: 服飾大雜燴
+    Type: Usable
+    Buy: 10000
+    Weight: 0
+    Flags:
+      BuyingStore: true
+      Container: true
+    Script: |
+      getitem rand(90000,91400),1;

@@ -2720,3 +2720,13 @@ Body:
   # - Id: 70039
   #   Title: 卡片升級任務(死靈騎士#等級1)-等候
   #   TimeLimit: +24h
+
+  - Id: 80000
+    Title: 服飾大雜燴任務
+    Targets:
+      - Id: 1
+        Count: 300
+        MinLevel: 200
+  - Id: 80001
+    Title: 服飾大雜燴任務-等候
+    TimeLimit: +24h

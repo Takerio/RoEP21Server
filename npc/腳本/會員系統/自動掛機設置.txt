@@ -16,10 +16,10 @@ OnInit:
 	// 自動購買紅藍藥箭矢的道具列表同下方設定
 	
 	// 自動吃紅的ID列表
-	setarray $@bot_auto_item_hp[0], 501,   502,   503;
+	setarray $@bot_auto_item_hp[0], 501,   502,   503,	70113;
 	
 	// 自動吃藍的ID列表
-	setarray $@bot_auto_item_sp[0], 504,   505,   506;
+	setarray $@bot_auto_item_sp[0], 504,   505,   506,	70113;
 	
 	// 自動購買箭矢的ID列表
 	setarray $@bot_auto_arrow[0], 1750,   1751;

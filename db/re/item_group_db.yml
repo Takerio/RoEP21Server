@@ -65,7 +65,7 @@ Header:
   Version: 3
 
 Body:
-#強化石箱子
+  #強化石箱子
   - Group: THIRD_JOB_STONE_GARMENT_BOX
     SubGroups:
       - SubGroup: 1
@@ -1311,7 +1311,6 @@ Body:
           - Index: 38
             Item: EXPStone_Top
             Rate: 391
-
 
   - Group: ENCHANT_STONE_BOX11
     SubGroups:
@@ -2581,7 +2580,6 @@ Body:
           - Index: 39
             Item: GuillcrossStone_Bottom2
             Rate: 370
-
 
   - Group: ENCHANT_STONE_BOX21
     SubGroups:
@@ -4944,8 +4942,7 @@ Body:
             Item: Critical_Stone_Bottom
             Rate: 400
 
-
-#推進提升器
+  #推進提升器
   - Group: BOOSTER_AMPLIFIER
     SubGroups:
       - SubGroup: 1
@@ -4957,7 +4954,7 @@ Body:
             Item: Magical_Booster_K
             Rate: 1
             RandomOptionGroup: BOOSTER_AMPLIFIER
-#蜂后卡
+  #蜂后卡
   - Group: GEMSTONE
     SubGroups:
       - SubGroup: 1
@@ -4972,8 +4969,7 @@ Body:
             Item: Blue_Gemstone
             Rate: 1
 
-
-#淨化信徒武器合成箱
+  #淨化信徒武器合成箱
   - Group: Vivatus_F_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -5095,7 +5091,7 @@ Body:
           - Index: 38
             Item: Vivatus_F_Humma
             Rate: 1
-#虛假信徒武器合成箱
+  #虛假信徒武器合成箱
   - Group: Adulter_F_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -5218,37 +5214,37 @@ Body:
             Item: Adulter_F_Hall
             Rate: 1
 
-#---------------------
+  #---------------------
 
-#時光湧現鎧甲合成箱
+  #時光湧現鎧甲合成箱
   - Group: Temporal_Armor_Box_TW
     SubGroups:
       - SubGroup: 0
         List:
           - Index: 1
             Item: Temporal_Armor_TW
-#時光斗篷合成箱
+  #時光斗篷合成箱
   - Group: Temporal_Manteau_Box_TW
     SubGroups:
       - SubGroup: 0
         List:
           - Index: 0
             Item: Temporal_Cape_TW
-#天地樹苗希冀罐
+  #天地樹苗希冀罐
   - Group: Sprout_Pot_TW
     SubGroups:
       - SubGroup: 0
         List:
           - Index: 0
             Item: Temporal_Sapling_TW
-#獸人族的傳承象徵秘笈
+  #獸人族的傳承象徵秘笈
   - Group: Bs_Item_M_S_05_TW
     SubGroups:
       - SubGroup: 0
         List:
           - Index: 0
             Item: Orcsuccessionhelm_TW
-#故鄉禮物
+  #故鄉禮物
   - Group: HOMETOWNGIFT
     SubGroups:
       - SubGroup: 1
@@ -5277,7 +5273,7 @@ Body:
           - Index: 7
             Item: Lucky_Rice_Cake
             Rate: 1
-#面具褔袋
+  #面具褔袋
   - Group: MASK
     SubGroups:
       - SubGroup: 1
@@ -5321,7 +5317,7 @@ Body:
           - Index: 12
             Item: Hahoe_Mask
             Rate: 2
-#寶石盒
+  #寶石盒
   - Group: ACCESORY
     SubGroups:
       - SubGroup: 1
@@ -5452,7 +5448,7 @@ Body:
           - Index: 41
             Item: Iron_Wrist
             Rate: 1
-#禮物箱
+  #禮物箱
   - Group: GIFTBOX
     SubGroups:
       - SubGroup: 1
@@ -5667,7 +5663,7 @@ Body:
           - Index: 69
             Item: Red_Socks_With_Holes
             Rate: 1
-#天狗卡片
+  #天狗卡片
   - Group: RECOVERY
     SubGroups:
       - SubGroup: 1
@@ -5715,7 +5711,7 @@ Body:
             Item: Popped_Rice
             Rate: 600
 
-#下級錢袋
+  #下級錢袋
   - Group: MINOR_COIN_BAG
     SubGroups:
       - SubGroup: 1
@@ -5744,7 +5740,7 @@ Body:
           - Index: 7
             Item: Malang_Sp_Can
             Rate: 10
-#中級錢袋
+  #中級錢袋
   - Group: INTERMEDIATE_COIN_BAG
     SubGroups:
       - SubGroup: 1
@@ -5773,7 +5769,7 @@ Body:
           - Index: 7
             Item: Malang_Sp_Can
             Rate: 9
-#高級錢袋
+  #高級錢袋
   - Group: IMPROVED_COIN_BAG
     SubGroups:
       - SubGroup: 1
@@ -5802,7 +5798,7 @@ Body:
           - Index: 7
             Item: Malang_Sp_Can
             Rate: 8
-#神秘箱子
+  #神秘箱子
   - Group: BLUEBOX
     SubGroups:
       - SubGroup: 1
@@ -8904,7 +8900,7 @@ Body:
             Item: Huuma_Calm_Mind
             Rate: 1
 
-#高級武器箱子
+  #高級武器箱子
   - Group: ADVANCED_WEAPONS_BOX
     SubGroups:
       - SubGroup: 1
@@ -9456,7 +9452,7 @@ Body:
             Item: Creeper_Bow
             Rate: 1
 
-#心門緊閉箱
+  #心門緊閉箱
   - Group: CLOSEDMIND_BOX
     SubGroups:
       - SubGroup: 1
@@ -9512,8 +9508,8 @@ Body:
             Item: Crystal_Jewel__
             Rate: 1200
             Amount: 10
-            
-#劇毒武器
+
+  #劇毒武器
   - Group: POISON
     SubGroups:
       - SubGroup: 1
@@ -9543,7 +9539,7 @@ Body:
             Item: Poison_Fatigue
             Rate: 1
 
-#復活之證
+  #復活之證
   - Group: TOKEN_OF_SIEGFRIED
     SubGroups:
       - SubGroup: 1
@@ -9560,7 +9556,7 @@ Body:
           - Index: 3
             Item: DF_Token_Of_Siegfried
             Rate: 1
-#影子精靈合成箱
+  #影子精靈合成箱
   - Group: SHADOW_EXCHANGE_BOX
     SubGroups:
       - SubGroup: 1
@@ -11272,7 +11268,7 @@ Body:
           - Index: 568
             Item: S_FullPene_Earring
             Rate: 73
-#
+  #
   - Group: VIOLETBOX
     SubGroups:
       - SubGroup: 1
@@ -15142,7 +15138,7 @@ Body:
         List:
           - Index: 0
             Item: Chick_Hat
-            
+
   - Group: BS_SHA_M_S_5
     SubGroups:
       - SubGroup: 1
@@ -15593,7 +15589,7 @@ Body:
           - Index: 2
             Item: S_Critical_Shield
             Rate: 1
-            
+
   - Group: BS_ITEM_M_S_1
     SubGroups:
       - SubGroup: 0
@@ -15637,7 +15633,7 @@ Body:
         List:
           - Index: 0
             Item: Dog_Officer
-          
+
   - Group: BS_ITEM_M_S_24
     SubGroups:
       - SubGroup: 0
@@ -15867,7 +15863,7 @@ Body:
           - Index: 0
             Item: Whikebain_Ears_K
 
-#KRO新增秘笈
+  #KRO新增秘笈
   - Group: BS_ITEM_M_S_52
     SubGroups:
       - SubGroup: 0
@@ -16334,7 +16330,7 @@ Body:
           - Index: 6
             Item: Enchant_Stone_Box19
             Rate: 1
-#髮型精靈合成箱
+  #髮型精靈合成箱
   - Group: Hair_Ddbox_TW
     SubGroups:
       - SubGroup: 6
@@ -16415,7 +16411,7 @@ Body:
             Item: C_Rocking_Short
             Rate: 10
 
-#老舊收集冊
+  #老舊收集冊
   - Group: CARDALBUM
     SubGroups:
       - SubGroup: 1
@@ -18413,8 +18409,7 @@ Body:
             Item: Thief_Bug_Egg_Card
             Rate: 1801
 
-
-#具有魔力的卡片冊子
+  #具有魔力的卡片冊子
   - Group: MAGICCARDALBUM
     SubGroups:
       - SubGroup: 1
@@ -18696,7 +18691,7 @@ Body:
             Item: Necromancer_Card
             Rate: 3118
 
-#各部位卡冊
+  #各部位卡冊
   - Group: CARDALBUM_ACC
     SubGroups:
       - SubGroup: 1
@@ -18917,7 +18912,6 @@ Body:
           - Index: 71
             Item: Hell_Poodle_Card
             Rate: 1
-            
 
   - Group: CARDALBUM_ARMOR
     SubGroups:
@@ -19954,7 +19948,7 @@ Body:
           - Index: 5
             Item: Vit_Dish10_
             Rate: 1
-#影子職業套裝箱
+  #影子職業套裝箱
   - Group: CLASS_SHADOW_CUBE
     SubGroups:
       - SubGroup: 1
@@ -20230,7 +20224,7 @@ Body:
             Item: S_Archer_earring
             Rate: 235
 
-#冰花魔法合成箱
+  #冰花魔法合成箱
   - Group: Ice_F_Stone_Box1
     SubGroups:
       - SubGroup: 1
@@ -20535,7 +20529,7 @@ Body:
           - Index: 99
             Item: Ice_F_Stone_Skill_54
             Rate: 5
-#冰花魔法合成箱2
+  #冰花魔法合成箱2
   - Group: Ice_F_Stone_Box2
     SubGroups:
       - SubGroup: 1
@@ -20841,7 +20835,7 @@ Body:
             Item: Ice_F_Stone_Skill_54
             Rate: 5
 
-#幻象改造模組合成箱
+  #幻象改造模組合成箱
   - Group: Illusion_Module_Mix
     SubGroups:
       - SubGroup: 1
@@ -20951,7 +20945,7 @@ Body:
           - Index: 34
             Item: M_M_Lucky_Strike
             Rate: 1
-#自動修改模組精靈合成箱
+  #自動修改模組精靈合成箱
   - Group: Automatic_Module_Mix
     SubGroups:
       - SubGroup: 1
@@ -21411,7 +21405,7 @@ Body:
             Item: EP17_2_EP51
             Rate: 98
 
-#影子種族精靈屬性箱
+  #影子種族精靈屬性箱
   - Group: S_Race_ElementMix
     SubGroups:
       - SubGroup: 1
@@ -21424,7 +21418,7 @@ Body:
             Item: S_AllRace_Shield
             Rate: 1
             RandomOptionGroup: Shadow2_Op_Box_TW
-#影子全能精靈屬性箱
+  #影子全能精靈屬性箱
   - Group: S_MixBox_ATT_ALLM_S
     SubGroups:
       - SubGroup: 1
@@ -21438,7 +21432,7 @@ Body:
             Rate: 1
             RandomOptionGroup: Shadow2_Op_Box_TW
 
-#影子天衣無縫風暴精靈屬性箱
+  #影子天衣無縫風暴精靈屬性箱
   - Group: FullTemp_S_Rand_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21460,7 +21454,7 @@ Body:
             Rate: 1
             RandomOptionGroup: FullTemp_S_Rand_Box_TW
 
-#影子天衣無縫風暴精靈屬性箱
+  #影子天衣無縫風暴精靈屬性箱
   - Group: FullPene_S_Rand_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21482,7 +21476,7 @@ Body:
             Rate: 1
             RandomOptionGroup: FullPene_S_Rand_Box_TW
 
-#影子神力猛瑪之力精靈屬性箱
+  #影子神力猛瑪之力精靈屬性箱
   - Group: S_M_Mam_Ran_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21503,7 +21497,7 @@ Body:
             Item: S_M_Mammoth_Pendant
             Rate: 1
             RandomOptionGroup: S_M_Mam_Ran_Box_TW
-#影子真魔力礦石精靈屬性箱
+  #影子真魔力礦石精靈屬性箱
   - Group: True_G_S_Rand_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21524,7 +21518,7 @@ Body:
             Item: S_TrueGem_Pendant
             Rate: 1
             RandomOptionGroup: True_G_S_Rand_Box_TW
-#影子全力吸收精靈屬性箱
+  #影子全力吸收精靈屬性箱
   - Group: Absorb_S_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21537,7 +21531,7 @@ Body:
             Item: S_Absorb_Weapon
             Rate: 1
             RandomOptionGroup: Absorb_S_Box_TW
-#影子君主送信者精靈屬性箱
+  #影子君主送信者精靈屬性箱
   - Group: R_B_S_Op_Box
     SubGroups:
       - SubGroup: 1
@@ -21559,7 +21553,7 @@ Body:
             Rate: 1
             RandomOptionGroup: R_B_S_Op_Box
 
-#影子力量天然精靈屬性箱
+  #影子力量天然精靈屬性箱
   - Group: Du_S_RanOpt_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21572,7 +21566,7 @@ Body:
             Item: S_Durable_Shield
             Rate: 1
             RandomOptionGroup: Du_S_RanOpt_Box_TW
-#影子智慧魔力精靈屬性箱
+  #影子智慧魔力精靈屬性箱
   - Group: Cl_S_RanOpt_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21585,7 +21579,7 @@ Body:
             Item: S_Clever_Shield
             Rate: 1
             RandomOptionGroup: Cl_S_RanOpt_Box_TW
-#影子進階突擊精靈屬性箱
+  #影子進階突擊精靈屬性箱
   - Group: S_Mega_Blitz_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -21599,7 +21593,7 @@ Body:
             Rate: 1
             RandomOptionGroup: S_Mega_Blitz_Box_TW
 
-#EP19.2 黯淡冰川武器合成箱
+  #EP19.2 黯淡冰川武器合成箱
   - Group: D_Gw_Extractor
     SubGroups:
       - SubGroup: 1
@@ -21632,7 +21626,7 @@ Body:
             Item: EP19_Gla_Extract
             Rate: 30
 
-#穆卡達斯石板
+  #穆卡達斯石板
   - Group: Mocadas_Slabs1
     SubGroups:
       - SubGroup: 0
@@ -21780,8 +21774,7 @@ Body:
           - Index: 1
             Item: Poison_Bottle_B
 
-
-#影子天衣無縫貫穿轉換箱 影子天衣無縫風暴轉換箱
+  #影子天衣無縫貫穿轉換箱 影子天衣無縫風暴轉換箱
   - Group: FULLTEMPSHADOW_MIX
     SubGroups:
       - SubGroup: 1
@@ -21815,7 +21808,7 @@ Body:
             Item: S_FullPene_Shoes
             Rate: 1
 
-#影子真魔力礦石轉換箱 影子神力猛瑪之力轉換箱
+  #影子真魔力礦石轉換箱 影子神力猛瑪之力轉換箱
   - Group: TRUE_GEMSHADOW_MIX
     SubGroups:
       - SubGroup: 1
@@ -21832,7 +21825,7 @@ Body:
           - Index: 3
             Item: S_TrueGem_Pendant
             Rate: 1
-#影子神力猛瑪之力轉換箱
+  #影子神力猛瑪之力轉換箱
   - Group: MAMMOTH_MIX
     SubGroups:
       - SubGroup: 1
@@ -21850,7 +21843,7 @@ Body:
             Item: S_M_Mammoth_Pendant
             Rate: 1
 
-#影子進階突擊轉換箱
+  #影子進階突擊轉換箱
   - Group: M_BLITZSHADOW_MIX
     SubGroups:
       - SubGroup: 1
@@ -21862,7 +21855,7 @@ Body:
             Item: S_Mega_Blitz_Weapon
             Rate: 1
 
-#影子君主送信者精靈轉換箱
+  #影子君主送信者精靈轉換箱
   - Group: R_BEARERSSHADOW_MIX
     SubGroups:
       - SubGroup: 1
@@ -21880,7 +21873,7 @@ Body:
             Item: S_R_Bearers_Earring
             Rate: 1
 
-#影子重新裝改良精靈轉換箱
+  #影子重新裝改良精靈轉換箱
   - Group: RELOADSHADOW_MIX
     SubGroups:
       - SubGroup: 0
@@ -21904,7 +21897,7 @@ Body:
             Item: S_SpellCaster_Pendant
             Rate: 1
 
-#自創副本合成箱
+  #自創副本合成箱
   - Group: Instance_S_Box
     SubGroups:
       - SubGroup: 1
@@ -21914,8 +21907,7 @@ Body:
             Rate: 100
             Amount: 5
 
-
-#消耗品合成箱
+  #消耗品合成箱
   - Group: UseItem_Mix_Box_TW
     SubGroups:
       - SubGroup: 1
@@ -22973,14 +22965,2809 @@ Body:
           - Index: 350
             Item: C_Elec_Guitar_Of_Phen
             Rate: 1
-
-
-
-
-
-
-
-
-
-
-
+  # 舊版服飾
+  - Group: HATBOX_1400
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: hat_90000
+            Rate: 8
+          - Item: hat_90001
+            Rate: 8
+          - Item: hat_90002
+            Rate: 8
+          - Item: hat_90003
+            Rate: 8
+          - Item: hat_90004
+            Rate: 8
+          - Item: hat_90005
+            Rate: 8
+          - Item: hat_90006
+            Rate: 8
+          - Item: hat_90008
+            Rate: 8
+          - Item: hat_90008
+            Rate: 8
+          - Item: hat_90009
+            Rate: 8
+          - Item: hat_90010
+            Rate: 8
+          - Item: hat_90011
+            Rate: 8
+          - Item: hat_90012
+            Rate: 8
+          - Item: hat_90013
+            Rate: 8
+          - Item: hat_90014
+            Rate: 8
+          - Item: hat_90015
+            Rate: 8
+          - Item: hat_90016
+            Rate: 8
+          - Item: hat_90018
+            Rate: 8
+          - Item: hat_90018
+            Rate: 8
+          - Item: hat_90019
+            Rate: 8
+          - Item: hat_90020
+            Rate: 8
+          - Item: hat_90021
+            Rate: 8
+          - Item: hat_90022
+            Rate: 8
+          - Item: hat_90023
+            Rate: 8
+          - Item: hat_90024
+            Rate: 8
+          - Item: hat_90025
+            Rate: 8
+          - Item: hat_90026
+            Rate: 8
+          - Item: hat_90028
+            Rate: 8
+          - Item: hat_90028
+            Rate: 8
+          - Item: hat_90029
+            Rate: 8
+          - Item: hat_90030
+            Rate: 8
+          - Item: hat_90031
+            Rate: 8
+          - Item: hat_90032
+            Rate: 8
+          - Item: hat_90033
+            Rate: 8
+          - Item: hat_90034
+            Rate: 8
+          - Item: hat_90035
+            Rate: 8
+          - Item: hat_90036
+            Rate: 8
+          - Item: hat_90038
+            Rate: 8
+          - Item: hat_90038
+            Rate: 8
+          - Item: hat_90039
+            Rate: 8
+          - Item: hat_90040
+            Rate: 8
+          - Item: hat_90041
+            Rate: 8
+          - Item: hat_90042
+            Rate: 8
+          - Item: hat_90043
+            Rate: 8
+          - Item: hat_90044
+            Rate: 8
+          - Item: hat_90045
+            Rate: 8
+          - Item: hat_90046
+            Rate: 8
+          - Item: hat_90048
+            Rate: 8
+          - Item: hat_90048
+            Rate: 8
+          - Item: hat_90049
+            Rate: 8
+          - Item: hat_90050
+            Rate: 8
+          - Item: hat_90051
+            Rate: 8
+          - Item: hat_90052
+            Rate: 8
+          - Item: hat_90053
+            Rate: 8
+          - Item: hat_90054
+            Rate: 8
+          - Item: hat_90055
+            Rate: 8
+          - Item: hat_90056
+            Rate: 8
+          - Item: hat_90058
+            Rate: 8
+          - Item: hat_90058
+            Rate: 8
+          - Item: hat_90059
+            Rate: 8
+          - Item: hat_90060
+            Rate: 8
+          - Item: hat_90061
+            Rate: 8
+          - Item: hat_90062
+            Rate: 8
+          - Item: hat_90063
+            Rate: 8
+          - Item: hat_90064
+            Rate: 8
+          - Item: hat_90065
+            Rate: 8
+          - Item: hat_90066
+            Rate: 8
+          - Item: hat_90068
+            Rate: 8
+          - Item: hat_90068
+            Rate: 8
+          - Item: hat_90069
+            Rate: 8
+          - Item: hat_90080
+            Rate: 8
+          - Item: hat_90081
+            Rate: 8
+          - Item: hat_90082
+            Rate: 8
+          - Item: hat_90083
+            Rate: 8
+          - Item: hat_90084
+            Rate: 8
+          - Item: hat_90085
+            Rate: 8
+          - Item: hat_90086
+            Rate: 8
+          - Item: hat_90088
+            Rate: 8
+          - Item: hat_90088
+            Rate: 8
+          - Item: hat_90089
+            Rate: 8
+          - Item: hat_90080
+            Rate: 8
+          - Item: hat_90081
+            Rate: 8
+          - Item: hat_90082
+            Rate: 8
+          - Item: hat_90083
+            Rate: 8
+          - Item: hat_90084
+            Rate: 8
+          - Item: hat_90085
+            Rate: 8
+          - Item: hat_90086
+            Rate: 8
+          - Item: hat_90088
+            Rate: 8
+          - Item: hat_90088
+            Rate: 8
+          - Item: hat_90089
+            Rate: 8
+          - Item: hat_90090
+            Rate: 8
+          - Item: hat_90091
+            Rate: 8
+          - Item: hat_90092
+            Rate: 8
+          - Item: hat_90093
+            Rate: 8
+          - Item: hat_90094
+            Rate: 8
+          - Item: hat_90095
+            Rate: 8
+          - Item: hat_90096
+            Rate: 8
+          - Item: hat_90098
+            Rate: 8
+          - Item: hat_90098
+            Rate: 8
+          - Item: hat_90099
+            Rate: 8
+          - Item: hat_90100
+            Rate: 8
+          - Item: hat_90101
+            Rate: 8
+          - Item: hat_90102
+            Rate: 8
+          - Item: hat_90103
+            Rate: 8
+          - Item: hat_90104
+            Rate: 8
+          - Item: hat_90105
+            Rate: 8
+          - Item: hat_90106
+            Rate: 8
+          - Item: hat_90108
+            Rate: 8
+          - Item: hat_90108
+            Rate: 8
+          - Item: hat_90109
+            Rate: 8
+          - Item: hat_90110
+            Rate: 8
+          - Item: hat_90111
+            Rate: 8
+          - Item: hat_90112
+            Rate: 8
+          - Item: hat_90113
+            Rate: 8
+          - Item: hat_90114
+            Rate: 8
+          - Item: hat_90115
+            Rate: 8
+          - Item: hat_90116
+            Rate: 8
+          - Item: hat_90118
+            Rate: 8
+          - Item: hat_90118
+            Rate: 8
+          - Item: hat_90119
+            Rate: 8
+          - Item: hat_90120
+            Rate: 8
+          - Item: hat_90121
+            Rate: 8
+          - Item: hat_90122
+            Rate: 8
+          - Item: hat_90123
+            Rate: 8
+          - Item: hat_90124
+            Rate: 8
+          - Item: hat_90125
+            Rate: 8
+          - Item: hat_90126
+            Rate: 8
+          - Item: hat_90128
+            Rate: 8
+          - Item: hat_90128
+            Rate: 8
+          - Item: hat_90129
+            Rate: 8
+          - Item: hat_90130
+            Rate: 8
+          - Item: hat_90131
+            Rate: 8
+          - Item: hat_90132
+            Rate: 8
+          - Item: hat_90133
+            Rate: 8
+          - Item: hat_90134
+            Rate: 8
+          - Item: hat_90135
+            Rate: 8
+          - Item: hat_90136
+            Rate: 8
+          - Item: hat_90138
+            Rate: 8
+          - Item: hat_90138
+            Rate: 8
+          - Item: hat_90139
+            Rate: 8
+          - Item: hat_90140
+            Rate: 8
+          - Item: hat_90141
+            Rate: 8
+          - Item: hat_90142
+            Rate: 8
+          - Item: hat_90143
+            Rate: 8
+          - Item: hat_90144
+            Rate: 8
+          - Item: hat_90145
+            Rate: 8
+          - Item: hat_90146
+            Rate: 8
+          - Item: hat_90148
+            Rate: 8
+          - Item: hat_90148
+            Rate: 8
+          - Item: hat_90149
+            Rate: 8
+          - Item: hat_90150
+            Rate: 8
+          - Item: hat_90151
+            Rate: 8
+          - Item: hat_90152
+            Rate: 8
+          - Item: hat_90153
+            Rate: 8
+          - Item: hat_90154
+            Rate: 8
+          - Item: hat_90155
+            Rate: 8
+          - Item: hat_90156
+            Rate: 8
+          - Item: hat_90158
+            Rate: 8
+          - Item: hat_90158
+            Rate: 8
+          - Item: hat_90159
+            Rate: 8
+          - Item: hat_90160
+            Rate: 8
+          - Item: hat_90161
+            Rate: 8
+          - Item: hat_90162
+            Rate: 8
+          - Item: hat_90163
+            Rate: 8
+          - Item: hat_90164
+            Rate: 8
+          - Item: hat_90165
+            Rate: 8
+          - Item: hat_90166
+            Rate: 8
+          - Item: hat_90168
+            Rate: 8
+          - Item: hat_90168
+            Rate: 8
+          - Item: hat_90169
+            Rate: 8
+          - Item: hat_90180
+            Rate: 8
+          - Item: hat_90181
+            Rate: 8
+          - Item: hat_90182
+            Rate: 8
+          - Item: hat_90183
+            Rate: 8
+          - Item: hat_90184
+            Rate: 8
+          - Item: hat_90185
+            Rate: 8
+          - Item: hat_90186
+            Rate: 8
+          - Item: hat_90188
+            Rate: 8
+          - Item: hat_90188
+            Rate: 8
+          - Item: hat_90189
+            Rate: 8
+          - Item: hat_90180
+            Rate: 8
+          - Item: hat_90181
+            Rate: 8
+          - Item: hat_90182
+            Rate: 8
+          - Item: hat_90183
+            Rate: 8
+          - Item: hat_90184
+            Rate: 8
+          - Item: hat_90185
+            Rate: 8
+          - Item: hat_90186
+            Rate: 8
+          - Item: hat_90188
+            Rate: 8
+          - Item: hat_90188
+            Rate: 8
+          - Item: hat_90189
+            Rate: 8
+          - Item: hat_90190
+            Rate: 8
+          - Item: hat_90191
+            Rate: 8
+          - Item: hat_90192
+            Rate: 8
+          - Item: hat_90193
+            Rate: 8
+          - Item: hat_90194
+            Rate: 8
+          - Item: hat_90195
+            Rate: 8
+          - Item: hat_90196
+            Rate: 8
+          - Item: hat_90198
+            Rate: 8
+          - Item: hat_90198
+            Rate: 8
+          - Item: hat_90199
+            Rate: 8
+          - Item: hat_90200
+            Rate: 7
+          - Item: hat_90201
+            Rate: 7
+          - Item: hat_90202
+            Rate: 7
+          - Item: hat_90203
+            Rate: 7
+          - Item: hat_90204
+            Rate: 7
+          - Item: hat_90205
+            Rate: 7
+          - Item: hat_90206
+            Rate: 7
+          - Item: hat_90207
+            Rate: 7
+          - Item: hat_90208
+            Rate: 7
+          - Item: hat_90209
+            Rate: 7
+          - Item: hat_90210
+            Rate: 7
+          - Item: hat_90211
+            Rate: 7
+          - Item: hat_90212
+            Rate: 7
+          - Item: hat_90213
+            Rate: 7
+          - Item: hat_90214
+            Rate: 7
+          - Item: hat_90215
+            Rate: 7
+          - Item: hat_90216
+            Rate: 7
+          - Item: hat_90217
+            Rate: 7
+          - Item: hat_90218
+            Rate: 7
+          - Item: hat_90219
+            Rate: 7
+          - Item: hat_90220
+            Rate: 7
+          - Item: hat_90221
+            Rate: 7
+          - Item: hat_90222
+            Rate: 7
+          - Item: hat_90223
+            Rate: 7
+          - Item: hat_90224
+            Rate: 7
+          - Item: hat_90225
+            Rate: 7
+          - Item: hat_90226
+            Rate: 7
+          - Item: hat_90227
+            Rate: 7
+          - Item: hat_90228
+            Rate: 7
+          - Item: hat_90229
+            Rate: 7
+          - Item: hat_90230
+            Rate: 7
+          - Item: hat_90231
+            Rate: 7
+          - Item: hat_90232
+            Rate: 7
+          - Item: hat_90233
+            Rate: 7
+          - Item: hat_90234
+            Rate: 7
+          - Item: hat_90235
+            Rate: 7
+          - Item: hat_90236
+            Rate: 7
+          - Item: hat_90237
+            Rate: 7
+          - Item: hat_90238
+            Rate: 7
+          - Item: hat_90239
+            Rate: 7
+          - Item: hat_90240
+            Rate: 7
+          - Item: hat_90241
+            Rate: 7
+          - Item: hat_90242
+            Rate: 7
+          - Item: hat_90243
+            Rate: 7
+          - Item: hat_90244
+            Rate: 7
+          - Item: hat_90245
+            Rate: 7
+          - Item: hat_90246
+            Rate: 7
+          - Item: hat_90247
+            Rate: 7
+          - Item: hat_90248
+            Rate: 7
+          - Item: hat_90249
+            Rate: 7
+          - Item: hat_90250
+            Rate: 7
+          - Item: hat_90251
+            Rate: 7
+          - Item: hat_90252
+            Rate: 7
+          - Item: hat_90253
+            Rate: 7
+          - Item: hat_90254
+            Rate: 7
+          - Item: hat_90255
+            Rate: 7
+          - Item: hat_90256
+            Rate: 7
+          - Item: hat_90257
+            Rate: 7
+          - Item: hat_90258
+            Rate: 7
+          - Item: hat_90259
+            Rate: 7
+          - Item: hat_90260
+            Rate: 7
+          - Item: hat_90261
+            Rate: 7
+          - Item: hat_90262
+            Rate: 7
+          - Item: hat_90263
+            Rate: 7
+          - Item: hat_90264
+            Rate: 7
+          - Item: hat_90265
+            Rate: 7
+          - Item: hat_90266
+            Rate: 7
+          - Item: hat_90267
+            Rate: 7
+          - Item: hat_90268
+            Rate: 7
+          - Item: hat_90269
+            Rate: 7
+          - Item: hat_90270
+            Rate: 7
+          - Item: hat_90271
+            Rate: 7
+          - Item: hat_90272
+            Rate: 7
+          - Item: hat_90273
+            Rate: 7
+          - Item: hat_90274
+            Rate: 7
+          - Item: hat_90275
+            Rate: 7
+          - Item: hat_90276
+            Rate: 7
+          - Item: hat_90277
+            Rate: 7
+          - Item: hat_90278
+            Rate: 7
+          - Item: hat_90279
+            Rate: 7
+          - Item: hat_90280
+            Rate: 7
+          - Item: hat_90281
+            Rate: 7
+          - Item: hat_90282
+            Rate: 7
+          - Item: hat_90283
+            Rate: 7
+          - Item: hat_90284
+            Rate: 7
+          - Item: hat_90285
+            Rate: 7
+          - Item: hat_90286
+            Rate: 7
+          - Item: hat_90287
+            Rate: 7
+          - Item: hat_90288
+            Rate: 7
+          - Item: hat_90289
+            Rate: 7
+          - Item: hat_90290
+            Rate: 7
+          - Item: hat_90291
+            Rate: 7
+          - Item: hat_90292
+            Rate: 7
+          - Item: hat_90293
+            Rate: 7
+          - Item: hat_90294
+            Rate: 7
+          - Item: hat_90295
+            Rate: 7
+          - Item: hat_90296
+            Rate: 7
+          - Item: hat_90297
+            Rate: 7
+          - Item: hat_90298
+            Rate: 7
+          - Item: hat_90299
+            Rate: 7
+          - Item: hat_90300
+            Rate: 7
+          - Item: hat_90301
+            Rate: 7
+          - Item: hat_90302
+            Rate: 7
+          - Item: hat_90303
+            Rate: 7
+          - Item: hat_90304
+            Rate: 7
+          - Item: hat_90305
+            Rate: 7
+          - Item: hat_90306
+            Rate: 7
+          - Item: hat_90307
+            Rate: 7
+          - Item: hat_90308
+            Rate: 7
+          - Item: hat_90309
+            Rate: 7
+          - Item: hat_90310
+            Rate: 7
+          - Item: hat_90311
+            Rate: 7
+          - Item: hat_90312
+            Rate: 7
+          - Item: hat_90313
+            Rate: 7
+          - Item: hat_90314
+            Rate: 7
+          - Item: hat_90315
+            Rate: 7
+          - Item: hat_90316
+            Rate: 7
+          - Item: hat_90317
+            Rate: 7
+          - Item: hat_90318
+            Rate: 7
+          - Item: hat_90319
+            Rate: 7
+          - Item: hat_90320
+            Rate: 7
+          - Item: hat_90321
+            Rate: 7
+          - Item: hat_90322
+            Rate: 7
+          - Item: hat_90323
+            Rate: 7
+          - Item: hat_90324
+            Rate: 7
+          - Item: hat_90325
+            Rate: 7
+          - Item: hat_90326
+            Rate: 7
+          - Item: hat_90327
+            Rate: 7
+          - Item: hat_90328
+            Rate: 7
+          - Item: hat_90329
+            Rate: 7
+          - Item: hat_90330
+            Rate: 7
+          - Item: hat_90331
+            Rate: 7
+          - Item: hat_90332
+            Rate: 7
+          - Item: hat_90333
+            Rate: 7
+          - Item: hat_90334
+            Rate: 7
+          - Item: hat_90335
+            Rate: 7
+          - Item: hat_90336
+            Rate: 7
+          - Item: hat_90337
+            Rate: 7
+          - Item: hat_90338
+            Rate: 7
+          - Item: hat_90339
+            Rate: 7
+          - Item: hat_90340
+            Rate: 7
+          - Item: hat_90341
+            Rate: 7
+          - Item: hat_90342
+            Rate: 7
+          - Item: hat_90343
+            Rate: 7
+          - Item: hat_90344
+            Rate: 7
+          - Item: hat_90345
+            Rate: 7
+          - Item: hat_90346
+            Rate: 7
+          - Item: hat_90347
+            Rate: 7
+          - Item: hat_90348
+            Rate: 7
+          - Item: hat_90349
+            Rate: 7
+          - Item: hat_90350
+            Rate: 7
+          - Item: hat_90351
+            Rate: 7
+          - Item: hat_90352
+            Rate: 7
+          - Item: hat_90353
+            Rate: 7
+          - Item: hat_90354
+            Rate: 7
+          - Item: hat_90355
+            Rate: 7
+          - Item: hat_90356
+            Rate: 7
+          - Item: hat_90357
+            Rate: 7
+          - Item: hat_90358
+            Rate: 7
+          - Item: hat_90359
+            Rate: 7
+          - Item: hat_90360
+            Rate: 7
+          - Item: hat_90361
+            Rate: 7
+          - Item: hat_90362
+            Rate: 7
+          - Item: hat_90363
+            Rate: 7
+          - Item: hat_90364
+            Rate: 7
+          - Item: hat_90365
+            Rate: 7
+          - Item: hat_90366
+            Rate: 7
+          - Item: hat_90367
+            Rate: 7
+          - Item: hat_90368
+            Rate: 7
+          - Item: hat_90369
+            Rate: 7
+          - Item: hat_90370
+            Rate: 7
+          - Item: hat_90371
+            Rate: 7
+          - Item: hat_90372
+            Rate: 7
+          - Item: hat_90373
+            Rate: 7
+          - Item: hat_90374
+            Rate: 7
+          - Item: hat_90375
+            Rate: 7
+          - Item: hat_90376
+            Rate: 7
+          - Item: hat_90377
+            Rate: 7
+          - Item: hat_90378
+            Rate: 7
+          - Item: hat_90379
+            Rate: 7
+          - Item: hat_90380
+            Rate: 7
+          - Item: hat_90381
+            Rate: 7
+          - Item: hat_90382
+            Rate: 7
+          - Item: hat_90383
+            Rate: 7
+          - Item: hat_90384
+            Rate: 7
+          - Item: hat_90385
+            Rate: 7
+          - Item: hat_90386
+            Rate: 7
+          - Item: hat_90387
+            Rate: 7
+          - Item: hat_90388
+            Rate: 7
+          - Item: hat_90389
+            Rate: 7
+          - Item: hat_90390
+            Rate: 7
+          - Item: hat_90391
+            Rate: 7
+          - Item: hat_90392
+            Rate: 7
+          - Item: hat_90393
+            Rate: 7
+          - Item: hat_90394
+            Rate: 7
+          - Item: hat_90395
+            Rate: 7
+          - Item: hat_90396
+            Rate: 7
+          - Item: hat_90397
+            Rate: 7
+          - Item: hat_90398
+            Rate: 7
+          - Item: hat_90399
+            Rate: 7
+          - Item: hat_90400
+            Rate: 7
+          - Item: hat_90401
+            Rate: 7
+          - Item: hat_90402
+            Rate: 7
+          - Item: hat_90403
+            Rate: 7
+          - Item: hat_90404
+            Rate: 7
+          - Item: hat_90405
+            Rate: 7
+          - Item: hat_90406
+            Rate: 7
+          - Item: hat_90407
+            Rate: 7
+          - Item: hat_90408
+            Rate: 7
+          - Item: hat_90409
+            Rate: 7
+          - Item: hat_90410
+            Rate: 7
+          - Item: hat_90411
+            Rate: 7
+          - Item: hat_90412
+            Rate: 7
+          - Item: hat_90413
+            Rate: 7
+          - Item: hat_90414
+            Rate: 7
+          - Item: hat_90415
+            Rate: 7
+          - Item: hat_90416
+            Rate: 7
+          - Item: hat_90417
+            Rate: 7
+          - Item: hat_90418
+            Rate: 7
+          - Item: hat_90419
+            Rate: 7
+          - Item: hat_90420
+            Rate: 7
+          - Item: hat_90421
+            Rate: 7
+          - Item: hat_90422
+            Rate: 7
+          - Item: hat_90423
+            Rate: 7
+          - Item: hat_90424
+            Rate: 7
+          - Item: hat_90425
+            Rate: 7
+          - Item: hat_90426
+            Rate: 7
+          - Item: hat_90427
+            Rate: 7
+          - Item: hat_90428
+            Rate: 7
+          - Item: hat_90429
+            Rate: 7
+          - Item: hat_90430
+            Rate: 7
+          - Item: hat_90431
+            Rate: 7
+          - Item: hat_90432
+            Rate: 7
+          - Item: hat_90433
+            Rate: 7
+          - Item: hat_90434
+            Rate: 7
+          - Item: hat_90435
+            Rate: 7
+          - Item: hat_90436
+            Rate: 7
+          - Item: hat_90437
+            Rate: 7
+          - Item: hat_90438
+            Rate: 7
+          - Item: hat_90439
+            Rate: 7
+          - Item: hat_90440
+            Rate: 7
+          - Item: hat_90441
+            Rate: 7
+          - Item: hat_90442
+            Rate: 7
+          - Item: hat_90443
+            Rate: 7
+          - Item: hat_90444
+            Rate: 7
+          - Item: hat_90445
+            Rate: 7
+          - Item: hat_90446
+            Rate: 7
+          - Item: hat_90447
+            Rate: 7
+          - Item: hat_90448
+            Rate: 7
+          - Item: hat_90449
+            Rate: 7
+          - Item: hat_90450
+            Rate: 7
+          - Item: hat_90451
+            Rate: 7
+          - Item: hat_90452
+            Rate: 7
+          - Item: hat_90453
+            Rate: 7
+          - Item: hat_90454
+            Rate: 7
+          - Item: hat_90455
+            Rate: 7
+          - Item: hat_90456
+            Rate: 7
+          - Item: hat_90457
+            Rate: 7
+          - Item: hat_90458
+            Rate: 7
+          - Item: hat_90459
+            Rate: 7
+          - Item: hat_90460
+            Rate: 7
+          - Item: hat_90461
+            Rate: 7
+          - Item: hat_90462
+            Rate: 7
+          - Item: hat_90463
+            Rate: 7
+          - Item: hat_90464
+            Rate: 7
+          - Item: hat_90465
+            Rate: 7
+          - Item: hat_90466
+            Rate: 7
+          - Item: hat_90467
+            Rate: 7
+          - Item: hat_90468
+            Rate: 7
+          - Item: hat_90469
+            Rate: 7
+          - Item: hat_90470
+            Rate: 7
+          - Item: hat_90471
+            Rate: 7
+          - Item: hat_90472
+            Rate: 7
+          - Item: hat_90473
+            Rate: 7
+          - Item: hat_90474
+            Rate: 7
+          - Item: hat_90475
+            Rate: 7
+          - Item: hat_90476
+            Rate: 7
+          - Item: hat_90477
+            Rate: 7
+          - Item: hat_90478
+            Rate: 7
+          - Item: hat_90479
+            Rate: 7
+          - Item: hat_90480
+            Rate: 7
+          - Item: hat_90481
+            Rate: 7
+          - Item: hat_90482
+            Rate: 7
+          - Item: hat_90483
+            Rate: 7
+          - Item: hat_90484
+            Rate: 7
+          - Item: hat_90485
+            Rate: 7
+          - Item: hat_90486
+            Rate: 7
+          - Item: hat_90487
+            Rate: 7
+          - Item: hat_90488
+            Rate: 7
+          - Item: hat_90489
+            Rate: 7
+          - Item: hat_90490
+            Rate: 7
+          - Item: hat_90491
+            Rate: 7
+          - Item: hat_90492
+            Rate: 7
+          - Item: hat_90493
+            Rate: 7
+          - Item: hat_90494
+            Rate: 7
+          - Item: hat_90495
+            Rate: 7
+          - Item: hat_90496
+            Rate: 7
+          - Item: hat_90497
+            Rate: 7
+          - Item: hat_90498
+            Rate: 7
+          - Item: hat_90499
+            Rate: 7
+          - Item: hat_90500
+            Rate: 7
+          - Item: hat_90501
+            Rate: 7
+          - Item: hat_90502
+            Rate: 7
+          - Item: hat_90503
+            Rate: 7
+          - Item: hat_90504
+            Rate: 7
+          - Item: hat_90505
+            Rate: 7
+          - Item: hat_90506
+            Rate: 7
+          - Item: hat_90507
+            Rate: 7
+          - Item: hat_90508
+            Rate: 7
+          - Item: hat_90509
+            Rate: 7
+          - Item: hat_90510
+            Rate: 7
+          - Item: hat_90511
+            Rate: 7
+          - Item: hat_90512
+            Rate: 7
+          - Item: hat_90513
+            Rate: 7
+          - Item: hat_90514
+            Rate: 7
+          - Item: hat_90515
+            Rate: 7
+          - Item: hat_90516
+            Rate: 7
+          - Item: hat_90517
+            Rate: 7
+          - Item: hat_90518
+            Rate: 7
+          - Item: hat_90519
+            Rate: 7
+          - Item: hat_90520
+            Rate: 7
+          - Item: hat_90521
+            Rate: 7
+          - Item: hat_90522
+            Rate: 7
+          - Item: hat_90523
+            Rate: 7
+          - Item: hat_90524
+            Rate: 7
+          - Item: hat_90525
+            Rate: 7
+          - Item: hat_90526
+            Rate: 7
+          - Item: hat_90527
+            Rate: 7
+          - Item: hat_90528
+            Rate: 7
+          - Item: hat_90529
+            Rate: 7
+          - Item: hat_90530
+            Rate: 7
+          - Item: hat_90531
+            Rate: 7
+          - Item: hat_90532
+            Rate: 7
+          - Item: hat_90533
+            Rate: 7
+          - Item: hat_90534
+            Rate: 7
+          - Item: hat_90535
+            Rate: 7
+          - Item: hat_90536
+            Rate: 7
+          - Item: hat_90537
+            Rate: 7
+          - Item: hat_90538
+            Rate: 7
+          - Item: hat_90539
+            Rate: 7
+          - Item: hat_90540
+            Rate: 7
+          - Item: hat_90541
+            Rate: 7
+          - Item: hat_90542
+            Rate: 7
+          - Item: hat_90543
+            Rate: 7
+          - Item: hat_90544
+            Rate: 7
+          - Item: hat_90545
+            Rate: 7
+          - Item: hat_90546
+            Rate: 7
+          - Item: hat_90547
+            Rate: 7
+          - Item: hat_90548
+            Rate: 7
+          - Item: hat_90549
+            Rate: 7
+          - Item: hat_90550
+            Rate: 7
+          - Item: hat_90551
+            Rate: 7
+          - Item: hat_90552
+            Rate: 7
+          - Item: hat_90553
+            Rate: 7
+          - Item: hat_90554
+            Rate: 7
+          - Item: hat_90555
+            Rate: 7
+          - Item: hat_90556
+            Rate: 7
+          - Item: hat_90557
+            Rate: 7
+          - Item: hat_90558
+            Rate: 7
+          - Item: hat_90559
+            Rate: 7
+          - Item: hat_90560
+            Rate: 7
+          - Item: hat_90561
+            Rate: 7
+          - Item: hat_90562
+            Rate: 7
+          - Item: hat_90563
+            Rate: 7
+          - Item: hat_90564
+            Rate: 7
+          - Item: hat_90565
+            Rate: 7
+          - Item: hat_90566
+            Rate: 7
+          - Item: hat_90567
+            Rate: 7
+          - Item: hat_90568
+            Rate: 7
+          - Item: hat_90569
+            Rate: 7
+          - Item: hat_90570
+            Rate: 7
+          - Item: hat_90571
+            Rate: 7
+          - Item: hat_90572
+            Rate: 7
+          - Item: hat_90573
+            Rate: 7
+          - Item: hat_90574
+            Rate: 7
+          - Item: hat_90575
+            Rate: 7
+          - Item: hat_90576
+            Rate: 7
+          - Item: hat_90577
+            Rate: 7
+          - Item: hat_90578
+            Rate: 7
+          - Item: hat_90579
+            Rate: 7
+          - Item: hat_90580
+            Rate: 7
+          - Item: hat_90581
+            Rate: 7
+          - Item: hat_90582
+            Rate: 7
+          - Item: hat_90583
+            Rate: 7
+          - Item: hat_90584
+            Rate: 7
+          - Item: hat_90585
+            Rate: 7
+          - Item: hat_90586
+            Rate: 7
+          - Item: hat_90587
+            Rate: 7
+          - Item: hat_90588
+            Rate: 7
+          - Item: hat_90589
+            Rate: 7
+          - Item: hat_90590
+            Rate: 7
+          - Item: hat_90591
+            Rate: 7
+          - Item: hat_90592
+            Rate: 7
+          - Item: hat_90593
+            Rate: 7
+          - Item: hat_90594
+            Rate: 7
+          - Item: hat_90595
+            Rate: 7
+          - Item: hat_90596
+            Rate: 7
+          - Item: hat_90597
+            Rate: 7
+          - Item: hat_90598
+            Rate: 7
+          - Item: hat_90599
+            Rate: 7
+          - Item: hat_90600
+            Rate: 7
+          - Item: hat_90601
+            Rate: 7
+          - Item: hat_90602
+            Rate: 7
+          - Item: hat_90603
+            Rate: 7
+          - Item: hat_90604
+            Rate: 7
+          - Item: hat_90605
+            Rate: 7
+          - Item: hat_90606
+            Rate: 7
+          - Item: hat_90607
+            Rate: 7
+          - Item: hat_90608
+            Rate: 7
+          - Item: hat_90609
+            Rate: 7
+          - Item: hat_90610
+            Rate: 7
+          - Item: hat_90611
+            Rate: 7
+          - Item: hat_90612
+            Rate: 7
+          - Item: hat_90613
+            Rate: 7
+          - Item: hat_90614
+            Rate: 7
+          - Item: hat_90615
+            Rate: 7
+          - Item: hat_90616
+            Rate: 7
+          - Item: hat_90617
+            Rate: 7
+          - Item: hat_90618
+            Rate: 7
+          - Item: hat_90619
+            Rate: 7
+          - Item: hat_90620
+            Rate: 7
+          - Item: hat_90621
+            Rate: 7
+          - Item: hat_90622
+            Rate: 7
+          - Item: hat_90623
+            Rate: 7
+          - Item: hat_90624
+            Rate: 7
+          - Item: hat_90625
+            Rate: 7
+          - Item: hat_90626
+            Rate: 7
+          - Item: hat_90627
+            Rate: 7
+          - Item: hat_90628
+            Rate: 7
+          - Item: hat_90629
+            Rate: 7
+          - Item: hat_90630
+            Rate: 7
+          - Item: hat_90631
+            Rate: 7
+          - Item: hat_90632
+            Rate: 7
+          - Item: hat_90633
+            Rate: 7
+          - Item: hat_90634
+            Rate: 7
+          - Item: hat_90635
+            Rate: 7
+          - Item: hat_90636
+            Rate: 7
+          - Item: hat_90637
+            Rate: 7
+          - Item: hat_90638
+            Rate: 7
+          - Item: hat_90639
+            Rate: 7
+          - Item: hat_90640
+            Rate: 7
+          - Item: hat_90641
+            Rate: 7
+          - Item: hat_90642
+            Rate: 7
+          - Item: hat_90643
+            Rate: 7
+          - Item: hat_90644
+            Rate: 7
+          - Item: hat_90645
+            Rate: 7
+          - Item: hat_90646
+            Rate: 7
+          - Item: hat_90647
+            Rate: 7
+          - Item: hat_90648
+            Rate: 7
+          - Item: hat_90649
+            Rate: 7
+          - Item: hat_90650
+            Rate: 7
+          - Item: hat_90651
+            Rate: 7
+          - Item: hat_90652
+            Rate: 7
+          - Item: hat_90653
+            Rate: 7
+          - Item: hat_90654
+            Rate: 7
+          - Item: hat_90655
+            Rate: 7
+          - Item: hat_90656
+            Rate: 7
+          - Item: hat_90657
+            Rate: 7
+          - Item: hat_90658
+            Rate: 7
+          - Item: hat_90659
+            Rate: 7
+          - Item: hat_90660
+            Rate: 7
+          - Item: hat_90661
+            Rate: 7
+          - Item: hat_90662
+            Rate: 7
+          - Item: hat_90663
+            Rate: 7
+          - Item: hat_90664
+            Rate: 7
+          - Item: hat_90665
+            Rate: 7
+          - Item: hat_90666
+            Rate: 7
+          - Item: hat_90667
+            Rate: 7
+          - Item: hat_90668
+            Rate: 7
+          - Item: hat_90669
+            Rate: 7
+          - Item: hat_90670
+            Rate: 7
+          - Item: hat_90671
+            Rate: 7
+          - Item: hat_90672
+            Rate: 7
+          - Item: hat_90673
+            Rate: 7
+          - Item: hat_90674
+            Rate: 7
+          - Item: hat_90675
+            Rate: 7
+          - Item: hat_90676
+            Rate: 7
+          - Item: hat_90677
+            Rate: 7
+          - Item: hat_90678
+            Rate: 7
+          - Item: hat_90679
+            Rate: 7
+          - Item: hat_90680
+            Rate: 7
+          - Item: hat_90681
+            Rate: 7
+          - Item: hat_90682
+            Rate: 7
+          - Item: hat_90683
+            Rate: 7
+          - Item: hat_90684
+            Rate: 7
+          - Item: hat_90685
+            Rate: 7
+          - Item: hat_90686
+            Rate: 7
+          - Item: hat_90687
+            Rate: 7
+          - Item: hat_90688
+            Rate: 7
+          - Item: hat_90689
+            Rate: 7
+          - Item: hat_90690
+            Rate: 7
+          - Item: hat_90691
+            Rate: 7
+          - Item: hat_90692
+            Rate: 7
+          - Item: hat_90693
+            Rate: 7
+          - Item: hat_90694
+            Rate: 7
+          - Item: hat_90695
+            Rate: 7
+          - Item: hat_90696
+            Rate: 7
+          - Item: hat_90697
+            Rate: 7
+          - Item: hat_90698
+            Rate: 7
+          - Item: hat_90699
+            Rate: 7
+          - Item: hat_90700
+            Rate: 7
+          - Item: hat_90701
+            Rate: 7
+          - Item: hat_90702
+            Rate: 7
+          - Item: hat_90703
+            Rate: 7
+          - Item: hat_90704
+            Rate: 7
+          - Item: hat_90705
+            Rate: 7
+          - Item: hat_90706
+            Rate: 7
+          - Item: hat_90707
+            Rate: 7
+          - Item: hat_90708
+            Rate: 7
+          - Item: hat_90709
+            Rate: 7
+          - Item: hat_90710
+            Rate: 7
+          - Item: hat_90711
+            Rate: 7
+          - Item: hat_90712
+            Rate: 7
+          - Item: hat_90713
+            Rate: 7
+          - Item: hat_90714
+            Rate: 7
+          - Item: hat_90715
+            Rate: 7
+          - Item: hat_90716
+            Rate: 7
+          - Item: hat_90717
+            Rate: 7
+          - Item: hat_90718
+            Rate: 7
+          - Item: hat_90719
+            Rate: 7
+          - Item: hat_90720
+            Rate: 7
+          - Item: hat_90721
+            Rate: 7
+          - Item: hat_90722
+            Rate: 7
+          - Item: hat_90723
+            Rate: 7
+          - Item: hat_90724
+            Rate: 7
+          - Item: hat_90725
+            Rate: 7
+          - Item: hat_90726
+            Rate: 7
+          - Item: hat_90727
+            Rate: 7
+          - Item: hat_90728
+            Rate: 7
+          - Item: hat_90729
+            Rate: 7
+          - Item: hat_90730
+            Rate: 7
+          - Item: hat_90731
+            Rate: 7
+          - Item: hat_90732
+            Rate: 7
+          - Item: hat_90733
+            Rate: 7
+          - Item: hat_90734
+            Rate: 7
+          - Item: hat_90735
+            Rate: 7
+          - Item: hat_90736
+            Rate: 7
+          - Item: hat_90737
+            Rate: 7
+          - Item: hat_90738
+            Rate: 7
+          - Item: hat_90739
+            Rate: 7
+          - Item: hat_90740
+            Rate: 7
+          - Item: hat_90741
+            Rate: 7
+          - Item: hat_90742
+            Rate: 7
+          - Item: hat_90743
+            Rate: 7
+          - Item: hat_90744
+            Rate: 7
+          - Item: hat_90745
+            Rate: 7
+          - Item: hat_90746
+            Rate: 7
+          - Item: hat_90747
+            Rate: 7
+          - Item: hat_90748
+            Rate: 7
+          - Item: hat_90749
+            Rate: 7
+          - Item: hat_90750
+            Rate: 7
+          - Item: hat_90751
+            Rate: 7
+          - Item: hat_90752
+            Rate: 7
+          - Item: hat_90753
+            Rate: 7
+          - Item: hat_90754
+            Rate: 7
+          - Item: hat_90755
+            Rate: 7
+          - Item: hat_90756
+            Rate: 7
+          - Item: hat_90757
+            Rate: 7
+          - Item: hat_90758
+            Rate: 7
+          - Item: hat_90759
+            Rate: 7
+          - Item: hat_90760
+            Rate: 7
+          - Item: hat_90761
+            Rate: 7
+          - Item: hat_90762
+            Rate: 7
+          - Item: hat_90763
+            Rate: 7
+          - Item: hat_90764
+            Rate: 7
+          - Item: hat_90765
+            Rate: 7
+          - Item: hat_90766
+            Rate: 7
+          - Item: hat_90767
+            Rate: 7
+          - Item: hat_90768
+            Rate: 7
+          - Item: hat_90769
+            Rate: 7
+          - Item: hat_90770
+            Rate: 7
+          - Item: hat_90771
+            Rate: 7
+          - Item: hat_90772
+            Rate: 7
+          - Item: hat_90773
+            Rate: 7
+          - Item: hat_90774
+            Rate: 7
+          - Item: hat_90775
+            Rate: 7
+          - Item: hat_90776
+            Rate: 7
+          - Item: hat_90777
+            Rate: 7
+          - Item: hat_90778
+            Rate: 7
+          - Item: hat_90779
+            Rate: 7
+          - Item: hat_90780
+            Rate: 7
+          - Item: hat_90781
+            Rate: 7
+          - Item: hat_90782
+            Rate: 7
+          - Item: hat_90783
+            Rate: 7
+          - Item: hat_90784
+            Rate: 7
+          - Item: hat_90785
+            Rate: 7
+          - Item: hat_90786
+            Rate: 7
+          - Item: hat_90787
+            Rate: 7
+          - Item: hat_90788
+            Rate: 7
+          - Item: hat_90789
+            Rate: 7
+          - Item: hat_90790
+            Rate: 7
+          - Item: hat_90791
+            Rate: 7
+          - Item: hat_90792
+            Rate: 7
+          - Item: hat_90793
+            Rate: 7
+          - Item: hat_90794
+            Rate: 7
+          - Item: hat_90795
+            Rate: 7
+          - Item: hat_90796
+            Rate: 7
+          - Item: hat_90797
+            Rate: 7
+          - Item: hat_90798
+            Rate: 7
+          - Item: hat_90799
+            Rate: 7
+          - Item: hat_90800
+            Rate: 7
+          - Item: hat_90801
+            Rate: 7
+          - Item: hat_90802
+            Rate: 7
+          - Item: hat_90803
+            Rate: 7
+          - Item: hat_90804
+            Rate: 7
+          - Item: hat_90805
+            Rate: 7
+          - Item: hat_90806
+            Rate: 7
+          - Item: hat_90807
+            Rate: 7
+          - Item: hat_90808
+            Rate: 7
+          - Item: hat_90809
+            Rate: 7
+          - Item: hat_90810
+            Rate: 7
+          - Item: hat_90811
+            Rate: 7
+          - Item: hat_90812
+            Rate: 7
+          - Item: hat_90813
+            Rate: 7
+          - Item: hat_90814
+            Rate: 7
+          - Item: hat_90815
+            Rate: 7
+          - Item: hat_90816
+            Rate: 7
+          - Item: hat_90817
+            Rate: 7
+          - Item: hat_90818
+            Rate: 7
+          - Item: hat_90819
+            Rate: 7
+          - Item: hat_90820
+            Rate: 7
+          - Item: hat_90821
+            Rate: 7
+          - Item: hat_90822
+            Rate: 7
+          - Item: hat_90823
+            Rate: 7
+          - Item: hat_90824
+            Rate: 7
+          - Item: hat_90825
+            Rate: 7
+          - Item: hat_90826
+            Rate: 7
+          - Item: hat_90827
+            Rate: 7
+          - Item: hat_90828
+            Rate: 7
+          - Item: hat_90829
+            Rate: 7
+          - Item: hat_90830
+            Rate: 7
+          - Item: hat_90831
+            Rate: 7
+          - Item: hat_90832
+            Rate: 7
+          - Item: hat_90833
+            Rate: 7
+          - Item: hat_90834
+            Rate: 7
+          - Item: hat_90835
+            Rate: 7
+          - Item: hat_90836
+            Rate: 7
+          - Item: hat_90837
+            Rate: 7
+          - Item: hat_90838
+            Rate: 7
+          - Item: hat_90839
+            Rate: 7
+          - Item: hat_90840
+            Rate: 7
+          - Item: hat_90841
+            Rate: 7
+          - Item: hat_90842
+            Rate: 7
+          - Item: hat_90843
+            Rate: 7
+          - Item: hat_90844
+            Rate: 7
+          - Item: hat_90845
+            Rate: 7
+          - Item: hat_90846
+            Rate: 7
+          - Item: hat_90847
+            Rate: 7
+          - Item: hat_90848
+            Rate: 7
+          - Item: hat_90849
+            Rate: 7
+          - Item: hat_90850
+            Rate: 7
+          - Item: hat_90851
+            Rate: 7
+          - Item: hat_90852
+            Rate: 7
+          - Item: hat_90853
+            Rate: 7
+          - Item: hat_90854
+            Rate: 7
+          - Item: hat_90855
+            Rate: 7
+          - Item: hat_90856
+            Rate: 7
+          - Item: hat_90857
+            Rate: 7
+          - Item: hat_90858
+            Rate: 7
+          - Item: hat_90859
+            Rate: 7
+          - Item: hat_90860
+            Rate: 7
+          - Item: hat_90861
+            Rate: 7
+          - Item: hat_90862
+            Rate: 7
+          - Item: hat_90863
+            Rate: 7
+          - Item: hat_90864
+            Rate: 7
+          - Item: hat_90865
+            Rate: 7
+          - Item: hat_90866
+            Rate: 7
+          - Item: hat_90867
+            Rate: 7
+          - Item: hat_90868
+            Rate: 7
+          - Item: hat_90869
+            Rate: 7
+          - Item: hat_90870
+            Rate: 7
+          - Item: hat_90871
+            Rate: 7
+          - Item: hat_90872
+            Rate: 7
+          - Item: hat_90873
+            Rate: 7
+          - Item: hat_90874
+            Rate: 7
+          - Item: hat_90875
+            Rate: 7
+          - Item: hat_90876
+            Rate: 7
+          - Item: hat_90877
+            Rate: 7
+          - Item: hat_90878
+            Rate: 7
+          - Item: hat_90879
+            Rate: 7
+          - Item: hat_90880
+            Rate: 7
+          - Item: hat_90881
+            Rate: 7
+          - Item: hat_90882
+            Rate: 7
+          - Item: hat_90883
+            Rate: 7
+          - Item: hat_90884
+            Rate: 7
+          - Item: hat_90885
+            Rate: 7
+          - Item: hat_90886
+            Rate: 7
+          - Item: hat_90887
+            Rate: 7
+          - Item: hat_90888
+            Rate: 7
+          - Item: hat_90889
+            Rate: 7
+          - Item: hat_90890
+            Rate: 7
+          - Item: hat_90891
+            Rate: 7
+          - Item: hat_90892
+            Rate: 7
+          - Item: hat_90893
+            Rate: 7
+          - Item: hat_90894
+            Rate: 7
+          - Item: hat_90895
+            Rate: 7
+          - Item: hat_90896
+            Rate: 7
+          - Item: hat_90897
+            Rate: 7
+          - Item: hat_90898
+            Rate: 7
+          - Item: hat_90899
+            Rate: 7
+          - Item: hat_90900
+            Rate: 7
+          - Item: hat_90901
+            Rate: 7
+          - Item: hat_90902
+            Rate: 7
+          - Item: hat_90903
+            Rate: 7
+          - Item: hat_90904
+            Rate: 7
+          - Item: hat_90905
+            Rate: 7
+          - Item: hat_90906
+            Rate: 7
+          - Item: hat_90907
+            Rate: 7
+          - Item: hat_90908
+            Rate: 7
+          - Item: hat_90909
+            Rate: 7
+          - Item: hat_90910
+            Rate: 7
+          - Item: hat_90911
+            Rate: 7
+          - Item: hat_90912
+            Rate: 7
+          - Item: hat_90913
+            Rate: 7
+          - Item: hat_90914
+            Rate: 7
+          - Item: hat_90915
+            Rate: 7
+          - Item: hat_90916
+            Rate: 7
+          - Item: hat_90917
+            Rate: 7
+          - Item: hat_90918
+            Rate: 7
+          - Item: hat_90919
+            Rate: 7
+          - Item: hat_90920
+            Rate: 7
+          - Item: hat_90921
+            Rate: 7
+          - Item: hat_90922
+            Rate: 7
+          - Item: hat_90923
+            Rate: 7
+          - Item: hat_90924
+            Rate: 7
+          - Item: hat_90925
+            Rate: 7
+          - Item: hat_90926
+            Rate: 7
+          - Item: hat_90927
+            Rate: 7
+          - Item: hat_90928
+            Rate: 7
+          - Item: hat_90929
+            Rate: 7
+          - Item: hat_90930
+            Rate: 7
+          - Item: hat_90931
+            Rate: 7
+          - Item: hat_90932
+            Rate: 7
+          - Item: hat_90933
+            Rate: 7
+          - Item: hat_90934
+            Rate: 7
+          - Item: hat_90935
+            Rate: 7
+          - Item: hat_90936
+            Rate: 7
+          - Item: hat_90937
+            Rate: 7
+          - Item: hat_90938
+            Rate: 7
+          - Item: hat_90939
+            Rate: 7
+          - Item: hat_90940
+            Rate: 7
+          - Item: hat_90941
+            Rate: 7
+          - Item: hat_90942
+            Rate: 7
+          - Item: hat_90943
+            Rate: 7
+          - Item: hat_90944
+            Rate: 7
+          - Item: hat_90945
+            Rate: 7
+          - Item: hat_90946
+            Rate: 7
+          - Item: hat_90947
+            Rate: 7
+          - Item: hat_90948
+            Rate: 7
+          - Item: hat_90949
+            Rate: 7
+          - Item: hat_90950
+            Rate: 7
+          - Item: hat_90951
+            Rate: 7
+          - Item: hat_90952
+            Rate: 7
+          - Item: hat_90953
+            Rate: 7
+          - Item: hat_90954
+            Rate: 7
+          - Item: hat_90955
+            Rate: 7
+          - Item: hat_90956
+            Rate: 7
+          - Item: hat_90957
+            Rate: 7
+          - Item: hat_90958
+            Rate: 7
+          - Item: hat_90959
+            Rate: 7
+          - Item: hat_90960
+            Rate: 7
+          - Item: hat_90961
+            Rate: 7
+          - Item: hat_90962
+            Rate: 7
+          - Item: hat_90963
+            Rate: 7
+          - Item: hat_90964
+            Rate: 7
+          - Item: hat_90965
+            Rate: 7
+          - Item: hat_90966
+            Rate: 7
+          - Item: hat_90967
+            Rate: 7
+          - Item: hat_90968
+            Rate: 7
+          - Item: hat_90969
+            Rate: 7
+          - Item: hat_90970
+            Rate: 7
+          - Item: hat_90971
+            Rate: 7
+          - Item: hat_90972
+            Rate: 7
+          - Item: hat_90973
+            Rate: 7
+          - Item: hat_90974
+            Rate: 7
+          - Item: hat_90975
+            Rate: 7
+          - Item: hat_90976
+            Rate: 7
+          - Item: hat_90977
+            Rate: 7
+          - Item: hat_90978
+            Rate: 7
+          - Item: hat_90979
+            Rate: 7
+          - Item: hat_90980
+            Rate: 7
+          - Item: hat_90981
+            Rate: 7
+          - Item: hat_90982
+            Rate: 7
+          - Item: hat_90983
+            Rate: 7
+          - Item: hat_90984
+            Rate: 7
+          - Item: hat_90985
+            Rate: 7
+          - Item: hat_90986
+            Rate: 7
+          - Item: hat_90987
+            Rate: 7
+          - Item: hat_90988
+            Rate: 7
+          - Item: hat_90989
+            Rate: 7
+          - Item: hat_90990
+            Rate: 7
+          - Item: hat_90991
+            Rate: 7
+          - Item: hat_90992
+            Rate: 7
+          - Item: hat_90993
+            Rate: 7
+          - Item: hat_90994
+            Rate: 7
+          - Item: hat_90995
+            Rate: 7
+          - Item: hat_90996
+            Rate: 7
+          - Item: hat_90997
+            Rate: 7
+          - Item: hat_90998
+            Rate: 7
+          - Item: hat_90999
+            Rate: 7
+          - Item: hat_91000
+            Rate: 7
+          - Item: hat_91001
+            Rate: 7
+          - Item: hat_91002
+            Rate: 7
+          - Item: hat_91003
+            Rate: 7
+          - Item: hat_91004
+            Rate: 7
+          - Item: hat_91005
+            Rate: 7
+          - Item: hat_91006
+            Rate: 7
+          - Item: hat_91007
+            Rate: 7
+          - Item: hat_91008
+            Rate: 7
+          - Item: hat_91009
+            Rate: 7
+          - Item: hat_91010
+            Rate: 7
+          - Item: hat_91011
+            Rate: 7
+          - Item: hat_91012
+            Rate: 7
+          - Item: hat_91013
+            Rate: 7
+          - Item: hat_91014
+            Rate: 7
+          - Item: hat_91015
+            Rate: 7
+          - Item: hat_91016
+            Rate: 7
+          - Item: hat_91017
+            Rate: 7
+          - Item: hat_91018
+            Rate: 7
+          - Item: hat_91019
+            Rate: 7
+          - Item: hat_91020
+            Rate: 7
+          - Item: hat_91021
+            Rate: 7
+          - Item: hat_91022
+            Rate: 7
+          - Item: hat_91023
+            Rate: 7
+          - Item: hat_91024
+            Rate: 7
+          - Item: hat_91025
+            Rate: 7
+          - Item: hat_91026
+            Rate: 7
+          - Item: hat_91027
+            Rate: 7
+          - Item: hat_91028
+            Rate: 7
+          - Item: hat_91029
+            Rate: 7
+          - Item: hat_91030
+            Rate: 7
+          - Item: hat_91031
+            Rate: 7
+          - Item: hat_91032
+            Rate: 7
+          - Item: hat_91033
+            Rate: 7
+          - Item: hat_91034
+            Rate: 7
+          - Item: hat_91035
+            Rate: 7
+          - Item: hat_91036
+            Rate: 7
+          - Item: hat_91037
+            Rate: 7
+          - Item: hat_91038
+            Rate: 7
+          - Item: hat_91039
+            Rate: 7
+          - Item: hat_91040
+            Rate: 7
+          - Item: hat_91041
+            Rate: 7
+          - Item: hat_91042
+            Rate: 7
+          - Item: hat_91043
+            Rate: 7
+          - Item: hat_91044
+            Rate: 7
+          - Item: hat_91045
+            Rate: 7
+          - Item: hat_91046
+            Rate: 7
+          - Item: hat_91047
+            Rate: 7
+          - Item: hat_91048
+            Rate: 7
+          - Item: hat_91049
+            Rate: 7
+          - Item: hat_91050
+            Rate: 7
+          - Item: hat_91051
+            Rate: 7
+          - Item: hat_91052
+            Rate: 7
+          - Item: hat_91053
+            Rate: 7
+          - Item: hat_91054
+            Rate: 7
+          - Item: hat_91055
+            Rate: 7
+          - Item: hat_91056
+            Rate: 7
+          - Item: hat_91057
+            Rate: 7
+          - Item: hat_91058
+            Rate: 7
+          - Item: hat_91059
+            Rate: 7
+          - Item: hat_91060
+            Rate: 7
+          - Item: hat_91061
+            Rate: 7
+          - Item: hat_91062
+            Rate: 7
+          - Item: hat_91063
+            Rate: 7
+          - Item: hat_91064
+            Rate: 7
+          - Item: hat_91065
+            Rate: 7
+          - Item: hat_91066
+            Rate: 7
+          - Item: hat_91067
+            Rate: 7
+          - Item: hat_91068
+            Rate: 7
+          - Item: hat_91069
+            Rate: 7
+          - Item: hat_91070
+            Rate: 7
+          - Item: hat_91071
+            Rate: 7
+          - Item: hat_91072
+            Rate: 7
+          - Item: hat_91073
+            Rate: 7
+          - Item: hat_91074
+            Rate: 7
+          - Item: hat_91075
+            Rate: 7
+          - Item: hat_91076
+            Rate: 7
+          - Item: hat_91077
+            Rate: 7
+          - Item: hat_91078
+            Rate: 7
+          - Item: hat_91079
+            Rate: 7
+          - Item: hat_91080
+            Rate: 7
+          - Item: hat_91081
+            Rate: 7
+          - Item: hat_91082
+            Rate: 7
+          - Item: hat_91083
+            Rate: 7
+          - Item: hat_91084
+            Rate: 7
+          - Item: hat_91085
+            Rate: 7
+          - Item: hat_91086
+            Rate: 7
+          - Item: hat_91087
+            Rate: 7
+          - Item: hat_91088
+            Rate: 7
+          - Item: hat_91089
+            Rate: 7
+          - Item: hat_91090
+            Rate: 7
+          - Item: hat_91091
+            Rate: 7
+          - Item: hat_91092
+            Rate: 7
+          - Item: hat_91093
+            Rate: 7
+          - Item: hat_91094
+            Rate: 7
+          - Item: hat_91095
+            Rate: 7
+          - Item: hat_91096
+            Rate: 7
+          - Item: hat_91097
+            Rate: 7
+          - Item: hat_91098
+            Rate: 7
+          - Item: hat_91099
+            Rate: 7
+          - Item: hat_91100
+            Rate: 7
+          - Item: hat_91101
+            Rate: 7
+          - Item: hat_91102
+            Rate: 7
+          - Item: hat_91103
+            Rate: 7
+          - Item: hat_91104
+            Rate: 7
+          - Item: hat_91105
+            Rate: 7
+          - Item: hat_91106
+            Rate: 7
+          - Item: hat_91107
+            Rate: 7
+          - Item: hat_91108
+            Rate: 7
+          - Item: hat_91109
+            Rate: 7
+          - Item: hat_91110
+            Rate: 7
+          - Item: hat_91111
+            Rate: 7
+          - Item: hat_91112
+            Rate: 7
+          - Item: hat_91113
+            Rate: 7
+          - Item: hat_91114
+            Rate: 7
+          - Item: hat_91115
+            Rate: 7
+          - Item: hat_91116
+            Rate: 7
+          - Item: hat_91117
+            Rate: 7
+          - Item: hat_91118
+            Rate: 7
+          - Item: hat_91119
+            Rate: 7
+          - Item: hat_91120
+            Rate: 7
+          - Item: hat_91121
+            Rate: 7
+          - Item: hat_91122
+            Rate: 7
+          - Item: hat_91123
+            Rate: 7
+          - Item: hat_91124
+            Rate: 7
+          - Item: hat_91125
+            Rate: 7
+          - Item: hat_91126
+            Rate: 7
+          - Item: hat_91127
+            Rate: 7
+          - Item: hat_91128
+            Rate: 7
+          - Item: hat_91129
+            Rate: 7
+          - Item: hat_91130
+            Rate: 7
+          - Item: hat_91131
+            Rate: 7
+          - Item: hat_91132
+            Rate: 7
+          - Item: hat_91133
+            Rate: 7
+          - Item: hat_91134
+            Rate: 7
+          - Item: hat_91135
+            Rate: 7
+          - Item: hat_91136
+            Rate: 7
+          - Item: hat_91137
+            Rate: 7
+          - Item: hat_91138
+            Rate: 7
+          - Item: hat_91139
+            Rate: 7
+          - Item: hat_91140
+            Rate: 7
+          - Item: hat_91141
+            Rate: 7
+          - Item: hat_91142
+            Rate: 7
+          - Item: hat_91143
+            Rate: 7
+          - Item: hat_91144
+            Rate: 7
+          - Item: hat_91145
+            Rate: 7
+          - Item: hat_91146
+            Rate: 7
+          - Item: hat_91147
+            Rate: 7
+          - Item: hat_91148
+            Rate: 7
+          - Item: hat_91149
+            Rate: 7
+          - Item: hat_91150
+            Rate: 7
+          - Item: hat_91151
+            Rate: 7
+          - Item: hat_91152
+            Rate: 7
+          - Item: hat_91153
+            Rate: 7
+          - Item: hat_91154
+            Rate: 7
+          - Item: hat_91155
+            Rate: 7
+          - Item: hat_91156
+            Rate: 7
+          - Item: hat_91157
+            Rate: 7
+          - Item: hat_91158
+            Rate: 7
+          - Item: hat_91159
+            Rate: 7
+          - Item: hat_91160
+            Rate: 7
+          - Item: hat_91161
+            Rate: 7
+          - Item: hat_91162
+            Rate: 7
+          - Item: hat_91163
+            Rate: 7
+          - Item: hat_91164
+            Rate: 7
+          - Item: hat_91165
+            Rate: 7
+          - Item: hat_91166
+            Rate: 7
+          - Item: hat_91167
+            Rate: 7
+          - Item: hat_91168
+            Rate: 7
+          - Item: hat_91169
+            Rate: 7
+          - Item: hat_91170
+            Rate: 7
+          - Item: hat_91171
+            Rate: 7
+          - Item: hat_91172
+            Rate: 7
+          - Item: hat_91173
+            Rate: 7
+          - Item: hat_91174
+            Rate: 7
+          - Item: hat_91175
+            Rate: 7
+          - Item: hat_91176
+            Rate: 7
+          - Item: hat_91177
+            Rate: 7
+          - Item: hat_91178
+            Rate: 7
+          - Item: hat_91179
+            Rate: 7
+          - Item: hat_91180
+            Rate: 7
+          - Item: hat_91181
+            Rate: 7
+          - Item: hat_91182
+            Rate: 7
+          - Item: hat_91183
+            Rate: 7
+          - Item: hat_91184
+            Rate: 7
+          - Item: hat_91185
+            Rate: 7
+          - Item: hat_91186
+            Rate: 7
+          - Item: hat_91187
+            Rate: 7
+          - Item: hat_91188
+            Rate: 7
+          - Item: hat_91189
+            Rate: 7
+          - Item: hat_91190
+            Rate: 7
+          - Item: hat_91191
+            Rate: 7
+          - Item: hat_91192
+            Rate: 7
+          - Item: hat_91193
+            Rate: 7
+          - Item: hat_91194
+            Rate: 7
+          - Item: hat_91195
+            Rate: 7
+          - Item: hat_91196
+            Rate: 7
+          - Item: hat_91197
+            Rate: 7
+          - Item: hat_91198
+            Rate: 7
+          - Item: hat_91199
+            Rate: 7
+          - Item: hat_91200
+            Rate: 7
+          - Item: hat_91201
+            Rate: 7
+          - Item: hat_91202
+            Rate: 7
+          - Item: hat_91203
+            Rate: 7
+          - Item: hat_91204
+            Rate: 7
+          - Item: hat_91205
+            Rate: 7
+          - Item: hat_91206
+            Rate: 7
+          - Item: hat_91207
+            Rate: 7
+          - Item: hat_91208
+            Rate: 7
+          - Item: hat_91209
+            Rate: 7
+          - Item: hat_91210
+            Rate: 7
+          - Item: hat_91211
+            Rate: 7
+          - Item: hat_91212
+            Rate: 7
+          - Item: hat_91213
+            Rate: 7
+          - Item: hat_91214
+            Rate: 7
+          - Item: hat_91215
+            Rate: 7
+          - Item: hat_91216
+            Rate: 7
+          - Item: hat_91217
+            Rate: 7
+          - Item: hat_91218
+            Rate: 7
+          - Item: hat_91219
+            Rate: 7
+          - Item: hat_91220
+            Rate: 7
+          - Item: hat_91221
+            Rate: 7
+          - Item: hat_91222
+            Rate: 7
+          - Item: hat_91223
+            Rate: 7
+          - Item: hat_91224
+            Rate: 7
+          - Item: hat_91225
+            Rate: 7
+          - Item: hat_91226
+            Rate: 7
+          - Item: hat_91227
+            Rate: 7
+          - Item: hat_91228
+            Rate: 7
+          - Item: hat_91229
+            Rate: 7
+          - Item: hat_91230
+            Rate: 7
+          - Item: hat_91231
+            Rate: 7
+          - Item: hat_91232
+            Rate: 7
+          - Item: hat_91233
+            Rate: 7
+          - Item: hat_91234
+            Rate: 7
+          - Item: hat_91235
+            Rate: 7
+          - Item: hat_91236
+            Rate: 7
+          - Item: hat_91237
+            Rate: 7
+          - Item: hat_91238
+            Rate: 7
+          - Item: hat_91239
+            Rate: 7
+          - Item: hat_91240
+            Rate: 7
+          - Item: hat_91241
+            Rate: 7
+          - Item: hat_91242
+            Rate: 7
+          - Item: hat_91243
+            Rate: 7
+          - Item: hat_91244
+            Rate: 7
+          - Item: hat_91245
+            Rate: 7
+          - Item: hat_91246
+            Rate: 7
+          - Item: hat_91247
+            Rate: 7
+          - Item: hat_91248
+            Rate: 7
+          - Item: hat_91249
+            Rate: 7
+          - Item: hat_91250
+            Rate: 7
+          - Item: hat_91251
+            Rate: 7
+          - Item: hat_91252
+            Rate: 7
+          - Item: hat_91253
+            Rate: 7
+          - Item: hat_91254
+            Rate: 7
+          - Item: hat_91255
+            Rate: 7
+          - Item: hat_91256
+            Rate: 7
+          - Item: hat_91257
+            Rate: 7
+          - Item: hat_91258
+            Rate: 7
+          - Item: hat_91259
+            Rate: 7
+          - Item: hat_91260
+            Rate: 7
+          - Item: hat_91261
+            Rate: 7
+          - Item: hat_91262
+            Rate: 7
+          - Item: hat_91263
+            Rate: 7
+          - Item: hat_91264
+            Rate: 7
+          - Item: hat_91265
+            Rate: 7
+          - Item: hat_91266
+            Rate: 7
+          - Item: hat_91267
+            Rate: 7
+          - Item: hat_91268
+            Rate: 7
+          - Item: hat_91269
+            Rate: 7
+          - Item: hat_91270
+            Rate: 7
+          - Item: hat_91271
+            Rate: 7
+          - Item: hat_91272
+            Rate: 7
+          - Item: hat_91273
+            Rate: 7
+          - Item: hat_91274
+            Rate: 7
+          - Item: hat_91275
+            Rate: 7
+          - Item: hat_91276
+            Rate: 7
+          - Item: hat_91277
+            Rate: 7
+          - Item: hat_91278
+            Rate: 7
+          - Item: hat_91279
+            Rate: 7
+          - Item: hat_91280
+            Rate: 7
+          - Item: hat_91281
+            Rate: 7
+          - Item: hat_91282
+            Rate: 7
+          - Item: hat_91283
+            Rate: 7
+          - Item: hat_91284
+            Rate: 7
+          - Item: hat_91285
+            Rate: 7
+          - Item: hat_91286
+            Rate: 7
+          - Item: hat_91287
+            Rate: 7
+          - Item: hat_91288
+            Rate: 7
+          - Item: hat_91289
+            Rate: 7
+          - Item: hat_91290
+            Rate: 7
+          - Item: hat_91291
+            Rate: 7
+          - Item: hat_91292
+            Rate: 7
+          - Item: hat_91293
+            Rate: 7
+          - Item: hat_91294
+            Rate: 7
+          - Item: hat_91295
+            Rate: 7
+          - Item: hat_91296
+            Rate: 7
+          - Item: hat_91297
+            Rate: 7
+          - Item: hat_91298
+            Rate: 7
+          - Item: hat_91299
+            Rate: 7
+          - Item: hat_91300
+            Rate: 7
+          - Item: hat_91301
+            Rate: 7
+          - Item: hat_91302
+            Rate: 7
+          - Item: hat_91303
+            Rate: 7
+          - Item: hat_91304
+            Rate: 7
+          - Item: hat_91305
+            Rate: 7
+          - Item: hat_91306
+            Rate: 7
+          - Item: hat_91307
+            Rate: 7
+          - Item: hat_91308
+            Rate: 7
+          - Item: hat_91309
+            Rate: 7
+          - Item: hat_91310
+            Rate: 7
+          - Item: hat_91311
+            Rate: 7
+          - Item: hat_91312
+            Rate: 7
+          - Item: hat_91313
+            Rate: 7
+          - Item: hat_91314
+            Rate: 7
+          - Item: hat_91315
+            Rate: 7
+          - Item: hat_91316
+            Rate: 7
+          - Item: hat_91317
+            Rate: 7
+          - Item: hat_91318
+            Rate: 7
+          - Item: hat_91319
+            Rate: 7
+          - Item: hat_91320
+            Rate: 7
+          - Item: hat_91321
+            Rate: 7
+          - Item: hat_91322
+            Rate: 7
+          - Item: hat_91323
+            Rate: 7
+          - Item: hat_91324
+            Rate: 7
+          - Item: hat_91325
+            Rate: 7
+          - Item: hat_91326
+            Rate: 7
+          - Item: hat_91327
+            Rate: 7
+          - Item: hat_91328
+            Rate: 7
+          - Item: hat_91329
+            Rate: 7
+          - Item: hat_91330
+            Rate: 7
+          - Item: hat_91331
+            Rate: 7
+          - Item: hat_91332
+            Rate: 7
+          - Item: hat_91333
+            Rate: 7
+          - Item: hat_91334
+            Rate: 7
+          - Item: hat_91335
+            Rate: 7
+          - Item: hat_91336
+            Rate: 7
+          - Item: hat_91337
+            Rate: 7
+          - Item: hat_91338
+            Rate: 7
+          - Item: hat_91339
+            Rate: 7
+          - Item: hat_91340
+            Rate: 7
+          - Item: hat_91341
+            Rate: 7
+          - Item: hat_91342
+            Rate: 7
+          - Item: hat_91343
+            Rate: 7
+          - Item: hat_91344
+            Rate: 7
+          - Item: hat_91345
+            Rate: 7
+          - Item: hat_91346
+            Rate: 7
+          - Item: hat_91347
+            Rate: 7
+          - Item: hat_91348
+            Rate: 7
+          - Item: hat_91349
+            Rate: 7
+          - Item: hat_91350
+            Rate: 7
+          - Item: hat_91351
+            Rate: 7
+          - Item: hat_91352
+            Rate: 7
+          - Item: hat_91353
+            Rate: 7
+          - Item: hat_91354
+            Rate: 7
+          - Item: hat_91355
+            Rate: 7
+          - Item: hat_91356
+            Rate: 7
+          - Item: hat_91357
+            Rate: 7
+          - Item: hat_91358
+            Rate: 7
+          - Item: hat_91359
+            Rate: 7
+          - Item: hat_91360
+            Rate: 7
+          - Item: hat_91361
+            Rate: 7
+          - Item: hat_91362
+            Rate: 7
+          - Item: hat_91363
+            Rate: 7
+          - Item: hat_91364
+            Rate: 7
+          - Item: hat_91365
+            Rate: 7
+          - Item: hat_91366
+            Rate: 7
+          - Item: hat_91367
+            Rate: 7
+          - Item: hat_91368
+            Rate: 7
+          - Item: hat_91369
+            Rate: 7
+          - Item: hat_91370
+            Rate: 7
+          - Item: hat_91371
+            Rate: 7
+          - Item: hat_91372
+            Rate: 7
+          - Item: hat_91373
+            Rate: 7
+          - Item: hat_91374
+            Rate: 7
+          - Item: hat_91375
+            Rate: 7
+          - Item: hat_91376
+            Rate: 7
+          - Item: hat_91377
+            Rate: 7
+          - Item: hat_91378
+            Rate: 7
+          - Item: hat_91379
+            Rate: 7
+          - Item: hat_91380
+            Rate: 7
+          - Item: hat_91381
+            Rate: 7
+          - Item: hat_91382
+            Rate: 7
+          - Item: hat_91383
+            Rate: 7
+          - Item: hat_91384
+            Rate: 7
+          - Item: hat_91385
+            Rate: 7
+          - Item: hat_91386
+            Rate: 7
+          - Item: hat_91387
+            Rate: 7
+          - Item: hat_91388
+            Rate: 7
+          - Item: hat_91389
+            Rate: 7
+          - Item: hat_91390
+            Rate: 7
+          - Item: hat_91391
+            Rate: 7
+          - Item: hat_91392
+            Rate: 7
+          - Item: hat_91393
+            Rate: 7
+          - Item: hat_91394
+            Rate: 7
+          - Item: hat_91395
+            Rate: 7
+          - Item: hat_91396
+            Rate: 7
+          - Item: hat_91397
+            Rate: 7
+          - Item: hat_91398
+            Rate: 7
+          - Item: hat_91399
+            Rate: 7
+          - Item: hat_91400
