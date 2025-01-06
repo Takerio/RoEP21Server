@@ -1157,7 +1157,7 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
             case 2:
 	        mes "[每日任務情報員]";
             mes "那你想要接取什麼特殊任務呢？";
-            switch(select("服飾大雜燴","回報所有特殊任務"))
+            switch(select("服飾大雜燴","寵物蛋抽抽樂箱任務","回報所有特殊任務"))
             {
   //1 服飾大雜燴
             case 1:
@@ -1215,7 +1215,7 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
 			    close;
 //回報特殊任務
 
-            case 2:
+            case 3:
      // 服飾大雜燴回報
             if(checkquest(80000,HUNTING)==2)
             {              
