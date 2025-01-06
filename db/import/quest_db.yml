@@ -2726,7 +2726,6 @@ Body:
     Targets:
       - Id: 1
         Count: 300
-        MinLevel: 200
   - Id: 80001
     Title: 服飾大雜燴任務-等候
     TimeLimit: +24h
