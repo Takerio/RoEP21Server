@@ -1224,7 +1224,6 @@ trinity,127,93,6	script	每日任務情報員#li	643,{
                 getitem 950000,1;
                 dispbottom "已完成今日服飾大雜燴任務";
             }  
-                close;
      // 寵物蛋抽抽樂箱回報
             if(checkquest(80002,HUNTING)==2)
             {              
