@@ -2074,10 +2074,10 @@ Body:
     Name: 大嘴鳥蛋寵物蛋
     Type: Petegg
     Buy: 20
-  - Id: 960061
-    AegisName: item_960061
-    Name: 闇●騎士領主賽依連寵物蛋
-    Type: Petegg
+  # - Id: 960061
+  #   AegisName: item_960061
+  #   Name: 闇●騎士領主賽依連寵物蛋
+  #   Type: Petegg
     Buy: 20
   - Id: 960062
     AegisName: item_960062
