@@ -1767,7 +1767,7 @@ Body:
     Buy: 20
     Script: |
       .@ran = rand(960000,961731);
-      dispbottom "寵物蛋編號: .@ran;
+      dispbottom "寵物蛋編號: " + .@ran;
       atcommand "@makeegg " + .@ran;
   - Id: 960000
     AegisName: item_960000
