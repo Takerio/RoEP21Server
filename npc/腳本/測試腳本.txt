@@ -26,9 +26,9 @@ setarray .@questRequiredAmount[0],30;
     end;
     }
 
-trinity,127,93,6	script	卡片升級任務員#li	643,{
+trinity,127,93,6	script	每日任務情報員#li	643,{
     set .@mvpcard1,30;
-	mes "[卡片升級任務員]";
+	mes "[每日任務情報員]";
 	mes "我是負責卡片升級任務的學者";
 	mes "我可以幫你升級可以升級的卡片任務～";
     mes "你想要做甚麼呢？";
@@ -37,7 +37,7 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
     {
 //卡片選單
             case 1:
-	        mes "[卡片升級任務員]";
+	        mes "[每日任務情報員]";
             mes "那你想要接取哪張卡片升級的任務呢？";
             switch(select("俄塞里斯卡片-等級1","巴風特卡片-等級1","死靈卡片-等級1","蜂后卡片-等級1","黃金蟲卡片-等級1","獸人英雄卡片-等級1","海盜之王卡片-等級1","虎王卡片-等級1","蟻后卡片-等級1","月夜貓卡片-等級1","法老王卡片-等級1","皮里恩卡片-等級1","獸人酋長卡片-等級1","冰暴騎士卡片-等級1","卡崙卡片-等級1","黑暗之王卡片-等級1","烏龜將軍卡片-等級1","死靈騎士卡片-等級1","德古拉伯爵卡片-等級1","墨蛇君卡片-等級1","元靈武士卡片-等級1","古埃及王卡片-等級1","塔奧群卡卡片-等級1","RSX-0806卡片-等級1","白素貞卡片-等級1","貝思波卡片-等級1","嗒妮小姐卡片-等級1","魔劍士 達納托斯的記憶卡片-等級1","迪塔勒泰晤勒斯卡片-等級1","齊爾-D-01卡片-等級1","巴基力 蘭特克力斯卡片-等級1","幽暗夢魘卡片-等級1","水晶龍卡片-等級1","阿特羅斯卡片-等級1","伊夫利特卡片-等級1","墮落大神官卡片-等級1","貝雷傑卡片-等級1","青冠龍卡片-等級1","魔神夢羅克卡片-等級1","波伊塔塔卡片-等級1","女王甲蟲卡片-等級1"))
             {
@@ -46,19 +46,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
             case 1:
 			    if(checkquest(70000,HUNTING)>=0)
                     {
-                        mes "[卡片升級任務員]"; 
+                        mes "[每日任務情報員]"; 
                         mes "您已經接了這個任務了唷~!"; 
                         close;
                     }
 			    if(checkquest(70001,PLAYTIME)==0)
                     {
-                        mes "[卡片升級任務員]"; 
+                        mes "[每日任務情報員]"; 
                         mes "你今天已經接取過這個任務了"; 
                         close;
                     }
 			    if(checkquest(70001,PLAYTIME)==1)
                     {
-                         mes "[卡片升級任務員]"; 
+                         mes "[每日任務情報員]"; 
                          mes "你今天已經接取過這個任務了"; 
                          close;
                     }
@@ -73,19 +73,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 2:
 			    if(checkquest(70002,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]"; 
+                    mes "[每日任務情報員]"; 
                     mes "您已經接了這個任務了唷~!"; 
                     close;
                 }
 			    if(checkquest(70003,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]"; 
+                    mes "[每日任務情報員]"; 
                     mes "你今天已經接取過這個任務了"; 
                     close;
                 }
 			    if(checkquest(70002,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
@@ -100,19 +100,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 3:
 			    if(checkquest(70004,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                      close;
                 }
 			    if(checkquest(70005,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                      close;
                 }
 			    if(checkquest(70004,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
@@ -127,19 +127,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 4:
 			    if(checkquest(70006,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70007,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70006,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -154,19 +154,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 5:
 			    if(checkquest(70008,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70009,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70008,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -181,19 +181,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 6:
 			    if(checkquest(70010,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70011,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70010,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -208,19 +208,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 7:
 			    if(checkquest(70012,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70013,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70012,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -235,19 +235,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 8:
 			    if(checkquest(70014,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70015,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70014,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -262,19 +262,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 9:
 			    if(checkquest(70016,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70017,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70016,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -289,19 +289,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 10:
 			    if(checkquest(70018,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70019,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70018,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -316,19 +316,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 11:
 			    if(checkquest(70020,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70021,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70020,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -343,19 +343,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 12:
 			    if(checkquest(70022,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70023,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70022,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -370,19 +370,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 13:
 			    if(checkquest(70024,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70025,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70024,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -397,19 +397,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 14:
 			    if(checkquest(70026,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70027,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70026,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -424,19 +424,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 15:
 			    if(checkquest(70028,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70029,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70028,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -451,19 +451,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 16:
 			    if(checkquest(70030,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70031,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70030,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -478,19 +478,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 17:
 			    if(checkquest(70032,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70033,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70032,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -505,19 +505,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 18:
 			    if(checkquest(70034,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70035,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70034,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -532,19 +532,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 19:
 			    if(checkquest(70036,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70037,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70036,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -559,19 +559,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 20:
 			    if(checkquest(70038,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70039,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70038,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -586,19 +586,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 21:
 			    if(checkquest(70040,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70041,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70040,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -613,19 +613,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 22:
 			    if(checkquest(70042,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70043,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70042,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -640,19 +640,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 23:
 			    if(checkquest(70044,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70045,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70044,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -667,19 +667,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 24:
 			    if(checkquest(70046,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70047,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70046,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -694,19 +694,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 25:
 			    if(checkquest(70048,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70049,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70048,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -721,19 +721,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 26:
 			    if(checkquest(70050,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70051,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70050,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -748,19 +748,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 27:
 			    if(checkquest(70052,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70053,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70052,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -775,19 +775,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 28:
 			    if(checkquest(70054,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70055,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70054,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -802,19 +802,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 29:
 			    if(checkquest(70056,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70057,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70056,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -829,19 +829,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 30:
 			    if(checkquest(70058,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70059,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70058,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -856,19 +856,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 31:
 			    if(checkquest(70060,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70061,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70060,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -883,19 +883,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 32:
 			    if(checkquest(70062,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70063,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70062,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -910,19 +910,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 33:
 			    if(checkquest(70064,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70065,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70064,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -937,19 +937,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 34:
 			    if(checkquest(70066,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70067,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70066,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -964,19 +964,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 35:
 			    if(checkquest(70068,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70069,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70068,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -991,19 +991,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 36:
 			    if(checkquest(70070,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70071,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70070,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1018,19 +1018,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 37:
 			    if(checkquest(70072,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70073,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70072,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1045,19 +1045,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 38:
 			    if(checkquest(70074,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70075,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70074,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1072,19 +1072,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 39:
 			    if(checkquest(70076,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70077,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70076,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1099,19 +1099,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 40:
 			    if(checkquest(70078,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70079,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70078,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1126,19 +1126,19 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
                 case 41:
 			    if(checkquest(70080,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(70081,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(70080,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1155,26 +1155,26 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
 
 //特殊每日任務
             case 2:
-	        mes "[卡片升級任務員]";
+	        mes "[每日任務情報員]";
             mes "那你想要接取什麼特殊任務呢？";
             switch(select("服飾大雜燴","回報所有特殊任務"))
             {
             case 1:
 			    if(checkquest(80000,HUNTING)>=0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "您已經接了這個任務了唷~!";
                     close;
                 }
 			    if(checkquest(80001,PLAYTIME)==0)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                     mes "你今天已經接取過這個任務了";
                     close;
                 }
 			    if(checkquest(80000,PLAYTIME)==1)
                 {
-                    mes "[卡片升級任務員]";
+                    mes "[每日任務情報員]";
                      mes "你今天已經接取過這個任務了";
                      close;
                 }
@@ -1580,4 +1580,7 @@ trinity,127,93,6	script	卡片升級任務員#li	643,{
  
     }
     end;
+OnInit:
+	waitingroom "卡片升級/每日任務",0;
+	end;
 }
