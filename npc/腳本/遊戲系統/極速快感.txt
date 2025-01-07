@@ -269,9 +269,9 @@ function	script	Giveitem	{
 	if($canpass == 0) 
 	announce "【極速快感】活動結束了",bc_all,0x00FF00;
         set @gi,rand(0,2);
-        if (@gi ==0)getitem 61007,3; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
-        if (@gi ==1)getitem 61007,3; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
-        if (@gi ==2)getitem 61007,3; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
+        if (@gi ==0)getitem 61007,4; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
+        if (@gi ==1)getitem 61007,8; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
+        if (@gi ==2)getitem 61007,10; set #Game_Points,#Game_Points+30; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
         warp "trinity",50,120;
 	end;
 }

@@ -28,7 +28,7 @@ OnClock2020:
 	/*	這裡設定相關獎勵&次數	*/
 	set $all,10;					//最多連續幾次尋寶事件
 	set $item,61007;					//獎品ID 商城10點兌換券
-	set $count,3;					//獲得數量
+	set $count,5;					//獲得數量
 	set $Tzeny,1;					//是否可以領取Zeny
 	set $gzeny,3000000;				//可以領取多少Zeny
 	set $opensecond,0;				//開啟寶箱所需要的秒數

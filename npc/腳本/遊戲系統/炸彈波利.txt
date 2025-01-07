@@ -258,7 +258,7 @@ game02,15,15,4	script	炸彈波利頒獎人員	793,{
 	next;
 	menu	"領取獎勵!!",-,"我想想!!",bgacancel;
 	getitem 61052,3;	//小遊戲積分10點兌換券
-	getitem 61007,3;	//商城10點金幣
+	getitem 61007,10;	//商城10點金幣
 	//announce "炸彈波利人員：恭喜 "+strcharinfo(0)+" ，獲得"+itemlink(40005)+" "+.@a+" 個",15;
     	warp "SavePoint",0,0;
 	close;

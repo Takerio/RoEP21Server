@@ -253,7 +253,7 @@ OnTimer175000:
 OnTimer180000:
 	$@hot_escape_Play=0;
 	killmonsterall "br_map";
-	script4each "{ getitem 61007,5; getitem 61052,5; }",1,"br_map";
+	script4each "{ getitem 61007,10; getitem 61052,5; }",1,"br_map";
 	mapannounce "br_map", "[大逃殺]: 時間已到 生存獎勵 已發送 30秒後 自動傳送出去",15;
 	set .@stat,getmapflag("br_map",mf_noskill);
 	if(.@stat>0) removemapflag "br_map",mf_noskill;		

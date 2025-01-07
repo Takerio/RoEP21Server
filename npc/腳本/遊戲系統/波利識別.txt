@@ -206,7 +206,7 @@ OnMobKilled0:
 
 OnMobKilled1:
 	killmonsterall "poring_w01";
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
 	mapannounce "poring_w01","波利識別，第二回合開始!!",15,0xFFFF00;
@@ -215,7 +215,7 @@ OnMobKilled1:
 
 OnMobKilled2:
 	killmonsterall "poring_w01";;
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
 	mapannounce "poring_w01","波利識別，第三回合開始!!",15,0xFFFF00;
@@ -224,7 +224,7 @@ OnMobKilled2:
 
 OnMobKilled3:
 	killmonsterall "poring_w01";
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
 	mapannounce "poring_w01","波利識別，第四回合開始!!",15,0xFFFF00;
@@ -233,7 +233,7 @@ OnMobKilled3:
 
 OnMobKilled4:
 	killmonsterall "poring_w01";
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	donpcevent "Poringmob::OnSummon5";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
@@ -242,7 +242,7 @@ OnMobKilled4:
 
 OnMobKilled5:
 	killmonsterall "poring_w01";
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	donpcevent "Poringmob::OnSummon6";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
@@ -252,7 +252,7 @@ OnMobKilled5:
 OnMobKilled6:
 	set $@Poring_kai,0;
 	killmonsterall "poring_w01";
-	getitem 61007,1;
+	getitem 61007,3;
 	set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 ^0000ff"+#Game_Points+"^000000 點";
 	mapannounce "poring_w01","恭喜 "+strcharinfo(0)+" 找到了正確的波利~~!",15,0x6699FF;
 	announce "【波利識別】活動結束了，開放時間：12:30、16:30、21:00、01:00、05:00、09:000",bc_all,0x00FF00;

@@ -286,7 +286,7 @@ OnTimer10:
 	set $@Fire_Game,0;
 	mapannounce "boss4","【閃避火焰】遊戲結束，存活的玩家將獲得獎勵!!",bc_map;
 	sleep 6000; 
-	script4each "{ getitem 61007,5; getitem 61052,5; }",1,"boss4";
+	script4each "{ getitem 61007,10; getitem 61052,5; }",1,"boss4";
 	mapwarp "boss4","trinity",50,120;
 	end;
 

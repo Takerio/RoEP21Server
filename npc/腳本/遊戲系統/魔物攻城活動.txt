@@ -144,7 +144,7 @@ OnCcdd01:
 	getitem .@Monster_Reward_1,1;
 	announce "【魔物攻城】玩家 "+strcharinfo(0)+" 獲得了 "+getitemname(.@Monster_Reward_1)+" !!",15;
 	}
-	if(rand(100)<35) getitem 61007,1;
+	if(rand(100)<35) getitem 61007,10;
 	end;
 OnCcdd02:
 	#Worl_Boss_Points01 =  #Worl_Boss_Points01 + 100;
@@ -156,7 +156,7 @@ OnCcdd02:
 	getitem .@Monster_Reward_1,1;
 	announce "【魔物攻城】玩家 "+strcharinfo(0)+" 獲得了 "+getitemname(.@Monster_Reward_1)+" !!",15;
 	}
-	if(rand(100)<55) getitem 61007,1;
+	if(rand(100)<55) getitem 61007,7;
 	end;
 OnCcdd03:
 	#Worl_Boss_Points01 =  #Worl_Boss_Points01 + 150;
@@ -168,7 +168,7 @@ OnCcdd03:
 	getitem .@Monster_Reward_1,1;
 	announce "【魔物攻城】玩家 "+strcharinfo(0)+" 獲得了 "+getitemname(.@Monster_Reward_1)+" !!",15;
 	}
-	if(rand(100)<65) getitem 61007,1;
+	if(rand(100)<65) getitem 61007,5;
 	end;
 }
 

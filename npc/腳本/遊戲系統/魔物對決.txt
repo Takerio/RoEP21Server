@@ -149,7 +149,7 @@ function mobid	{
 OnInit:
 // ======================================================================
 	setarray $@mob_id,1634,1635,1636,1637,1638,1639;
-	set .Round,3; // 3 回合
+	set .Round,10; // 3 回合
 	set .BatTime,10000;  // 下注時間 10 秒
 	set .WaitTime,20000; // 領獎時間
 	end;
@@ -190,7 +190,7 @@ gon_test,57,103,5	script	獲勝寶箱	10005,{
 	if(@mobid == getvariableofnpc(.Winner,"Mo_Start") && @mobid && getvariableofnpc(.GameState,"Mo_Start")){
 
 	.@a = rand(1,1);
-	getitem 61007,.@a;
+	getitem 61007,2;
 	getitem 61052,.@a;
 
 	set @mobid,0;

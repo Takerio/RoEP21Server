@@ -61,7 +61,7 @@ OnInit:
 // 例:setarray $@Code_Prize[1],7723,1,7723,2,7606,1,7606,2,668,5,668,4,668,2;
 // 501:紅色藥水ID，1:數量1個；502:赤色藥水ID，2:數量2個；503:黃色藥水，3:數量3個；最後以;結尾
 
-	setarray $@Code_Prize[1],61007,3,61007,3;
+	setarray $@Code_Prize[1],61007,5,61007,5;
 // 主城設定
 	set $@Main_Twon$,"trinity,50,120";
 	//waitingroom "終極飄飄",0;

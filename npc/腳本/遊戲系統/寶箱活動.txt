@@ -192,27 +192,27 @@ OnMobKilled:
   {
   	case 1:
   		set .@UZ_BOX_ITEM_ID,61007;
-  		set .@UZ_BOX_ITEM_CNT,1;
+  		set .@UZ_BOX_ITEM_CNT,2;
 		set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 "+#Game_Points+" 點";
   		break;
   	case 2:
   		set .@UZ_BOX_ITEM_ID,61007;
-  		set .@UZ_BOX_ITEM_CNT,1;
+  		set .@UZ_BOX_ITEM_CNT,2;
 		set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 "+#Game_Points+" 點";
   		break;
   	case 3:
   		set .@UZ_BOX_ITEM_ID,61007;
-  		set .@UZ_BOX_ITEM_CNT,1;
+  		set .@UZ_BOX_ITEM_CNT,2;
 		set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 "+#Game_Points+" 點";
   		break;
   	case 4:
   		set .@UZ_BOX_ITEM_ID,61007;
-  		set .@UZ_BOX_ITEM_CNT,1;
+  		set .@UZ_BOX_ITEM_CNT,2;
 		set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 "+#Game_Points+" 點";
   		break;
   	case 5:
   		set .@UZ_BOX_ITEM_ID,61007;
-  		set .@UZ_BOX_ITEM_CNT,1;
+  		set .@UZ_BOX_ITEM_CNT,2;
 		set #Game_Points,#Game_Points+10; dispbottom "目前小遊戲積分 "+#Game_Points+" 點";
   		break;
   	case 6:

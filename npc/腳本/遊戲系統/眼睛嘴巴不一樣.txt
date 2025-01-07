@@ -106,18 +106,18 @@ OnColor:
 	switch(rand(1,3)) {
 		case 1:
 			set #Game_Points,#Game_Points+(set(.@i,.Cash[0]));
-			getitem 61007,2;
-			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x2、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
+			getitem 61007,4;
+			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x4、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
 			break; 
 		case 2:
 			set #Game_Points,#Game_Points+(set(.@i,.Cash[0]));
-			getitem 61007,2;
-			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x2、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
+			getitem 61007,4;
+			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x4、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
 			break;
 		case 3:
 			set #Game_Points,#Game_Points+(set(.@i,.Cash[0]));
-			getitem 61007,2;
-			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x2、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
+			getitem 61007,4;
+			areaannounce .@m$,.@x-14,.@y-14,.@x+14,.@y+14,"["+strnpcinfo(0)+"] : 恭喜玩家 '"+strcharinfo(0)+"' 獲得商城10點金幣x4、小遊戲積分"+.@i+"點！",0,0xffff37,0,12;
 			break;
 	}
 	set $@p1$,"";
