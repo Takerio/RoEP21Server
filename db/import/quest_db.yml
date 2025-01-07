@@ -2721,19 +2721,19 @@ Body:
   #   Title: 卡片升級任務(死靈騎士#等級1)-等候
   #   TimeLimit: +24h
 
-  - Id: 8000
+  - Id: 80000
     Title: 服飾大雜燴任務
     Targets:
       - Id: 1
         Count: 300
-  - Id: 800
+  - Id: 80001
     Title: 服飾大雜燴任務-等候
     TimeLimit: +24h
-  - Id: 8000
+  - Id: 80002
     Title: 寵物蛋抽抽樂箱任務
     Targets:
       - Id: 1
         Count: 300
-  - Id: 80
+  - Id: 80003
     Title: 寵物抽抽樂箱任務-等候
     TimeLimit: +24h
