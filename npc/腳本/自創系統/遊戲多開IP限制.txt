@@ -11,12 +11,10 @@
 OnInit:
 //=======================IP限制設定=======================//
 //加入特定客戶。
-setarray $@Morewindows$[0];
+setarray $@Morewindows$[0],"127.0.0.12";
 
 //開放給特定客戶幾開，要對應上面特定用戶。
-setarray $@Windiwsnum[0],4,
-			4,
-			4;
+setarray $@Windiwsnum[0],10;
 
 
 //非特定客戶 都只能幾開。
