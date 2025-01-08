@@ -1,0 +1,4 @@
+function	script	offical_instance_finish	{
+    if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+    return;
+}
