@@ -223,6 +223,7 @@ OnInstanceInit:
 	//副本任務獎勵
 	if(checkquest(32021,HUNTING)==2 ) { 
 	dispbottom "噩夢死神任務完成，以下是你的獎勵!!"; 
+	callfunc "offical_instance_finish";
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	getitem 6497,3;	//平安符(小)
 	dispbottom "副本積分+10";

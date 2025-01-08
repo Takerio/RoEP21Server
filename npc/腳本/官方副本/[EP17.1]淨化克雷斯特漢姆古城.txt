@@ -483,6 +483,7 @@ OnMyMobDead:
 addrid(2,0,getcharid(1));
 if (strcharinfo(3)==instance_mapname("1@gl_prq")){
 set #hunter,#hunter+10;
+callfunc "offical_instance_finish";
 if ('mode==1){
 getitem 25739,10;
 getitem 10502413,rand(1,3);

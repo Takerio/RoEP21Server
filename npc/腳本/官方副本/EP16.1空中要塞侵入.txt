@@ -723,6 +723,7 @@ OnTouch:
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
+	callfunc "offical_instance_finish";
 	getitem 61006,rand(3,5);	//商城1點金幣
 	erasequest 32061;
 	}

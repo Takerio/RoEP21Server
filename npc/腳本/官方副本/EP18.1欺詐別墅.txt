@@ -1113,7 +1113,7 @@ OnInstanceInit:
 			getitem callfunc("F_Rand",100652,100653),2;
 			}
 
-	if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 end;
 

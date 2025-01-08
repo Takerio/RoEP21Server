@@ -221,7 +221,7 @@ vdistrict1,43,34,4	script	凱瑟琳 傑塔	10032,{/* 63274 */
 		menu "那我們現在一起進去吧。",-;
 		mes "[凱瑟琳 傑塔]";
 		mes "請稍等，進去之前我想先說明一下，";
-		mes "這個工廠十分危險，而我沒法幫你戰鬥...";
+		mes "這個工廠十分危險，而我沒法幫你戰鬥...";
 		mes "只能給你帶帶路...";
 		next;
 		mes "^0000ff少女剛開心沒一會，";
@@ -331,7 +331,7 @@ vdistrict1,43,34,4	script	凱瑟琳 傑塔	10032,{/* 63274 */
 	case 3:
 		mes "[凱瑟琳 傑塔]";
 		mes "這個地區一年中絕大部分時間在下雪。";
-		mes "寒冷的氣候造成物資的運輸十分困難。";
+		mes "寒冷的氣候造成物資的運輸十分困難。";
 		mes "在這樣困難的地方，還是有人嘗試開辦產業。";
 		next;
 		mes "[凱瑟琳 傑塔]";
@@ -502,7 +502,7 @@ vdistrict1,43,34,4	script	凱瑟琳 傑塔	10032,{/* 63274 */
 		next;
 		mes "[凱瑟琳 傑塔]";
 		mes "首先，就是席琳頭上的緞帶了。";
-		mes "然後還有諾布爾十字架。";
+		mes "然後還有諾布爾十字架。";
 		mes "另外，可能還有一把古舊的洋傘。";
 		next;
 		mes "[凱瑟琳 傑塔]";
@@ -559,6 +559,7 @@ vdistrict1,40,31,4	script	傳送裝置	10007,{/* 63275 */
 	//副本任務獎勵
 	if(checkquest(32039,HUNTING)==2 ) { 
 	dispbottom "恐怖玩具工廠任務完成，以下是你的獎勵!!"; 
+	callfunc "offical_instance_finish";
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

@@ -1,0 +1,4 @@
+function    script  offical_instance_finish {
+    callfunc "offical_instance_finish";
+    return;
+}

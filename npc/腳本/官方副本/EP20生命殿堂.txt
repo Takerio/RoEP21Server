@@ -692,7 +692,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001465,1;	//精靈庇護
 
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -719,7 +719,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001600,1;	//元素氣息
 		getitem 1001465,1;	//精靈庇護
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -743,7 +743,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001460,2;	//生命之光
 		getitem 1001601,2;	//生命起源
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -766,7 +766,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001460,2;	//生命之光
 		getitem 1001601,2;	//生命起源
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -788,7 +788,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001460,2;	//生命之光
 		getitem 1001601,1;	//生命起源
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -808,7 +808,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001459,2;	//生命真相
 		getitem 1001460,2;	//生命之光
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -827,7 +827,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001459,1;	//生命真相
 		getitem 1001460,1;	//生命之光
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 		}
@@ -843,7 +843,7 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001459,1;	//生命真相
 		getitem 1001460,1;	//生命之光
 		getitem 61006,10;	//商城1點金幣
-		if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
+		callfunc "offical_instance_finish";
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 

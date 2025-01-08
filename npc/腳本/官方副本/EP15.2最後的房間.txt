@@ -810,7 +810,9 @@ OnInit:
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
-	erasequest 32057; }
+	erasequest 32057; 
+	callfunc "offical_instance_finish";
+	}
 
 	if(checkquest(11380,HUNTING) == 2) {
 		getitem 6827,1; //完整的機械零件

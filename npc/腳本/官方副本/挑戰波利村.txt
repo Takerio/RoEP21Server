@@ -476,6 +476,7 @@ OnTouch:
 		mes "[艾蜜莉]";
 		mes "我撿到了一些物品就分給你吧!!";
 		next;
+		callfunc "offical_instance_finish";
 		if (rand(100) < 50)
 			getitem 19238,1;	// 波利村大蔥
 		else

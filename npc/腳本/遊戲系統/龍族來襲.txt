@@ -4,12 +4,12 @@
 
 //活動時間 每日1200
 OnClock1157:
-	announce "【龍族來襲】不好了!!大量的龍族開始攻擊城門了",15;
+	announce "【中午12點龍族來襲】不好了!!大量的龍族開始攻擊城門了",15;
 	end;
 
 //活動時間
 OnClock1159:
-	announce "【龍族來襲】1分鐘後城門就會被攻破了，請冒險家們趕快來幫忙抵禦這些龍族的入侵!!",15;
+	announce "【中午12點龍族來襲】1分鐘後城門就會被攻破了，請冒險家們趕快來幫忙抵禦這些龍族的入侵!!",15;
 	end;
 
 //活動時間
@@ -41,8 +41,8 @@ OnClock1200:
 	setmapflag "gonryun",mf_restricted,9;
 	setmapflag "louyang",mf_restricted,9;
 	setmapflag "umbala",mf_restricted,9;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 城門已被攻破，冒險家們快來幫忙消滅這些龍族",15;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 受到龍族詛咒導致無法使用瞬間移動跟位移技能!!",15;
+	announce "【中午12點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 城門已被攻破，冒險家們快來幫忙消滅這些龍族",15;
+	announce "【中午12點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 受到龍族詛咒導致無法使用瞬間移動跟位移技能!!",15;
 	end;
 
 //活動結束
@@ -68,17 +68,17 @@ OnClock1230:
 	removemapflag "gonryun",mf_restricted,9;
 	removemapflag "louyang",mf_restricted,9;
 	removemapflag "umbala",mf_restricted,9;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 可以使用瞬間移動跟位移技能了!!",15;
+	announce "【中午12點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 可以使用瞬間移動跟位移技能了!!",15;
 	end;
 
 //活動時間 每日2100
 OnClock2057:
-	announce "【龍族來襲】不好了!!大量的龍族開始攻擊城門了",15;
+	announce "【晚上9點龍族來襲】不好了!!大量的龍族開始攻擊城門了",15;
 	end;
 
 //活動時間
 OnClock2059:
-	announce "【龍族來襲】1分鐘後城門就會被攻破了，請冒險家們趕快來幫忙抵禦這些龍族的入侵!!",15;
+	announce "【晚上9點龍族來襲】1分鐘後城門就會被攻破了，請冒險家們趕快來幫忙抵禦這些龍族的入侵!!",15;
 	end;
 
 //活動時間
@@ -110,8 +110,8 @@ OnClock2100:
 	setmapflag "gonryun",mf_restricted,9;
 	setmapflag "louyang",mf_restricted,9;
 	setmapflag "umbala",mf_restricted,9;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 城門已被攻破，冒險家們快來幫忙消滅這些龍族",15;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 受到龍族詛咒導致無法使用瞬間移動跟位移技能!!",15;
+	announce "【晚上9點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 城門已被攻破，冒險家們快來幫忙消滅這些龍族",15;
+	announce "【晚上9點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 受到龍族詛咒導致無法使用瞬間移動跟位移技能!!",15;
 	end;
 
 //活動結束
@@ -137,7 +137,7 @@ OnClock2130:
 	removemapflag "gonryun",mf_restricted,9;
 	removemapflag "louyang",mf_restricted,9;
 	removemapflag "umbala",mf_restricted,9;
-	announce "【龍族來襲】"+$@Dragon_Mod$[$ditu]+" 可以使用瞬間移動跟位移技能了!!",15;
+	announce "【晚上9點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 可以使用瞬間移動跟位移技能了!!",15;
 	end;
 
 }

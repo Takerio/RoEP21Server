@@ -807,6 +807,7 @@ OnTouch:
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	if(checkquest(32033,HUNTING)==2 ) { 
 	dispbottom "幽靈皇宮任務完成，以下是你的獎勵!!"; 
+	callfunc "offical_instance_finish";
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

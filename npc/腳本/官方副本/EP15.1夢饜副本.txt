@@ -1324,7 +1324,9 @@ end;
 	dispbottom "副本積分+30";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 	getitem 61006,10;	//商城1點兌換券
-	erasequest 32055; }
+	erasequest 32055; 
+	callfunc "offical_instance_finish";
+	}
 
 	mes "[另一個福金]";
 	mes "時間的縫隙差一點就要扭曲。過來這裡，必須快點出去！";

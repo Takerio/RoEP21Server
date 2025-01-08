@@ -194,6 +194,7 @@ OnTouch:
 	switch (select("請把我送出去:我還想四處看看")) {
 
 	case 1:
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;
 

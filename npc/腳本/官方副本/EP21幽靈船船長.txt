@@ -258,6 +258,7 @@ OnInstanceInit:
 	specialeffect 16;
 	//enablenpc instance_npcname("Wtgs_Warp#04");
 	disablenpc instance_npcname(strnpcinfo(0));
+	callfunc "offical_instance_finish";
 	warp "SavePoint",0,0;
 	end;
 
