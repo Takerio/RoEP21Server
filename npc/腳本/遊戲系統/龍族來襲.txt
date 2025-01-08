@@ -140,12 +140,9 @@ OnClock2130:
 	announce "【晚上9點龍族來襲】"+$@Dragon_Mod$[$ditu]+" 可以使用瞬間移動跟位移技能了!!",15;
 	end;
 
-OnClock2127:
-	announce "【晚上九點半加開場次龍族來襲】不好了!!大量的龍族開始攻擊城門了，三分鐘後開炸！",15;
-	end;
 
 //活動時間
-OnClock2130:
+OnClock2135:
 	$ditu=rand(1,10);
 	setarray $@Dragon_Mod$[1],"普隆德拉","夢羅克","吉芬","愛爾貝塔","艾爾帕蘭","姜餅城","毀葛","崑崙","龍之城","汶巴拉";
 	setarray $@moncitymap$[1],"prontera","morocc","geffen","alberta","aldebaran","xmas","hugel","gonryun","louyang","umbala";
@@ -178,7 +175,7 @@ OnClock2130:
 	end;
 
 //活動結束
-OnClock2200:
+OnClock2205:
 	removemapflag "prontera",mf_noteleport;
 	removemapflag "morocc",mf_noteleport;
 	removemapflag "geffen",mf_noteleport;
