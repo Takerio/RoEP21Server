@@ -188,11 +188,11 @@ OnMobKilled02:
 	set $@Dragon02,$@Dragon02-1;
 	if($@Dragon02==3) {
 	set $@Dragon_Mvp,50;
-	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),2,"Dragon_Kill::OnMvpKilled";
-	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),2,"Dragon_Kill::OnMvpKilled";
-	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),2,"Dragon_Kill::OnMvpKilled";
-	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),2,"Dragon_Kill::OnMvpKilled";
-	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),2,"Dragon_Kill::OnMvpKilled";
+	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),$@Dragon_Mvp/5,"Dragon_Kill::OnMvpKilled";
+	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),$@Dragon_Mvp/5,"Dragon_Kill::OnMvpKilled";
+	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),$@Dragon_Mvp/5,"Dragon_Kill::OnMvpKilled";
+	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),$@Dragon_Mvp/5,"Dragon_Kill::OnMvpKilled";
+	monster $@moncitymap$[$ditu],0,0,"巨型龍族",F_rand(27094,27095,27096,27097),$@Dragon_Mvp/5,"Dragon_Kill::OnMvpKilled";
 	mapannounce ""+$@moncitymap$[$ditu]+"","【龍族來襲】"+$@Dragon+"小型龍族剩餘3隻，巨型龍族出現了10隻!!",bc_map,"0xffff00";
 	}
 	end;
