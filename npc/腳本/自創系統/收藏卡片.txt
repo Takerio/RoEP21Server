@@ -336,14 +336,13 @@ L_Menu:
 OnPCStorageAddFilter:
 if(@storeitem_dst_storeid == 4){
 
-	/*
-	.@amount = @storeitem_src_amount;
+	/*.@amount = @storeitem_src_amount;
 	if(.@amount > 1){
 		processhalt;
 		dispbottom "一樣卡片一次只能存入一張";
 		end;
-	}
-	*/ 不確認數量
+	} */
+	// 不確認卡片數量
 
 	.@selectId = @storeitem_src_nameid;
 	.@selectType = getiteminfo(.@selectId,2);
