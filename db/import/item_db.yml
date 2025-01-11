@@ -1766,7 +1766,9 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      atcommand "@makeegg " + rand(960000,961731);
+      set .@id,rand(960000,961731);
+      dispbottom "寵物編號 : " + .@id;
+      atcommand "@makeegg " + .@id;
   - Id: 960000
     AegisName: item_960000
     Name: 俄塞里斯寵物蛋
@@ -10519,7 +10521,8 @@ Body:
       Container: true
     Script: |
       getitem rand(90000,91400),1;
-  # 技能卡片
+  ## 所有技能卡片
+  # 技能卡片 - 劍士
   - Id: 970000
     AegisName: card_skill_SM_SWORD
     Name: 單手劍使用熟練度
@@ -10590,6 +10593,48 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","SM_MAGNUM");
+  - Id: 970006
+    AegisName: card_skill_SM_ENDURE
+    Name: 霸體
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","SM_ENDURE");
+  # 技能卡片 - 法師
+  - Id: 970007
+    AegisName: card_skill_MG_SRECOVERY
+    Name: 禪心
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_SRECOVERY");
+  - Id: 970008
+    AegisName: card_skill_MG_SIGHT
+    Name: 火狩
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_SIGHT");
+  - Id: 970009
+    AegisName: card_skill_MG_NAPALMBEAT
+    Name: 心靈爆破
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_NAPALMBEAT");
+
   - Id: 971000
     AegisName: card_skill_LG_RAYOFGENESIS
     Name: 創世之光

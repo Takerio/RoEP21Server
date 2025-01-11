@@ -6627,7 +6627,8 @@ Body:
       }
 ## 舊版寵物
 
-  - Mob: MM_SARAH
+# 俄塞里斯
+  - Mob: OSIRIS
     CaptureRate : 1000
     EggItem: item_960000
     FoodItem: Luxurious_Pet_Food
@@ -6638,7 +6639,8 @@ Body:
       callfunc "petskill",960000;
     Script: >
       callfunc "petstatus",960000;
-  - Mob: MD_C_AMDARAIS
+# 巴風特
+  - Mob: BAPHOMET
     CaptureRate : 1000
     EggItem: item_960001
     FoodItem: Luxurious_Pet_Food
@@ -6649,7 +6651,8 @@ Body:
       callfunc "petskill",960001;
     Script: >
       callfunc "petstatus",960001;
-  - Mob: MG_AMDARAIS_H
+# 死靈
+  - Mob: DOPPELGANGER
     CaptureRate : 1000
     EggItem: item_960002
     FoodItem: Luxurious_Pet_Food
@@ -6660,7 +6663,8 @@ Body:
       callfunc "petskill",960002;
     Script: >
       callfunc "petstatus",960002;
-  - Mob: MD_C_HEMEL
+# 蜂后
+  - Mob: MISTRESS
     CaptureRate : 1000
     EggItem: item_960003
     FoodItem: Luxurious_Pet_Food
@@ -6671,6 +6675,7 @@ Body:
       callfunc "petskill",960003;
     Script: >
       callfunc "petstatus",960003;
+# 黃金蟲
   - Mob: SCORPION
     CaptureRate : 1000
     EggItem: item_960004
@@ -6682,7 +6687,8 @@ Body:
       callfunc "petskill",960004;
     Script: >
       callfunc "petstatus",960004;
-  - Mob: HORNET
+# 獸人英雄
+  - Mob: ORK_HERO
     CaptureRate : 1000
     EggItem: item_960005
     FoodItem: Luxurious_Pet_Food
@@ -6693,7 +6699,8 @@ Body:
       callfunc "petskill",960005;
     Script: >
       callfunc "petstatus",960005;
-  - Mob: FARMILIAR
+# 海盜之王
+  - Mob: DRAKE
     CaptureRate : 1000
     EggItem: item_960006
     FoodItem: Luxurious_Pet_Food
@@ -6704,7 +6711,8 @@ Body:
       callfunc "petskill",960006;
     Script: >
       callfunc "petstatus",960006;
-  - Mob: FABRE
+# 虎王
+  - Mob: EDDGA
     CaptureRate : 1000
     EggItem: item_960007
     FoodItem: Luxurious_Pet_Food
@@ -6715,7 +6723,8 @@ Body:
       callfunc "petskill",960007;
     Script: >
       callfunc "petstatus",960007;
-  - Mob: PUPA
+# 蟻后
+  - Mob: MAYA
     CaptureRate : 1000
     EggItem: item_960008
     FoodItem: Luxurious_Pet_Food
@@ -6726,7 +6735,8 @@ Body:
       callfunc "petskill",960008;
     Script: >
       callfunc "petstatus",960008;
-  - Mob: CONDOR
+# 月夜貓
+  - Mob: MOONLIGHT
     CaptureRate : 1000
     EggItem: item_960009
     FoodItem: Luxurious_Pet_Food
@@ -6737,7 +6747,8 @@ Body:
       callfunc "petskill",960009;
     Script: >
       callfunc "petstatus",960009;
-  - Mob: WILOW
+# 法老王
+  - Mob: PHARAOH
     CaptureRate : 1000
     EggItem: item_960010
     FoodItem: Luxurious_Pet_Food
@@ -6748,7 +6759,8 @@ Body:
       callfunc "petskill",960010;
     Script: >
       callfunc "petstatus",960010;
-  - Mob: CHONCHON
+# 皮里恩
+  - Mob: PHREEONI
     CaptureRate : 1000
     EggItem: item_960011
     FoodItem: Luxurious_Pet_Food
@@ -6759,7 +6771,8 @@ Body:
       callfunc "petskill",960011;
     Script: >
       callfunc "petstatus",960011;
-  - Mob: RODA_FROG
+# 獸人酋長
+  - Mob: ORC_LORD
     CaptureRate : 1000
     EggItem: item_960012
     FoodItem: Luxurious_Pet_Food
@@ -6770,7 +6783,8 @@ Body:
       callfunc "petskill",960012;
     Script: >
       callfunc "petstatus",960012;
-  - Mob: WOLF
+# 冰暴騎士
+  - Mob: KNIGHT_OF_WINDSTORM
     CaptureRate : 1000
     EggItem: item_960013
     FoodItem: Luxurious_Pet_Food
@@ -6781,7 +6795,8 @@ Body:
       callfunc "petskill",960013;
     Script: >
       callfunc "petstatus",960013;
-  - Mob: SPORE
+# 卡崙
+  - Mob: GARM
     CaptureRate : 1000
     EggItem: item_960014
     FoodItem: Luxurious_Pet_Food
@@ -6792,7 +6807,8 @@ Body:
       callfunc "petskill",960014;
     Script: >
       callfunc "petstatus",9600014;
-  - Mob: ZOMBIE
+# 黑暗之王
+  - Mob: DARK_LORD
     CaptureRate : 1000
     EggItem: item_960015
     FoodItem: Luxurious_Pet_Food
@@ -6803,7 +6819,8 @@ Body:
       callfunc "petskill",960015;
     Script: >
       callfunc "petstatus",960015;
-  - Mob: ARCHER_SKELETON
+# 烏龜將軍
+  - Mob: TURTLE_GENERAL
     CaptureRate : 1000
     EggItem: item_960016
     FoodItem: Luxurious_Pet_Food
@@ -6814,7 +6831,8 @@ Body:
       callfunc "petskill",960016;
     Script: >
       callfunc "petstatus",960016;
-  - Mob: CREAMY
+# 死靈騎士
+  - Mob: LORD_OF_DEATH
     CaptureRate : 1000
     EggItem: item_960017
     FoodItem: Luxurious_Pet_Food
@@ -6825,7 +6843,8 @@ Body:
       callfunc "petskill",960017;
     Script: >
       callfunc "petstatus",960017;
-  - Mob: PECOPECO
+# 德古拉伯爵
+  - Mob: DRACULA
     CaptureRate : 1000
     EggItem: item_960018
     FoodItem: Luxurious_Pet_Food
@@ -6836,7 +6855,8 @@ Body:
       callfunc "petskill",960018;
     Script: >
       callfunc "petstatus",960018;
-  - Mob: MANDRAGORA
+# 墨蛇君
+  - Mob: DARK_SNAKE_LORD
     CaptureRate : 1000
     EggItem: item_960019
     FoodItem: Luxurious_Pet_Food
@@ -6847,7 +6867,8 @@ Body:
       callfunc "petskill",960019;
     Script: >
       callfunc "petstatus",960019;
-  - Mob: WORM_TAIL
+# 元靈武士
+  - Mob: INCANTATION_SAMURAI
     CaptureRate : 1000
     EggItem: item_960020
     FoodItem: Luxurious_Pet_Food
@@ -6858,7 +6879,8 @@ Body:
       callfunc "petskill",960020;
     Script: >
       callfunc "petstatus",960020;
-  - Mob: MIN_SNAKE
+# 古埃及王
+  - Mob: AMON_RA
     CaptureRate : 1000
     EggItem: item_960021
     FoodItem: Luxurious_Pet_Food
@@ -6869,7 +6891,8 @@ Body:
       callfunc "petskill",960021;
     Script: >
       callfunc "petstatus",960021;
-  - Mob: MIN_ANACONDAQ
+# 塔奧群卡
+  - Mob: TAO_GUNKA
     CaptureRate : 1000
     EggItem: item_960022
     FoodItem: Luxurious_Pet_Food
@@ -6880,7 +6903,8 @@ Body:
       callfunc "petskill",960022;
     Script: >
       callfunc "petstatus",960022;
-  - Mob: SASQUATCH
+# RSX-0806
+  - Mob: RSX_0806
     CaptureRate : 1000
     EggItem: item_960023
     FoodItem: Luxurious_Pet_Food
@@ -6891,7 +6915,8 @@ Body:
       callfunc "petskill",960023;
     Script: >
       callfunc "petstatus",960023;
-  - Mob: MIN_MUKA
+# 白素貞
+  - Mob: BACSOJIN_
     CaptureRate : 1000
     EggItem: item_960024
     FoodItem: Luxurious_Pet_Food
@@ -6902,7 +6927,8 @@ Body:
       callfunc "petskill",960024;
     Script: >
       callfunc "petstatus",960024;
-  - Mob: MIN_DENIRO
+# 貝思波
+  - Mob: APOCALIPS_H
     CaptureRate : 1000
     EggItem: item_960025
     FoodItem: Luxurious_Pet_Food
@@ -6913,7 +6939,8 @@ Body:
       callfunc "petskill",960025;
     Script: >
       callfunc "petstatus",960025;
-  - Mob: MIN_ANDRE
+# 嗒妮小姐
+  - Mob: LADY_TANEE
     CaptureRate : 1000
     EggItem: item_960026
     FoodItem: Luxurious_Pet_Food
@@ -6924,7 +6951,8 @@ Body:
       callfunc "petskill",960026;
     Script: >
       callfunc "petstatus",960026;
-  - Mob: MIN_GOLEM
+# 魔劍士 達納托斯的記憶
+  - Mob: THANATOS
     CaptureRate : 1000
     EggItem: item_960027
     FoodItem: Luxurious_Pet_Food
@@ -6935,7 +6963,8 @@ Body:
       callfunc "petskill",960027;
     Script: >
       callfunc "petstatus",960027;
-  - Mob: MIN_METALLER
+# 迪塔勒泰晤勒斯
+  - Mob: DETALE
     CaptureRate : 1000
     EggItem: item_960028
     FoodItem: Luxurious_Pet_Food
@@ -6946,7 +6975,8 @@ Body:
       callfunc "petskill",960028;
     Script: >
       callfunc "petstatus",960028;
-  - Mob: MIN_SAND_MAN
+# 齊爾-D-01
+  - Mob: KIEL_
     CaptureRate : 1000
     EggItem: item_960029
     FoodItem: Luxurious_Pet_Food
@@ -6956,7 +6986,8 @@ Body:
       callfunc "petskill",960029;
     Script: >
       callfunc "petstatus",960029;
-  - Mob: MIN_RAGGLER
+# 蘭特克力斯
+  - Mob: RANDGRIS
     CaptureRate : 1000
     EggItem: item_960030
     FoodItem: Luxurious_Pet_Food
@@ -6967,7 +6998,8 @@ Body:
       callfunc "petskill",960030;
     Script: >
       callfunc "petstatus",960030;
-  - Mob: MIN_DRAGON_TAIL
+# 幽暗夢魘
+  - Mob: GLOOMUNDERNIGHT
     CaptureRate : 1000
     EggItem: item_960031
     FoodItem: Luxurious_Pet_Food
@@ -6978,7 +7010,8 @@ Body:
       callfunc "petskill",960031;
     Script: >
       callfunc "petstatus",960031;
-  - Mob: MIN_GREEN_IGUANA
+# 水晶龍
+  - Mob: KTULLANUX
     CaptureRate : 1000
     EggItem: item_960032
     FoodItem: Luxurious_Pet_Food
@@ -6989,7 +7022,8 @@ Body:
       callfunc "petskill",960032;
     Script: >
       callfunc "petstatus",960032;
-  - Mob: MIN_SEE_OTTER
+# 阿特羅斯
+  - Mob: ATROCE
     CaptureRate : 1000
     EggItem: item_960033
     FoodItem: Luxurious_Pet_Food
@@ -7000,7 +7034,8 @@ Body:
       callfunc "petskill",960033;
     Script: >
       callfunc "petstatus",960033;
-  - Mob: MIN_GALAPAGO
+# 伊夫利特
+  - Mob: IFRIT
     CaptureRate : 1000
     EggItem: item_960034
     FoodItem: Luxurious_Pet_Food
@@ -7011,7 +7046,8 @@ Body:
       callfunc "petskill",960034;
     Script: >
       callfunc "petstatus",960034;
-  - Mob: MIN_FUR_SEAL
+# 墮落大神官 悉潘
+  - Mob: FALLINGBISHOP
     CaptureRate : 1000
     EggItem: item_960035
     FoodItem: Luxurious_Pet_Food
@@ -7022,7 +7058,8 @@ Body:
       callfunc "petskill",960035;
     Script: >
       callfunc "petstatus",960035;
-  - Mob: MIN_ALLIGATOR
+# 詛咒蠅王
+  - Mob: BEELZEBUB_
     CaptureRate : 1000
     EggItem: item_960036
     FoodItem: Luxurious_Pet_Food
@@ -7033,7 +7070,8 @@ Body:
       callfunc "petskill",960036;
     Script: >
       callfunc "petstatus",960036;
-  - Mob: MIN_MEGALODON
+# 青冠龍
+  - Mob: GOPINICH
     CaptureRate : 1000
     EggItem: item_960037
     FoodItem: Luxurious_Pet_Food
@@ -7044,7 +7082,8 @@ Body:
       callfunc "petskill",960037;
     Script: >
       callfunc "petstatus",960037;
-  - Mob: MIN_TRI_JOINT
+# 負傷夢羅克
+  - Mob: MOROCC_
     CaptureRate : 1000
     EggItem: item_960038
     FoodItem: Luxurious_Pet_Food
@@ -7055,7 +7094,8 @@ Body:
       callfunc "petskill",960038;
     Script: >
       callfunc "petstatus",960038;
-  - Mob: MIN_MEGALITH
+# 波伊塔塔
+  - Mob: BOITATA
     CaptureRate : 1000
     EggItem: item_960039
     FoodItem: Luxurious_Pet_Food
@@ -7066,7 +7106,8 @@ Body:
       callfunc "petskill",960039;
     Script: >
       callfunc "petstatus",960039;
-  - Mob: MIN_DRYAD
+# 女王甲蟲
+  - Mob: QUEEN_SCARABA
     CaptureRate : 1000
     EggItem: item_960040
     FoodItem: Luxurious_Pet_Food
@@ -7077,7 +7118,8 @@ Body:
       callfunc "petskill",960040;
     Script: >
       callfunc "petstatus",960040;
-  - Mob: MIN_TOAD
+# 讓特
+  - Mob: LEAK
     CaptureRate : 1000
     EggItem: item_960041
     FoodItem: Luxurious_Pet_Food
@@ -7088,7 +7130,8 @@ Body:
       callfunc "petskill",960041;
     Script: >
       callfunc "petstatus",960041;
-  - Mob: MIN_VAGABOND_WOLF
+# 女王甲蟲(噩夢)
+  - Mob: I_QUEEN_SCARABA
     CaptureRate : 1000
     EggItem: item_960042
     FoodItem: Luxurious_Pet_Food
@@ -7099,7 +7142,8 @@ Body:
       callfunc "petskill",960042;
     Script: >
       callfunc "petstatus",960042;
-  - Mob: MIN_VOCAL
+# 魔鬼大烏賊
+  - Mob: KRAKEN
     CaptureRate : 1000
     EggItem: item_960043
     FoodItem: Luxurious_Pet_Food
@@ -7110,7 +7154,8 @@ Body:
       callfunc "petskill",960043;
     Script: >
       callfunc "petstatus",960043;
-  - Mob: MIN_ECLIPSE
+# 淘汰者傅立葉
+  - Mob: PYURIEL
     CaptureRate : 1000
     EggItem: item_960044
     FoodItem: Luxurious_Pet_Food
@@ -7121,7 +7166,8 @@ Body:
       callfunc "petskill",960044;
     Script: >
       callfunc "petstatus",960044;
-  - Mob: MIN_CHIMERA
+# 喬伊亞
+  - Mob: GIOIA
     CaptureRate : 1000
     EggItem: item_960045
     FoodItem: Luxurious_Pet_Food
@@ -7132,7 +7178,8 @@ Body:
       callfunc "petskill",960045;
     Script: >
       callfunc "petstatus",960045;
-  - Mob: MIN_EDDGA
+# 將軍大賢
+  - Mob: DAEHYON
     CaptureRate : 1000
     EggItem: item_960046
     FoodItem: Luxurious_Pet_Food
@@ -7143,7 +7190,8 @@ Body:
       callfunc "petskill",960046;
     Script: >
       callfunc "petstatus",960046;
-  - Mob: MIN_OSIRIS
+# 亡靈的守護者卡德斯
+  - Mob: KADES
     CaptureRate : 1000
     EggItem: item_960047
     FoodItem: Luxurious_Pet_Food
@@ -7154,7 +7202,8 @@ Body:
       callfunc "petskill",960047;
     Script: >
       callfunc "petstatus",960047;
-  - Mob: RAFFLESIA
+# 滅絕古埃及王
+  - Mob: N_AMON_RA
     CaptureRate : 1000
     EggItem: item_960048
     FoodItem: Luxurious_Pet_Food
@@ -7165,7 +7214,8 @@ Body:
       callfunc "petskill",960048;
     Script: >
       callfunc "petstatus",960048;
-  - Mob: HORN
+# 時間支配者
+  - Mob: TIMEHOLDER
     CaptureRate : 1000
     EggItem: item_960049
     FoodItem: Luxurious_Pet_Food
@@ -7176,7 +7226,8 @@ Body:
       callfunc "petskill",960049;
     Script: >
       callfunc "petstatus",960049;
-  - Mob: MIN_TAO_GUNKA
+# 劇毒凱美拉
+  - Mob: EP16_2_VENOM_KIMERA
     CaptureRate : 1000
     EggItem: item_960050
     FoodItem: Luxurious_Pet_Food
@@ -7187,7 +7238,8 @@ Body:
       callfunc "petskill",960050;
     Script: >
       callfunc "petstatus",960050;
-  - Mob: SOLDIER_SKELETON
+# 蜘蛛戰車
+  - Mob: MECHASPIDER
     CaptureRate : 1000
     EggItem: item_960051
     FoodItem: Luxurious_Pet_Food
@@ -7198,7 +7250,8 @@ Body:
       callfunc "petskill",960051;
     Script: >
       callfunc "petstatus",960051;
-  - Mob: VERIT
+# 副本寶箱
+  - Mob: LUCKY_BOX_Activity
     CaptureRate : 1000
     EggItem: item_960052
     FoodItem: Luxurious_Pet_Food
@@ -7209,7 +7262,8 @@ Body:
       callfunc "petskill",960052;
     Script: >
       callfunc "petstatus",960052;
-  - Mob: ELDER_WILOW
+# 寶箱活動
+  - Mob: LUCKY_BOX_Activity_
     CaptureRate : 1000
     EggItem: item_960053
     FoodItem: Luxurious_Pet_Food
@@ -7220,7 +7274,8 @@ Body:
       callfunc "petskill",960053;
     Script: >
       callfunc "petstatus",960053;
-  - Mob: THARA_FROG
+# 金幣箱
+  - Mob: MIMIC_Activity
     CaptureRate : 1000
     EggItem: item_960054
     FoodItem: Luxurious_Pet_Food
@@ -7231,7 +7286,8 @@ Body:
       callfunc "petskill",960054;
     Script: >
       callfunc "petstatus",960054;
-  - Mob: GHOUL
+# 狂暴金幣箱
+  - Mob: ANCIENT_MIMIC_Activity
     CaptureRate : 1000
     EggItem: item_960055
     FoodItem: Luxurious_Pet_Food
@@ -7242,7 +7298,8 @@ Body:
       callfunc "petskill",960055;
     Script: >
       callfunc "petstatus",960055;
-  - Mob: SIDE_WINDER
+# 死亡結束者
+  - Mob: JP_MAZEMOB_01
     CaptureRate : 1000
     EggItem: item_960056
     FoodItem: Luxurious_Pet_Food
@@ -7253,7 +7310,8 @@ Body:
       callfunc "petskill",960056;
     Script: >
       callfunc "petstatus",960056;
-  - Mob: OBEAUNE
+# 肉粽怪
+  - Mob: BOILED_RICE
     CaptureRate : 1000
     EggItem: item_960057
     FoodItem: Luxurious_Pet_Food
@@ -7264,7 +7322,8 @@ Body:
       callfunc "petskill",960057;
     Script: >
       callfunc "petstatus",960057;
-  - Mob: MARC
+# 巨大肉粽怪
+  - Mob: Big_BOILED_RICE
     CaptureRate : 1000
     EggItem: item_960058
     FoodItem: Luxurious_Pet_Food
@@ -7273,7 +7332,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960058;
-  - Mob: DOPPELGANGER
+# 鼠皇
+  - Mob: MOLE_TW
     CaptureRate : 1000
     EggItem: item_960059
     FoodItem: Luxurious_Pet_Food
@@ -7282,7 +7342,8 @@ Body:
     AllowAutoFeed: true
     SupportScript: >
       callfunc "petskill",960059;
-  - Mob: PECOPECO_EGG
+# 年獸
+  - Mob: G_DANCING_DRAGON
     CaptureRate : 1000
     EggItem: item_960060
     FoodItem: Luxurious_Pet_Food
@@ -7293,7 +7354,8 @@ Body:
       callfunc "petskill",960860;
     Script: >
       callfunc "petstatus",960860;
-  - Mob: B_SEYREN
+# 牛魔王
+  - Mob: E_MAJORUROS_TW
     CaptureRate : 1000
     EggItem: item_960061
     FoodItem: Luxurious_Pet_Food
@@ -7304,7 +7366,8 @@ Body:
       callfunc "petskill",960061;
     Script: >
       callfunc "petstatus",960061;
-  - Mob: B_EREMES
+# 小胖蜜糖波利
+  - Mob: E_SWEETS_DROPS
     CaptureRate : 1000
     EggItem: item_960062
     FoodItem: Luxurious_Pet_Food
@@ -7316,7 +7379,8 @@ Body:
       callfunc "petskill",960062;
     Script: >
       callfunc "petstatus",960062;
-  - Mob: B_HARWORD
+# 祭祀仙女
+  - Mob: E_WICKED_NYMPH
     CaptureRate : 1000
     EggItem: item_960063
     FoodItem: Luxurious_Pet_Food
@@ -7327,7 +7391,8 @@ Body:
       callfunc "petskill",960063;
     Script: >
       callfunc "petstatus",960063;
-  - Mob: B_MAGALETA
+# 櫻花仙子
+  - Mob: E_WICKED_NYMPH_BOSS
     CaptureRate : 1000
     EggItem: item_960064
     FoodItem: Luxurious_Pet_Food
@@ -7338,7 +7403,8 @@ Body:
       callfunc "petskill",960064;
     Script: >
       callfunc "petstatus",960064;
-  - Mob: B_SHECIL
+# 大蒜波利
+  - Mob: E_GARLING
     CaptureRate : 1000
     EggItem: item_960065
     FoodItem: Luxurious_Pet_Food
@@ -7349,7 +7415,8 @@ Body:
       callfunc "petskill",960065;
     Script: >
       callfunc "petstatus",960065;
-  - Mob: B_KATRINN
+# 落跑的南瓜魂
+  - Mob: E_MD_LUDE
     CaptureRate : 1000
     EggItem: item_960066
     FoodItem: Luxurious_Pet_Food
@@ -7360,7 +7427,8 @@ Body:
       callfunc "petskill",960066;
     Script: >
       callfunc "petstatus",960066;
-  - Mob: B_RANDEL
+# 落跑的南瓜
+  - Mob: E_MD_JACK_GAINT
     CaptureRate : 1000
     EggItem: item_960067
     FoodItem: Luxurious_Pet_Food
@@ -7372,7 +7440,8 @@ Body:
       callfunc "petskill",960067;
     Script: >
       callfunc "petstatus",960067;
-  - Mob: B_FLAMEL
+# 狂暴南瓜先生
+  - Mob: JAKK_H
     CaptureRate : 1000
     EggItem: item_960068
     FoodItem: Luxurious_Pet_Food
@@ -7384,7 +7453,8 @@ Body:
       callfunc "petskill",960068;
     Script: >
       callfunc "petstatus",960068;
-  - Mob: B_CELIA
+# 慶典用 白幽靈
+  - Mob: WHISPER_H
     CaptureRate : 1000
     EggItem: item_960069
     FoodItem: Luxurious_Pet_Food
@@ -7396,7 +7466,8 @@ Body:
       callfunc "petskill",960069;
     Script: >
       callfunc "petstatus",960069;
-  - Mob: B_CHEN
+# 慶典用 小惡魔
+  - Mob: DEVIRUCHI_H
     CaptureRate : 1000
     EggItem: item_960070
     FoodItem: Luxurious_Pet_Food
@@ -7408,7 +7479,8 @@ Body:
       callfunc "petskill",960070;
     Script: >
       callfunc "petstatus",960070;
-  - Mob: B_GERTIE
+# 叮噹喵
+  - Mob: Jingle_Meow
     CaptureRate : 1000
     EggItem: item_960071
     FoodItem: Luxurious_Pet_Food
@@ -7420,7 +7492,8 @@ Body:
       callfunc "petskill",960071;
     Script: >
       callfunc "petstatus",960071;
-  - Mob: B_ALPHOCCIO
+# 特種喵
+  - Mob: Special_Meow
     CaptureRate : 1000
     EggItem: item_960072
     FoodItem: Luxurious_Pet_Food
@@ -7432,7 +7505,8 @@ Body:
       callfunc "petskill",960072;
     Script: >
       callfunc "petstatus",960072;
-  - Mob: B_TRENTINI
+# 海盜喵
+  - Mob: Pirate_Meow
     CaptureRate : 1000
     EggItem: item_960073
     FoodItem: Luxurious_Pet_Food
@@ -7444,7 +7518,8 @@ Body:
       callfunc "petskill",960073;
     Script: >
       callfunc "petstatus",960073;
-  - Mob: THIEF_BUG_EGG
+# 忍者喵
+  - Mob: Ninja_Meow
     CaptureRate : 1000
     EggItem: item_960074
     FoodItem: Luxurious_Pet_Food
@@ -7455,7 +7530,8 @@ Body:
       callfunc "petskill",960074;
     Script: >
       callfunc "petstatus",960074;
-  - Mob: PICKY_
+# 機器喵
+  - Mob: Machine_Meow
     CaptureRate : 1000
     EggItem: item_960075
     FoodItem: Luxurious_Pet_Food
@@ -7466,7 +7542,8 @@ Body:
       callfunc "petskill",960075;
     Script: >
       callfunc "petstatus",960075;
-  - Mob: THIEF_BUG
+# 布偶貓
+  - Mob: Puppet_Meow
     CaptureRate : 1000
     EggItem: item_960076
     FoodItem: Luxurious_Pet_Food
@@ -7477,7 +7554,8 @@ Body:
       callfunc "petskill",960076;
     Script: >
       callfunc "petstatus",960076;
-  - Mob: THIEF_BUG_
+# 公主喵
+  - Mob: Princess_Meow
     CaptureRate : 1000
     EggItem: item_960077
     FoodItem: Luxurious_Pet_Food
@@ -7488,7 +7566,8 @@ Body:
       callfunc "petskill",960077;
     Script: >
       callfunc "petstatus",960077;
-  - Mob: THIEF_BUG__
+# 閃電喵
+  - Mob: Lightning_Meow
     CaptureRate : 1000
     EggItem: item_960078
     FoodItem: Luxurious_Pet_Food
@@ -7499,7 +7578,8 @@ Body:
       callfunc "petskill",960078;
     Script: >
       callfunc "petstatus",960078;
-  - Mob: SMOKIE
+# 叮噹喵(藍)
+  - Mob: Jingle_Meow1
     CaptureRate : 1000
     EggItem: item_960079
     FoodItem: Luxurious_Pet_Food
@@ -7510,7 +7590,8 @@ Body:
       callfunc "petskill",960079;
     Script: >
       callfunc "petstatus",960079;
-  - Mob: MISTRESS
+# 叮噹喵(青)
+  - Mob: Jingle_Meow2
     CaptureRate : 1000
     EggItem: item_960080
     FoodItem: Luxurious_Pet_Food
@@ -7521,7 +7602,8 @@ Body:
       callfunc "petskill",960080;
     Script: >
       callfunc "petstatus",960080;
-  - Mob: BIGFOOT
+# 叮噹喵(白)
+  - Mob: Jingle_Meow3
     CaptureRate : 1000
     EggItem: item_960081
     FoodItem: Luxurious_Pet_Food
@@ -7532,7 +7614,8 @@ Body:
       callfunc "petskill",960081;
     Script: >
       callfunc "petstatus",960081;
-  - Mob: NIGHTMARE
+# 特種喵(護衛)
+  - Mob: Special_Meow1
     CaptureRate : 1000
     EggItem: item_960082
     FoodItem: Luxurious_Pet_Food
@@ -7543,7 +7626,8 @@ Body:
       callfunc "petskill",960082;
     Script: >
       callfunc "petstatus",960082;
-  - Mob: PORING_
+# 國王波利
+  - Mob: MD_KING_PORING
     CaptureRate : 1000
     EggItem: item_960083
     FoodItem: Luxurious_Pet_Food
@@ -7554,7 +7638,8 @@ Body:
       callfunc "petskill",960083;
     Script: >
       callfunc "petstatus",960083;
-  - Mob: STROUF
+# 巨大黃金波利
+  - Mob: MD_GOLDRING
     CaptureRate : 1000
     EggItem: item_960084
     FoodItem: Luxurious_Pet_Food
@@ -7565,7 +7650,8 @@ Body:
       callfunc "petskill",960084;
     Script: >
       callfunc "petstatus",960084;
-  - Mob: VADON
+# 巨大萌萌波利
+  - Mob: MD_AMERING
     CaptureRate : 1000
     EggItem: item_960085
     FoodItem: Luxurious_Pet_Food
@@ -7576,7 +7662,8 @@ Body:
       callfunc "petskill",960085;
     Script: >
       callfunc "petstatus",960085;
-  - Mob: CORNUTUS
+# 強化土波利
+  - Mob: MD_DROPS
     CaptureRate : 1000
     EggItem: item_960086
     FoodItem: Luxurious_Pet_Food
@@ -7587,7 +7674,8 @@ Body:
       callfunc "petskill",960086;
     Script: >
       callfunc "petstatus",960086;
-  - Mob: HYDRA
+# 強化波波利
+  - Mob: MD_POPORING
     CaptureRate : 1000
     EggItem: item_960087
     FoodItem: Luxurious_Pet_Food
@@ -7598,7 +7686,8 @@ Body:
       callfunc "petskill",960087;
     Script: >
       callfunc "petstatus",960087;
-  - Mob: SWORD_FISH
+# 強化波利
+  - Mob: MD_PORING
     CaptureRate : 1000
     EggItem: item_960088
     FoodItem: Luxurious_Pet_Food
@@ -7609,7 +7698,8 @@ Body:
       callfunc "petskill",960088;
     Script: >
       callfunc "petstatus",960088;
-  - Mob: KUKRE
+# 強化冰波利
+  - Mob: MD_MARIN
     CaptureRate : 1000
     EggItem: item_960089
     FoodItem: Luxurious_Pet_Food
@@ -7620,7 +7710,8 @@ Body:
       callfunc "petskill",960089;
     Script: >
       callfunc "petstatus",960089;
-  - Mob: PIRATE_SKEL
+# 飛機波利
+  - Mob: flyring
     CaptureRate : 1000
     EggItem: item_960090
     FoodItem: Luxurious_Pet_Food
@@ -7631,7 +7722,8 @@ Body:
       callfunc "petskill",960090;
     Script: >
       callfunc "petstatus",960090;
-  - Mob: KAHO
+# 狐狸波利
+  - Mob: fox
     CaptureRate : 1000
     EggItem: item_960091
     FoodItem: Luxurious_Pet_Food
@@ -7642,7 +7734,8 @@ Body:
       callfunc "petskill",960091;
     Script: >
       callfunc "petstatus",960091;
-  - Mob: CRAB
+# 皮卡丘波利
+  - Mob: pikatschu_poring
     CaptureRate : 1000
     EggItem: item_960092
     FoodItem: Luxurious_Pet_Food
@@ -7653,7 +7746,8 @@ Body:
       callfunc "petskill",960092;
     Script: >
       callfunc "petstatus",960092;
-  - Mob: SHELLFISH
+# 魁儡波利
+  - Mob: Gisele
     CaptureRate : 1000
     EggItem: item_960093
     FoodItem: Luxurious_Pet_Food
@@ -7664,7 +7758,8 @@ Body:
       callfunc "petskill",960093;
     Script: >
       callfunc "petstatus",960093;
-  - Mob: SKELETON
+# 南瓜波利
+  - Mob: halloween_poring
     CaptureRate : 1000
     EggItem: item_960094
     FoodItem: Luxurious_Pet_Food
@@ -7675,7 +7770,8 @@ Body:
       callfunc "petskill",960094;
     Script: >
       callfunc "petstatus",960094;
-  - Mob: RED_PLANT
+# 炸彈波利
+  - Mob: BOMBPORING_S
     CaptureRate : 1000
     EggItem: item_960095
     FoodItem: Luxurious_Pet_Food
@@ -7686,7 +7782,8 @@ Body:
       callfunc "petskill",960095;
     Script: >
       callfunc "petstatus",960095;
-  - Mob: BLUE_PLANT
+# 熊貓波利
+  - Mob: panda_poring
     CaptureRate : 1000
     EggItem: item_960096
     FoodItem: Luxurious_Pet_Food
@@ -7697,7 +7794,8 @@ Body:
       callfunc "petskill",960096;
     Script: >
       callfunc "petstatus",960096;
-  - Mob: GREEN_PLANT
+# 愛心波利
+  - Mob: Lovering
     CaptureRate : 1000
     EggItem: item_960097
     FoodItem: Luxurious_Pet_Food
@@ -7708,7 +7806,8 @@ Body:
       callfunc "petskill",960097;
     Script: >
       callfunc "petstatus",960097;
-  - Mob: YELLOW_PLANT
+# 獨眼波利
+  - Mob: piratering
     CaptureRate : 1000
     EggItem: item_960098
     FoodItem: Luxurious_Pet_Food
@@ -7719,7 +7818,8 @@ Body:
       callfunc "petskill",960098;
     Script: >
       callfunc "petstatus",960098;
-  - Mob: WHITE_PLANT
+# 蘋果波利
+  - Mob: Popol
     CaptureRate : 1000
     EggItem: item_960099
     FoodItem: Luxurious_Pet_Food
@@ -7730,7 +7830,8 @@ Body:
       callfunc "petskill",960099;
     Script: >
       callfunc "petstatus",960099;
-  - Mob: SHINING_PLANT
+# 水珠波利
+  - Mob: aquaring
     CaptureRate : 1000
     EggItem: item_960100
     FoodItem: Luxurious_Pet_Food
@@ -7741,7 +7842,8 @@ Body:
       callfunc "petskill",960100;
     Script: >
       callfunc "petstatus",960100;
-  - Mob: BLACK_MUSHROOM
+# 斑點波利
+  - Mob: cowring
     CaptureRate : 1000
     EggItem: item_960101
     FoodItem: Luxurious_Pet_Food
@@ -7752,7 +7854,8 @@ Body:
       callfunc "petskill",960101;
     Script: >
       callfunc "petstatus",960101;
-  - Mob: RED_MUSHROOM
+# 樹苗波利
+  - Mob: leafring
     CaptureRate : 1000
     EggItem: item_960102
     FoodItem: Luxurious_Pet_Food
@@ -7763,7 +7866,8 @@ Body:
       callfunc "petskill",960102;
     Script: >
       callfunc "petstatus",960102;
-  - Mob: GOLDEN_BUG
+# 布丁波利
+  - Mob: nekoring
     CaptureRate : 1000
     EggItem: item_960103
     FoodItem: Luxurious_Pet_Food
@@ -7774,7 +7878,8 @@ Body:
       callfunc "petskill",960103;
     Script: >
       callfunc "petstatus",960103;
-  - Mob: ORK_HERO
+# 刷尾負鼠
+  - Mob: AB_MOB_077
     CaptureRate : 1000
     EggItem: item_960104
     FoodItem: Luxurious_Pet_Food
@@ -7785,7 +7890,8 @@ Body:
       callfunc "petskill",960104;
     Script: >
       callfunc "petstatus",960104;
-  - Mob: DRAGON_FLY
+# 啤酒企鵝
+  - Mob: AB_MOB_079
     CaptureRate : 1000
     EggItem: item_960105
     FoodItem: Luxurious_Pet_Food
@@ -7796,7 +7902,8 @@ Body:
       callfunc "petskill",960105;
     Script: >
       callfunc "petstatus",960105;
-  - Mob: VAGABOND_WOLF
+# 杜尼爾
+  - Mob: AB_MOB_080
     CaptureRate : 1000
     EggItem: item_960106
     FoodItem: Luxurious_Pet_Food
@@ -7807,7 +7914,8 @@ Body:
       callfunc "petskill",960106;
     Script: >
       callfunc "petstatus",960106;
-  - Mob: AMBERNITE
+# 機木人
+  - Mob: AB_MOB_081
     CaptureRate : 1000
     EggItem: item_960107
     FoodItem: Luxurious_Pet_Food
@@ -7818,7 +7926,8 @@ Body:
       callfunc "petskill",960107;
     Script: >
       callfunc "petstatus",960107;
-  - Mob: ANDRE
+# 將軍魔碑
+  - Mob: AB_MOB_082
     CaptureRate : 1000
     EggItem: item_960108
     FoodItem: Luxurious_Pet_Food
@@ -7829,7 +7938,8 @@ Body:
       callfunc "petskill",960108;
     Script: >
       callfunc "petstatus",960108;
-  - Mob: ANT_EGG
+# 邪靈魔導士
+  - Mob: AB_MOB_083
     CaptureRate : 1000
     EggItem: item_960109
     FoodItem: Luxurious_Pet_Food
@@ -7840,7 +7950,8 @@ Body:
       callfunc "petskill",960109;
     Script: >
       callfunc "petstatus",960109;
-  - Mob: ANUBIS
+# 代行刑者
+  - Mob: B_MOB_084
     CaptureRate : 1000
     EggItem: item_960110
     FoodItem: Luxurious_Pet_Food
@@ -7851,7 +7962,8 @@ Body:
       callfunc "petskill",960110;
     Script: >
       callfunc "petstatus",960110;
-  - Mob: ARGIOPE
+# 狂暴惡靈
+  - Mob: AB_MOB_085
     CaptureRate : 1000
     EggItem: item_960111
     FoodItem: Luxurious_Pet_Food
@@ -7862,7 +7974,8 @@ Body:
       callfunc "petskill",960111;
     Script: >
       callfunc "petstatus",960111;
-  - Mob: ARGOS
+# 血腥騎士
+  - Mob: AB_MOB_087
     CaptureRate : 1000
     EggItem: item_960112
     FoodItem: Luxurious_Pet_Food
@@ -7873,7 +7986,8 @@ Body:
       callfunc "petskill",960112;
     Script: >
       callfunc "petstatus",960112;
-  - Mob: BATHORY
+# 熔岩巨石
+  - Mob: AB_MOB_088
     CaptureRate : 1000
     EggItem: item_960113
     FoodItem: Luxurious_Pet_Food
@@ -7884,7 +7998,8 @@ Body:
       callfunc "petskill",960113;
     Script: >
       callfunc "petstatus",960113;
-  - Mob: CARAMEL
+# 埃維亞
+  - Mob: AB_MOB_089
     CaptureRate : 1000
     EggItem: item_960114
     FoodItem: Luxurious_Pet_Food
@@ -7895,7 +8010,8 @@ Body:
       callfunc "petskill",960114;
     Script: >
       callfunc "petstatus",960114;
-  - Mob: COCO
+# 衛士小賢
+  - Mob: AB_MOB_091
     CaptureRate : 1000
     EggItem: item_960115
     FoodItem: Luxurious_Pet_Food
@@ -7906,7 +8022,8 @@ Body:
       callfunc "petskill",960115;
     Script: >
       callfunc "petstatus",960115;
-  - Mob: DEVIACE
+# 魯盜
+  - Mob: AB_MOB_093
     CaptureRate : 1000
     EggItem: item_960116
     FoodItem: Luxurious_Pet_Food
@@ -7917,7 +8034,8 @@ Body:
       callfunc "petskill",960116;
     Script: >
       callfunc "petstatus",960116;
-  - Mob: DRAINLIAR
+# 女戰士羅拉
+  - Mob: AB_MOB_095
     CaptureRate : 1000
     EggItem: item_960117
     FoodItem: Luxurious_Pet_Food
@@ -7928,7 +8046,8 @@ Body:
       callfunc "petskill",960117;
     Script: >
       callfunc "petstatus",960117;
-  - Mob: DRAKE
+# 安息者
+  - Mob: AB_MOB_097
     CaptureRate : 1000
     EggItem: item_960118
     FoodItem: Luxurious_Pet_Food
@@ -7939,7 +8058,8 @@ Body:
       callfunc "petskill",960118;
     Script: >
       callfunc "petstatus",960118;
-  - Mob: DUSTINESS
+# 慰勞者
+  - Mob: AB_MOB_098
     CaptureRate : 1000
     EggItem: item_960119
     FoodItem: Luxurious_Pet_Food
@@ -7950,7 +8070,8 @@ Body:
       callfunc "petskill",960119;
     Script: >
       callfunc "petstatus",960119;
-  - Mob: EGGYRA
+# 監視者
+  - Mob: AB_MOB_099
     CaptureRate : 1000
     EggItem: item_960120
     FoodItem: Luxurious_Pet_Food
@@ -7961,7 +8082,8 @@ Body:
       callfunc "petskill",960120;
     Script: >
       callfunc "petstatus",960120;
-  - Mob: EVIL_DRUID
+# 基勘特斯
+  - Mob: AB_MOB_100
     CaptureRate : 1000
     EggItem: item_960121
     FoodItem: Luxurious_Pet_Food
@@ -7972,7 +8094,8 @@ Body:
       callfunc "petskill",960121;
     Script: >
       callfunc "petstatus",960121;
-  - Mob: FLORA
+# 卡利斯格
+  - Mob: AB_MOB_101
     CaptureRate : 1000
     EggItem: item_960122
     FoodItem: Luxurious_Pet_Food
@@ -7983,7 +8106,8 @@ Body:
       callfunc "petskill",960122;
     Script: >
       callfunc "petstatus",960122;
-  - Mob: FRILLDORA
+# 幽靈弓箭手
+  - Mob: AB_MOB_102
     CaptureRate : 1000
     EggItem: item_960123
     FoodItem: Luxurious_Pet_Food
@@ -7994,7 +8118,8 @@ Body:
       callfunc "petskill",960123;
     Script: >
       callfunc "petstatus",960123;
-  - Mob: GHOSTRING
+# 樹精
+  - Mob: AB_MOB_139
     CaptureRate : 1000
     EggItem: item_960124
     FoodItem: Luxurious_Pet_Food
@@ -8005,7 +8130,8 @@ Body:
       callfunc "petskill",960124;
     Script: >
       callfunc "petstatus",960124;
-  - Mob: GIEARTH
+# 森林妖精
+  - Mob: AB_MOB_140
     CaptureRate : 1000
     EggItem: item_960125
     FoodItem: Luxurious_Pet_Food
@@ -8016,7 +8142,8 @@ Body:
       callfunc "petskill",960125;
     Script: >
       callfunc "petstatus",960125;
-  - Mob: GOBLIN_1
+# 艾吉歐蜈蚣
+  - Mob: AB_MOB_141
     CaptureRate : 1000
     EggItem: item_960126
     FoodItem: Luxurious_Pet_Food
@@ -8027,7 +8154,8 @@ Body:
       callfunc "petskill",960126;
     Script: >
       callfunc "petstatus",960126;
-  - Mob: GOBLIN_2
+# 鐵蠍
+  - Mob: AB_MOB_143
     CaptureRate : 1000
     EggItem: item_960127
     FoodItem: Luxurious_Pet_Food
@@ -8038,7 +8166,8 @@ Body:
       callfunc "petskill",960127;
     Script: >
       callfunc "petstatus",960127;
-  - Mob: GOBLIN_3
+# 黑蛇
+  - Mob: AB_MOB_144
     CaptureRate : 1000
     EggItem: item_960128
     FoodItem: Luxurious_Pet_Food
@@ -8049,6 +8178,7 @@ Body:
       callfunc "petskill",960128;
     Script: >
       callfunc "petstatus",960128;
+# 野豬
   - Mob: GOBLIN_4
     CaptureRate : 1000
     EggItem: item_960129
@@ -8060,7 +8190,8 @@ Body:
       callfunc "petskill",960129;
     Script: >
       callfunc "petstatus",960129;
-  - Mob: GOBLIN_5
+# 海德里希
+  - Mob: AB_MOB_146
     CaptureRate : 1000
     EggItem: item_960130
     FoodItem: Luxurious_Pet_Food
@@ -8071,7 +8202,8 @@ Body:
       callfunc "petskill",960130;
     Script: >
       callfunc "petstatus",960130;
-  - Mob: HODE
+# 白骨俄希托斯
+  - Mob: AB_MOB_161
     CaptureRate : 1000
     EggItem: item_960131
     FoodItem: Luxurious_Pet_Food
@@ -8082,7 +8214,8 @@ Body:
       callfunc "petskill",960131;
     Script: >
       callfunc "petstatus",960131;
-  - Mob: HORONG
+# 白骨貝勒斯
+  - Mob: AB_MOB_162
     CaptureRate : 1000
     EggItem: item_960132
     FoodItem: Luxurious_Pet_Food
@@ -8093,7 +8226,8 @@ Body:
       callfunc "petskill",960132;
     Script: >
       callfunc "petstatus",960132;
-  - Mob: JAKK
+# 寶石蜘蛛
+  - Mob: AB_MOB_165
     CaptureRate : 1000
     EggItem: item_960133
     FoodItem: Luxurious_Pet_Food
@@ -8104,7 +8238,8 @@ Body:
       callfunc "petskill",960133;
     Script: >
       callfunc "petstatus",960133;
-  - Mob: JOKER
+# 寶石巨人
+  - Mob: AB_MOB_166
     CaptureRate : 1000
     EggItem: item_960134
     FoodItem: Luxurious_Pet_Food
@@ -8115,7 +8250,8 @@ Body:
       callfunc "petskill",960134;
     Script: >
       callfunc "petstatus",960134;
-  - Mob: KHALITZBURG
+# 天使黑方體
+  - Mob: AB_MOB_167
     CaptureRate : 1000
     EggItem: item_960135
     FoodItem: Luxurious_Pet_Food
@@ -8126,7 +8262,8 @@ Body:
       callfunc "petskill",960135;
     Script: >
       callfunc "petstatus",960135;
-  - Mob: KOBOLD_1
+# 天使白方體
+  - Mob: AB_MOB_168
     CaptureRate : 1000
     EggItem: item_960136
     FoodItem: Luxurious_Pet_Food
@@ -8137,7 +8274,8 @@ Body:
       callfunc "petskill",960136;
     Script: >
       callfunc "petstatus",960136;
-  - Mob: KOBOLD_2
+# 毒氣魔
+  - Mob: AB_MOB_169
     CaptureRate : 1000
     EggItem: item_960137
     FoodItem: Luxurious_Pet_Food
@@ -8148,7 +8286,8 @@ Body:
       callfunc "petskill",960137;
     Script: >
       callfunc "petstatus",960137;
-  - Mob: KOBOLD_3
+# 劇毒魔
+  - Mob: AB_MOB_170
     CaptureRate : 1000
     EggItem: item_960138
     FoodItem: Luxurious_Pet_Food
@@ -8159,7 +8298,8 @@ Body:
       callfunc "petskill",960138;
     Script: >
       callfunc "petstatus",960138;
-  - Mob: MAGNOLIA
+# 三葉鐵甲蟲
+  - Mob: AB_MOB_171
     CaptureRate : 1000
     EggItem: item_960139
     FoodItem: Luxurious_Pet_Food
@@ -8170,7 +8310,8 @@ Body:
       callfunc "petskill",960139;
     Script: >
       callfunc "petstatus",960139;
-  - Mob: MANTIS
+# 紫貝勒斯
+  - Mob: AB_MOB_172
     CaptureRate : 1000
     EggItem: item_960140
     FoodItem: Luxurious_Pet_Food
@@ -8181,7 +8322,8 @@ Body:
       callfunc "petskill",960140;
     Script: >
       callfunc "petstatus",960140;
-  - Mob: MARDUK
+# 黑俄希托斯
+  - Mob: AB_MOB_173
     CaptureRate : 1000
     EggItem: item_960141
     FoodItem: Luxurious_Pet_Food
@@ -8192,7 +8334,8 @@ Body:
       callfunc "petskill",960141;
     Script: >
       callfunc "petstatus",960141;
-  - Mob: MARINA
+# 白俄希托斯
+  - Mob: AB_MOB_174
     CaptureRate : 1000
     EggItem: item_960142
     FoodItem: Luxurious_Pet_Food
@@ -8203,7 +8346,8 @@ Body:
       callfunc "petskill",960142;
     Script: >
       callfunc "petstatus",960142;
-  - Mob: MARINE_SPHERE
+# 腐屍首領
+  - Mob: AB_MOB_174
     CaptureRate : 1000
     EggItem: item_960143
     FoodItem: Luxurious_Pet_Food
@@ -8214,7 +8358,8 @@ Body:
       callfunc "petskill",960143;
     Script: >
       callfunc "petstatus",960143;
-  - Mob: MARIONETTE
+# 寶藏邪惡箱
+  - Mob: AB_MOB_155
     CaptureRate : 1000
     EggItem: item_960144
     FoodItem: Luxurious_Pet_Food
@@ -8225,7 +8370,8 @@ Body:
       callfunc "petskill",960144;
     Script: >
       callfunc "petstatus",960144;
-  - Mob: MARSE
+# 榔鎚酷布靈
+  - Mob: AB_MOB_160
     CaptureRate : 1000
     EggItem: item_960145
     FoodItem: Luxurious_Pet_Food
@@ -8236,7 +8382,8 @@ Body:
       callfunc "petskill",960145;
     Script: >
       callfunc "petstatus",960145;
-  - Mob: MARTIN
+# 讓特
+  - Mob: B_MOB_158
     CaptureRate : 1000
     EggItem: item_960146
     FoodItem: Luxurious_Pet_Food
@@ -8247,7 +8394,8 @@ Body:
       callfunc "petskill",960146;
     Script: >
       callfunc "petstatus",960146;
-  - Mob: MATYR
+# 蜘蛛戰車
+  - Mob: AB_MOB_150
     CaptureRate : 1000
     EggItem: item_960147
     FoodItem: Luxurious_Pet_Food
@@ -8258,7 +8406,8 @@ Body:
       callfunc "petskill",960147;
     Script: >
       callfunc "petstatus",960147;
-  - Mob: MAYA
+# 迪塔勒泰晤勒斯
+  - Mob: AB_MOB_152
     CaptureRate : 1000
     EggItem: item_960148
     FoodItem: Luxurious_Pet_Food
@@ -8269,7 +8418,8 @@ Body:
       callfunc "petskill",960148;
     Script: >
       callfunc "petstatus",960148;
-  - Mob: MEDUSA
+# 時間支配者
+  - Mob: AB_MOB_156
     CaptureRate : 1000
     EggItem: item_960149
     FoodItem: Luxurious_Pet_Food
@@ -8280,7 +8430,8 @@ Body:
       callfunc "petskill",960149;
     Script: >
       callfunc "petstatus",960149;
-  - Mob: MINOROUS
+# 骨骸迪塔勒泰晤勒斯
+  - Mob: AB_MOB_151
     CaptureRate : 1000
     EggItem: item_960150
     FoodItem: Luxurious_Pet_Food
@@ -8291,7 +8442,8 @@ Body:
       callfunc "petskill",960150;
     Script: >
       callfunc "petstatus",960150;
-  - Mob: MYST
+# 寶石溫古力安特
+  - Mob: AB_MOB_159
     CaptureRate : 1000
     EggItem: item_960151
     FoodItem: Luxurious_Pet_Food
@@ -8302,7 +8454,8 @@ Body:
       callfunc "petskill",960151;
     Script: >
       callfunc "petstatus",960151;
-  - Mob: ORC_SKELETON
+# 蘭特克力斯
+  - Mob: AB_MOB_154
     CaptureRate : 1000
     EggItem: item_960152
     FoodItem: Luxurious_Pet_Food
@@ -8313,7 +8466,8 @@ Body:
       callfunc "petskill",960152;
     Script: >
       callfunc "petstatus",960152;
-  - Mob: ORC_ZOMBIE
+# 英格麗
+  - Mob: AB_MOB_153
     CaptureRate : 1000
     EggItem: item_960153
     FoodItem: Luxurious_Pet_Food
@@ -8324,7 +8478,8 @@ Body:
       callfunc "petskill",960153;
     Script: >
       callfunc "petstatus",960153;
-  - Mob: PASANA
+# 蕾格萊芙
+  - Mob: AB_MOB_157
     CaptureRate : 1000
     EggItem: item_960154
     FoodItem: Luxurious_Pet_Food
@@ -8335,7 +8490,8 @@ Body:
       callfunc "petskill",960154;
     Script: >
       callfunc "petstatus",960154;
-  - Mob: PETIT
+# 林投樹
+  - Mob: HE_GIBBET
     CaptureRate : 1000
     EggItem: item_960155
     FoodItem: Luxurious_Pet_Food
@@ -8346,7 +8502,8 @@ Body:
       callfunc "petskill",960155;
     Script: >
       callfunc "petstatus",960155;
-  - Mob: PETIT_
+# 假面幽靈
+  - Mob: HE_DISGUISE
     CaptureRate : 1000
     EggItem: item_960156
     FoodItem: Luxurious_Pet_Food
@@ -8357,7 +8514,8 @@ Body:
       callfunc "petskill",960156;
     Script: >
       callfunc "petstatus",960156;
-  - Mob: PHARAOH
+# 黑色幽靈
+  - Mob: HE_QUVE
     CaptureRate : 1000
     EggItem: item_960157
     FoodItem: Luxurious_Pet_Food
@@ -8368,7 +8526,8 @@ Body:
       callfunc "petskill",960157;
     Script: >
       callfunc "petstatus",960157;
-  - Mob: PHEN
+# 南瓜幽靈
+  - Mob: HE_LUDE
     CaptureRate : 1000
     EggItem: item_960158
     FoodItem: Luxurious_Pet_Food
@@ -8379,7 +8538,8 @@ Body:
       callfunc "petskill",960158;
     Script: >
       callfunc "petstatus",960158;
-  - Mob: PIERE
+# 幽靈兔
+  - Mob: HE_HYLOZOIST
     CaptureRate : 1000
     EggItem: item_960159
     FoodItem: Luxurious_Pet_Food
@@ -8390,7 +8550,8 @@ Body:
       callfunc "petskill",960159;
     Script: >
       callfunc "petstatus",960159;
-  - Mob: PLANKTON
+# 鬼火
+  - Mob: HE_HORONG
     CaptureRate : 1000
     EggItem: item_960160
     FoodItem: Luxurious_Pet_Food
@@ -8401,7 +8562,8 @@ Body:
       callfunc "petskill",960160;
     Script: >
       callfunc "petstatus",960160;
-  - Mob: RAYDRIC
+# 南瓜怪人
+  - Mob: HE_JAKK
     CaptureRate : 1000
     EggItem: item_960161
     FoodItem: Luxurious_Pet_Food
@@ -8412,7 +8574,8 @@ Body:
       callfunc "petskill",960161;
     Script: >
       callfunc "petstatus",960161;
-  - Mob: REQUIEM
+# 可愛小幽靈
+  - Mob: HE_WHISPER_BOSS
     CaptureRate : 1000
     EggItem: item_960162
     FoodItem: Luxurious_Pet_Food
@@ -8423,7 +8586,8 @@ Body:
       callfunc "petskill",960162;
     Script: >
       callfunc "petstatus",960162;
-  - Mob: SKEL_WORKER
+# 鬼精靈
+  - Mob: HE_WHISPER
     CaptureRate : 1000
     EggItem: item_960163
     FoodItem: Luxurious_Pet_Food
@@ -8434,7 +8598,8 @@ Body:
       callfunc "petskill",960163;
     Script: >
       callfunc "petstatus",960163;
-  - Mob: STAINER
+# 骷髏先生
+  - Mob: HE_DULLAHAN
     CaptureRate : 1000
     EggItem: item_960164
     FoodItem: Luxurious_Pet_Food
@@ -8445,7 +8610,8 @@ Body:
       callfunc "petskill",960164;
     Script: >
       callfunc "petstatus",960164;
-  - Mob: TAROU
+# 黑凶殭屍
+  - Mob: HE_BON_GUN
     CaptureRate : 1000
     EggItem: item_960165
     FoodItem: Luxurious_Pet_Food
@@ -8456,7 +8622,8 @@ Body:
       callfunc "petskill",960165;
     Script: >
       callfunc "petstatus",960165;
-  - Mob: VITATA
+# 白凶殭屍
+  - Mob: HE_MUNAK
     CaptureRate : 1000
     EggItem: item_960166
     FoodItem: Luxurious_Pet_Food
@@ -8467,7 +8634,8 @@ Body:
       callfunc "petskill",960166;
     Script: >
       callfunc "petstatus",960166;
-  - Mob: ZENORC
+# 鬼蝙蝠
+  - Mob: HE_FARMILIAR
     CaptureRate : 1000
     EggItem: item_960167
     FoodItem: Luxurious_Pet_Food
@@ -8478,7 +8646,8 @@ Body:
       callfunc "petskill",960167;
     Script: >
       callfunc "petstatus",960167;
-  - Mob: ZEROM
+# 林投姐
+  - Mob: HE_SOHEE
     CaptureRate : 1000
     EggItem: item_960168
     FoodItem: Luxurious_Pet_Food
@@ -8489,7 +8658,8 @@ Body:
       callfunc "petskill",960168;
     Script: >
       callfunc "petstatus",960168;
-  - Mob: WHISPER
+# 科學怪人
+  - Mob: HE_BLOODY_MURDERER
     CaptureRate : 1000
     EggItem: item_960169
     FoodItem: Luxurious_Pet_Food
@@ -8500,7 +8670,8 @@ Body:
       callfunc "petskill",960169;
     Script: >
       callfunc "petstatus",960169;
-  - Mob: THIEF_MUSHROOM
+# 千年殭屍王
+  - Mob: HE_OSIRIS
     CaptureRate : 1000
     EggItem: item_960170
     FoodItem: Luxurious_Pet_Food
@@ -8511,7 +8682,8 @@ Body:
       callfunc "petskill",960170;
     Script: >
       callfunc "petstatus",960170;
-  - Mob: WHISPER_BOSS
+# 吸血鬼
+  - Mob: HE_DRACULA
     CaptureRate : 1000
     EggItem: item_960171
     FoodItem: Luxurious_Pet_Food
@@ -8522,7 +8694,8 @@ Body:
       callfunc "petskill",960171;
     Script: >
       callfunc "petstatus",960171;
-  - Mob: ORC_ARCHER
+# 魔女
+  - Mob: HE_C_HEMEL
     CaptureRate : 1000
     EggItem: item_960172
     FoodItem: Luxurious_Pet_Food
@@ -8533,7 +8706,8 @@ Body:
       callfunc "petskill",960172;
     Script: >
       callfunc "petstatus",960172;
-  - Mob: ORC_LORD
+# 可愛小幽靈
+  - Mob: HE_WHISPER_BOSS_
     CaptureRate : 1000
     EggItem: item_960173
     FoodItem: Luxurious_Pet_Food
@@ -8544,7 +8718,8 @@ Body:
       callfunc "petskill",960173;
     Script: >
       callfunc "petstatus",960173;
-  - Mob: MIMIC
+# 鬼精靈
+  - Mob: HE_WHISPER_
     CaptureRate : 1000
     EggItem: item_960174
     FoodItem: Luxurious_Pet_Food
@@ -8555,7 +8730,8 @@ Body:
       callfunc "petskill",960174;
     Script: >
       callfunc "petstatus",960174;
-  - Mob: WRAITH
+# 骷髏先生
+  - Mob: HE_DULLAHAN_
     CaptureRate : 1000
     EggItem: item_960175
     FoodItem: Luxurious_Pet_Food
@@ -8566,7 +8742,8 @@ Body:
       callfunc "petskill",960175;
     Script: >
       callfunc "petstatus",960175;
-  - Mob: ALARM
+# 咖波
+  - Mob: CAPOO_Collabo_TW
     CaptureRate : 1000
     EggItem: item_960176
     FoodItem: Luxurious_Pet_Food
@@ -8577,7 +8754,8 @@ Body:
       callfunc "petskill",960176;
     Script: >
       callfunc "petstatus",960176;
-  - Mob: ARCLOUSE
+# 臭雞蛋
+  - Mob: Collabo_MOB_01
     CaptureRate : 1000
     EggItem: item_960177
     FoodItem: Luxurious_Pet_Food
@@ -8588,6 +8766,7 @@ Body:
       callfunc "petskill",960177;
     Script: >
       callfunc "petstatus",960177;
+# 小雞
   - Mob: RIDEWORD
     CaptureRate : 1000
     EggItem: item_960178
@@ -8599,7 +8778,8 @@ Body:
       callfunc "petskill",960178;
     Script: >
       callfunc "petstatus",960178;
-  - Mob: SKEL_PRISONER
+# 狗狗
+  - Mob: Collabo_MOB_03
     CaptureRate : 1000
     EggItem: item_960179
     FoodItem: Luxurious_Pet_Food
@@ -8610,7 +8790,8 @@ Body:
       callfunc "petskill",960179;
     Script: >
       callfunc "petstatus",960179;
-  - Mob: DARK_PRIEST
+# 北極熊
+  - Mob: Collabo_MOB_04
     CaptureRate : 1000
     EggItem: item_960180
     FoodItem: Luxurious_Pet_Food
@@ -8621,7 +8802,8 @@ Body:
       callfunc "petskill",960180;
     Script: >
       callfunc "petstatus",960180;
-  - Mob: PUNK
+# 小海豹
+  - Mob: Collabo_MOB_05
     CaptureRate : 1000
     EggItem: item_960181
     FoodItem: Luxurious_Pet_Food
@@ -8632,7 +8814,8 @@ Body:
       callfunc "petskill",960181;
     Script: >
       callfunc "petstatus",960181;
-  - Mob: RYBIO
+# 兔兔
+  - Mob: Collabo_MOB_06
     CaptureRate : 1000
     EggItem: item_960182
     FoodItem: Luxurious_Pet_Food
@@ -8643,7 +8826,8 @@ Body:
       callfunc "petskill",960182;
     Script: >
       callfunc "petstatus",960182;
-  - Mob: PHENDARK
+# 暴龍姐姐
+  - Mob: Collabo_MOB_07
     CaptureRate : 1000
     EggItem: item_960183
     FoodItem: Luxurious_Pet_Food
@@ -8654,7 +8838,8 @@ Body:
       callfunc "petskill",960183;
     Script: >
       callfunc "petstatus",960183;
-  - Mob: MYSTELTAINN
+# 死神貓蟲
+  - Mob: Collabo_MOB_08
     CaptureRate : 1000
     EggItem: item_960184
     FoodItem: Luxurious_Pet_Food
@@ -8665,7 +8850,8 @@ Body:
       callfunc "petskill",960184;
     Script: >
       callfunc "petstatus",960184;
-  - Mob: TIRFING
+# 貓貓蟲咖波
+  - Mob: Collabo_MOB_09
     CaptureRate : 1000
     EggItem: item_960185
     FoodItem: Luxurious_Pet_Food
@@ -8676,7 +8862,8 @@ Body:
       callfunc "petskill",960185;
     Script: >
       callfunc "petstatus",960185;
-  - Mob: EXECUTIONER
+# 貓貓蟲咖波(狂暴化)
+  - Mob: Collabo_MOB_10
     CaptureRate : 1000
     EggItem: item_960186
     FoodItem: Luxurious_Pet_Food
@@ -8687,7 +8874,8 @@ Body:
       callfunc "petskill",960186;
     Script: >
       callfunc "petstatus",960186;
-  - Mob: ANOLIAN
+# 神殿的大門的守護者
+  - Mob: BAKONAWA_Que
     CaptureRate : 1000
     EggItem: item_960187
     FoodItem: Luxurious_Pet_Food
@@ -8698,7 +8886,8 @@ Body:
       callfunc "petskill",960187;
     Script: >
       callfunc "petstatus",960187;
-  - Mob: STING
+# 虐殺的喬伊亞
+  - Mob: AB_GIOIA
     CaptureRate : 1000
     EggItem: item_960188
     FoodItem: Luxurious_Pet_Food
@@ -8709,7 +8898,8 @@ Body:
       callfunc "petskill",960188;
     Script: >
       callfunc "petstatus",960188;
-  - Mob: CRAMP
+# 勇猛的將軍大賢
+  - Mob: AB_DAEHYON
     CaptureRate : 1000
     EggItem: item_960189
     FoodItem: Luxurious_Pet_Food
@@ -8720,7 +8910,8 @@ Body:
       callfunc "petskill",960189;
     Script: >
       callfunc "petstatus",960189;
-  - Mob: BRILIGHT
+# 煉獄的守護者卡德斯
+  - Mob: AB_KADES
     CaptureRate : 1000
     EggItem: item_960190
     FoodItem: Luxurious_Pet_Food
@@ -8731,7 +8922,8 @@ Body:
       callfunc "petskill",960190;
     Script: >
       callfunc "petstatus",960190;
-  - Mob: IRON_FIST
+# 灼炎的淘汰者傅立葉
+  - Mob: AB_PYURIEL
     CaptureRate : 1000
     EggItem: item_960191
     FoodItem: Luxurious_Pet_Food
@@ -8742,7 +8934,8 @@ Body:
       callfunc "petskill",960191;
     Script: >
       callfunc "petstatus",960191;
-  - Mob: STEM_WORM
+# 混沌惡魔龍
+  - Mob: PAD_C_D_DRAGON
     CaptureRate : 1000
     EggItem: item_960192
     FoodItem: Luxurious_Pet_Food
@@ -8753,7 +8946,8 @@ Body:
       callfunc "petskill",960192;
     Script: >
       callfunc "petstatus",960192;
-  - Mob: PENOMENA
+# 風之妖精●艾蘿
+  - Mob: MER_EIRA_Que
     CaptureRate : 1000
     EggItem: item_960193
     FoodItem: Luxurious_Pet_Food
@@ -8764,7 +8958,8 @@ Body:
       callfunc "petskill",960193;
     Script: >
       callfunc "petstatus",960193;
-  - Mob: KNIGHT_OF_ABYSS
+# 聖獨角獸●巴耶黎
+  - Mob: MER_BAYER_Que
     CaptureRate : 1000
     EggItem: item_960194
     FoodItem: Luxurious_Pet_Food
@@ -8775,7 +8970,8 @@ Body:
       callfunc "petskill",960194;
     Script: >
       callfunc "petstatus",960194;
-  - Mob: SMOKING_ORC
+# 猛毒昆蟲●賽拉
+  - Mob: MER_SERA_Que
     CaptureRate : 1000
     EggItem: item_960195
     FoodItem: Luxurious_Pet_Food
@@ -8786,7 +8982,8 @@ Body:
       callfunc "petskill",960195;
     Script: >
       callfunc "petstatus",960195;
-  - Mob: JAKK_XMAS
+# 燒瓶石人●迪爾特
+  - Mob: MER_DIETER_Que
     CaptureRate : 1000
     EggItem: item_960196
     FoodItem: Luxurious_Pet_Food
@@ -8797,7 +8994,8 @@ Body:
       callfunc "petskill",960196;
     Script: >
       callfunc "petstatus",960196;
-  - Mob: GOBLINE_XMAS
+# 野貓獸人●伊琳諾雅
+  - Mob: MER_ELEANOR_Que
     CaptureRate : 1000
     EggItem: item_960197
     FoodItem: Luxurious_Pet_Food
@@ -8808,7 +9006,8 @@ Body:
       callfunc "petskill",960197;
     Script: >
       callfunc "petstatus",960197;
-  - Mob: COOKIE_XMAS
+# 綠色礦石魔(堡壘)
+  - Mob: MINERAL_G_Que
     CaptureRate : 1000
     EggItem: item_960198
     FoodItem: Luxurious_Pet_Food
@@ -8819,7 +9018,8 @@ Body:
       callfunc "petskill",960198;
     Script: >
       callfunc "petstatus",960198;
-  - Mob: ANTONIO
+# 紅色礦石魔(堡壘)
+  - Mob: MINERAL_R_Que
     CaptureRate : 1000
     EggItem: item_960199
     FoodItem: Luxurious_Pet_Food
@@ -8830,7 +9030,8 @@ Body:
       callfunc "petskill",960199;
     Script: >
       callfunc "petstatus",960199;
-  - Mob: CRUISER
+# 白色礦石魔(堡壘)
+  - Mob: MINERAL_W_Que
     CaptureRate : 1000
     EggItem: item_960200
     FoodItem: Luxurious_Pet_Food
@@ -8841,7 +9042,8 @@ Body:
       callfunc "petskill",960200;
     Script: >
       callfunc "petstatus",960200;
-  - Mob: MYSTCASE
+# 紫色礦石魔(堡壘)
+  - Mob: MINERAL_P_
     CaptureRate : 1000
     EggItem: item_960201
     FoodItem: Luxurious_Pet_Food
@@ -8852,7 +9054,8 @@ Body:
       callfunc "petskill",960201;
     Script: >
       callfunc "petstatus",960201;
-  - Mob: CHEPET
+# 邪靈
+  - Mob: MOROCC_1_Que
     CaptureRate : 1000
     EggItem: item_960202
     FoodItem: Luxurious_Pet_Food
@@ -8863,7 +9066,8 @@ Body:
       callfunc "petskill",960202;
     Script: >
       callfunc "petstatus",960202;
-  - Mob: KNIGHT_OF_WINDSTORM
+# 泥怪
+  - Mob: MOROCC_2_Que
     CaptureRate : 1000
     EggItem: item_960203
     FoodItem: Luxurious_Pet_Food
@@ -8874,7 +9078,8 @@ Body:
       callfunc "petskill",960203;
     Script: >
       callfunc "petstatus",960203;
-  - Mob: GARM
+# 活屍
+  - Mob: MOROCC_3_Que
     CaptureRate : 1000
     EggItem: item_960204
     FoodItem: Luxurious_Pet_Food
@@ -8885,7 +9090,8 @@ Body:
       callfunc "petskill",960204;
     Script: >
       callfunc "petstatus",960204;
-  - Mob: GARGOYLE
+# 喜樂
+  - Mob: MOROCC_4_Que
     CaptureRate : 1000
     EggItem: item_960205
     FoodItem: Luxurious_Pet_Food
@@ -8896,7 +9102,8 @@ Body:
       callfunc "petskill",960205;
     Script: >
       callfunc "petstatus",960205;
-  - Mob: NERAID
+# 火狐
+  - Mob: FIER_WOLF
     CaptureRate : 1000
     EggItem: item_960206
     FoodItem: Luxurious_Pet_Food
@@ -8907,7 +9114,8 @@ Body:
       callfunc "petskill",960206;
     Script: >
       callfunc "petstatus",960206;
-  - Mob: PEST
+# 黃金波利
+  - Mob: GOLDPORING
     CaptureRate : 1000
     EggItem: item_960207
     FoodItem: Luxurious_Pet_Food
@@ -8918,7 +9126,8 @@ Body:
       callfunc "petskill",960207;
     Script: >
       callfunc "petstatus",960207;
-  - Mob: INJUSTICE
+# 牛魔王
+  - Mob: WOOMAWANG
     CaptureRate : 1000
     EggItem: item_960208
     FoodItem: Luxurious_Pet_Food
@@ -8929,7 +9138,8 @@ Body:
       callfunc "petskill",960208;
     Script: >
       callfunc "petstatus",960208;
-  - Mob: GOBLIN_ARCHER
+# 守護石
+  - Mob: S_EMPEL_Mon
     CaptureRate : 1000
     EggItem: item_960209
     FoodItem: Luxurious_Pet_Food
@@ -8940,7 +9150,8 @@ Body:
       callfunc "petskill",960209;
     Script: >
       callfunc "petstatus",960209;
-  - Mob: GRYPHON
+# 防禦線
+  - Mob: BARRICADE_Mon
     CaptureRate : 1000
     EggItem: item_960210
     FoodItem: Luxurious_Pet_Food
@@ -8951,7 +9162,8 @@ Body:
       callfunc "petskill",960210;
     Script: >
       callfunc "petstatus",960210;
-  - Mob: DARK_FRAME
+# 水晶牆
+  - Mob: OBJ_A2_Mon
     CaptureRate : 1000
     EggItem: item_960211
     FoodItem: Luxurious_Pet_Food
@@ -8962,7 +9174,8 @@ Body:
       callfunc "petskill",960211;
     Script: >
       callfunc "petstatus",960211;
-  - Mob: MUTANT_DRAGON
+# 火狐
+  - Mob: FIER_WOLF_Mon
     CaptureRate : 1000
     EggItem: item_960212
     FoodItem: Luxurious_Pet_Food
@@ -8973,7 +9186,8 @@ Body:
       callfunc "petskill",960212;
     Script: >
       callfunc "petstatus",960212;
-  - Mob: WIND_GHOST
+# 邪惡的巴風特
+  - Mob: BAPHOMET_Mon
     CaptureRate : 1000
     EggItem: item_960213
     FoodItem: Luxurious_Pet_Food
@@ -8984,7 +9198,8 @@ Body:
       callfunc "petskill",960213;
     Script: >
       callfunc "petstatus",960213;
-  - Mob: MERMAN
+# 終極夢羅克
+  - Mob: MOROCC_Mon
     CaptureRate : 1000
     EggItem: item_960214
     FoodItem: Luxurious_Pet_Food
@@ -8995,7 +9210,8 @@ Body:
       callfunc "petskill",960214;
     Script: >
       callfunc "petstatus",960214;
-  - Mob: COOKIE
+# 狙擊之塔
+  - Mob: STONE_SHOOTER_Mon
     CaptureRate : 1000
     EggItem: item_960215
     FoodItem: Luxurious_Pet_Food
@@ -9006,7 +9222,8 @@ Body:
       callfunc "petskill",960215;
     Script: >
       callfunc "petstatus",960215;
-  - Mob: ASTER
+# 魔力之塔
+  - Mob: ENTWEIHEN_Mon
     CaptureRate : 1000
     EggItem: item_960216
     FoodItem: Luxurious_Pet_Food
@@ -9017,7 +9234,8 @@ Body:
       callfunc "petskill",960216;
     Script: >
       callfunc "petstatus",960216;
-  - Mob: CARAT
+# 石樹砲塔
+  - Mob: STONE_Mon
     CaptureRate : 1000
     EggItem: item_960217
     FoodItem: Luxurious_Pet_Food
@@ -9028,7 +9246,8 @@ Body:
       callfunc "petskill",960217;
     Script: >
       callfunc "petstatus",960217;
-  - Mob: BLOODY_KNIGHT
+# 巴哈姆特
+  - Mob: LOST_DRAGON_Mon
     CaptureRate : 1000
     EggItem: item_960218
     FoodItem: Luxurious_Pet_Food
@@ -9039,7 +9258,8 @@ Body:
       callfunc "petskill",960218;
     Script: >
       callfunc "petstatus",960218;
-  - Mob: CLOCK
+# 刺刀哥布靈(堡壘)
+  - Mob: GOBLIN_1_Mon
     CaptureRate : 1000
     EggItem: item_960219
     FoodItem: Luxurious_Pet_Food
@@ -9050,7 +9270,8 @@ Body:
       callfunc "petskill",960219;
     Script: >
       callfunc "petstatus",960219;
-  - Mob: C_TOWER_MANAGER
+# 鏈錘哥布靈(堡壘)
+  - Mob: GOBLIN_2_Mon
     CaptureRate : 1000
     EggItem: item_960220
     FoodItem: Luxurious_Pet_Food
@@ -9061,7 +9282,8 @@ Body:
       callfunc "petskill",960220;
     Script: >
       callfunc "petstatus",960220;
-  - Mob: DARK_LORD
+# 大斧哥布靈(堡壘)
+  - Mob: GOBLIN_3_Mon
     CaptureRate : 1000
     EggItem: item_960221
     FoodItem: Luxurious_Pet_Food
@@ -9072,7 +9294,8 @@ Body:
       callfunc "petskill",960221;
     Script: >
       callfunc "petstatus",960221;
-  - Mob: ORC_LADY
+# 鎯頭哥布靈(堡壘)
+  - Mob: GOBLIN_4_
     CaptureRate : 1000
     EggItem: item_960222
     FoodItem: Luxurious_Pet_Food
@@ -9083,7 +9306,8 @@ Body:
       callfunc "petskill",960222;
     Script: >
       callfunc "petstatus",960222;
-  - Mob: RAYDRIC_ARCHER
+# 刺錘哥布靈(堡壘)
+  - Mob: GOBLIN_5_Mon
     CaptureRate : 1000
     EggItem: item_960223
     FoodItem: Luxurious_Pet_Food
@@ -9094,7 +9318,8 @@ Body:
       callfunc "petskill",960223;
     Script: >
       callfunc "petstatus",960223;
-  - Mob: GREATEST_GENERAL
+# 哥布靈首領(堡壘)
+  - Mob: GOBLIN_LEADER_Mon
     CaptureRate : 1000
     EggItem: item_960224
     FoodItem: Luxurious_Pet_Food
@@ -9105,7 +9330,8 @@ Body:
       callfunc "petskill",960224;
     Script: >
       callfunc "petstatus",960224;
-  - Mob: STALACTIC_GOLEM
+# 大斧犬妖(堡壘)
+  - Mob: KOBOLD_1_Mon
     CaptureRate : 1000
     EggItem: item_960225
     FoodItem: Luxurious_Pet_Food
@@ -9116,7 +9342,8 @@ Body:
       callfunc "petskill",960225;
     Script: >
       callfunc "petstatus",960225;
-  - Mob: STEAM_GOBLIN
+# 鎯頭犬妖(堡壘)
+  - Mob: KOBOLD_2_Mon
     CaptureRate : 1000
     EggItem: item_960226
     FoodItem: Luxurious_Pet_Food
@@ -9127,7 +9354,8 @@ Body:
       callfunc "petskill",960226;
     Script: >
       callfunc "petstatus",960226;
-  - Mob: SAGEWORM
+# 刺錘犬妖(堡壘)
+  - Mob: KOBOLD_3_Mon
     CaptureRate : 1000
     EggItem: item_960227
     FoodItem: Luxurious_Pet_Food
@@ -9138,7 +9366,8 @@ Body:
       callfunc "petskill",960227;
     Script: >
       callfunc "petstatus",960227;
-  - Mob: KOBOLD_ARCHER
+# 犬妖首領(堡壘)
+  - Mob: KOBOLD_LEADER_Mon
     CaptureRate : 1000
     EggItem: item_960228
     FoodItem: Luxurious_Pet_Food
@@ -9149,7 +9378,8 @@ Body:
       callfunc "petskill",960228;
     Script: >
       callfunc "petstatus",960228;
-  - Mob: ARCHER_GUARDIAN
+# 風元素(堡壘)
+  - Mob: CRYSTAL_1_Mon
     CaptureRate : 1000
     EggItem: item_960229
     FoodItem: Luxurious_Pet_Food
@@ -9160,7 +9390,8 @@ Body:
       callfunc "petskill",960229;
     Script: >
       callfunc "petstatus",960229;
-  - Mob: KNIGHT_GUARDIAN
+# 土元素(堡壘)
+  - Mob: CRYSTAL_2_Mon
     CaptureRate : 1000
     EggItem: item_960230
     FoodItem: Luxurious_Pet_Food
@@ -9171,7 +9402,8 @@ Body:
       callfunc "petskill",960230;
     Script: >
       callfunc "petstatus",960230;
-  - Mob: SOLDIER_GUARDIAN
+# 火元素(堡壘)
+  - Mob: CRYSTAL_3_Mon
     CaptureRate : 1000
     EggItem: item_960231
     FoodItem: Luxurious_Pet_Food
@@ -9182,7 +9414,8 @@ Body:
       callfunc "petskill",960231;
     Script: >
       callfunc "petstatus",960231;
-  - Mob: MAYA_PUPLE
+# 水元素(堡壘)
+  - Mob: CRYSTAL_4_Mon
     CaptureRate : 1000
     EggItem: item_960232
     FoodItem: Luxurious_Pet_Food
@@ -9193,7 +9426,8 @@ Body:
       callfunc "petskill",960232;
     Script: >
       callfunc "petstatus",960232;
-  - Mob: SKELETON_GENERAL
+# 絕望之神夢羅克(要塞)
+  - Mob: MM_MOROCC_ADT_Mon
     CaptureRate : 1000
     EggItem: item_960233
     FoodItem: Luxurious_Pet_Food
@@ -9204,7 +9438,8 @@ Body:
       callfunc "petskill",960233;
     Script: >
       callfunc "petstatus",960233;
-  - Mob: WRAITH_DEAD
+# 紅諾博斯(初級)
+  - Mob: NOVUS_N
     CaptureRate : 1000
     EggItem: item_960234
     FoodItem: Luxurious_Pet_Food
@@ -9215,7 +9450,8 @@ Body:
       callfunc "petskill",960234;
     Script: >
       callfunc "petstatus",960234;
-  - Mob: MINI_DEMON
+# 黃諾博斯(初級)
+  - Mob: NOVUS_N
     CaptureRate : 1000
     EggItem: item_960235
     FoodItem: Luxurious_Pet_Food
@@ -9226,7 +9462,8 @@ Body:
       callfunc "petskill",960235;
     Script: >
       callfunc "petstatus",960235;
-  - Mob: CREMY_FEAR
+# 紅貝勒斯(初級)
+  - Mob: FERUS_N
     CaptureRate : 1000
     EggItem: item_960236
     FoodItem: Luxurious_Pet_Food
@@ -9237,7 +9474,8 @@ Body:
       callfunc "petskill",960236;
     Script: >
       callfunc "petstatus",960236;
-  - Mob: KILLER_MANTIS
+# 綠貝勒斯(初級)
+  - Mob: FERUS__N
     CaptureRate : 1000
     EggItem: item_960237
     FoodItem: Luxurious_Pet_Food
@@ -9248,7 +9486,8 @@ Body:
       callfunc "petskill",960237;
     Script: >
       callfunc "petstatus",960237;
-  - Mob: OWL_BARON
+# 黃俄希托斯(初級)
+  - Mob: ACIDUS_N
     CaptureRate : 1000
     EggItem: item_960238
     FoodItem: Luxurious_Pet_Food
@@ -9259,7 +9498,8 @@ Body:
       callfunc "petskill",960238;
     Script: >
       callfunc "petstatus",960238;
-  - Mob: KOBOLD_LEADER
+# 灰俄希托斯(初級)
+  - Mob: ACIDUS__N
     CaptureRate : 1000
     EggItem: item_960239
     FoodItem: Luxurious_Pet_Food
@@ -9270,7 +9510,8 @@ Body:
       callfunc "petskill",960239;
     Script: >
       callfunc "petstatus",960239;
-  - Mob: ANCIENT_MUMMY
+# 狂暴邪惡箱(初級)
+  - Mob: ANCIENT_MIMIC_N
     CaptureRate : 1000
     EggItem: item_960240
     FoodItem: Luxurious_Pet_Food
@@ -9281,7 +9522,8 @@ Body:
       callfunc "petskill",960240;
     Script: >
       callfunc "petstatus",960240;
-  - Mob: ZOMBIE_MASTER
+# 龍蛋(初級)
+  - Mob: DRAGON_EGG_N
     CaptureRate : 1000
     EggItem: item_960241
     FoodItem: Luxurious_Pet_Food
@@ -9292,7 +9534,8 @@ Body:
       callfunc "petskill",960241;
     Script: >
       callfunc "petstatus",960241;
-  - Mob: GOBLIN_LEADER
+# 三頭龍(初級)
+  - Mob: HYDRO_N
     CaptureRate : 1000
     EggItem: item_960242
     FoodItem: Luxurious_Pet_Food
@@ -9303,7 +9546,8 @@ Body:
       callfunc "petskill",960242;
     Script: >
       callfunc "petstatus",960242;
-  - Mob: CATERPILLAR
+# 地之精靈-泰拉
+  - Mob: TERA_L_N
     CaptureRate : 1000
     EggItem: item_960243
     FoodItem: Luxurious_Pet_Food
@@ -9314,7 +9558,8 @@ Body:
       callfunc "petskill",960243;
     Script: >
       callfunc "petstatus",960243;
-  - Mob: AM_MUT
+# 地之精靈
+  - Mob: TERA_S_N
     CaptureRate : 1000
     EggItem: item_960244
     FoodItem: Luxurious_Pet_Food
@@ -9325,7 +9570,8 @@ Body:
       callfunc "petskill",960244;
     Script: >
       callfunc "petstatus",960244;
-  - Mob: DARK_ILLUSION
+# 堅硬火焰妖(初級)
+  - Mob: BLAZZER_H_F
     CaptureRate : 1000
     EggItem: item_960245
     FoodItem: Luxurious_Pet_Food
@@ -9336,7 +9582,8 @@ Body:
       callfunc "petskill",960245;
     Script: >
       callfunc "petstatus",960245;
-  - Mob: GIANT_HONET
+# 堅硬七彩夢魘(初級)
+  - Mob: NIGHTMARE_TERROR_H_F
     CaptureRate : 1000
     EggItem: item_960246
     FoodItem: Luxurious_Pet_Food
@@ -9347,7 +9594,8 @@ Body:
       callfunc "petskill",960246;
     Script: >
       callfunc "petstatus",960246;
-  - Mob: GIANT_SPIDER
+# 堅硬七彩飛龍(初級)
+  - Mob: DELETER_H_F
     CaptureRate : 1000
     EggItem: item_960247
     FoodItem: Luxurious_Pet_Food
@@ -9358,7 +9606,8 @@ Body:
       callfunc "petskill",960247;
     Script: >
       callfunc "petstatus",960247;
-  - Mob: ANCIENT_WORM
+# 堅硬七彩地龍(初級)
+  - Mob: DELETER2_H_F
     CaptureRate : 1000
     EggItem: item_960248
     FoodItem: Luxurious_Pet_Food
@@ -9369,7 +9618,8 @@ Body:
       callfunc "petskill",960248;
     Script: >
       callfunc "petstatus",960248;
-  - Mob: LEIB_OLMAI
+# 堅硬爆炎蝙蝠(初級)
+  - Mob: EXPLOSION_H_F
     CaptureRate : 1000
     EggItem: item_960249
     FoodItem: Luxurious_Pet_Food
@@ -9380,7 +9630,8 @@ Body:
       callfunc "petskill",960249;
     Script: >
       callfunc "petstatus",960249;
-  - Mob: CAT_O_NINE_TAIL
+# 堅硬卡浩(初級)
+  - Mob: KAHO_H_F
     CaptureRate : 1000
     EggItem: item_960250
     FoodItem: Luxurious_Pet_Food
@@ -9391,7 +9642,8 @@ Body:
       callfunc "petskill",960250;
     Script: >
       callfunc "petstatus",960250;
-  - Mob: PANZER_GOBLIN
+# 堅硬熔岩巨石(初級)
+  - Mob: LAVA_GOLEM_H_F
     CaptureRate : 1000
     EggItem: item_960251
     FoodItem: Luxurious_Pet_Food
@@ -9402,7 +9654,8 @@ Body:
       callfunc "petskill",960251;
     Script: >
       callfunc "petstatus",960251;
-  - Mob: GAJOMART
+# 火之精靈-阿格尼
+  - Mob: AGNI_L_F
     CaptureRate : 1000
     EggItem: item_960252
     FoodItem: Luxurious_Pet_Food
@@ -9413,7 +9666,8 @@ Body:
       callfunc "petskill",960252;
     Script: >
       callfunc "petstatus",960252;
-  - Mob: MAJORUROS
+# 火之精靈
+  - Mob: AGNI_S_F
     CaptureRate : 1000
     EggItem: item_960253
     FoodItem: Luxurious_Pet_Food
@@ -9424,7 +9678,8 @@ Body:
       callfunc "petskill",960253;
     Script: >
       callfunc "petstatus",960253;
-  - Mob: GULLINBURSTI
+# 雪獸(初級)
+  - Mob: SNOWIER_I
     CaptureRate : 1000
     EggItem: item_960254
     FoodItem: Luxurious_Pet_Food
@@ -9435,7 +9690,8 @@ Body:
       callfunc "petskill",960254;
     Script: >
       callfunc "petstatus",960254;
-  - Mob: TURTLE_GENERAL
+# 小雪獸(初級)
+  - Mob: SIROMA_I
     CaptureRate : 1000
     EggItem: item_960255
     FoodItem: Luxurious_Pet_Food
@@ -9446,7 +9702,8 @@ Body:
       callfunc "petskill",960255;
     Script: >
       callfunc "petstatus",960255;
-  - Mob: MOBSTER
+# 冰巨人(初級)
+  - Mob: ICE_TITAN_I
     CaptureRate : 1000
     EggItem: item_960256
     FoodItem: Luxurious_Pet_Food
@@ -9457,7 +9714,8 @@ Body:
       callfunc "petskill",960256;
     Script: >
       callfunc "petstatus",960256;
-  - Mob: PERMETER
+# 蓋俄斯提(初級)
+  - Mob: GAZETI_I
     CaptureRate : 1000
     EggItem: item_960257
     FoodItem: Luxurious_Pet_Food
@@ -9468,7 +9726,8 @@ Body:
       callfunc "petskill",960257;
     Script: >
       callfunc "petstatus",960257;
-  - Mob: ASSULTER
+# 水靈龜(初級)
+  - Mob: FREEZER_I
     CaptureRate : 1000
     EggItem: item_960258
     FoodItem: Luxurious_Pet_Food
@@ -9479,7 +9738,8 @@ Body:
       callfunc "petskill",960258;
     Script: >
       callfunc "petstatus",960258;
-  - Mob: SOLIDER
+# 水精靈(初級)
+  - Mob: AQUA_ELEMENTAL_I
     CaptureRate : 1000
     EggItem: item_960259
     FoodItem: Luxurious_Pet_Food
@@ -9490,7 +9750,8 @@ Body:
       callfunc "petskill",960259;
     Script: >
       callfunc "petstatus",960259;
-  - Mob: FUR_SEAL
+# 靈剋(初級)
+  - Mob: RHYNCHO_I
     CaptureRate : 1000
     EggItem: item_960260
     FoodItem: Luxurious_Pet_Food
@@ -9501,6 +9762,7 @@ Body:
       callfunc "petskill",960260;
     Script: >
       callfunc "petstatus",960260;
+# 
   - Mob: HEATER
     CaptureRate : 1000
     EggItem: item_960261
@@ -25690,6 +25952,7 @@ Body:
       callfunc "petskill",961731;
     Script: >
       callfunc "petstatus",961731;
+
 
 
 
