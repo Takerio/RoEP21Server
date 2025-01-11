@@ -27,16 +27,21 @@ recalculatestat;
 		mes "MVP卡片需要^i[61038]x5、1000萬Zeny";
 		next;
 			jixu:
-			switch(select("普通卡片硬幣抽取","封印王卡硬幣抽取","王卡片硬幣抽取","取消")){
+			switch(select("全部普通卡片硬幣抽取","封印王卡硬幣抽取","王卡片硬幣抽取","取消")){
 			case 1:
 				if(countitem(.item_1_coin)<.item_1_coin_co){
 				mes "硬幣不足"+.item_1_coin_co+"個";
 				close;
 				}
-				
+				set coin_amount,countitem(.item_1_coin);
+				set times,coin_amount/.item_1_coin_co;
+				for(set i,0;i<times;i++)
+				{
 				delitem .item_1_coin,.item_1_coin_co;
 				.index = rand(getarraysize(.card_1));
 				getitem .card_1[.index],1;
+
+				}
 				clear;
 				mes "成功";
 				goto jixu;

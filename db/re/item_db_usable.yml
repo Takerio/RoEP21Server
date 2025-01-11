@@ -35122,9 +35122,6 @@ Body:
       NoSell: true
     Script: |
       rentitem 102246,2592000;
-      rentitem 102246,2592000;
-      rentitem 102246,2592000;
-
   - Id: 102246
     AegisName: VIP_Black_Card
     Name: VIP尊榮黑卡

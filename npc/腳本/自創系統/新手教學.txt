@@ -52,7 +52,7 @@ L_ko4:
 	end;
 
 L_ko5:
-	if (.Battle == 0) goto Battle0;
+	if ($Battle == 0) goto Battle0;
 	mes "[新手輔助員]";
 	mes "已經給你加倍的祝福了！";
 	sc_start SC_EXPBOOST,1800000,50;
@@ -118,20 +118,20 @@ L_ko00:
 
 //----------------------------- 活動時間設定
 OnClock1200:
-	set .Battle,1;
+	set $Battle,1;
 	announce "[新手教學員] 經驗值&掉落率加倍祝福已經開放了,需要服務的玩家請來找我！",0;
 	end;
 
 OnClock1500:
-	set .Battle,0;
+	set $Battle,0;
 	announce "[新手教學員] 經驗值&掉落率加倍祝福已經關閉了,下次開放時間：１８：００",0;
 	end;
 OnClock1800:
-	set .Battle,1;
+	set $Battle,1;
 	announce "[新手教學員] 經驗值&掉落率加倍祝福已經開放了,需要服務的玩家請來找我！",0;
 	end;
 OnClock2300:
-	set .Battle,0;
+	set $Battle,0;
 	announce "[新手教學員] 經驗值&掉落率加倍祝福已經關閉了,需要服務的玩家請來找我！",0;
 	end;
 
