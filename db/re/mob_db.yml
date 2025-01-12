@@ -105859,8 +105859,11 @@ Body:
         Rate: 800
       - Item: Yellow_Gemstone
         Rate: 100
+      - Item: Ein_DYNITE
+        Rate: 100
       - Item: Gold
         Rate: 2
+        Ein_DYNITE
       - Item: Ein_UNDIUM
         Rate: 100
         StealProtected: true
