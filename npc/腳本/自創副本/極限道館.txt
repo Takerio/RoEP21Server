@@ -190,7 +190,7 @@ function	script	Gym_better_Mvp1	{
 	setunitdata .@MOD,UMOB_LUK,rand(120,300);
 
 	//減傷
-	setunitdata .@MOD,UMOB_DAMAGETAKEN,100;
+	setunitdata .@MOD,UMOB_DAMAGETAKEN,10;
 	//end;
 	return;
 }
