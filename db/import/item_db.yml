@@ -10525,7 +10525,7 @@ Body:
   # 技能卡片 - 劍士
   - Id: 970000
     AegisName: card_skill_SM_SWORD
-    Name: 單手劍使用熟練度
+    Name: 單手劍使用熟練度技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10535,7 +10535,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_SWORD");
   - Id: 970001
     AegisName: card_skill_SM_TWOHAND
-    Name: 雙手劍使用熟練度
+    Name: 雙手劍使用熟練度技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10545,7 +10545,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_TWOHAND");
   - Id: 970002
     AegisName: card_skill_SM_RECOVERY
-    Name: 快速恢復
+    Name: 快速恢復技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10555,7 +10555,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_RECOVERY");
   - Id: 970003
     AegisName: card_skill_SM_BASH
-    Name: 狂擊
+    Name: 狂擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10565,7 +10565,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_BASH");
   - Id: 970004
     AegisName: card_skill_SM_PROVOKE
-    Name: 挑釁
+    Name: 挑釁技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10575,7 +10575,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_PROVOKE");
   - Id: 970005
     AegisName: card_skill_SM_PROVOKE
-    Name: 挑釁
+    Name: 挑釁技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10585,7 +10585,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_PROVOKE");
   - Id: 970005
     AegisName: card_skill_SM_MAGNUM
-    Name: 怒爆
+    Name: 怒爆技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10595,7 +10595,7 @@ Body:
       set maxLv,callfunc("skill_Card","SM_MAGNUM");
   - Id: 970006
     AegisName: card_skill_SM_ENDURE
-    Name: 霸體
+    Name: 霸體技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10606,7 +10606,7 @@ Body:
   # 技能卡片 - 法師
   - Id: 970007
     AegisName: card_skill_MG_SRECOVERY
-    Name: 禪心
+    Name: 禪心技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10616,7 +10616,7 @@ Body:
       set maxLv,callfunc("skill_Card","MG_SRECOVERY");
   - Id: 970008
     AegisName: card_skill_MG_SIGHT
-    Name: 火狩
+    Name: 火狩技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10626,7 +10626,7 @@ Body:
       set maxLv,callfunc("skill_Card","MG_SIGHT");
   - Id: 970009
     AegisName: card_skill_MG_NAPALMBEAT
-    Name: 心靈爆破
+    Name: 心靈爆破技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -10634,10 +10634,1111 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","MG_NAPALMBEAT");
+  - Id: 970010
+    AegisName: card_skill_MG_SAFETYWALL
+    Name: 暗之障壁技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_SAFETYWALL");
+  - Id: 970011
+    AegisName: card_skill_MG_SOULSTRIKE
+    Name: 聖靈召喚技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_SOULSTRIKE");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970013
+    AegisName: card_skill_MG_FROSTDIVER
+    Name: 冰凍術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_FROSTDIVER");
+  - Id: 970014
+    AegisName: card_skill_MG_STONECURSE
+    Name: 石化術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_STONECURSE");
+  - Id: 970015
+    AegisName: card_skill_MG_FIREBALL
+    Name: 火球術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970016
+    AegisName: card_skill_MG_FIREWALL
+    Name: 火焰之壁技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_FIREWALL");
+  - Id: 970018
+    AegisName: card_skill_MG_FIREBOLT
+    Name: 火箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_FIREBOLT");
+  - Id: 970019
+    AegisName: card_skill_MG_LIGHTNINGBOLT
+    Name: 雷擊術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_LIGHTNINGBOLT");
+  - Id: 970020
+    AegisName: card_skill_MG_THUNDERSTORM
+    Name: 雷爆術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_THUNDERSTORM");
+  # 技能卡片 - 服事
+  - Id: 970021
+    AegisName: card_skill_AL_DP
+    Name: 天使之護技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","AL_DP");
+  - Id: 970022
+    AegisName: card_skill_AL_DEMONBANE
+    Name: 天使之擊技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","AL_DEMONBANE");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+  - Id: 970012
+    AegisName: card_skill_MG_COLDBOLT
+    Name: 冰箭術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
 
   - Id: 971000
     AegisName: card_skill_LG_RAYOFGENESIS
-    Name: 創世之光
+    Name: 創世之光技能卡片
     Type: Card
     Buy: 20
     Weight: 10

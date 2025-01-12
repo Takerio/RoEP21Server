@@ -27,15 +27,14 @@ recalculatestat;
 		mes "MVP卡片需要^i[61038]x5、1000萬Zeny";
 		next;
 			jixu:
-			switch(select("全部普通卡片硬幣抽取","封印王卡硬幣抽取","王卡片硬幣抽取","取消")){
+			switch(select("全部普通卡片硬幣抽取","輸入普通卡片次數抽取","封印王卡硬幣抽取","王卡片硬幣抽取","取消")){
 			case 1:
 				if(countitem(.item_1_coin)<.item_1_coin_co){
 				mes "硬幣不足"+.item_1_coin_co+"個";
 				close;
 				}
 				set coin_amount,countitem(.item_1_coin);
-				set times,coin_amount/.item_1_coin_co;
-				for(set i,0;i<times;i++)
+				for(set i,0;i<.item_1_coin_co;i++)
 				{
 				delitem .item_1_coin,.item_1_coin_co;
 				.index = rand(getarraysize(.card_1));
@@ -46,6 +45,28 @@ recalculatestat;
 				mes "成功";
 				goto jixu;
 			case 2:
+				if(countitem(.item_1_coin)<.item_1_coin_co){
+				mes "硬幣不足"+.item_1_coin_co+"個";
+				close;
+				}
+				mes "請輸入你想抽取幾次～";
+				input custom_amount;
+				if(custom_amount <= 0){
+					mes "請輸入0以上的數字。";
+				close;
+				}
+				set coin_amount,countitem(.item_1_coin);
+				for(set i,0;i<custom_amount;i++)
+				{
+				delitem .item_1_coin,.item_1_coin_co;
+				.index = rand(getarraysize(.card_1));
+				getitem .card_1[.index],1;
+
+				}
+				clear;
+				mes "成功";
+				goto jixu;
+			case 3:
 				if(countitem(.item_2_coin)<.item_2_coin_co){
 				mes "硬幣不足"+.item_2_coin_co+"個";
 				close;
@@ -56,7 +77,7 @@ recalculatestat;
 				getitem .card_2[.index],1;
 				clear;
 				goto jixu;
-			case 3:
+			case 4:
 				if(countitem(.item_3_coin)<.item_3_coin_co){
 				mes "硬幣不足"+.item_3_coin_co+"個";
 				close;
@@ -67,7 +88,7 @@ recalculatestat;
 				getitem .card_3[.index],1;
 				clear;
 				goto jixu;
-			case 4:
+			case 5:
 				end;
 			
 			
