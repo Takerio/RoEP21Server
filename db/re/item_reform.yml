@@ -3375,6 +3375,7 @@ Body:
           - Material: Ymir_Heart_P_TW
             Amount: 2
         ResultItem: Unknown_Item_470283
+        ChangeRefine: -1
       - BaseItem: Thanos_Helm_1
         MinimumRefine: 9
         CardsAllowed: true
