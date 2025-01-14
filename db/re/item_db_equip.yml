@@ -122013,7 +122013,61 @@ Body:
             }
          }
       }
-
+  - Id: 470283
+    AegisName: Unknown_Item_470283
+    Name: 機械鋁合金改造靴-LT
+    Type: Armor
+    Weight: 1500
+    Defense: 50
+    Slots: 1
+    Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
+      Fourth: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMdef,10; 
+      bonus bPow,(.@r/2)*2; 
+      bonus bMaxHPrate,(.@r/3)*4;
+      bonus bDelayrate,(.@r/3)*2;
+      if (.@r>=7) {
+         bonus bAtkRate,7;
+      if (.@r>=9) {
+            bonus bShortAtkRate,15;
+            bonus bLongAtkRate,15;
+            if (.@r>=11) {
+               bonus2 bAddEle,Ele_All,10;
+               if (.@r>=13){
+               bonus2 bCastrate,"NC_ARMSCANNON",-100;
+               bonus2 bSkillCooldown,"NC_AXETORNADO",-2000;
+               bonus2 bSkillAtk,"NC_AXETORNADO",60;
+               bonus2 bSkillAtk,"NC_ARMSCANNON",60;
+               }
+            }
+         }
+      }
+      if (.@g>=ENCHANTGRADE_D) {
+         bonus bFixedCast,-700;
+         
+         if (.@g>=ENCHANTGRADE_C) {
+            bonus2 bAddSize,Size_All,10;
+            if (.@g>=ENCHANTGRADE_B) {
+               bonus2 bSkillAtk,"MT_MIGHTY_SMASH",40;
+               bonus2 bSkillAtk,"MT_SPARK_BLASTER",40;
+               if (.@g>=ENCHANTGRADE_A) {
+                  bonus2 bAddRace,RC_All,15;
+               }
+            }
+         }
+      }
   - Id: 490570
     AegisName: 4Element_magic_ring
     Name: 四大元素屬性魔戒
