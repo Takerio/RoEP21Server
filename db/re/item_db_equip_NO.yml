@@ -97,7 +97,7 @@ Header:
   Version: 3
 
 Body:
-  #魔物堡壘寶箱
+#魔物堡壘寶箱
   - Id: 15374
     AegisName: lunar_eclipse_Armor_
     Name: 月全蝕魔力外袍
@@ -251,7 +251,7 @@ Body:
       bonus bMaxHPrate,(.@r/3);
       bonus bMaxSPrate,(.@r/3);
 
-  #下水道金庫寶箱
+#下水道金庫寶箱
   - Id: 470127
     AegisName: Wine_Shoes
     Name: 深紅魔術之靴
@@ -347,7 +347,7 @@ Body:
     UnEquipScript: |
       hateffect(HAT_EF_Magic_Star_TW,false);
 
-  #官方副本積分商店
+#官方副本積分商店
   - Id: 19138
     AegisName: SeraphimCoronet
     Name: 熾天使花冠
@@ -419,7 +419,7 @@ Body:
          bonus bBaseAtk,80;
          bonus bCritAtkRate,20;
       }
-
+      
   - Id: 5918
     AegisName: Gambler_Seal
     Name: 賭徒之印
@@ -497,6 +497,7 @@ Body:
       if(isequipped(2198)){ bonus bDelayrate,-3; bonus bAspdRate,10; bonus bFixedCast,-(getequiprefinerycnt(EQI_SHOES)/2)*100; } 
       if(isequipped(5966)){ bonus bMatk,30; bonus2 bSkillCooldown,"WL_COMET",-20000; } 
       if(isequipped(4456)){ bonus2 bMagicAddClass,1,40; bonus2 bSubEle,Ele_All,-20; }
+
 
   - Id: 480070
     AegisName: Wings_Of_Raguel
@@ -686,8 +687,8 @@ Body:
       bonus bDelayrate,-5;
       bonus bMaxHPrate,7;
       bonus bMaxSPrate,7;
-
-  #簡單模式道館
+      
+#簡單模式道館
   - Id: 32243
     AegisName: Anel_do_Desbravador
     Name: 魔力星環
@@ -977,8 +978,9 @@ Body:
     Script: |
       skill "SA_SPELLBREAKER",2;
 
-  #玩具工廠的遺跡(席琳基米)
-  #官方怪物掉落
+
+#玩具工廠的遺跡(席琳基米)
+#官方怪物掉落
   - Id: 450135
     AegisName: Bloody_Celine_Dress_TW
     Name: 席琳的沾血黑禮服
@@ -1146,7 +1148,7 @@ Body:
       if(isequipped(400023)){ if(getequiprefinerycnt(EQI_HEAD_TOP)>6){ bonus bAspdRate,10; bonus bVariableCastrate,-10; } 
       if(getequiprefinerycnt(EQI_HEAD_TOP)>8){ bonus bAtkRate,5; bonus bWeaponAtkRate,5; bonus bMatkRate,5; } 
       if(getequiprefinerycnt(EQI_HEAD_TOP)>10){ bonus bFixedCast,-500; } }
-
+      
   - Id: 410235
     AegisName: Unknown_Item_44997
     Name: 輕便望遠鏡
@@ -1313,7 +1315,7 @@ Body:
       if((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_GARMENT))>=20){ bonus bAtkRate,10; bonus bMatkRate,10; } 
       if((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_GARMENT))>=26){ bonus2 bAddEle,Ele_All,10; bonus2 bMagicAddEle,Ele_All,10; } } 
       if(isequipped(450175,480076,22202)){bonus bLongAtkRate,8; bonus bShortAtkRate,8; bonus2 bMagicAtkEle,Ele_All,8; 
-      if((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_GARMENT)+getequiprefinerycnt(EQI_SHOES))>=39){ bonus bIgnoreDefRace,RC_All; bonus bIgnoreMDefRace,RC_All; } }
+      if((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_GARMENT)+getequiprefinerycnt(EQI_SHOES))>=39){ bonus bIgnoreDefRace,RC_All; bonus bIgnoreMDefRace,RC_All; } } 
 
   - Id: 15367
     AegisName: Astraea_Armor
@@ -1330,7 +1332,7 @@ Body:
     Refineable: true
     View: 1
     Script: |
-
+      
   - Id: 20905
     AegisName: Astrea_Cape
     Name: 阿斯特莉亞斗篷
@@ -1531,7 +1533,7 @@ Body:
          }
       }
 
-  #EP伊斯加爾特王冠
+#EP伊斯加爾特王冠
   - Id: 400105
     AegisName: Glacier_Helm_1
     Name: 伊斯加爾特近戰王冠
@@ -1776,7 +1778,7 @@ Body:
       bonus bInt,(.@r/2);
       bonus bMaxHPrate,(.@r/2)*2;
       bonus2 bSubEle,Ele_Neutral,(.@r/4)*5;
-
+      
       if (.@r>=9) {
          bonus bStr,5;
          bonus bInt,5;
@@ -1816,7 +1818,7 @@ Body:
       if(readparam(bDex)>=108){ bonus2 bSubEle,Ele_Fire,20; }
       if(readparam(bLuk)>=108){ bonus bFlee2,20; }
       }
-      if (.@r >= 12){ bonus bMaxHPrate,10; bonus bMaxSPrate,10; bonus2 bSubEle,Ele_All,5; }
+      if (.@r >= 12){ bonus bMaxHPrate,10; bonus bMaxSPrate,10; bonus2 bSubEle,Ele_All,5; } 
   - Id: 470120
     AegisName: Unknown_Item_470120
     Name: 機械鋁合金改造靴
@@ -2128,7 +2130,7 @@ Body:
       if(readparam(bVit)>=90){ bonus bMdef,1; } 
       if(readparam(bInt)>=90){ bonus bMaxSPrate,1; } 
       if(readparam(bDex)>=90){ bonus bFixedCast,-100; } 
-      if(readparam(bLuk)>=90){ bonus bFlee,10; }
+      if(readparam(bLuk)>=90){ bonus bFlee,10; } 
 
   - Id: 420194
     AegisName: Head_Item_420194
@@ -2273,7 +2275,7 @@ Body:
       if(getrefine()>6){ bonus bDelayrate,-4; } 
       if(isequipped(4144)){ bonus bDelayrate,-5; bonus bAllStats,getrefine(); bonus bAtkRate,n; bonus bMatkRate,getrefine(); }
 
-  #極限道館
+#極限道館
   - Id: 480124
     AegisName: Cvt_Physical_Wing
     Name: 超高頻物理推進翼
@@ -2354,7 +2356,7 @@ Body:
          }
       }
 
-  #極限道館
+#極限道館
   - Id: 410079
     AegisName: Deepblue_Sunglasses
     Name: 深藍太陽眼鏡
@@ -2427,7 +2429,7 @@ Body:
          }
       }
       }
-  #極限道館
+#極限道館
   - Id: 480175
     AegisName: Changeable_Magic_Cape
     Name: 變幻莫測魔術斗篷
@@ -2787,7 +2789,7 @@ Body:
     View: 959
   - Id: 420074
     AegisName: Limesoda_In_Mouth
-    Name: 嘴刁萊姆汽水
+    Name:  嘴刁萊姆汽水
     Type: Armor
     Locations:
       Head_Low: true
@@ -2945,7 +2947,7 @@ Body:
     Script: |
       bonus2 bSkillUseSP,"NC_POWERSWING",-2; bonus2 bSkillAtk,"NC_POWERSWING",BaseLevel/5; bonus2 bSkillAtk,"NC_AXETORNADO",BaseLevel/3; bonus2 bSkillAtk,"MC_CARTREVOLUTION",BaseLevel; bonus2 bAddMonsterDropItem,529,20; bonus2 bAddMonsterDropItem,530,20; bonus2 bAddItemHealRate,529,100; bonus2 bAddItemHealRate,530,100;
 
-  #啟海伊洛轉蛋
+#啟海伊洛轉蛋
   - Id: 32278
     AegisName: Sealed_Ring_TW
     Name: 冰封環戒
@@ -3082,7 +3084,7 @@ Body:
       if(getrefine()>12){ bonus2 bIgnoreDefClassRate,1,10; } 
       if(isequipped(16089)){ bonus bMatk,30; if(getequiprefinerycnt(EQI_HAND_R)>=12){ bonus2 bSkillCooldown,"AB_ADORAMUS",-500; bonus2 bIgnoreMdefRaceRate,1,15; bonus2 bIgnoreMdefRaceRate,6,15; } }
 
-  #湯麵節
+#湯麵節
   - Id: 15174
     AegisName: Supper_Swimsuit_K
     Name: 衝浪泳衣
@@ -3416,7 +3418,7 @@ Body:
       bonus bDelayrate,-20;
       bonus bBaseAtk,2*BaseLevel;
       bonus bMatk,2*BaseLevel;
-
+      
   - Id: 20866
     AegisName: Golden_Angel_Wing_TW
     Name: 黃金天使羽翼
@@ -3554,7 +3556,7 @@ Body:
     Script: |
       bonus bMaxHPrate,getrefine()/2; bonus bMaxSPrate,getrefine()/2; bonus bMdef,getrefine()/2; bonus bDelayrate,-getrefine()/2;
 
-  #懺悔冠冕寶箱
+#懺悔冠冕寶箱
   - Id: 400469
     AegisName: Poenetentia_D_Crown
     Name: 懺悔精巧冠冕
@@ -3913,7 +3915,9 @@ Body:
       if (.@r>=7)
          bonus2 bHPDrainRate,1000,2;
 
-  #-------------------------------------
+
+
+#-------------------------------------
   - Id: 2190
     AegisName: Ancient_Shield_Of_Aeon
     Name: 艾溫的古代盾牌
@@ -3939,3 +3943,6 @@ Body:
       bonus bMaxHP,500; 
       bonus bMaxSP,50; 
       if(getrefine()>=14) skill "MG_STONECURSE",5;
+
+
+
