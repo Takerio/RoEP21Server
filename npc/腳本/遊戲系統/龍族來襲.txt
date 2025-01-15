@@ -12,7 +12,7 @@ OnClock0259:
 	end;
 
 //活動時間
-OnClock2321:
+OnClock0300:
 	$ditu=rand(1,10);
 	setarray $@Dragon_Mod$[1],"普隆德拉","夢羅克","吉芬","愛爾貝塔","艾爾帕蘭","姜餅城","毀葛","崑崙","龍之城","汶巴拉";
 	setarray $@moncitymap$[1],"prontera","morocc","geffen","alberta","aldebaran","xmas","hugel","gonryun","louyang","umbala";
