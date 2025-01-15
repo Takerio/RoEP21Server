@@ -1323,6 +1323,8 @@ Body:
     DamageTaken: 10
     Ai: 21
     Class: Boss
+    Modes:
+      Mvp: true
   - Id: 27095
     AegisName: LOST_DRAGON_S
     Name: Lost Dragon_S
@@ -1355,6 +1357,8 @@ Body:
     DamageTaken: 10
     Ai: 21
     Class: Boss
+    Modes:
+      Mvp: true
   - Id: 27096
     AegisName: GOPINICH_S
     Name: Gopinich_S
@@ -1387,6 +1391,8 @@ Body:
     DamageTaken: 10
     Ai: 21
     Class: Boss
+    Modes:
+      Mvp: true
   - Id: 27097
     AegisName: KTULLANUX_S
     Name: Ktullanux_S
@@ -1417,6 +1423,8 @@ Body:
     AttackMotion: 840
     DamageMotion: 216
     DamageTaken: 10
+    Modes:
+      Mvp: true
     Ai: 21
     Class: Boss
 

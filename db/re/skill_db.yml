@@ -17000,10 +17000,10 @@ Body:
       NoDamage: true
     Flags:
       IsNpc: true
-    Range: 1   # (skillinfolist.lua)
+    Range: 1 # (skillinfolist.lua)
     Hit: Single
     HitCount: 1
-    Duration1: 900000   # skill duration (unknown value)
+    Duration1: 900000 # skill duration (unknown value)
     Status: MillenniumShield
   - Id: 708
     Name: NPC_COMET
@@ -41505,7 +41505,7 @@ Body:
       State: Ridingdragon
   - Id: 6002
     Name: MT_SPARK_BLASTER
-    Description: Spark Blaster
+    Description: 閃光衝擊波
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack

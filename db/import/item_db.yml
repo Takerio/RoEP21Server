@@ -10429,35 +10429,6 @@ Body:
     Name: 覺醒毀滅的第2騎士團長寵物蛋
     Type: Petegg
     Buy: 20
-  # 電鑽
-  - Id: 2210000
-    AegisName: item_2210000
-    Name: 電鑽
-    Type: Usable
-    Weight: 100
-    Script: |
-      callfunc "DigSystem_",1,100,0,0,1,0,2210000;
-  - Id: 2210001
-    AegisName: item_2210001
-    Name: 一次性電鑽
-    Type: Usable
-    Weight: 100
-    Script: |
-      callfunc "DigSystem",1,100,0,0,1,0,2210001;
-  - Id: 2210003
-    AegisName: item_2210003
-    Name: 外掛驗證裝置
-    Type: Usable
-    Script: |
-      getitem 2210003,1;
-      callfunc "BT_INFO";
-  - Id: 221111
-    AegisName: item_221111
-    Name: 測試道具
-    Type: Usable
-    Weight: 100
-    Script: |
-      callfunc "自動公告系統";
   - Id: 970001
     AegisName: C_Armor_Reform_All
     Name: 防具自創裝備改造綜合箱
@@ -10497,13 +10468,17 @@ Body:
     Script: |
       getitem 2210003,1;
       callfunc "BT_INFO";
-  - Id: 221111
-    AegisName: item_221111
-    Name: 測試道具
-    Type: Usable
-    Weight: 100
+#龍族來襲用裝備
+  - Id: 2210004
+    AegisName: C_Head_Dragon_Event
+    Name: (服飾)來去一條龍
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 968
     Script: |
-      callfunc "自動公告系統";
+      callfunc "Go";
   - Id: 970001
     AegisName: C_Armor_Reform_All
     Name: 防具自創裝備改造綜合箱
@@ -10755,986 +10730,2896 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","AL_DEMONBANE");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+  - Id: 970023
+    AegisName: card_skill_AL_RUWACH
+    Name: 光獵技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_RUWACH");
+  - Id: 970024
+    AegisName: card_skill_AL_PNEUMA
+    Name: 光之障壁技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_PNEUMA");
+  - Id: 970025
+    AegisName: card_skill_AL_TELEPORT
+    Name: 瞬間移動技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_TELEPORT");
+  - Id: 970026
+    AegisName: card_skill_AL_WARP
+    Name: 傳送之陣技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_WARP");
+  - Id: 970027
+    AegisName: card_skill_AL_HEAL
+    Name: 治癒術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_HEAL");
+  - Id: 970028
+    AegisName: card_skill_AL_INCAGI
+    Name: 加速術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_INCAGI");
+  - Id: 970029
+    AegisName: card_skill_AL_DECAGI
+    Name: 緩速術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_DECAGI");
+  - Id: 970030
+    AegisName: card_skill_AL_HOLYWATER
+    Name: 天使之淚技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_HOLYWATER");
+  - Id: 970031
+    AegisName: card_skill_AL_CRUCIS
+    Name: 天使之光技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_CRUCIS");
+  - Id: 970032
+    AegisName: card_skill_AL_ANGELUS
+    Name: 天使之障壁技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_ANGELUS");
+  - Id: 970033
+    AegisName: card_skill_AL_BLESSING
+    Name: 天使之賜福技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_BLESSING");
+  - Id: 970034
+    AegisName: card_skill_AL_CURE
+    Name: 治療術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AL_CURE");
+  # 技能卡片 - 商人
+  - Id: 970035
+    AegisName: card_skill_MC_INCCARRY
+    Name: 負重量上升技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_INCCARRY");
+  - Id: 970036
+    AegisName: card_skill_MC_DISCOUNT
+    Name: 低價買進技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_DISCOUNT");
+  - Id: 970037
+    AegisName: card_skill_MC_OVERCHARGE
+    Name: 高價賣出技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_OVERCHARGE");
+  - Id: 970038
+    AegisName: card_skill_MC_PUSHCART
+    Name: 手推車使用技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_PUSHCART");
+  - Id: 970039
+    AegisName: card_skill_MC_IDENTIFY
+    Name: 物品鑑定技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_IDENTIFY");
+  - Id: 970040
+    AegisName: card_skill_MC_VENDING
+    Name: 露天商店技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_VENDING");
+  - Id: 970041
+    AegisName: card_skill_MC_MAMMONITE
+    Name: 金錢攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","MC_MAMMONITE");
+  # 技能卡片 - 弓箭手
+  - Id: 970042
+    AegisName: card_skill_AC_OWL
+    Name: 鶚梟之眼技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AC_OWL");
+  - Id: 970043
+    AegisName: card_skill_AC_VULTURE
+    Name: 蒼鷹之眼技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AC_VULTURE");
+  - Id: 970044
+    AegisName: card_skill_AC_CONCENTRATION
+    Name: 心神凝聚技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AC_CONCENTRATION");
+  - Id: 970045
+    AegisName: card_skill_AC_DOUBLE
+    Name: 二連矢技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AC_DOUBLE");
+  - Id: 970046
+    AegisName: card_skill_AC_SHOWER
+    Name: 箭雨技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","AC_SHOWER");
+  # 技能卡片 - 盜賊
+  - Id: 970047
+    AegisName: card_skill_TF_DOUBLE
+    Name: 二刀連擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_DOUBLE");
+  - Id: 970048
+    AegisName: card_skill_TF_MISS
+    Name: 殘影技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_MISS");
+  - Id: 970049
+    AegisName: card_skill_TF_STEAL
+    Name: 偷竊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_STEAL");
+  - Id: 970050
+    AegisName: card_skill_TF_HIDING
+    Name: 隱匿技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_HIDING");
+  - Id: 970051
+    AegisName: card_skill_TF_POISON
+    Name: 施毒技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_POISON");
+  - Id: 970052
+    AegisName: card_skill_TF_DETOXIFY
+    Name: 解毒技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","TF_DETOXIFY");
+  # 技能卡片 - 騎士
+  - Id: 970053
+    AegisName: card_skill_KN_SPEARMASTERY
+    Name: 長矛使用熟練度技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_SPEARMASTERY");
+  - Id: 970054
+    AegisName: card_skill_KN_PIERCE
+    Name: 連刺攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_PIERCE");
+  - Id: 970055
+    AegisName: card_skill_KN_BRANDISHSPEAR
+    Name: 騎乘攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_BRANDISHSPEAR");
+  - Id: 970056
+    AegisName: card_skill_KN_SPEARSTAB
+    Name: 長矛刺擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_SPEARSTAB");
+  - Id: 970057
+    AegisName: card_skill_KN_SPEARBOOMERANG
+    Name: 投擲長矛攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_SPEARBOOMERANG");
+  - Id: 970058
+    AegisName: card_skill_KN_TWOHANDQUICKEN
+    Name: 雙手劍攻擊速度增加技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_TWOHANDQUICKEN");
+  - Id: 970059
+    AegisName: card_skill_KN_AUTOCOUNTER
+    Name: 反擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_AUTOCOUNTER");
+  - Id: 970060
+    AegisName: card_skill_KN_BOWLINGBASH
+    Name: 怪物互擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_BOWLINGBASH");
+  - Id: 970061
+    AegisName: card_skill_KN_RIDING
+    Name: 騎乘術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_RIDING");
+  - Id: 970062
+    AegisName: card_skill_KN_CAVALIERMASTERY
+    Name: 騎兵修練技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","KN_CAVALIERMASTERY");
+  # 技能卡片 - 祭司
+  - Id: 970063
+    AegisName: card_skill_ALL_RESURRECTION
+    Name: 復活術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","ALL_RESURRECTION");
+  - Id: 970064
+    AegisName: card_skill_PR_MACEMASTERY
+    Name: 權杖使用熟練度技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_MACEMASTERY");
+  - Id: 970065
+    AegisName: card_skill_PR_IMPOSITIO
+    Name: 神威祈福技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_IMPOSITIO");
+  - Id: 970066
+    AegisName: card_skill_PR_SUFFRAGIUM
+    Name: 犧牲祈福技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_SUFFRAGIUM");
+  - Id: 970067
+    AegisName: card_skill_PR_ASPERSIO
+    Name: 撒水祈福技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_ASPERSIO");
+  - Id: 970068
+    AegisName: card_skill_PR_BENEDICTIO
+    Name: 聖之祈福技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_BENEDICTIO");
+  - Id: 970069
+    AegisName: card_skill_PR_SANCTUARY
+    Name: 光耀之堂技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_SANCTUARY");
+  - Id: 970070
+    AegisName: card_skill_PR_SLOWPOISON
+    Name: 緩毒術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_SLOWPOISON");
+  - Id: 970071
+    AegisName: card_skill_PR_STRECOVERY
+    Name: 痊癒術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_STRECOVERY");
+  - Id: 970072
+    AegisName: card_skill_PR_KYRIE
+    Name: 霸邪之陣技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_KYRIE");
+  - Id: 970073
+    AegisName: card_skill_PR_MAGNIFICAT
+    Name: 聖母之頌歌技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_MAGNIFICAT");
+  - Id: 970074
+    AegisName: card_skill_PR_GLORIA
+    Name: 幸運之頌歌技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_GLORIA");
+  - Id: 970075
+    AegisName: card_skill_PR_LEXDIVINA
+    Name: 沉默之術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_LEXDIVINA");
+  - Id: 970076
+    AegisName: card_skill_PR_TURNUNDEAD
+    Name: 轉生術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_TURNUNDEAD");
+  - Id: 970077
+    AegisName: card_skill_PR_LEXAETERNA
+    Name: 天使之怒技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_LEXAETERNA");
+  - Id: 970078
+    AegisName: card_skill_PR_MAGNUS
+    Name: 十字驅魔攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","PR_MAGNUS");
+  # 技能卡片 - 巫師
+  - Id: 970079
+    AegisName: card_skill_WZ_FIREPILLAR
+    Name: 火柱攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_FIREPILLAR");
+  - Id: 970080
+    AegisName: card_skill_WZ_SIGHTRASHER
+    Name: 火之獵殺技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_SIGHTRASHER");
+  - Id: 970081
+    AegisName: card_skill_WZ_METEOR
+    Name: 隕石術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_METEOR");
+  - Id: 970082
+    AegisName: card_skill_WZ_JUPITEL
+    Name: 雷鳴術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_JUPITEL");
+  - Id: 970083
+    AegisName: card_skill_WZ_VERMILION
+    Name: 怒雷強擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_VERMILION");
+  - Id: 970084
+    AegisName: card_skill_WZ_WATERBALL
+    Name: 水球術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_WATERBALL");
+  - Id: 970085
+    AegisName: card_skill_WZ_ICEWALL
+    Name: 冰刃之牆技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_ICEWALL");
+  - Id: 970086
+    AegisName: card_skill_WZ_FROSTNOVA
+    Name: 霜凍之術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_FROSTNOVA");
+  - Id: 970087
+    AegisName: card_skill_WZ_STORMGUST
+    Name: 暴風雪技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_STORMGUST");
+  - Id: 970088
+    AegisName: card_skill_WZ_EARTHSPIKE
+    Name: 地震術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_EARTHSPIKE");
+  - Id: 970089
+    AegisName: card_skill_WZ_HEAVENDRIVE
+    Name: 崩裂術技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_HEAVENDRIVE");
+  - Id: 970090
+    AegisName: card_skill_WZ_QUAGMIRE
+    Name: 泥沼地技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_QUAGMIRE");
+  - Id: 970091
+    AegisName: card_skill_WZ_ESTIMATION
+    Name: 怪物情報技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","WZ_ESTIMATION");
+  # 技能卡片 - 鐵匠
+  - Id: 970092
+    AegisName: card_skill_MG_BS_IRON
+    Name: 鐵製造技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_IRON");
+  - Id: 970093
+    AegisName: card_skill_BS_STEEL
+    Name: 鋼製造技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_STEEL");
+  - Id: 970094
+    AegisName: card_skill_BS_ENCHANTEDSTONE
+    Name: 屬性石製造技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_ENCHANTEDSTONE");
+  - Id: 970095
+    AegisName: card_skill_BS_ORIDEOCON
+    Name: 神之金屬研究技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_ORIDEOCON");
+  - Id: 970096
+    AegisName: card_skill_BS_DAGGER
+    Name: 短劍製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_DAGGER");
+  - Id: 970097
+    AegisName: card_skill_BS_SWORD
+    Name: 劍製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_SWORD");
+  - Id: 970098
+    AegisName: card_skill_BS_TWOHANDSWORD
+    Name: 雙手劍製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_TWOHANDSWORD");
+  - Id: 970099
+    AegisName: card_skill_BS_AXE
+    Name: 斧頭製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_AXE");
+  - Id: 970100
+    AegisName: card_skill_BS_MACE
+    Name: 權杖製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_MACE");
+  - Id: 970101
+    AegisName: card_skill_BS_KNUCKLE
+    Name: 拳套製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_KNUCKLE");
+  - Id: 970102
+    AegisName: card_skill_BS_SPEAR
+    Name: 長矛製作技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_SPEAR");
+  - Id: 970103
+    AegisName: card_skill_BS_HILTBINDING
+    Name: 武器保有技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_HILTBINDING");
+  - Id: 970104
+    AegisName: card_skill_BS_FINDINGORE
+    Name: 尋找礦石技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_FINDINGORE");
+  - Id: 970105
+    AegisName: card_skill_BS_WEAPONRESEARCH
+    Name: 武器研究技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_WEAPONRESEARCH");
+  - Id: 970106
+    AegisName: card_skill_BS_REPAIRWEAPON
+    Name: 武器修理技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_REPAIRWEAPON");
+  - Id: 970107
+    AegisName: card_skill_BS_SKINTEMPER
+    Name: 強化火屬性技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_SKINTEMPER");
+  - Id: 970108
+    AegisName: card_skill_BS_HAMMERFALL
+    Name: 大地之擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_HAMMERFALL");
+  - Id: 970109
+    AegisName: card_skill_BS_ADRENALINE
+    Name: 速度激發技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_ADRENALINE");
+  - Id: 970110
+    AegisName: card_skill_BS_WEAPONPERFECT
+    Name: 無視體型攻擊技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_WEAPONPERFECT");
+  - Id: 970111
+    AegisName: card_skill_BS_OVERTHRUST
+    Name: 兇砍技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_OVERTHRUST");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  # 技能卡片 - 獵人
+  - Id: 970113
+    AegisName: card_skill_HT_SKIDTRAP
+    Name: 滑動陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_SKIDTRAP");
+  - Id: 970114
+    AegisName: card_skill_HT_LANDMINE
+    Name: 地雷陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_LANDMINE");
+  - Id: 970115
+    AegisName: card_skill_HT_ANKLESNARE
+    Name: 定位陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_ANKLESNARE");
+  - Id: 970116
+    AegisName: card_skill_HT_SHOCKWAVE
+    Name: 魔耗陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_SHOCKWAVE");
+  - Id: 970117
+    AegisName: card_skill_HT_SANDMAN
+    Name: 睡魔陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_SANDMAN");
+  - Id: 970118
+    AegisName: card_skill_HT_FLASHER
+    Name: 強光陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_FLASHER");
+  - Id: 970119
+    AegisName: card_skill_HT_FREEZINGTRAP
+    Name: 霜凍陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
-  - Id: 970012
-    AegisName: card_skill_MG_COLDBOLT
-    Name: 冰箭術技能卡片
+      set maxLv,callfunc("skill_Card","HT_FREEZINGTRAP");
+  - Id: 970120
+    AegisName: card_skill_HT_BLASTMINE
+    Name: 定時爆炸陷阱技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","MG_COLDBOLT");
+      set maxLv,callfunc("skill_Card","HT_BLASTMINE");
+  - Id: 970121
+    AegisName: card_skill_HT_CLAYMORETRAP
+    Name: 爆散陷阱技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_CLAYMORETRAP");
+  - Id: 970122
+    AegisName: card_skill_HT_REMOVETRAP
+    Name: 陷阱移除技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_REMOVETRAP");
+  - Id: 970123
+    AegisName: card_skill_HT_TALKIEBOX
+    Name: 陷阱探查技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_TALKIEBOX");
+  - Id: 970124
+    AegisName: card_skill_HT_BEASTBANE
+    Name: 動物殺手技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_BEASTBANE");
+  - Id: 970125
+    AegisName: card_skill_HT_FALCON
+    Name: 馴鷹術技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_FALCON");
+  - Id: 970126
+    AegisName: card_skill_HT_STEELCROW
+    Name: 鋼製喙技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_STEELCROW");
+  - Id: 970127
+    AegisName: card_skill_HT_BLITZBEAT
+    Name: 閃電衝擊技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","HT_BLITZBEAT");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+  - Id: 970112
+    AegisName: card_skill_BS_MAXIMIZE
+    Name: 武器值最大化技能卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Script: |
+      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+
+
 
   - Id: 971000
     AegisName: card_skill_LG_RAYOFGENESIS

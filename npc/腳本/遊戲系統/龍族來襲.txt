@@ -12,7 +12,7 @@ OnClock0259:
 	end;
 
 //活動時間
-OnClock0300:
+OnClock2321:
 	$ditu=rand(1,10);
 	setarray $@Dragon_Mod$[1],"普隆德拉","夢羅克","吉芬","愛爾貝塔","艾爾帕蘭","姜餅城","毀葛","崑崙","龍之城","汶巴拉";
 	setarray $@moncitymap$[1],"prontera","morocc","geffen","alberta","aldebaran","xmas","hugel","gonryun","louyang","umbala";
@@ -351,3 +351,17 @@ OnMvpKilled:
 	end;
 }
 
+
+function	script	Go	{
+	if(strcharinfo(3) == $@moncitymap$[$ditu] ){
+			skill "MO_BODYRELOCATION",1;
+			dispbottom "已學習弓身彈影！";
+			//atcommand "@speed 1";
+			//dispbottom "加速最大化！";
+		}else{
+			dispbottom "沒有在龍族來襲地圖 或者 沒有開放龍族來襲活動。";
+			//dispbottom "map : " + $@moncitymap$[$ditu];
+			//atcommand "@speed 150";
+		}
+return;
+}
