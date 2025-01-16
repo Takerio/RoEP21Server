@@ -610,21 +610,15 @@ OnInstanceInit:
 	case 1:
 	if('Ant_count2>=6){
 	dispbottom "達到6人額外獎勵：";
-	dispbottom "自創副本積分+10"; 
-	set #Instance_S_Points,#Instance_S_Points+10; 
-	dispbottom "目前自創副本積分 "+#Instance_S_Points+" 點";
+	callfunc "Custom_instance_reward";
 	}
 	if('Ant_count2>=10){
 	dispbottom "達到10人額外獎勵：";
 	getitem 34116,1;	//螞蟻洞穴寶箱
-	dispbottom "自創副本積分+10"; 
-	set #Instance_S_Points,#Instance_S_Points+10; 
-	dispbottom "目前自創副本積分 "+#Instance_S_Points+" 點";
+	callfunc "Custom_instance_reward";
 	}
 	getitem 34116,1;	//螞蟻洞穴寶箱
-	set #Instance_S_Points,#Instance_S_Points+20;	//自創副本積分
-	dispbottom "自創副本積分+20";
-	dispbottom "目前自創副本積分 "+#Instance_S_Points+" 點";
+	callfunc "Custom_instance_reward";
 
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;

@@ -355,7 +355,9 @@ OnMvpKilled:
 function	script	Go	{
 	if(strcharinfo(3) == $@moncitymap$[$ditu] ){
 			skill "MO_BODYRELOCATION",1;
-			dispbottom "已學習弓身彈影！";
+			skill "CH_SOULCOLLECT",1;
+			skill "MO_EXPLOSIONSPIRITS",5;
+			//dispbottom "已學習弓身彈影！";
 			//atcommand "@speed 1";
 			//dispbottom "加速最大化！";
 		}else{

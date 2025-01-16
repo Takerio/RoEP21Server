@@ -669,9 +669,7 @@ OnInstanceInit:
 3@bf,154,108,3	script	古城祕寶#Water_Box_02	4_STAR_BOX_SCORE,{
 
 	misceffect 10;
-	set #Instance_S_Points,#Instance_S_Points+10;	//自創副本積分
-	dispbottom "自創副本積分+10";
-	dispbottom "目前自創副本積分 "+#Instance_S_Points+" 點";
+	callfunc "Custom_instance_reward";
 	getitem 61007,1*$EP_S;	//商城10點金幣
 	getitem 6607,20*$EP_S;	//時光結晶
 	getitem 6755,20*$EP_S;	//受汙染的魔力

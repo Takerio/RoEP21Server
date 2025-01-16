@@ -648,9 +648,7 @@ OnInstanceInit:
 2@aby,161,142,3	script	EDDA祕寶#Nature_Box_02	4_STAR_BOX_SCORE,{
 
 	misceffect 10;
-	set #Instance_S_Points,#Instance_S_Points+10;	//自創副本積分
-	dispbottom "自創副本積分+10";
-	dispbottom "目前自創副本積分 "+#Instance_S_Points+" 點";
+	callfunc "Custom_instance_reward";
 	getitem 61007,1*$EP_S;	//商城10點金幣
 	getitem 25786,50*$EP_S;	//生物研究卷宗
 	getitem 25787,50*$EP_S;	//生物研究零件
