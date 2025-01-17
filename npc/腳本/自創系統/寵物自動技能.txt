@@ -71,7 +71,7 @@ function	script	ScToSkill	{
 		case 32:	.@skill = 29;	break;		// 加速術
 		case 29:	.@skill = 33;	break;		// 天使之障壁
 		case 30:	.@skill = 34;	break;		// 天使之賜福
-		case 35:	.@skill = 66;	break;		// 神威祈福
+		//case 35:	.@skill = 66;	break;		// 神威祈福
 		case 36:	.@skill = 67;	break;		// 犧牲祈福
 		case 37:	.@skill = 68;	break;		// 撒水祈福
 		case 38:	.@skill = 69;	break;		// 聖之祈福
