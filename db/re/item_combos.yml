@@ -19091,24 +19091,25 @@ Body:
           - Waste_Stove_Card        # 4332
     Script: |
       .@armor = getequiprefinerycnt(EQI_ARMOR);
-      bonus bBaseAtk,80;
+      bonus bAtk,80;
       bonus2 bWeaponSubSize,Size_Medium,8;
       bonus2 bWeaponSubSize,Size_Large,8;
       bonus bShortAtkRate,(.@armor/2)*4;
       bonus bLongAtkRate,(.@armor/2)*4; 
-      if(BaseJob == Job_Merchant){bonus bBaseAtk,100;
+      if(BaseJob == Job_Merchant){bonus bAtk,100;
       }
-    - Combo:
+  - Combos:
+      - Combo:
           - Unknown_Item_470283     # 470283
           - Rsx_0806_Card      # 4342
     Script: |
       .@armor = getequiprefinerycnt(EQI_ARMOR);
-      bonus bBaseAtk,100;
+      bonus bAtk,100;
       bonus2 bWeaponSubSize,Size_Medium,10;
       bonus2 bWeaponSubSize,Size_Large,10;
       bonus bShortAtkRate,(.@armor/2)*5;
       bonus bLongAtkRate,(.@armor/2)*5; 
-      if(BaseJob == Job_Merchant){bonus bBaseAtk,150;
+      if(BaseJob == Job_Merchant){bonus bAtk,150;
       }
       
 # 影子鋼鐵
