@@ -19096,7 +19096,7 @@ Body:
       bonus2 bWeaponSubSize,Size_Large,8;
       bonus bShortAtkRate,(.@armor/2)*4;
       bonus bLongAtkRate,(.@armor/2)*4; 
-      if(Class == 4064 || Class == 4100 || Class == 4253){bonus bAtk,100;
+      if(Class == 4064 || Class == 4100 || Class == 4253 || Class == 4078 || Class == 4107 || Class == 4259){bonus bAtk,100;
       }
   - Combos:
       - Combo:
@@ -19109,7 +19109,7 @@ Body:
       bonus2 bWeaponSubSize,Size_Large,10;
       bonus bShortAtkRate,(.@armor/2)*5;
       bonus bLongAtkRate,(.@armor/2)*5; 
-      if(Class == 4064 || Class == 4100 || Class == 4253){bonus bAtk,150;
+      if(Class == 4064 || Class == 4100 || Class == 4253 || Class == 4078 || Class == 4107 || Class == 4259){bonus bAtk,150;
       }
       
 # 影子鋼鐵
