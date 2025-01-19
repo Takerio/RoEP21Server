@@ -92,7 +92,7 @@ bl_soul,0,0,0,0	boss_monster	靈魂之幽暗夢魘	21943,1,600000,0,MVP_Points::
 // bl_depth1.rsw#霸肋門德環境生態圈深層1階
 //==================================================
 // 無法瞬移
-bl_depth1	mapflag	noteleport
+//bl_depth1	mapflag	noteleport
 bl_depth1,0,0,0,0	monster	深層虎蜥人	22140,10,1000,0,0
 bl_depth1,0,0,0,0	monster	深層邪骸弓箭手	22141,10,1000,0,0
 bl_depth1,0,0,0,0	monster	深層刺尾蜻蜓	22142,10,1000,0,0
@@ -115,7 +115,7 @@ bl_depth1,0,0,0,0	monster	深層樹林哥布靈	22155,10,1000,0,0
 // bl_depth2.rsw#霸肋門德環境生態圈深層2階
 //==================================================
 // 無法瞬移
-bl_depth2	mapflag	noteleport
+//bl_depth2	mapflag	noteleport
 bl_depth2,0,0,0,0	monster	深層杜尼爾	22252,25,1000,0,0
 bl_depth2,0,0,0,0	monster	深層那迦	22253,25,1000,0,0
 bl_depth2,0,0,0,0	monster	深層異種神木	22254,25,1000,0,0
