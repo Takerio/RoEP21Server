@@ -3076,37 +3076,37 @@ Body:
     Buy: 20
   - Id: 960261
     AegisName: item_960261
-    Name: 火焰龜寵物蛋
+    Name: 妣拉(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960262
     AegisName: item_960262
-    Name: 水靈龜寵物蛋
+    Name: 卡崙寶寶(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960263
     AegisName: item_960263
-    Name: 鴞裊首領寵物蛋
+    Name: 之精靈-阿奎亞寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960264
     AegisName: item_960264
-    Name: 彈簧兔寵物蛋
+    Name: 水之精靈寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960265
     AegisName: item_960265
-    Name: 阿修羅機械戰士寵物蛋
+    Name: 獨眼怪(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960266
     AegisName: item_960266
-    Name: 熔岩巨石寵物蛋
+    Name: 昴坎圖(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960267
     AegisName: item_960267
-    Name: 火焰妖寵物蛋
+    Name: 瑪那能革(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960268
@@ -10468,6 +10468,24 @@ Body:
     Script: |
       getitem 2210003,1;
       callfunc "BT_INFO";
+  - Id: 2300000
+    AegisName: Cash_Reward_gift
+    Name: 一次性贊助禮盒
+    Type: Usable
+    Buy: 100001
+    Weight: 10
+    Flags:
+      BuyingStore: true
+    Script: |
+      set bonus_point,100;
+      set cash_point,500;
+      set amount,countitem(2300000);
+      dispbottom amount;
+      set #Dividend_Points,#Dividend_Points+bonus_point*(amount+1);
+      set #CASHPOINTS,#CASHPOINTS+cash_point*(amount+1);
+      dispbottom "目前紅利 "+#Dividend_Points+"";
+      dispbottom "目前商城點數 "+#CASHPOINTS+"";
+      delitem 2300000,amount;
 #龍族來襲用裝備
   - Id: 2210004
     AegisName: C_Head_Dragon_Event
