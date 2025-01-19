@@ -10480,7 +10480,6 @@ Body:
       set bonus_point,100;
       set cash_point,500;
       set amount,countitem(2300000);
-      dispbottom amount;
       set #Dividend_Points,#Dividend_Points+bonus_point*(amount+1);
       set #CASHPOINTS,#CASHPOINTS+cash_point*(amount+1);
       dispbottom "目前紅利 "+#Dividend_Points+"";

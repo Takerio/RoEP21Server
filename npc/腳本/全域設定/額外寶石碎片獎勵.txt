@@ -1,0 +1,13 @@
+//額外寶石碎片獎勵
+function	script	Gem_item_Lv1	{
+//
+if(rand(1000)<10) getitem 82001,1;
+return;
+}
+
+
+function	script	Gem_item_Lv2	{
+//
+if(rand(100)<10) getitem 82001,1;
+return;
+}
