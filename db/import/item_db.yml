@@ -3086,7 +3086,7 @@ Body:
     Buy: 20
   - Id: 960263
     AegisName: item_960263
-    Name: 之精靈-阿奎亞寵物蛋
+    Name: 水之精靈-阿奎亞寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960264
@@ -3111,17 +3111,17 @@ Body:
     Buy: 20
   - Id: 960268
     AegisName: item_960268
-    Name: 邪惡向日葵寵物蛋
+    Name: 邪魔馬(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960269
     AegisName: item_960269
-    Name: 偽天使寵物蛋
+    Name: 惡魔嬰兒(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960270
     AegisName: item_960270
-    Name: 魔羌寵物蛋
+    Name: 食屍鬼(初級)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960271
