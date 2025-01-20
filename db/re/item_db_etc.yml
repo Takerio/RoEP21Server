@@ -59165,6 +59165,12 @@ Body:
 
   - Id: 1001413
     AegisName: SR_Heart_TW
+    Name: 晨曦之心
+    Type: Etc
+    Flags:
+      BuyingStore: true
+  - Id: 1001786
+    AegisName: Dawn_Heart_TW
     Name: 曙光之心
     Type: Etc
     Flags:
