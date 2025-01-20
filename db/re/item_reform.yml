@@ -3372,19 +3372,9 @@ Body:
             Amount: 10
           - Material: Armor_stone_2
             Amount: 450
-          - Material: Ymir_Heart_P_TW
-            Amount: 2
-        ResultItem: Unknown_Item_470283
-        ChangeRefine: -1
-      - BaseItem: Thanos_Helm_1
-        MinimumRefine: 9
-        CardsAllowed: true
-        Materials:
-          - Material: Gray_Shard
-            Amount: 300
-          - Material: Armor_Stone_2
-            Amount: 100
-        ResultItem: Thanos_Helm1_LT
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Wings_Of_Raguel-LT
         ChangeRefine: -1
       - BaseItem: Unknown_Item_470120 # 機械鋁合金改造靴
         CardsAllowed: true
