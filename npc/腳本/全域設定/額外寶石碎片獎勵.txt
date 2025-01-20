@@ -11,3 +11,20 @@ function	script	Gem_item_Lv2	{
 if(rand(100)<10) getitem 82001,1;
 return;
 }
+
+//額外金塊獎勵(普通古城)
+function	script	get_gold	{
+//
+if(rand(100)<7)
+getitem 7229,1;
+
+if(rand(100)<5)
+getitem 7230,1;
+   
+
+if(rand(100)<2)
+getitem 7228,1;
+
+
+return;
+}
