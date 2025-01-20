@@ -19252,5 +19252,23 @@ Body:
               if (.@g >= ENCHANTGRADE_C) {
       autobonus "{ bonus bBaseAtk,(.@r/3)*30; bonus bMatk,(.@r/3)*30;bonus2 bAddClass,Class_Boss,(.@r/3)*2;bonus2 bMagicAddClass,Class_Boss,(.@r/3)*2; }",400,7000,BF_WEAPON|BF_MAGIC,"{ active_transform 1947,7000; }"}
       }
-
+# 奧林帕斯之翼-LT
+  - Combos: 
+      - Combo:
+          - Wings_Of_Raguel-LT  # 480471
+          - Vulcan_Armor_TW_LT  # 450298
+    Script: |
+      if (getenchantgrade(EQI_GARMENT)>=ENCHANTGRADE_D){
+      bonus bVariableCastrate,-15;
+        if (getenchantgrade(EQI_GARMENT)>=ENCHANTGRADE_C){
+        bonus bMaxHPrate,5;
+        bonus bMaxHP,2500;
+            if (getenchantgrade(EQI_GARMENT)>=ENCHANTGRADE_B){
+            bonus bAspdRate,15;
+                if (getenchantgrade(EQI_GARMENT)>=ENCHANTGRADE_A){
+                bonus bFixedCast,-300;
+                }
+            }
+        }
+      }
 

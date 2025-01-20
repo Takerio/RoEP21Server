@@ -122069,6 +122069,60 @@ Body:
             }
          }
       }
+  - Id: 480471
+    AegisName: Wings_Of_Raguel-LT
+    Name: 奧林帕斯之翼-LT
+    Type: Armor
+    Slots: 1
+    Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
+      Fourth: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 56
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMdef,10;
+      skill "PA_GOSPEL",1;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10; 
+      bonus bAtkRate,(.@r/3)*2;
+      bonus bMatkRate,(.@r/3)*2; 
+      bonus2 bSubClass,Class_Normal,(.@r/4)*3;
+      if(.@r >= 9){
+      bonus bPAtk,5;
+      bonus bSMatk,5;
+        if(.@r >= 11){
+        bonus bShortAtkRate,12;
+        bonus bLongAtkRate,12;
+        bonus2 bMagicAtkEle,Ele_All,12;
+          if(.@r >= 13){
+          bonus bDelayrate,-15;
+          }
+        }
+      }
+      if (.@g>=ENCHANTGRADE_D){
+      bonus2 bAddSize,Size_All,10;
+      bonus2 bMagicAddSize,Size_All,10;
+        if (.@g>=ENCHANTGRADE_C){
+        bonus2 bAddEle,Ele_All,10;
+        bonus2 bMagicAddEle,Ele_All,10;
+          if (.@g>=ENCHANTGRADE_B){
+          bonus2 bAddRace,RC_All,10;
+          bonus2 bMagicAddRace,RC_All,10;
+            if (.@g>=ENCHANTGRADE_A){
+            bonus2 bAddClass,Class_All,10;
+            bonus2 bMagicAddClass,Class_All,10;
+            }
+          }
+        }
+      }
   - Id: 490570
     AegisName: 4Element_magic_ring
     Name: 四大元素屬性魔戒
