@@ -3361,6 +3361,31 @@ Body:
   #裝甲改裝箱(中級)
   - Item: C_Armor_Reform_2
     BaseItems:
+      - BaseItem: Wings_Of_Raguel # 奧林帕斯之翼
+        CardsAllowed: true
+        Materials:
+          - Material: Gold_Bullion
+            Amount: 10
+          - Material: Silver_Bullion
+            Amount: 10
+          - Material: White_Gold_Bullion
+            Amount: 10
+          - Material: Armor_stone_2
+            Amount: 450
+          - Material: Ymir_Heart_P_TW
+            Amount: 2
+        ResultItem: Unknown_Item_470283
+        ChangeRefine: -1
+      - BaseItem: Thanos_Helm_1
+        MinimumRefine: 9
+        CardsAllowed: true
+        Materials:
+          - Material: Gray_Shard
+            Amount: 300
+          - Material: Armor_Stone_2
+            Amount: 100
+        ResultItem: Thanos_Helm1_LT
+        ChangeRefine: -1
       - BaseItem: Unknown_Item_470120 # 機械鋁合金改造靴
         CardsAllowed: true
         Materials:
