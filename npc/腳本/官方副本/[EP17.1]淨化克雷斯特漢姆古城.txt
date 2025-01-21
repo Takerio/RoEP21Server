@@ -1,66 +1,66 @@
-headq,39,29,5	script	EDDA¥j«°ªºâf¸¨	841,{
+headq,39,29,5	script	EDDAï¿½jï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½	841,{
 	set $@MaxWimdows,3;
 {
            query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
-              //ÀË¬d¦PIP±b¸¹
+              //ï¿½Ë¬dï¿½PIPï¿½bï¿½ï¿½
               query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@LastIp$+"'", .@AccountId);
                  set .@aidtemp,getcharid(3,strcharinfo(0));
-               //ÀË¬d¦PIP¦b½u¤H¼Æ
+               //ï¿½Ë¬dï¿½PIPï¿½bï¿½uï¿½Hï¿½ï¿½
                   for(set .@i ,0;.@i<getarraysize(.@AccountId);set .@i,.@i+1)
                    {
                              if(attachrid(.@AccountId[.@i]))
                                   {
-if ( compare(strcharinfo(3),"@")  && !checkvending()) set .@j,.@j+1;//³]©w­­¨î¦a¹Ï
+if ( compare(strcharinfo(3),"@")  && !checkvending()) set .@j,.@j+1;//ï¿½]ï¿½wï¿½ï¿½ï¿½ï¿½aï¿½ï¿½
                                       }
                                  detachrid;
                          }
                         attachrid .@aidtemp;
                         if(.@j >= $@MaxWimdows)
                           {           
-                             dispbottom "¬Û¦PIP¤£¥i¶W¹L3­Ó¨¤¦â¶i¤J°Æ¥»£¬¡C";
+                             dispbottom "ï¿½Û¦PIPï¿½ï¿½ï¿½iï¿½Wï¿½L3ï¿½Ó¨ï¿½ï¿½ï¿½iï¿½Jï¿½Æ¥ï¿½ï¿½ï¿½ï¿½C";
                              end;
                           }
 
         }
-if( checkquest(66902,PLAYTIME) == 0 ) {mes"°Æ¥»³B©ó§N«o¤¤";close;}
+if( checkquest(66902,PLAYTIME) == 0 ) {mes"ï¿½Æ¥ï¿½ï¿½Bï¿½ï¿½Nï¿½oï¿½ï¿½";close;}
 if( checkquest(66902,PLAYTIME) == 2 ) {erasequest 66902;}
 if (getcharid(1) == 0){
-mes "^FF0000§A¨S¦³¶¤¥î¤£¯à³ø¦W³á.^000000";
+mes "^FF0000ï¿½Aï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½î¤£ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½.^000000";
 close;
 }
-set .@md_name$,"EDDA¥j«°ªºâf¸¨";
-mes "-----------[°Æ¥»°T®§]-----------";
-mes "°Æ¥»¦WºÙ: "+.@md_name$+" ";
-mes "­­¨î¤H¼Æ: ¤£­­¨î ";
-mes "­­¨îµ¥¯Å:^9966FF 170µ¥¥H¤W ^000000";
-mes "°Æ¥»§N«o®É¶¡:^F75000 2¤p®É ^000000";
-mes "­n¨Ó¬D¾Ô¬Ý¬Ý¶Ü?";
-if (!instance_check_party(getcharid(1),1,100,260)) { mes "¦Ü¤Ö»Ý­n100µ¥¥H¤W¦A¨Ó¬D¾Ô"; close;}
-if (getpartyleader(getcharid(1),2) != getcharid(0)){goto xx;}switch(select("³ø¦W"+.@md_name$+"°Æ¥»:¶i¤J"+.@md_name$+"°Æ¥»:¨ú®ø¹ï¸Ü")){
+set .@md_name$,"EDDAï¿½jï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½";
+mes "-----------[ï¿½Æ¥ï¿½ï¿½Tï¿½ï¿½]-----------";
+mes "ï¿½Æ¥ï¿½ï¿½Wï¿½ï¿½: "+.@md_name$+" ";
+mes "ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ";
+mes "ï¿½ï¿½ï¿½îµ¥ï¿½ï¿½:^9966FF 170ï¿½ï¿½ï¿½Hï¿½W ^000000";
+mes "ï¿½Æ¥ï¿½ï¿½Nï¿½oï¿½É¶ï¿½:^F75000 2ï¿½pï¿½ï¿½ ^000000";
+mes "ï¿½nï¿½Ó¬Dï¿½Ô¬Ý¬Ý¶ï¿½?";
+if (!instance_check_party(getcharid(1),1,100,260)) { mes "ï¿½Ü¤Ö»Ý­n100ï¿½ï¿½ï¿½Hï¿½Wï¿½Aï¿½Ó¬Dï¿½ï¿½"; close;}
+if (getpartyleader(getcharid(1),2) != getcharid(0)){goto xx;}switch(select("ï¿½ï¿½ï¿½W"+.@md_name$+"ï¿½Æ¥ï¿½:ï¿½iï¿½J"+.@md_name$+"ï¿½Æ¥ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")){
 case 1:
 if (instance_create(.@md_name$) < 0) {
 next;
-mes "¶¤¥î¦WºÙ: "+getpartyname(getcharid(1));
-mes "¶¤¥î¶¤ªø: "+strcharinfo(0);
-mes "^0000ff"+.@md_name$+" ^000000- ³Ð«Ø¥¢±Ñ!";
+mes "ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½: "+getpartyname(getcharid(1));
+mes "ï¿½ï¿½ï¿½î¶¤ï¿½ï¿½: "+strcharinfo(0);
+mes "^0000ff"+.@md_name$+" ^000000- ï¿½Ð«Ø¥ï¿½ï¿½ï¿½!";
 close;
 }
-xx: switch(select("¶i¤J"+.@md_name$+"°Æ¥»:¨ú®ø")){
+xx: switch(select("ï¿½iï¿½J"+.@md_name$+"ï¿½Æ¥ï¿½:ï¿½ï¿½ï¿½ï¿½")){
 case 1:
 switch(instance_enter(.@md_name$)) {
 case 3:
-mes "¥X²{¥¼ª¾¿ù»~¡C!";
+mes "ï¿½Xï¿½{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½C!";
 close;
 case 2:
-next;mes "¦ü¥G¬O±zªº¶¤ªø¨Ã¨S¦³³Ð«Ø¸Ó°Æ¥»";
+next;mes "ï¿½ï¿½ï¿½Gï¿½Oï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¨Sï¿½ï¿½ï¿½Ð«Ø¸Ó°Æ¥ï¿½";
 close;
 case 1:
-mes "¥u¦³¹Î­û¤~¯à¶i¤J¡C";
+mes "ï¿½uï¿½ï¿½ï¿½Î­ï¿½ï¿½~ï¿½ï¿½iï¿½Jï¿½C";
 close;
 case 0:
 setquest 66902;
 if(getpartyleader(getcharid(1),2) == getcharid(0)) {
-announce "(¨t²Î°T®§) ¶¤¥î ¡u"+getpartyname(getcharid(1))+"¡v ¶}©l¬D¾Ô ["+.@md_name$+"]",15,0x00FFFF;  
+announce "(ï¿½tï¿½Î°Tï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½u"+getpartyname(getcharid(1))+"ï¿½v ï¿½}ï¿½lï¿½Dï¿½ï¿½ ["+.@md_name$+"]",15,0x00FFFF;  
 }
 end;
 
@@ -78,46 +78,46 @@ close;
 }
 
 
-function	script	EDDA¥j«°ªºâf¸¨(Ä±¿ô)	{
-if( checkquest(66902,PLAYTIME) == 0 ) {mes"°Æ¥»³B©ó§N«o¤¤";close;}
+function	script	EDDAï¿½jï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½(Ä±ï¿½ï¿½)	{
+if( checkquest(66902,PLAYTIME) == 0 ) {mes"ï¿½Æ¥ï¿½ï¿½Bï¿½ï¿½Nï¿½oï¿½ï¿½";close;}
 if( checkquest(66902,PLAYTIME) == 2 ) {erasequest 66902;}
-set .@md_name$,"EDDA¥j«°ªºâf¸¨(Ä±¿ô)";
-mes "-----------[°Æ¥»°T®§]-----------";
-mes "°Æ¥»¦WºÙ: "+.@md_name$+" ";
-mes "­­¨î¤H¼Æ: ¤£­­¨î ";
-mes "­­¨îµ¥¯Å:^9966FF 170µ¥¥H¤W ^000000";
-mes "°Æ¥»§N«o®É¶¡:^F75000 6¤p®É ^000000";
+set .@md_name$,"EDDAï¿½jï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½(Ä±ï¿½ï¿½)";
+mes "-----------[ï¿½Æ¥ï¿½ï¿½Tï¿½ï¿½]-----------";
+mes "ï¿½Æ¥ï¿½ï¿½Wï¿½ï¿½: "+.@md_name$+" ";
+mes "ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ";
+mes "ï¿½ï¿½ï¿½îµ¥ï¿½ï¿½:^9966FF 170ï¿½ï¿½ï¿½Hï¿½W ^000000";
+mes "ï¿½Æ¥ï¿½ï¿½Nï¿½oï¿½É¶ï¿½:^F75000 6ï¿½pï¿½ï¿½ ^000000";
 
-mes "­n¨Ó¬D¾Ô¬Ý¬Ý¶Ü?";
-if (!instance_check_party(getcharid(1),1,170,260)) { mes "¦Ü¤Ö»Ý­n170µ¥¥H¤W¦A¨Ó¬D¾Ô"; close;}
-switch(select("«Ø¥ß°Æ¥»:¶i¤J°Æ¥»:¶¤¥î¶i¤J¶Ç°e")){
+mes "ï¿½nï¿½Ó¬Dï¿½Ô¬Ý¬Ý¶ï¿½?";
+if (!instance_check_party(getcharid(1),1,170,260)) { mes "ï¿½Ü¤Ö»Ý­n170ï¿½ï¿½ï¿½Hï¿½Wï¿½Aï¿½Ó¬Dï¿½ï¿½"; close;}
+switch(select("ï¿½Ø¥ß°Æ¥ï¿½:ï¿½iï¿½Jï¿½Æ¥ï¿½:ï¿½ï¿½ï¿½ï¿½iï¿½Jï¿½Ç°e")){
 case 1:
 if (instance_create(.@md_name$) < 0) {
 next;
-mes "¶¤¥î¦WºÙ: "+getpartyname(getcharid(1));
-mes "¶¤¥î¶¤ªø: "+strcharinfo(0);
-mes "^0000ff"+.@md_name$+" ^000000- ³Ð«Ø¥¢±Ñ!";
+mes "ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½: "+getpartyname(getcharid(1));
+mes "ï¿½ï¿½ï¿½î¶¤ï¿½ï¿½: "+strcharinfo(0);
+mes "^0000ff"+.@md_name$+" ^000000- ï¿½Ð«Ø¥ï¿½ï¿½ï¿½!";
 close;
 }
-mes ""+.md_name$+"¤w¸g³Ð¥ß¤F, ½Ð¿ï¾Ü^0066CC¶i¤J"+.@md_name$+"^000000.";
+mes ""+.md_name$+"ï¿½wï¿½gï¿½Ð¥ß¤F, ï¿½Ð¿ï¿½ï¿½^0066CCï¿½iï¿½J"+.@md_name$+"^000000.";
 close;
 case 2:
 switch(instance_enter(.@md_name$)) {
 case 3:
-mes "¥D¶}Ãö¿ù»~(3)!";
+mes "ï¿½Dï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½~(3)!";
 close;
 case 2:
-mes "¥D¶}Ãö¿ù»~(2)!";
+mes "ï¿½Dï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½~(2)!";
 close;
 case 1:
-mes "¥D¶}Ãö¿ù»~(1)!";
+mes "ï¿½Dï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½~(1)!";
 close;
 case 0:
-set 'ins_name$,"EDDA¥j«°ªºâf¸¨(Ä±¿ô)";
+set 'ins_name$,"EDDAï¿½jï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½(Ä±ï¿½ï¿½)";
 set giftedda,0;
 setquest 66902;
 if(getpartyleader(getcharid(1),2) == getcharid(0)) {
-announce "(¨t²Î°T®§) ¶¤¥î ¡u"+getpartyname(getcharid(1))+"¡v ¶}©l¬D¾Ô ["+.@md_name$+"]",15,0x33FFFF;  
+announce "(ï¿½tï¿½Î°Tï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½u"+getpartyname(getcharid(1))+"ï¿½v ï¿½}ï¿½lï¿½Dï¿½ï¿½ ["+.@md_name$+"]",15,0x33FFFF;  
 }
 end;
 }
@@ -127,29 +127,29 @@ close;
 }
 
 /******************************
- - ²Ä¤@°Ï¶ø´µ¥d
+ - ï¿½Ä¤@ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½d
 ******************************/
-1@gl_prq,80,21,0	script	¶ø´µ¥d#Session1	139,5,5,{
+1@gl_prq,80,21,0	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Session1	139,5,5,{
 	end;
 
 OnTouch:
 	if('Session == 0 && is_party_leader())
 	{
-if (compare(instance_live_info(ILI_NAME),"Ä±¿ô"))
+if (compare(instance_live_info(ILI_NAME),"Ä±ï¿½ï¿½"))
 			'mode = 1;
 		'Session = 1;
 		hideonnpc instance_npcname(strnpcinfo(0));
 		areamonster 'map$,10,83,80,29,"--ja--",20392,20,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 		areamonster 'map$,10,83,80,29,"--ja--",20250,10;
-		instance_announce 0,"¶ø´µ¥d : ³o¸Ì¬O¥H«e¥Î°µ²i¶¹ªº³õ©Ò.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½oï¿½Ì¬Oï¿½Hï¿½eï¿½Î°ï¿½ï¿½iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"¶ø´µ¥d : ©Ò¥H³o¸Ìªº¨ü®`ªÌ³£¬O¤@¨Ç¥¿¦b·Ç³Æ¶ºµæªº¤k¹².",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ò¥Hï¿½oï¿½Ìªï¿½ï¿½ï¿½ï¿½`ï¿½Ì³ï¿½ï¿½Oï¿½@ï¿½Ç¥ï¿½ï¿½bï¿½Ç³Æ¶ï¿½ï¿½æªºï¿½kï¿½ï¿½.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"¶ø´µ¥d : §A°ß¤@¯à°µªº´N¬OÅý¦o­Ì§K¨ü§ó¦hªºµh­W.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Aï¿½ß¤@ï¿½à°µï¿½ï¿½ï¿½Nï¿½Oï¿½ï¿½ï¿½oï¿½Ì§Kï¿½ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½hï¿½W.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"¶ø´µ¥d : ª½¨ì²{¦b, ¥Ñ©ó³o¸Ìªº®É¶¡¤£Â_­«½Æªº©Ê½è, ©Ò¥H«D±`ªºÃø¥H«e¶i.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½ï¿½{ï¿½b, ï¿½Ñ©ï¿½oï¿½Ìªï¿½ï¿½É¶ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½Æªï¿½ï¿½Ê½ï¿½, ï¿½Ò¥Hï¿½Dï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½Hï¿½eï¿½i.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"¶ø´µ¥d : ¹ï¤F, ¦pªG¬Ý¨ì¤õµK¯ð´Æªº¸Ü½Ð¤@©w­nÁ×¶}.¨º¬O³o­ÓªÅ¶¡¸Ì³Ì·Ð¤HªºªF¦è, ·|¨Ï§A§x¦b³o¸ÌµLªk«e¶i.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½F, ï¿½pï¿½Gï¿½Ý¨ï¿½ï¿½ï¿½Kï¿½ï¿½Æªï¿½ï¿½Ü½Ð¤@ï¿½wï¿½nï¿½×¶}.ï¿½ï¿½ï¿½Oï¿½oï¿½ÓªÅ¶ï¿½ï¿½Ì³Ì·Ð¤Hï¿½ï¿½ï¿½Fï¿½ï¿½, ï¿½|ï¿½Ï§Aï¿½xï¿½bï¿½oï¿½ÌµLï¿½kï¿½eï¿½i.",bc_map,0x0fff8C;
 		
 	}
 	end;
@@ -157,10 +157,10 @@ if (compare(instance_live_info(ILI_NAME),"Ä±¿ô"))
 OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
-		instance_announce 0,"¶ø´µ¥d : ²Ä¤@°Ï°ìªº®É¶¡¬y²I³t«×¤w¸gº¥º¥Ã­©w¤U¨Ó¤F, ¨º»òÂà²¾¨ì¤U¤@°Ï°ì§a.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ä¤@ï¿½Ï°ìªºï¿½É¶ï¿½ï¿½yï¿½Iï¿½tï¿½×¤wï¿½gï¿½ï¿½ï¿½ï¿½Ã­ï¿½wï¿½Uï¿½Ó¤F, ï¿½ï¿½ï¿½ï¿½ï¿½à²¾ï¿½ï¿½Uï¿½@ï¿½Ï°ï¿½a.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 123,62;
-		donpcevent instance_npcname("¶ø´µ¥d#Session2")+"::OnEnable";
+		donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#Session2")+"::OnEnable";
 	}
 	end;
 	
@@ -170,9 +170,9 @@ OnInstanceInit:
 }
 
 /******************************
- - ²Ä¤G°Ï¶ø´µ¥d
+ - ï¿½Ä¤Gï¿½Ï¶ï¿½ï¿½ï¿½ï¿½d
 ******************************/
-1@gl_prq,127,63,3	script	¶ø´µ¥d#Session2	4_ED_OSCAR,3,3,{
+1@gl_prq,127,63,3	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Session2	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -196,13 +196,13 @@ OnTouch:
 			areamonster 'map$,126,75,187,12,"--ja--",20394,3,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 		}
 		areamonster 'map$,126,75,187,12,"--ja--",20250,10;
-		npctalk "¶ø´µ¥d : ³o¸Ì¬OÃM¤h¹Î¥æ±µ¤u§@ªº³õ©Ò.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½oï¿½Ì¬Oï¿½Mï¿½hï¿½Î¥æ±µï¿½uï¿½@ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ·í®É¥æ¯Z«á¼È§@¥ð®§ªº¤HÁÙ¨S¨Óªº¤ÎºMÂ÷.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½É¥ï¿½Zï¿½ï¿½È§@ï¿½ð®§ªï¿½ï¿½Hï¿½Ù¨Sï¿½Óªï¿½ï¿½ÎºMï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ©M°µ¶ºªº¤k¹²¬O¤@¼Ëªº.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½kï¿½ï¿½ï¿½Oï¿½@ï¿½Ëªï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ³Â·Ð½Ðµ¹¤©¦o­Ì¦w®§§a.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Â·Ð½Ðµï¿½ï¿½ï¿½ï¿½oï¿½Ì¦wï¿½ï¿½ï¿½a.";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -212,10 +212,10 @@ OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"¶ø´µ¥d : ²Ä¤G°Ï°ìªº®É¶¡¬y²I³t«×¤w¸gº¥º¥Ã­©w¤U¨Ó¤F, ¨º»òÂà²¾¨ì¤U¤@°Ï°ì§a.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ä¤Gï¿½Ï°ìªºï¿½É¶ï¿½ï¿½yï¿½Iï¿½tï¿½×¤wï¿½gï¿½ï¿½ï¿½ï¿½Ã­ï¿½wï¿½Uï¿½Ó¤F, ï¿½ï¿½ï¿½ï¿½ï¿½à²¾ï¿½ï¿½Uï¿½@ï¿½Ï°ï¿½a.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 150,116;
-		donpcevent instance_npcname("¶ø´µ¥d#Session3")+"::OnEnable";
+		donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#Session3")+"::OnEnable";
 	}
 	end;
 	
@@ -232,9 +232,9 @@ OnInstanceInit:
 }
 
 /******************************
- - ²Ä¤T°Ï¶ø´µ¥d
+ - ï¿½Ä¤Tï¿½Ï¶ï¿½ï¿½ï¿½ï¿½d
 ******************************/
-1@gl_prq,148,121,3	script	¶ø´µ¥d#Session3	4_ED_OSCAR,3,3,{
+1@gl_prq,148,121,3	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Session3	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -258,13 +258,13 @@ OnTouch:
 			areamonster 'map$,122,189,187,106,"--ja--",20390,5,instance_npcname(strnpcinfo(0))+"::OnLoop";
 		}
 		areamonster 'map$,122,189,187,106,"--ja--",20250,10;
-		npctalk "¶ø´µ¥d : ³o¸Ì¬O¤G¸¹±JªÙ­Ý­¹°ó©M¥ð®§«Çªº³õ©Ò.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½oï¿½Ì¬Oï¿½Gï¿½ï¿½ï¿½Jï¿½Ù­Ý­ï¿½ï¿½ï¿½Mï¿½ð®§«Çªï¿½ï¿½ï¿½ï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¦­¤W°tµ¹ªº­¹ª«±q²i¶¹¶¡¹B°e¨ì³o¸Ì, ¶A©G´N¹³¬rÃÄ¤@¼Ë´²¼½¦b­¹ª«¤¤.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½Wï¿½tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½qï¿½iï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½eï¿½ï¿½oï¿½ï¿½, ï¿½Aï¿½Gï¿½Nï¿½ï¿½ï¿½rï¿½Ä¤@ï¿½Ë´ï¿½ï¿½ï¿½ï¿½bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¤£ª¾±¡¦Ó¦ù¤â®³­¹ª«ªº¤H­Ì, ³Ì²×¤]µLªk°k²æ.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½â®³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½, ï¿½Ì²×¤]ï¿½Lï¿½kï¿½kï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¤£¥Î§Ú§Ú¿Ë¦Û¥X¤â¬O³Ì¦nªº, ¯à³Â·Ð§A¤]§â³o¸Ì¤]²M²z¤@¤U¶Ü¡H";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½Î§Ú§Ú¿Ë¦Û¥Xï¿½ï¿½Oï¿½Ì¦nï¿½ï¿½, ï¿½ï¿½Â·Ð§Aï¿½]ï¿½ï¿½oï¿½Ì¤]ï¿½Mï¿½zï¿½@ï¿½Uï¿½Ü¡H";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -274,10 +274,10 @@ OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"¶ø´µ¥d : ²Ä¤T°Ï°ìªº®É¶¡¬y²I³t«×¤w¸gº¥º¥Ã­©w¤U¨Ó¤F, ¨º»òÂà²¾¨ì¤U¤@°Ï°ì§a.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ä¤Tï¿½Ï°ìªºï¿½É¶ï¿½ï¿½yï¿½Iï¿½tï¿½×¤wï¿½gï¿½ï¿½ï¿½ï¿½Ã­ï¿½wï¿½Uï¿½Ó¤F, ï¿½ï¿½ï¿½ï¿½ï¿½à²¾ï¿½ï¿½Uï¿½@ï¿½Ï°ï¿½a.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 77,177;
-		donpcevent instance_npcname("¶ø´µ¥d#Session4")+"::OnEnable";
+		donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#Session4")+"::OnEnable";
 	}
 	end;
 
@@ -294,10 +294,10 @@ OnInstanceInit:
 }
 
 /******************************
- - ²Ä¥|°Ï¶ø´µ¥d
+ - ï¿½Ä¥|ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½d
 ******************************/
 1@gl_prq,31,128,0	warp	#EDDA_Warp	2,2,1@gl_prq,53,244
-1@gl_prq,67,176,5	script	¶ø´µ¥d#Session4	4_ED_OSCAR,3,3,{
+1@gl_prq,67,176,5	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Session4	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -321,11 +321,11 @@ OnTouch:
 			areamonster 'map$,16,187,69,112,"--ja--",20394,3,instance_npcname(strnpcinfo(0))+"::OnLoop";
 		}
 		areamonster 'map$,16,187,69,112,"--ja--",20250,10;
-		npctalk "¶ø´µ¥d : ³o­Ó°Ï°ì¬O¥H«e¦s©ñ­x¨Æ¸Ë³Æªº¦a¤è.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½oï¿½Ó°Ï°ï¿½Oï¿½Hï¿½eï¿½sï¿½ï¿½xï¿½Æ¸Ë³Æªï¿½ï¿½aï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¤j³¡¤À³£¬O¤@¨Ç°ª¶¥«ü´§©x¦b¨Ï¥Îªº.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½jï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½@ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½bï¿½Ï¥Îªï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ©Ò¥H§x¦b³o¸ÌªºÆF»î­Ì¬O¬Û·í±j¤jªº, ½Ð¤j®a¤@©w­n¤p¤ß.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ò¥Hï¿½xï¿½bï¿½oï¿½Ìªï¿½ï¿½Fï¿½ï¿½Ì¬Oï¿½Û·ï¿½ï¿½jï¿½jï¿½ï¿½, ï¿½Ð¤jï¿½aï¿½@ï¿½wï¿½nï¿½pï¿½ï¿½.";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -336,11 +336,11 @@ OnMyMobDead:
 	{
 		enablenpc instance_npcname("#EDDA_Warp");
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"¶ø´µ¥d : ²Ä¥|°Ï°ìªº®É¶¡¬y²I³t«×¤w¸gº¥º¥Ã­©w¤U¨Ó¤F, ¨º»òÂà²¾¨ì¤U¤@°Ï°ì§a.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ä¥|ï¿½Ï°ìªºï¿½É¶ï¿½ï¿½yï¿½Iï¿½tï¿½×¤wï¿½gï¿½ï¿½ï¿½ï¿½Ã­ï¿½wï¿½Uï¿½Ó¤F, ï¿½ï¿½ï¿½ï¿½ï¿½à²¾ï¿½ï¿½Uï¿½@ï¿½Ï°ï¿½a.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 53,244;
-		donpcevent instance_npcname("¶ø´µ¥d#Session5")+"::OnEnable";
-		donpcevent instance_npcname("¼É§g ¬I±K¯S°ê¤ý#Session5")+"::OnEnable";
+		donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#Session5")+"::OnEnable";
+		donpcevent instance_npcname("ï¿½É§g ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½#Session5")+"::OnEnable";
 	}
 	end;
 
@@ -355,9 +355,9 @@ OnInstanceInit:
 }
 
 /******************************
- - ²Ä¤­°Ï¶ø´µ¥d
+ - ï¿½Ä¤ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½d
 ******************************/
-1@gl_prq,52,270,5	script	¶ø´µ¥d#Session5	4_ED_OSCAR,3,3,{
+1@gl_prq,52,270,5	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Session5	4_ED_OSCAR,3,3,{
 	end;
 
 OnEnable:
@@ -368,19 +368,19 @@ OnTouch:
 	if('Session == 4 && is_party_leader())
 	{
 		'Session = 5;
-		npctalk "¶ø´µ¥d : Umm...ÁÙ¦³¤@­ÓÆF»î±r«Þ¦b³o¸Ì...";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : Umm...ï¿½Ù¦ï¿½ï¿½@ï¿½ï¿½ï¿½Fï¿½ï¿½rï¿½Þ¦bï¿½oï¿½ï¿½...";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¨º­Ó¦³­Ó»P¼É§g ¬I±K¯S°ê¤ý¬Ý¦ü¬Û¦P¥~Æ[ªº¤H.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Ó»Pï¿½É§g ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½Ý¦ï¿½ï¿½Û¦Pï¿½~ï¿½[ï¿½ï¿½ï¿½H.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ¦ý³o¤w¸g¤£¬O­ì¨Óªº¥L¤F.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½ï¿½ï¿½oï¿½wï¿½gï¿½ï¿½ï¿½Oï¿½ï¿½Óªï¿½ï¿½Lï¿½F.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : ©Ò¥H§A­Ì©Ò¦³¹ï¥L§ðÀ»®É±N¤£¨ü¥ô¦ó¦æ°Ê¤Wªº­­¨î.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ò¥Hï¿½Aï¿½Ì©Ò¦ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½É±Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¤Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.";
 		sleep 3000;
-		npctalk "¶ø´µ¥d : §Ú·|¸ÕµÛÃ­©w¦í³o­Ó°Ï°ìªº®É¶¡, ¾Ô°«§Y±N¶}©l¤F, ½Ð·Ç³Æ¦n.";
+		npctalk "ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ú·|ï¿½Õµï¿½Ã­ï¿½wï¿½ï¿½ï¿½oï¿½Ó°Ï°ìªºï¿½É¶ï¿½, ï¿½Ô°ï¿½ï¿½Yï¿½Nï¿½}ï¿½lï¿½F, ï¿½Ð·Ç³Æ¦n.";
 		sleep 3000;
-		donpcevent instance_npcname("¬I±K¯Sªº¼««ã#SchmditsRage")+"::OnFinal";
+		donpcevent instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#SchmditsRage")+"::OnFinal";
 		disablenpc instance_npcname(strnpcinfo(0));
-		disablenpc instance_npcname("¼É§g ¬I±K¯S°ê¤ý#Session5");
+		disablenpc instance_npcname("ï¿½É§g ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½#Session5");
 		mapwarp 'map$, 'map$, 52,271;
 	}
 	end;
@@ -390,7 +390,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,52,281,5	script	¼É§g ¬I±K¯S°ê¤ý#Session5	4_ED_SCHMIDT,{
+1@gl_prq,52,281,5	script	ï¿½É§g ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½#Session5	4_ED_SCHMIDT,{
 	end;
 
 OnEnable:
@@ -403,9 +403,9 @@ OnInstanceInit:
 }
 
 /******************************
- - ¶ø´µ¥dÀ°§U°±¤î¤õµK
+ - ï¿½ï¿½ï¿½ï¿½ï¿½dï¿½ï¿½ï¿½Uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½K
 ******************************/
-1@gl_prq,44,283,5	script	¶ø´µ¥d#OscarsHelp	4_ED_OSCAR,{
+1@gl_prq,44,283,5	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#OscarsHelp	4_ED_OSCAR,{
 	progressbar "0xffffff",3;
 	hideonnpc instance_npcname(strnpcinfo(0));
 	disablenpc instance_npcname(strnpcinfo(0));
@@ -425,7 +425,7 @@ OnTimer30000:
 		}
 		hideoffnpc instance_npcname(strnpcinfo(0));
 		enablenpc instance_npcname(strnpcinfo(0));
-		npctalk strnpcinfo(1)+" : ¦pªG§A§Æ±æ¤õµK°±¤U¨Ó´N»°ºò§ì¦í§Úªº¤â.";
+		npctalk strnpcinfo(1)+" : ï¿½pï¿½Gï¿½Aï¿½Æ±ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½Uï¿½Ó´Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úªï¿½ï¿½ï¿½.";
 	}
 	end;
 
@@ -446,7 +446,7 @@ OnTimer1000:
 	if(unitexists('SCHMIDT)) 
 	{
 		'StopFraming = 'Frame_Line;
-		instance_announce 0,"¶ø´µ¥d : §Ú¤w¸gÅý¤@±ø¤õµK¼È®É°±¤î¤F, ¦ý³oºû«ù¤£¤F¦h¤[ªº, ½ÐºÉ§Ö²b¤Æ³Q¶A©Gªº°ê¤ýÆF»î.",bc_map,0x0fff8C;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Ú¤wï¿½gï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½È®É°ï¿½ï¿½ï¿½F, ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fï¿½hï¿½[ï¿½ï¿½, ï¿½ÐºÉ§Ö²bï¿½Æ³Qï¿½Aï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fï¿½ï¿½.",bc_map,0x0fff8C;
 	}
 	end;
 	
@@ -454,36 +454,36 @@ OnTimer9000:
 	if(unitexists('SCHMIDT)) 
 	{
 		'StopFraming = 0;
-		donpcevent instance_npcname("¶ø´µ¥d#OscarsHelp")+"::OnEnable";
-		initnpctimer instance_npcname("¶ø´µ¥d#OscarsHelp");
+		donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#OscarsHelp")+"::OnEnable";
+		initnpctimer instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#OscarsHelp");
 	}
 	end;
 }
 
 /******************************
- - °ê¤ý¬I±K¯Sªº¼««ã
+ - ï¿½ï¿½ï¿½ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ******************************/
-1@gl_prq,0,0,0	script	¬I±K¯Sªº¼««ã#SchmditsRage	-1,{
+1@gl_prq,0,0,0	script	ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#SchmditsRage	-1,{
 OnFinal:
 	if('mode)
-		monster 'map$,52,282,"¶A©G¬I±K¯S°ê¤ý",20387,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		monster 'map$,52,282,"ï¿½Aï¿½Gï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½",20387,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	else
-		monster 'map$,52,282,"¶A©G¬I±K¯S°ê¤ý",20386,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		monster 'map$,52,282,"ï¿½Aï¿½Gï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½",20386,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	'SCHMIDT = $@mobid[0];
-	donpcevent instance_npcname("¬I±K¯S¤õµK#¤W")+"::OnEnable";
-	donpcevent instance_npcname("¬I±K¯S¤õµK#¤U")+"::OnEnable";
-	donpcevent instance_npcname("¬I±K¯S¤õµK#¥ª")+"::OnEnable";
-	donpcevent instance_npcname("¬I±K¯S¤õµK#¥k")+"::OnEnable";
-	initnpctimer instance_npcname("¶ø´µ¥d#OscarsHelp");
-	initnpctimer instance_npcname("¬I±K¯Sªº¼««ã#SchmditsRage");
+	donpcevent instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½W")+"::OnEnable";
+	donpcevent instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½U")+"::OnEnable";
+	donpcevent instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½ï¿½")+"::OnEnable";
+	donpcevent instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½k")+"::OnEnable";
+	initnpctimer instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#OscarsHelp");
+	initnpctimer instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#SchmditsRage");
 	end;
 	
-// ¬I±K¯S¦º¤`¨Æ¥ó
+// ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½`ï¿½Æ¥ï¿½
 OnMyMobDead:
 addrid(2,0,getcharid(1));
 if (strcharinfo(3)==instance_mapname("1@gl_prq")){
 set #hunter,#hunter+10;
-callfunc "offical_instance_finish";
+callfunc "offical_instance_finish",0;
 if ('mode==1){
 getitem 25739,10;
 getitem 10502413,rand(1,3);
@@ -493,16 +493,16 @@ getitem 25740,6;
 getitem 10502413,rand(1,3);
 }
 if (getequipid(EQI_COSTUME_HEAD_MID) == 31900||getequipid(EQI_HEAD_TOP) == 31600){set #hunter,#hunter+2;}
-dispbottom "[¨t²Î°T®§] °Æ¥»ÂI¼Æ¼W¥[";
+dispbottom "[ï¿½tï¿½Î°Tï¿½ï¿½] ï¿½Æ¥ï¿½ï¿½Iï¿½Æ¼Wï¿½[";
 }
-	instance_announce 0,"¶ø´µ¥d : ²×©ó¡K ±N°ê¤ý¬I±K¯SªºÆF»î²b¤Æ, ¨Ï¥L¸Ñ²æ¤F¡K",bc_map,0x0fff8C;
+	instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½×©ï¿½K ï¿½Nï¿½ï¿½ï¿½ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½Fï¿½ï¿½bï¿½ï¿½, ï¿½Ï¥Lï¿½Ñ²ï¿½Fï¿½K",bc_map,0x0fff8C;
 	donpcevent instance_npcname("#RageSpirit1")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit2")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit3")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit4")+"::OnDisable";
-	donpcevent instance_npcname("¶ø´µ¥d#OscarsHelp")+"::OnDisable";
-	stopnpctimer instance_npcname("¬I±K¯Sªº¼««ã#SchmditsRage");
-	donpcevent instance_npcname("¶ø´µ¥d#Reward")+"::OnEnable";
+	donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#OscarsHelp")+"::OnDisable";
+	stopnpctimer instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#SchmditsRage");
+	donpcevent instance_npcname("ï¿½ï¿½ï¿½ï¿½ï¿½d#Reward")+"::OnEnable";
 	end;
 
 OnTimer18000:
@@ -512,9 +512,9 @@ OnTimer18000:
 		getunitdata 'SCHMIDT, .@mob_data;
 		setunitdata 'SCHMIDT, UMOB_ATKMIN, .@mob_data[UMOB_ATKMIN]*2;
 		setunitdata 'SCHMIDT, UMOB_ATKMAX, .@mob_data[UMOB_ATKMAX]*2;
-		instance_announce 0,"³Q¶A©Gªº°ê¤ý ¬I±K¯S : µh­W¤£Â_§é¿iµÛ§Ú¡K«ô°U»°§ÖÅý§Ú¸Ñ²æ§a¡K",bc_map,0xFF5151;
+		instance_announce 0,"ï¿½Qï¿½Aï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Iï¿½Kï¿½S : ï¿½hï¿½Wï¿½ï¿½ï¿½_ï¿½ï¿½iï¿½Û§Ú¡Kï¿½ï¿½ï¿½Uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸Ñ²ï¿½aï¿½K",bc_map,0xFF5151;
 		sleep 1800;
-		instance_announce 0,"°ê¤ý¬I±K¯SªºÆF»î¤w¸g¶i¤J¨g¼Éª¬ºA, ½Ð¾aªñ³òÂ¶¦b®ÇÃäªº¨¸´c®ð®§²b¤Æ¥¦, ¤w¸Ñ°£¨g¼Éª¬ºA.",bc_map,0x9F35FF;
+		instance_announce 0,"ï¿½ï¿½ï¿½ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½Fï¿½ï¿½wï¿½gï¿½iï¿½Jï¿½gï¿½Éªï¿½ï¿½A, ï¿½Ð¾aï¿½ï¿½ï¿½Â¶ï¿½bï¿½ï¿½ï¿½äªºï¿½ï¿½ï¿½cï¿½ð®§²bï¿½Æ¥ï¿½, ï¿½wï¿½Ñ°ï¿½ï¿½gï¿½Éªï¿½ï¿½A.",bc_map,0x9F35FF;
 		donpcevent instance_npcname("#RageSpirit1")+"::OnEnable";
 		donpcevent instance_npcname("#RageSpirit2")+"::OnEnable";
 		donpcevent instance_npcname("#RageSpirit3")+"::OnEnable";
@@ -533,9 +533,9 @@ OnTouch:
 		disablenpc instance_npcname(strnpcinfo(0));
 		if('Rage <= 0)
 		{
-			instance_announce 0,"¶ø´µ¥d : ¥Lªº«ã¤õ¤w¸g¼È®É¥­®§¤F, ¶X²{¦b»°§Ö§ðÀ»¥L.",bc_map,0x0fff8C;
+			instance_announce 0,"ï¿½ï¿½ï¿½ï¿½ï¿½d : ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½wï¿½gï¿½È®É¥ï¿½ï¿½ï¿½ï¿½F, ï¿½Xï¿½{ï¿½bï¿½ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½L.",bc_map,0x0fff8C;
 			sc_end SC_MA_DamageReduced,'SCHMIDT;
-			initnpctimer instance_npcname("¬I±K¯Sªº¼««ã#SchmditsRage");
+			initnpctimer instance_npcname("ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½#SchmditsRage");
 		}
 	}
 	end;
@@ -557,25 +557,25 @@ OnInstanceInit:
 1@gl_prq,64,275,0	duplicate(#RageSpirit)	#RageSpirit4	4_ENERGY_BLUE,3,3
 
 /******************************
- - ¼úÀy
+ - ï¿½ï¿½ï¿½y
 ******************************/
-1@gl_prq,52,278,5	script	¶ø´µ¥d#Reward	4_ED_OSCAR,{
+1@gl_prq,52,278,5	script	ï¿½ï¿½ï¿½ï¿½ï¿½d#Reward	4_ED_OSCAR,{
 if (giftedda == 1){goto bx;}
 	//cutin "OSCAR01.bmp",0;
 	mes "["+strnpcinfo(1)+"]";
-	mes "¯u¬O¤@³õ­W¾Ô¹ï§a.";
-	mes "¤£¹Lµ²§½ÁÙ¬O¤ñ­ì¥»ªº¦n¦h¤F";
-	mes "¦pªG§Ú¯à°÷¦Û¤v¨Ó²b¤Æªº¸Ü...";
-	mes "´N¥Ø«e¬Ý¨Ó§ÚÁÙ»Ý­n¤@ÂI®É¶¡";
-	mes "Á`¦Ó¨¥¤§, ¤j®a°µ±o¤£¿ù.";
+	mes "ï¿½uï¿½Oï¿½@ï¿½ï¿½ï¿½Wï¿½Ô¹ï¿½a.";
+	mes "ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Ù¬Oï¿½ï¿½ì¥»ï¿½ï¿½ï¿½nï¿½hï¿½F";
+	mes "ï¿½pï¿½Gï¿½Ú¯ï¿½ï¿½ï¿½Û¤vï¿½Ó²bï¿½Æªï¿½ï¿½ï¿½...";
+	mes "ï¿½Nï¿½Ø«eï¿½Ý¨Ó§ï¿½ï¿½Ù»Ý­nï¿½@ï¿½Iï¿½É¶ï¿½";
+	mes "ï¿½`ï¿½Ó¨ï¿½ï¿½ï¿½, ï¿½jï¿½aï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½.";
 	next;
 	mes "["+strnpcinfo(1)+"]";
-	mes "¦b³o­Ó®É¶¡¬y±Y¶ò¤§«e, ¨º§Ú­Ì»°ºòÂ÷¶}³o¸Ì§a.";
+	mes "ï¿½bï¿½oï¿½Ó®É¶ï¿½ï¿½yï¿½Yï¿½ò¤§«e, ï¿½ï¿½ï¿½Ú­Ì»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}ï¿½oï¿½Ì§a.";
 	next;
-	if(select("§Ú·Q¦A³}³}.:¥X¥h.") == 1)
+	if(select("ï¿½Ú·Qï¿½Aï¿½}ï¿½}.:ï¿½Xï¿½h.") == 1)
 	{
 		mes "["+strnpcinfo(1)+"]";
-		mes "¬O¶Ü? §Ú©ú¥Õ¤F. ¨º±oºÉ§Ö§ìºò®É¶¡¤F.";
+		mes "ï¿½Oï¿½ï¿½? ï¿½Ú©ï¿½ï¿½Õ¤F. ï¿½ï¿½ï¿½oï¿½É§Ö§ï¿½ï¿½É¶ï¿½ï¿½F.";
 		close2;
 		cutin "OSCAR01.bmp",255;
 		end;
@@ -593,9 +593,9 @@ OnInstanceInit:
 	end;
 }
 /******************************
- - ²Ä¤­°Ï°ì¤õµK³]¸m
+ - ï¿½Ä¤ï¿½ï¿½Ï°ï¿½ï¿½ï¿½Kï¿½]ï¿½m
 ******************************/
-1@gl_prq,23,273,5	script	¬I±K¯S¤õµK#¥ª	139,{
+1@gl_prq,23,273,5	script	ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½ï¿½	139,{
 	end;
 
 OnEnable:
@@ -644,7 +644,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,87,297,5	script	¬I±K¯S¤õµK#¥k	139,{
+1@gl_prq,87,297,5	script	ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½k	139,{
 	end;
 
 OnEnable:
@@ -693,7 +693,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,51,304,5	script	¬I±K¯S¤õµK#¤W	139,{
+1@gl_prq,51,304,5	script	ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½W	139,{
 	end;
 
 OnEnable:
@@ -742,7 +742,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,51,247,5	script	¬I±K¯S¤õµK#¤U	139,{
+1@gl_prq,51,247,5	script	ï¿½Iï¿½Kï¿½Sï¿½ï¿½ï¿½K#ï¿½U	139,{
 	end;
 
 OnEnable:

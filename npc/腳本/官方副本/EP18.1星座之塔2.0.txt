@@ -2782,7 +2782,7 @@ OnTouch:
 	getitem 1001599,5*'lvl_stats*$EP1801;	//未知隕石碎片
 	erasequest 32071; }
 
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",51;
 
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;

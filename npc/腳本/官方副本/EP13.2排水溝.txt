@@ -568,7 +568,7 @@ OnInstanceInit:
 	disablenpc instance_npcname(strnpcinfo(0));
 	end;
 OnTouch:
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",14;
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 }

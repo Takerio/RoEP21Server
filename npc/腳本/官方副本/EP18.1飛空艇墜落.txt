@@ -755,7 +755,7 @@ OnTalk3:
 	mes "您身上的伊米爾礦石不足55個！";
 	close;	}
 	close2;
-	callfunc "offical_instance_finish";
+	
 
 	delitem 1000364,55;
 	instance_announce 0, "北方區域傳出了奇異吼聲趕快過去查看吧",bc_map,"0xFFFF00";
@@ -777,7 +777,7 @@ OnTouch:
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 	getitem 61006,10;	//商城1點金幣
 	erasequest 32038; }
-
+	callfunc "offical_instance_finish",52;
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 }
