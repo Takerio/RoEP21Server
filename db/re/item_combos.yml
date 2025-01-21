@@ -14768,6 +14768,38 @@ Body:
       bonus2 bAddEle,Ele_All,35;
       bonus2 bMagicAddEle,Ele_All,35;
 
+# 時光超越者手鐲
+  - Combos:
+      - Combo:
+          - Ring_Of_Nature_TW   # 490097
+          - Temporal_Boots_TW   # 22202
+    Script: |
+        if(readparam(bStr)>=120){ bonus bAtkRate,8; bonus2 bAddSize,Size_All,8;} 
+        if(readparam(bAgi)>=120){ bonus bAspdRate,4; bonus bCritAtkRate,15; } 
+        if(readparam(bVit)>=120){ bonus bDelayrate,-8;bonus bMaxHPrate,8; } 
+        if(readparam(bInt)>=120){ bonus bMatkRate,8; bonus2 bMagicAtkEle,Ele_All,8; } 
+        if(readparam(bDex)>=120){ bonus bLongAtkRate,5; bonus bAtkRate,8;} 
+        if(readparam(bLuk)>=120){ bonus bCritAtkRate,10; bonus bAspd,1; }
+  - Combos:
+      - Combo:
+          - Ring_Of_Nature_TW   # 490097
+          - Temporal_Cape_TW   # 480076
+    Script: |
+      .@g = getequiprefinerycnt(EQI_GARMENT);
+        bonus bMdef,5;
+        if(.@g >= 9){
+            bonus2 bIgnoreDefRaceRate,RC_All,5;
+            bonus2 bIgnoreMdefRaceRate,RC_All,5;
+            bonus2 bIgnoreDefRaceRate,RC_Player_Human,-5;
+            bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-5;
+            if(.@g >= 12){
+                bonus2 bIgnoreDefRaceRate,RC_All,10;
+                bonus2 bIgnoreMdefRaceRate,RC_All,10;
+                bonus2 bIgnoreDefRaceRate,RC_Player_Human,-10;
+                bonus2 bIgnoreMdefRaceRate,RC_Player_Human,-10;
+            }
+        }
+
 #時光超越者斗篷-LT
   - Combos:
       - Combo:
