@@ -3351,32 +3351,32 @@ Body:
     Buy: 20
   - Id: 960316
     AegisName: item_960316
-    Name: 達納托斯異能博士(念)寵物蛋
+    Name: 華麗金屬寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960317
     AegisName: item_960317
-    Name: 達納托斯異能博士(聖)寵物蛋
+    Name: 封印之石寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960318
     AegisName: item_960318
-    Name: 達納托斯異能博士(無)寵物蛋
+    Name: 嗒妮小姐(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960319
     AegisName: item_960319
-    Name: 斬殺天使的叛靈寵物蛋
+    Name: 死靈(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960320
     AegisName: item_960320
-    Name: 遺忘神界的巫靈寵物蛋
+    Name: 俄塞裡斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960321
     AegisName: item_960321
-    Name: 回朔時間的先知寵物蛋
+    Name: 巴風特(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960322

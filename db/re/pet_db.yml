@@ -10410,7 +10410,8 @@ Body:
       callfunc "petskill",960314;
     Script: >
       callfunc "petstatus",960314;
-  - Mob: BlueManon1
+# 魔力之塔
+  - Mob: ENTWEIHEN_Eco
     CaptureRate : 1000
     EggItem: item_960315
     FoodItem: Luxurious_Pet_Food
@@ -10421,7 +10422,8 @@ Body:
       callfunc "petskill",960315;
     Script: >
       callfunc "petstatus",960315;
-  - Mob: thanat1
+# 華麗金屬 
+  - Mob: EMPELIUM_Ord
     CaptureRate : 1000
     EggItem: item_960316
     FoodItem: Luxurious_Pet_Food
@@ -10432,7 +10434,8 @@ Body:
       callfunc "petskill",960316;
     Script: >
       callfunc "petstatus",960316;
-  - Mob: thanat2
+# 封印之石
+  - Mob: ENTWEIHEN_Ord
     CaptureRate : 1000
     EggItem: item_960317
     FoodItem: Luxurious_Pet_Food
@@ -10443,7 +10446,8 @@ Body:
       callfunc "petskill",960317;
     Script: >
       callfunc "petstatus",960317;
-  - Mob: thanat3
+# 嗒妮小姐(普通)
+  - Mob: LADY_TANEE_Ord
     CaptureRate : 1000
     EggItem: item_960318
     FoodItem: Luxurious_Pet_Food
@@ -10454,7 +10458,8 @@ Body:
       callfunc "petskill",960318;
     Script: >
       callfunc "petstatus",960318;
-  - Mob: Knight_Angel
+# 死靈(普通)
+  - Mob: DOPPELGANGER_Ord
     CaptureRate : 1000
     EggItem: item_960319
     FoodItem: Luxurious_Pet_Food
@@ -10465,7 +10470,8 @@ Body:
       callfunc "petskill",960319;
     Script: >
       callfunc "petstatus",960319;
-  - Mob: Forgotten_Witch
+# 俄塞裡斯(普通)
+  - Mob: OSIRIS_Ord
     CaptureRate : 1000
     EggItem: item_960320
     FoodItem: Luxurious_Pet_Food
@@ -10476,7 +10482,8 @@ Body:
       callfunc "petskill",960320;
     Script: >
       callfunc "petstatus",960320;
-  - Mob: Timing_Pioner
+# 巴風特(普通) 
+  - Mob: BAPHOMET_Ord
     CaptureRate : 1000
     EggItem: item_960321
     FoodItem: Luxurious_Pet_Food
