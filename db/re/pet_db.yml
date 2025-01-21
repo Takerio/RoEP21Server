@@ -10494,7 +10494,8 @@ Body:
       callfunc "petskill",960321;
     Script: >
       callfunc "petstatus",960321;
-  - Mob: Amazing_Punch
+# 黃金蟲(普通)
+  - Mob: GOLDEN_BUG_Ord
     CaptureRate : 1000
     EggItem: item_960322
     FoodItem: Luxurious_Pet_Food
@@ -10505,7 +10506,8 @@ Body:
       callfunc "petskill",960322;
     Script: >
       callfunc "petstatus",960322;
-  - Mob: Ending_Boss
+# 獸人英雄(普通)
+  - Mob: ORK_HERO_Ord
     CaptureRate : 1000
     EggItem: item_960323
     FoodItem: Luxurious_Pet_Food
@@ -10516,7 +10518,8 @@ Body:
       callfunc "petskill",960323;
     Script: >
       callfunc "petstatus",960323;
-  - Mob: echidna
+# 海盜之王(普通) 
+  - Mob: DRAKE_Ord
     CaptureRate : 1000
     EggItem: item_960324
     FoodItem: Luxurious_Pet_Food
@@ -10527,7 +10530,8 @@ Body:
       callfunc "petskill",960324;
     Script: >
       callfunc "petstatus",960324;
-  - Mob: lilith
+# 虎王(普通)
+  - Mob: EDDGA_Ord
     CaptureRate : 1000
     EggItem: item_960325
     FoodItem: Luxurious_Pet_Food
@@ -10538,7 +10542,8 @@ Body:
       callfunc "petskill",960325;
     Script: >
       callfunc "petstatus",960325;
-  - Mob: Blazing_Imp
+# 蟻后(普通)
+  - Mob: MAYA_Ord
     CaptureRate : 1000
     EggItem: item_960326
     FoodItem: Luxurious_Pet_Food
@@ -10549,7 +10554,8 @@ Body:
       callfunc "petskill",960326;
     Script: >
       callfunc "petstatus",960326;
-  - Mob: Neohyuroido
+# 法老王(普通)
+  - Mob: PHARAOH_Ord
     CaptureRate : 1000
     EggItem: item_960327
     FoodItem: Luxurious_Pet_Food
@@ -10560,7 +10566,8 @@ Body:
       callfunc "petskill",960327;
     Script: >
       callfunc "petstatus",960327;
-  - Mob: siren
+# 皮里恩(普通)
+  - Mob: PHREEONI_Ord
     CaptureRate : 1000
     EggItem: item_960328
     FoodItem: Luxurious_Pet_Food

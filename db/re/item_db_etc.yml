@@ -58811,7 +58811,7 @@ Body:
       BuyingStore: true
   - Id: 1001336
     AegisName: Bar_D_Co_Specimen
-    Name: Bar_D_Po_Specimen
+    Name: 深層腐敗靈樣本
     Type: Etc
     Weight: 10
     Flags:
