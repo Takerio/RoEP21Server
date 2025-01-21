@@ -559,7 +559,7 @@ vdistrict1,40,31,4	script	傳送裝置	10007,{/* 63275 */
 	//副本任務獎勵
 	if(checkquest(32039,HUNTING)==2 ) { 
 	dispbottom "恐怖玩具工廠任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",4;
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

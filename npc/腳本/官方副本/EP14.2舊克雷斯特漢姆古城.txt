@@ -1320,7 +1320,7 @@ end;
 	//副本任務獎勵
 	if(checkquest(32027,HUNTING)==2 ) { 
 	dispbottom "舊克雷斯特漢姆古城任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",21;
 	set #Instance_Points,#Instance_Points+30;	//副本積分+30
 	dispbottom "副本積分+30";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

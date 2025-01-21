@@ -361,11 +361,11 @@ OnInstanceInit:
 		getitem 1001618,30;
 		getitem 103512,rand(2,4);	//過去的英雄碎片盒子 (這部分是額外增加如不需要自行刪除)
 		}
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",64;
 	if(checkquest(12649) >= 0) { erasequest 12649; setquest 12646; }
 	if(checkquest(12650) >= 0) { erasequest 12650; setquest 12646; }
 	if(checkquest(12651) >= 0) { erasequest 12651; setquest 12646; }
-	warp "prontera",156,165;
+	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 
 OnInstanceInit:

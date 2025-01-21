@@ -4,7 +4,7 @@ vdistrict1,31,60,4	script	巴風特的墳墓	406,{
 	//副本任務獎勵
 	if(checkquest(32013,HUNTING)==2 ) { 
 	dispbottom "封印的神殿任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",11;
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

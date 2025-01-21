@@ -665,7 +665,7 @@ OnTalk1:
 	getitem 1000103,4*$EP1702;	//霸肋門德餐券
 	erasequest 32155; }
 	if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
-
+	callfunc "offical_instance_finish",48;
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;
 

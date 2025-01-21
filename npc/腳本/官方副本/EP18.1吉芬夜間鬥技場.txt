@@ -565,7 +565,7 @@ OnInit:
 		getitem 1000316,35;	//大賽硬幣x35
 		getitem 1000317,2;	//大賽證明x2
 		getitem 1000366,1;	//大賽冠軍證明x1
-		callfunc "offical_instance_finish";
+		callfunc "offical_instance_finish",50;
 
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;

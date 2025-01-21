@@ -653,7 +653,7 @@ OnTouch:
 	//副本任務獎勵
 	if(checkquest(32040,HUNTING)==2 ) { 
 	dispbottom "克雷斯特漢姆的殞落[困難]任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",8;
 	set #Instance_Points,#Instance_Points+20;	//副本積分+20
 	dispbottom "副本積分+20";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

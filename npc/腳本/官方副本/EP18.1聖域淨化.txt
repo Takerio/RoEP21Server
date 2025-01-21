@@ -1165,7 +1165,7 @@ OnEnable:
 	//官方獎勵
 	getitem 'item[0],'amount1[1]*$EP1801;
 	getexp 12681245,3000000;
-	callfunc "offical_instance_finish";
+	callfunc "offical_instance_finish",54;
 
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
