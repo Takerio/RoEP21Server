@@ -120877,6 +120877,7 @@ Body:
     Gradable: true
     Script: |
       .@r = getrefine();
+      .@g = getenchantgrade();
       bonus bMdef,10;
       bonus bAllStats,12;
       bonus bMaxHPrate,15;
