@@ -10578,7 +10578,8 @@ Body:
       callfunc "petskill",960328;
     Script: >
       callfunc "petstatus",960328;
-  - Mob: thanat
+# 月夜貓(普通)
+  - Mob: MOONLIGHT_Ord
     CaptureRate : 1000
     EggItem: item_960329
     FoodItem: Luxurious_Pet_Food
@@ -10589,7 +10590,8 @@ Body:
       callfunc "petskill",960329;
     Script: >
       callfunc "petstatus",960329;
-  - Mob: KK_KING_DLPORING
+# 獸人酋長(普通)
+  - Mob: ORC_LORD_Ord
     CaptureRate : 1000
     EggItem: item_960330
     FoodItem: Luxurious_Pet_Food
@@ -10600,7 +10602,8 @@ Body:
       callfunc "petskill",960330;
     Script: >
       callfunc "petstatus",960330;
-  - Mob: E_VADON_X_H
+# 卡崙(普通)
+  - Mob: GARM_Ord
     CaptureRate : 1000
     EggItem: item_960331
     FoodItem: Luxurious_Pet_Food
@@ -10611,7 +10614,8 @@ Body:
       callfunc "petskill",960331;
     Script: >
       callfunc "petstatus",960331;
-  - Mob: mobb18
+# 烏龜將軍(普通) 
+  - Mob: TURTLE_GENERAL_Ord
     CaptureRate : 1000
     EggItem: item_960332
     FoodItem: Luxurious_Pet_Food
@@ -10622,7 +10626,8 @@ Body:
       callfunc "petskill",960332;
     Script: >
       callfunc "petstatus",960332;
-  - Mob: MD_Airboat_Tree
+# 死靈騎士(普通)
+  - Mob: LORD_OF_DEATH_Ord
     CaptureRate : 1000
     EggItem: item_960333
     FoodItem: Luxurious_Pet_Food
@@ -10633,7 +10638,8 @@ Body:
       callfunc "petskill",960333;
     Script: >
       callfunc "petstatus",960333;
-  - Mob: MD_Airboat_Poring
+# 德古拉伯爵(普通)
+  - Mob: DRACULA_Ord
     CaptureRate : 1000
     EggItem: item_960334
     FoodItem: Luxurious_Pet_Food
@@ -10644,7 +10650,8 @@ Body:
       callfunc "petskill",960334;
     Script: >
       callfunc "petstatus",960334;
-  - Mob: MD_Airboat_Worm
+# 古埃及王(普通)
+  - Mob: AMON_RA_Ord
     CaptureRate : 1000
     EggItem: item_960335
     FoodItem: Luxurious_Pet_Food
@@ -10655,7 +10662,8 @@ Body:
       callfunc "petskill",960335;
     Script: >
       callfunc "petstatus",960335;
-  - Mob: MD_Airboat_LEECH
+# 塔奧群卡(普通)
+  - Mob: TAO_GUNKA_Ord
     CaptureRate : 1000
     EggItem: item_960336
     FoodItem: Luxurious_Pet_Food
@@ -10666,7 +10674,8 @@ Body:
       callfunc "petskill",960336;
     Script: >
       callfunc "petstatus",960336;
-  - Mob: MD_Airboat_Mos
+# 白素貞(普通)
+  - Mob: BACSOJIN_Ord
     CaptureRate : 1000
     EggItem: item_960337
     FoodItem: Luxurious_Pet_Food
@@ -10677,7 +10686,8 @@ Body:
       callfunc "petskill",960337;
     Script: >
       callfunc "petstatus",960337;
-  - Mob: MD_Airboat_Boss
+# 闇●騎士領主 賽依連
+  - Mob: B_SEYREN_Ord
     CaptureRate : 1000
     EggItem: item_960338
     FoodItem: Luxurious_Pet_Food
