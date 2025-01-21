@@ -83,9 +83,86 @@ Body:
            - Index: 1
              Item: Abyss_Jewel_Fragment
              Amount: 2
-
-
-
+       - Index: 13
+         Item: Bar_D_Fl_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Fl_Specimen
+             Amount: 30
+       - Index: 14
+         Item: Bar_D_Ea_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Ea_Specimen
+             Amount: 30
+       - Index: 15
+         Item: Bar_D_Ic_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Ic_Specimen
+             Amount: 30
+       - Index: 16
+         Item: Bar_D_St_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_St_Specimen
+             Amount: 30
+       - Index: 17
+         Item: Bar_D_So_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_So_Specimen
+             Amount: 30 
+       - Index: 18
+         Item: Bar_D_Pu_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Pu_Specimen
+             Amount: 30 
+       - Index: 19
+         Item: Bar_D_Co_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Co_Specimen
+             Amount: 30   
+       - Index: 20
+         Item: Bar_D_Co_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Co_Specimen
+             Amount: 30  
+       - Index: 20
+         Item: Bar_D_Co_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Po_Specimen
+             Amount: 30   
+       - Index: 20
+         Item: Bar_D_Po_Crystal
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 1
+             Item: Bar_D_Co_Specimen
+             Amount: 30                    
 #時序象限頭冠
    - Name: 時序象限頭冠
      Map: prontera
