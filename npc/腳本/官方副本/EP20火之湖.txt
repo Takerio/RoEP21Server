@@ -596,7 +596,7 @@ function	script	unitskilluseid_lake2	{
 	getitem 1001441,1;	//春夏秋冬的能量
 	getitem 1001442,1;	//春夏秋冬的能量
 	getitem 1001443,1;	//春夏秋冬的能量
-	callfunc "offical_instance_finish",60;
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;
 

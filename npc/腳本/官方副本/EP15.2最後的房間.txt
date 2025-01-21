@@ -811,7 +811,7 @@ OnInit:
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 	erasequest 32057; 
-	callfunc "offical_instance_finish",36;
+	callfunc "offical_instance_finish";
 	}
 
 	if(checkquest(11380,HUNTING) == 2) {

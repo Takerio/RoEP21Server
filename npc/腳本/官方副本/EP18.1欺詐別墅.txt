@@ -1113,7 +1113,7 @@ OnInstanceInit:
 			getitem callfunc("F_Rand",100652,100653),2;
 			}
 
-	callfunc "offical_instance_finish",53;
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 end;
 

@@ -860,7 +860,7 @@ case 2:
 	//副本任務獎勵
 	if(checkquest(32047,HUNTING)==2 ) { 
 	dispbottom "噩夢吉特巴任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish",29;
+	callfunc "offical_instance_finish";
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

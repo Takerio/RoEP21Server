@@ -553,7 +553,7 @@ OnInstanceInit:
 			if(rand(100)<.@item_rate[.@i])
 				getitem .@item_id_r[.@i],.@item_co[.@i];
 		}
-	callfunc "offical_instance_finish",62;
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;
 

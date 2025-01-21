@@ -943,7 +943,7 @@ OnInstanceInit:
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 	getitem 61006,10;	//商城1點金幣
 	if(checkquest(33021)==1){completequest 33021; dispbottom "官方副本任務 (已完成)";}
-	callfunc "offical_instance_finish",58;
+
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 

@@ -1297,7 +1297,7 @@ if ( !'ClearInatance ){
 	message strcharinfo(0),"遊戲提示 : 副本尚未完成!";
 	end;
 }
-	callfunc "offical_instance_finish",16;
+	callfunc "offical_instance_finish";
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";

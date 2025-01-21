@@ -486,7 +486,7 @@ OnTalk4:
 	getitem 25155,10*$EP1602;	//秀發茲榮譽之證
 	getitem 61006,rand(3,5);	//商城1點兌換券
 	erasequest 32018; 
-	callfunc "offical_instance_finish",40;
+	callfunc "offical_instance_finish";
 	}
 
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;

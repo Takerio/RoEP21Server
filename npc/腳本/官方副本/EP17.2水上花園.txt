@@ -700,7 +700,7 @@ OnEnd:
 	dispbottom "水上花園(困難)任務完成，以下是你的獎勵!!"; 
 	getitem 1000103,10*$EP1702;	//霸肋門德餐券
 	erasequest 16433; }
-	callfunc "offical_instance_finish",44;
+	callfunc "offical_instance_finish";
 
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;

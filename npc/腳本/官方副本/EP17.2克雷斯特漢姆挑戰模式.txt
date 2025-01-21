@@ -1100,7 +1100,7 @@ end;
 	getitem 25864,1*$EP1702;	//封印的時間頭冠
 	erasequest 12496;
 	}
-	callfunc "offical_instance_finish",46;
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 

@@ -321,7 +321,7 @@ OnInstanceInit:
 
 	case 1:
 	getitem 25376,5;	//寵物硬幣
-	callfunc "offical_instance_finish",1;
+	callfunc "offical_instance_finish";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	close;
 
