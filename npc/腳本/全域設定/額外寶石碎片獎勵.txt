@@ -15,16 +15,16 @@ return;
 function	script	get_gold	{
 
 if(rand(100)<8){
-    getitem 7228,1;
-    if(rand(100)<6){
-        getitem 7229,1;
-        if(rand(100)<4){
-            getitem 7230,1;
-        }
-    }
-
+    getitem 7229,1;
 }
 
+if(rand(100)<6){
+    getitem 7228,1;
+}
+
+if(rand(100)<4){
+    getitem 7230,1;
+}
 
 return;
 }
