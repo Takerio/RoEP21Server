@@ -31157,7 +31157,7 @@ Body:
       dispbottom "目前自創副本積分 "+#Instance_S_Points+"";
 
 
-  - Id: 61026
+  - Id: 2400000
     AegisName: Dividend_Points_1
     Name: 1點紅利硬幣
     Type: Usable
