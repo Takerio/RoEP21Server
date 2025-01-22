@@ -3,7 +3,7 @@ function	script	offical_instance_finish	{
     
     set instance_name,getarg(0);
     set Cash_Points_1,61006;   // 商城點數 1P
-    set Dividend_Points_1,61027; // 1點紅利點數
+    set Dividend_Points_1,61026; // 1點紅利點數
 
     if(instance_name == 0){ // [EP17.1]淨化克雷斯特漢姆古城
             getitem Cash_Points_1,10;
