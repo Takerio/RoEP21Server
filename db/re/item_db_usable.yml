@@ -31166,10 +31166,10 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      set amount,countitem(61027);
+      set amount,countitem(2400000);
       
       set #Dividend_Points,#Dividend_Points+amount+1;
-      delitem 61027,amount; 
+      delitem 2400000,amount; 
       dispbottom "目前紅利點數 "+#Dividend_Points+"";
   - Id: 61028
     AegisName: Dividend_Points_10
