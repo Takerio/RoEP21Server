@@ -45,7 +45,7 @@ function	script	BuyCash	{
 
 Init:
 	// Zeny 與 商城點數兌換比例
-	set @ZonyToCash,5000000;
+	set @ZonyToCash,2500000;
 	
 	// 回饋點數比例
 	set @FeedbackCash,10;
