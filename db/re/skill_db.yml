@@ -18682,7 +18682,7 @@ Body:
       AllowOnWarg: true
       AllowOnMado: true
     Hit: Single
-    SplashArea: 5
+    SplashArea: 20
     Requires:
       SpCost: 10
   - Id: 1014
