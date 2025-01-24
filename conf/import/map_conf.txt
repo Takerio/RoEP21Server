@@ -1,4 +1,0 @@
-char_ip: 127.0.0.1
-char_port: 6121
-map_ip: 220.135.81.119
-map_port: 5121

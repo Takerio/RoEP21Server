@@ -31157,6 +31157,20 @@ Body:
       dispbottom "目前自創副本積分 "+#Instance_S_Points+"";
 
 
+  - Id: 2400000
+    AegisName: Dividend_Points_1
+    Name: 1點紅利硬幣
+    Type: Usable
+    Buy: 100001
+    Weight: 10
+    Flags:
+      BuyingStore: true
+    Script: |
+      set amount,countitem(2400000);
+      
+      set #Dividend_Points,#Dividend_Points+amount+1;
+      delitem 2400000,amount; 
+      dispbottom "目前紅利點數 "+#Dividend_Points+"";
   - Id: 61028
     AegisName: Dividend_Points_10
     Name: 10點紅利硬幣
@@ -36231,6 +36245,15 @@ Body:
     Weight: 100
     Script: |
       item_reform();
+#時間裂隙武器
+  - Id: 103308
+    AegisName: Time_Gap_Refine_Hammer
+    Name: 時間裂隙武器精煉鎚
+    Type: DelayConsume
+    Script: |
+      item_reform();
+
+
 
 
 
