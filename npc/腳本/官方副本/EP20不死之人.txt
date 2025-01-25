@@ -7,9 +7,9 @@
 1@twbs	mapflag	noicewall
 1@twbs	mapflag	restricted	6
 
-//prontera,152,168,4	script	拉斯甘德#Con1	22007,{
+vdistrict1,26,27,4	script	拉斯甘德#Con1	22007,{
 
-function	script	EP20不死之人	{
+
 
 	if(gettimetick(2) < MD_CD_01){
 	mes "須等待 "+(getd("MD_CD_01")-gettimetick(2))/60+" 分鐘後才可再次進入";
@@ -196,13 +196,14 @@ OnStart1:
 		}
 	}
 	close;
-}
+
 
 OnInit:
 	waitingroom "不死之人",0;
 	end;
 }
 
+}
 
 //-----------------------------------------主系統
 1@twbs,0,0,0	script	#不死之人	-1,{   end;
