@@ -122082,10 +122082,11 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-    Garment: true
-    ArmorLevel: 1
+      Garment: true
+    ArmorLevel: 2
+    Gradable: true
+    EquipLevelMin: 150
     Refineable: true
-    View: 56
     Script: |
       .@r = getrefine();
       .@g = getenchantgrade();
