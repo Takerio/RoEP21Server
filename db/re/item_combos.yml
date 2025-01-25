@@ -20716,9 +20716,11 @@ Body:
           - item_490615   # 490615
           - Flamel_Memory   # 29602
     	Script: |
-     	  if(class==4078 || class==4259){bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",70; 
+     	  if(class==4078 || class==4259){
+          bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",70; 
           bonus2 bSkillCooldown,"GN_SPORE_EXPLOSION",-5000; 
           bonus4 bAutoSpellOnSkill,"GN_SPORE_EXPLOSION","BO_MAYHEMIC_THORNS",1,350; 
+          }
 
 
 
