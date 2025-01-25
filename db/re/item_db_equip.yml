@@ -122082,7 +122082,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Garment: true
+    Garment: true
     ArmorLevel: 1
     Refineable: true
     View: 56
