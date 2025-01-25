@@ -239,27 +239,27 @@ function	script	offical_instance_finish	{
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 59){ // EP20不死之人
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 60){ // EP20火之湖
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 61){ // EP20生命殿堂
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 62){ // EP20冰凍之海
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 63){ // EP21幽靈船船長
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
     else if(instance_name == 64){ // EP21最終之戰
-            getitem Cash_Points_1,5;
+            getitem Cash_Points_1,1;
             getitem Dividend_Points_1,1;
     } 
 

@@ -313,7 +313,7 @@ OnBOSSdie:
 	hideoffnpc instance_npcname(strnpcinfo(0));
 	classchange 4_ep19_juncea,instance_npcname(strnpcinfo(0));
 	set Instance_Miao,gettimetick(2)-Instance_Annal;
-	announce "【不死之人】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下挑戰成功",bc_all,0xD7BA98;
+	//announce "【不死之人】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下挑戰成功",bc_all,0xD7BA98;
 	end;
 }
 

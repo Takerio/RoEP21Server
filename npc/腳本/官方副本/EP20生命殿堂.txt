@@ -165,7 +165,7 @@ OnEnd:
 	//出場公告時間
 	set 'Instance_Miao,gettimetick(2)-'Instance_Annal;
 	enablenpc instance_npcname("參宿七#RIGEL");
-	announce "【生命殿堂】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下，消耗"+('Instance_Miao/60)+"分"+('Instance_Miao%60)+"秒挑戰 第["+'Life_LV +"]階段 成功",bc_all,0xD7BA98;
+	//announce "【生命殿堂】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下，消耗"+('Instance_Miao/60)+"分"+('Instance_Miao%60)+"秒挑戰 第["+'Life_LV +"]階段 成功",bc_all,0xD7BA98;
 	end;
 }
 

@@ -158,7 +158,7 @@ OnEnd:
 	//出場公告時間
 	set 'Instance_Miao,gettimetick(2)-'Instance_Annal;
 	enablenpc instance_npcname("瑪里絲泰拉_巴特#03");
-	announce "【幽靈船船長】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下，消耗"+('Instance_Miao/60)+"分"+('Instance_Miao%60)+"秒挑戰成功",bc_all,0xD7BA98;
+	//announce "【幽靈船船長】：隊伍 ["+strcharinfo(1)+"] 在隊長『"+getpartyleader(getcharid(1),0)+"』帶領下，消耗"+('Instance_Miao/60)+"分"+('Instance_Miao%60)+"秒挑戰成功",bc_all,0xD7BA98;
 	end;
 }
 
