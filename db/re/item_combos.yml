@@ -20707,14 +20707,18 @@ Body:
           - item_490615   # 490615
           - Gertie_Memory   # 29603
     	Script: |
-     	 if(Class == 4079 || Class == 4108 || Class == 4260){bonus2 bMagicAtkEle,0,20; bonus bAspdRate,10; bonus5 bAutoSpell,"NPC_COMET",1,200,BF_,1; 
+     	 if(Class == 4079 || Class == 4108 || Class == 4260){bonus2 bMagicAtkEle,0,20; 
+         bonus bAspdRate,10; 
+         bonus5 bAutoSpell,"NPC_COMET",1,200,BF_LONG,1; 
      	 }
   - Combos:
       - Combo:
           - item_490615   # 490615
           - Flamel_Memory   # 29602
     	Script: |
-     	 if(class==4078 || class==4259){bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",70; bonus2 bSkillCooldown,"GN_SPORE_EXPLOSION",-5000; bonus4 bAutoSpellOnSkill,"GN_SPORE_EXPLOSION","BO_MAYHEMIC_THORN",1,350; 
+     	 if(class==4078 || class==4259){bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",70; 
+         bonus2 bSkillCooldown,"GN_SPORE_EXPLOSION",-5000; 
+         bonus4 bAutoSpellOnSkill,"GN_SPORE_EXPLOSION","BO_MAYHEMIC_THORNS",1,350; 
 
 
 
