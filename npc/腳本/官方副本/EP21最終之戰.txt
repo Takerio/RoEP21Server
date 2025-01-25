@@ -367,6 +367,11 @@ OnInstanceInit:
 	if(checkquest(12650) >= 0) { erasequest 12650; setquest 12646; }
 	if(checkquest(12651) >= 0) { erasequest 12651; setquest 12646; }
 	callfunc "offical_instance_finish",64;
+
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
+
+	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 

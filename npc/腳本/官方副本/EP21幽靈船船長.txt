@@ -259,6 +259,10 @@ OnInstanceInit:
 	//enablenpc instance_npcname("Wtgs_Warp#04");
 	disablenpc instance_npcname(strnpcinfo(0));
 	callfunc "offical_instance_finish",63;
+
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
+
 	warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 	end;
 

@@ -670,8 +670,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV == 20){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -698,8 +698,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 18){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -724,8 +724,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 15){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -747,8 +747,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 12){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -769,8 +769,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 9){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -790,8 +790,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 6){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -809,8 +809,8 @@ function	script	unitskilluseid_ba_go1	{
 		if ('Life_LV >= 3){
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem rand(1001456,1001458),1;	//隨機一種果實
 		getitem rand(1001456,1001458),1;	//隨機一種果實
@@ -827,8 +827,8 @@ function	script	unitskilluseid_ba_go1	{
 
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-		set #Instance_Points,#Instance_Points+10;	//副本積分+10
-		dispbottom "副本積分+10";
+	set #Instance_Points,#Instance_Points+5;	//副本積分+5
+	dispbottom "副本積分+5";
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem 1001456,1;	//循環的果實
 		getitem 1001457,1;	//誕生的果實
@@ -837,6 +837,9 @@ function	script	unitskilluseid_ba_go1	{
 		getitem 1001460,1;	//生命之光
 		getitem 61006,10;	//商城1點金幣
 		callfunc "offical_instance_finish",61;
+
+
+		
 		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		close;
 
