@@ -58771,56 +58771,56 @@ Body:
     AegisName: Bar_D_Fl_Specimen
     Name: 深層火焰樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001331
     AegisName: Bar_D_Ea_Specimen
     Name: 深層大地樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001332
     AegisName: Bar_D_Ic_Specimen
     Name: 深層寒冰樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001333
     AegisName: Bar_D_St_Specimen
     Name: 深層風暴樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001334
     AegisName: Bar_D_So_Specimen
     Name: 深層魂靈樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001335
     AegisName: Bar_D_Pu_Specimen
     Name: 深層淨化靈樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001336
     AegisName: Bar_D_Co_Specimen
     Name: 深層腐敗靈樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
   - Id: 1001337
     AegisName: Bar_D_Po_Specimen
     Name: 深層劇毒靈樣本
     Type: Etc
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
 
