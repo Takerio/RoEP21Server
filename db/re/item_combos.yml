@@ -20721,6 +20721,34 @@ Body:
           bonus2 bSkillCooldown,"GN_SPORE_EXPLOSION",-5000; 
           bonus4 bAutoSpellOnSkill,"GN_SPORE_EXPLOSION","BO_MAYHEMIC_THORNS",1,350; 
           }
+# 暴徒領巾
+  - Combos:
+      - Combo:
+          - Mob_Scarf
+          - Sunglasses
+      - Combo:
+          - Mob_Scarf
+          - Sunglasses_
+      - Combo:
+          - Mob_Scarf
+          - Glasses
+      - Combo:
+          - Mob_Scarf
+          - Glasses_
+    Script: |
+      .@a = (readparam(bStr)+readparam(bLuk))/80;
+      .@b = (readparam(bAgi)+readparam(bVit))/80;
+      .@c = (readparam(bInt)+readparam(bDex))/80;
+      bonus bMaxHPrate,5*.@b;
+      bonus2 bAddClass,Class_All,6*.@a;
+      bonus bMatk,120*.@c;
+      bonus bCritical,5*.@a;
+      bonus bAspdRate,5*.@b;
+      bonus bVariableCastrate,-3*.@c;
+      bonus bCritAtkRate,10*.@a;
+      bonus2 bSubRace,RC_DemiHuman,((2*.@b)+2);
+      bonus2 bSubRace,RC_Player_Human,((2*.@b)+2);
+      bonus bHealPower,10*.@c;
 
 
 
