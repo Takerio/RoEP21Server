@@ -161,7 +161,7 @@ Body:
          Zeny: 0
          RequiredItems:
            - Index: 1
-             Item: Bar_D_Co_Specimen
+             Item: Bar_D_Po_Specimen
              Amount: 30                    
 #時序象限頭冠
    - Name: 時序象限頭冠
