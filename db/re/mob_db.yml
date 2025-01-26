@@ -131151,7 +131151,7 @@ Body:
         Rate: 2500
       - Item: Ep21_Jor_Accessary
         Rate: 2500
-      - Item: Cliolima_Card
+      - Item: Yortus_Bailiff_Card
         Rate: 1
         StealProtected: true
 
