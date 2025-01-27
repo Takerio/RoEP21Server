@@ -5,7 +5,7 @@
 	mes "我是負責幫特殊道具附魔的精靈";
 	mes "哪件裝備要附魔呢?";
 	next;
-	switch(select("鎧甲類:頭盔類(中):鞋子類:飾品類")){
+	switch(select("鎧甲類:頭盔類(中):鞋子類:飾品類:披肩類")){
 
 	case 1:
 		mes "[附魔精靈]";
@@ -100,6 +100,18 @@
 
 		}
 
+	case 5:
+		mes "[附魔精靈]";
+		mes "哪件裝備要附魔呢?";
+		next;
+		switch(select("奧林帕斯之翼-LT")){
+
+		case 1:
+		close2;
+		item_enchant 10008;
+		end;
+
+		}
 	}
 
 OnInit:
