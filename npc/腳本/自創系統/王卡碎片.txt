@@ -516,8 +516,6 @@ OnPCKillMvpEvent:
 	case 21982:
 	if(true) getitem 94149,1;
 	break;
-
-	
 	}
 	end;
 
