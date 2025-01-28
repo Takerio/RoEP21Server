@@ -11906,9 +11906,9 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","AS_POISONREACT");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+  - Id: 970138
+    AegisName: card_skill_AS_VENOMDUST
+    Name: 病毒散撥技能卡片
     Type: Card
     Buy: 20
     Weight: 10
@@ -11916,96 +11916,100 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+  - Id: 970139
+    AegisName: card_skill_AS_SPLASHER
+    Name: 毒性感染技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","AS_SPLASHER");
+  # 技能卡片 - 初學者
+  - Id: 970140
+    AegisName: card_skill_NV_FIRSTAID
+    Name: 緊急治療技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","NV_FIRSTAID");
+  - Id: 970141
+    AegisName: card_skill_NV_TRICKDEAD
+    Name: 裝死技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","NV_TRICKDEAD");
+  # 技能卡片 - 劍士(學習技能)
+  - Id: 970142
+    AegisName: card_skill_SM_MOVINGRECOVERY
+    Name: 移動時恢復HP技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","SM_MOVINGRECOVERY");
+  - Id: 970143
+    AegisName: card_skill_SM_FATALBLOW
+    Name: 攻擊弱點技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","SM_FATALBLOW");
+  - Id: 970144
+    AegisName: card_skill_SM_AUTOBERSERK
+    Name: 狂暴狀態技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","SM_AUTOBERSERK");
+  # 技能卡片 - 弓箭手(學習技能)
+  - Id: 970145
+    AegisName: card_skill_AC_MAKINGARROW
+    Name: 製作箭技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","AC_MAKINGARROW");
+  - Id: 970146
+    AegisName: card_skill_AC_CHARGEARROW
+    Name: 衝鋒箭技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+      set maxLv,callfunc("skill_Card","AC_CHARGEARROW");
+  # 技能卡片 - 盜賊(學習技能)
+  - Id: 970147
+    AegisName: card_skill_TF_SPRINKLESAND
+    Name: 噴砂技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+      set maxLv,callfunc("skill_Card","TF_SPRINKLESAND");
   - Id: 970112
     AegisName: card_skill_BS_MAXIMIZE
     Name: 武器值最大化技能卡片

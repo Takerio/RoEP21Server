@@ -6602,6 +6602,7 @@ Body:
     CardsAllowed: true
     TargetItems:
       - Item: Devil_Flame_Manteau_TW
+      - Item: Devil_Flame_Manteau_LT
 #圓月之力
   - Item: Force_of_Fullmoon
     RandomOptionGroup: Force_of_Fullmoon
