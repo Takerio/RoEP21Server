@@ -895,38 +895,6 @@ function	script	Relic_102948	{ //巨大蛇的遺物(被蠶食的坦)
 }
 
 
-function	script	Relic_103537	{ //巨蛇神器(被蠶食的坦困難)
-	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=3000){
-	getitem 1001480,rand(7,11);	//金色鑽石
-	end;
-	}
-	if(@pay>=3001 && @pay<=5000){	//魏格納商團交換證
-	getitem 1001618,rand(15,30);
-	end;
-	}
-	if(@pay>=5001 && @pay<=7000){	//墮落之蛇 詛咒的象徵 喬樂斯加爾夫之魂
-	getitem F_rand(1001834,1001835,1001836),rand(1,2);
-	end;
-	}
-	if(@pay>=7001 && @pay<=8000){	//閃亮魔法石
-	getitem F_rand(1001654,1001657,1001660,1001663),rand(5,10);
-	end;
-	}
-	if(@pay>=8001 && @pay<=9000){	//明亮魔法石
-	getitem F_rand(1001655,1001658,1001661,1001664),rand(1,3);
-	end;
-	}
-	if(@pay>=9001 && @pay<=9500){
-	getitem2 F_rand(450350,450351,470260,470261,480415,480416),1,1,rand(7,11),0,0,0,0,0;
-	end;
-	}
-	getitem rand(490507,490510),1;
-	end;
-}
-
-
-
 //----------------------------- 推廣獎勵箱
 function	script	Promote_Box01	{ 
 
@@ -3122,582 +3090,502 @@ function	script	Dividend_Scroll_02	{
 }
 
 
+//----------------------------- 光輝天翼轉蛋
+function	script	Lunatic_Scroll_01	{ 
 
-//----------------------------- 惡魔轉蛋
-function	script	Cash_Scroll_01	{ 
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+	if(#Luck_Scroll==100){ goto Scroll_01; }
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 惡魔轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_01_1[0],22202,450175,420106,480076,490030,490097;
-	set @Scroll_01,$@Scroll_01_1[rand(getarraysize($@Scroll_01_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(410081,410123,410126,410128,410133,480315,480316),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9900){
+	setarray $@Scroll_01_3[0],28430,28434,28437,28438;
+	set @Scroll_01,$@Scroll_01_3[rand(getarraysize($@Scroll_01_3))];
 	getitem @Scroll_01,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 惡魔轉蛋 取得 "+getitemname(@Scroll_01)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 光輝天翼轉蛋 取得 "+getitemname(@Scroll_01)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_01:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_01_4[0],1001256,22654,22202,450175,420106,480076,490030,490097;
+	set @Scroll_01,$@Scroll_01_4[rand(getarraysize($@Scroll_01_4))];
+	getitem @Scroll_01,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 光輝天翼轉蛋 取得 "+getitemname(@Scroll_01)+"!!",15;
 	end;
 }
 
-//----------------------------- 猛獸轉蛋
-function	script	Cash_Scroll_02	{ 
+//----------------------------- 天佑祈福轉蛋
+function	script	Lunatic_Scroll_02	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+	if(#Luck_Scroll==100){  goto Scroll_02; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 猛獸轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_02_1[0],400401,480136,480291,480292,22071;
-	set @Scroll_02,$@Scroll_02_1[rand(getarraysize($@Scroll_02_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(410005,410103,420054,420071,420073,480310,480311),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9900){
+	setarray $@Scroll_02_3[0],102102,20859,490100,490101;
+	set @Scroll_02,$@Scroll_02_3[rand(getarraysize($@Scroll_02_3))];
 	getitem @Scroll_02,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 猛獸轉蛋 取得 "+getitemname(@Scroll_02)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 天佑祈福轉蛋 取得 "+getitemname(@Scroll_02)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_02:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_02_4[0],1001256,22654,400401,480136,480291,480292;
+	set @Scroll_02,$@Scroll_02_4[rand(getarraysize($@Scroll_02_4))];
+	getitem @Scroll_02,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 天佑祈福轉蛋 取得 "+getitemname(@Scroll_02)+"!!",15;
 	end;
 }
 
 
-//----------------------------- 幸福轉蛋
-function	script	Cash_Scroll_03	{ 
+//----------------------------- 熾天之花轉蛋
+function	script	Lunatic_Scroll_03	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+	if(#Luck_Scroll==100){ goto Scroll_03; }
+
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 幸福轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_03_1[0],410235,420194,22191,470127,480088;
-	set @Scroll_03,$@Scroll_03_1[rand(getarraysize($@Scroll_03_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(420015,420026,420044,420211,420209,480280,480297),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9900){
+	setarray $@Scroll_03_3[0],480088,28436,28573,28536;
+	set @Scroll_03,$@Scroll_03_3[rand(getarraysize($@Scroll_03_3))];
 	getitem @Scroll_03,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 幸福轉蛋 取得 "+getitemname(@Scroll_03)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 熾天之花轉蛋 取得 "+getitemname(@Scroll_03)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_03:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_03_4[0],1001256,22654,410235,420194,22191,470127,22071;
+	set @Scroll_03,$@Scroll_03_4[rand(getarraysize($@Scroll_03_4))];
+	getitem @Scroll_03,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 熾天之花轉蛋 取得 "+getitemname(@Scroll_03)+"!!",15;
 	end;
 }
 
-//----------------------------- 新月轉蛋
-function	script	Cash_Scroll_04	{ 
+//----------------------------- 強殖裝甲轉蛋
+function	script	Lunatic_Scroll_04	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_04; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 新月轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_04_1[0],460030,470120,490218,32259,420032;
-	set @Scroll_04,$@Scroll_04_1[rand(getarraysize($@Scroll_04_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(420191,420192,410182,430005,400232,480279,480282),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9940){
+	setarray $@Scroll_04_3[0],490218,32259,420032,490208;
+	set @Scroll_04,$@Scroll_04_3[rand(getarraysize($@Scroll_04_3))];
 	getitem @Scroll_04,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 新月轉蛋 取得 "+getitemname(@Scroll_04)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 強殖裝甲轉蛋 取得 "+getitemname(@Scroll_04)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_04:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_04_4[0],1001256,22654,460030,470120,460027,490089,28429;
+	set @Scroll_04,$@Scroll_04_4[rand(getarraysize($@Scroll_04_4))];
+	getitem @Scroll_04,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 強殖裝甲轉蛋 取得 "+getitemname(@Scroll_04)+"!!",15;
 	end;
 }
 
-//----------------------------- 動物轉蛋
-function	script	Cash_Scroll_05	{ 
+//----------------------------- 神之追隨者轉蛋
+function	script	Lunatic_Scroll_05	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_05; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 動物轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_05_1[0],460027,420199,490089,470129,470114;
-	set @Scroll_05,$@Scroll_05_1[rand(getarraysize($@Scroll_05_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(420152,420132,20257,410144,44247,480121,480189),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9940){
+	setarray $@Scroll_05_3[0],480242,480153,480154,32270;
+	set @Scroll_05,$@Scroll_05_3[rand(getarraysize($@Scroll_05_3))];
 	getitem @Scroll_05,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 動物轉蛋 取得 "+getitemname(@Scroll_05)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 神之追隨者轉蛋 取得 "+getitemname(@Scroll_05)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_05:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_05_4[0],1001256,22654,420199,470129,470114,22222,490245;
+	set @Scroll_05,$@Scroll_05_4[rand(getarraysize($@Scroll_05_4))];
+	getitem @Scroll_05,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 神之追隨者轉蛋 取得 "+getitemname(@Scroll_05)+"!!",15;
 	end;
 }
 
-//----------------------------- 天使轉蛋
-function	script	Cash_Scroll_06	{ 
 
+//----------------------------- 寶石轉蛋
+function	script	Lunatic_Scroll_06	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_06; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 天使轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_06_1[0],400511,420194,490472,22222,470033;
-	set @Scroll_06,$@Scroll_06_1[rand(getarraysize($@Scroll_06_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(19824,20290,31930,44314,20487,480395),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9950){
+	setarray $@Scroll_06_3[0],480087,490405,470033,470095;
+	set @Scroll_06,$@Scroll_06_3[rand(getarraysize($@Scroll_06_3))];
 	getitem @Scroll_06,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 天使轉蛋 取得 "+getitemname(@Scroll_06)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 寶石轉蛋 取得 "+getitemname(@Scroll_06)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_06:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_06_4[0],22654,490472,400511,480149;
+	set @Scroll_06,$@Scroll_06_4[rand(getarraysize($@Scroll_06_4))];
+	getitem @Scroll_06,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 寶石轉蛋 取得 "+getitemname(@Scroll_06)+"!!",15;
 	end;
 }
 
-//----------------------------- 柴柴轉蛋
-function	script	Cash_Scroll_07	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+//----------------------------- 風神轉蛋
+function	script	Lunatic_Scroll_07	{ 
+
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_07; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 柴柴轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3400){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_07_1[0],480149,470187,470095,480242,490491;
-	set @Scroll_07,$@Scroll_07_1[rand(getarraysize($@Scroll_07_1))];
+	if(@pay>=3401 && @pay<=7400){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7401 && @pay<=8900){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=8901 && @pay<=9600){
+	getitem F_rand(19291,410108,31456,31735,31513,480394),1;
+	end;
+	}
+	if(@pay>=9601 && @pay<=9950){
+	setarray $@Scroll_07_3[0],410213,410215,410216,480276;
+	set @Scroll_07,$@Scroll_07_3[rand(getarraysize($@Scroll_07_3))];
 	getitem @Scroll_07,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 柴柴轉蛋 取得 "+getitemname(@Scroll_07)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 風神轉蛋 取得 "+getitemname(@Scroll_07)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_07:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_07_4[0],22654,490491,470187,480192;
+	set @Scroll_07,$@Scroll_07_4[rand(getarraysize($@Scroll_07_4))];
+	getitem @Scroll_07,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 風神轉蛋 取得 "+getitemname(@Scroll_07)+"!!",15;
 	end;
 }
 
-//----------------------------- 惡靈轉蛋
-function	script	Cash_Scroll_08	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+//----------------------------- 啟海伊洛轉蛋
+function	script	Lunatic_Scroll_08	{ 
+
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_08; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 惡靈轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_08_1[0],480341,410213,410215,410216,480153;
-	set @Scroll_08,$@Scroll_08_1[rand(getarraysize($@Scroll_08_1))];
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(44194,420088,44570,31481,40340,480376),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_08_3[0],32278,28595,28517,32245;
+	set @Scroll_08,$@Scroll_08_3[rand(getarraysize($@Scroll_08_3))];
 	getitem @Scroll_08,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 惡靈轉蛋 取得 "+getitemname(@Scroll_08)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 啟海伊洛轉蛋 取得 "+getitemname(@Scroll_08)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_08:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_08_4[0],22654,480341,450357,450358,480341,450357,450358;
+	set @Scroll_08,$@Scroll_08_4[rand(getarraysize($@Scroll_08_4))];
+	getitem @Scroll_08,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 啟海伊洛轉蛋 取得 "+getitemname(@Scroll_08)+"!!",15;
 	end;
 }
 
-//----------------------------- 兔子轉蛋
-function	script	Cash_Scroll_09	{ 
+//----------------------------- 幻之魔法轉蛋
+function	script	Lunatic_Scroll_09	{ 
 
-	//一番賞點數
-	set #One_Points,#One_Points + 1; 
-	dispbottom "您現在一番賞點數 [ "+#One_Points+" ] 點";	//有多少點數
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_09; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 兔子轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_09_1[0],450357,450358,32245,19095,480372;
-	set @Scroll_09,$@Scroll_09_1[rand(getarraysize($@Scroll_09_1))];
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(44000,31905,31616,40191,31515,20535),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_09_3[0],490450,460038,420064,420173,400328,400291;
+	set @Scroll_09,$@Scroll_09_3[rand(getarraysize($@Scroll_09_3))];
 	getitem @Scroll_09,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 兔子轉蛋 取得 "+getitemname(@Scroll_09)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 幻之魔法轉蛋 取得 "+getitemname(@Scroll_09)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_09:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_09_4[0],19095,480372,490482,490466,490535,490536;
+	set @Scroll_09,$@Scroll_09_4[rand(getarraysize($@Scroll_09_4))];
+	getitem @Scroll_09,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 幻之魔法轉蛋 取得 "+getitemname(@Scroll_09)+"!!",15;
 	end;
 }
 
-//----------------------------- 狗狗轉蛋
-function	script	Cash_Scroll_10	{ 
 
-	//感冒藥
-	getitem 12257,1;
+//----------------------------- 超新星轉蛋
+function	script	Lunatic_Scroll_10	{ 
+
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_10; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 狗狗轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_10_1[0],490466,490535,490536,400106,410211;
-	set @Scroll_10,$@Scroll_10_1[rand(getarraysize($@Scroll_10_1))];
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(31916,420133,420083,420070,410267,480093),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_10_3[0],420186,400368,490389,480024;
+	set @Scroll_10,$@Scroll_10_3[rand(getarraysize($@Scroll_10_3))];
 	getitem @Scroll_10,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 狗狗轉蛋 取得 "+getitemname(@Scroll_10)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 超新星轉蛋 取得 "+getitemname(@Scroll_10)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_10:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_10_4[0],400547,400548,400549,400550,400551;
+	set @Scroll_10,$@Scroll_10_4[rand(getarraysize($@Scroll_10_4))];
+	getitem @Scroll_10,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 超新星轉蛋 取得 "+getitemname(@Scroll_10)+"!!",15;
 	end;
 }
 
 
-//----------------------------- 初冬轉蛋
-function	script	Cash_Scroll_11	{ 
+//----------------------------- 伊斯加爾特轉蛋
+function	script	Lunatic_Scroll_11	{ 
 
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_11; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 初冬轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_11_1[0],490482,490450,490245,400105,480245;
-	set @Scroll_11,$@Scroll_11_1[rand(getarraysize($@Scroll_11_1))];
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(420263,400596,420306,420242,410252,480204),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_11_3[0],28505,28515,470177,20866;
+	set @Scroll_11,$@Scroll_11_3[rand(getarraysize($@Scroll_11_3))];
 	getitem @Scroll_11,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 初冬轉蛋 取得 "+getitemname(@Scroll_11)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 伊斯加爾特轉蛋 取得 "+getitemname(@Scroll_11)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_11:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_11_4[0],400105,400106,400107,410211;
+	set @Scroll_11,$@Scroll_11_4[rand(getarraysize($@Scroll_11_4))];
+	getitem @Scroll_11,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 伊斯加爾特轉蛋 取得 "+getitemname(@Scroll_11)+"!!",15;
 	end;
 }
 
-//----------------------------- 冬季轉蛋
-function	script	Cash_Scroll_12	{ 
+//----------------------------- 星雲轉蛋
+function	script	Lunatic_Scroll_12	{ 
 
-	//感冒藥
-	getitem 12257,1;
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_12; }
 	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 冬季轉蛋 取得 "+getitemname(22654)+"!!",15;
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
 	end;
 	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_12_1[0],490594,460077,490542,400107,400547;
-	set @Scroll_12,$@Scroll_12_1[rand(getarraysize($@Scroll_12_1))];
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(410316,400431,480200,44716,480296),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_12_3[0],480245,460027,490208,460038;
+	set @Scroll_12,$@Scroll_12_3[rand(getarraysize($@Scroll_12_3))];
 	getitem @Scroll_12,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 冬季轉蛋 取得 "+getitemname(@Scroll_12)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 星雲轉蛋 取得 "+getitemname(@Scroll_12)+"!!",15;
 	end;
 	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	Scroll_12:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_12_4[0],22654,70107,490552,420328,420330,420331,490552,420328,420330,420331,420332;
+	set @Scroll_12,$@Scroll_12_4[rand(getarraysize($@Scroll_12_4))];
+	getitem @Scroll_12,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 星雲轉蛋 取得 "+getitemname(@Scroll_12)+"!!",15;
 	end;
 }
-
-//----------------------------- 怪物轉蛋
-function	script	Cash_Scroll_13	{ 
-
-	//感冒藥
-	getitem 12257,1;
-	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 怪物轉蛋 取得 "+getitemname(22654)+"!!",15;
-	end;
-	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_13_1[0],470291,400551,490572,490575,420239;
-	set @Scroll_13,$@Scroll_13_1[rand(getarraysize($@Scroll_13_1))];
-	getitem @Scroll_13,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 怪物轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
-	end;
-	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
-	end;
-}
-
-//----------------------------- 數位轉蛋
-function	script	Cash_Scroll_14	{ 
-
-	//感冒藥
-	getitem 12257,1;
-	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 數位轉蛋 取得 "+getitemname(22654)+"!!",15;
-	end;
-	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_14_1[0],470290,420261,400549,490580,490552;
-	set @Scroll_14,$@Scroll_14_1[rand(getarraysize($@Scroll_14_1))];
-	getitem @Scroll_14,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 數位轉蛋 取得 "+getitemname(@Scroll_14)+"!!",15;
-	end;
-	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
-	end;
-}
-
-//----------------------------- 海濱轉蛋
-function	script	Cash_Scroll_15	{ 
-
-	//感冒藥
-	getitem 12257,1;
-	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 海濱轉蛋 取得 "+getitemname(22654)+"!!",15;
-	end;
-	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_15_1[0],470290,420261,400549,490580,490552;
-	set @Scroll_15,$@Scroll_15_1[rand(getarraysize($@Scroll_15_1))];
-	getitem @Scroll_15,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 海濱轉蛋 取得 "+getitemname(@Scroll_15)+"!!",15;
-	end;
-	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
-	end;
-}
-
-//----------------------------- 庭園轉蛋
-function	script	Cash_Scroll_16	{ 
-
-	//感冒藥
-	getitem 12257,1;
-	set @pay,rand(1,10000);
-	if(@pay>=0 && @pay<=30){
-	getitem F_rand(22654),1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 庭園轉蛋 取得 "+getitemname(22654)+"!!",15;
-	end;
-	}
-	if(@pay>=31 && @pay<=230){
-	setarray $@Scroll_16_1[0],480480,420323,490569,400550,470177;
-	set @Scroll_16,$@Scroll_16_1[rand(getarraysize($@Scroll_16_1))];
-	getitem @Scroll_16,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 庭園轉蛋 取得 "+getitemname(@Scroll_16)+"!!",15;
-	end;
-	}
-	if(@pay>=231 && @pay<=2000){
-	getitem F_rand(23436,12412,12103,25375,6230,6234),1;
-	end;
-	}
-	if(@pay>=2001 && @pay<=2500){
-	getitem F_rand(6635),3;
-	}
-	if(@pay>=2501 && @pay<=6000){
-	getitem F_rand(12767,12768,12794,23441),1;
-	end;
-	}
-	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
-	end;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
