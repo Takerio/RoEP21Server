@@ -118313,6 +118313,8 @@ Body:
         Rate: 2500
       - Item: Blacksmith_Blessing
         Rate: 3000
+      - Item: Scale_Of_Red_Dragon
+        Rate: 3500
       - Item: Flame_Barmund_Rune2
         Rate: 9000
       - Item: Barmund_Armor
@@ -131149,7 +131151,7 @@ Body:
         Rate: 2500
       - Item: Ep21_Jor_Accessary
         Rate: 2500
-      - Item: Cliolima_Card
+      - Item: Yortus_Bailiff_Card
         Rate: 1
         StealProtected: true
 

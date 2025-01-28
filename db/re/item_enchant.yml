@@ -1331,6 +1331,7 @@ Body:
       C_Head_Item_44242: true
       C_Head_Item_44453: true
       C_Head_Item_23442: true
+      Head_Item_23339: true
     Reset:
       Chance: 100000
       Price: 10000
@@ -46356,6 +46357,776 @@ Body:
                 Amount: 1
 
 
+#奧林帕斯之翼-LT附魔
+  - Id: 1000
+    TargetItems:
+      Wings_Of_Raguel: true
+      Wings_Of_Raguel-LT: true
+    Reset:
+      Chance: 10000
+      Price: 0
+      Materials:
+        - Material: Silvervine
+          Amount: 1
+    Order:
+      - Slot: 3
+      - Slot: 2
+      - Slot: 1
+    Slots:
+      - Slot: 3
+        Price: 2000000
+        Materials:
+          - Material: Silvervine
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900
+          - Enchantgrade: 1
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900                
+          - Enchantgrade: 2
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900
+          - Enchantgrade: 3
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900 
+          - Enchantgrade: 4
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900                               
+        PerfectEnchants:
+          - Item: Luck5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Vitality5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Agility5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Dexterity5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Inteligence5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Strength5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+
+      - Slot: 2
+        Price: 3000000
+        Materials:
+          - Material: Silvervine
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900
+          - Enchantgrade: 1
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900                
+          - Enchantgrade: 2
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900
+          - Enchantgrade: 3
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900 
+          - Enchantgrade: 4
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2700
+              - Item: Luck3
+                Chance: 3300
+              - Item: Luck2
+                Chance: 4200
+              - Item: Luck1
+                Chance: 5000
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2700
+              - Item: Vitality3
+                Chance: 3300
+              - Item: Vitality2
+                Chance: 4200
+              - Item: Vitality1
+                Chance: 5000
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2700
+              - Item: Agility3
+                Chance: 3300
+              - Item: Agility2
+                Chance: 4200
+              - Item: Agility1
+                Chance: 5000
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2700
+              - Item: Dexterity3
+                Chance: 3300
+              - Item: Dexterity2
+                Chance: 4200
+              - Item: Dexterity1
+                Chance: 5000
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2700
+              - Item: Inteligence3
+                Chance: 3300
+              - Item: Inteligence2
+                Chance: 4200
+              - Item: Inteligence1
+                Chance: 4900
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2700
+              - Item: Strength3
+                Chance: 3300
+              - Item: Strength2
+                Chance: 4200
+              - Item: Strength1
+                Chance: 4900                               
+        PerfectEnchants:
+          - Item: Luck5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Vitality5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Agility5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Dexterity5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Inteligence5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Strength5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+
+      - Slot: 1
+        Price: 0
+        Materials:
+          - Material: Silvervine
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Life_Soul_Enchant_TW
+                Chance: 11100
+              - Item: Birth_Death_Enchant_TW
+                Chance: 11100
+              - Item: Soul_Heal_Enchant_TW
+                Chance: 11100
+              - Item: Make_World_Enchant_TW
+                Chance: 11100
+              - Item: D_R_Wing_Enchant_TW
+                Chance: 11100
+              - Item: D_L_Wing_Enchant_TW
+                Chance: 11100
+              - Item: Pray_Enchant_TW
+                Chance: 11100
+              - Item: Pray_Soul_Enchant_TW
+                Chance: 11100
+              - Item: Loyalty_Enchant_TW
+                Chance: 11200
+        PerfectEnchants:
+          - Item: Life_Soul_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Birth_Death_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Soul_Heal_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Make_World_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: D_R_Wing_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: D_L_Wing_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Pray_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Pray_Soul_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+          - Item: Loyalty_Enchant_TW
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 3
+
+
+
+
 
 
 
@@ -47298,6 +48069,31 @@ Body:
                 Chance: 1500
               - Item: Luck5
                 Chance: 500
+        PerfectEnchants:
+          - Item: Luck5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Vitality5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Agility5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Dexterity5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Inteligence5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Strength5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1                
       - Slot: 2
         Price: 300000
         Materials:
@@ -47519,27 +48315,207 @@ Body:
                 Chance: 2500
               - Item: Yorscalp_Def4
                 Chance: 100
-      - Slot: 1
         PerfectEnchants:
-          - Item: Arbiter_Warrant
-            Price: 5000000
+          - Item: Luck5
             Materials:
-              - Material: Yorscalp_Serpent
-                Amount: 20
-              - Material: Yorscalp_Symbol
-                Amount: 100
-              - Material: Yorscalp_Spirit
-                Amount: 200
-          - Item: Bailiff_Warrant
-            Price: 5000000
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Vitality5
             Materials:
-              - Material: Yorscalp_Serpent
-                Amount: 20
-              - Material: Yorscalp_Symbol
-                Amount: 100
-              - Material: Yorscalp_Spirit
-                Amount: 200
-
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Agility5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Dexterity5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Inteligence5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Strength5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1  
+      - Slot: 1
+        Price: 300000
+        Materials:
+          - Material: Yorscalp_Serpent
+            Amount: 1
+          - Material: Yorscalp_Symbol
+            Amount: 5
+          - Material: Yorscalp_Spirit
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1785
+              - Item: Luck4
+                Chance: 1785
+              - Item: Luck3
+                Chance: 1785
+              - Item: Luck2
+                Chance: 1785
+              - Item: Luck1
+                Chance: 1785
+              - Item: Vitality5
+                Chance: 1785
+              - Item: Vitality4
+                Chance: 1785
+              - Item: Vitality3
+                Chance: 1785
+              - Item: Vitality2
+                Chance: 1785
+              - Item: Vitality1
+                Chance: 1785
+              - Item: Agility5
+                Chance: 1785
+              - Item: Agility4
+                Chance: 1785
+              - Item: Agility3
+                Chance: 1785
+              - Item: Agility2
+                Chance: 1785
+              - Item: Agility1
+                Chance: 1785
+              - Item: Dexterity5
+                Chance: 1785
+              - Item: Dexterity4
+                Chance: 1785
+              - Item: Dexterity3
+                Chance: 1785
+              - Item: Dexterity2
+                Chance: 1785
+              - Item: Dexterity1
+                Chance: 1785
+              - Item: Inteligence5
+                Chance: 1785
+              - Item: Inteligence4
+                Chance: 1785
+              - Item: Inteligence3
+                Chance: 1785
+              - Item: Inteligence2
+                Chance: 1785
+              - Item: Inteligence1
+                Chance: 1785
+              - Item: Strength5
+                Chance: 1785
+              - Item: Strength4
+                Chance: 1785
+              - Item: Strength3
+                Chance: 1785
+              - Item: Strength2
+                Chance: 1785
+              - Item: Strength1
+                Chance: 1785
+              - Item: Fighting_Spirit1
+                Chance: 1785
+              - Item: Fighting_Spirit2
+                Chance: 1785
+              - Item: Fighting_Spirit3
+                Chance: 1785
+              - Item: Fighting_Spirit4
+                Chance: 1785
+              - Item: Fighting_Spirit5
+                Chance: 1785
+              - Item: Unknown_Item_29235  # 完全迴避+1
+                Chance: 1785
+              - Item: Unknown_Item_29236  # 完全迴避+2
+                Chance: 1785
+              - Item: Spell1
+                Chance: 1785
+              - Item: Spell2
+                Chance: 1785
+              - Item: Spell3
+                Chance: 1785
+              - Item: Spell4
+                Chance: 1785
+              - Item: Spell5
+                Chance: 1785
+              - Item: Critical1
+                Chance: 1785
+              - Item: Critical2
+                Chance: 1785
+              - Item: Critical3
+                Chance: 1785
+              - Item: Critical4
+                Chance: 1785
+              - Item: Critical5
+                Chance: 1785
+              - Item: MHP1
+                Chance: 1785
+              - Item: MHP2
+                Chance: 1785
+              - Item: MHP3
+                Chance: 1785
+              - Item: MHP4
+                Chance: 1785  
+              - Item: Expert_Archer1
+                Chance: 1785
+              - Item: Expert_Archer2
+                Chance: 1785
+              - Item: Expert_Archer3
+                Chance: 1785
+              - Item: Expert_Archer4
+                Chance: 1785
+              - Item: Expert_Archer5
+                Chance: 1825
+          
+        PerfectEnchants:
+          - Item: Luck5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Vitality5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Agility5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Dexterity5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Inteligence5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Strength5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 1
+          - Item: Fighting_Spirit5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+          - Item: Unknown_Item_29236  # 完全迴避+2
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+          - Item: Spell5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+          - Item: Critical5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+          - Item: MHP4
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+          - Item: Expert_Archer5
+            Materials:
+              - Material: Unknown_Item_70117
+                Amount: 2
+                
 #時間裂隙武器
   - Id: 150
     TargetItems:

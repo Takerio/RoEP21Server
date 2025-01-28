@@ -1,9 +1,9 @@
 //*OnPCKillMvpEvent:
-//·íª±®a±ş¦º MVP Å]ª««áÄ²µo¨Æ¥ó
+//ç•¶ç©å®¶æ®ºæ­» MVP é­”ç‰©å¾Œè§¸ç™¼äº‹ä»¶
 //*OnNPCKillEvent:
-//·íª±®a±ş¦ºÅ]ª««áÄ²µo¨Æ¥ó
+//ç•¶ç©å®¶æ®ºæ­»é­”ç‰©å¾Œè§¸ç™¼äº‹ä»¶
 
--	script	¤ı¥d¸H¤ù	-1,{
+-	script	ç‹å¡ç¢ç‰‡	-1,{
 OnPCKillMvpEvent:
 	if(strcharinfo(3) == "guild_1"){  end; }
 	if(strcharinfo(3) == "guild_2"){  end; }
@@ -13,42 +13,42 @@ OnPCKillMvpEvent:
 	if(strcharinfo(3) == "2@gvs"){  end; }
 	if(strcharinfo(3) == instance_mapname("2@gvs")){ end; }
 
-	if(checkquest(43002)==1){ completequest 43002; dispbottom "§¹¦¨ ¤Ñ½á¬¼Ây¥ô°È(­º»â)";}
+	if(checkquest(43002)==1){ completequest 43002; dispbottom "å®Œæˆ å¤©è³¦ç‹©çµä»»å‹™(é¦–é ˜)";}
 
-	//D¯Å¬¼Ây
+	//Dç´šç‹©çµ
 	if ( #inhunt==1 && killedrid==#Mob_Quest_ID_D){
 	set #Mob_Quest_Amt_D,#Mob_Quest_Amt_D-1;
 	if ( #Mob_Quest_Amt_D < 1 ) goto finhunt;
 	if (#Message_Switch==0){ end; }
-	announce "ÁÙ­nÂy±ş"+#Mob_Quest_Amt_D+"°¦"+getmonsterinfo(#Mob_Quest_ID_D,MOB_NAME),bc_blue|bc_self;
+	announce "é‚„è¦çµæ®º"+#Mob_Quest_Amt_D+"éš»"+getmonsterinfo(#Mob_Quest_ID_D,MOB_NAME),bc_blue|bc_self;
 	}
-	//C¯Å¬¼Ây
+	//Cç´šç‹©çµ
 	if ( #inhunt==2 && killedrid==#Mob_Quest_ID_C){
 	set #Mob_Quest_Amt_C,#Mob_Quest_Amt_C-1;
 	if ( #Mob_Quest_Amt_C < 1 ) goto finhunt;
 	if (#Message_Switch==0){ end; }
-	announce "ÁÙ­nÂy±ş"+#Mob_Quest_Amt_C+"°¦"+getmonsterinfo(#Mob_Quest_ID_C,MOB_NAME),bc_blue|bc_self;
+	announce "é‚„è¦çµæ®º"+#Mob_Quest_Amt_C+"éš»"+getmonsterinfo(#Mob_Quest_ID_C,MOB_NAME),bc_blue|bc_self;
 	}
-	//B¯Å¬¼Ây
+	//Bç´šç‹©çµ
 	if ( #inhunt==3 && killedrid==#Mob_Quest_ID_B){
 	set #Mob_Quest_Amt_B,#Mob_Quest_Amt_B-1;
 	if ( #Mob_Quest_Amt_B < 1 ) goto finhunt;
 	if (#Message_Switch==0){ end; }
-	announce "ÁÙ­nÂy±ş"+#Mob_Quest_Amt_B+"°¦"+getmonsterinfo(#Mob_Quest_ID_B,MOB_NAME),bc_blue|bc_self;
+	announce "é‚„è¦çµæ®º"+#Mob_Quest_Amt_B+"éš»"+getmonsterinfo(#Mob_Quest_ID_B,MOB_NAME),bc_blue|bc_self;
 	}
-	//A¯Å¬¼Ây
+	//Aç´šç‹©çµ
 	if ( #inhunt==4 && killedrid==#Mob_Quest_ID_A){
 	set #Mob_Quest_Amt_A,#Mob_Quest_Amt_A-1;
 	if ( #Mob_Quest_Amt_A < 1 ) goto finhunt;
 	if (#Message_Switch==0){ end; }
-	announce "ÁÙ­nÂy±ş"+#Mob_Quest_Amt_A+"°¦"+getmonsterinfo(#Mob_Quest_ID_A,MOB_NAME),bc_blue|bc_self;
+	announce "é‚„è¦çµæ®º"+#Mob_Quest_Amt_A+"éš»"+getmonsterinfo(#Mob_Quest_ID_A,MOB_NAME),bc_blue|bc_self;
 	}
-	//S¯Å¬¼Ây
+	//Sç´šç‹©çµ
 	if ( #inhunt==5 && killedrid==#Mob_Quest_ID_S){
 	set #Mob_Quest_Amt_S,#Mob_Quest_Amt_S-1;
 	if ( #Mob_Quest_Amt_S < 1 ) goto finhunt;
 	if (#Message_Switch==0){ end; }
-	announce "ÁÙ­nÂy±ş"+#Mob_Quest_Amt_S+"°¦"+getmonsterinfo(#Mob_Quest_ID_S,MOB_NAME),bc_blue|bc_self;
+	announce "é‚„è¦çµæ®º"+#Mob_Quest_Amt_S+"éš»"+getmonsterinfo(#Mob_Quest_ID_S,MOB_NAME),bc_blue|bc_self;
 	}
 
 
@@ -515,13 +515,15 @@ OnPCKillMvpEvent:
 	break;
 	case 21982:
 	if(true) getitem 94149,1;
+	break;
 
+	
 	}
 	end;
 
 finhunt:
-	//¥ô°È§¹¦¨
-	announce "¬¼Ây¥ô°È§¹¦¨¡A½Ğ§ä¬¼Ây¥ô°ÈºŞ²z­û»â¨ú¼úÀy",bc_blue|bc_self;
+	//ä»»å‹™å®Œæˆ
+	announce "ç‹©çµä»»å‹™å®Œæˆï¼Œè«‹æ‰¾ç‹©çµä»»å‹™ç®¡ç†å“¡é ˜å–çå‹µ",bc_blue|bc_self;
 	set #starthunttime,0;
 	set #finhunts,1;
 	end;
