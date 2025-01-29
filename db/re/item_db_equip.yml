@@ -122175,9 +122175,11 @@ Body:
     Type: Armor
     Defense: 50
     Slots: 1
-    Jobs:
-      Summoner: true
     Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
       Fourth: true
     Locations:
       Head_Top: true
@@ -122225,9 +122227,11 @@ Body:
     Type: Armor
     Defense: 50
     Slots: 1
-    Jobs:
-      Summoner: true
     Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
       Fourth: true
     Locations:
       Head_Top: true
