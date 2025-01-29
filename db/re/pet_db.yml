@@ -11633,654 +11633,654 @@ Body:
       callfunc "petskill",960416;
     Script: >
       callfunc "petstatus",960416;
-##  蛋殼小雞
-  # - Mob: PICKY_
-  #   CaptureRate : 1000
-  #   EggItem: item_960417
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960417;
-  #   Script: >
-  #     callfunc "petstatus",960417;
-##  盜蟲
-  # - Mob: THIEF_BUG
-  #   CaptureRate : 1000
-  #   EggItem: item_960418
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960418;
-  #   Script: >
-  #     callfunc "petstatus",960418;
-##  蝗蟲
-  # - Mob: ROCKER
-  #   CaptureRate : 1000
-  #   EggItem: item_960419
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960419;
-  #   Script: >
-  #     callfunc "petstatus",960419;
-##  浮勒盜蟲
-  # - Mob: THIEF_BUG_
-  #   CaptureRate : 1000
-  #   EggItem: item_960420
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960420;
-  #   Script: >
-  #     callfunc "petstatus",960420;
-##  瑪勒盜蟲
-  # - Mob: THIEF_BUG__
-  #   CaptureRate : 1000
-  #   EggItem: item_960421
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960421;
-  #   Script: >
-  #     callfunc "petstatus",960421;
-##  摩卡
-  # - Mob: MUKA
-  #   CaptureRate : 1000
-  #   EggItem: item_960422
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960422;
-  #   Script: >
-  #     callfunc "petstatus",960422;
-##  狸貓
-  # - Mob: SMOKIE
-  #   CaptureRate : 1000
-  #   EggItem: item_960423
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960423;
-  #   Script: >
-  #     callfunc "petstatus",960423;
-##  溜溜猴
-  # - Mob: YOYO
-  #   CaptureRate : 1000
-  #   EggItem: item_960424
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960424;
-  #   Script: >
-  #     callfunc "petstatus",960424;
-##  重金屬蝗蟲
-  # - Mob: METALLER
-  #   CaptureRate : 1000
-  #   EggItem: item_960425
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960425;
-  #   Script: >
-  #     callfunc "petstatus",960425;
-##  大腳熊
-  # - Mob: BIGFOOT
-  #   CaptureRate : 1000
-  #   EggItem: item_960426
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960426;
-  #   Script: >
-  #     callfunc "petstatus",960426;
-##  夢魘
-  # - Mob: NIGHTMARE
-  #   CaptureRate : 1000
-  #   EggItem: item_960427
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960427;
-  #   Script: >
-  #     callfunc "petstatus",960427;
-##  聖誕波利
-  # - Mob: PORING_
-  #   CaptureRate : 1000
-  #   EggItem: item_960428
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960428;
-  #   Script: >
-  #     callfunc "petstatus",960428;
-##  瘋兔
-  # - Mob: LUNATIC
-  #   CaptureRate : 1000
-  #   EggItem: item_960429
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960429;
-  #   Script: >
-  #     callfunc "petstatus",960429;
-##  邪骸食人魚
-  # - Mob: MEGALODON
-  #   CaptureRate : 1000
-  #   EggItem: item_960430
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960430;
-  #   Script: >
-  #     callfunc "petstatus",960430;
-##  海神
-  # - Mob: STROUF
-  #   CaptureRate : 1000
-  #   EggItem: item_960431
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960431;
-  #   Script: >
-  #     callfunc "petstatus",960431;
-##  螃蟹
-  # - Mob: VADON
-  #   CaptureRate : 1000
-  #   EggItem: item_960432
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960432;
-  #   Script: >
-  #     callfunc "petstatus",960432;
-##  卡那多斯
-  # - Mob: CORNUTUS
-  #   CaptureRate : 1000
-  #   EggItem: item_960433
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960433;
-  #   Script: >
-  #     callfunc "petstatus",960433;
-##  海葵
-  # - Mob: HYDRA
-  #   CaptureRate : 1000
-  #   EggItem: item_960434
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960434;
-  #   Script: >
-  #     callfunc "petstatus",960434;
-##  異變魚
-  # - Mob: SWORD_FISH
-  #   CaptureRate : 1000
-  #   EggItem: item_960435
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960435;
-  #   Script: >
-  #     callfunc "petstatus",960435;
-##  庫克雷
-  # - Mob: KUKRE
-  #   CaptureRate : 1000
-  #   EggItem: item_960436
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960436;
-  #   Script: >
-  #     callfunc "petstatus",960436;
-##  邪骸海盜
-  # - Mob: PIRATE_SKEL
-  #   CaptureRate : 1000
-  #   EggItem: item_960437
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960437;
-  #   Script: >
-  #     callfunc "petstatus",960437;
-##  卡浩
-  # - Mob: KAHO
-  #   CaptureRate : 1000
-  #   EggItem: item_960438
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960438;
-  #   Script: >
-  #     callfunc "petstatus",960438;
-##  卡拉蟹
-  # - Mob: CRAB
-  #   CaptureRate : 1000
-  #   EggItem: item_960439
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960439;
-  #   Script: >
-  #     callfunc "petstatus",960439;
-##  貝殼魔靈
-  # - Mob: SHELLFISH
-  #   CaptureRate : 1000
-  #   EggItem: item_960440
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960440;
-  #   Script: >
-  #     callfunc "petstatus",960440;
-##  邪骸戰士
-  # - Mob: SKELETON
-  #   CaptureRate : 1000
-  #   EggItem: item_960441
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960441;
-  #   Script: >
-  #     callfunc "petstatus",960441;
-##  毒魔菇
-  # - Mob: POISON_SPORE
-  #   CaptureRate : 1000
-  #   EggItem: item_960442
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960442;
-  #   Script: >
-  #     callfunc "petstatus",960442;
-##  紅草
-  # - Mob: RED_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960443
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960443;
-  #   Script: >
-  #     callfunc "petstatus",960443;
-##  藍草
-  # - Mob: BLUE_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960444
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960444;
-  #   Script: >
-  #     callfunc "petstatus",960444;
-##  綠草
-  # - Mob: GREEN_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960445
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960445;
-  #   Script: >
-  #     callfunc "petstatus",960445;
-##  黃草
-  # - Mob: YELLOW_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960446
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960446;
-  #   Script: >
-  #     callfunc "petstatus",960446;
-##  白草
-  # - Mob: WHITE_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960447
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960447;
-  #   Script: >
-  #     callfunc "petstatus",960447;
-##  光芒草
-  # - Mob: SHINING_PLANT
-  #   CaptureRate : 1000
-  #   EggItem: item_960448
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960448;
-  #   Script: >
-  #     callfunc "petstatus",960448;
-##  黑菇
-  # - Mob: BLACK_MUSHROOM
-  #   CaptureRate : 1000
-  #   EggItem: item_960449
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960449;
-  #   Script: >
-  #     callfunc "petstatus",960449;
-##  紅菇
-  # - Mob: RED_MUSHROOM
-  #   CaptureRate : 1000
-  #   EggItem: item_960450
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960450;
-  #   Script: >
-  #     callfunc "petstatus",960450;
-##  蝗蟲之王
-  # - Mob: VOCAL
-  #   CaptureRate : 1000
-  #   EggItem: item_960451
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960451;
-  #   Script: >
-  #     callfunc "petstatus",960451;
-##  蛙王
-  # - Mob: TOAD
-  #   CaptureRate : 1000
-  #   EggItem: item_960452
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960452;
-  #   Script: >
-  #     callfunc "petstatus",960452;
-##  波利之王
-  # - Mob: MASTERING
-  #   CaptureRate : 1000
-  #   EggItem: item_960453
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960453;
-  #   Script: >
-  #     callfunc "petstatus",960453;
-##  龍蠅
-  # - Mob: DRAGON_FLY
-  #   CaptureRate : 1000
-  #   EggItem: item_960454
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960454;
-  #   Script: >
-  #     callfunc "petstatus",960454;
-##  流浪之狼
-  # - Mob: VAGABOND_WOLF
-  #   CaptureRate : 1000
-  #   EggItem: item_960455
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960455;
-  #   Script: >
-  #     callfunc "petstatus",960455;
-##  藍瘋兔
-  # - Mob: ECLIPSE
-  #   CaptureRate : 1000
-  #   EggItem: item_960456
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960456;
-  #   Script: >
-  #     callfunc "petstatus",960456;
-##  蝸牛
-  # - Mob: AMBERNITE
-  #   CaptureRate : 1000
-  #   EggItem: item_960457
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960457;
-  #   Script: >
-  #     callfunc "petstatus",960457;
-##  白蟻
-  # - Mob: ANDRE
-  #   CaptureRate : 1000
-  #   EggItem: item_960458
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960458;
-  #   Script: >
-  #     callfunc "petstatus",960458;
-##  天使波利
-  # - Mob: ANGELING
-  #   CaptureRate : 1000
-  #   EggItem: item_960459
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960459;
-  #   Script: >
-  #     callfunc "petstatus",960459;
-##  螞蟻幼蟲
-  # - Mob: ANT_EGG
-  #   CaptureRate : 1000
-  #   EggItem: item_960460
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960460;
-  #   Script: >
-  #     callfunc "petstatus",960460;
-##  胡狼頭神
-  # - Mob: ANUBIS
-  #   CaptureRate : 1000
-  #   EggItem: item_960461
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960461;
-  #   Script: >
-  #     callfunc "petstatus",960461;
-##  艾吉歐蜈蚣
-  # - Mob: ARGIOPE
-  #   CaptureRate : 1000
-  #   EggItem: item_960462
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960462;
-  #   Script: >
-  #     callfunc "petstatus",960462;
-##  艾斯蜘蛛
-  # - Mob: ARGOS
-  #   CaptureRate : 1000
-  #   EggItem: item_960463
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960463;
-  #   Script: >
-  #     callfunc "petstatus",960463;
-##  小巴風特
-  # - Mob: BAPHOMET_
-  #   CaptureRate : 1000
-  #   EggItem: item_960464
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960464;
-  #   Script: >
-  #     callfunc "petstatus",960464;
-##  巫婆
-  # - Mob: BATHORY
-  #   CaptureRate : 1000
-  #   EggItem: item_960465
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960465;
-  #   Script: >
-  #     callfunc "petstatus",960465;
-##  刺蝟蟲
-  # - Mob: CARAMEL
-  #   CaptureRate : 1000
-  #   EggItem: item_960466
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960466;
-  #   Script: >
-  #     callfunc "petstatus",960466;
-##  松鼠
-  # - Mob: COCO
-  #   CaptureRate : 1000
-  #   EggItem: item_960467
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960467;
-  #   Script: >
-  #     callfunc "petstatus",960467;
-##  兵蟻
-  # - Mob: DENIRO
-  #   CaptureRate : 1000
-  #   EggItem: item_960468
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960468;
-  #   Script: >
-  #     callfunc "petstatus",960468;
-##  沙漠之狼
-  # - Mob: DESERT_WOLF
-  #   CaptureRate : 1000
-  #   EggItem: item_960469
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960469;
-  #   Script: >
-  #     callfunc "petstatus",960469;
-##  沙漠幼狼
-  # - Mob: DESERT_WOLF_B
-  #   CaptureRate : 1000
-  #   EggItem: item_960470
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960470;
-  #   Script: >
-  #     callfunc "petstatus",960470;
+#  蛋殼小雞
+  - Mob: PICKY_
+    CaptureRate : 1000
+    EggItem: item_960417
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960417;
+    Script: >
+      callfunc "petstatus",960417;
+#  盜蟲
+  - Mob: THIEF_BUG
+    CaptureRate : 1000
+    EggItem: item_960418
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960418;
+    Script: >
+      callfunc "petstatus",960418;
+#  蝗蟲
+  - Mob: ROCKER
+    CaptureRate : 1000
+    EggItem: item_960419
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960419;
+    Script: >
+      callfunc "petstatus",960419;
+#  浮勒盜蟲
+  - Mob: THIEF_BUG_
+    CaptureRate : 1000
+    EggItem: item_960420
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960420;
+    Script: >
+      callfunc "petstatus",960420;
+#  瑪勒盜蟲
+  - Mob: THIEF_BUG__
+    CaptureRate : 1000
+    EggItem: item_960421
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960421;
+    Script: >
+      callfunc "petstatus",960421;
+#  摩卡
+  - Mob: MUKA
+    CaptureRate : 1000
+    EggItem: item_960422
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960422;
+    Script: >
+      callfunc "petstatus",960422;
+#  狸貓
+  - Mob: SMOKIE
+    CaptureRate : 1000
+    EggItem: item_960423
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960423;
+    Script: >
+      callfunc "petstatus",960423;
+#  溜溜猴
+  - Mob: YOYO
+    CaptureRate : 1000
+    EggItem: item_960424
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960424;
+    Script: >
+      callfunc "petstatus",960424;
+#  重金屬蝗蟲
+  - Mob: METALLER
+    CaptureRate : 1000
+    EggItem: item_960425
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960425;
+    Script: >
+      callfunc "petstatus",960425;
+#  大腳熊
+  - Mob: BIGFOOT
+    CaptureRate : 1000
+    EggItem: item_960426
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960426;
+    Script: >
+      callfunc "petstatus",960426;
+#  夢魘
+  - Mob: NIGHTMARE
+    CaptureRate : 1000
+    EggItem: item_960427
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960427;
+    Script: >
+      callfunc "petstatus",960427;
+#  聖誕波利
+  - Mob: PORING_
+    CaptureRate : 1000
+    EggItem: item_960428
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960428;
+    Script: >
+      callfunc "petstatus",960428;
+#  瘋兔
+  - Mob: LUNATIC
+    CaptureRate : 1000
+    EggItem: item_960429
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960429;
+    Script: >
+      callfunc "petstatus",960429;
+#  邪骸食人魚
+  - Mob: MEGALODON
+    CaptureRate : 1000
+    EggItem: item_960430
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960430;
+    Script: >
+      callfunc "petstatus",960430;
+#  海神
+  - Mob: STROUF
+    CaptureRate : 1000
+    EggItem: item_960431
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960431;
+    Script: >
+      callfunc "petstatus",960431;
+#  螃蟹
+  - Mob: VADON
+    CaptureRate : 1000
+    EggItem: item_960432
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960432;
+    Script: >
+      callfunc "petstatus",960432;
+#  卡那多斯
+  - Mob: CORNUTUS
+    CaptureRate : 1000
+    EggItem: item_960433
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960433;
+    Script: >
+      callfunc "petstatus",960433;
+#  海葵
+  - Mob: HYDRA
+    CaptureRate : 1000
+    EggItem: item_960434
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960434;
+    Script: >
+      callfunc "petstatus",960434;
+#  異變魚
+  - Mob: SWORD_FISH
+    CaptureRate : 1000
+    EggItem: item_960435
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960435;
+    Script: >
+      callfunc "petstatus",960435;
+#  庫克雷
+  - Mob: KUKRE
+    CaptureRate : 1000
+    EggItem: item_960436
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960436;
+    Script: >
+      callfunc "petstatus",960436;
+#  邪骸海盜
+  - Mob: PIRATE_SKEL
+    CaptureRate : 1000
+    EggItem: item_960437
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960437;
+    Script: >
+      callfunc "petstatus",960437;
+#  卡浩
+  - Mob: KAHO
+    CaptureRate : 1000
+    EggItem: item_960438
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960438;
+    Script: >
+      callfunc "petstatus",960438;
+#  卡拉蟹
+  - Mob: CRAB
+    CaptureRate : 1000
+    EggItem: item_960439
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960439;
+    Script: >
+      callfunc "petstatus",960439;
+#  貝殼魔靈
+  - Mob: SHELLFISH
+    CaptureRate : 1000
+    EggItem: item_960440
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960440;
+    Script: >
+      callfunc "petstatus",960440;
+#  邪骸戰士
+  - Mob: SKELETON
+    CaptureRate : 1000
+    EggItem: item_960441
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960441;
+    Script: >
+      callfunc "petstatus",960441;
+#  毒魔菇
+  - Mob: POISON_SPORE
+    CaptureRate : 1000
+    EggItem: item_960442
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960442;
+    Script: >
+      callfunc "petstatus",960442;
+#  紅草
+  - Mob: RED_PLANT
+    CaptureRate : 1000
+    EggItem: item_960443
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960443;
+    Script: >
+      callfunc "petstatus",960443;
+#  藍草
+  - Mob: BLUE_PLANT
+    CaptureRate : 1000
+    EggItem: item_960444
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960444;
+    Script: >
+      callfunc "petstatus",960444;
+#  綠草
+  - Mob: GREEN_PLANT
+    CaptureRate : 1000
+    EggItem: item_960445
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960445;
+    Script: >
+      callfunc "petstatus",960445;
+#  黃草
+  - Mob: YELLOW_PLANT
+    CaptureRate : 1000
+    EggItem: item_960446
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960446;
+    Script: >
+      callfunc "petstatus",960446;
+#  白草
+  - Mob: WHITE_PLANT
+    CaptureRate : 1000
+    EggItem: item_960447
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960447;
+    Script: >
+      callfunc "petstatus",960447;
+#  光芒草
+  - Mob: SHINING_PLANT
+    CaptureRate : 1000
+    EggItem: item_960448
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960448;
+    Script: >
+      callfunc "petstatus",960448;
+#  黑菇
+  - Mob: BLACK_MUSHROOM
+    CaptureRate : 1000
+    EggItem: item_960449
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960449;
+    Script: >
+      callfunc "petstatus",960449;
+#  紅菇
+  - Mob: RED_MUSHROOM
+    CaptureRate : 1000
+    EggItem: item_960450
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960450;
+    Script: >
+      callfunc "petstatus",960450;
+#  蝗蟲之王
+  - Mob: VOCAL
+    CaptureRate : 1000
+    EggItem: item_960451
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960451;
+    Script: >
+      callfunc "petstatus",960451;
+#  蛙王
+  - Mob: TOAD
+    CaptureRate : 1000
+    EggItem: item_960452
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960452;
+    Script: >
+      callfunc "petstatus",960452;
+#  波利之王
+  - Mob: MASTERING
+    CaptureRate : 1000
+    EggItem: item_960453
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960453;
+    Script: >
+      callfunc "petstatus",960453;
+#  龍蠅
+  - Mob: DRAGON_FLY
+    CaptureRate : 1000
+    EggItem: item_960454
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960454;
+    Script: >
+      callfunc "petstatus",960454;
+#  流浪之狼
+  - Mob: VAGABOND_WOLF
+    CaptureRate : 1000
+    EggItem: item_960455
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960455;
+    Script: >
+      callfunc "petstatus",960455;
+#  藍瘋兔
+  - Mob: ECLIPSE
+    CaptureRate : 1000
+    EggItem: item_960456
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960456;
+    Script: >
+      callfunc "petstatus",960456;
+#  蝸牛
+  - Mob: AMBERNITE
+    CaptureRate : 1000
+    EggItem: item_960457
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960457;
+    Script: >
+      callfunc "petstatus",960457;
+#  白蟻
+  - Mob: ANDRE
+    CaptureRate : 1000
+    EggItem: item_960458
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960458;
+    Script: >
+      callfunc "petstatus",960458;
+#  天使波利
+  - Mob: ANGELING
+    CaptureRate : 1000
+    EggItem: item_960459
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960459;
+    Script: >
+      callfunc "petstatus",960459;
+#  螞蟻幼蟲
+  - Mob: ANT_EGG
+    CaptureRate : 1000
+    EggItem: item_960460
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960460;
+    Script: >
+      callfunc "petstatus",960460;
+#  胡狼頭神
+  - Mob: ANUBIS
+    CaptureRate : 1000
+    EggItem: item_960461
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960461;
+    Script: >
+      callfunc "petstatus",960461;
+#  艾吉歐蜈蚣
+  - Mob: ARGIOPE
+    CaptureRate : 1000
+    EggItem: item_960462
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960462;
+    Script: >
+      callfunc "petstatus",960462;
+#  艾斯蜘蛛
+  - Mob: ARGOS
+    CaptureRate : 1000
+    EggItem: item_960463
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960463;
+    Script: >
+      callfunc "petstatus",960463;
+#  小巴風特
+  - Mob: BAPHOMET_
+    CaptureRate : 1000
+    EggItem: item_960464
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960464;
+    Script: >
+      callfunc "petstatus",960464;
+#  巫婆
+  - Mob: BATHORY
+    CaptureRate : 1000
+    EggItem: item_960465
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960465;
+    Script: >
+      callfunc "petstatus",960465;
+#  刺蝟蟲
+  - Mob: CARAMEL
+    CaptureRate : 1000
+    EggItem: item_960466
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960466;
+    Script: >
+      callfunc "petstatus",960466;
+#  松鼠
+  - Mob: COCO
+    CaptureRate : 1000
+    EggItem: item_960467
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960467;
+    Script: >
+      callfunc "petstatus",960467;
+#  兵蟻
+  - Mob: DENIRO
+    CaptureRate : 1000
+    EggItem: item_960468
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960468;
+    Script: >
+      callfunc "petstatus",960468;
+#  沙漠之狼
+  - Mob: DESERT_WOLF
+    CaptureRate : 1000
+    EggItem: item_960469
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960469;
+    Script: >
+      callfunc "petstatus",960469;
+#  沙漠幼狼
+  - Mob: DESERT_WOLF_B
+    CaptureRate : 1000
+    EggItem: item_960470
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960470;
+    Script: >
+      callfunc "petstatus",960470;
 ##  
   # - Mob: WASTE_STOVE
   #   CaptureRate : 1000
