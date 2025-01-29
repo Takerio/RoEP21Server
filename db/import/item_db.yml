@@ -1766,7 +1766,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      set .@id,rand(960000,960338);
+      set .@id,rand(960000,960416);
       dispbottom "寵物編號 : " + .@id;
       atcommand "@makeegg " + .@id;
   - Id: 960000
@@ -3536,322 +3536,322 @@ Body:
     Buy: 20
   - Id: 960353
     AegisName: item_960353
-    Name: 發光海草寵物蛋
+    Name: 墮落大神官 悉潘(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960354
     AegisName: item_960354
-    Name: 冰鋼庫寵物蛋
+    Name: 青冠龍(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960355
     AegisName: item_960355
-    Name: 海天使寵物蛋
+    Name: 憤怒的淘汰者傅立葉(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960356
     AegisName: item_960356
-    Name: 不凍花寵物蛋
+    Name: 喬伊亞(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960357
     AegisName: item_960357
-    Name: 卡拉馬波利寵物蛋
+    Name: 將軍大賢(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960358
     AegisName: item_960358
-    Name: 原始蠕管寵物蛋
+    Name: 亡靈的守護者卡德斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960359
     AegisName: item_960359
-    Name: 最下級蠕管寵物蛋
+    Name: 波伊塔塔(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960360
     AegisName: item_960360
-    Name: 超級海天使寵物蛋
+    Name: 墨蛇君(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960361
     AegisName: item_960361
-    Name: 下級蠕管寵物蛋
+    Name: 冰暴騎士(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960362
     AegisName: item_960362
-    Name: 中級蠕管寵物蛋
+    Name: 黑暗之王(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960363
     AegisName: item_960363
-    Name: 邪心獵人_AT寵物蛋
+    Name: 元靈武士(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960364
     AegisName: item_960364
-    Name: 被遺棄的原始蠕管寵物蛋
+    Name: 蜂后(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960365
     AegisName: item_960365
-    Name: 洞穴卡拉馬波利寵物蛋
+    Name: 詛咒蠅王(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960366
     AegisName: item_960366
-    Name: 洞穴不凍花寵物蛋
+    Name: 負傷夢羅克(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960367
     AegisName: item_960367
-    Name: 怪誕幼蟲寵物蛋
+    Name: 幽暗夢魘寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960368
     AegisName: item_960368
-    Name: 被遺棄的中級蠕管寵物蛋
+    Name: 女王甲蟲(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960369
     AegisName: item_960369
-    Name: 怪誕蟲寵物蛋
+    Name: 讓特(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960370
     AegisName: item_960370
-    Name: 獨眼袋頭蝦寵物蛋
+    Name: 女王甲蟲(噩夢)(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960371
     AegisName: item_960371
-    Name: 雙眼袋頭蝦寵物蛋
+    Name: 魔鬼大烏賊(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960372
     AegisName: item_960372
-    Name: 糾纏的中級蠕管寵物蛋
+    Name: 時間管理人(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960373
     AegisName: item_960373
-    Name: 天鷹座-阿奎拉寵物蛋
+    Name: 劇毒凱美拉(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960374
     AegisName: item_960374
-    Name: 高級蠕管寵物蛋
+    Name: 蜘蛛戰車(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960375
     AegisName: item_960375
-    Name: 蛇姬寵物蛋
+    Name: 堅硬穆希貝斯寇(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960376
     AegisName: item_960376
-    Name: 朱希婭寵物蛋
+    Name: 汙染蜘蛛女王(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960377
     AegisName: item_960377
-    Name: 草原的獨角飛馬寵物蛋
+    Name: 汙染黑暗之王(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960378
     AegisName: item_960378
-    Name: 草原的捕捉蟲寵物蛋
+    Name: 蠍子寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960379
     AegisName: item_960379
-    Name: 草原的紅蒼蠅寵物蛋
+    Name: 波利寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960380
     AegisName: item_960380
-    Name: 草原的蝗蟲寵物蛋
+    Name: 蜂兵寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960381
     AegisName: item_960381
-    Name: 草原的野豬寵物蛋
+    Name: 吸血蝙蝠寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960382
     AegisName: item_960382
-    Name: 草原的噬人花寵物蛋
+    Name: 綠棉蟲寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960383
     AegisName: item_960383
-    Name: 草原的希爾士兵寵物蛋
+    Name: 蟲蛹寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960384
     AegisName: item_960384
-    Name: 草原的蜂后寵物蛋
+    Name: 禿鷹寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960385
     AegisName: item_960385
-    Name: 炙烈的爆炎蝙蝠寵物蛋
+    Name: 樹精寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960386
     AegisName: item_960386
-    Name: 炙烈的七彩飛龍寵物蛋
+    Name: 蒼蠅寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960387
     AegisName: item_960387
-    Name: 炙烈的南瓜先生寵物蛋
+    Name: 羅達蛙寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960388
     AegisName: item_960388
-    Name: 炙烈的熔岩巨石寵物蛋
+    Name: 狼寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960389
     AegisName: item_960389
-    Name: 炙烈的米洛斯寵物蛋
+    Name: 魔菇寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960390
     AegisName: item_960390
-    Name: 炙烈的三頭龍寵物蛋
+    Name: 腐屍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960391
     AegisName: item_960391
-    Name: 炙烈的希托斯寵物蛋
+    Name: 邪骸弓箭手寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960392
     AegisName: item_960392
-    Name: 炙烈的迪塔勒泰晤勒斯寵物蛋
+    Name: 克瑞米寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960393
     AegisName: item_960393
-    Name: 酷寒的冰巨人寵物蛋
+    Name: 大嘴鳥寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960394
     AegisName: item_960394
-    Name: 酷寒的小雪獸寵物蛋
+    Name: 曼陀羅魔花寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960395
     AegisName: item_960395
-    Name: 酷寒的雪獸寵物蛋
+    Name: 獸人戰士寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960396
     AegisName: item_960396
-    Name: 酷寒的蜈蚣寵物蛋
+    Name: 森靈寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960397
     AegisName: item_960397
-    Name: 酷寒的水精靈寵物蛋
+    Name: 青蛇寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960398
     AegisName: item_960398
-    Name: 酷寒的方體惡魔寵物蛋
+    Name: 殭屍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960399
     AegisName: item_960399
-    Name: 酷寒的靈克寵物蛋
+    Name: 邪骸士兵寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960400
     AegisName: item_960400
-    Name: 酷寒的寒冰龍寵物蛋
+    Name: 蛇女伊絲寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960401
     AegisName: item_960401
-    Name: 死亡的的木乃伊寵物蛋
+    Name: 毒蛇寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960402
     AegisName: item_960402
-    Name: 死亡的的警衛寵物蛋
+    Name: 波波利寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960403
     AegisName: item_960403
-    Name: 死亡的腐屍寵物蛋
+    Name: 畢萊特寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960404
     AegisName: item_960404
-    Name: 死亡的惡靈寵物蛋
+    Name: 長老樹精寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960405
     AegisName: item_960405
-    Name: 死亡的骷髏頭寵物蛋
+    Name: 達拉蛙寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960406
     AegisName: item_960406
-    Name: 死亡的惡耗女妖寵物蛋
+    Name: 赤蒼蠅寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960407
     AegisName: item_960407
-    Name: 死亡的深淵騎士寵物蛋
+    Name: 綠腐屍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960408
     AegisName: item_960408
-    Name: 死亡的怨靈騎士寵物蛋
+    Name: 黑蛇寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960409
     AegisName: item_960409
-    Name: 聖殿的魯盜寵物蛋
+    Name: 巨石怪寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960410
     AegisName: item_960410
-    Name: 聖殿的聖天使波利寵物蛋
+    Name: 木乃伊寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960411
     AegisName: item_960411
-    Name: 聖殿的偽天使寵物蛋
+    Name: 綠蒼蠅寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960412
     AegisName: item_960412
-    Name: 聖殿的紫色等離子體寵物蛋
+    Name: 人魚寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960413
     AegisName: item_960413
-    Name: 聖殿的慰勞者寵物蛋
+    Name: 馬克寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960414
     AegisName: item_960414
-    Name: 聖殿的瘧蚊寵物蛋
+    Name: 大嘴鳥蛋寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960415
     AegisName: item_960415
-    Name: 聖殿的獅鷲獸寵物蛋
+    Name: 盜蟲卵寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960416
     AegisName: item_960416
-    Name: 聖殿的蘭特克力斯寵物蛋
+    Name: 小雞寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960417
