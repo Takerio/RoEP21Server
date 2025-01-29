@@ -7,7 +7,7 @@
 
 		query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
 		setarray .@array$[1],"棒棒糖論壇","巴哈母湯","GAME666","結束對話";
-		setarray .@www$[1],"https://www.nemyth.com/","https://www.lollipop168.com/thread-31821-1-1.html","https://bhmtsff.com/thread-31430-1-1.html","https://www.games666.info/ro/ro-6902-B%E5%A4%A7%E5%A5%BD%E6%A3%92%E6%A3%92%E4%BB%99%E5%A2%83.html";
+		setarray .@www$[1],"https://www.lollipop168.com/thread-31821-1-1.html","https://bhmtsff.com/thread-31430-1-1.html","https://www.games666.info/ro/ro-6902-B%E5%A4%A7%E5%A5%BD%E6%A3%92%E6%A3%92%E4%BB%99%E5%A2%83.html";
 
 		mes "^666666玩家名稱^000000 : ^888800"+strcharinfo(0)+"^000000";
 		mes "^666666填寫者IP^000000 : ^008800"+.@LastIp$+"^000000";
