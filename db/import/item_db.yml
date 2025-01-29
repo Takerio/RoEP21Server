@@ -3466,72 +3466,72 @@ Body:
     Buy: 20
   - Id: 960339
     AegisName: item_960339
-    Name: 魔劍士薩克萊寵物蛋
+    Name: 闇●十字刺客 艾勒梅斯寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960340
     AegisName: item_960340
-    Name: 失控的公主提亞拉蜂后寵物蛋
+    Name: 闇●神工匠 哈沃得(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960341
     AegisName: item_960341
-    Name: 懺悔的騎士寵物蛋
+    Name: 闇●神官 瑪嘉雷特(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960342
     AegisName: item_960342
-    Name: 懺悔的士兵寵物蛋
+    Name: 闇●神射手 迪文(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960343
     AegisName: item_960343
-    Name: 懺悔的弓箭手寵物蛋
+    Name: 闇●超魔導師 凱特莉娜寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960344
     AegisName: item_960344
-    Name: 懺悔的男巫師寵物蛋
+    Name: 貝思波(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960345
     AegisName: item_960345
-    Name: 懺悔的女巫師寵物蛋
+    Name: 嫦娥(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960346
     AegisName: item_960346
-    Name: 懺悔的侯爵寵物蛋
+    Name: 魔劍士 達納托斯的記憶寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960347
     AegisName: item_960347
-    Name: 懺悔的僕人寵物蛋
+    Name: 迪塔勒泰晤勒斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960348
     AegisName: item_960348
-    Name: 悔恨之柱外觀寵物蛋
+    Name: 蘭特克力斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960349
     AegisName: item_960349
-    Name: 參宿四寵物蛋
+    Name: 水晶龍(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960350
     AegisName: item_960350
-    Name: 星魂寵物蛋
+    Name: 阿特羅斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960351
     AegisName: item_960351
-    Name: 夜勝魔寵物蛋
+    Name: 阿特羅斯(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960352
     AegisName: item_960352
-    Name: 冰園鰻寵物蛋
+    Name: 伊夫利特(普通)寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960353
@@ -12335,16 +12335,16 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","AM_SPHEREMINE");
-  - Id: 970112
-    AegisName: card_skill_BS_MAXIMIZE
-    Name: 武器值最大化技能卡片
+  - Id: 970180
+    AegisName: card_skill_AM_CP_WEAPON
+    Name: 化學武器保護技能卡片
     Type: Card
     Buy: 20
     Weight: 10
     Locations:
       Both_Accessory: true
     Script: |
-      set maxLv,callfunc("skill_Card","BS_MAXIMIZE");
+      set maxLv,callfunc("skill_Card","AM_CP_WEAPON");
   - Id: 970112
     AegisName: card_skill_BS_MAXIMIZE
     Name: 武器值最大化技能卡片
