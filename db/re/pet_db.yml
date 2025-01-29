@@ -10698,7 +10698,8 @@ Body:
       callfunc "petskill",960338;
     Script: >
       callfunc "petstatus",960338;
-  # - Mob: MD_SAKRAY
+##  闇●十字刺客 艾勒梅斯
+  # - Mob: B_EREMES_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960339
   #   FoodItem: Luxurious_Pet_Food
@@ -10709,7 +10710,8 @@ Body:
   #     callfunc "petskill",960339;
   #   Script: >
   #     callfunc "petstatus",960339;
-  # - Mob: MD_TIARA
+##  闇●神工匠 哈沃得(普通)
+  # - Mob: B_HARWORD_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960340
   #   FoodItem: Luxurious_Pet_Food
@@ -10720,7 +10722,8 @@ Body:
   #     callfunc "petskill",960340;
   #   Script: >
   #     callfunc "petstatus",960340;
-  # - Mob: MD_UNDEAD_KNIGHT
+##  闇●神官 瑪嘉雷特(普通)
+  # - Mob: B_MAGALETA_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960341
   #   FoodItem: Luxurious_Pet_Food
@@ -10731,7 +10734,8 @@ Body:
   #     callfunc "petskill",960341;
   #   Script: >
   #     callfunc "petstatus",960341;
-  # - Mob: MD_UNDEAD_SOLDIER
+##  闇●神射手 迪文(普通)
+  # - Mob: B_SHECIL_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960342
   #   FoodItem: Luxurious_Pet_Food
@@ -10742,7 +10746,8 @@ Body:
   #     callfunc "petskill",960342;
   #   Script: >
   #     callfunc "petstatus",960342;
-  # - Mob: MD_UNDEAD_ARCHER
+##  闇●超魔導師 凱特莉娜
+  # - Mob: B_KATRINN_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960343
   #   FoodItem: Luxurious_Pet_Food
@@ -10753,7 +10758,8 @@ Body:
   #     callfunc "petskill",960343;
   #   Script: >
   #     callfunc "petstatus",960343;
-  # - Mob: MD_UNDEAD_SOLDIER
+##  貝思波(普通)
+  # - Mob: APOCALIPS_H_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960344
   #   FoodItem: Luxurious_Pet_Food
@@ -10764,7 +10770,8 @@ Body:
   #     callfunc "petskill",960344;
   #   Script: >
   #     callfunc "petstatus",960344;
-  # - Mob: MD_UNDEAD_MAGICIAN
+##  嫦娥(普通)
+  # - Mob: G_BACSOJIN_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960345
   #   FoodItem: Luxurious_Pet_Food
@@ -10775,7 +10782,8 @@ Body:
   #     callfunc "petskill",960345;
   #   Script: >
   #     callfunc "petstatus",960345;
-  # - Mob: MD_UNDEAD_NOBLE
+##  魔劍士 達納托斯的記憶
+  # - Mob: THANATOS_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960346
   #   FoodItem: Luxurious_Pet_Food
@@ -10786,7 +10794,8 @@ Body:
   #     callfunc "petskill",960346;
   #   Script: >
   #     callfunc "petstatus",960346;
-  # - Mob: MD_UNDEAD_SERVANT
+##  迪塔勒泰晤勒斯(普通)
+  # - Mob: DETALE_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960347
   #   FoodItem: Luxurious_Pet_Food
@@ -10797,7 +10806,8 @@ Body:
   #     callfunc "petskill",960347;
   #   Script: >
   #     callfunc "petstatus",960347;
-  # - Mob: HIDDEN_MOB8
+##  蘭特克力斯(普通)
+  # - Mob: RANDGRIS_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960348
   #   FoodItem: Luxurious_Pet_Food
@@ -10808,7 +10818,8 @@ Body:
   #     callfunc "petskill",960348;
   #   Script: >
   #     callfunc "petstatus",960348;
-  # - Mob: MD_BETELGEUSE
+##  幽暗夢魘(普通)
+  # - Mob: GLOOMUNDERNIGHT_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960349
   #   FoodItem: Luxurious_Pet_Food
@@ -10819,7 +10830,8 @@ Body:
   #     callfunc "petskill",960349;
   #   Script: >
   #     callfunc "petstatus",960349;
-  # - Mob: MD_G_DEADSOUL
+##  水晶龍(普通)
+  # - Mob: KTULLANUX_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960350
   #   FoodItem: Luxurious_Pet_Food
@@ -10830,7 +10842,8 @@ Body:
   #     callfunc "petskill",960350;
   #   Script: >
   #     callfunc "petstatus",960350;
-  # - Mob: MD_NAGHT_SIEGER
+##  阿特羅斯(普通)
+  # - Mob: ATROCE_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960351
   #   FoodItem: Luxurious_Pet_Food
@@ -10841,7 +10854,8 @@ Body:
   #     callfunc "petskill",960351;
   #   Script: >
   #     callfunc "petstatus",960351;
-  # - Mob: EP19_ICE_STRAW
+##  伊夫利特(普通)
+  # - Mob: IFRIT_Ord
   #   CaptureRate : 1000
   #   EggItem: item_960352
   #   FoodItem: Luxurious_Pet_Food
