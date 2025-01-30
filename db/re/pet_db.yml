@@ -10818,8 +10818,8 @@ Body:
       callfunc "petskill",960348;
     Script: >
       callfunc "petstatus",960348;
-#  幽暗夢魘(普通)
-  - Mob: GLOOMUNDERNIGHT_Ord
+#  參宿四
+  - Mob: MD_BETELGEUSE
     CaptureRate : 1000
     EggItem: item_960349
     FoodItem: Luxurious_Pet_Food
@@ -12281,8 +12281,8 @@ Body:
       callfunc "petskill",960470;
     Script: >
       callfunc "petstatus",960470;
-##  
-  # - Mob: WASTE_STOVE
+##  狄奧斯
+  # - Mob: DEVIACE
   #   CaptureRate : 1000
   #   EggItem: item_960471
   #   FoodItem: Luxurious_Pet_Food
@@ -12293,7 +12293,8 @@ Body:
   #     callfunc "petskill",960471;
   #   Script: >
   #     callfunc "petstatus",960471;
-  # - Mob: UNGOLIANT
+##  小惡魔
+  # - Mob: DEVIRUCHI
   #   CaptureRate : 1000
   #   EggItem: item_960472
   #   FoodItem: Luxurious_Pet_Food
@@ -12304,7 +12305,8 @@ Body:
   #     callfunc "petskill",960472;
   #   Script: >
   #     callfunc "petstatus",960472;
-  # - Mob: PORCELLIO
+##  土人
+  # - Mob: DOKEBI
   #   CaptureRate : 1000
   #   EggItem: item_960473
   #   FoodItem: Luxurious_Pet_Food
@@ -12315,7 +12317,8 @@ Body:
   #     callfunc "petskill",960473;
   #   Script: >
   #     callfunc "petstatus",960473;
-  # - Mob: NOXIOUS
+##  紅蝙蝠
+  # - Mob: DRAINLIAR
   #   CaptureRate : 1000
   #   EggItem: item_960474
   #   FoodItem: Luxurious_Pet_Food
@@ -12326,7 +12329,8 @@ Body:
   #     callfunc "petskill",960474;
   #   Script: >
   #     callfunc "petstatus",960474;
-  # - Mob: VENOMOUS
+##  土波利
+  # - Mob: DROPS
   #   CaptureRate : 1000
   #   EggItem: item_960475
   #   FoodItem: Luxurious_Pet_Food
@@ -12337,7 +12341,8 @@ Body:
   #     callfunc "petskill",960475;
   #   Script: >
   #     callfunc "petstatus",960475;
-  # - Mob: TEDDY_BEAR
+##  獵蠅
+  # - Mob: DUSTINESS
   #   CaptureRate : 1000
   #   EggItem: item_960476
   #   FoodItem: Luxurious_Pet_Food
@@ -12348,7 +12353,8 @@ Body:
   #     callfunc "petskill",960476;
   #   Script: >
   #     callfunc "petstatus",960476;
-  # - Mob: RSX_0806
+##  轉轉蛋
+  # - Mob: EGGYRA
   #   CaptureRate : 1000
   #   EggItem: item_960477
   #   FoodItem: Luxurious_Pet_Food
@@ -12359,6 +12365,7 @@ Body:
   #     callfunc "petskill",960477;
   #   Script: >
   #     callfunc "petstatus",960477;
+##  闇神官
   # - Mob: ANOPHELES
   #   CaptureRate : 1000
   #   EggItem: item_960478
