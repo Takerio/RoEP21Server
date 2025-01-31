@@ -8,7 +8,7 @@
 	}
 
 	mes "[小鳳]";
-	mes "你想要開始天晴滿月慶祝活動任務嗎?";
+	mes "你想要開始B大仙境慶祝活動任務嗎?";
 	next;
 	switch(select("接取任務","回報任務","進行附魔","取消")){
 
@@ -193,7 +193,7 @@
 	close;
 	}
 OnInit:
-	waitingroom "天晴滿月慶祝活動",0;
+	waitingroom "B大仙境慶祝活動",0;
 	end;
 }
 

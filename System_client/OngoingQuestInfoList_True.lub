@@ -38517,6 +38517,14 @@ Description = {"現在是野豬捕獸籠修繕時間，請凌晨過後再來找我吧!"}, Summary = "30
 	},
 
 	--Episode21 英雄時代
+	[12646] = {
+		Title = "最終之戰-冷卻",
+		IconName = "ico_dq.bmp",
+		Description = {
+			""
+		},
+		Summary = "濡衝渡и 驕 籀纂"
+	},
 	[12649] = {
 		Title = "最終之戰(簡單)",
 		IconName = "ico_dq.bmp",

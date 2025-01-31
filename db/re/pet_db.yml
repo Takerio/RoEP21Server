@@ -12366,7 +12366,7 @@ Body:
   #   Script: >
   #     callfunc "petstatus",960477;
 ##  闇神官
-  # - Mob: ANOPHELES
+  # - Mob: EVIL_DRUID
   #   CaptureRate : 1000
   #   EggItem: item_960478
   #   FoodItem: Luxurious_Pet_Food
@@ -12377,7 +12377,8 @@ Body:
   #     callfunc "petskill",960478;
   #   Script: >
   #     callfunc "petstatus",960478;
-  # - Mob: MOLE
+##  噬人花
+  # - Mob: FLORA
   #   CaptureRate : 1000
   #   EggItem: item_960479
   #   FoodItem: Luxurious_Pet_Food
@@ -12388,7 +12389,8 @@ Body:
   #     callfunc "petskill",960479;
   #   Script: >
   #     callfunc "petstatus",960479;
-  # - Mob: HILL_WIND
+##  傘蜥
+  # - Mob: FRILLDORA
   #   CaptureRate : 1000
   #   EggItem: item_960480
   #   FoodItem: Luxurious_Pet_Food
@@ -12399,7 +12401,8 @@ Body:
   #     callfunc "petskill",960480;
   #   Script: >
   #     callfunc "petstatus",960480;
-  # - Mob: GREMLIN
+##  幽靈波利
+  # - Mob: GHOSTRING
   #   CaptureRate : 1000
   #   EggItem: item_960481
   #   FoodItem: Luxurious_Pet_Food
@@ -12410,7 +12413,8 @@ Body:
   #     callfunc "petskill",960481;
   #   Script: >
   #     callfunc "petstatus",960481;
-  # - Mob: BEHOLDER
+##  基爾瑟
+  # - Mob: GIEARTH
   #   CaptureRate : 1000
   #   EggItem: item_960482
   #   FoodItem: Luxurious_Pet_Food
@@ -12421,7 +12425,8 @@ Body:
   #     callfunc "petskill",960482;
   #   Script: >
   #     callfunc "petstatus",960482;
-  # - Mob: SEYREN
+##  刺刀哥布靈
+  # - Mob: GOBLIN_1
   #   CaptureRate : 1000
   #   EggItem: item_960483
   #   FoodItem: Luxurious_Pet_Food
@@ -12432,7 +12437,8 @@ Body:
   #     callfunc "petskill",960483;
   #   Script: >
   #     callfunc "petstatus",960483;
-  # - Mob: EREMES
+##  鏈錘哥布靈
+  # - Mob: GOBLIN_2
   #   CaptureRate : 1000
   #   EggItem: item_960484
   #   FoodItem: Luxurious_Pet_Food
@@ -12443,7 +12449,8 @@ Body:
   #     callfunc "petskill",960484;
   #   Script: >
   #     callfunc "petstatus",960484;
-  # - Mob: HARWORD
+##  大斧哥布靈
+  # - Mob: GOBLIN_3
   #   CaptureRate : 1000
   #   EggItem: item_960485
   #   FoodItem: Luxurious_Pet_Food
@@ -12454,7 +12461,8 @@ Body:
   #     callfunc "petskill",960485;
   #   Script: >
   #     callfunc "petstatus",960485;
-  # - Mob: MAGALETA
+##  鎯頭哥布靈
+  # - Mob: GOBLIN_4
   #   CaptureRate : 1000
   #   EggItem: item_960486
   #   FoodItem: Luxurious_Pet_Food

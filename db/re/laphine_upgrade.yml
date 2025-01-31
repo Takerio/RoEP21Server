@@ -5904,6 +5904,18 @@ Body:
       - Item: Illusion_Engine_B
       - Item: Illusion_Leg_A
       - Item: Illusion_Leg_B
+# 雪花防具精煉+9寶箱
+  - Item: Snow_F_Refine
+    ResultRefine: 9
+    CardsAllowed: true
+    TargetItems:
+      - Item: Snowflower_Armor
+      - Item: Snowflower_Robe
+      - Item: Snowflower_Boots
+      - Item: Snowflower_Shoes
+      - Item: Snowflower_Manteau
+      - Item: Snowflower_Muffler
+
 
 #熾熱的魔法配件
   - Item: MD_Geffen_Rarmor

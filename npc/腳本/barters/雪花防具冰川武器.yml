@@ -13,7 +13,7 @@ Body:
      Sprite: 4_EP18_MARAM
      Items:
        - Index: 0
-         Item: Snowflower_Armor
+         Item: Snow_F_Refine
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -21,7 +21,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 1
-         Item: Snowflower_Robe
+         Item: Snowflower_Armor
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -29,7 +29,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 2
-         Item: Snowflower_Boots
+         Item: Snowflower_Robe
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -37,7 +37,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 3
-         Item: Snowflower_Shoes
+         Item: Snowflower_Boots
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -45,7 +45,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 4
-         Item: Snowflower_Manteau
+         Item: Snowflower_Shoes
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -53,7 +53,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 5
-         Item: Snowflower_Muffler
+         Item: Snowflower_Manteau
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -61,7 +61,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 6
-         Item: Snowflower_Pendant
+         Item: Snowflower_Muffler
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -69,7 +69,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 7
-         Item: Snowflower_Ring
+         Item: Snowflower_Pendant
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -77,7 +77,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 8
-         Item: Snowflower_Necklace
+         Item: Snowflower_Ring
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -85,7 +85,7 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 9
-         Item: Snowflower_Earring
+         Item: Snowflower_Necklace
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -93,110 +93,118 @@ Body:
              Item: Ep19_Snow_Flower
              Amount: 100
        - Index: 10
+         Item: Snowflower_Earring
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Ep19_Snow_Flower
+             Amount: 100
+       - Index: 11
          Item: Glacier_Sword
          Stock: 0
          Zeny: 150000
-       - Index: 11
+       - Index: 12
          Item: Glacier_B_Sword
          Stock: 0
          Zeny: 150000
-       - Index: 12
+       - Index: 13
          Item: Glacier_R_Knife
          Stock: 0
          Zeny: 150000
-       - Index: 13
+       - Index: 14
          Item: Glacier_B_Knife
          Stock: 0
          Zeny: 150000
-       - Index: 14
+       - Index: 15
          Item: Glacier_Axe
          Stock: 0
          Zeny: 150000
-       - Index: 15
+       - Index: 16
          Item: Glacier_Spear
          Stock: 0
          Zeny: 150000
-       - Index: 16
+       - Index: 17
          Item: Glacier_Book
          Stock: 0
          Zeny: 150000
-       - Index: 17
+       - Index: 18
          Item: Glacier_Wand
          Stock: 0
          Zeny: 150000
-       - Index: 18
+       - Index: 19
          Item: Glacier_Foxtail
          Stock: 0
          Zeny: 150000
-       - Index: 19
+       - Index: 20
          Item: Glacier_Knuckle
          Stock: 0
          Zeny: 150000
-       - Index: 20
+       - Index: 21
          Item: Glacier_Violin
          Stock: 0
          Zeny: 150000
-       - Index: 21
+       - Index: 22
          Item: Glacier_Whip
          Stock: 0
          Zeny: 150000
-       - Index: 22
+       - Index: 23
          Item: Glacier_Mace
          Stock: 0
          Zeny: 150000
-       - Index: 23
+       - Index: 24
          Item: Glacier_M_Mace
          Stock: 0
          Zeny: 150000
-       - Index: 24
+       - Index: 25
          Item: Glacier_T_Sword
          Stock: 0
          Zeny: 150000
-       - Index: 25
+       - Index: 26
          Item: Glacier_Katar
          Stock: 0
          Zeny: 150000
-       - Index: 26
+       - Index: 27
          Item: Glacier_T_Axe
          Stock: 0
          Zeny: 150000
-       - Index: 27
+       - Index: 28
          Item: Glacier_Lance
          Stock: 0
          Zeny: 150000
-       - Index: 28
+       - Index: 29
          Item: Glacier_Staff
          Stock: 0
          Zeny: 150000
-       - Index: 29
+       - Index: 30
          Item: Glacier_Humma
          Stock: 0
          Zeny: 150000
-       - Index: 30
+       - Index: 31
          Item: Glacier_Bow
          Stock: 0
          Zeny: 150000
-       - Index: 31
+       - Index: 32
          Item: Glacier_Revolver
          Stock: 0
          Zeny: 150000
-       - Index: 32
+       - Index: 33
          Item: Glacier_Rifle
          Stock: 0
          Zeny: 150000
-       - Index: 33
+       - Index: 34
          Item: Glacier_Shotgun
          Stock: 0
          Zeny: 150000
-       - Index: 34
+       - Index: 35
          Item: Glacier_Gatling
          Stock: 0
          Zeny: 150000
-       - Index: 35
+       - Index: 36
          Item: Glacier_Launcher
          Stock: 0
          Zeny: 150000
-       - Index: 36
+       - Index: 37
          Item: C_Ep19_Rgan
          Stock: 0
          Zeny: 0
@@ -204,7 +212,7 @@ Body:
            - Index: 0
              Item: Ep19_Snow_Flower
              Amount: 800
-       - Index: 37
+       - Index: 38
          Item: C_Ep19_Iwin
          Stock: 0
          Zeny: 0
