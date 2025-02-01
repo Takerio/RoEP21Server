@@ -11763,7 +11763,7 @@ Body:
 #Episode20 火之湖 生命殿堂
   - Id: 30001
     Title: 火之湖
-  - Id: 3000211
+  - Id: 30002
     Title: 火之湖-冷卻
     TimeLimit: +1s
   - Id: 30003
