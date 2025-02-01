@@ -73,7 +73,7 @@ function	script	ScToSkill	{
 		case 30:	.@skill = 34;	break;		// ¤Ñ¨Ï¤§½çºÖ
 		//case 35:	.@skill = 66;	break;		// ¯««Â¬èºÖ
 		case 36:	.@skill = 67;	break;		// Äë¬¹¬èºÖ
-		case 37:	.@skill = 68;	break;		// ¼»¤ô¬èºÖ
+		//case 37:	.@skill = 68;	break;		// ¼»¤ô¬èºÖ
 		case 38:	.@skill = 69;	break;		// ¸t¤§¬èºÖ
 		case 39:	.@skill = 73;	break;		// ÅQ¨¸¤§°}
 		case 41:	.@skill = 75;	break;		// ©¯¹B¤§¹|ºq

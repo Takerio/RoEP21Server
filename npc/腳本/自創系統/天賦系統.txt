@@ -1,6 +1,6 @@
 
 trinity,80,65,4	script	天賦管理員	10056,{
-
+//set #Talent_EXP,10000;
 	if (#day_Talent < gettime(8)){
 	set #Talent_Quest_01,2;	//天賦任務
 	set #Talent_Quest_02,2;	//天賦任務
@@ -401,7 +401,7 @@ Talent_end:
 			switch(select(
 			"盧恩龍爵",
 			"機甲神匠",
-			"十字影武",
+			"十字影武",
 			"禁咒魔導士",
 			"樞機主教",
 			
@@ -702,7 +702,7 @@ Talent_end:
 
 			case 3:
 			Talent_next2_3:
-				mes " ^0000FF[十字影武天賦情報]^000000";
+				mes " ^0000FF[十字影武天賦情報]^000000";
 				if(Talent_SAVAGE_IMPACT_ATK==0){ mes "【野蠻專精】"; mes "每提升1級，野蠻衝擊技能傷害+5%"; }
 				if(Talent_SAVAGE_IMPACT_ATK>0){ mes "【野蠻專精】等級："+Talent_SAVAGE_IMPACT_ATK+"/10"; mes " 附加能力：^0000FF野蠻衝擊技能傷害 + "+Talent_SAVAGE_IMPACT_ATK*5+"%^000000"; }
 				if(Talent_SHADOW_STAB_ATK==0){ mes "【暗影專精】"; mes "每提升1級，暗影刺擊技能傷害+5%"; }
@@ -887,8 +887,8 @@ Talent_end:
 					set Talent_Points,Talent_Points - 1;
 					set Talent_CALAMITYGALE_Cool,Talent_CALAMITYGALE_Cool + 1;
 					status_calc();
-					dispbottom "迴旋冷卻等級提升為 "+Talent_CALAMITYGALE_Cool+"";
-					goto Talent_next2_3;
+					dispbottom "憤怒冷卻等級提升為 "+Talent_CALAMITYGALE_Cool+"";
+					goto Talent_next2_6;
 
 				case 4:
 					goto Talent_next2;
@@ -904,7 +904,7 @@ Talent_end:
 				if(Talent_OVERBRAND_ATK==0){ mes "【支配專精】"; mes "每提升1級，支配烙印技能傷害+10%"; }
 				if(Talent_OVERBRANDR_ATK>0){ mes "【支配專精】等級："+Talent_OVERBRAND_ATK+"/10"; mes " 附加能力：^0000FF支配烙印技能傷害 + "+Talent_OVERBRAND_ATK*10+"%^000000"; }
 
-				if(Talent_CROSS_RAIN_ATK==0){ mes "【聖雨專精】"; mes "每提升1級，聖十字雨技能傷害+5%"; }
+				if(Talent_CROSS_RAIN_ATK==0){ mes "【聖雨專精】"; mes "每提升1級，聖十字雨技能傷害+5%"; }
 				if(Talent_CROSS_RAIN_ATK>0){ mes "【聖雨專精】等級："+Talent_CROSS_RAIN_ATK+"/10"; mes " 附加能力：^0000FF支配烙印技能傷害 + "+Talent_CROSS_RAIN_ATK*5+"%^000000"; }
 				if(Talent_RAYOFGENESIS_Cool==0){ mes "【創世冷卻】每提升1級，創世之光技能冷卻時間-0.1秒"; }
 				if(Talent_RAYOFGENESIS_Cool==1){ mes "【創世冷卻】等級："+Talent_RAYOFGENESIS_Cool+"/3"; mes " 附加能力：^0000FF創世之光技能冷卻時間-0."+Talent_RAYOFGENESIS_Cool+"秒^000000"; }
@@ -1614,8 +1614,8 @@ Talent_end:
 				if(Talent_HYUN_ROK_CANNON_Cool==0){ mes "【鹿砲冷卻】每提升1級，玄鹿炮技能冷卻時間-0.1秒"; }
 				if(Talent_HYUN_ROK_CANNON_Cool==1){ mes "【鹿砲冷卻】等級："+Talent_HYUN_ROK_CANNON_Cool+"/3"; mes " 附加能力：^0000FF玄鹿炮技能冷卻時間-0."+Talent_HYUN_ROK_CANNON_Cool+"秒^000000"; }
 
-				if(Talent_HYUN_ROKS_BREEZE_Cool==0){ mes "【葉風冷卻】每提升1級，玄鹿炮技能冷卻時間-0.2秒"; }
-				if(Talent_HYUN_ROKS_BREEZE_Cool==1){ mes "【葉風冷卻】等級："+Talent_HYUN_ROKS_BREEZE_Cool+"/10"; mes " 附加能力：^0000FF玄鹿炮技能冷卻時間-"+Talent_HYUN_ROKS_BREEZE_Cool*200+"毫秒^000000"; }
+				if(Talent_HYUN_ROKS_BREEZE_Cool==0){ mes "【葉風冷卻】每提升1級，玄鹿葉風技能冷卻時間-0.2秒"; }
+				if(Talent_HYUN_ROKS_BREEZE_Cool==1){ mes "【葉風冷卻】等級："+Talent_HYUN_ROKS_BREEZE_Cool+"/10"; mes " 附加能力：^0000FF玄鹿葉風技能冷卻時間-"+Talent_HYUN_ROKS_BREEZE_Cool*200+"毫秒^000000"; }
 
 
 
@@ -1701,13 +1701,13 @@ Talent_end:
 			if(class == 4060){ if(Talent_Rune==0){ mes "【盧恩龍爵專精】"; } if(Talent_Rune==1){ mes "【盧恩龍爵專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[百矛穿刺]，武器精煉值越高觸發機率越高"; }
 			if(class == 4073){ if(Talent_Royal==0){ mes "【帝國聖衛軍專精】"; } if(Talent_Royal==1){ mes "【帝國聖衛軍專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[放逐攻擊]，武器精煉值越高觸發機率越高"; }
 			if(class == 4064){ if(Talent_Mechanic==0){ mes "【機甲神匠專精】"; } if(Talent_Mechanic==1){ mes "【機甲神匠專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[揮斧重擊]，武器精煉值越高觸發機率越高"; }
-			if(class == 4065){ if(Talent_Guillotine==0){ mes "【十字斬首者專精】"; } if(Talent_Guillotine==1){ mes "【十字斬首者專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[十字斬]，武器精煉值越高觸發機率越高"; }
+			if(class == 4065){ if(Talent_Guillotine==0){ mes "【十字斬首者專精】"; } if(Talent_Guillotine==1){ mes "【十字斬首者專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[十字斬]，武器精煉值越高觸發機率越高"; }
 			if(class == 4079){ if(Talent_Shadow==0){ mes "【深淵追蹤者專精】"; } if(Talent_Shadow==1){ mes "【深淵追蹤者專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[三角射擊]，武器精煉值越高觸發機率越高"; }
 			if(class == 4062){ if(Talent_Ranger==0){ mes "【風鷹狩獵者專精】"; } if(Talent_Ranger==1){ mes "【風鷹狩獵者專精】^0000FF已學習^000000"; } mes "普通攻擊觸發[銳利射擊]，武器精煉值越高觸發機率越高"; }
 
 			mes "你想要學習那個普攻天賦?";
 			next;
-			switch(select("盧恩龍爵專精:帝國聖衛軍專精:機甲神匠專精:十字斬首者專精:深淵追蹤者專精:風鷹狩獵者專精:回上層")) {
+			switch(select("盧恩龍爵專精:帝國聖衛軍專精:機甲神匠專精:十字斬首者專精:深淵追蹤者專精:風鷹狩獵者專精:回上層")) {
 
 			case 1:
 				if ( class != 4060 && class != 4252 ) {
@@ -1753,7 +1753,7 @@ Talent_end:
 
 			case 4:
 				if ( class != 4065 && class != 4254) {
-				mes "你不是十字斬首者無法學習!";
+				mes "你不是十字斬首者無法學習!";
 				next;
 				goto Talent_next3;
 				}
@@ -1762,7 +1762,7 @@ Talent_end:
 				set Talent_Points,Talent_Points - 1;
 				set Talent_Guillotine,Talent_Guillotine + 1;
 				status_calc();
-				dispbottom "十字斬首者專精學習成功";
+				dispbottom "十字斬首者專精學習成功";
 				goto Talent_next3;
 
 			case 5:

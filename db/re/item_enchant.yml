@@ -8675,7 +8675,7 @@ Body:
               - Material: Unknown_6674
       - Slot: 2
         Materials:
-          - Material: Unknown_6674
+          - Material: Enchant_Ticket
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -23126,6 +23126,10 @@ Body:
             Materials:
               - Material: S_Enchant_Essence
                 Amount: 5
+          - Item: DK_Soul_DB
+            Materials:
+              - Material: S_Enchant_Essence
+                Amount: 5                
   - Id: 72
     TargetItems:
       S_IG_Armor: true

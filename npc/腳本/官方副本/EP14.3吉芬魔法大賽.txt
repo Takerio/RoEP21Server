@@ -47,7 +47,6 @@ vdistrict1,26,73,4	script	吉芬魔法大賽管理者	899,{
 	//副本任務獎勵
 	if(checkquest(32031,HUNTING)==2 ) { 
 	dispbottom "吉芬魔法大賽任務完成，以下是你的獎勵!!"; 
-	callfunc "offical_instance_finish",22;
 	set #Instance_Points,#Instance_Points+10;	//副本積分+10
 	dispbottom "副本積分+10";
 	dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
@@ -2988,6 +2987,7 @@ OnTouch:
 		close;
 		mes "[魔法大賽主持]";
 		mes "那麼請收好您的優勝獎勵，馬上送您離開會場。";
+		callfunc "offical_instance_finish",22;
 		getitem 6671, 'reward['GMT_1QUE-11];
         	erasequest 9308;
 		//副本任務獎勵
