@@ -116,10 +116,6 @@ Un_net01:
 				set .@price,40000;
 				set .@material,6438; //Unbreakable_Weap
 				break; 
-			case 5:
-				set .@price,40000;
-				set .@material,6438; //Unbreakable_Weap
-				break; 
 			default:
 				// TODO:
 				close;
