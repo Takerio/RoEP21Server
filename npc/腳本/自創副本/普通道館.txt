@@ -262,6 +262,10 @@ cancel:
 		getitem 25731,($@Dc_Round[.@i]/5);
 		getitem 25729,($@Dc_Round[.@i]/5);
 		}
+		if($@Dc_Round[.@i] == 60) {
+			set #Gym_Points,#Gym_Points+$@Dc_Ultra[.@i]*5;	//道館積分
+			dispbottom "道館積分+ "+$@Dc_Ultra[.@i]*5+"";
+		}
 		warp "trinity",85,25;
 		end;
 	}
