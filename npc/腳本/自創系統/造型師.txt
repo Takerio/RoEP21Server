@@ -677,7 +677,7 @@ function	script	costume_body2	{
 	mes "[服裝髮型造型師]";
 	mes "你想要變幻哪種職業外觀？";
 	next;
-	switch(select("一轉職業","二轉職業","進階二轉職業","三轉職業","JRO三轉職業","四轉職業","擴充職業")) {
+	switch(select("進階二轉職業","三轉職業","JRO三轉職業","四轉職業","擴充職業")) {
 
 
 		
