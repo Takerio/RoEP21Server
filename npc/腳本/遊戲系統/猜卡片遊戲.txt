@@ -10,8 +10,9 @@ trinity,39,130,6	script	猜卡片遊戲#1	715,{
 
 	mes "[猜卡片遊戲工作人員]";
 	mes "=^00CCCC猜卡片遊戲基本信息^000000=";
+	if(getgmlevel()>90) mes "(GM進入活動地圖使用@guess開啟活動)";
 	next;
-	switch(select("^00CC00我要報名^000000","^FF6666取消^000000")){
+	switch(select("^00CC00我要報名^000000",getgmlevel()>90?"GM傳送到活動地圖":"","^FF6666取消^000000")){
 	case 1:
 		if( !$@guesscard){
 		mes "[猜卡片遊戲工作人員]";
@@ -35,6 +36,8 @@ trinity,39,130,6	script	猜卡片遊戲#1	715,{
 
 		end;
 	case 2:
+	warp "boss1",51,50;
+	case 3:
 		close;
 	} 
 	end;
