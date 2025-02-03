@@ -11765,7 +11765,7 @@ Body:
     Title: 火之湖
   - Id: 30002
     Title: 火之湖-冷卻
-    TimeLimit: 4h
+    TimeLimit: +1s
   - Id: 30003
     Title: 生命殿堂
   - Id: 30004

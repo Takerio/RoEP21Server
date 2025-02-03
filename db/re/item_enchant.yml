@@ -8675,7 +8675,7 @@ Body:
               - Material: Unknown_6674
       - Slot: 2
         Materials:
-          - Material: Unknown_6674
+          - Material: Enchant_Ticket
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
@@ -23126,6 +23126,10 @@ Body:
             Materials:
               - Material: S_Enchant_Essence
                 Amount: 5
+          - Item: DK_Soul_DB
+            Materials:
+              - Material: S_Enchant_Essence
+                Amount: 5                
   - Id: 72
     TargetItems:
       S_IG_Armor: true
@@ -37701,21 +37705,6 @@ Body:
                 Amount: 1
       - Slot: 1
         PerfectEnchants:
-          - Item: Wolf_Orb_Life
-            Price: 1000000
-            Materials:
-              - Material: Sp_Amethyst_Fragment
-                Amount: 1
-          - Item: Wolf_Orb_M_Heal
-            Price: 1000000
-            Materials:
-              - Material: Sp_Amethyst_Fragment
-                Amount: 1
-          - Item: Wolf_Orb_A_Force
-            Price: 1000000
-            Materials:
-              - Material: Sp_Amethyst_Fragment
-                Amount: 1
           - Item: Wolf_Orb_A_Delay_4
             Price: 1000000
             Materials:
@@ -37737,6 +37726,21 @@ Body:
               - Material: Sp_Amethyst_Fragment
                 Amount: 1
           - Item: Wolf_Orb_Spell_4
+            Price: 1000000
+            Materials:
+              - Material: Sp_Amethyst_Fragment
+                Amount: 1
+          - Item: Wolf_Orb_Soul
+            Price: 1000000
+            Materials:
+              - Material: Sp_Amethyst_Fragment
+                Amount: 1
+          - Item: Wolf_Orb_M_Soul
+            Price: 1000000
+            Materials:
+              - Material: Sp_Amethyst_Fragment
+                Amount: 1
+          - Item: Wolf_Orb_A_Force
             Price: 1000000
             Materials:
               - Material: Sp_Amethyst_Fragment

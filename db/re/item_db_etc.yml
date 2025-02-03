@@ -54179,7 +54179,7 @@ Body:
       bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",getrefine()/2;
   - Id: 312302
     AegisName: DK_Soul_DB
-    Name: Dragon Knight Soul (Dragonic Breath)
+    Name: 盧恩龍爵之魂(天龍氣息)
     Type: Card
     SubType: Enchant
     Script: |

@@ -36202,7 +36202,8 @@ Body:
     Type: Usable
     Weight: 30
     Script: |
-      if(strcharinfo(3)=="jor_sklf2") { warp "jor_sklf2",0,0; }
+      if(strcharinfo(3)!="jor_sklf2") { warp "jor_sklf2",0,0; }
+      else{dispbottom "已經在此處了～";getitem 103502,1;}
   - Id: 103512
     AegisName: Evt_20th_Silver
     Name: 過去的英雄碎片盒子

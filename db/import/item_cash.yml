@@ -74,6 +74,8 @@ Body:
 
   - Tab: Hot
     Items:
+      - Item: Shadow_Box_Lv3 # 高級影子箱子
+        Price: 80
       - Item: Change_Name_Card
         Price: 1000
       - Item: Change_Slot_Card

@@ -1100,12 +1100,10 @@ OnInstanceInit:
 
 	if('Fort_count1>=6){
 	dispbottom "達到6人額外獎勵：";
-	callfunc "Custom_instance_reward";
 	}
 	if('Fort_count1>=10){
 	dispbottom "達到10人額外獎勵：";
 	getitem 34123,1;	//魔物要塞寶箱
-	callfunc "Custom_instance_reward";
 	}
 	getitem 34123,1;	//魔物要塞寶箱
 	callfunc "Custom_instance_reward";
