@@ -334,6 +334,7 @@ OnEnd1:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 飛空艇祕寶",bc_all,0xD7BA98;	
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -359,6 +360,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 星座祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -384,6 +386,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 灰狼祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -414,6 +417,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 淨化祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -440,6 +444,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 幽靈祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -473,6 +478,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 生物祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -500,6 +506,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 悔恨祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -529,6 +536,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 雪花祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -555,6 +563,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 自動祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -583,6 +592,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 死亡祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -610,6 +620,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 超時空祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -637,6 +648,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 施密特祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -648,7 +660,6 @@ OnInstanceInit:
 2@aby,161,142,3	script	EDDA祕寶#Nature_Box_02	4_STAR_BOX_SCORE,{
 
 	misceffect 10;
-	callfunc "Custom_instance_reward";
 	getitem 61007,1*$EP_S;	//商城10點金幣
 	getitem 25786,50*$EP_S;	//生物研究卷宗
 	getitem 25787,50*$EP_S;	//生物研究零件
@@ -659,6 +670,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 EDDA祕寶",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
@@ -686,6 +698,7 @@ OnInstanceInit:
 	announce "【深淵地洞】："+strcharinfo(0)+"獲得了稀有的 古城祕寶 獲得大量材料",bc_all,0xD7BA98;
 	}
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
+	callfunc "Custom_instance_reward";
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	end;
 
