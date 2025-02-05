@@ -48468,57 +48468,27 @@ Body:
               - Item: Expert_Archer4
                 Chance: 1785
               - Item: Expert_Archer5
-                Chance: 1825
-          
+                Chance: 1825          
         PerfectEnchants:
-          - Item: Luck5
+          - Item: Arbiter_Warrant
+            Price: 5000000
             Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Vitality5
+              - Material: Yorscalp_Serpent
+                Amount: 20
+              - Material: Yorscalp_Symbol
+                Amount: 100
+              - Material: Yorscalp_Spirit
+                Amount: 200      
+          - Item: Bailiff_Warrant
+            Price: 5000000
             Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Agility5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Dexterity5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Inteligence5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Strength5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 1
-          - Item: Fighting_Spirit5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
-          - Item: Unknown_Item_29236  # 完全迴避+2
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
-          - Item: Spell5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
-          - Item: Critical5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
-          - Item: MHP4
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
-          - Item: Expert_Archer5
-            Materials:
-              - Material: Unknown_Item_70117
-                Amount: 2
+              - Material: Yorscalp_Serpent
+                Amount: 20
+              - Material: Yorscalp_Symbol
+                Amount: 100
+              - Material: Yorscalp_Spirit
+                Amount: 200                           
+
                 
 #時間裂隙武器
   - Id: 150

@@ -36194,7 +36194,8 @@ Body:
     Type: Usable
     Weight: 30
     Script: |
-      if(strcharinfo(3)=="jor_sklf1") { warp "jor_sklf1",0,0; }
+      if(strcharinfo(3)!="jor_sklf1") { warp "jor_sklf1",0,0; }
+      else{dispbottom "已經在此處了～";getitem 103501,1;}
   - Id: 103502
     AegisName: Yorscalp_Fly_Wing_2F
     Name: 喬樂斯加爾夫密穴2層瞬間移動石
