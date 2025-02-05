@@ -764,7 +764,8 @@ OnCcddEnd:
 	}
 	getitem 34118,1;	//下水道金庫寶箱
 	callfunc "Custom_instance_reward";
-
+	set #Instance_S_Points,#Instance_S_Points+20;	//自創副本積分
+	dispbottom "自創副本積分+20";
 	if(checkquest(33022)==1){completequest 33022; dispbottom "自創副本任務 (已完成)";}
 	warp $Instance_S_MA$,$Instance_S_MAP_X,$Instance_S_MAP_Y;
 	close;
