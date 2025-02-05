@@ -93144,7 +93144,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 10
     Refineable: true
@@ -93170,7 +93170,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 10
     Refineable: true
@@ -93196,7 +93196,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 35
     Refineable: true
@@ -93222,7 +93222,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 35
     Refineable: true
@@ -93248,7 +93248,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 55
     Refineable: true
@@ -93274,7 +93274,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 55
     Refineable: true
@@ -93299,7 +93299,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 12
     Refineable: true
@@ -93325,7 +93325,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -93348,7 +93348,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 80
     Refineable: true
@@ -93374,7 +93374,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -93397,7 +93397,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 80
     Refineable: true
@@ -93420,7 +93420,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 26
     Script: |
@@ -93442,7 +93442,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 40
     Script: |
@@ -93467,7 +93467,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
@@ -93491,7 +93491,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     Script: |
       bonus bHit,-5;
@@ -93513,7 +93513,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
@@ -93537,7 +93537,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 99
     Refineable: true
@@ -93561,7 +93561,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 99
     Refineable: true
@@ -93636,7 +93636,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
@@ -93660,7 +93660,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 24
     Refineable: true
@@ -93686,7 +93686,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 24
     Refineable: true
@@ -93712,7 +93712,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 56
     Refineable: true
@@ -93738,7 +93738,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 14
     Refineable: true
@@ -93764,7 +93764,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 35
     Refineable: true
@@ -93789,7 +93789,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 24
     Refineable: true
@@ -93815,7 +93815,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 55
     Refineable: true
@@ -93838,7 +93838,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 68
     Refineable: true
@@ -93864,7 +93864,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 68
     Refineable: true
@@ -93889,7 +93889,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 52
     Refineable: true
@@ -93915,7 +93915,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 52
     Refineable: true
@@ -93941,7 +93941,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 65
     Refineable: true
@@ -93964,7 +93964,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -93990,7 +93990,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94015,7 +94015,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94041,7 +94041,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94066,7 +94066,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 70
     Refineable: true
@@ -94092,7 +94092,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94118,7 +94118,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94144,7 +94144,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -94167,7 +94167,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 80
     Refineable: true
@@ -94190,7 +94190,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 80
     Refineable: true
@@ -94213,7 +94213,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 80
     Refineable: true
@@ -94236,7 +94236,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 80
     Refineable: true
@@ -94261,7 +94261,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
     Script: |
@@ -94283,7 +94283,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 80
     Refineable: true
@@ -94306,7 +94306,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 80
     Refineable: true
@@ -94329,7 +94329,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 80
     Refineable: true
@@ -94352,7 +94352,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 80
     Refineable: true
@@ -94378,7 +94378,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 1
     Refineable: true
@@ -94400,7 +94400,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
   - Id: 13182
     AegisName: N_Drifter
@@ -94421,7 +94421,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 1
   - Id: 13183
@@ -94443,7 +94443,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     EquipLevelMin: 1
   - Id: 13189
@@ -94553,7 +94553,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 140
     Refineable: true
@@ -94573,7 +94573,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 140
     Refineable: true
@@ -94593,7 +94593,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 106
     Refineable: true
@@ -94610,7 +94610,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 140
     Refineable: true
@@ -94630,7 +94630,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 140
     Refineable: true
@@ -94649,7 +94649,7 @@ Body:
     Jobs:
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 110
     Refineable: true
@@ -96495,7 +96495,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 60
     Script: |
@@ -99287,7 +99287,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -99315,7 +99315,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -99343,7 +99343,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -99371,7 +99371,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -99398,7 +99398,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 40
     Refineable: true
@@ -99558,7 +99558,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -99960,7 +99960,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true
@@ -100528,7 +100528,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 160
     Refineable: true
@@ -102019,7 +102019,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 120
     Refineable: true
@@ -102128,7 +102128,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 120
     Refineable: true
@@ -102178,7 +102178,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 120
     Refineable: true
@@ -102345,7 +102345,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -102371,7 +102371,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -102397,7 +102397,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -102423,7 +102423,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -102449,7 +102449,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -105193,7 +105193,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 170
     Refineable: true
@@ -106357,7 +106357,7 @@ Body:
       Baby: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
@@ -122745,7 +122745,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
