@@ -22925,7 +22925,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -22954,7 +22954,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -23052,7 +23052,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -23084,7 +23084,6 @@ Body:
       Fourth: true
     Locations:
       Right_Hand: true
-      Left_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -23130,7 +23129,6 @@ Body:
       Fourth: true
     Locations:
       Right_Hand: true
-      Left_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -23174,7 +23172,6 @@ Body:
       Fourth: true
     Locations:
       Right_Hand: true
-      Left_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -23220,7 +23217,6 @@ Body:
       Fourth: true
     Locations:
       Right_Hand: true
-      Left_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Refineable: true
@@ -23258,7 +23254,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -23293,7 +23289,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -23326,7 +23322,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -23393,7 +23389,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 230
     Refineable: true
@@ -23438,7 +23434,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 230
     Refineable: true
@@ -23483,7 +23479,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 230
     Refineable: true
@@ -23529,7 +23525,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 190
     Refineable: true
@@ -23578,7 +23574,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 180
     Refineable: true
@@ -23649,7 +23645,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 180
     Refineable: true
@@ -23683,7 +23679,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
@@ -23786,7 +23782,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
@@ -23833,7 +23829,7 @@ Body:
     Jobs:
       Archer: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 10
     Trade:
@@ -23861,7 +23857,7 @@ Body:
     Jobs:
       Rogue: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 45
     Trade:
@@ -23890,7 +23886,7 @@ Body:
     Jobs:
       Hunter: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 45
     Trade:
@@ -23948,7 +23944,7 @@ Body:
     Jobs:
       BardDancer: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 45
     Trade:
@@ -23980,7 +23976,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Trade:
@@ -24021,7 +24017,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Trade:
@@ -24103,7 +24099,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 190
     Refineable: true
@@ -24157,7 +24153,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 190
     Refineable: true
@@ -24212,7 +24208,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 190
     Refineable: true
@@ -24265,7 +24261,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 220
     Refineable: true
@@ -24300,7 +24296,7 @@ Body:
       Hunter: true
       Rogue: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
@@ -24320,7 +24316,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
@@ -24419,7 +24415,7 @@ Body:
       All_Third: true
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 230
     Refineable: true
@@ -24441,7 +24437,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
@@ -24579,7 +24575,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 215
     Refineable: true
@@ -24632,7 +24628,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 215
     Refineable: true
@@ -24802,7 +24798,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
@@ -29285,7 +29281,7 @@ Body:
     Jobs:
       Rogue: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29305,7 +29301,7 @@ Body:
     Jobs:
       Hunter: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29325,7 +29321,7 @@ Body:
     Jobs:
       Hunter: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29345,7 +29341,7 @@ Body:
     Jobs:
       BardDancer: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29949,7 +29945,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
@@ -30049,7 +30045,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
@@ -30099,7 +30095,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
