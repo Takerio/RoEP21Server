@@ -24853,7 +24853,6 @@ Body:
       Rebellion: true
     Locations:
       Right_Hand: true
-      Left_Hand: true
     WeaponLevel: 1
     # Flags:
       # BuyingStore: true
@@ -24936,7 +24935,7 @@ Body:
     Jobs:
       Gunslinger: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     EquipLevelMin: 10
     Trade:
@@ -24964,7 +24963,7 @@ Body:
     Jobs:
       Gunslinger: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 45
     Trade:
@@ -25032,7 +25031,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Trade:
@@ -25377,7 +25376,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -25503,7 +25502,7 @@ Body:
     Slots: 4
     Jobs:
       Gunslinger: true
-      Rebellion: true
+      Right_Hand: true
     Locations:
       Left_Hand: true
     WeaponLevel: 1
@@ -25521,7 +25520,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     Refineable: true
   - Id: 800031
@@ -25537,7 +25536,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
   - Id: 800032
@@ -25553,7 +25552,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     Refineable: true
   - Id: 800033
@@ -25569,7 +25568,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     Refineable: true
 
@@ -25598,7 +25597,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -25694,7 +25693,7 @@ Body:
     Jobs:
       Gunslinger: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     EquipLevelMin: 45
     Trade:
@@ -25952,7 +25951,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 170
     Refineable: true
@@ -26002,7 +26001,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -26130,7 +26129,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     Refineable: true
   - Id: 810030
@@ -26146,7 +26145,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     Refineable: true
   - Id: 810031
@@ -26162,7 +26161,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
   - Id: 810032
@@ -26178,7 +26177,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     Refineable: true
   - Id: 810033
@@ -26211,7 +26210,7 @@ Body:
     Classes:
       Fourth: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 250
     Refineable: true
@@ -26257,7 +26256,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -26558,7 +26557,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -26689,7 +26688,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     Refineable: true
   - Id: 820024
@@ -26705,7 +26704,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     Refineable: true
   - Id: 820025
@@ -26721,7 +26720,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
   - Id: 820026
@@ -26737,7 +26736,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     Refineable: true
   - Id: 820027
@@ -26753,7 +26752,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     Refineable: true
   - Id: 820028
@@ -26852,7 +26851,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -26984,7 +26983,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 100
     Trade:
@@ -27272,7 +27271,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -27400,7 +27399,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     Refineable: true
   - Id: 830029
@@ -27416,7 +27415,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     Refineable: true
   - Id: 830030
@@ -27432,7 +27431,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
   - Id: 830031
@@ -27448,7 +27447,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     Refineable: true
   - Id: 830032
@@ -27464,7 +27463,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     Refineable: true
   - Id: 830033
@@ -27528,7 +27527,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     EquipLevelMin: 150
     Refineable: true
@@ -27869,7 +27868,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -27997,7 +27996,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 1
     Refineable: true
   - Id: 840024
@@ -28013,7 +28012,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 2
     Refineable: true
   - Id: 840025
@@ -28029,7 +28028,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 3
     Refineable: true
   - Id: 840026
@@ -28045,7 +28044,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
     Refineable: true
   - Id: 840027
@@ -28061,7 +28060,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     Refineable: true
   - Id: 840028
@@ -29362,7 +29361,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29383,7 +29382,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29404,7 +29403,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29426,7 +29425,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
@@ -29447,7 +29446,7 @@ Body:
       Gunslinger: true
       Rebellion: true
     Locations:
-      Left_Hand: true
+      Right_Hand: true
     WeaponLevel: 5
     EquipLevelMin: 200
     Refineable: true
