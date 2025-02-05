@@ -29438,6 +29438,7 @@ Body:
     Script: |
       specialeffect2 EF_HEAL3;
       sc_start SC_M_DEFSCROLL,600000,0;
+      bonus_script "{ bonus bDef,500;bonus bMdef,200; }",3600,1,1,EFST_M_DEFSCROLL;
 
   - Id: 23012
     AegisName: Comp_Small_Mana_Potion
