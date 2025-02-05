@@ -6,7 +6,6 @@
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
 			if(!.@sizeof){
-				mes "[百貨商店]";
 				mes "尚未新增販賣道具.";
 				close;
 			}

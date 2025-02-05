@@ -10485,6 +10485,10 @@ Body:
       dispbottom "目前紅利 "+#Dividend_Points+"";
       dispbottom "目前商城點數 "+#CASHPOINTS+"";
       delitem 2300000,amount;
+  - Id: 2300010
+    AegisName: Instance_Del_Cooldown_Ticket
+    Name: 官方副本次數增加券
+    Type: Etc
 #龍族來襲用裝備
   - Id: 2210004
     AegisName: C_Head_Dragon_Event

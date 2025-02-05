@@ -1,66 +1,66 @@
-headq,39,29,5	script	EDDA�j�����f��	841,{
+headq,39,29,5	script	EDDA古城的殞落	841,{
 	set $@MaxWimdows,3;
 {
            query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
-              //�ˬd�PIP�b��
+              //檢查同IP帳號
               query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@LastIp$+"'", .@AccountId);
                  set .@aidtemp,getcharid(3,strcharinfo(0));
-               //�ˬd�PIP�b�u�H��
+               //檢查同IP在線人數
                   for(set .@i ,0;.@i<getarraysize(.@AccountId);set .@i,.@i+1)
                    {
                              if(attachrid(.@AccountId[.@i]))
                                   {
-if ( compare(strcharinfo(3),"@")  && !checkvending()) set .@j,.@j+1;//�]�w����a��
+if ( compare(strcharinfo(3),"@")  && !checkvending()) set .@j,.@j+1;//設定限制地圖
                                       }
                                  detachrid;
                          }
                         attachrid .@aidtemp;
                         if(.@j >= $@MaxWimdows)
                           {           
-                             dispbottom "�ۦPIP���i�W�L3�Ө���i�J�ƥ����C";
+                             dispbottom "相同IP不可超過3個角色進入副本ㄛ。";
                              end;
                           }
 
         }
-if( checkquest(66902,PLAYTIME) == 0 ) {mes"�ƥ��B��N�o��";close;}
+if( checkquest(66902,PLAYTIME) == 0 ) {mes"副本處於冷卻中";close;}
 if( checkquest(66902,PLAYTIME) == 2 ) {erasequest 66902;}
 if (getcharid(1) == 0){
-mes "^FF0000�A�S���������W��.^000000";
+mes "^FF0000你沒有隊伍不能報名喔.^000000";
 close;
 }
-set .@md_name$,"EDDA�j�����f��";
-mes "-----------[�ƥ��T��]-----------";
-mes "�ƥ��W��: "+.@md_name$+" ";
-mes "����H��: ������ ";
-mes "�����:^9966FF 170���H�W ^000000";
-mes "�ƥ��N�o�ɶ�:^F75000 2�p�� ^000000";
-mes "�n�ӬD�Ԭݬݶ�?";
-if (!instance_check_party(getcharid(1),1,100,260)) { mes "�ܤֻݭn100���H�W�A�ӬD��"; close;}
-if (getpartyleader(getcharid(1),2) != getcharid(0)){goto xx;}switch(select("���W"+.@md_name$+"�ƥ�:�i�J"+.@md_name$+"�ƥ�:�������")){
+set .@md_name$,"EDDA古城的殞落";
+mes "-----------[副本訊息]-----------";
+mes "副本名稱: "+.@md_name$+" ";
+mes "限制人數: 不限制 ";
+mes "限制等級:^9966FF 170等以上 ^000000";
+mes "副本冷卻時間:^F75000 2小時 ^000000";
+mes "要來挑戰看看嗎?";
+if (!instance_check_party(getcharid(1),1,100,260)) { mes "至少需要100等以上再來挑戰"; close;}
+if (getpartyleader(getcharid(1),2) != getcharid(0)){goto xx;}switch(select("報名"+.@md_name$+"副本:進入"+.@md_name$+"副本:取消對話")){
 case 1:
 if (instance_create(.@md_name$) < 0) {
 next;
-mes "����W��: "+getpartyname(getcharid(1));
-mes "�����: "+strcharinfo(0);
-mes "^0000ff"+.@md_name$+" ^000000- �Ыإ���!";
+mes "隊伍名稱: "+getpartyname(getcharid(1));
+mes "隊伍隊長: "+strcharinfo(0);
+mes "^0000ff"+.@md_name$+" ^000000- 創建失敗!";
 close;
 }
-xx: switch(select("�i�J"+.@md_name$+"�ƥ�:����")){
+xx: switch(select("進入"+.@md_name$+"副本:取消")){
 case 1:
 switch(instance_enter(.@md_name$)) {
 case 3:
-mes "�X�{�������~�C!";
+mes "出現未知錯誤。!";
 close;
 case 2:
-next;mes "���G�O�z�������èS���ЫظӰƥ�";
+next;mes "似乎是您的隊長並沒有創建該副本";
 close;
 case 1:
-mes "�u���έ��~��i�J�C";
+mes "只有團員才能進入。";
 close;
 case 0:
 setquest 66902;
 if(getpartyleader(getcharid(1),2) == getcharid(0)) {
-announce "(�t�ΰT��) ���� �u"+getpartyname(getcharid(1))+"�v �}�l�D�� ["+.@md_name$+"]",15,0x00FFFF;  
+announce "(系統訊息) 隊伍 「"+getpartyname(getcharid(1))+"」 開始挑戰 ["+.@md_name$+"]",15,0x00FFFF;  
 }
 end;
 
@@ -78,46 +78,46 @@ close;
 }
 
 
-function	script	EDDA�j�����f��(ı��)	{
-if( checkquest(66902,PLAYTIME) == 0 ) {mes"�ƥ��B��N�o��";close;}
+function	script	EDDA古城的殞落(覺醒)	{
+if( checkquest(66902,PLAYTIME) == 0 ) {mes"副本處於冷卻中";close;}
 if( checkquest(66902,PLAYTIME) == 2 ) {erasequest 66902;}
-set .@md_name$,"EDDA�j�����f��(ı��)";
-mes "-----------[�ƥ��T��]-----------";
-mes "�ƥ��W��: "+.@md_name$+" ";
-mes "����H��: ������ ";
-mes "�����:^9966FF 170���H�W ^000000";
-mes "�ƥ��N�o�ɶ�:^F75000 6�p�� ^000000";
+set .@md_name$,"EDDA古城的殞落(覺醒)";
+mes "-----------[副本訊息]-----------";
+mes "副本名稱: "+.@md_name$+" ";
+mes "限制人數: 不限制 ";
+mes "限制等級:^9966FF 170等以上 ^000000";
+mes "副本冷卻時間:^F75000 6小時 ^000000";
 
-mes "�n�ӬD�Ԭݬݶ�?";
-if (!instance_check_party(getcharid(1),1,170,260)) { mes "�ܤֻݭn170���H�W�A�ӬD��"; close;}
-switch(select("�إ߰ƥ�:�i�J�ƥ�:����i�J�ǰe")){
+mes "要來挑戰看看嗎?";
+if (!instance_check_party(getcharid(1),1,170,260)) { mes "至少需要170等以上再來挑戰"; close;}
+switch(select("建立副本:進入副本:隊伍進入傳送")){
 case 1:
 if (instance_create(.@md_name$) < 0) {
 next;
-mes "����W��: "+getpartyname(getcharid(1));
-mes "�����: "+strcharinfo(0);
-mes "^0000ff"+.@md_name$+" ^000000- �Ыإ���!";
+mes "隊伍名稱: "+getpartyname(getcharid(1));
+mes "隊伍隊長: "+strcharinfo(0);
+mes "^0000ff"+.@md_name$+" ^000000- 創建失敗!";
 close;
 }
-mes ""+.md_name$+"�w�g�ХߤF, �п��^0066CC�i�J"+.@md_name$+"^000000.";
+mes ""+.md_name$+"已經創立了, 請選擇^0066CC進入"+.@md_name$+"^000000.";
 close;
 case 2:
 switch(instance_enter(.@md_name$)) {
 case 3:
-mes "�D�}�����~(3)!";
+mes "主開關錯誤(3)!";
 close;
 case 2:
-mes "�D�}�����~(2)!";
+mes "主開關錯誤(2)!";
 close;
 case 1:
-mes "�D�}�����~(1)!";
+mes "主開關錯誤(1)!";
 close;
 case 0:
-set 'ins_name$,"EDDA�j�����f��(ı��)";
+set 'ins_name$,"EDDA古城的殞落(覺醒)";
 set giftedda,0;
 setquest 66902;
 if(getpartyleader(getcharid(1),2) == getcharid(0)) {
-announce "(�t�ΰT��) ���� �u"+getpartyname(getcharid(1))+"�v �}�l�D�� ["+.@md_name$+"]",15,0x33FFFF;  
+announce "(系統訊息) 隊伍 「"+getpartyname(getcharid(1))+"」 開始挑戰 ["+.@md_name$+"]",15,0x33FFFF;  
 }
 end;
 }
@@ -127,29 +127,29 @@ close;
 }
 
 /******************************
- - �Ĥ@�϶����d
+ - 第一區奧斯卡
 ******************************/
-1@gl_prq,80,21,0	script	�����d#Session1	139,5,5,{
+1@gl_prq,80,21,0	script	奧斯卡#Session1	139,5,5,{
 	end;
 
 OnTouch:
 	if('Session == 0 && is_party_leader())
 	{
-if (compare(instance_live_info(ILI_NAME),"ı��"))
+if (compare(instance_live_info(ILI_NAME),"覺醒"))
 			'mode = 1;
 		'Session = 1;
 		hideonnpc instance_npcname(strnpcinfo(0));
 		areamonster 'map$,10,83,80,29,"--ja--",20392,20,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 		areamonster 'map$,10,83,80,29,"--ja--",20250,10;
-		instance_announce 0,"�����d : �o�̬O�H�e�ΰ��i��������.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 這裡是以前用做烹飪的場所.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"�����d : �ҥH�o�̪����`�̳��O�@�ǥ��b�ǳƶ��檺�k��.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 所以這裡的受害者都是一些正在準備飯菜的女僕.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"�����d : �A�ߤ@�వ���N�O���o�̧K����h���h�W.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 你唯一能做的就是讓她們免受更多的痛苦.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"�����d : ����{�b, �ѩ�o�̪��ɶ����_���ƪ��ʽ�, �ҥH�D�`�����H�e�i.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 直到現在, 由於這裡的時間不斷重複的性質, 所以非常的難以前進.",bc_map,0x0fff8C;
 		sleep 3000;
-		instance_announce 0,"�����d : ��F, �p�G�ݨ���K��ƪ��ܽФ@�w�n�׶}.���O�o�ӪŶ��̷̳ФH���F��, �|�ϧA�x�b�o�̵L�k�e�i.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 對了, 如果看到火焰荊棘的話請一定要避開.那是這個空間裡最煩人的東西, 會使你困在這裡無法前進.",bc_map,0x0fff8C;
 		
 	}
 	end;
@@ -157,10 +157,10 @@ if (compare(instance_live_info(ILI_NAME),"ı��"))
 OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
-		instance_announce 0,"�����d : �Ĥ@�ϰ쪺�ɶ��y�I�t�פw�g����í�w�U�ӤF, �����ಾ��U�@�ϰ�a.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 第一區域的時間流淌速度已經漸漸穩定下來了, 那麼轉移到下一區域吧.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 123,62;
-		donpcevent instance_npcname("�����d#Session2")+"::OnEnable";
+		donpcevent instance_npcname("奧斯卡#Session2")+"::OnEnable";
 	}
 	end;
 	
@@ -170,9 +170,9 @@ OnInstanceInit:
 }
 
 /******************************
- - �ĤG�϶����d
+ - 第二區奧斯卡
 ******************************/
-1@gl_prq,127,63,3	script	�����d#Session2	4_ED_OSCAR,3,3,{
+1@gl_prq,127,63,3	script	奧斯卡#Session2	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -196,13 +196,13 @@ OnTouch:
 			areamonster 'map$,126,75,187,12,"--ja--",20394,3,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 		}
 		areamonster 'map$,126,75,187,12,"--ja--",20250,10;
-		npctalk "�����d : �o�̬O�M�h�Υ汵�u�@������.";
+		npctalk "奧斯卡 : 這裡是騎士團交接工作的場所.";
 		sleep 3000;
-		npctalk "�����d : ���ɥ�Z��ȧ@�𮧪��H�٨S�Ӫ��κM��.";
+		npctalk "奧斯卡 : 當時交班後暫作休息的人還沒來的及撤離.";
 		sleep 3000;
-		npctalk "�����d : �M�������k���O�@�˪�.";
+		npctalk "奧斯卡 : 和做飯的女僕是一樣的.";
 		sleep 3000;
-		npctalk "�����d : �·не����o�̦w���a.";
+		npctalk "奧斯卡 : 麻煩請給予她們安息吧.";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -212,10 +212,10 @@ OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"�����d : �ĤG�ϰ쪺�ɶ��y�I�t�פw�g����í�w�U�ӤF, �����ಾ��U�@�ϰ�a.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 第二區域的時間流淌速度已經漸漸穩定下來了, 那麼轉移到下一區域吧.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 150,116;
-		donpcevent instance_npcname("�����d#Session3")+"::OnEnable";
+		donpcevent instance_npcname("奧斯卡#Session3")+"::OnEnable";
 	}
 	end;
 	
@@ -232,9 +232,9 @@ OnInstanceInit:
 }
 
 /******************************
- - �ĤT�϶����d
+ - 第三區奧斯卡
 ******************************/
-1@gl_prq,148,121,3	script	�����d#Session3	4_ED_OSCAR,3,3,{
+1@gl_prq,148,121,3	script	奧斯卡#Session3	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -258,13 +258,13 @@ OnTouch:
 			areamonster 'map$,122,189,187,106,"--ja--",20390,5,instance_npcname(strnpcinfo(0))+"::OnLoop";
 		}
 		areamonster 'map$,122,189,187,106,"--ja--",20250,10;
-		npctalk "�����d : �o�̬O�G���J�٭ݭ���M�𮧫Ǫ�����.";
+		npctalk "奧斯卡 : 這裡是二號宿舍兼食堂和休息室的場所.";
 		sleep 3000;
-		npctalk "�����d : ���W�t���������q�i�����B�e��o��, �A�G�N���r�Ĥ@�˴����b������.";
+		npctalk "奧斯卡 : 早上配給的食物從烹飪間運送到這裡, 詛咒就像毒藥一樣散播在食物中.";
 		sleep 3000;
-		npctalk "�����d : �������Ӧ��⮳�������H��, �̲פ]�L�k�k��.";
+		npctalk "奧斯卡 : 不知情而伸手拿食物的人們, 最終也無法逃脫.";
 		sleep 3000;
-		npctalk "�����d : ���Χڧڿ˦ۥX��O�̦n��, ��·ЧA�]��o�̤]�M�z�@�U�ܡH";
+		npctalk "奧斯卡 : 不用我我親自出手是最好的, 能麻煩你也把這裡也清理一下嗎？";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -274,10 +274,10 @@ OnMyMobDead:
 	if(mobcount('map$, instance_npcname(strnpcinfo(0))+"::OnMyMobDead") < 1)
 	{
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"�����d : �ĤT�ϰ쪺�ɶ��y�I�t�פw�g����í�w�U�ӤF, �����ಾ��U�@�ϰ�a.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 第三區域的時間流淌速度已經漸漸穩定下來了, 那麼轉移到下一區域吧.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 77,177;
-		donpcevent instance_npcname("�����d#Session4")+"::OnEnable";
+		donpcevent instance_npcname("奧斯卡#Session4")+"::OnEnable";
 	}
 	end;
 
@@ -294,10 +294,10 @@ OnInstanceInit:
 }
 
 /******************************
- - �ĥ|�϶����d
+ - 第四區奧斯卡
 ******************************/
 1@gl_prq,31,128,0	warp	#EDDA_Warp	2,2,1@gl_prq,53,244
-1@gl_prq,67,176,5	script	�����d#Session4	4_ED_OSCAR,3,3,{
+1@gl_prq,67,176,5	script	奧斯卡#Session4	4_ED_OSCAR,3,3,{
 	end;
 	
 OnEnable:
@@ -321,11 +321,11 @@ OnTouch:
 			areamonster 'map$,16,187,69,112,"--ja--",20394,3,instance_npcname(strnpcinfo(0))+"::OnLoop";
 		}
 		areamonster 'map$,16,187,69,112,"--ja--",20250,10;
-		npctalk "�����d : �o�Ӱϰ�O�H�e�s��x�Ƹ˳ƪ��a��.";
+		npctalk "奧斯卡 : 這個區域是以前存放軍事裝備的地方.";
 		sleep 3000;
-		npctalk "�����d : �j�������O�@�ǰ��������x�b�ϥΪ�.";
+		npctalk "奧斯卡 : 大部分都是一些高階指揮官在使用的.";
 		sleep 3000;
-		npctalk "�����d : �ҥH�x�b�o�̪��F��̬O�۷��j�j��, �Фj�a�@�w�n�p��.";
+		npctalk "奧斯卡 : 所以困在這裡的靈魂們是相當強大的, 請大家一定要小心.";
 		sleep 3000;
 		hideonnpc instance_npcname(strnpcinfo(0));
 	}
@@ -336,11 +336,11 @@ OnMyMobDead:
 	{
 		enablenpc instance_npcname("#EDDA_Warp");
 		killmonster 'map$,instance_npcname(strnpcinfo(0))+"::OnLoop";
-		instance_announce 0,"�����d : �ĥ|�ϰ쪺�ɶ��y�I�t�פw�g����í�w�U�ӤF, �����ಾ��U�@�ϰ�a.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 第四區域的時間流淌速度已經漸漸穩定下來了, 那麼轉移到下一區域吧.",bc_map,0x0fff8C;
 		sleep 3000;
 		mapwarp 'map$, 'map$, 53,244;
-		donpcevent instance_npcname("�����d#Session5")+"::OnEnable";
-		donpcevent instance_npcname("�ɧg �I�K�S���#Session5")+"::OnEnable";
+		donpcevent instance_npcname("奧斯卡#Session5")+"::OnEnable";
+		donpcevent instance_npcname("暴君 施密特國王#Session5")+"::OnEnable";
 	}
 	end;
 
@@ -355,9 +355,9 @@ OnInstanceInit:
 }
 
 /******************************
- - �Ĥ��϶����d
+ - 第五區奧斯卡
 ******************************/
-1@gl_prq,52,270,5	script	�����d#Session5	4_ED_OSCAR,3,3,{
+1@gl_prq,52,270,5	script	奧斯卡#Session5	4_ED_OSCAR,3,3,{
 	end;
 
 OnEnable:
@@ -368,19 +368,19 @@ OnTouch:
 	if('Session == 4 && is_party_leader())
 	{
 		'Session = 5;
-		npctalk "�����d : Umm...�٦��@���F��r�ަb�o��...";
+		npctalk "奧斯卡 : Umm...還有一個靈魂徘徊在這裡...";
 		sleep 3000;
-		npctalk "�����d : ���Ӧ��ӻP�ɧg �I�K�S����ݦ��ۦP�~�[���H.";
+		npctalk "奧斯卡 : 那個有個與暴君 施密特國王看似相同外觀的人.";
 		sleep 3000;
-		npctalk "�����d : ���o�w�g���O��Ӫ��L�F.";
+		npctalk "奧斯卡 : 但這已經不是原來的他了.";
 		sleep 3000;
-		npctalk "�����d : �ҥH�A�̩Ҧ���L�����ɱN���������ʤW������.";
+		npctalk "奧斯卡 : 所以你們所有對他攻擊時將不受任何行動上的限制.";
 		sleep 3000;
-		npctalk "�����d : �ڷ|�յ�í�w���o�Ӱϰ쪺�ɶ�, �԰��Y�N�}�l�F, �зǳƦn.";
+		npctalk "奧斯卡 : 我會試著穩定住這個區域的時間, 戰鬥即將開始了, 請準備好.";
 		sleep 3000;
-		donpcevent instance_npcname("�I�K�S������#SchmditsRage")+"::OnFinal";
+		donpcevent instance_npcname("施密特的憤怒#SchmditsRage")+"::OnFinal";
 		disablenpc instance_npcname(strnpcinfo(0));
-		disablenpc instance_npcname("�ɧg �I�K�S���#Session5");
+		disablenpc instance_npcname("暴君 施密特國王#Session5");
 		mapwarp 'map$, 'map$, 52,271;
 	}
 	end;
@@ -390,7 +390,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,52,281,5	script	�ɧg �I�K�S���#Session5	4_ED_SCHMIDT,{
+1@gl_prq,52,281,5	script	暴君 施密特國王#Session5	4_ED_SCHMIDT,{
 	end;
 
 OnEnable:
@@ -403,9 +403,9 @@ OnInstanceInit:
 }
 
 /******************************
- - �����d���U������K
+ - 奧斯卡幫助停止火焰
 ******************************/
-1@gl_prq,44,283,5	script	�����d#OscarsHelp	4_ED_OSCAR,{
+1@gl_prq,44,283,5	script	奧斯卡#OscarsHelp	4_ED_OSCAR,{
 	progressbar "0xffffff",3;
 	hideonnpc instance_npcname(strnpcinfo(0));
 	disablenpc instance_npcname(strnpcinfo(0));
@@ -425,7 +425,7 @@ OnTimer30000:
 		}
 		hideoffnpc instance_npcname(strnpcinfo(0));
 		enablenpc instance_npcname(strnpcinfo(0));
-		npctalk strnpcinfo(1)+" : �p�G�A�Ʊ���K���U�ӴN�������ڪ���.";
+		npctalk strnpcinfo(1)+" : 如果你希望火焰停下來就趕緊抓住我的手.";
 	}
 	end;
 
@@ -446,7 +446,7 @@ OnTimer1000:
 	if(unitexists('SCHMIDT)) 
 	{
 		'StopFraming = 'Frame_Line;
-		instance_announce 0,"�����d : �ڤw�g���@�����K�Ȯɰ���F, ���o�������F�h�[��, �кɧֲb�ƳQ�A�G������F��.",bc_map,0x0fff8C;
+		instance_announce 0,"奧斯卡 : 我已經讓一條火焰暫時停止了, 但這維持不了多久的, 請盡快淨化被詛咒的國王靈魂.",bc_map,0x0fff8C;
 	}
 	end;
 	
@@ -454,36 +454,35 @@ OnTimer9000:
 	if(unitexists('SCHMIDT)) 
 	{
 		'StopFraming = 0;
-		donpcevent instance_npcname("�����d#OscarsHelp")+"::OnEnable";
-		initnpctimer instance_npcname("�����d#OscarsHelp");
+		donpcevent instance_npcname("奧斯卡#OscarsHelp")+"::OnEnable";
+		initnpctimer instance_npcname("奧斯卡#OscarsHelp");
 	}
 	end;
 }
 
 /******************************
- - ����I�K�S������
+ - 國王施密特的憤怒
 ******************************/
-1@gl_prq,0,0,0	script	�I�K�S������#SchmditsRage	-1,{
+1@gl_prq,0,0,0	script	施密特的憤怒#SchmditsRage	-1,{
 OnFinal:
 	if('mode)
-		monster 'map$,52,282,"�A�G�I�K�S���",20387,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		monster 'map$,52,282,"詛咒施密特國王",20387,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	else
-		monster 'map$,52,282,"�A�G�I�K�S���",20386,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		monster 'map$,52,282,"詛咒施密特國王",20386,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	'SCHMIDT = $@mobid[0];
-	donpcevent instance_npcname("�I�K�S���K#�W")+"::OnEnable";
-	donpcevent instance_npcname("�I�K�S���K#�U")+"::OnEnable";
-	donpcevent instance_npcname("�I�K�S���K#��")+"::OnEnable";
-	donpcevent instance_npcname("�I�K�S���K#�k")+"::OnEnable";
-	initnpctimer instance_npcname("�����d#OscarsHelp");
-	initnpctimer instance_npcname("�I�K�S������#SchmditsRage");
+	donpcevent instance_npcname("施密特火焰#上")+"::OnEnable";
+	donpcevent instance_npcname("施密特火焰#下")+"::OnEnable";
+	donpcevent instance_npcname("施密特火焰#左")+"::OnEnable";
+	donpcevent instance_npcname("施密特火焰#右")+"::OnEnable";
+	initnpctimer instance_npcname("奧斯卡#OscarsHelp");
+	initnpctimer instance_npcname("施密特的憤怒#SchmditsRage");
 	end;
 	
-// �I�K�S���`�ƥ�
+// 施密特死亡事件
 OnMyMobDead:
 addrid(2,0,getcharid(1));
 if (strcharinfo(3)==instance_mapname("1@gl_prq")){
 set #hunter,#hunter+10;
-callfunc "offical_instance_finish",0;
 if ('mode==1){
 getitem 25739,10;
 getitem 10502413,rand(1,3);
@@ -493,16 +492,16 @@ getitem 25740,6;
 getitem 10502413,rand(1,3);
 }
 if (getequipid(EQI_COSTUME_HEAD_MID) == 31900||getequipid(EQI_HEAD_TOP) == 31600){set #hunter,#hunter+2;}
-dispbottom "[�t�ΰT��] �ƥ��I�ƼW�[";
+dispbottom "[系統訊息] 副本點數增加";
 }
-	instance_announce 0,"�����d : �ש�K �N����I�K�S���F��b��, �ϥL�Ѳ�F�K",bc_map,0x0fff8C;
+	instance_announce 0,"奧斯卡 : 終於… 將國王施密特的靈魂淨化, 使他解脫了…",bc_map,0x0fff8C;
 	donpcevent instance_npcname("#RageSpirit1")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit2")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit3")+"::OnDisable";
 	donpcevent instance_npcname("#RageSpirit4")+"::OnDisable";
-	donpcevent instance_npcname("�����d#OscarsHelp")+"::OnDisable";
-	stopnpctimer instance_npcname("�I�K�S������#SchmditsRage");
-	donpcevent instance_npcname("�����d#Reward")+"::OnEnable";
+	donpcevent instance_npcname("奧斯卡#OscarsHelp")+"::OnDisable";
+	stopnpctimer instance_npcname("施密特的憤怒#SchmditsRage");
+	donpcevent instance_npcname("奧斯卡#Reward")+"::OnEnable";
 	end;
 
 OnTimer18000:
@@ -512,9 +511,9 @@ OnTimer18000:
 		getunitdata 'SCHMIDT, .@mob_data;
 		setunitdata 'SCHMIDT, UMOB_ATKMIN, .@mob_data[UMOB_ATKMIN]*2;
 		setunitdata 'SCHMIDT, UMOB_ATKMAX, .@mob_data[UMOB_ATKMAX]*2;
-		instance_announce 0,"�Q�A�G����� �I�K�S : �h�W���_��i�ۧڡK���U�������ڸѲ�a�K",bc_map,0xFF5151;
+		instance_announce 0,"被詛咒的國王 施密特 : 痛苦不斷折磨著我…拜託趕快讓我解脫吧…",bc_map,0xFF5151;
 		sleep 1800;
-		instance_announce 0,"����I�K�S���F��w�g�i�J�g�ɪ��A, �оa���¶�b���䪺���c�𮧲b�ƥ�, �w�Ѱ��g�ɪ��A.",bc_map,0x9F35FF;
+		instance_announce 0,"國王施密特的靈魂已經進入狂暴狀態, 請靠近圍繞在旁邊的邪惡氣息淨化它, 已解除狂暴狀態.",bc_map,0x9F35FF;
 		donpcevent instance_npcname("#RageSpirit1")+"::OnEnable";
 		donpcevent instance_npcname("#RageSpirit2")+"::OnEnable";
 		donpcevent instance_npcname("#RageSpirit3")+"::OnEnable";
@@ -533,9 +532,9 @@ OnTouch:
 		disablenpc instance_npcname(strnpcinfo(0));
 		if('Rage <= 0)
 		{
-			instance_announce 0,"�����d : �L������w�g�Ȯɥ����F, �X�{�b���֧����L.",bc_map,0x0fff8C;
+			instance_announce 0,"奧斯卡 : 他的怒火已經暫時平息了, 趁現在趕快攻擊他.",bc_map,0x0fff8C;
 			sc_end SC_MA_DamageReduced,'SCHMIDT;
-			initnpctimer instance_npcname("�I�K�S������#SchmditsRage");
+			initnpctimer instance_npcname("施密特的憤怒#SchmditsRage");
 		}
 	}
 	end;
@@ -557,29 +556,30 @@ OnInstanceInit:
 1@gl_prq,64,275,0	duplicate(#RageSpirit)	#RageSpirit4	4_ENERGY_BLUE,3,3
 
 /******************************
- - ���y
+ - 獎勵
 ******************************/
-1@gl_prq,52,278,5	script	�����d#Reward	4_ED_OSCAR,{
+1@gl_prq,52,278,5	script	奧斯卡#Reward	4_ED_OSCAR,{
 if (giftedda == 1){goto bx;}
 	//cutin "OSCAR01.bmp",0;
 	mes "["+strnpcinfo(1)+"]";
-	mes "�u�O�@���W�Թ�a.";
-	mes "���L�����٬O��쥻���n�h�F";
-	mes "�p�G�گ���ۤv�Ӳb�ƪ���...";
-	mes "�N�ثe�ݨӧ��ٻݭn�@�I�ɶ�";
-	mes "�`�Ө���, �j�a���o����.";
+	mes "真是一場苦戰對吧.";
+	mes "不過結局還是比原本的好多了";
+	mes "如果我能夠自己來淨化的話...";
+	mes "就目前看來我還需要一點時間";
+	mes "總而言之, 大家做得不錯.";
 	next;
 	mes "["+strnpcinfo(1)+"]";
-	mes "�b�o�Ӯɶ��y�Y�򤧫e, ���ڭ̻������}�o�̧a.";
+	mes "在這個時間流崩塌之前, 那我們趕緊離開這裡吧.";
 	next;
-	if(select("�ڷQ�A�}�}.:�X�h.") == 1)
+	if(select("我想再逛逛.:出去.") == 1)
 	{
 		mes "["+strnpcinfo(1)+"]";
-		mes "�O��? �ک��դF. ���o�ɧ֧��ɶ��F.";
+		mes "是嗎? 我明白了. 那得盡快抓緊時間了.";
 		close2;
 		cutin "OSCAR01.bmp",255;
 		end;
 	}
+	callfunc "offical_instance_finish",0;
 	cutin "OSCAR01.bmp",255;
 	warp "Save",0,0;
 	end;
@@ -593,9 +593,9 @@ OnInstanceInit:
 	end;
 }
 /******************************
- - �Ĥ��ϰ���K�]�m
+ - 第五區域火焰設置
 ******************************/
-1@gl_prq,23,273,5	script	�I�K�S���K#��	139,{
+1@gl_prq,23,273,5	script	施密特火焰#左	139,{
 	end;
 
 OnEnable:
@@ -644,7 +644,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,87,297,5	script	�I�K�S���K#�k	139,{
+1@gl_prq,87,297,5	script	施密特火焰#右	139,{
 	end;
 
 OnEnable:
@@ -693,7 +693,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,51,304,5	script	�I�K�S���K#�W	139,{
+1@gl_prq,51,304,5	script	施密特火焰#上	139,{
 	end;
 
 OnEnable:
@@ -742,7 +742,7 @@ OnInstanceInit:
 	end;
 }
 
-1@gl_prq,51,247,5	script	�I�K�S���K#�U	139,{
+1@gl_prq,51,247,5	script	施密特火焰#下	139,{
 	end;
 
 OnEnable:
