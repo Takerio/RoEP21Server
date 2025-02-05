@@ -11118,7 +11118,7 @@ Body:
       callfunc "petskill",960373;
     Script: >
       callfunc "petstatus",960373;
-#  蜘蛛戰車(普通) 
+#  蜘蛛戰車(普通)
   - Mob: MECHASPIDER_Ord
     CaptureRate : 1000
     EggItem: item_960374
