@@ -2777,7 +2777,7 @@ Body:
 
   - Id: 101187
     AegisName: Snow_F_Refine
-    Name: Snowflower Armor 9 Refine Cube    # !todo check english name
+    Name: 雪花防具精煉+9寶箱    # !todo check english name
     Type: Delayconsume
     Weight: 10
     Trade:

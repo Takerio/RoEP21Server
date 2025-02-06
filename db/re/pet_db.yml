@@ -6676,7 +6676,7 @@ Body:
     Script: >
       callfunc "petstatus",960003;
 # 黃金蟲
-  - Mob: SCORPION
+  - Mob: GOLDEN_BUG
     CaptureRate : 1000
     EggItem: item_960004
     FoodItem: Luxurious_Pet_Food
@@ -7951,7 +7951,7 @@ Body:
     Script: >
       callfunc "petstatus",960109;
 # 代行刑者
-  - Mob: B_MOB_084
+  - Mob: AB_MOB_084
     CaptureRate : 1000
     EggItem: item_960110
     FoodItem: Luxurious_Pet_Food
@@ -8347,7 +8347,7 @@ Body:
     Script: >
       callfunc "petstatus",960142;
 # 腐屍首領
-  - Mob: AB_MOB_174
+  - Mob: AB_MOB_175
     CaptureRate : 1000
     EggItem: item_960143
     FoodItem: Luxurious_Pet_Food
@@ -8383,7 +8383,7 @@ Body:
     Script: >
       callfunc "petstatus",960145;
 # 讓特
-  - Mob: B_MOB_158
+  - Mob: AB_MOB_158
     CaptureRate : 1000
     EggItem: item_960146
     FoodItem: Luxurious_Pet_Food
@@ -9438,8 +9438,8 @@ Body:
       callfunc "petskill",960233;
     Script: >
       callfunc "petstatus",960233;
-# 紅諾博斯(初級)
-  - Mob: NOVUS_N
+# 刺錘哥布靈
+  - Mob: GOBLIN_5
     CaptureRate : 1000
     EggItem: item_960234
     FoodItem: Luxurious_Pet_Food
@@ -10927,7 +10927,7 @@ Body:
     Script: >
       callfunc "petstatus",960357;
 #  亡靈的守護者卡德斯(普通)
-  - Mob: KADES
+  - Mob: KADES_Ord
     CaptureRate : 1000
     EggItem: item_960358
     FoodItem: Luxurious_Pet_Food
@@ -11118,7 +11118,7 @@ Body:
       callfunc "petskill",960373;
     Script: >
       callfunc "petstatus",960373;
-#  蜘蛛戰車(普通) 
+#  蜘蛛戰車(普通)
   - Mob: MECHASPIDER_Ord
     CaptureRate : 1000
     EggItem: item_960374

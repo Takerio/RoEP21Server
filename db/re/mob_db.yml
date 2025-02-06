@@ -6022,7 +6022,7 @@ Body:
     DamageMotion: 360
     Ai: 21
   - Id: 20728
-    AegisName: AB_MOB_174
+    AegisName: AB_MOB_175
     Name: Zombie Master
     JapaneseName: 腐屍首領
     Level: 185
@@ -13348,7 +13348,7 @@ Body:
     Modes:
       Mvp: true
   - Id: 28243
-    AegisName: KADES
+    AegisName: KADES_Ord
     Name: Kades
     JapaneseName: 亡靈的守護者卡德斯(普通)
     Level: 170
