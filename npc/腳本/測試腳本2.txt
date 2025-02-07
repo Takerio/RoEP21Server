@@ -63,7 +63,8 @@ Ontestequip:
 	setarray n[0],0;
 	mes "請輸入要租借的裝備編號:";
 	input .@itemid;
-	if(getiteminfo(.@itemid,2) != IT_WEAPON && getiteminfo(.@itemid,2) != IT_ARMOR)
+	set .@checkitem,getiteminfo(.@itemid,2);
+	if(.@checkitem != IT_WEAPON && .@checkitem != IT_ARMOR && .@checkitem != IT_SHADOWGEAR)
 	{mes "此道具編號非裝備";
 	close;}
 
