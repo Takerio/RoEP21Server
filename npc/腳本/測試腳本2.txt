@@ -4,7 +4,7 @@
 		bindatcmd "allstat",strnpcinfo(3) + "::Onallstatus",99,99;
 		bindatcmd "t",strnpcinfo(3) + "::Ontest",99,99;
 		bindatcmd "se",strnpcinfo(3) + "::Onsend",99,99;
-		bindatcmd "te",strnpcinfo(3) + "::Ontestequip",99,99;
+		bindatcmd "te",strnpcinfo(3) + "::Ontestequip";
 		end;
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
@@ -59,6 +59,10 @@ Ontestequip:
 	setarray n[0],0;
 	mes "請輸入要租借的裝備編號:";
 	input .@itemid;
+	if(getiteminfo(.@itemid,2) != IT_WEAPON && getiteminfo(.@itemid,2) != IT_ARMOR)
+	{mes "此道具編號非裝備";
+	close;}
+
 	next;
 	mes "請輸入要精煉多少呢？";
 	input .@refine;
