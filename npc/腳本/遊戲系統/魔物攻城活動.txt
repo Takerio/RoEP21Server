@@ -194,9 +194,9 @@ OnWed2109:
 OnFri2109:
 OnSun2109:
 	announce "【魔物攻城】還有1分鐘魔物攻城活動就要開始了，請往首都南門外移動!!",bc_all;
-	//setmapflag "prt_fild08",mf_noteleport;
-	//setmapflag "prt_fild08",mf_restricted,9;
-	//announce "【魔物攻城】首都南門受到魔物詛咒導致無法使用瞬間移動跟位移技能!!",15;
+	setmapflag "prt_fild08",mf_noteleport;
+	setmapflag "prt_fild08",mf_restricted,9;
+	announce "【魔物攻城】首都南門受到魔物詛咒導致無法使用瞬間移動跟位移技能!!",15;
 	end;
 
 
@@ -362,9 +362,9 @@ OnSun2110:
 	callfunc "Monster_better_Mvp3",F_rand(3757,3758,3796,3804,20260,20273,20277,20520,20811,20843,21395);
 	sleep 60000;
 	mapannounce "prt_fild08","【魔物攻城】無數幻影MVP登場，今天活動到這邊結束了!!",bc_map,"0xffff00";
-	//removemapflag "prt_fild08",mf_noteleport;
-	//removemapflag "prt_fild08",mf_restricted,9;
-	//announce "【魔物攻城】可以使用瞬間移動跟位移技能了!!",15;
+	removemapflag "prt_fild08",mf_noteleport;
+	removemapflag "prt_fild08",mf_restricted,9;
+	announce "【魔物攻城】可以使用瞬間移動跟位移技能了!!",15;
 	end;
 
 }
