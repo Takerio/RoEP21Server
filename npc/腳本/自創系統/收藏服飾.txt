@@ -268,7 +268,7 @@ if(@storeitem_dst_storeid == 3){
 						.@selectLoc = getiteminfo(.@selectId,5);
 						.@selectView = getiteminfo(.@selectId,11);
 						
-	if(.@selectLoc == 8192 ||.@selectLoc == 1024 ||.@selectLoc == 2048 ||.@selectLoc == 4096 ){
+	if(.@selectLoc == 8192 ||.@selectLoc == 1024 ||.@selectLoc == 2048 ||.@selectLoc == 4096 || countitem(90639) ){
 	
 	if(.@selectView == 0){
 		processhalt;

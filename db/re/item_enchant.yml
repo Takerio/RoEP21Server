@@ -8652,27 +8652,27 @@ Body:
           - Enchant: PATK_1Lv
             Upgrade: PATK_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
           - Enchant: SMATK_1Lv
             Upgrade: SMATK_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
           - Enchant: ATK_1Lv
             Upgrade: ATK_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
           - Enchant: MATK_1Lv
             Upgrade: MATK_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
           - Enchant: MHP_1Lv
             Upgrade: MHP_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
           - Enchant: MSP_1Lv
             Upgrade: MSP_2Lv
             Materials:
-              - Material: Unknown_6674
+              - Material: Enchant_Ticket
       - Slot: 2
         Materials:
           - Material: Enchant_Ticket

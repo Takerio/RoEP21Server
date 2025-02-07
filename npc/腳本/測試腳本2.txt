@@ -2,6 +2,9 @@
 	OnInit:
 		bindatcmd "s",strnpcinfo(3) + "::Onsell";
 		bindatcmd "allstat",strnpcinfo(3) + "::Onallstatus",99,99;
+		bindatcmd "t",strnpcinfo(3) + "::Ontest",99,99;
+		bindatcmd "se",strnpcinfo(3) + "::Onsend",99,99;
+		bindatcmd "te",strnpcinfo(3) + "::Ontestequip",99,99;
 		end;
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
@@ -40,5 +43,58 @@ Onallstatus:
     atcommand "@crt 30000";
     atcommand "@wis 30000";
     end;
-    
+Onsend:
+	mes "請問怎麼發放物品呢?";
+	switch(select("發放全服玩家:發放給當前地圖的玩家")){
+		case 1:
+		callfunc "Give_to_SameServer";
+		break;
+		case 2:
+		callfunc "Give_to_SameMap";
+		break;
+	}
+	close;
+	end;
+Ontestequip:
+	setarray n[0],0;
+	mes "請輸入要租借的裝備編號:";
+	input .@itemid;
+	next;
+	mes "請輸入要精煉多少呢？";
+	input .@refine;
+	next;
+	mes "請輸入要評級的階級?";
+	mes "D => 輸入1";
+	mes "C => 輸入2";
+	mes "B => 輸入3";
+	mes "A => 輸入4";
+	input .@grade;
+	next;
+	mes "請輸入附魔編號(第二洞)";
+	input .@slot2;
+	next;
+	mes "請輸入附魔編號(第三洞)";
+	input .@slot3;
+	next;
+	mes "請輸入附魔編號(第四洞)";
+	input .@slot4;
+	next;
+	mes "請確定要租借的裝備為 : " + getitemname(.@itemid);
+	mes "精煉程度 + " + .@refine;
+	mes "評級等級 : " + .@grade;
+	mes "附魔第二洞為 ^i[" + .@slot2 + "] " + getitemname(.@slot2); 
+	mes "附魔第三洞為 ^i[" + .@slot3 + "] " + getitemname(.@slot3); 
+	mes "附魔第四洞為 ^i[" + .@slot4 + "] " + getitemname(.@slot4);
+	switch(select("是:否")){
+		case 1:
+		rentitem4 .@itemid,3600,1,.@refine,0,0,.@slot2,.@slot3,.@slot4,.@grade,n[0],n[0],n[0];
+		close;
+		case 2:
+		close;
+	} 
+	end;
+Ontest:
+	mes getiteminfo(.@selectId,5);
+	close;
+	end;
 }

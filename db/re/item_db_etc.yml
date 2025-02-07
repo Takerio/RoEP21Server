@@ -44354,7 +44354,7 @@ Body:
 
   - Id: 310847
     AegisName: Summer_Cool_Lv1
-    Name: 炎熱的夏天(Lv1)
+    Name: 清涼的夏天(Lv1)
     Type: Card
     SubType: Enchant
     Script: |
@@ -44362,7 +44362,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,5;
   - Id: 310848
     AegisName: Summer_Cool_Lv2
-    Name: 炎熱的夏天(Lv2)
+    Name: 清涼的夏天(Lv2)
     Type: Card
     SubType: Enchant
     Script: |
@@ -44370,7 +44370,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,10;
   - Id: 310849
     AegisName: Summer_Cool_Lv3
-    Name: 炎熱的夏天(Lv3)
+    Name: 清涼的夏天(Lv3)
     Type: Card
     SubType: Enchant
     Script: |
