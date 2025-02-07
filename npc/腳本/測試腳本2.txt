@@ -56,6 +56,10 @@ Onsend:
 	close;
 	end;
 Ontestequip:
+	if(strcharinfo(3) != "bago_01"){
+		mes "需要到測試傷害地圖使用此指令唷～";
+		end;
+	}
 	setarray n[0],0;
 	mes "請輸入要租借的裝備編號:";
 	input .@itemid;
