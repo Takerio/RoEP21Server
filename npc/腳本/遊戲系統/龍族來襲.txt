@@ -294,7 +294,7 @@ OnClock2130:
 -	script	Dragon_Kill	-1,{end;
 
 OnMobKilled01:
-	getitem 61006,rand(3,5);
+	//getitem 61006,rand(3,5);
 	if(rand(1000)<1) {
 	getitem 20522,1;
 	announce "【龍族來襲】玩家 "+strcharinfo(0)+" 獲得了 "+getitemname(20522)+" !!",15;
@@ -318,7 +318,7 @@ OnMobKilled01:
 	end;
 
 OnMobKilled02:
-	getitem 61006,rand(3,5);
+	//getitem 61006,rand(3,5);
 	if(rand(1000)<1) {
 	getitem 20522,1;
 	announce "【龍族來襲】玩家 "+strcharinfo(0)+" 獲得了 "+getitemname(20522)+" !!",15;
@@ -345,7 +345,7 @@ OnMobKilled02:
 	end;
 
 OnMvpKilled:
-	getitem 61028,1;
+	//getitem 61028,1;
 	set $@Dragon_Mvp,$@Dragon_Mvp-1;
 	mapannounce ""+$@moncitymap$[$ditu]+"","【龍族來襲】巨型龍族剩餘 "+$@Dragon_Mvp+" 隻!!",bc_map,"0xffff00";
 	end;
