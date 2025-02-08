@@ -3616,7 +3616,7 @@ function	script	Lunatic_Scroll_13	{
 	setarray $@Scroll_13_3[0],28573,420064,480276,480024;
 	set @Scroll_13,$@Scroll_13_3[rand(getarraysize($@Scroll_13_3))];
 	getitem @Scroll_13,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 星雲轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 時間縫隙轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
 	end;
 	}
 	Scroll_13:
