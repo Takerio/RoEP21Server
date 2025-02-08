@@ -1,4 +1,4 @@
-﻿vdistrict1,81,36,6	script	時間縫隙裝備附魔#Dimen01	4_EP17_TABLET,{
+﻿vdistrict1,90,27,6	script	時間縫隙裝備附魔#Dimen01	4_EP17_TABLET,{
 
 	mes "[時間縫隙裝備附魔]";
 	mes "請選擇你要的服務";
