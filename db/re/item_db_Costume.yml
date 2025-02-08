@@ -8181,14 +8181,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 1075
-  - Id: 40410
-    AegisName: C_Head_Item_23663
-    Name: (服飾)盤蛇帽(青)
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2573
   - Id: 40405
     AegisName: C_Head_Item_23651
     Name: (服飾)獵人小羽帽
@@ -8382,14 +8374,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2340
-  - Id: 40378
-    AegisName: C_Head_Item_23431
-    Name: (服飾)哥德式羽翼髮圈
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2341
   - Id: 40379
     AegisName: C_Head_Item_23432
     Name: (服飾)古典絲帶
@@ -8431,14 +8415,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 952
-  - Id: 40467
-    AegisName: C_Hermose_Cap
-    Name: (服飾)海羅默德帽子
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 478
 
   - Id: 40611
     AegisName: C_Head_Item_22878
@@ -8473,14 +8449,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2690
-  - Id: 40608
-    AegisName: C_Head_Item_22582
-    Name: (服飾)華麗迷你皇冠
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 1826
 
   - Id: 40610
     AegisName: C_Head_Item_22877
@@ -8531,14 +8499,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2784
-  - Id: 40451
-    AegisName: C_Head_Item_23920
-    Name: (服飾)黃金野豬頭飾
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2830
   - Id: 40454
     AegisName: C_Head_Item_23961
     Name: (服飾)鴿子魔法帽
@@ -8555,15 +8515,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2875
-  - Id: 40437
-    AegisName: C_Head_Item_23782
-    Name: (服飾)噴火龍頭盔(綠)
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2692
-
   - Id: 40456
     AegisName: C_Head_Item_23996
     Name: (服飾)天使的髮圈
@@ -8654,14 +8605,6 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 889
-  - Id: 40593
-    AegisName: C_Head_Item_22712
-    Name: (服飾)魔女帽
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 1956
   - Id: 40594
     AegisName: C_Head_Item_22569
     Name: (服飾)花蝴蝶髮夾
