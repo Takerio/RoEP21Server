@@ -1325,6 +1325,15 @@ Body:
     Class: Boss
     Modes:
       Mvp: true
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Dividend_Points_10
+        Rate: 10000      
   - Id: 27095
     AegisName: LOST_DRAGON_S
     Name: Lost Dragon_S
@@ -1359,6 +1368,15 @@ Body:
     Class: Boss
     Modes:
       Mvp: true
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Dividend_Points_10
+        Rate: 10000
   - Id: 27096
     AegisName: GOPINICH_S
     Name: Gopinich_S
@@ -1393,6 +1411,15 @@ Body:
     Class: Boss
     Modes:
       Mvp: true
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Dividend_Points_10
+        Rate: 10000
   - Id: 27097
     AegisName: KTULLANUX_S
     Name: Ktullanux_S
@@ -1427,7 +1454,15 @@ Body:
       Mvp: true
     Ai: 21
     Class: Boss
-
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Dividend_Points_10
+        Rate: 10000
 #RO大盜
   - Id: 27098
     AegisName: SAILOR_SKELETON_S
