@@ -78,7 +78,7 @@
 		callshop "星雲轉蛋";
 		end;
 
-		case 13:
+		case 14:
 		close2;
 		callshop "時間裂隙轉蛋";
 		end;
