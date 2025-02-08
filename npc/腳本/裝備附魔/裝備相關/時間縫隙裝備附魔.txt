@@ -3,11 +3,11 @@
 	mes "[時間縫隙裝備附魔]";
 	mes "請選擇你要的服務";
 	next;
-	switch(select("時間縫隙武器附魔")){
+	switch(select("時間裂隙武器附魔")){
 
 	case 1:
 	close2;
-	callshop "時序象限頭冠";
+	item_enchant 150;
 	end;
 
 	case 2:
