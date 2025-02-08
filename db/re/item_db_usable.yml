@@ -36071,7 +36071,12 @@ Body:
     Type: Usable
     Script: |
       callfunc "Lunatic_Scroll_12";
-
+  - Id: 81028
+    AegisName: Lunatic_Scroll_04
+    Name: 時間縫隙轉蛋
+    Type: Usable
+    Script: |
+      callfunc "Lunatic_Scroll_13";
 
 
   - Id: 81016
