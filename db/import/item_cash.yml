@@ -71,6 +71,8 @@ Body:
         Price: 30
       - Item: Lunatic_Scroll_12
         Price: 30
+      - Item: Lunatic_Scroll_13
+        Price: 30
 
   - Tab: Hot
     Items:
