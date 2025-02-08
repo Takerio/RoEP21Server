@@ -133,8 +133,8 @@
 	countitem(550159)>=1?"時隙魂靈狐尾草 ^ff0000[100張]^000000":"",son550159,
 	countitem(560072)>=1?"時隙審判拳套 ^ff0000[100張]^000000":"",son560072,
 	countitem(700108)>=1?"時隙風之弓 ^ff0000[100張]^000000":"",son700108,
-	countitem(510172)>=1?"時隙黑神匕首(A) ^ff0000[100張]^000000":"",son510172,
-	countitem(490245)>=1?"時隙黑神匕首(B) ^ff0000[100張]^000000":"",son490245,
+	countitem(28789)>=1?"時隙黑神匕首(A) ^ff0000[100張]^000000":"",son28789,
+	countitem(510172)>=1?"時隙黑神匕首(B) ^ff0000[100張]^000000":"",son510172,
 	countitem(540096)>=1?"時隙元素法術書 ^ff0000[100張]^000000":"",son540096,
 
 	
@@ -312,7 +312,7 @@
 	son560072:	set @Scroll,560072;goto Scroll_100;
 	son700108:	set @Scroll,700108;goto Scroll_100;
 	son510172:	set @Scroll,510172;goto Scroll_100;
-	son490245:	set @Scroll,490245;goto Scroll_100;
+	son28789:	set @Scroll,28789;goto Scroll_100;
 	son540096:	set @Scroll,540096;goto Scroll_100;
 
 
