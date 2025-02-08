@@ -788,15 +788,187 @@ Body:
              Item: Unknown_Item_70026
              Amount: 200
 
-
-
-
-
-
-
-
-
-
-
-
-
+#時間裂隙轉蛋
+   - Name: 時間裂隙轉蛋
+     Map: prt_in
+     X: 1
+     Y: 1
+     Direction: SouthWest
+     Sprite: 4_4JOB_MAURA
+     Items:
+       - Index: 1
+         Item: Time_Gap_Spear_IG
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 2
+         Item: Time_Gap_Staff_AG
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 3
+         Item: Time_Gap_Revolver_NW
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 4
+         Item: Time_Gap_MT_Axe
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 5
+         Item: Time_Gap_TR_Ribbon
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 6
+         Item: Time_Gap_TR_Vilolin
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 7
+         Item: Time_Gap_HN_Staff
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 8
+         Item: Time_Gap_SHC_Dagger1
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 9
+         Item: Time_Gap_SHC_Dagger2
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 10
+         Item: Time_Gap_BO_Blade
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 11
+         Item: Time_Gap_SOA_Rod
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 12
+         Item: Time_Gap_SKE_Book
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 13
+         Item: Time_Gap_CD_Staff
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 14
+         Item: Time_Gap_DK_Spear
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 15
+         Item: Time_Gap_ABC_Dagger
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 16
+         Item: Time_Gap_SH_Foxtail
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 17
+         Item: Time_Gap_IQ_Knuckle
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 18
+         Item: Time_Gap_WH_Bow
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 19
+         Item: Time_Gap_SS_Dagger1
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 20
+         Item: Time_Gap_SS_Dagger2
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 21
+         Item: Time_Gap_EM_S_Book
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 22
+         Item: Time_Gap_TR_Vilolin
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350

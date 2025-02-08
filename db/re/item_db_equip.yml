@@ -123362,7 +123362,7 @@ Body:
       }
 
   - Id: 550159
-    AegisName: Time_Gap_SH_Foxtail
+    AegisName: Time_Gap_SH_Foxtail ##
     Name: 時隙魂靈狐尾草
     Type: Weapon
     SubType: Staff
@@ -123371,7 +123371,7 @@ Body:
     Range: 1
     Slots: 2
     Jobs:
-      SoulLinker: true
+      Summoner: true
     Classes:
       Fourth: true
     Locations:
@@ -123411,7 +123411,7 @@ Body:
          }
       }
   - Id: 560072
-    AegisName: Time_Gap_IQ_Knuckle
+    AegisName: Time_Gap_IQ_Knuckle ##
     Name: 時隙審判拳套
     Type: Weapon
     SubType: Knuckle
@@ -123513,7 +123513,7 @@ Body:
       }
 
   - Id: 28789
-    AegisName: Time_Gap_SS_Dagger1
+    AegisName: Time_Gap_SS_Dagger1 ##
     Name: 時隙黑神匕首(A)
     Type: Weapon
     SubType: Dagger
@@ -123550,7 +123550,7 @@ Body:
       }
 
   - Id: 510172
-    AegisName: Time_Gap_SS_Dagger2
+    AegisName: Time_Gap_SS_Dagger2 ##
     Name: 時隙黑神匕首(B)
     Type: Weapon
     SubType: Dagger
@@ -123597,7 +123597,7 @@ Body:
       }
 
   - Id: 540096
-    AegisName: Time_Gap_EM_S_Book
+    AegisName: Time_Gap_EM_S_Book ##
     Name: 時隙元素法術書
     Type: Weapon
     SubType: Book

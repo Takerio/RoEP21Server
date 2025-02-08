@@ -78,6 +78,10 @@ Ontestequip:
 	mes "B => 輸入3";
 	mes "A => 輸入4";
 	input .@grade;
+
+	next;
+	mes "請輸入附魔編號(第一洞)";
+	input .@slot1;
 	next;
 	mes "請輸入附魔編號(第二洞)";
 	input .@slot2;
@@ -96,7 +100,7 @@ Ontestequip:
 	mes "附魔第四洞為 ^i[" + .@slot4 + "] " + getitemname(.@slot4);
 	switch(select("是:否")){
 		case 1:
-		rentitem4 .@itemid,3600,1,.@refine,0,0,.@slot2,.@slot3,.@slot4,.@grade,n[0],n[0],n[0];
+		rentitem4 .@itemid,3600,1,.@refine,0,.@slot1,.@slot2,.@slot3,.@slot4,.@grade,n[0],n[0],n[0];
 		close;
 		case 2:
 		close;

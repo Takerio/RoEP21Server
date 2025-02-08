@@ -11,7 +11,7 @@
 		mes "[轉蛋保底商店]";
 		mes "請選擇你要購買的內容";
 		next;
-		switch(select("特殊物品:光輝天翼轉蛋:天佑祈福轉蛋:熾天之花轉蛋:強殖裝甲轉蛋:神之追隨者轉蛋:寶石轉蛋:風神轉蛋:啟海伊洛轉蛋:幻之魔法轉蛋:超新星轉蛋:伊斯加爾特轉蛋:星雲轉蛋")){
+		switch(select("特殊物品:光輝天翼轉蛋:天佑祈福轉蛋:熾天之花轉蛋:強殖裝甲轉蛋:神之追隨者轉蛋:寶石轉蛋:風神轉蛋:啟海伊洛轉蛋:幻之魔法轉蛋:超新星轉蛋:伊斯加爾特轉蛋:星雲轉蛋:時間裂隙轉蛋")){
 
 		case 1:
 		close2;
@@ -78,6 +78,10 @@
 		callshop "星雲轉蛋";
 		end;
 
+		case 13:
+		close2;
+		callshop "時間裂隙轉蛋";
+		end;
 
 		}
 
@@ -110,6 +114,30 @@
 	countitem(470114)>=1?"無名旅者重靴 ^ff0000[100張]^000000":"",son470114,
 	countitem(22222)>=1?"審判決議長靴-LT ^ff0000[100張]^000000":"",son22222,
 	countitem(490245)>=1?"神諭號角 ^ff0000[100張]^000000":"",son490245,
+
+	countitem(530060)>=1?"時隙守護長矛 ^ff0000[100張]^000000":"",son530060,
+	countitem(640054)>=1?"時隙弧形雙手法杖 ^ff0000[100張]^000000":"",son640054,
+	countitem(800042)>=1?"時隙騎士手槍 ^ff0000[100張]^000000":"",son800042,
+	countitem(620043)>=1?"時隙機械斧 ^ff0000[100張]^000000":"",son620043,
+	countitem(580075)>=1?"時隙音樂絲帶 ^ff0000[100張]^000000":"",son580075,
+	countitem(570075)>=1?"時隙小提琴 ^ff0000[100張]^000000":"",son570075,
+	countitem(550152)>=1?"時隙超級法杖 ^ff0000[100張]^000000":"",son550152,
+	countitem(510165)>=1?"時隙暗影匕首(A) ^ff0000[100張]^000000":"",son510165,
+	countitem(510166)>=1?"時隙暗影匕首(B) ^ff0000[100張]^000000":"",son510166,
+	countitem(500107)>=1?"時隙生物刀 ^ff0000[100張]^000000":"",son500107,
+	countitem(550155)>=1?"時隙靈魂手杖 ^ff0000[100張]^000000":"",son550155,
+	countitem(540094)>=1?"時隙帝皇運行書 ^ff0000[100張]^000000":"",son540094,
+	countitem(550156)>=1?"時隙神聖手杖 ^ff0000[100張]^000000":"",son550156,
+	countitem(630049)>=1?"時隙龍之槍 ^ff0000[100張]^000000":"",son630049,
+	countitem(28785)>=1?"時隙深淵匕首 ^ff0000[100張]^000000":"",son28785,
+	countitem(550159)>=1?"時隙魂靈狐尾草 ^ff0000[100張]^000000":"",son550159,
+	countitem(560072)>=1?"時隙審判拳套 ^ff0000[100張]^000000":"",son560072,
+	countitem(700108)>=1?"時隙風之弓 ^ff0000[100張]^000000":"",son700108,
+	countitem(510172)>=1?"時隙黑神匕首(A) ^ff0000[100張]^000000":"",son510172,
+	countitem(490245)>=1?"時隙黑神匕首(B) ^ff0000[100張]^000000":"",son490245,
+	countitem(540096)>=1?"時隙元素法術書 ^ff0000[100張]^000000":"",son540096,
+
+	
 
 
 	countitem(490472)>=1?"惡火煉獄戒 ^ff0000[100張]^000000":"",son490472,
@@ -146,7 +174,7 @@
 	countitem(420332)>=1?"大地強運玫瑰 ^ff0000[100張]^000000":"",son420332,
 
 	//SSS材料
-	countitem(490245)>=1?"伊美樂心臟能量碎片 ^ff0000[100張]^000000":"",son420333,
+	countitem(1001256)>=1?"伊美樂心臟能量碎片 ^ff0000[100張]^000000":"",son1001256,
 
 	//SS
 	countitem(28430)>=1?"大祭司聖戒 ^ff0000[30張]^000000":"",son28430,
@@ -262,7 +290,33 @@
 	son420330:	set @Scroll,420330;goto Scroll_100;
 	son420331:	set @Scroll,420331;goto Scroll_100;
 	son420332:	set @Scroll,420332;goto Scroll_100;
-	son420333:	set @Scroll,1001256;goto Scroll_100;
+	son1001256:	set @Scroll,1001256;goto Scroll_100;
+
+
+	son530060:	set @Scroll,530060;goto Scroll_100;
+	son640054:	set @Scroll,640054;goto Scroll_100;
+	son800042:	set @Scroll,800042;goto Scroll_100;
+	son620043:	set @Scroll,620043;goto Scroll_100;
+	son580075:	set @Scroll,580075;goto Scroll_100;
+	son570075:	set @Scroll,570075;goto Scroll_100;
+	son550152:	set @Scroll,550152;goto Scroll_100;
+	son510165:	set @Scroll,510165;goto Scroll_100;
+	son510166:	set @Scroll,510166;goto Scroll_100;
+	son500107:	set @Scroll,500107;goto Scroll_100;
+	son550155:	set @Scroll,550155;goto Scroll_100;
+	son540094:	set @Scroll,540094;goto Scroll_100;
+	son550156:	set @Scroll,550156;goto Scroll_100;
+	son630049:	set @Scroll,630049;goto Scroll_100;
+	son28785:	set @Scroll,28785;goto Scroll_100;
+	son550159:	set @Scroll,550159;goto Scroll_100;
+	son560072:	set @Scroll,560072;goto Scroll_100;
+	son700108:	set @Scroll,700108;goto Scroll_100;
+	son510172:	set @Scroll,510172;goto Scroll_100;
+	son490245:	set @Scroll,490245;goto Scroll_100;
+	son540096:	set @Scroll,540096;goto Scroll_100;
+
+
+
 
 	//SS
 	son28430:	set @Scroll,28430;goto Scroll_30;
