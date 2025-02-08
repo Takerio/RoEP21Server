@@ -3587,7 +3587,7 @@ function	script	Lunatic_Scroll_12	{
 	end;
 }
 
-//----------------------------- 時間縫隙轉蛋
+//----------------------------- 時間裂隙轉蛋
 function	script	Lunatic_Scroll_13	{ 
 
 	set #Luck_Scroll,#Luck_Scroll+1; 
@@ -3613,7 +3613,7 @@ function	script	Lunatic_Scroll_13	{
 	end;
 	}
 	if(@pay>=9701 && @pay<=9950){
-	setarray $@Scroll_13_3[0],480245,460027,490208,460038;
+	setarray $@Scroll_13_3[0],28573,420064,480276,480024;
 	set @Scroll_13,$@Scroll_13_3[rand(getarraysize($@Scroll_13_3))];
 	getitem @Scroll_13,1;
 	announce "恭喜玩家 " + strcharinfo(0) + "，從 星雲轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
@@ -3621,10 +3621,10 @@ function	script	Lunatic_Scroll_13	{
 	}
 	Scroll_13:
 	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
-	setarray $@Scroll_13_4[0],22654,70107,490552,420328,420330,420331,490552,420328,420330,420331,420332;
+	setarray $@Scroll_13_4[0],22654,530060,640054,800042,620043,580075,570075,550152,510165,510166,500107,550155,540094,550156,630049,28785,550159,560072,700108,28789,510172,540096;
 	set @Scroll_13,$@Scroll_13_4[rand(getarraysize($@Scroll_13_4))];
 	getitem @Scroll_13,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 星雲轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 時間縫隙轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
 	end;
 }
 
