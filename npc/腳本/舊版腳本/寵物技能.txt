@@ -23,31 +23,31 @@ function	script	petskill	{
 
     //set RandomSkill[0],"",
     // 研究所三樓魔物
-    case 960061:
+    case 960338:
       petskillsupport "LK_CONCENTRATION",5,SkillTimer,100,100;
       petskillattack "LK_SPIRALPIERCE",5,MinSkillRate,MaxSkillRate;
       break;
-    case 960062:
+    case 960339:
       petskillsupport "ASC_EDP",5,SkillTimer,100,100;
       petskillattack "GC_DARKCROW",5,30,50;
       break;
-    case 960063:
+    case 960340:
       petskillsupport "WS_MELTDOWN",10,SkillTimer,100,100;
       petskillattack "WS_CARTTERMINATION",10,MinSkillRate,MaxSkillRate;
       break;
-    case 960064:
+    case 960341:
       petskillsupport "AL_HEAL",10,SkillTimer,100,100;
       petskillattack "PR_MAGNUS",10,MinSkillRate,MaxSkillRate;
       break;
-    case 960065:
+    case 960342:
       petskillsupport "SN_SIGHT",10,SkillTimer,100,100;
       petskillattack "SN_SHARPSHOOTING",5,MinSkillRate,MaxSkillRate;
       break;
-    case 960066:
+    case 960343:
       petskillsupport "HW_MAGICPOWER",10,SkillTimer,100,100;
       petskillattack "HW_GRAVITATION",5,MinSkillRate,MaxSkillRate;
       break;
-    case 960067:
+/*    case 960067:
       petskillsupport "CR_DEVOTION",5,SkillTimer,100,100;
       petskillattack "CR_GRANDCROSS",10,MinSkillRate,MaxSkillRate;
       break;
@@ -280,7 +280,7 @@ function	script	petskill	{
       petskillattack .@atk[.@atk_rand],10,MinSkillRate,MaxSkillRate;
       break;
     default:
-
+*/
     //.@sup_maxlv = getskillmaxlv(.@sup[.@sup_rand]);
     //.@atk_maxlv = getskillmaxlv(.@atk[.@atk_rand]);
       // 預設技能
