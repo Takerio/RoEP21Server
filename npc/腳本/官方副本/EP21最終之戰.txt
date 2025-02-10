@@ -9,99 +9,135 @@
 
 vdistrict1,32,33,4	script	伊爾澤#Con1	10586,{
 
-
-	set .@party_id,getcharid(1);
-	set .@p_name$,getpartyname(.@party_id);
-
-	if (!.@party_id) {
-		mes "[伊爾澤]";
-		mes "你的隊伍成員呢?";
-		close;
-	}
-	
-	.@md_name$ = "最終之戰";
-	
-	if (getcharid(0) == getpartyleader(.@party_id,2))
-		set @menu$, "創建"+.@md_name$+":進入"+.@md_name$;
-	else
-		set @menu$, ":進入"+.@md_name$;
-
 	cutin "ep21_ilse_heine01",1;
+//unitaura getnpcid(0),1103;
+	//調試入口	
+
 	mes "[伊爾澤]";
-	mes "呵呵，我修練已久的空間跳躍魔法了，是時候展示一下了。";
-	next;
-	mes "[伊爾澤]";
+	//mes "副本獎勵倍數[ ^0000FF"+$EP1901+"^000000 ]";
+	mes "挑戰剩餘次數[ ^FF0000"+Instance_Bout_64+"^000000 ]";
 	mes "副本獎勵：";
 	mes "^i[102947] ^i[1001618] ^i[1001250] ^i[1001034] ^i[1001663] ^i[1001660] ^i[1001657] ^i[1001654]";
-	mes "你想要幹嘛呢？";
+	mes "你想要做什麼呢？";
 	next;
-	cutin "ep21_ilse_heine01",255;
-	.@i = select(@menu$)-1;
-	switch(.@i) {
-	case 0:
-		if(BaseLevel < 220) {
+	mes "[伊爾澤]";
+	mes "哦~^0000ff"+strcharinfo(0)+"^000000嗎？那我們就開始吧！";
+	//cutin "oscar01",2;
+	next;
+//入場等級設定
+		if (BaseLevel < 250){
 			mes "[伊爾澤]";
-			mes "裡面是很危險的…"; 
-			mes "還是等到 Lv.220 後再來吧…"; 
+			mes "等級不足";
 			close;
 		}
-		
-		if (instance_create(.@md_name$) < 0) {
+//入場人數設定		
+		getpartymember getcharid(1);
+		if($@partymembercount>12){
 			mes "[伊爾澤]";
-			mes "隊伍名稱: "+.@p_name$;
-			mes "隊伍隊長: "+strcharinfo(0);
-			mes "^0000ff"+.@md_name$+" ^000000- 創建失敗!";
+			mes "隊伍人數過多";
 			close;
 		}
 
-		mapannounce strnpcinfo(4),"隊伍 "+getpartyname(.@party_id)+" 準備挑戰【"+.@md_name$+"】副本！",bc_map,"0x33ea91";	
-		mes "[伊爾澤]";
-		mes ""+.@md_name$+"已經創立了～";
-		mes "請選擇^0066CC進入"+.@md_name$+"^000000。";
-		
-		.@iid = instance_id(IM_PARTY);
-		set getinstancevar('party_id, .@iid), getcharid(1);
-		//入場記錄時間
-		set 'Instance_Annal,gettimetick(2);
+OnStart:
+	//挑戰次數
+	if ( day_Instance_Bout_64 < gettime(8) ){
+	set Instance_Bout_64,10;
+	set day_Instance_Bout_64,gettime(8);	//一年中的一天
+	end; }
+	if (Instance_Bout_64 < 1) {
+		mes "挑戰次數不足";
 		close;
-	case 1:
-		if(!instance_id(IM_PARTY)){
-			mes "還未生成副本";
-			close;
-		}
-		if(BaseLevel < 220) {
-			mes "[伊爾澤]";
-			mes "裡面是很危險的…"; 
-			mes "還是等到 Lv.220 後再來吧…"; 
-			close;
-		}
-	if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
-	mes "副本已經開始了，無法再次進入。";
-	close;
 	}
-		switch(instance_enter(.@md_name$)) {
-		case IE_OTHER:
-			mes "不明錯誤。";
+
+		.@charleston_time = checkquest(300593,PLAYTIME);
+		if (.@charleston_time == 2) {
+			mes "^0000ff可以再次進入最終之戰。^000000";
+			erasequest 300590;
 			close;
-		case IE_NOINSTANCE:
-			mes .@md_name$+" 副本不存在。";
-			mes "隊長尚未申請記憶迷宮。";
+		} else  if (.@charleston_time == 0 || .@charleston_time == 1) {
+			mes "^ff0000副本冷卻等待3天。^000000";
 			close;
-		case IE_NOMEMBER:
-			mes "只有申請 "+.@md_name$+" 副本的隊員才可以進入。";
-			close;
-		case IE_OK:
-			mapannounce strnpcinfo(4),"隊伍 " + getpartyname(.@party_id) + " 裡的勇者 " + strcharinfo(0) + " 開始進行【"+.@md_name$+"】副本了",bc_map,"0x00ff99";			
-			close;
+		} else {
+			.@party_id = getcharid(1);
+			.@p_name$ = getpartyname(.@party_id);
+			.@md_name$ = "最終之戰";
+			if (!.@party_id) {
+				mes "請先組成一支隊伍。";
+				close;
+			}
+			if (getcharid(0) == getpartyleader(.@party_id,2))
+				set .@menu$, "開啟最終之戰:進入最終之戰:取消";
+			else
+				set .@menu$, ":進入最終之戰:取消";
+			switch(select(.@menu$)) {
+				case 1:
+					if(instance_mapname("1@ep21b") != "") {
+						mes "- 副本不能重復開啟。 -";
+						close;
+					}
+					.@instance = instance_create(.@md_name$);
+					set getinstancevar('party_id,instance_id(IM_PARTY)),getcharid(1);					
+					if (.@instance < 0) {
+							mes "隊伍名稱: "+.@p_name$;
+							mes "隊    長: "+strcharinfo(0);
+							mes "^0000ff"+.@md_name$+" ^000000- 創建副本失敗!";
+							close;
+					}
+					mes "^ff0000可以再次進入最終之戰了。^000000";
+					//入場記錄時間
+					set Instance_Annal,gettimetick(2);
+					close;
+				case 2:
+						if(!instance_id(IM_PARTY)){
+							mes "還未生成副本";
+							close;
+						}				
+						if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
+							mes "[最終之戰]";
+							mes "副本已經結束";
+							close;
+						}
+						if ( getinstancevar('start_game,instance_id(IM_PARTY)) ) {
+							mes "[伊爾澤]";
+							mes "副本已經開啟.無法再進入了";
+							close;
+						}
+					switch(instance_enter("最終之戰")) {
+						case 0:
+		//禁止多開偵測
+		if(getsameipinfo(getcharip(), strcharinfo(3)) > $Windows){
+		//允許多開名單
+		for(set .@a,0; .@a < getarraysize($@PartyWindowsows$); set .@a,.@a+1){
+		if(getcharip()==$@PartyWindowsows$[.@a]){
+		end; }}
+		dispbottom "檢測到副本地圖中有相同IP人物，自動傳送回官方副本區";
+		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
+		end; }
+			//扣除挑戰次數
+			set Instance_Bout_64,Instance_Bout_64-1;
+
+							setquest 300590; //state=1
+							end;	
+						case 1:
+							mes "只有註冊過的成員可以進入副本 "+"最終之戰"+"。";
+							close;
+						case 2:
+							mes "副本進度 "+"最終之戰"+" 不存在。";
+							mes "隊長還沒有建立副本進度。";
+							close;
+						case 3:
+							mes "不明錯誤.";
+							close;
+					}
+				case 3:
+					end;	
+			}
 		}
-	}
-	close;
-
-
 OnInit:
 	waitingroom "最終之戰",0;
 	end;
 }
+
 
 
 //-----------------------------------------主系統
