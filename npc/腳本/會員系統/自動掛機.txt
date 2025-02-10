@@ -1170,7 +1170,8 @@ OnBotDoneMove:
 				if(.@item_id){
 					if(countitem(.@item_id) > 0){
 						unitspecialeffect getcharid(3),204;
-						if(.@item_id != 70113){delitem .@item_id, 1;}
+						if(.@item_id != 70113 ){delitem .@item_id, 1;}
+						if(.@item_id != 70002 ){delitem .@item_id, 1;}
 						consumeitem .@item_id;
 						.@result = 1;
 					}else break;
@@ -1185,6 +1186,7 @@ OnBotDoneMove:
 					if(countitem(.@item_id) > 0){
 						unitspecialeffect getcharid(3),208;
 						if(.@item_id != 70113){delitem .@item_id, 1;}
+						if(.@item_id != 70002){delitem .@item_id, 1;}
 						consumeitem .@item_id;
 						.@result = 1;
 					}else break;
