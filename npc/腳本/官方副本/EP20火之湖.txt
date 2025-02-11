@@ -1,107 +1,130 @@
 ﻿vdistrict1,43,40,4	script	火之湖管理者#Con1	10527,{
 
-	.@playtime = checkquest(30002,PLAYTIME);
-	if(.@playtime == 2) erasequest 30002;
-	if(.@playtime == 0 || .@playtime == 1){
-		mes "[火之湖管理者]";
-		mes "此副本冷卻時間還在，請冷卻時間結束之時再來找我。";
-		close;
-	}
 
-	set .@party_id,getcharid(1);
-	set .@p_name$,getpartyname(.@party_id);
+//unitaura getnpcid(0),1103;
+	//調試入口	
 
-	if (!.@party_id) {
-		mes "[火之湖管理者]";
-		mes "你的隊伍成員呢?";
-		close;
-	}
-	
-	.@md_name$ = "火之湖";
-	
-	if (getcharid(0) == getpartyleader(.@party_id,2))
-		set @menu$, "創建"+.@md_name$+":進入"+.@md_name$;
-	else
-		set @menu$, ":進入"+.@md_name$;
-		
 	mes "[火之湖管理者]";
+	//mes "副本獎勵倍數[ ^0000FF"+$EP1901+"^000000 ]";
+	mes "挑戰剩餘次數[ ^FF0000"+Instance_Bout_60+"^000000 ]";
 	mes "副本獎勵：";
 	mes "^i[1001414] ^i[1001415]";
 	mes "^i[1001440] ^i[1001441] ^i[1001442] ^i[1001443]";
-	mes "你想要幹嘛呢？";
+	mes "你想要做什麼呢？";
 	next;
-	.@i = select(@menu$)-1;
-	switch(.@i) {
-	case 0:
-		if(BaseLevel < 250) {
+	mes "[火之湖管理者]";
+	mes "哦~^0000ff"+strcharinfo(0)+"^000000嗎？那我們就開始吧！";
+	//cutin "oscar01",2;
+	next;
+//入場等級設定
+		if (BaseLevel < 250){
 			mes "[火之湖管理者]";
-			mes "裡面是很危險的…"; 
-			mes "還是等到 Lv.250 後再來吧…"; 
+			mes "等級不足";
 			close;
 		}
-		
-		if (instance_create(.@md_name$) < 0) {
+//入場人數設定		
+		getpartymember getcharid(1);
+		if($@partymembercount>12){
 			mes "[火之湖管理者]";
-			mes "隊伍名稱: "+.@p_name$;
-			mes "隊伍隊長: "+strcharinfo(0);
-			mes "^0000ff"+.@md_name$+" ^000000- 創建失敗!";
+			mes "隊伍人數過多";
 			close;
 		}
 
-		mapannounce strnpcinfo(4),"隊伍 "+getpartyname(.@party_id)+" 準備挑戰【"+.@md_name$+"】副本！",bc_map,"0x33ea91";	
-		mes "[火之湖管理者]";
-		mes ""+.@md_name$+"已經創立了～";
-		mes "請選擇^0066CC進入"+.@md_name$+"^000000。";
-		
-		.@iid = instance_id(IM_PARTY);
-		set getinstancevar('party_id, .@iid), getcharid(1);
-		//入場記錄時間
-		set 'Instance_Annal,gettimetick(2);
+OnStart:
+	//挑戰次數
+	if ( day_Instance_Bout_60 < gettime(8) ){
+	set Instance_Bout_60,10;
+	set day_Instance_Bout_60,gettime(8);	//一年中的一天
+	end; }
+	if (Instance_Bout_60 < 1) {
+		mes "挑戰次數不足";
 		close;
-	case 1:
-		if(BaseLevel < 250) {
-			mes "[火之湖管理者]";
-			mes "裡面是很危險的…"; 
-			mes "還是等到 Lv.250 後再來吧…"; 
-			close;
-		}
-	if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
-	mes "副本已經開始了，無法再次進入。";
-	close;
 	}
-		switch(instance_enter(.@md_name$)) {
-		case IE_OTHER:
-			mes "不明錯誤。";
-			close;
-		case IE_NOINSTANCE:
-			mes .@md_name$+" 副本不存在。";
-			mes "隊長尚未申請記憶迷宮。";
-			close;
-		case IE_NOMEMBER:
-			mes "只有申請 "+.@md_name$+" 副本的隊員才可以進入。";
-			close;
-		case IE_OK:
-			//mapannounce strnpcinfo(4),"隊伍 " + getpartyname(.@party_id) + " 裡的勇者 " + strcharinfo(0) + " 開始進行【"+.@md_name$+"】副本了",bc_map,"0x00ff99";			
-			//任務
-			if(checkquest(30001) == -1) { setquest 30001; }
 
+		.@charleston_time = checkquest(300593,PLAYTIME);
+		if (.@charleston_time == 2) {
+			mes "^0000ff可以再次進入火之湖。^000000";
+			erasequest 300590;
+			close;
+		} else  if (.@charleston_time == 0 || .@charleston_time == 1) {
+			mes "^ff0000副本冷卻等待3天。^000000";
+			close;
+		} else {
+			.@party_id = getcharid(1);
+			.@p_name$ = getpartyname(.@party_id);
+			.@md_name$ = "火之湖";
+			if (!.@party_id) {
+				mes "請先組成一支隊伍。";
+				close;
+			}
+			if (getcharid(0) == getpartyleader(.@party_id,2))
+				set .@menu$, "開啟火之湖:進入火之湖:取消";
+			else
+				set .@menu$, ":進入火之湖:取消";
+			switch(select(.@menu$)) {
+				case 1:
+					if(instance_mapname("1@slug") != "") {
+						mes "- 副本不能重復開啟。 -";
+						close;
+					}
+					.@instance = instance_create(.@md_name$);
+					set getinstancevar('party_id,instance_id(IM_PARTY)),getcharid(1);					
+					if (.@instance < 0) {
+							mes "隊伍名稱: "+.@p_name$;
+							mes "隊    長: "+strcharinfo(0);
+							mes "^0000ff"+.@md_name$+" ^000000- 創建副本失敗!";
+							close;
+					}
+					mes "^ff0000可以再次進入火之湖了。^000000";
+					//入場記錄時間
+					set Instance_Annal,gettimetick(2);
+					close;
+				case 2:
+						if(!instance_id(IM_PARTY)){
+							mes "還未生成副本";
+							close;
+						}				
+						if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
+							mes "[火之湖]";
+							mes "副本已經結束";
+							close;
+						}
+						if ( getinstancevar('start_game,instance_id(IM_PARTY)) ) {
+							mes "[火之湖管理者]";
+							mes "副本已經開啟.無法再進入了";
+							close;
+						}
+					switch(instance_enter("火之湖")) {
+						case 0:
 		//禁止多開偵測
 		if(getsameipinfo(getcharip(), strcharinfo(3)) > $Windows){
 		//允許多開名單
 		for(set .@a,0; .@a < getarraysize($@PartyWindowsows$); set .@a,.@a+1){
 		if(getcharip()==$@PartyWindowsows$[.@a]){
 		end; }}
-		mes "道館跟副本禁止多開!";
-		mes "檢測到副本地圖中有相同IP人物";
-		mes "^777777提示：3秒後自動傳送回首都^000000";
-		sleep2 3000;
-		warp "prontera",102,118;
+		dispbottom "檢測到副本地圖中有相同IP人物，自動傳送回官方副本區";
+		warp $Instance_MA$,$Instance_MAP_X,$Instance_MAP_Y;
 		end; }
-			close;
+			//扣除挑戰次數
+			set Instance_Bout_60,Instance_Bout_60-1;
+
+							setquest 300590; //state=1
+							end;	
+						case 1:
+							mes "只有註冊過的成員可以進入副本 "+"火之湖"+"。";
+							close;
+						case 2:
+							mes "副本進度 "+"火之湖"+" 不存在。";
+							mes "隊長還沒有建立副本進度。";
+							close;
+						case 3:
+							mes "不明錯誤.";
+							close;
+					}
+				case 3:
+					end;	
+			}
 		}
-	}
-	close;
-	
 OnInit:
 	waitingroom "火之湖",0;
 	end;
