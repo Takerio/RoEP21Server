@@ -3659,7 +3659,7 @@ function	script	Lunatic_Scroll_14	{
 	setarray $@Scroll_13_3[0],490103,470098,470177,480136;
 	set @Scroll_13,$@Scroll_13_3[rand(getarraysize($@Scroll_13_3))];
 	getitem @Scroll_13,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 時間縫隙轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 深能轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
 	end;
 	}
 	Scroll_13:
@@ -3667,7 +3667,7 @@ function	script	Lunatic_Scroll_14	{
 	setarray $@Scroll_13_4[0],22654,1001256,470291,450431;
 	set @Scroll_13,$@Scroll_13_4[rand(getarraysize($@Scroll_13_4))];
 	getitem @Scroll_13,1;
-	announce "恭喜玩家 " + strcharinfo(0) + "，從 時間縫隙轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 深能轉蛋 取得 "+getitemname(@Scroll_13)+"!!",15;
 	end;
 }
 
