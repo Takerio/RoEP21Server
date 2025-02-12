@@ -3956,5 +3956,122 @@ Body:
       bonus bMaxSP,50; 
       if(getrefine()>=14) skill "MG_STONECURSE",5;
 
-
+  - Id: 470291
+    AegisName: Astrolo_Dawn_Boots
+    Name: 占星師黎明戰靴 [1]
+    Type: Armor
+    Weight: 80
+    Defense: 20
+    Slots: 1
+    WeaponLevel: 2
+    EquipLevelMin: 190
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus bPow,(.@r/3)*2;
+      bonus bSpl,(.@r/3)*2;
+      bonus bCon,(.@r/3)*2;
+      if(.@r >= 7){
+      bonus bShortAtkRate,12;			
+      bonus bLongAtkRate,12;			
+      bonus2 bMagicAtkEle,Ele_All,12;
+        if(.@r >= 9){
+        bonus bDelayrate,-8;
+          if(.@r >= 11){
+          bonus bFixedCast,-700;
+            if(.@r >= 13){
+            bonus2 bAddRace,RC_All,12;                
+            bonus2 bMagicAddRace,RC_All,12;
+            }
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus bMaxHP,5;
+      bonus bMaxSP,5;
+        if(.@g >= 2){
+        bonus bAtkRate,7;
+        bonus bMatkRate,7;
+          if(.@g >= 3){
+          bonus bFixedCast,-300;
+            if(.@g >= 4){
+            bonus2 bAddClass,Class_All,10;                
+            bonus2 bMagicAddClass,Class_All,10; 
+            }
+          }
+        }
+      }
+  - Id: 450431
+    AegisName: Bar_Ab_E_Suits
+    Name: 霸肋門德深層能量衣 [1]
+    Type: Armor
+    Weight: 10
+    Defense: 75
+    Slots: 1
+    WeaponLevel: 2
+    EquipLevelMin: 190
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMdef,30;
+      bonus bAllTraitStats,3;
+      bonus bAtk,150+(.@r/2)*15;
+      bonus bMatk,150+(.@r/2)*15;
+      bonus bDef,(.@r/2)*30;
+      bonus2 bAddRace,RC_All,(.@r/3)*3;
+      bonus2 bMagicAddRace,RC_All,(.@r/3)*3;
+      if(.@r >= 7){
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+      bonus bPAtk,2;
+      bonus bSMatk,2;
+        if(.@r >= 9){
+        bonus bPAtk,5;
+        bonus bSMatk,5;
+          if(.@r >= 11){
+          bonus bDelayrate,-15;
+            if(.@r >= 13){
+            bonus bLongAtkRate,15;
+            bonus bShortAtkRate,15;
+            bonus2 bMagicAtkEle,Ele_All,15;
+            }
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus bAtkRate,25;
+      bonus bMatkRate,25; 
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+        if(.@g >= 2){
+        bonus bAtkRate,45;
+        bonus bMatkRate,45; 
+        bonus bAtkRate,8;
+        bonus bMatkRate,8;   
+        bonus bLongAtkRate,5;
+        bonus bShortAtkRate,5;
+        bonus2 bMagicAtkEle,Ele_All,5;   
+          if(.@g >= 3){
+          bonus bAtkRate,12;
+          bonus bMatkRate,12;
+          bonus bLongAtkRate,5;
+          bonus bShortAtkRate,5;
+          bonus2 bMagicAtkEle,Ele_All,5; 
+            if(.@g >= 4){
+            bonus bAtkRate,15;
+            bonus bMatkRate,15;
+            bonus bLongAtkRate,10;
+            bonus bShortAtkRate,10;
+            bonus2 bMagicAtkEle,Ele_All,10; 
+            bonus bAllTraitStats,5;
+            }
+          } 
+        }     
+      }
 

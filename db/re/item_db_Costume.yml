@@ -8491,14 +8491,7 @@ Body:
     ArmorLevel: 1
     View: 2691
 
-  - Id: 40447
-    AegisName: C_Head_Item_23874
-    Name: (服飾)飛機頭頭套[金]
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2784
+
   - Id: 40454
     AegisName: C_Head_Item_23961
     Name: (服飾)鴿子魔法帽
@@ -8515,14 +8508,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2875
-  - Id: 40456
-    AegisName: C_Head_Item_23996
-    Name: (服飾)天使的髮圈
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2906
+
   - Id: 40458
     AegisName: C_Zaha_Doll_Hat
     Name: (服飾)素貞娃娃帽子
@@ -8547,14 +8533,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 795
-  - Id: 40438
-    AegisName: C_Head_Item_23783
-    Name: (服飾)噴火龍頭盔(紫)
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2693
+
 
   - Id: 40603
     AegisName: C_Head_Item_22888
@@ -8572,14 +8551,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 808
-  - Id: 40595
-    AegisName: C_Head_Item_22780
-    Name: (服飾)銀河頭箍
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 699
+
   - Id: 40599
     AegisName: C_Head_Item_a023
     Name: (服飾)古代的金飾
@@ -8621,14 +8593,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 806
-  - Id: 40605
-    AegisName: C_Head_Item_22890
-    Name: (服飾)限量A版懶洋洋的貓
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 809
+
 
 
   - Id: 40485

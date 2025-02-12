@@ -20749,9 +20749,119 @@ Body:
       bonus2 bSubRace,RC_DemiHuman,((2*.@b)+2);
       bonus2 bSubRace,RC_Player_Human,((2*.@b)+2);
       bonus bHealPower,10*.@c;
+#   占星師黎明戰靴 [1]
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Pow2   # 310675
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bStr,100; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; showscript \"Bigfoot Power !\"; }";
+          if(.@g >= 2){bonus bPow,7;}
+          if(.@g >= 4){bonus bPow,12;bonus bPerfectHitAddRate,8;}    
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Sta2   # 310678
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bVit,120; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_MAGNUMBREAK; }";
+          if(.@g >= 2){bonus bMaxHPrate,8;bonus bPAtk,10;}
+          if(.@g >= 4){bonus bMaxHPrate,15;bonus bPAtk,15;bonus2 bAddSize,Size_All,25;}
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Wis2   # 310690
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bMatkRate,30; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_MAGNUMBREAK; }";
+          if(.@g >= 2){bonus bCastrate,-20;bonus bSMatk,10;}
+          if(.@g >= 4){bonus bCastrate,-35;bonus bSMatk,15;bonus2 bMagicAddSize,Size_All,25;} 
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Spl2   # 310687
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bInt,120; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_LAMADAN; }";
+          if(.@g >= 2){bonus bSpl,10;}
+          if(.@g >= 4){bonus bSpl,20;bonus bFixedCast,-200;}         
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Con2   # 310681
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bDex,150; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_FLASHER; }";
+          if(.@g >= 2){bonus bCon,10;}
+          if(.@g >= 4){bonus bCon,20;bonus bLongAtkRate,8;}                  
+       	
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Crt2   # 310684
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bAtkRate,20; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_MVP; showscript \"LUCKY MAX !!\"; }";
+          if(.@g >= 2){bonus bCritical,7;}
+          if(.@g >= 4){bonus bCritical,7;bonus bCRate,10;}  
 
 
 
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Pow3   # 310676
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bStr,120; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; showscript \"Bigfoot Power !\"; }";
+          if(.@g >= 2){bonus bPow,10;}
+          if(.@g >= 4){bonus bPow,18;bonus bPerfectHitAddRate,15;}    
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Sta3   # 310679
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bVit,150; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_MAGNUMBREAK; }";
+          if(.@g >= 2){bonus bMaxHPrate,10;bonus bPAtk,10;}
+          if(.@g >= 4){bonus bMaxHPrate,20;bonus bPAtk,15;bonus2 bAddSize,Size_All,30;}
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Wis3   # 310691
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bMatkRate,30; }",35,10000,BF_MAGIC,"{ specialeffect2 EF_MAGNUMBREAK; }";
+          if(.@g >= 2){bonus bCastrate,-25;bonus bSMatk,10;}
+          if(.@g >= 4){bonus bCastrate,-45;bonus bSMatk,15;bonus2 bMagicAddSize,Size_All,30;} 
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Spl3   # 310688
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bInt,150; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_LAMADAN; }";
+          if(.@g >= 2){bonus bSpl,12;}
+          if(.@g >= 4){bonus bSpl,27;bonus bFixedCast,-300;}         
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Con3   # 310682
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bDex,200; }",30,10000,BF_WEAPON,"{ specialeffect2 EF_FLASHER; }";
+          if(.@g >= 2){bonus bCon,12;}
+          if(.@g >= 4){bonus bCon,27;bonus bLongAtkRate,15;}                        	
+  - Combos:
+      - Combo:
+          - Astrolo_Dawn_Boots   # 490615
+          - Star_Cluster_Of_Crt3   # 310685
+    	Script: |
+          .@g = getenchantgrade(EQI_SHOES);
+     	  autobonus "{ bonus bAtkRate,20; }",25,10000,BF_WEAPON,"{ specialeffect2 EF_MVP; showscript \"LUCKY MAX !!\"; }";
+          if(.@g >= 2){bonus bCritical,8;}
+          if(.@g >= 4){bonus bCritical,17;bonus bCRate,12;}  
 
 
 

@@ -5920,7 +5920,47 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2767
-
+#深能轉蛋
+  - Id: 40447
+    AegisName: C_Head_Item_23874
+    Name: (服飾)飛機頭頭套[金]
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2784
+  - Id: 40456
+    AegisName: C_Head_Item_23996
+    Name: (服飾)天使的髮圈
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2906
+  - Id: 40438
+    AegisName: C_Head_Item_23783
+    Name: (服飾)噴火龍頭盔(紫)
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 2693
+  - Id: 40595
+    AegisName: C_Head_Item_22780
+    Name: (服飾)銀河頭箍
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 699
+  - Id: 40605
+    AegisName: C_Head_Item_22890
+    Name: (服飾)限量A版懶洋洋的貓
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 809
 #紅利商城
 #原神系列
   - Id: 45197

@@ -316,23 +316,23 @@ bonus2 bAddItemGroupSPHealRate,ig,n;	使用物品群組為 ig 的恢復類道具
 
 詠唱時間/冷卻和使用間隔時間 - Cast time/delay ( 1秒 = 1000毫秒 )
 ---------------
-bonus bCastrate,n;                   變動詠唱 + n%				註：與 bonus bVariableCastrate 共用語法, Re/Pre通用語法
-bonus2 bCastrate,sk,n;         	     增加 sk 技能 n% 變動詠唱	註：與 bonus2 bVariableCastrate 共用語法, Re/Pre通用語法
+bonus bCastrate,-n;                   變動詠唱 - n%				註：與 bonus bVariableCastrate 共用語法, Re/Pre通用語法
+bonus2 bCastrate,sk,-n;         	     減少 sk 技能 n% 變動詠唱	註：與 bonus2 bVariableCastrate 共用語法, Re/Pre通用語法
 
-bonus bFixedCastrate,n;        	     固定詠唱 + n%				註：僅適用Re復興後版本
-bonus2 bFixedCastrate,sk,n;    	     增加 sk 技能 n% 固定詠唱	註：僅適用Re復興後版本
-bonus bVariableCastrate,n;     	     變動詠唱 + n%				註：與 bonus bCastrate 共用語法, 僅適用Re復興後版本
+bonus bFixedCastrate,-n;        	     固定詠唱 - n%				註：僅適用Re復興後版本
+bonus2 bFixedCastrate,sk,-n;    	     減少 sk 技能 n% 固定詠唱	註：僅適用Re復興後版本
+bonus bVariableCastrate,-n;     	     變動詠唱 - n%				註：與 bonus bCastrate 共用語法, 僅適用Re復興後版本
 bonus2 bVariableCastrate,sk,n; 	     增加 sk 技能 n% 變動詠間	註：與 bonus2 bCastrate 共用語法, 僅適用Re復興後版本
 
-bonus bFixedCast,t;            	     所有技能固定詠唱 + t 毫秒	註：僅適用Re復興後版本
-bonus2 bSkillFixedCast,sk,t;   	     技能 sk 固定詠唱 + t 毫秒	註：僅適用Re復興後版本
-bonus bVariableCast,t;         	     所有技能變動詠唱 + t 毫秒
-bonus2 bSkillVariableCast,sk,t;	     技能 sk 變動詠唱 + t 毫秒
+bonus bFixedCast,-t;            	     所有技能固定詠唱 - t 毫秒	註：僅適用Re復興後版本
+bonus2 bSkillFixedCast,sk,-t;   	     技能 sk 固定詠唱 - t 毫秒	註：僅適用Re復興後版本
+bonus bVariableCast,-t;         	     所有技能變動詠唱 - t 毫秒
+bonus2 bSkillVariableCast,sk,-t;	     技能 sk 變動詠唱 - t 毫秒
 
 bonus bNoCastCancel;                 防止詠唱被打斷	(防斷詠)			註：GvG(mapflag: mf_gvg) 無效
 bonus bNoCastCancel2;                防止詠唱被打斷	(防斷詠)			註：GvG(mapflag: mf_gvg) 有效
 
-bonus bDelayrate,n;                  所有技能共通延遲(AfterCastActDelay) + n%
+bonus bDelayrate,-n;                  所有技能共通延遲(AfterCastActDelay) - n%
 bonus2 bSkillDelay,sk,t;             技能 sk 共通延遲(AfterCastActDelay) + t 毫秒
 bonus2 bSkillCooldown,sk,t;          技能 sk 獨立延遲/冷卻(Cooldown) + t 毫秒
 
