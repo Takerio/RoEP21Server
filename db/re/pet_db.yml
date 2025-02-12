@@ -10218,7 +10218,7 @@ Body:
       callfunc "petskill",960298;
     Script: >
       callfunc "petstatus",960298;
-# 雙角甲蟲(守護者) 
+# 雙角甲蟲(守護者)
   - Mob: MH_I_HORN_SCARABA2
     CaptureRate : 1000
     EggItem: item_960299
@@ -12473,7 +12473,8 @@ Body:
   #     callfunc "petskill",960486;
   #   Script: >
   #     callfunc "petstatus",960486;
-  # - Mob: SHECIL
+##  刺錘哥布靈
+  # - Mob: GOBLIN_5
   #   CaptureRate : 1000
   #   EggItem: item_960487
   #   FoodItem: Luxurious_Pet_Food
@@ -12484,7 +12485,8 @@ Body:
   #     callfunc "petskill",960487;
   #   Script: >
   #     callfunc "petstatus",960487;
-  # - Mob: KATRINN
+##  蚯蚓
+  # - Mob: HODE
   #   CaptureRate : 1000
   #   EggItem: item_960488
   #   FoodItem: Luxurious_Pet_Food
@@ -12495,7 +12497,8 @@ Body:
   #     callfunc "petskill",960488;
   #   Script: >
   #     callfunc "petstatus",960488;
-  # - Mob: YGNIZEM
+##  鍬形蟲
+  # - Mob: HORN
   #   CaptureRate : 1000
   #   EggItem: item_960489
   #   FoodItem: Luxurious_Pet_Food
@@ -12506,7 +12509,8 @@ Body:
   #     callfunc "petskill",960489;
   #   Script: >
   #     callfunc "petstatus",960489;
-  # - Mob: WHIKEBAIN
+##  鬼火
+  # - Mob: HORONG
   #   CaptureRate : 1000
   #   EggItem: item_960490
   #   FoodItem: Luxurious_Pet_Food
@@ -12517,7 +12521,8 @@ Body:
   #     callfunc "petskill",960490;
   #   Script: >
   #     callfunc "petstatus",960490;
-  # - Mob: ARMAIA
+##  南瓜先生
+  # - Mob: JAKK
   #   CaptureRate : 1000
   #   EggItem: item_960491
   #   FoodItem: Luxurious_Pet_Food
@@ -12528,7 +12533,8 @@ Body:
   #     callfunc "petskill",960491;
   #   Script: >
   #     callfunc "petstatus",960491;
-  # - Mob: EREND
+##  裘卡
+  # - Mob: JOKER
   #   CaptureRate : 1000
   #   EggItem: item_960492
   #   FoodItem: Luxurious_Pet_Food
@@ -12539,7 +12545,8 @@ Body:
   #     callfunc "petskill",960492;
   #   Script: >
   #     callfunc "petstatus",960492;
-  # - Mob: KAVAC
+##  卡利斯格
+  # - Mob: KHALITZBURG
   #   CaptureRate : 1000
   #   EggItem: item_960493
   #   FoodItem: Luxurious_Pet_Food
@@ -12550,7 +12557,8 @@ Body:
   #     callfunc "petskill",960493;
   #   Script: >
   #     callfunc "petstatus",960493;
-  # - Mob: RAWREL
+##  大斧犬妖
+  # - Mob: KOBOLD_1
   #   CaptureRate : 1000
   #   EggItem: item_960494
   #   FoodItem: Luxurious_Pet_Food
@@ -12561,6 +12569,7 @@ Body:
   #     callfunc "petskill",960494;
   #   Script: >
   #     callfunc "petstatus",960494;
+##  
   # - Mob: B_YGNIZEM
   #   CaptureRate : 1000
   #   EggItem: item_960495
