@@ -28,7 +28,7 @@ function	script	petskill	{
       petskillattack "LK_SPIRALPIERCE",5,MinSkillRate,MaxSkillRate;
       break;
     case 960339:
-      petskillsupport "ASC_EDP",5,SkillTimer,100,100;
+      petskillsupport "AS_ENCHANTPOISON",5,SkillTimer,100,100;
       petskillattack "GC_DARKCROW",5,30,50;
       break;
     case 960340:
