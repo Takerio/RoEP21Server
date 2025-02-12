@@ -5,6 +5,7 @@
 		bindatcmd "t",strnpcinfo(3) + "::Ontest",99,99;
 		bindatcmd "se",strnpcinfo(3) + "::Onsend",99,99;
 		bindatcmd "te",strnpcinfo(3) + "::Ontestequip";
+		bindatcmd "f",strnpcinfo(3) + "::Onfollow";
 		end;
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
@@ -110,4 +111,24 @@ Ontest:
 	mes getiteminfo(.@selectId,5);
 	close;
 	end;
+Onfollow:
+	// get the party member names
+	getpartymember getcharid(1),0;
+	.@count = $@partymembercount;
+	copyarray .@name$[0], $@partymembername$[0], $@partymembercount;
+
+	// list the party member names
+	for (.@i = 0; .@i < .@count; .@i++){
+			if(.@atcmd_parameters$[0] == "0"){atcommand "@follow"; showscript "取消跟隨～";end;}
+			if(.@name$[.@i] == .@atcmd_parameters$[0]){
+			atcommand "@follow " + .@name$[.@i];
+			end; }
+	}
+		dispbottom "找不到可以跟隨的隊友。(跟隨方跟被跟隨方都需要在同一個隊伍～)";
+		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
+	close;
 }
+
+
+
+
