@@ -5,7 +5,7 @@
 		bindatcmd "t",strnpcinfo(3) + "::Ontest",99,99;
 		bindatcmd "se",strnpcinfo(3) + "::Onsend",99,99;
 		bindatcmd "te",strnpcinfo(3) + "::Ontestequip";
-		bindatcmd "f",strnpcinfo(3) + "::Onfollow";
+		//bindatcmd "f",strnpcinfo(3) + "::Onfollow";
 		end;
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
