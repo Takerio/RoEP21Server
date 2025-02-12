@@ -3967,6 +3967,8 @@ Body:
       Shoes: true
     WeaponLevel: 2
     EquipLevelMin: 190
+    Refineable: true
+    Gradable: true
     Trade: 
       NoDrop: true
     Script: |
@@ -4018,6 +4020,8 @@ Body:
       Armor: true
     WeaponLevel: 2
     EquipLevelMin: 190
+    Refineable: true
+    Gradable: true
     Trade: 
       NoDrop: true
     Script: |
