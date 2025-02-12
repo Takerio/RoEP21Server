@@ -3963,6 +3963,8 @@ Body:
     Weight: 80
     Defense: 20
     Slots: 1
+    Locations:
+      Shoes: true
     WeaponLevel: 2
     EquipLevelMin: 190
     Trade: 
@@ -4012,6 +4014,8 @@ Body:
     Weight: 10
     Defense: 75
     Slots: 1
+    Locations:
+      Armor: true
     WeaponLevel: 2
     EquipLevelMin: 190
     Trade: 
