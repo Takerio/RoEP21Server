@@ -83,15 +83,19 @@ Ontestequip:
 	next;
 	mes "請輸入附魔編號(第一洞)";
 	input .@slot1;
+	if(!.@slot1){mes "卡槽不能為空～";end;}
 	next;
 	mes "請輸入附魔編號(第二洞)";
 	input .@slot2;
+	if(!.@slot2){mes "卡槽不能為空～";end;}
 	next;
 	mes "請輸入附魔編號(第三洞)";
 	input .@slot3;
+	if(!.@slot3){mes "卡槽不能為空～";end;}
 	next;
 	mes "請輸入附魔編號(第四洞)";
 	input .@slot4;
+	if(!.@slot4){mes "卡槽不能為空～";end;}
 	next;
 	mes "請確定要租借的裝備為 : " + getitemname(.@itemid);
 	mes "精煉程度 + " + .@refine;
