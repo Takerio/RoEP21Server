@@ -1228,6 +1228,13 @@ Body:
     DamageMotion: 432
     DamageTaken: 10
     Ai: 21
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
   - Id: 27092
     AegisName: DRACO_S
     Name: Draco_S
@@ -1259,6 +1266,13 @@ Body:
     DamageMotion: 432
     DamageTaken: 10
     Ai: 21
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
   - Id: 27093
     AegisName: COMODO_S
     Name: Comodo_S
@@ -1290,7 +1304,13 @@ Body:
     DamageMotion: 360
     DamageTaken: 10
     Ai: 21
-
+    Drops:
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
+      - Item: Cash_Points_1
+        Rate: 10000
   - Id: 27094
     AegisName: E1_G_S_NYDHOGK_S
     Name: NYDHOGK_S
