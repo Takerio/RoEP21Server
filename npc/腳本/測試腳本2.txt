@@ -139,12 +139,13 @@ Onrefixpetegg:
 		mes "您沒有任何受損的物品唷！";
 		close;
 	}*/
-getinventorylist;
+  getinventorylist;
 	set $i,0;
     for(set .@i,0; .@i < getarraysize(@inventorylist_id); .@i++){
         if(@inventorylist_id[.@i] >= 960000 && @inventorylist_id[.@i] <= 960470){ 
             delitem @inventorylist_id[.@i],@inventorylist_amount[.@i];  
-			getitem @inventorylist_id[.@i],@inventorylist_amount[.@i];  
+
+			atcommand "@makeegg " + @inventorylist_id[.@i];  
 			
         }
     }
