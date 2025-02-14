@@ -4062,7 +4062,7 @@ Body:
       bonus bSMatk,10;
       bonus2 bMagicAddEle,Ele_All,10;
 #參宿四
-  - Mob: MD_BETELGEUSE
+  - Mob: MD_BETELGEUSE_PET
     EggItem: BETELGEUSE_Egg
     FoodItem: Pet_Food
     Fullness: 4
@@ -13301,7 +13301,7 @@ Body:
       callfunc "petskill",960555;
     Script: >
       callfunc "petstatus",960555;
- 邪骸浪人
+#  邪骸浪人
   - Mob: WANDER_MAN
     CaptureRate : 1000
     EggItem: item_960556
