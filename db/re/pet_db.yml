@@ -13301,18 +13301,18 @@ Body:
       callfunc "petskill",960555;
     Script: >
       callfunc "petstatus",960555;
-#  邪骸浪人
-  # - Mob: WANDER_MAN
-  #   CaptureRate : 1000
-  #   EggItem: item_960556
-  #   FoodItem: Luxurious_Pet_Food
-  #   Fullness: 2
-  #   IntimacyFed: 50
-  #   AllowAutoFeed: true
-  #   SupportScript: >
-  #     callfunc "petskill",960556;
-  #   Script: >
-  #     callfunc "petstatus",960556;
+ 邪骸浪人
+  - Mob: WANDER_MAN
+    CaptureRate : 1000
+    EggItem: item_960556
+    FoodItem: Luxurious_Pet_Food
+    Fullness: 2
+    IntimacyFed: 50
+    AllowAutoFeed: true
+    SupportScript: >
+      callfunc "petskill",960556;
+    Script: >
+      callfunc "petstatus",960556;
 ##  
   # - Mob: ECHIO
   #   CaptureRate : 1000

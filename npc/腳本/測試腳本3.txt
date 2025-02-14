@@ -1,6 +1,9 @@
+/*
+// debug模式
 	-	script	test_pet	-1,{
         OnPCAddItemFilter:
         set @additem_nameid$,@additem_nameid;
         debugmes "寵物編號：" + @additem_nameid$;
         end;
     }
+*/
