@@ -1766,7 +1766,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      set .@id,rand(960000,960470);
+      set .@id,rand(960000,960556);
       dispbottom "寵物編號 : " + .@id;
       atcommand "@makeegg " + .@id;
   - Id: 960000
