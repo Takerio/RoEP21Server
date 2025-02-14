@@ -4062,7 +4062,7 @@ Body:
       bonus bSMatk,10;
       bonus2 bMagicAddEle,Ele_All,10;
 #參宿四
-  - Mob: MD_BETELGEUSE_PET
+  - Mob: MD_BETELGEUSE
     EggItem: BETELGEUSE_Egg
     FoodItem: Pet_Food
     Fullness: 4
