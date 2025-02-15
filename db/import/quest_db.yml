@@ -2737,3 +2737,6 @@ Body:
   - Id: 80003
     Title: 寵物抽抽樂箱任務-等候
     TimeLimit: +12h
+  - Id: 30599
+    Title: 沉沒之塔
+    TimeLimit: +24h

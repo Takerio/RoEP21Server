@@ -1032,7 +1032,13 @@ Body:
       Map: 1@Jsp_c
       X: 98
       Y: 19
-
+  - Id: 199
+    Name: ¨I¨S¤§¶ð
+    TimeLimit: 7200
+    Enter:
+      Map: 1@ch_u
+      X: 15
+      Y: 54
 
 
 

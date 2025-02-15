@@ -1,26 +1,17 @@
-/*  //
-	-	script	test_pet	-1,{
-        OnPCAddItemFilter:
-        set @additem_nameid$,@additem_nameid;
-        debugmes "å¯µç‰©ç·¨è™Ÿï¼š" + @additem_nameid$;
-        end;
-    }
-*/
-
 /*
-= é©åˆç¯„åœ: ç†Šè²“RA
-= å‰¯æœ¬å<<EP18.0-æ²‰æ²’ä¹‹å¡”-Constallation Tower>>
+= ¾A¦X½d³ò: ºµ¿ßRA
+= °Æ¥»¦W<<EP18.0-¨I¨S¤§¶ğ-Constallation Tower>>
 ============================================================
-= æ­¤å‰¯æœ¬ç”± [äººé­šå§¬çš„æ€å¿µ ] ä»¥å®˜æ–¹æµç¨‹/æ¼¢åŒ–/æ¨¡æ“¬ä»¿å¯«
-= æˆæ¬Šä½œè€…QQ: 327945477
-= æ›´å¤šå®šåˆ¶å‰¯æœ¬å‰µæ„å¯ä»¥è¯ç¹«ä½œè€…ç·¨å¯«
+= ¦¹°Æ¥»¥Ñ [¤H³½®Vªº«ä©À ] ¥H©x¤è¬yµ{/º~¤Æ/¼ÒÀÀ¥é¼g
+= ±ÂÅv§@ªÌQQ: 327945477
+= §ó¦h©w¨î°Æ¥»³Ğ·N¥i¥HÁpÃ´§@ªÌ½s¼g
 ============================================================
-= å®Œæˆæ™‚é–“ [2021.09.20]
+= §¹¦¨®É¶¡ [2021.09.20]
 ============================================================
-= *******æœªç¶“ä½œè€…æˆæ¬Š.è«‹ä¸è¦éš¨æ„è½‰è¼‰/è½‰è³£,è¬è¬!***********
+= *******¥¼¸g§@ªÌ±ÂÅv.½Ğ¤£­nÀH·NÂà¸ü/Âà½æ,ÁÂÁÂ!***********
 ============================================================
   - Id: 199
-    Name: æ²‰æ²’ä¹‹å¡”
+    Name: ¨I¨S¤§¶ğ
     TimeLimit: 7200
     Enter:
       Map: 1@ch_u
@@ -28,15 +19,15 @@
       Y: 54
 	  
   - Id: 30599
-    Title: æ²‰æ²’ä¹‹å¡”
+    Title: ¨I¨S¤§¶ğ
     TimeLimit: +24h
 	
 	  
-	[30599] = { Title = "æ²‰æ²’ä¹‹å¡”", Description = { "æ²‰æ²’ä¹‹å¡”" }, Summary = "" },
+	[30599] = { Title = "¨I¨S¤§¶ğ", Description = { "¨I¨S¤§¶ğ" }, Summary = "" },
 
 
 */
-1@ch_u	mapflag	monster_noteleport	//é­”ç‰©ç„¡æ³•ç¬ç§»
+1@ch_u	mapflag	monster_noteleport	//Å]ª«µLªkÀş²¾
 1@ch_u	mapflag	noteleport
 1@ch_u	mapflag	nosave	SavePoint
 1@ch_u	mapflag	nomemo
@@ -46,25 +37,25 @@
 1@ch_u	mapflag	partylock
 	
 	
-trinity,37,33,5	script	èŠè’‚è¥¿äº#12	4_4JOB_LETICIA,{
+trinity,37,33,5	script	µÜ¸¦¦è¨È#12	4_4JOB_LETICIA,{
 
-	//èª¿è©¦å…¥å£	
+	//½Õ¸Õ¤J¤f	
 	//cutin "4job_leticia_02",2;
-	mes "[èŠè’‚è¥¿äº]";
-	mes "^888800ç„¡é™æ¨“å±¤æŒ‘æˆ°é™æ™‚30åˆ†é˜^000000";
-	mes "^FF0000æ¯æ—¥æŒ‘æˆ°1æ¬¡æ™šä¸Š12é»é‡ç½®æ¬¡æ•¸^000000";
-	mes "^FF0000æ¯é€±æ—¥æ™šä¸Š12é»é‡ç½®æ¨“æ•¸^000000";
-	mes "^FF0000æŒ‘æˆ°ä¸€å®šæ¨“å±¤æœƒç²å¾—å±¬æ€§åŠ æˆ^000000";
-	mes "15æ¨“ ALL+1 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+1%";
-	mes "35æ¨“ ALL+2 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+2%";
-	mes "55æ¨“ ALL+3 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+3%";
-	mes "75æ¨“ ALL+4 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+4%";
-	mes "100æ¨“ ALL+5 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+5%";
-	mes "150æ¨“ ALL+6 å°BOSSé­”æ³•èˆ‡ç‰©ç†å‚·å®³+6%";
+	mes "[µÜ¸¦¦è¨È]";
+	mes "^888800µL­­¼Ó¼h¬D¾Ô­­®É30¤ÀÄÁ^000000";
+	mes "^FF0000¨C¤é¬D¾Ô1¦¸±ß¤W12ÂI­«¸m¦¸¼Æ^000000";
+	mes "^FF0000¨C¶g¤é±ß¤W12ÂI­«¸m¼Ó¼Æ^000000";
+	mes "^FF0000¬D¾Ô¤@©w¼Ó¼h·|Àò±oÄİ©Ê¥[¦¨^000000";
+	mes "15¼Ó ALL+1 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+1%";
+	mes "35¼Ó ALL+2 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+2%";
+	mes "55¼Ó ALL+3 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+3%";
+	mes "75¼Ó ALL+4 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+4%";
+	mes "100¼Ó ALL+5 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+5%";
+	mes "150¼Ó ALL+6 ¹ïBOSSÅ]ªk»Pª«²z¶Ë®`+6%";
 	mes "*******************************";
 	if(sinkbonus)
-	mes "^550088ä½ ç›®å‰æŒ‘æˆ°æœ€é«˜å±¤ç¬¬"+sinkbonus+"å±¤^000000";
-	mes "^A42D00ä»Šæ—¥ä½ é‚„æœ‰^FF0000 "+(.time-sink_ta_co)+" ^000000^A42D00æ¬¡æ©ŸæœƒæŒ‘æˆ°";
+	mes "^550088§A¥Ø«e¬D¾Ô³Ì°ª¼h²Ä"+sinkbonus+"¼h^000000";
+	mes "^A42D00¤µ¤é§AÁÙ¦³^FF0000 "+(.time-sink_ta_co)+" ^000000^A42D00¦¸¾÷·|¬D¾Ô";
 	/*
 		setdialogalign(DIALOG_ALIGN_MIDDLE);
 		setdialogalign(DIALOG_ALIGN_CENTER);
@@ -73,93 +64,93 @@ trinity,37,33,5	script	èŠè’‚è¥¿äº#12	4_4JOB_LETICIA,{
     */
 	next;
 	if(sink_ta_co>=.time){
-		mes "ä½ ä»Šæ—¥çš„æŒ‘æˆ°æ©Ÿæœƒå·²ç”¨å®Œ";
+		mes "§A¤µ¤éªº¬D¾Ô¾÷·|¤w¥Î§¹";
 		close;
 		
 	}
-	//èª¿è©¦å…¥å£	
-//å…¥å ´ç­‰ç´šè¨­å®š
+	//½Õ¸Õ¤J¤f	
+//¤J³õµ¥¯Å³]©w
 		if (BaseLevel < 99){
-			mes "[æ²‰æ²’ä¹‹å¡”]";
-			mes "ç­‰ç´šä¸è¶³99";
+			mes "[¨I¨S¤§¶ğ]";
+			mes "µ¥¯Å¤£¨¬99";
 			close;
 		}
-//å…¥å ´äººæ•¸è¨­å®š		
+//¤J³õ¤H¼Æ³]©w		
 		getpartymember getcharid(1);
 		if($@partymembercount>12){
-			mes "[æ²‰æ²’ä¹‹å¡”]";
-			mes "éšŠä¼äººæ•¸éå¤š";
+			mes "[¨I¨S¤§¶ğ]";
+			mes "¶¤¥î¤H¼Æ¹L¦h";
 			close;
 		}
 		
 		
 		.@charleston_time = checkquest(30599,PLAYTIME);
 		if (.@charleston_time == 2) {
-			mes "^0000ffå¯ä»¥å†æ¬¡é€²å…¥æ²‰æ²’ä¹‹å¡”ã€‚^000000";
+			mes "^0000ff¥i¥H¦A¦¸¶i¤J¨I¨S¤§¶ğ¡C^000000";
 			erasequest 30599;
 			close; 
 		} else {
 			.@party_id = getcharid(1);
 			.@p_name$ = getpartyname(.@party_id);
-			.@md_name$ = "æ²‰æ²’ä¹‹å¡”";
+			.@md_name$ = "¨I¨S¤§¶ğ·sª©";
 			if (!.@party_id) {
-				mes "è«‹å…ˆçµ„æˆä¸€æ”¯éšŠä¼ã€‚";
+				mes "½Ğ¥ı²Õ¦¨¤@¤ä¶¤¥î¡C";
 				close;
 			}
 			if (getcharid(0) == getpartyleader(.@party_id,2))
-				set .@menu$, "é–‹å•Ÿæ²‰æ²’ä¹‹å¡”:é€²å…¥æ²‰æ²’ä¹‹å¡”:å–æ¶ˆ";
+				set .@menu$, "¶}±Ò¨I¨S¤§¶ğ:¶i¤J¨I¨S¤§¶ğ:¨ú®ø";
 			else
-				set .@menu$, ":é€²å…¥æ²‰æ²’ä¹‹å¡”:å–æ¶ˆ";
+				set .@menu$, ":¶i¤J¨I¨S¤§¶ğ:¨ú®ø";
 			switch(select(.@menu$)) {
 				case 1:
 					if(instance_mapname("1@mcd") != "") {
-						mes "- å‰¯æœ¬ä¸èƒ½é‡è¤‡é–‹å•Ÿã€‚ -";
+						mes "- °Æ¥»¤£¯à­«½Æ¶}±Ò¡C -";
 						close;
 					}
 					.@instance = instance_create(.@md_name$);
 					set getinstancevar('party_id,instance_id(IM_PARTY)),getcharid(1);					
 					if (.@instance < 0) {
-							mes "éšŠä¼åç¨±: "+.@p_name$;
-							mes "éšŠ    é•·: "+strcharinfo(0);
-							mes "^0000ff"+.@md_name$+" ^000000- å‰µå»ºå‰¯æœ¬å¤±æ•—!";
+							mes "¶¤¥î¦WºÙ: "+.@p_name$;
+							mes "¶¤    ªø: "+strcharinfo(0);
+							mes "^0000ff"+.@md_name$+" ^000000- ³Ğ«Ø°Æ¥»¥¢±Ñ!";
 							close;
 					}
-					mes "^ff0000å¯ä»¥å†æ¬¡é€²å…¥æ²‰æ²’ä¹‹å¡”äº†ã€‚^000000";
+					mes "^ff0000¥i¥H¦A¦¸¶i¤J¨I¨S¤§¶ğ¤F¡C^000000";
 					close;
 				case 2:
 						if(!instance_id(IM_PARTY)){
-							mes "é‚„æœªç”Ÿæˆå‰¯æœ¬";
+							mes "ÁÙ¥¼¥Í¦¨°Æ¥»";
 							close;
 						}							
 						if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
-							mes "[æ²‰æ²’ä¹‹å¡”]";
-							mes "å‰¯æœ¬å·²ç¶“çµæŸ";
+							mes "[¨I¨S¤§¶ğ]";
+							mes "°Æ¥»¤w¸gµ²§ô";
 							close;
 						}
 						if ( getinstancevar('start,instance_id(IM_PARTY)) ) {
-							mes "[æ²‰æ²’ä¹‹å¡”]";
-							mes "å‰¯æœ¬å·²ç¶“é–‹å§‹";
+							mes "[¨I¨S¤§¶ğ]";
+							mes "°Æ¥»¤w¸g¶}©l";
 							close;
 						}
 						if ( getinstancevar('start_game,instance_id(IM_PARTY)) ) {
-							mes "[æ²‰æ²’ä¹‹å¡”]";
-							mes "å‰¯æœ¬å·²ç¶“é–‹å•Ÿ.ç„¡æ³•å†é€²å…¥äº†";
+							mes "[¨I¨S¤§¶ğ]";
+							mes "°Æ¥»¤w¸g¶}±Ò.µLªk¦A¶i¤J¤F";
 							close;
 						}
-					switch(instance_enter("æ²‰æ²’ä¹‹å¡”")) {
+					switch(instance_enter("¨I¨S¤§¶ğ")) {
 						case 0:
 							sink_ta_co++;
 							//setquest 30599; //state=1
 							end;	
 						case 1:
-							mes "åªæœ‰è¨»å†Šéçš„æˆå“¡å¯ä»¥é€²å…¥å‰¯æœ¬ "+"æ²‰æ²’ä¹‹å¡”"+"ã€‚";
+							mes "¥u¦³µù¥U¹Lªº¦¨­û¥i¥H¶i¤J°Æ¥» "+"¨I¨S¤§¶ğ"+"¡C";
 							close;
 						case 2:
-							mes "å‰¯æœ¬é€²åº¦ "+"æ²‰æ²’ä¹‹å¡”"+" ä¸å­˜åœ¨ã€‚";
-							mes "éšŠé•·é‚„æ²’æœ‰å»ºç«‹å‰¯æœ¬é€²åº¦ã€‚";
+							mes "°Æ¥»¶i«× "+"¨I¨S¤§¶ğ"+" ¤£¦s¦b¡C";
+							mes "¶¤ªøÁÙ¨S¦³«Ø¥ß°Æ¥»¶i«×¡C";
 							close;
 						case 3:
-							mes "ä¸æ˜éŒ¯èª¤.";
+							mes "¤£©ú¿ù»~.";
 							close;
 					}
 				case 3:
@@ -168,7 +159,6 @@ trinity,37,33,5	script	èŠè’‚è¥¿äº#12	4_4JOB_LETICIA,{
 		}
 end;
 Oninit:
-waitingroom "å¥‡æ€ªçš„æ²‰æ²’ä¹‹èˆ¹",0;
 .time = 1;
 end;
 }
@@ -176,45 +166,45 @@ end;
 
 
 
-1@ch_u,8,55,5	script	èŠè’‚è¥¿äº#122_n	4_4JOB_LETICIA,{
+1@ch_u,8,55,5	script	µÜ¸¦¦è¨È#122_n	4_4JOB_LETICIA,{
 
 	if(getcharid(0)!= getpartyleader(getcharid(1),2)){
 
-		mes "[èŠè’‚è¥¿äº]";
-		mes "è®“éšŠé•·éä¾†";
+		mes "[µÜ¸¦¦è¨È]";
+		mes "Åı¶¤ªø¹L¨Ó";
 		close;
 	}
 	getpartymember 'party_id;
 	.@party_co = $@partymembercount;
-	mes "[èŠè’‚è¥¿äº]";
-	mes "éšŠä¼äººæ•¸ç‚º: "+.@party_co+"äºº,æ¯å±¤é­”ç‰©æ•¸é‡å°‡æœƒæŒ‰äººæ•¸çš„æ•¸é‡ç¿»å€";
-	mes "æŒ‘æˆ°é–‹å§‹å‰.è«‹ç¢ºå®šæœ€çµ‚äººæ•¸!";
+	mes "[µÜ¸¦¦è¨È]";
+	mes "¶¤¥î¤H¼Æ¬°: "+.@party_co+"¤H,¨C¼hÅ]ª«¼Æ¶q±N·|«ö¤H¼Æªº¼Æ¶qÂ½­¿";
+	mes "¬D¾Ô¶}©l«e.½Ğ½T©w³Ì²×¤H¼Æ!";
 	next;
-	if(select("ç¢ºå®šå¥½äº†!é–‹å§‹æŒ‘æˆ°:å–æ¶ˆ")==2)end;
+	if(select("½T©w¦n¤F!¶}©l¬D¾Ô:¨ú®ø")==2)end;
 	getpartymember 'party_id;
 	.@party_co = $@partymembercount;
 		'party_co = .@party_co;
 		'start = 1;
 		donpcevent instance_npcname("#sink_mob_n")+"::OnEnable";
 		hideonnpc instance_npcname(strnpcinfo(0));
-		mapannounce 'sink_map$, "æŒ‘æˆ°æ™‚é–“é–‹å§‹é™æ™‚30åˆ†é˜",bc_map,"0x00ff99";
+		mapannounce 'sink_map$, "¬D¾Ô®É¶¡¶}©l­­®É30¤ÀÄÁ",bc_map,"0x00ff99";
 		initnpctimer;
 	end;
 Ontimer1500000:
-			mapannounce 'sink_map$, "æŒ‘æˆ°æ™‚é–“é‚„çœä¸‹5åˆ†é˜",bc_map,"0x00ff99";
+			mapannounce 'sink_map$, "¬D¾Ô®É¶¡ÁÙ¬Ù¤U5¤ÀÄÁ",bc_map,"0x00ff99";
 			end;
 Ontimer1680000:
-			mapannounce 'sink_map$, "æŒ‘æˆ°æ™‚é–“é‚„çœä¸‹2åˆ†é˜",bc_map,"0x00ff99";
+			mapannounce 'sink_map$, "¬D¾Ô®É¶¡ÁÙ¬Ù¤U2¤ÀÄÁ",bc_map,"0x00ff99";
 			end;
 Ontimer1740000:
-			mapannounce 'sink_map$, "æŒ‘æˆ°æ™‚é–“é‚„çœä¸‹1åˆ†é˜",bc_map,"0x00ff99";
+			mapannounce 'sink_map$, "¬D¾Ô®É¶¡ÁÙ¬Ù¤U1¤ÀÄÁ",bc_map,"0x00ff99";
 			end;
 Ontimer1800000:
-			mapannounce 'sink_map$, "æŒ‘æˆ°æ™‚é–“çµæŸ",bc_map,"0x00ff99";
-			mapwarp 'sink_map$,"SavePoint",0,0;
+			mapannounce 'sink_map$, "¬D¾Ô®É¶¡µ²§ô",bc_map,"0x00ff99";
+			mapwarp 'sink_map$,"prontera",156,143;
 			end;			
 OnInstanceInit:
-	//disablenpc instance_npcname("#BOSSæˆ¿é–“å…¥å£");
+	//disablenpc instance_npcname("#BOSS©Ğ¶¡¤J¤f");
 	end;	
 }
 
@@ -224,15 +214,15 @@ OnInstanceInit:
 1@ch_u,0,0,5	script	#sink_conf_n	-1,{
 	end;
 OnInstanceInit:
-	//è¨­ç½®æ¯äº”å±¤BOSSé­”ç‰©éš¨æ©ŸID
+	//³]¸m¨C¤­¼hBOSSÅ]ª«ÀH¾÷ID
 		setarray 'mob_MVP_id[0],1038,1039,1046,1059,1086,1087,1112,1115;
 
-	//è¨­ç½®é­”ç‰©éš¨æ©ŸID
+	//³]¸mÅ]ª«ÀH¾÷ID
 		setarray 'mob_id[0],1038,1039,1046,1059,1086,1087,1112,1115;
 		//1871,1873,1719,1492,1147,1688,1583,2068,3074,2156,2087,2165,1623,1389,1046,1272,1150,1115,2253,1059,2251,1039,1785,2249,2255,1418,1157,2202,1685,1734,1658,1630,1038,1511,2362,1885,1751,1086,1768,3741,2441,2442,1832,1112,1312,1251,1087,1252,1190,1159,1917;;
 
 //	setarray 'mob_id[0],1002;
-	'mob_count = 3;//åŸºç¤é­”ç‰©æ•¸é‡  ç¸½æ•¸ç‚º: äººæ•¸*'mob_count
+	'mob_count = 3;//°òÂ¦Å]ª«¼Æ¶q  Á`¼Æ¬°: ¤H¼Æ*'mob_count
 	
 	
 
@@ -257,7 +247,7 @@ OnInstanceInit:
 
 }
 
-1@ch_u,47,23,5	script	#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®1	10007,{
+1@ch_u,47,23,5	script	#¨I¨S¤§¶ğ¸õÅD¸Ë¸m1	10007,{
 	mapwarp 'sink_map$,'sink_map$,96,55;
 	end;
 OnInstanceInit:
@@ -265,21 +255,21 @@ OnInstanceInit:
 	end;
 }
 
-1@ch_u,132,23,5	script	#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®2	10007,{
+1@ch_u,132,23,5	script	#¨I¨S¤§¶ğ¸õÅD¸Ë¸m2	10007,{
 	mapwarp 'sink_map$,'sink_map$,181,55;
 	end;
 OnInstanceInit:
 	hideonnpc instance_npcname(strnpcinfo(0));
 	end;
 }
-1@ch_u,217,23,5	script	#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®3	10007,{
+1@ch_u,217,23,5	script	#¨I¨S¤§¶ğ¸õÅD¸Ë¸m3	10007,{
 	mapwarp 'sink_map$,'sink_map$,266,55;
 	end;
 OnInstanceInit:
 	hideonnpc instance_npcname(strnpcinfo(0));
 	end;
 }
-1@ch_u,302,23,5	script	#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®4	10007,{
+1@ch_u,302,23,5	script	#¨I¨S¤§¶ğ¸õÅD¸Ë¸m4	10007,{
 	mapwarp 'sink_map$,'sink_map$,352,55;
 	end;
 OnInstanceInit:
@@ -289,25 +279,25 @@ OnInstanceInit:
 
 
 
-1@ch_u,387,23,5	script	#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®5	10007,{
+1@ch_u,387,23,5	script	#¨I¨S¤§¶ğ¸õÅD¸Ë¸m5	10007,{
 	
 	if(getcharid(0)== getpartyleader(getcharid(1),2)){
 		
 		
 	
-		if(select("ç¹¼çºŒæŒ‘æˆ°ä¸‹å±¤:é ˜çå‹µä¸¦çµæŸ")==2){
+		if(select("Ä~Äò¬D¾Ô¤U¼h:»â¼úÀy¨Ãµ²§ô")==2){
 			'win = 1;
-			mapannounce 'sink_map$, "[æ²‰æ²’ä¹‹å¡”]: æœ¬æ¬¡æŒ‘æˆ°çµæŸ.è«‹å‰ä¾†é ˜ç",bc_map,"0x00ff00";
+			mapannounce 'sink_map$, "[¨I¨S¤§¶ğ]: ¥»¦¸¬D¾Ôµ²§ô.½Ğ«e¨Ó»â¼ú",bc_map,"0x00ff00";
 			callfunc "sinkreward_n",'sink_floor;
-			warp "SavePoint",0,0;
+			warp "prontera",134,193;
 		}
 		else {
 			'start_game = 1;
-			hideonnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®1");
-			hideonnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®2");
-			hideonnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®3");
-			hideonnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®4");
-			hideonnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®5");
+			hideonnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m1");
+			hideonnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m2");
+			hideonnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m3");
+			hideonnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m4");
+			hideonnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m5");
 
 			mapwarp 'sink_map$,'sink_map$,11,55;
 			cleanmap 'sink_map$;
@@ -316,7 +306,7 @@ OnInstanceInit:
 	else {
 		if(!'win)end;
 		callfunc "sinkreward_n",'sink_floor;
-		warp "SavePoint",0,0;
+		warp "prontera",134,193;
 	}
 	end;
 OnInstanceInit:
@@ -329,7 +319,7 @@ OnInstanceInit:
 	end;
 OnEnable:
 
-	callfunc "æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+	callfunc "¨I¨S¤§¶ğÅ]ª«½Õ¥Î_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 	end;
 OnMyMobDead:
 
@@ -337,42 +327,42 @@ OnMyMobDead:
 	set .@mob_dead_num,mobcount('sink_map$,instance_npcname(strnpcinfo(0))+"::OnMyMobDead");
 	if (.@mob_dead_num < 1) {
 		if(('sink_floor+1)>=10 && ('sink_floor+1)%10==0)
-		announce "[æ²‰æ²’ä¹‹å¡”] : "+getpartyname('party_id)+"éšŠä¼å·²é€šé—œç¬¬"+('sink_floor+1)+"å±¤ï¼Œç²å¾—ç¥ç§˜èƒ½åŠ›çš„åŠ æŒ",0;
+		announce "[¨I¨S¤§¶ğ] : "+getpartyname('party_id)+"¶¤¥î¤w³qÃö²Ä"+('sink_floor+1)+"¼h¡AÀò±o¯«¯µ¯à¤Oªº¥[«ù",0;
 		
-		mapannounce 'sink_map$, "[æ²‰æ²’ä¹‹å¡”]: åœ°ä¸‹ç¬¬ "+('sink_floor+1)+" å±¤é­”ç‰©æ¸…é™¤å®Œç•¢",bc_map,"0x00ff00";
+		mapannounce 'sink_map$, "[¨I¨S¤§¶ğ]: ¦a¤U²Ä "+('sink_floor+1)+" ¼hÅ]ª«²M°£§¹²¦",bc_map,"0x00ff00";
 
 		.@floor = 'sink_floor % 5;	
-		hideoffnpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®"+(.@floor+1));
+		hideoffnpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m"+(.@floor+1));
 		
-		//movenpc instance_npcname("#æ²‰æ²’ä¹‹å¡”è·³èºè£ç½®"),'point_jump_x[.@floor],'point_jump_y[.@floor];
+		//movenpc instance_npcname("#¨I¨S¤§¶ğ¸õÅD¸Ë¸m"),'point_jump_x[.@floor],'point_jump_y[.@floor];
 		'sink_floor++;
 		//debugmes ""+'sink_floor;
 			getpartymember 'party_id;
 		.@party_co = $@partymembercount;
-		callfunc "æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		callfunc "¨I¨S¤§¶ğÅ]ª«½Õ¥Î_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 		IF('sink_floor % 5 == 4 && 'sink_floor>=4)
-		callfunc "æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n2",'sink_floor,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		callfunc "¨I¨S¤§¶ğÅ]ª«½Õ¥Î_n2",'sink_floor,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
 
 		
 
 
 	}
 	else
-		mapannounce 'sink_map$, "[æ²‰æ²’ä¹‹å¡”]: åœ°ä¸‹ç¬¬ "+('sink_floor+1)+" å±¤å…§å‰©é¤˜é­”ç‰©æ•¸é‡ç‚º - " + .@mob_dead_num,bc_map,"0x00ff99";
+		mapannounce 'sink_map$, "[¨I¨S¤§¶ğ]: ¦a¤U²Ä "+('sink_floor+1)+" ¼h¤º³Ñ¾lÅ]ª«¼Æ¶q¬° - " + .@mob_dead_num,bc_map,"0x00ff99";
 	end;
 }
 
-//è¨­ç½®ç²å¾—æ¨“å±¤å±¬æ€§èƒ½åŠ›
+//³]¸mÀò±o¼Ó¼hÄİ©Ê¯à¤O
 -	script	#sink_mob_b	-1,{
 	end;
 
-//æ¯æ—¥æŒ‘æˆ°æ¬¡æ•¸é‡ç½®æ™‚é–“
+//¨C¤é¬D¾Ô¦¸¼Æ­«¸m®É¶¡
 OnClock0000:
 	query_sql("SELECT `key` FROM `char_reg_num` where `key` = 'sink_ta_co'",.@key$);
 	if(!getarraysize(.@key$))end;
 	query_sql("update `char_reg_num` set `value`= '0' where `key` = 'sink_ta_co'");	
 	end;
-//é€±æ—¥é‡ç½®æ™‚é–“
+//¶g¤é­«¸m®É¶¡
 OnSun2359:
 	query_sql("SELECT `key` FROM `char_reg_num` where `key` = 'sinkbonus'",.@key$);
 	if(!getarraysize(.@key$))end;
@@ -380,12 +370,12 @@ OnSun2359:
 	end;
 
 
-//å®˜æ–¹è¨­ç½®ä¸èƒ½ä½¿ç”¨ åŸåœ°å¾©æ´»ä¹‹è­‰
+//©x¤è³]¸m¤£¯à¨Ï¥Î ­ì¦a´_¬¡¤§ÃÒ
 OnPCUseTokenFilter:
 if(instance_id(IM_PARTY)){
 if(strcharinfo(3)==getinstancevar('sink_map$,instance_id(IM_PARTY))){
 	processhalt;
-	dispbottom "é€™è£¡ç„¡æ³•ä½¿ç”¨åŸåœ°å¾©æ´»ä¹‹è­‰";
+	dispbottom "³o¸ÌµLªk¨Ï¥Î­ì¦a´_¬¡¤§ÃÒ";
 	end;
 }
 }
@@ -432,10 +422,11 @@ else if(sinkbonus>=150){
 
 end;
 }
-//çå‹µè¨­ç½® æ¨“å±¤ç–ŠåŠ æ¨¡å¼
+//¼úÀy³]¸m ¼Ó¼hÅ|¥[¼Ò¦¡
 function	script	sinkreward_n	{
-		//è¨­ç½®çå‹µ  getarg(0) è¡¨ç¤ºæ¨“å±¤æ•¸
-			getitem 6635,getarg(0)/2;					
+		//³]¸m¼úÀy  getarg(0) ªí¥Ü¼Ó¼h¼Æ
+			getitem 601,rand(5,getarg(0));	
+			getitem 602,rand(1,3);					
 			if(sinkbonus<getarg(0)){
 				sinkbonus = getarg(0);	
 			}
@@ -446,15 +437,15 @@ function	script	sinkreward_n	{
 
 
 
-function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n	{
-	.@level = getarg(0);//1æ¨“å±¤ç­‰ç´š
-	.@mob_count = getarg(1);//æ¨“å±¤é­”ç‰©æ•¸é‡
+function	script	¨I¨S¤§¶ğÅ]ª«½Õ¥Î_n	{
+	.@level = getarg(0);//1¼Ó¼hµ¥¯Å
+	.@mob_count = getarg(1);//¼Ó¼hÅ]ª«¼Æ¶q
 	.@label$ = getarg(2);
 	.@floor = 'sink_floor % 5;
 	for(.@i=0;.@i < .@mob_count;.@i++){
 			areamonster 'sink_map$,'point_x1[.@floor],'point_y1[.@floor],'point_x2[.@floor],'point_y2[.@floor],"--ja--",'mob_id[rand(getarraysize('mob_id))],1,.@label$;
 			.@mob_uid = $@mobid[0];
-			//éš¨æ©Ÿå±¬æ€§èª¿æ•´
+			//ÀH¾÷Äİ©Ê½Õ¾ã
 			setunitdata .@mob_uid,UMOB_SIZE,rand(3);
 			setunitdata .@mob_uid,UMOB_MODE,103298709;
 			setunitdata .@mob_uid,UMOB_ELETYPE,rand(10);
@@ -462,7 +453,7 @@ function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n	{
 			setunitdata .@mob_uid,UMOB_RACE,rand(10);
 
 			getunitdata .@mob_uid,.@array;
-			//å››è½‰å±¬æ€§ ç‰©ç†æŠ—æ€§èˆ‡é­”æ³•æŠ—æ€§
+			//¥|ÂàÄİ©Ê ª«²z§Ü©Ê»PÅ]ªk§Ü©Ê
 			setunitdata .@mob_uid,UMOB_RES,.@array[UMOB_RES]+'sink_floor*2;
 			setunitdata .@mob_uid,UMOB_MRES,.@array[UMOB_MRES]+'sink_floor*2;		
 			//
@@ -476,9 +467,9 @@ function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n	{
 			
 			
 			
-			//åŸºç¤æ¸›å‚·
+			//°òÂ¦´î¶Ë
 			setunitdata .@mob_uid,UMOB_DAMAGETAKEN,'sink_floor > 30?1:10;
-			//æœ€å¤§HP
+			//³Ì¤jHP
 			setunitdata .@mob_uid,UMOB_MAXHP,.@array[UMOB_MAXHP]>2100000000?2100000000:.@array[UMOB_MAXHP]*'sink_floor;	
 
 		}
@@ -486,15 +477,15 @@ function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n	{
 }
 
 
-function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n2	{
-	.@level = getarg(0);//1æ¨“å±¤ç­‰ç´š
-	.@mob_count = getarg(1);//æ¨“å±¤é­”ç‰©æ•¸é‡
+function	script	¨I¨S¤§¶ğÅ]ª«½Õ¥Î_n2	{
+	.@level = getarg(0);//1¼Ó¼hµ¥¯Å
+	.@mob_count = getarg(1);//¼Ó¼hÅ]ª«¼Æ¶q
 	.@label$ = getarg(2);
 	.@floor = 'sink_floor % 5;
 	for(.@i=0;.@i < .@mob_count;.@i++){
 			areamonster 'sink_map$,'point_x1[.@floor],'point_y1[.@floor],'point_x2[.@floor],'point_y2[.@floor],"--ja--",'mob_MVP_id[rand(getarraysize('mob_MVP_id))],1,.@label$;
 			.@mob_uid = $@mobid[0];
-			//éš¨æ©Ÿå±¬æ€§èª¿æ•´
+			//ÀH¾÷Äİ©Ê½Õ¾ã
 			setunitdata .@mob_uid,UMOB_SIZE,rand(3);
 			setunitdata .@mob_uid,UMOB_MODE,103298709;
 			setunitdata .@mob_uid,UMOB_ELETYPE,rand(10);
@@ -502,7 +493,7 @@ function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n2	{
 			setunitdata .@mob_uid,UMOB_RACE,rand(10);
 
 			getunitdata .@mob_uid,.@array;
-			//å››è½‰å±¬æ€§ ç‰©ç†æŠ—æ€§èˆ‡é­”æ³•æŠ—æ€§
+			//¥|ÂàÄİ©Ê ª«²z§Ü©Ê»PÅ]ªk§Ü©Ê
 			setunitdata .@mob_uid,UMOB_RES,.@array[UMOB_RES]+'sink_floor*2;
 			setunitdata .@mob_uid,UMOB_MRES,.@array[UMOB_MRES]+'sink_floor*2;		
 			//
@@ -516,9 +507,9 @@ function	script	æ²‰æ²’ä¹‹å¡”é­”ç‰©èª¿ç”¨_n2	{
 			
 			
 			
-			//åŸºç¤æ¸›å‚·
+			//°òÂ¦´î¶Ë
 			setunitdata .@mob_uid,UMOB_DAMAGETAKEN,'sink_floor > 30?1:10;
-			//æœ€å¤§HP
+			//³Ì¤jHP
 			setunitdata .@mob_uid,UMOB_MAXHP,.@array[UMOB_MAXHP]>2100000000?2100000000:.@array[UMOB_MAXHP]*'sink_floor;	
 
 		}

@@ -135,11 +135,6 @@ Ontest:
 		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
 	close; */
 Onrefixpetegg:
-	/*if (getiteminfo() && getbrokenid(1) == NULL ) {
-		mes "[修理工]";
-		mes "您沒有任何受損的物品唷！";
-		close;
-	}*/
   getinventorylist;
 	set $i,0;
     for(set .@i,0; .@i < getarraysize(@inventorylist_id); .@i++){
