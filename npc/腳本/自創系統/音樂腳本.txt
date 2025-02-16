@@ -1,0 +1,383 @@
+//trinity,176,26,3	script	音樂點唱機	479,{
+//-	script	sound_	-1,{
+	function	script	main_sound	{
+	setarray .@bgmList$[0],
+			"01", "02", "03", "04", "05", "06", "07", "08", "09", "10",
+			"11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
+			"21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+			"31", "33", "34", "35", "36", "37", "38", "39", "40", "41",
+			"42", "43", "44", "45", "46", "47", "48", "49", "50", "51",
+			"52", "53", "54", "55", "56", "57", "58", "59", "60", "61",
+			"62", "63", "64", "65", "66", "67", "68", "69", "70", "71",
+			"72", "73", "74", "75", "76", "77", "78", "79", "80", "81",
+			"82", "83", "84", "85", "86", "87", "88", "89", "90", "91",
+			"92", "93", "94", "95", "96", "97", "98", "99", "100", "101",
+			"102", "103", "104", "105", "106", "107", "108", "109", "110",
+			"111", "112", "113", "114", "115", "116", "117", "118", "119", "120",
+			"121", "122", "123", "124", "125", "126", "127", "128", "129", "130",
+			"131", "132", "133", "134", "135", "136", "137", "138", "139", "140",
+			"141", "142", "143", "144", "145", "146", "147", "148", "149", "150",
+			"151", "152", "153", "154", "155", "156", "157", "158", "159", "160",
+			"161", "162", "163", "164", "165", "166", "167", "168", "169", "170",
+			"171", "172", "174", "175", "176", "177", "178", "179", "180", "181",
+			"182", "183", "184", "185", "186", "187", "188", "189", "190", "191",
+			"192", "193", "194", "195", "196", "197", "198";
+
+	setarray .@songName$[0],
+		"Title", "Gambler of highway", "Peaceful Forest", "I miss you", "Tread on the ground", "Risk your life", "Wind of Tragedy", "Theme of Prontera", "Great honor", "Divine Grace",
+		"Theme of Morroc", "Streamside", "Theme of Geffen", "Theme of Payon", "Theme of Alberta", "Labyrinth", "Treasure Hunter", "Time up!!", "Under the ground", "Ancient groover",
+		"Through the tower", "Backattack!!", "Travel", "Desert", "Plateau", "Everlasting Wanderers", "Dreamer's Dream", "You're in ruins", "Be Nice 'n Easy", "One Step Closer",
+		"Brassy Road", "Yuna Song", "Pampas Upas", "TeMPoison", "Nano East", "TeMPorsche", "Hamatan", "Theme of Al de Baran", "Fear.../Monk Zonk", "Rag All Night Long",
+		"Curse'n Pain", "Morning Gloomy", "TeMP it Up", "Don't Piss me Off", "An Ant-lion's Pit", "Welcome Mr. Hwang", "Help Yourself", "Watery Grave", "Out of Curiosity", "Believe in myself",
+		"Ready~", "White Christmas", "Come on my deer!!", "Welcome, my lord", "Silver Bell", "Don't cry, baby", "Jingle Bell on Ragnarok", "Theme of Lutie / Snow In My Heart", "Aeon", "Zingaro",
+		"High Roller Coaster", "Mucho Gusto", "One Fine Day", "Into the Abyss", "Wanna Be Free!!", "TeMPotato", "Jazzy Funky Sweety", "Retro Metro", "Theme of Juno", "Antique Cowboy",
+		"Big Guys Love This", "Higher than the sun", "Not so far away", "Come, and Get it!", "Purity of your smile", "Can't go home again, baby", "adios", "The Great", "Jumping Dragon", "Thai Orchid",
+		"Muay Thai King", "Sleepless", "Christmas in the 13th Month", "Dancing Christmas in the 13th Month", "Steel Me", "Ethnica", "Come in Peace", "We have Lee but you don't have", "Noblesse Oblige", "Cheong Choon",
+		"Naive Rave", "Latinnova", "Theme of Rael/Theme of Rachel", "Underneath The Temple", "Yetit Petit", "Lastman Dancing", "Top Hoppy", "Uncanny Lake", "Abyss", "AbSolitude",
+		"Erebos' Prelude", "Invisible Invasion", "On Your Way Back", "Rose of Sharon", "Sleeping Volcano", "Seven Days Seven Nights", "Angelica", "Alpen Rose", "Kingdom Memories", "Good Morning",
+		"Good Night", "Monastery In Disguise", "Theme of Moscovia", "Tale of the East", "Away from Home", "Dream of a Whale", "Taiko's Fury", "Stained Memories", "Fissure Eruption", "Outer Breath",
+		"Ethical Aspiration", "Into The Arena!", "Stranger Aeons", "Forbidden Anguish", "New World Orde", "Mystic Haze", "Splendid Dreams", "Fireflies Heaven", "Dread and Bold", "Daytime in Manuk",
+		"March with Irish Whistle", "Sunny Side of Life", "Borborema", "At Dusk", "Emotion Creep", "Dazzling Snow", "TeMPlatonic", "Sugar Cane Carnival", "Twilight Heaven", "Tricky Cheeky",
+		"Arrival", "Mother Earth", "Silent Voyage", "Marshmallow Waltz", "Diamond Dust", "Octopus Scramble", "Melt Down!", "Theme of Port Malaya", "Uncanny Dreams", "Maximum",
+		"Voices", "Horizon", "Eclage/Otherworld", "Eclage/Pachamama", "Beyond The Grave", "Disillusion", "Indelible Scars", "Judgement", "Jittering Nightmare", "Forest of Despiar",
+		"Dark Light", "Lost souls", "From the Grave", "Apex Fortress", "Brutal Ritual", "Shade of a Shadow", "How to rescue our dragon", "Little kitty's adventure", "Welcome to Doram town", "Django vs Yojimbo",
+		"Macaroni Express", "Ethnically Diverse", "Cat on Bullet", "Tears of Deviant", "mysterious mansion", "behind the silence", "Echoes of Nature", "Finding pillow book", "limits of darkness",
+		"Cake Is Lie", "I Need You", "Magdaros", "Once upon a December", "Theme of Wolf", "Words from the Myths", "At last I heard", "My Precious Baby", "Define Grace", "Remember Blueblue",
+		"Great Enemy Felled", "Icewind", "Non Lay La", "Hydra", "Theme of Enki", "Call of Cathulhu", "Theme of Luna Forma";
+
+
+	setarray .@locationName$[0],
+		"登入畫面", "部分任務、轉職場地", "夢羅克原野、斐楊樹林", "普隆德拉原野、吉芬原野", "普隆德拉原野", "諾可羅德（火洞）", "公會對抗競技場", "普隆德拉", "普隆德拉城堡", "普隆德拉大聖堂",
+		"夢羅克 室內", "普隆德拉原野", "吉芬", "斐揚", "艾爾貝塔", "普隆德拉 迷藏森林", "沉沒之船", "競速場、限時激鬥模式", "普隆德拉地下水道", "斐揚地下洞穴",
+		"吉芬地下密穴", "金字塔", "森林", "沙漠", "吉芬原野", "伊斯魯德島", "妙勒尼廢棄礦場", "聖卡畢利那修道院", "海底洞穴1~3F", "初學者修練場",
+		"妙勒尼山脈", "妙勒尼山脈", "妙勒尼山脈", "東邊獸人村落", "斐揚樹林", "蘇克拉特沙漠", "史芬克斯密穴", "艾爾帕蘭", "古城修道院", "克魔島洞穴",
+		"克雷斯特漢姆古城", "古城地上樓層", "古城騎士公會", "蘇克拉特沙漠(刺客轉職所外)", "蟻洞", "斐揚地下", "獸人地下洞窟", "海洞4~5F", "葛帔尼亞密穴", "二轉職業轉職所",
+		"海洞外", "薑餅城", "艾爾貝塔耶誕節", "薑餅城外、普隆德拉耶誕節", "劍村、新城耶誕節", "吉芬耶誕節", "玩具工廠", "薑餅城室內", "鐘塔地上樓層", "鐘塔地下樓層",
+		"克魔島", "克魔島原野", "克特森林", "烏龜島", "公會", "朱諾原野(舊)", "汶巴拉", "汶巴拉地下", "朱諾", "朱諾原野",
+		"朱諾原野", "天津外、崑崙外", "崑崙", "崑崙地下", "天津町", "天津町地下", "汶巴拉外", "龍之城", "龍之城", "哎喲泰雅",
+		"哎喲泰雅地下", "禾貝勒開米勒之島", "尼芙菲姆", "尼芙菲姆外", "艾音布羅克", "艾音布羅克外", "礦山洞穴", "優配擂斯", "里希塔樂鎮", "里希塔樂鎮原野",
+		"里希塔樂鎮地下", "毀葛", "拉赫", "神殿 聖域", "冰洞穴", "拉赫外", "拉赫外", "深淵湖水外", "深淵湖水", "啟 海伊洛",
+		"達納托斯 樓層01~02", "達納托斯 頂樓", "菲音斯", "菲音斯外", "托爾火山", "達納托斯 樓層03~06", "達納托斯 樓層07~12", "毀葛原野", "奧丁神殿", "無名島(白天)",
+		"無名島(晚上)", "修道院", "莫斯科比亞", "船舶", "森林洞穴", "莫斯科比亞原野", "命運的烏鴉", "夢羅克", "時空的裂縫", "時空的裂縫",
+		"洞穴村落", "戰場", "封印的神殿、戰死、實驗洞地下碉堡、維爾納研究所中樞室", "無盡之塔", "米德加爾特聯合營地", "魔怒克原野", "史波浪壯麗 原野", "粗暴者的傷口", "尼德霍格的巢穴", "礦村 魔怒克",
+		"史波浪壯麗", "巴西", "巴西原野", "瀑布內的洞窟", "斯卡勒伯熔岩", "艾爾迪卡斯特", "卡米達山麓", "草精族穆拉村", "彩虹橋", "霧林迷宮",
+		"德瓦他", "德瓦他原野", "喀拉喀托火山島", "綿綿島", "星光珊瑚地帶", "章魚洞穴", "排水溝", "馬來港", "噩夢醫院", "巴庫暴龍藏身處",
+		"寶箱巨鱷洞穴", "馬來港原野", "埃克拉珠", "埃克拉珠原野、阿凡特研究室", "魔神殿", "拜歐斯 島1~3", "摩洛斯 洞穴", "火焰盆地、火焰洞穴", "查理斯頓 工廠、夢境與幻影", "實驗洞-OPTATIO、研究洞-WISH",
+		"中央實驗室、雷根修蘆", "最後房間", "貝魯茲", "空中要塞", "儀式之屋", "被入侵的普隆德拉", "龍巢穴", "羅比奧", "羅札納", "洛克理奇嶺、地下水道",
+		"契瓦瓦沙漠、洛克理奇嶺礦山", "特別警戒區柯爾", "喵星人子彈酒吧", "實驗體廢棄場魯杜斯", "霸肋門德宅邸庭園、暮光庭園", "1@herbs", "冥想大浴場、牧場 失落山谷、第 2 魔力發電所、水上庭園", "圖書館 記憶迴廊", "儲藏庫 塔爾塔羅斯",
+		"赫羅斯里亞、時間庭園（生命殿堂）", "灰狼之森、霸肋門德生物圈深層", "歐茲迷宮", "大神官別墅、欺瞞的別墅", "灰狼村落", "被冰凍的蛇原野地圖", "冰霜之城", "被捨棄的蛇洞窟", "蛇巢穴", "1@dime - 跨越次元壁",
+		"次元守護紀念館", "冰封的鱗片、峽谷探查", "伊斯加爾特聖域 小樹枝巢穴、鱗片島", "峽谷探查", "分離的聖域", "流冰地帶、黏糊糊的海", "凱渥寶樂格據點 露納佛瑪";
+  //顏色函數
+    function getColorText {
+        if (getargcount() > 1) {
+            // 如果有第二個參數，使用紅色
+            return "^FF0000" + getarg(0) + "^000000";
+        } else {
+            // 如果只有一個參數或沒有參數，使用藍色
+            return "^0000FF" + getarg(0) + "^000000";
+        }
+    }
+	
+
+
+	function PlayMainCityBGM {
+		setarray .@mainCityBGMList$[0],
+			"08",  // 普隆德拉 (Theme of Prontera)
+			"13",  // 吉芬 (Theme of Geffen)
+			"14",  // 斐揚 (Theme of Payon)
+			"15",  // 艾爾貝塔 (Theme of Alberta)
+			"26",  // 伊斯魯德島 (Treasure Hunter)
+			"39",  // 艾爾帕蘭 (Theme of Al de Baran)
+			"70",  // 朱諾 (Theme of Juno)
+			"74",  // 崑崙 (Not so far away)
+			"37", // 天津町 (TeMPorsche)
+			"82", // 龍之城 (Muay Thai King)
+			"86", // 艾音布羅克 (Steel Me)
+			"90", // 里希塔樂鎮 (Noblesse Oblige)
+			"93", // 毀葛 (Christmas in the 13th Month)
+			"94", // 拉赫 (Forest of Despair)
+			"11";  // 夢羅克 (Theme of Morroc)
+
+
+        setarray .@mainCitySongName$[0],
+             " ~ 普隆德拉", " ~ 吉芬", " ~ 斐揚", " ~ 艾爾貝塔", " ~ 伊斯魯德島", " ~ 艾爾帕蘭",  " ~ 朱諾"," ~ 主城音樂", 
+			 " ~ 天津町", " ~ 龍之城", " ~ 艾音布羅克", " ~ 里希塔樂鎮", " ~ 毀葛", " ~ 拉赫",  " ~ 夢羅克";
+
+        set .@cityIndex, getarg(0) - 1;
+		set #selectBGM$,.@mainCityBGMList$[.@cityIndex];
+        playBGM .@mainCityBGMList$[.@cityIndex];
+        set $@lastBGM$, .@mainCityBGMList$[.@cityIndex];
+        set $@lastSongName$, .@mainCitySongName$[.@cityIndex];
+        set $@lastLocation$, "主城音樂";
+
+        mes "[更改背景音樂]";
+        mes "已播放主城音樂: " + getColorText($@lastSongName$) + "!";
+		
+	 	close;
+    }
+ 
+	
+
+	mes "[更改背景音樂]";
+	mes "音樂是最棒的事情，對吧!";
+	mes "把時光拉回我們最懷念的時候";
+	mes "讓我為你演奏一首曲子。你願意聽聽嗎？";
+	 
+	switch(select(" ~ 重放上一首: ~ 各主城音樂:  ~ 隨機播放: ~ 停止音樂")) {
+		case 1:
+			next;
+			if ($@lastBGM$ != "") {
+				playBGM $@lastBGM$;
+				mes "[更改背景音樂]";
+				mes "已重放上一首: " + getColorText($@lastLocation$) ;
+				mes "歌曲名稱:" + getColorText($@lastSongName$)+ "!";
+			} else {
+				mes "[更改背景音樂]";
+				mes "尚無上一首音樂可重放。";
+			}
+			break;
+		case 2:
+			next;
+			set .@cityIndex, select( "普隆德拉", "吉芬", "斐揚", "艾爾貝塔", "伊斯魯德島", "艾爾帕蘭",  "朱諾","主城音樂", "天津町", "龍之城", "艾音布羅克", "里希塔樂鎮", "毀葛", "拉赫",  "夢羅克");
+			set #selectBGM,.@cityIndex;
+			PlayMainCityBGM(.@cityIndex);
+		
+			break;
+ 
+		case 3:
+			next;
+		// ?机??背景音?
+			set .@randomIndex, rand(0, getarraysize(.@bgmList$) - 1);
+			set .@selectedBGM$, .@bgmList$[.@randomIndex];
+			set .@selectedSongName$, .@songName$[.@randomIndex];
+			set .@selectedLocation$, .@locationName$[.@randomIndex];
+
+			// 更新上一首播放的信息
+			set $@lastBGM$, .@selectedBGM$;
+			set $@lastSongName$, .@selectedSongName$;
+			set $@lastLocation$, .@selectedLocation$;
+
+			// 播放?中的背景音?
+			
+			playBGM .@selectedBGM$;
+
+			mes "[BGM Manager]";
+			mes "已隨機選擇並播放: ";
+			mes "地圖: " + getColorText($@lastLocation$) ;
+			mes "歌曲名稱:" + getColorText($@lastSongName$)+ "!";
+			break;
+	 
+	 
+		case 4:
+			next;
+			playBGM "stop";
+			mes "[更改背景音樂]";
+			mes "已停止背景音樂.";
+			break;
+	}
+
+    close;
+}
+
+
+// 01,登入畫面---Title,1:14 
+// 02,部分任務、轉職場地---Gambler of highway,3:03 
+// 03,夢羅克原野、斐楊樹林---Peaceful Forest,2:30 
+// 04,普隆德拉原野、吉芬原野---I miss you,2:46 
+// 05,普隆德拉原野---Tread on the ground,1:54 
+// 06,諾可羅德（火洞）---Risk your life,2:49 
+// 07,公會對抗競技場---Wind of Tragedy,1:44 
+// 08,普隆德拉---Theme of Prontera,4:33 
+// 09,普隆德拉城堡---Great honor,1:19 
+// 10,普隆德拉大聖堂---Divine Grace,1:36 
+// 11,夢羅克 室內---Theme of Morroc,2:08 
+// 12,普隆德拉原野---Streamside,2:27 
+// 13,吉芬---Theme of Geffen,3:00 
+// 14,斐揚---Theme of Payon,2:22 
+// 15,艾爾貝塔---Theme of Alberta,3:20 
+// 16,普隆德拉 迷藏森林---Labyrinth,2:18 
+// 17,沉沒之船---Tresure Hunter,2:36 
+// 18,競速場、限時激鬥模式---Time up!!,3:44 
+// 19,普隆德拉地下水道---Under the ground,3:22 
+// 20,斐揚地下洞穴---Ancient groover,2:04 
+// 21,吉芬地下密穴---Through the tower,1:41 
+// 22,金字塔---Backattack!!,2:06 
+// 23,森林---Travel,3:23 
+// 24,沙漠---Desert,3:40 
+// 25,吉芬原野---Plateau,2:36 
+// 26,伊斯魯德島---Everlasting Wanderers,2:09 
+// 27,妙勒尼廢棄礦場---Dreamer's Dream,3:20 
+// 28,聖卡畢利那修道院---You're in ruins,2:26 
+// 29,海底洞穴1~3F---Be Nice 'n Easy,2:26 
+// 30,初學者修練場---One Step Closer,2:59 
+// 31,妙勒尼山脈---Brassy Road,2:48 
+// 33,妙勒尼山脈---Yuna Song,2:23 
+// 34,妙勒尼山脈---Pampas Upas,2:35 
+// 35,東邊獸人村落---TeMPoison,3:08 
+// 36,斐揚樹林---Nano East,1:55 
+// 37,蘇克拉特沙漠---TeMPorsche,2:23 
+// 38,史芬克斯密穴---Hamatan,2:25 
+// 39,艾爾帕蘭---Theme of Al de Baran,3:45 
+// 40,古城修道院---Fear.../Monk Zonk,2:30 
+// 41,克魔島洞穴---Rag All Night Long,2:35 
+// 42,克雷斯特漢姆古城---Curse'n Pain,3:03 
+// 43,古城地上樓層---Morning Gloomy,2:20 
+// 44,古城騎士公會---TeMP it Up,2:10 
+// 45,蘇克拉特沙漠(刺客轉職所外)---Don't Piss me Off,2:22 
+// 46,蟻洞---An Ant-lion's Pit,2:11 
+// 47,斐揚地下---Welcome Mr. Hwang,2:20 
+// 48,獸人地下洞窟---Help Yourself,2:38 
+// 49,海洞4~5F---Watery Grave,2:30 
+// 50,葛帔尼亞密穴---Out of Curiosity,2:18 
+// 51,二轉職業轉職所---Believe in myself,2:12 
+// 52,海洞外---Ready~,1:43 
+// 53,薑餅城---White Christmas,2:09 
+// 54,艾爾貝塔耶誕節---Come on my deer!!,2:09 
+// 55,薑餅城外、普隆德拉耶誕節---Welcome, my lord,2:00 
+// 56,劍村、新城耶誕節---Silver Bell,2:01 
+// 57,吉芬耶誕節---Don't cry, baby,2:04 
+// 58,玩具工廠---Jingle Bell on Ragnarok,2:06 
+// 59,薑餅城室內---Theme of Lutie / Snow In My Heart,3:48 
+// 60,鐘塔地上樓層---Aeon,1:57 
+// 61,鐘塔地下樓層---Zingaro,2:18 
+// 62,克魔島---High Roller Coaster,2:25 
+// 63,克魔島原野---Mucho Gusto,2:52 
+// 64,克特森林---One Fine Day,2:27 
+// 65,烏龜島---Into the Abyss,2:59 
+// 66,公會---Wanna Be Free!!,2:45 
+// 67,朱諾原野(舊)---TeMPotato,2:18 
+// 68,汶巴拉---Jazzy Funky Sweety,1:53 
+// 69,汶巴拉地下---Retro Metro,2:44 
+// 70,朱諾---Theme of Juno,2:16 
+// 71,朱諾原野---Antique Cowboy,2:04 
+// 72,朱諾原野---Big Guys Love This,2:19 
+// 73,天津外、崑崙外---Higher than the sun,2:03 
+// 74,崑崙---Not so far away,2:13 
+// 75,崑崙地下---Come, and Get it!,2:37 
+// 76,天津町---Purity of your smile,2:37 
+// 77,天津町地下---Can't go home again, baby,2:26 
+// 78,汶巴拉外---adios,2:07 
+// 79,龍之城---The Great,2:28 
+// 80,龍之城---Jumping Dragon,2:00 
+// 81,哎喲泰雅---Thai Orchid,2:41 
+// 82,哎喲泰雅地下---Muay Thai King,2:16 
+// 83,禾貝勒開米勒之島---Sleepless,2:41 
+// 84,尼芙菲姆---Christmas in the 13th Month,2:16 
+// 85,尼芙菲姆外---Dancing Christmas in the 13th Month,3:04 
+// 86,艾音布羅克---Steel Me,3:22 
+// 87,艾音布羅克外---Ethnica,3:02 
+// 88,礦山洞穴---Come in Peace,3:19 
+// 89,優配擂斯---We have Lee but you don't have,2:32 
+// 90,里希塔樂鎮---Noblesse Oblige,2:23 
+// 91,里希塔樂鎮原野---Cheong Choon,2:49 
+// 92,里希塔樂鎮地下---Naive Rave,2:30 
+// 93,毀葛---Latinnova,2:13 
+// 94,拉赫---Theme of Rael/Theme of Rachel,2:20 
+// 95,神殿 聖域---Underneath The Temple,1:48 
+// 96,冰洞穴---Yetit Petit,2:34 
+// 97,拉赫外---Lastman Dancing,2:16 
+// 98,拉赫外---Top Hoppy,1:45 
+// 99,深淵湖水外---Uncanny Lake,2:01 
+// 100,深淵湖水---Abyss,2:32 
+// 101,啟 海伊洛---AbSolitude,2:06 
+// 102,達納托斯 樓層01~02---Erebos' Prelude,3:07 
+// 103,達納托斯 頂樓---Invisible Invasion,2:44 
+// 104,菲音斯---On Your Way Back,2:34 
+// 105,菲音斯外---Rose of Sharon,2:12 
+// 106,托爾火山---Sleeping Volcano,2:28 
+// 107,達納托斯 樓層03~06---Seven Days Seven Nights,2:32 
+// 108,達納托斯 樓層07~12---Angelica,2:53 
+// 109,毀葛原野---Alpen Rose,2:38 
+// 110,奧丁神殿---Kingdom Memories,2:38 
+// 111,無名島(白天)---Good Morning,4:10 
+// 112,無名島(晚上)---Good Night,3:09 
+// 113,修道院---Monastery In Disguise,4:13 
+// 114,莫斯科比亞---Theme of Moscovia,2:01 
+// 115,船舶---Tale of the East,2:20 
+// 116,森林洞穴---Away from Home,2:02 
+// 117,莫斯科比亞原野---Dream of a Whale,2:11 
+// 118,命運的烏鴉---Taiko's Fury,2:31 
+// 119,夢羅克---Stained Memories,2:32 
+// 120,時空的裂縫---Fissure Eruption,2:36 
+// 121,時空的裂縫---Outer Breath,5:46 
+// 122,洞穴村落---Ethical Aspiration,3:12 
+// 123,戰場---Into The Arena!,2:49 
+// 124,封印的神殿、戰死、實驗洞地下碉堡、維爾納研究所中樞室---Stranger Aeons,2:56 
+// 125,無盡之塔---Forbidden Anguish,3:14 
+// 126,米德加爾特聯合營地---New World Orde,2:27 
+// 127,魔怒克原野---Mystic Haze,2:10 
+// 128,史波浪壯麗 原野---Splendid Dreams,2:34 
+// 129,粗暴者的傷口---Fireflies Heaven,2:12 
+// 130,尼德霍格的巢穴---Dread and Bold,2:30 
+// 131,礦村 魔怒克---Daytime in Manuk,2:40 
+// 132,史波浪壯麗---March with Irish Whistle,2:35 
+// 133,巴西---Sunny Side of Life,3:07 
+// 134,巴西原野---Borborema,3:12 
+// 135,瀑布內的洞窟---At Dusk,4:16 
+// 136,斯卡勒伯熔岩---Emotion Creep,4:04 
+// 137,艾爾迪卡斯特---Dazzling Snow,2:16 
+// 138,卡米達山麓---TeMPlatonic,2:33 
+// 139,草精族穆拉村---Sugar Cane Carnival,3:06 
+// 140,彩虹橋---Twilight Heaven,3:01 
+// 141,霧林迷宮---Tricky Cheeky,2:39 
+// 142,德瓦他---Arrival,2:36 
+// 143,德瓦他原野---Mother Earth,2:43 
+// 144,喀拉喀托火山島---Silent Voyage,2:45 
+// 145,綿綿島---Marshmallow Waltz,2:03 
+// 146,星光珊瑚地帶---Diamond Dust,2:09 
+// 147,章魚洞穴---Octopus Scramble,2:04 
+// 148,排水溝---Melt Down!,2:08 
+// 149,馬來港---Theme of Port Malaya,2:05 
+// 150,噩夢醫院---Uncanny Dreams,2:24 
+// 151,巴庫暴龍藏身處---Maximum,2:24 
+// 152,寶箱巨鱷洞穴---Voices,1:42 
+// 153,馬來港原野---Horizon,2:22 
+// 154,埃克拉珠---Eclage/Otherworld,2:48 
+// 155,埃克拉珠原野、阿凡特研究室---Eclage/Pachamama,2:24 
+// 156,魔神殿---Beyond The Grave,2:25 
+// 157,拜歐斯 島1~3---Disillusion,2:02 
+// 158,摩洛斯 洞穴---Indelible Scars,2:12 
+// 159,火焰盆地、火焰洞穴---Judgement,2:02 
+// 160,查理斯頓 工廠、夢境與幻影---Jittering Nightmare,2:24 
+// 161,實驗洞-OPTATIO、研究洞-WISH---Forest of Despiar,2:32 
+// 162,中央實驗室、雷根修蘆---Dark Light,3:15 
+// 163,最後房間---Lost souls,2:39 
+// 164,貝魯茲---From the Grave,2:18 
+// 165,空中要塞---Apex Fortress,3:49 
+// 166,儀式之屋---Brutal Ritual,2:50 
+// 167,被入侵的普隆德拉---Shade of a Shadow,2:34 
+// 168,龍巢穴---How to rescue our dragon,2:59 
+// 169,羅比奧---Little kitty's adventure,1:31 
+// 170,羅札納---Welcome to Doram town,1:38 
+// 171,洛克理奇嶺、地下水道---Django vs Yojimbo,2:15 
+// 172,契瓦瓦沙漠、洛克理奇嶺礦山---Macaroni Express,2:17 
+// 174,特別警戒區柯爾---Ethnically Diverse,2:00 
+// 175,喵星人子彈酒吧---Cat on Bullet,1:54 
+// 176,實驗體廢棄場魯杜斯---Tears of Deviant,2:07 
+// 177,霸肋門德宅邸庭園、暮光庭園---mysterious mansion,1:35 
+// 178,1@herbs---behind the silence,2:20 
+// 179,冥想大浴場、牧場 失落山谷、第 2 魔力發電所、水上庭園---Echoes of Nature,2:5 
+// 180,圖書館 記憶迴廊---Finding pillow book,1:32 
+// 181,儲藏庫 塔爾塔羅斯---limits of darkness,1:26 
+// 182,赫羅斯里亞、時間庭園（生命殿堂）---Cake Is Lie,4:32 
+// 183,灰狼之森、霸肋門德生物圈深層---I Need You,3:44 
+// 184,歐茲迷宮---Magdaros,3:16 
+// 185,大神官別墅、欺瞞的別墅---Once upon a December,3:06 
+// 186,灰狼村落---Theme of Wolf,3:04 
+// 187,被冰凍的蛇原野地圖---Words from the Myths,3:20 
+// 188,冰霜之城---At last I heard,3:29 
+// 189,被捨棄的蛇洞窟---My Precious Baby,3:17 
+// 190,蛇巢穴---Define Grace,2:41 
+// 191,1@dime - 跨越次元壁---Remember Blueblue,7:02 
+// 192,memohall - 次元守護紀念館---Great Enemy Felled,2:55 
+// 193,冰封的鱗片、峽谷探查---Icewind,3:35 
+// 194,伊斯加爾特聖域 小樹枝巢穴、鱗片島---Non Lay La,3:20 
+// 195,峽谷探查---Hydra,2:40 
+// 196,分離的聖域---Theme of Enki,3:07 
+// 197,流冰地帶、黏糊糊的海---Call of Cathulhu,2:54 
+// 198,凱渥寶樂格據點 露納佛瑪---Theme of Luna Forma,3:20 
+// 199,漁村 艾爾貝塔---Fishman’s Horizon,3:04 
+// 200,崛起的大地、安全場所---Mrglglgl’gul,3:01 
+// 201,耶夢加德教團村莊 耶夢村---Mana Light,3:07 
+// 202,耶夢加德教團神殿津利相關地圖---Chrono Tango,2:58 
+// 203,蛇的休憩場所---Valhalla calling me,2:40

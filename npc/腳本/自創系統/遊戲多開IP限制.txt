@@ -124,10 +124,14 @@ OnPCLoginEvent:
 	//露天商店區
 	//if(strcharinfo(3)=="shopmap"){end;}
 	//if(isloggedin(getcharid(3))==3){ end;}
+
+
   if(getgmlevel() >= 99){   // GM專屬模式
     atcommand "@speed 1";
   }
-
+  if(#selectBGM$){ // 音樂腳本 如有選擇播放音樂
+  playBGM #selectBGM$; 
+  }
 	query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);
         //檢查同IP帳號
 	query_sql("SELECT account_id FROM `login` WHERE last_ip = '"+.@LastIp$+"'", .@AccountId);

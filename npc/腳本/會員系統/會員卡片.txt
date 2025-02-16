@@ -18,17 +18,21 @@ OnPCOpenRouletteFilter:
 	mes "MVP點數：^0088FF"+#MVP_Points+"^000000";
 	mes "世界BOSS積分：^0088FF"+#Worl_Boss_Points01+"^000000";
 	next;
-	switch(select("開啟內掛","廣播服務","隨身倉庫","記憶撿物","修理裝備","隱藏設定","狩獵任務擊殺提醒","卡點自救")) {
+	switch(select("開啟內掛","更改背景音樂","廣播服務","隨身倉庫","記憶撿物","修理裝備","隱藏設定","狩獵任務擊殺提醒","卡點自救")) {
 
 	case 1:
 	callfunc "Oro_Bot";
 	end;
 
 	case 2:
-	callfunc "Megaphone";
+	callfunc "main_sound";
 	end;
 
 	case 3:
+	callfunc "Megaphone";
+	end;
+
+	case 4:
 	switch(select("倉庫1服務","倉庫2服務","倉庫3服務")) {
 		case 1:
 		close2;
@@ -46,19 +50,19 @@ OnPCOpenRouletteFilter:
 		end;
 		}
 
-	case 4:
+	case 5:
 	callfunc "Autoloot";
 	end;
 
-	case 5:
+	case 6:
 	callfunc "Rrc_Main_0";
 	end;
 
-	case 6:
+	case 7:
 	callfunc "HIDE_MOD";
 	end;
 
-	case 7:
+	case 8:
 	mes "[狩獵任務管理員]";
 	mes "擊殺提醒是否開啟";
 	next;
@@ -73,7 +77,7 @@ OnPCOpenRouletteFilter:
 	close;
 	}
 
-	case 8:
+	case 9:
 	callfunc "self_help";
 	end;
 	}
