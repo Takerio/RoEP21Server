@@ -4018,7 +4018,7 @@ Body:
     Slots: 1
     Locations:
       Armor: true
-    WeaponLevel: 2
+    ArmorLevel: 2
     EquipLevelMin: 190
     Refineable: true
     Gradable: true
