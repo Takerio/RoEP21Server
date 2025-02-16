@@ -23,8 +23,7 @@ function	script	petskill	{
 
     //set RandomSkill[0],"",
     // 研究所三樓魔物
-    /*
-    case 960338:
+/*    case 960338:
       petskillsupport "LK_CONCENTRATION",5,SkillTimer,100,100;
       petskillattack "LK_SPIRALPIERCE",5,MinSkillRate,MaxSkillRate;
       break;
@@ -48,8 +47,7 @@ function	script	petskill	{
       petskillsupport "HW_MAGICPOWER",10,SkillTimer,100,100;
       petskillattack "HW_GRAVITATION",5,MinSkillRate,MaxSkillRate;
       break;
-*/
-/*    case 960067:
+    case 960067:
       petskillsupport "CR_DEVOTION",5,SkillTimer,100,100;
       petskillattack "CR_GRANDCROSS",10,MinSkillRate,MaxSkillRate;
       break;

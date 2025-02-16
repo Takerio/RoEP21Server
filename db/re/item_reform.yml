@@ -8612,7 +8612,7 @@ Body:
       - BaseItem: Destruction_Axe
         MinimumRefine: 9
         MaximumRefine: 11
-        Materials:
+        Materials:  
           - Material: Blacksmith_Blessing
             Amount: 14
         ResultItem: Destruction_Axe

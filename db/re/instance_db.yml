@@ -807,19 +807,19 @@ Body:
       X: 42
       Y: 54
 
-  # - Id: 95
-  #   Name: 沉沒之塔
-  #   TimeLimit: 2160
-  #   Enter:
-  #     Map: 1@tower
-  #     X: 50
-  #     Y: 355
-  #   AdditionalMaps:
-  #     2@tower: true
-  #     3@tower: true
-  #     4@tower: true
-  #     5@tower: true
-  #     6@tower: true
+  - Id: 95
+    Name: 沉沒之塔1
+    TimeLimit: 2160
+    Enter:
+      Map: 1@tower
+      X: 50
+      Y: 355
+    AdditionalMaps:
+      2@tower: true
+      3@tower: true
+      4@tower: true
+      5@tower: true
+      6@tower: true
 
   - Id: 96
     Name: 克魯德火山島

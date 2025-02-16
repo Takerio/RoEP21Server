@@ -11,7 +11,7 @@
 		mes "[附魔精靈]";
 		mes "哪件裝備要附魔呢?";
 		next;
-		switch(select("時光超越湧現鎧甲-LT:月全蝕魔力外袍-LT:粗暴者龍影鎧甲-LT:深淵湖水咆嘯鎧甲-LT")){
+		switch(select("時光超越湧現鎧甲-LT:月全蝕魔力外袍-LT:粗暴者龍影鎧甲-LT:深淵湖水咆嘯鎧甲-LT:霸肋門德深層能量衣")){
 
 		case 1:
 		close2;
@@ -32,6 +32,13 @@
 		close2;
 		item_enchant 10009;
 		end;
+
+
+		case 5:
+		close2;
+		item_enchant 10026;
+		end;
+		
 
 		}
 
