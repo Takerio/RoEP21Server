@@ -49035,59 +49035,59 @@ Body:
           - Item: Storm_R_1
             Price: 0
             Materials:
-              - Material: Bar_D_Fl_Rune
+              - Material: Bar_D_Ea_Rune
                 Amount: 10
-              - Material: Bar_D_Ic_Rune
+              - Material: Bar_D_St_Rune
                 Amount: 10
-              - Material: Bar_D_So_Rune
+              - Material: Bar_D_Pu_Rune
                 Amount: 10
-              - Material: Bar_D_Co_Rune
+              - Material: Bar_D_Po_Rune
                 Amount: 10
-              - Material: Bar_D_Fl_Essence
+              - Material: Bar_D_Ea_Essence
                 Amount: 7
-              - Material: Bar_D_Ic_Essence
+              - Material: Bar_D_St_Essence
                 Amount: 7
-              - Material: Bar_D_So_Essence
+              - Material: Bar_D_Pu_Essence
                 Amount: 7
-              - Material: Bar_D_Co_Essence
+              - Material: Bar_D_Po_Essence
                 Amount: 7
           - Item: Purify_R_1
             Price: 0
             Materials:
-              - Material: Bar_D_Fl_Rune
+              - Material: Bar_D_Ea_Rune
                 Amount: 10
-              - Material: Bar_D_Ic_Rune
+              - Material: Bar_D_St_Rune
                 Amount: 10
-              - Material: Bar_D_So_Rune
+              - Material: Bar_D_Pu_Rune
                 Amount: 10
-              - Material: Bar_D_Co_Rune
+              - Material: Bar_D_Po_Rune
                 Amount: 10
-              - Material: Bar_D_Fl_Essence
+              - Material: Bar_D_Ea_Essence
                 Amount: 7
-              - Material: Bar_D_Ic_Essence
+              - Material: Bar_D_St_Essence
                 Amount: 7
-              - Material: Bar_D_So_Essence
+              - Material: Bar_D_Pu_Essence
                 Amount: 7
-              - Material: Bar_D_Co_Essence
+              - Material: Bar_D_Po_Essence
                 Amount: 7
           - Item: Poison_R_1
             Price: 0
             Materials:
-              - Material: Bar_D_Fl_Rune
+              - Material: Bar_D_Ea_Rune
                 Amount: 10
-              - Material: Bar_D_Ic_Rune
+              - Material: Bar_D_St_Rune
                 Amount: 10
-              - Material: Bar_D_So_Rune
+              - Material: Bar_D_Pu_Rune
                 Amount: 10
-              - Material: Bar_D_Co_Rune
+              - Material: Bar_D_Po_Rune
                 Amount: 10
-              - Material: Bar_D_Fl_Essence
+              - Material: Bar_D_Ea_Essence
                 Amount: 7
-              - Material: Bar_D_Ic_Essence
+              - Material: Bar_D_St_Essence
                 Amount: 7
-              - Material: Bar_D_So_Essence
+              - Material: Bar_D_Pu_Essence
                 Amount: 7
-              - Material: Bar_D_Co_Essence
+              - Material: Bar_D_Po_Essence
                 Amount: 7
         Upgrades:
           - Enchant: Earth_R_1
