@@ -1766,7 +1766,7 @@ Body:
     Type: Usable
     Buy: 20
     Script: |
-      set .@id,rand(960000,960556);
+      set .@id,rand(960000,960569);
       dispbottom "寵物編號 : " + .@id;
       atcommand "@makeegg " + .@id;
   - Id: 960000
@@ -4556,67 +4556,67 @@ Body:
     Buy: 20
   - Id: 960557
     AegisName: item_960557
-    Name: 埃奇歐寵物蛋
+    Name: 藍鼠寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960558
     AegisName: item_960558
-    Name: 潘貝勒克寵物蛋
+    Name: 伊特瓢蟲寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960559
     AegisName: item_960559
-    Name: 伊西拉寵物蛋
+    Name: 鐵蠍寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960560
     AegisName: item_960560
-    Name: 異型寵物蛋
+    Name: 獸人戰士長寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960561
     AegisName: item_960561
-    Name: 紅惡魔之眼寵物蛋
+    Name: 巧克猴寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960562
     AegisName: item_960562
-    Name: 雪獸寵物蛋
+    Name: 灰森靈寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960563
     AegisName: item_960563
-    Name: 小雪獸寵物蛋
+    Name: 梅納海葵寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960564
     AegisName: item_960564
-    Name: 冰巨人寵物蛋
+    Name: 深淵騎士寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960565
     AegisName: item_960565
-    Name: 蓋俄斯提寵物蛋
+    Name: 沙漠之狼寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960566
     AegisName: item_960566
-    Name: 水晶龍寵物蛋
+    Name: 野豬寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960567
     AegisName: item_960567
-    Name: 吃人草寵物蛋
+    Name: 綠棉蟲寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960568
     AegisName: item_960568
-    Name: 捕蟲草寵物蛋
+    Name: 蟲蛹寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960569
     AegisName: item_960569
-    Name: 土狼寵物蛋
+    Name: 克瑞米寵物蛋
     Type: Petegg
     Buy: 20
   - Id: 960570
