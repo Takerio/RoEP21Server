@@ -147,6 +147,7 @@
 		mes "翡翠耳環-LT";
 		mes "翡翠戒指-LT";
 		mes "特利斯坦王國斗篷-LT";
+		mes "吞神魔盾-闇嗜-LT";
 		next;
 		switch(select("我要進行改造","取消")) {
 
