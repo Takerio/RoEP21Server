@@ -20862,6 +20862,199 @@ Body:
         autobonus "{ bonus bAtkRate,20; }",25,10000,BF_WEAPON,"{ specialeffect2 EF_MVP; showscript \"LUCKY MAX !!\"; }";
         if(.@g >= 2){bonus bCritical,8;}
         if(.@g >= 4){bonus bCritical,17;bonus bCRate,12;}  
+#   仿生鋁合金砲銃模塊
+  - Combos:
+      - Combo:
+          - Fake_Alloy_G_Module   # 490628
+          - SFake_Alloy_Pot   # 460030
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HAND_L);
+        bonus bNoKnockback;
+        bonus bCritical,10;
+        bonus bCritAtkRate,20;
+        bonus bDelayrate,-8;
+        if(Class == 4078 || Class == 4107 || Class == 4259){
+        bonus2 bSkillAtk,"GN_CART_TORNADO",30;
+        bonus2 bSkillAtk,"GN_CARTCANNON",30;
+        
+            if(.@r >= 12){
+            bonus2 bSkillAtk,"GN_HELLS_PLANT",60;
+            bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",60;
+            bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",15;
+            bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",15;
+                if(.@r >= 13){
+                skill "BO_RESEARCHREPORT",1;
+                bonus5 bAutoSpell,"BO_RESEARCHREPORT",1,30,BF_SHORT,0;
+                    if(.@r >= 14){
+                    bonus5 bAutoSpell,"GN_CART_TORNADO",getskilllv("GN_CART_TORNADO") < 1?1:getskilllv("GN_CART_TORNADO"),400,BF_SHORT,1;
+                    bonus5 bAutoSpell,"GN_CART_TORNADO",getskilllv("GN_SPORE_EXPLOSION") < 1?1:getskilllv("GN_CART_TORNADO"),400,BF_SHORT,1;
+                    }
+                }
+            }
+        }
+  - Combos:
+      - Combo:
+          - Fake_Alloy_G_Module   # 490628
+          - Fake_Alloy_Pot_LT   # 460066
+    Script: |
+        .@g = getenchantgrade(EQI_HAND_L);
+        .@r = getequiprefinerycnt(EQI_HAND_L);
+        bonus bNoKnockback;
+        bonus bCritical,10;
+        bonus bCritAtkRate,20;
+        bonus bDelayrate,-12;
+        if(.@g >= 1){
+        bonus bAspdRate,15;
+        bonus bAtk,50;
+        bonus bAtkRate,5;
+            if(.@g >= 3){
+            bonus bCritical,5;
+            bonus bCritAtkRate,20;
+            bonus bShortAtkRate,10;
+            bonus bLongAtkRate,10;
+            }
+        }
 
-
-
+        if(Class == 4078 || Class == 4107 || Class == 4259){
+        bonus2 bSkillAtk,"GN_CART_TORNADO",50;
+        bonus2 bSkillAtk,"GN_CARTCANNON",50;
+        
+            if(.@r >= 12){
+            bonus2 bSkillAtk,"GN_HELLS_PLANT",60;
+            bonus2 bSkillAtk,"GN_SPORE_EXPLOSION",60;
+            bonus2 bSkillAtk,"BO_MAYHEMIC_THORNS",15;
+            bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",15;
+                if(.@r >= 13){
+                skill "BO_RESEARCHREPORT",1;
+                bonus5 bAutoSpell,"BO_RESEARCHREPORT",1,30,BF_SHORT,0;
+                    if(.@r >= 14){
+                    bonus5 bAutoSpell,"GN_CART_TORNADO",getskilllv("GN_CART_TORNADO") < 1?1:getskilllv("GN_CART_TORNADO"),800,BF_SHORT,1;
+                    bonus5 bAutoSpell,"GN_CART_TORNADO",getskilllv("GN_SPORE_EXPLOSION") < 1?1:getskilllv("GN_CART_TORNADO"),800,BF_SHORT,1;
+                    }
+                }
+            }
+            if(.@g >= 2){
+            bonus bAtk,50;
+            bonus bAtkRate,5;
+            bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",15;
+                    if(.@g >= 4){
+                    bonus bCritical,10;
+                    bonus bCritAtkRate,20;
+                    bonus2 bSkillAtk,"BO_EXPLOSIVE_POWDER",15;
+                        if(.@r >= 13){
+                        skill "BO_RESEARCHREPORT",1;
+                        bonus5 bAutoSpell,"BO_RESEARCHREPORT",1,100,BF_SHORT,0;
+                        }
+                    }
+            }
+        }
+#   聖誕老人長靴
+  - Combos:
+      - Combo:
+          - Santa_Boots     # 470330
+          - Poring__Card    # 4005
+    Script: |
+        bonus2 bAddClass,Class_Normal,18;
+        bonus2 bMagicAddClass,Class_Normal,18;
+  - Combos:
+      - Combo:
+          - Santa_Boots     # 470330
+          - XM_CELINE_KIMI_Card    # 31023
+    Script: |
+        bonus2 bIgnoreDefClassRate,Class_Boss,50;
+        bonus2 bIgnoreMdefClassRate,Class_Boss,50;
+        bonus2 bAddClass,Class_Boss,30;
+        bonus2 bMagicAddClass,Class_Boss,30;
+#   神仙蛇精冠
+  - Combos:
+      - Combo:
+          - DarkSnake_Crown     # 400710
+          - Dark_Snake_Lord_Card    # 4330
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+        bonus bPerfectHitAddRate,40;
+        bonus bPow,5;
+        bonus bCon,5;
+        bonus bShortAtkRate,(.@r/3)*8;
+        bonus bLongAtkRate,(.@r/3)*8;
+  - Combos:
+      - Combo:
+          - DarkSnake_Crown     # 400710
+          - Wicked_Nymph_Card   # 4258
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+        bonus bPow,3;
+        bonus bCon,3;
+        bonus bShortAtkRate,(.@r/3)*4;
+        bonus bLongAtkRate,(.@r/3)*4;
+  - Combos:
+      - Combo:
+          - DarkSnake_Crown     # 400710
+          - Evil_Cloud_Hermit_Card  # 4262
+    Script: |
+        bonus bLongAtkRate,15;
+  - Combos:
+      - Combo:
+          - DarkSnake_Crown     # 400710
+          - Wild_Ginseng_Card   # 4232
+    Script: |
+        bonus bShortAtkRate,15;
+#   秘術-連環尖冰陣
+  - Combos:
+      - Combo:
+          - HYOUSENSOU_Page     # 490535
+          - HUUJIN_Page    # 490536
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+        bonus2 bSkillAtk,"NJ_KOUENKA",50;
+        bonus2 bMagicAtkEle,Ele_Fire,15;
+        bonus bSMatk,5;
+        bonus bAspdRate,20;
+        bonus bAspd,2;
+        bonus2 bMagicAtkEle,Ele_All,(Baselevel/30)*3;
+        bonus2 bMagicAddRace,RC_All,(Baselevel/30)*3;
+        bonus2 bMagicAddSize,Size_All,(Baselevel/30)*3;
+        if(getskilllv("NJ_KOUENKA") == 10){
+        bonus4 bAutoSpellOnSkill,"NJ_KOUENKA","WL_HELLINFERNO",5,1000;
+        }
+#   特利斯坦王國斗篷
+  - Combos:
+      - Combo:
+          - Tristan_Cape     # 480452
+          - Old_Protect_Of_Crown    # 18983
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+        bonus2 bSkillAtk,"LG_BANISHINGPOINT",(.@r/3)*15;
+        bonus2 bSkillAtk,"LG_CANNONSPEAR",(.@r/3)*15;
+        if(.@r >= 13){
+        bonus2 bSkillCooldown,"LG_CANNONSPEAR",-700;
+        }
+  - Combos:
+      - Combo:
+          - Tristan_Cape     # 480452
+          - Berzebub_Card    # 4145
+    Script: |
+        bonus2 bAddClass,Class_Boss,20;
+        bonus2 bSubEle,Ele_Undead,50;
+        bonus2 bSubEle,Ele_Ghost,-30;
+#   特利斯坦王國斗篷-LT
+  - Combos:
+      - Combo:
+          - Tristan_Cape_LT     # 480453
+          - Old_Protect_Of_Crown    # 18983
+    Script: |
+        .@r = getequiprefinerycnt(EQI_HEAD_TOP);
+        bonus2 bSkillAtk,"LG_BANISHINGPOINT",(.@r/3)*25;
+        bonus2 bSkillAtk,"LG_CANNONSPEAR",(.@r/3)*25;
+        if(.@r >= 13){
+        bonus2 bSkillCooldown,"LG_CANNONSPEAR",-1500;
+        }
+  - Combos:
+      - Combo:
+          - Tristan_Cape_LT    # 480453
+          - Berzebub_Card    # 4145
+    Script: |
+        bonus2 bAddClass,Class_Boss,30;
+        skill "LG_REFLECTDAMAGE",3;
+        bonus2 bSubEle,Ele_Undead,50;
+        bonus2 bSubEle,Ele_Ghost,-30;

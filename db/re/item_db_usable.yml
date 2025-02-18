@@ -35563,8 +35563,10 @@ Body:
     Name: 未知的水晶袋
     Type: Usable
     Script: |
-       getitem rand(1001298,1001305),1;
-
+      set amount,countitem(80083);     
+      delitem 80083,amount; 
+      for(set .@i,0;.@i <= amount;.@i++)
+      getitem rand(1001298,1001305),1;
   - Id: 11611
     AegisName: Pop_Corn
     Name: 爆米花
@@ -36083,6 +36085,12 @@ Body:
     Type: Usable
     Script: |
       callfunc "Lunatic_Scroll_14";
+  - Id: 81030
+    AegisName: Lunatic_Scroll_15
+    Name: 不要亂塞會壞掉的轉蛋
+    Type: Usable
+    Script: |
+      callfunc "Lunatic_Scroll_15";
 
   - Id: 81016
     AegisName: aegis_81016

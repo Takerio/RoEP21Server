@@ -127,9 +127,11 @@ OnPCLoginEvent:
 
 
   if(getgmlevel() >= 99){   // GM專屬模式
+    dispbottom "已開啟GM專屬模式（PATH:自創系統/遊戲多開IP限制）";
     atcommand "@speed 1";
   }
   if(#selectBGM$){ // 音樂腳本 如有選擇播放音樂
+    dispbottom "已開啟指定的音樂" + getgmlevel() >= 99?"（PATH:自創系統/遊戲多開IP限制）":"";
   playBGM #selectBGM$; 
   }
 	query_sql("SELECT last_ip FROM `login` WHERE account_id = "+getcharid(3)+"", .@LastIp$);

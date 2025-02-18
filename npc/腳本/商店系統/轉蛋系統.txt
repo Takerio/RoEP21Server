@@ -3672,5 +3672,44 @@ function	script	Lunatic_Scroll_14	{
 }
 
 
+//----------------------------- 不要亂塞會壞掉的轉蛋
+function	script	Lunatic_Scroll_15	{ 
 
+	set #Luck_Scroll,#Luck_Scroll+1; 
+	dispbottom "轉蛋幸運值累積"+#Luck_Scroll+"";
+	getitem 14522,10;
+
+	if(#Luck_Scroll==100){ goto Scroll_15; }
+	set @pay,rand(1,10000);
+	if(@pay>=0 && @pay<=3500){
+	getitem F_rand(12767,12768,12794,12794),1;
+	end;
+	}
+	if(@pay>=3501 && @pay<=7500){
+	getitem F_rand(14886,14608,23204,22819,22820,22821,100007,100008,100316,100317),3;
+	end;
+	}
+	if(@pay>=7501 && @pay<=9000){
+	getitem F_rand(1000620,25375),1;
+	end;
+	}
+	if(@pay>=9001 && @pay<=9700){
+	getitem F_rand(40888,40442,40384,40622,40418),1;
+	end;
+	}
+	if(@pay>=9701 && @pay<=9950){
+	setarray $@Scroll_15_3[0],470330,460093,400710,490535,490536;
+	set @Scroll_15,$@Scroll_15_3[rand(getarraysize($@Scroll_15_3))];
+	getitem @Scroll_15,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 深能轉蛋 取得 "+getitemname(@Scroll_15)+"!!",15;
+	end;
+	}
+	Scroll_15:
+	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
+	setarray $@Scroll_15_4[0],22654,490628,480452;
+	set @Scroll_15,$@Scroll_15_4[rand(getarraysize($@Scroll_15_4))];
+	getitem @Scroll_15,1;
+	announce "恭喜玩家 " + strcharinfo(0) + "，從 不要亂塞會壞掉的轉蛋 取得 "+getitemname(@Scroll_15)+"!!",15;
+	end;
+}
 

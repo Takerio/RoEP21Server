@@ -4083,3 +4083,296 @@ Body:
         }     
       }
 
+  - Id: 490628
+    AegisName: Fake_Alloy_G_Module
+    Name: 仿生鋁合金砲銃模塊
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Trade: 
+      NoDrop: true
+      NoSell: true
+    Locations:
+      Both_Accessory: true
+    Script: |
+      bonus bStr,5;
+      bonus bInt,5;
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+      bonus2 bAddRace,RC_All,10;
+        if(Class == 4078 || Class == 4107 || Class == 4259){
+        bonus bShortAtkRate,10;
+        bonus bLongAtkRate,10;
+        bonus2 bSkillCooldown,"GN_CART_TORNADO",-2000;
+        bonus2 bVariableCastrate,"GN_CARTCANNON",-100;
+        bonus2 bSkillAtk,"GN_CART_TORNADO",30;
+        bonus2 bSkillAtk,"GN_CARTCANNON",30;
+        }
+  - Id: 470330
+    AegisName: Santa_Boots
+    Name: 聖誕老人長靴
+    Type: Armor
+    Weight: 50
+    Defense: 20
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 130
+    Locations:
+      Shoes: true
+    Refineable: true
+    Gradable: true
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMaxHP,(.@r/2)*10;
+      bonus bMaxHP,(.@r/2)*10;
+      bonus2 bAddRace,RC_All,(.@r/3)*3;
+      bonus2 bMagicAddRace,RC_All,(.@r/3)*3;
+      if(.@r >= 7){
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+        if(.@r >= 11){
+        bonus bFixedCast,-500;
+          if(.@r >= 13){
+          autobonus "{ bonus bLuk,200;bonus2 bDropAddRace,RC_All,10;bonus2 bExpAddRace,RC_All,10; active_transform 1247,5000; }",10,5000,BF_MAGIC||BF_WEAPON;
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus bAtk,100;
+      bonus bMatk,100;
+        if(.@g >= 2){
+        bonus bFixedCast,-300;
+          if(.@g >= 3){
+          bonus2 bExpAddRace,RC_All,8;
+            if(.@g >= 4){
+            bonus2 bDropAddRace,RC_All,8;
+            }
+          }
+        }
+      }
+  - Id: 460093
+    AegisName: Ninja_Sheild
+    Name: 忍具-裏綻華
+    Type: Armor
+    Weight: 50
+    Defense: 100
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    Gradable: true
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
+      Fourth: true
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    View: 4
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMaxHPrate,5;
+      bonus bDelayrate,-8;
+      bonus2 bSkillAtk,"KO_BAKURETSU",(.@r/3)*20;
+      bonus2 bSkillAtk,"KO_HAPPOKUNAI",(.@r/3)*20;
+      if(.@r >= 9){
+      bonus bMaxHPrate,5;
+      bonus2 bSubSize,Size_All,5;
+        if(.@r >= 11){
+        bonus bAtk,100;
+        bonus bLongAtkRate,15;
+          if(.@r >= 13){
+          bonus2 bSkillCooldown,"KO_BAKURETSU",-3000;
+          bonus4 bAutoSpellOnSkill,"KO_BAKURETSU","KO_HAPPOKUNAI",getskilllv("KO_HAPPOKUNAI") < 1?1:getskilllv("KO_HAPPOKUNAI"),1000;
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus2 bSkillAtk,"SS_KUNAIWAIKYOKU",(.@r/4)*8;
+      bonus2 bSkillAtk,"SS_KUNAIKAITEN",(.@r/4)*8;
+      bonus2 bSkillAtk,"SS_KUNAIKUSSETSU",(.@r/4)*8;
+      bonus2 bSkillAtk,"SS_HITOUAKUMU",(.@r/4)*8;
+        if(.@g >= 2){
+          if(.@r >= 9){
+          bonus2 bAddRace,RC_All,15;
+          }
+          if(.@g >= 3){
+            if(.@r >= 11){
+            bonus bDelayrate,-8;
+            skill "KG_KYOMU",5;
+            skill "OB_ZANGETSU",5;
+            }
+            if(.@g >= 4){
+              if(.@r>= 13 && BaseLevel >= 200){
+              bonus4 bAutoSpellOnSkill,"SS_KUNAIWAIKYOKU","SS_KUNAIKAITEN",getskilllv("SS_KUNAIKAITEN") < 1?1:getskilllv("SS_KUNAIKAITEN"),350;
+              bonus4 bAutoSpellOnSkill,"SS_KUNAIWAIKYOKU","SS_KUNAIKAITEN",getskilllv("SS_KUNAIKUSSETSU") < 1?1:getskilllv("SS_KUNAIKUSSETSU"),350;
+              }
+            }
+          }
+        }
+      }
+  - Id: 400710
+    AegisName: DarkSnake_Crown
+    Name: 神仙蛇精冠
+    Type: Armor
+    Weight: 70
+    Defense: 20
+    Slots: 1
+    Locations:
+      Head_Top: true
+    ArmorLevel: 1
+    Refineable: true
+    EquipLevelMin: 130
+    View: 164
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      bonus bPow,5;
+      bonus bCon,5;
+      bonus bAtk,(.@r/2)*20;
+      bonus bHit,(.@r/2)*8;
+      bonus bShortAtkRate,(.@r/3)*7;			
+      bonus bLongAtkRate,(.@r/3)*7;
+      if(.@r >= 7){
+      bonus bAtkRate,10;
+        if(.@r >= 9){
+        bonus bDelayrate,10;
+          if(.@r >= 11){
+          bonus bPerfectHitAddRate,15;
+            if(.@r >= 12){
+            bonus2 bAddRace,RC_All,15;
+              if(.@r >= 13){
+              bonus bFixedCast,-500;
+              }
+            }
+          }
+        }
+        
+        
+      }
+  - Id: 490535
+    AegisName: HYOUSENSOU_Page
+    Name: 秘術-連環尖冰陣
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Trade: 
+      NoDrop: true
+      NoSell: true
+    Script: |
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",50;
+      bonus2 bMagicAtkEle,Ele_Water,15;
+      bonus bSMatk,5;
+      bonus bCastrate,-(BaseLevel/30);
+      bonus bMatkRate,(BaseLevel/30);
+      bonus bMatk,(BaseLevel/30)*10;
+      if(getskilllv("NJ_HYOUSENSOU") == 10){
+      bonus4 bAutoSpellOnSkill,"NJ_HYOUSENSOU","WL_JACKFROST",5,1000;
+      }
+  - Id: 490536
+    AegisName: HUUJIN_Page
+    Name: 秘術-萬千鳥飛鳴
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Trade: 
+      NoDrop: true
+      NoSell: true
+    Script: |
+      bonus2 bSkillAtk,"NJ_HUUJIN",50;
+      bonus2 bMagicAtkEle,Ele_Wind,15;
+      bonus bSMatk,5;
+      bonus bCastrate,-(BaseLevel/30);
+      bonus bMatkRate,(BaseLevel/30);
+      bonus bMatk,(BaseLevel/30)*10;
+      if(getskilllv("NJ_HUUJIN") == 10){
+      bonus4 bAutoSpellOnSkill,"NJ_HUUJIN","WL_CHAINLIGHTNING",5,1000;
+      }
+  - Id: 480452
+    AegisName: Tristan_Cape
+    Name: 特利斯坦王國斗篷
+    Type: Armor
+    Weight: 10
+    Defense: 20
+    Slots: 1
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Locations:
+      Garment: true
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      bonus bNoKnockback;
+      bonus bAtk,(.@r/2)*10;
+      bonus bLongAtkRate,(.@r/3)*3;
+      bonus bCritAtkRate,(.@r/3)*3;
+      if(.@r >= 7){
+      bonus bCritical,8;
+        if(.@r >= 9){
+        bonus2 bAddEle,Ele_All,10;
+          if(.@r >= 11){
+          bonus bCritical,10;
+          }
+        }  
+      }
+  - Id: 480453
+    AegisName: Tristan_Cape_LT
+    Name: 特利斯坦王國斗篷-LT
+    Type: Armor
+    Weight: 10
+    Defense: 20
+    Slots: 1
+    Refineable: true
+    ArmorLevel: 2
+    Gradable: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 190
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      bonus bNoKnockback;
+      bonus bAtk,(.@r/2)*10;
+      bonus bCon,.@r/2;
+      bonus bCrt,.@r/2;
+      bonus bLongAtkRate,(.@r/3)*5;
+      bonus bCritAtkRate,(.@r/3)*5;
+      if(.@r >= 7){
+      bonus bAtkRate,15;
+      bonus bAspdRate,10;
+        if(.@r >= 9){
+        bonus2 bAddEle,Ele_All,12;
+          if(.@r >= 11){
+          bonus bCritical,20;
+            if(.@r >= 13){
+            bonus bLongAtkRate,10;
+            bonus bCRate,7;
+            }
+          }
+        }  
+      }

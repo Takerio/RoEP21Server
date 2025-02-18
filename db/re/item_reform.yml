@@ -3923,6 +3923,20 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: Tristan_Cape
+        CardsAllowed: true
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Zelunium
+            Amount: 1000
+          - Material: Broken_Crown
+            Amount: 80
+          - Material: Barmund_Soul_Essence
+            Amount: 80
+          - Material: Ymir_Heart_P_TW
+            Amount: 3
+        ResultItem: Tristan_Cape_LT
       - BaseItem: SurviveOrb_K
         CardsAllowed: true
         Materials:

@@ -24562,7 +24562,7 @@ Body:
       State: Shield
   - Id: 2311
     Name: LG_REFLECTDAMAGE
-    Description: 反射傷害
+    Description: 聖冕加護 # 反射傷害
     MaxLevel: 5
     TargetType: Self
     DamageFlags:
@@ -41665,7 +41665,7 @@ Body:
         2hAxe: true
   - Id: 6005
     Name: BO_EXPLOSIVE_POWDER
-    Description: Explosive Powder
+    Description: 爆炸炸藥
     MaxLevel: 5
     Type: Weapon
     TargetType: Self
@@ -41693,7 +41693,7 @@ Body:
           Amount: 97
   - Id: 6006
     Name: BO_MAYHEMIC_THORNS
-    Description: Mayhemic Thorns
+    Description: 混亂的荊棘
     MaxLevel: 10
     Type: Weapon
     TargetType: Attack

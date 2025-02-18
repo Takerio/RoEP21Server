@@ -8123,14 +8123,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2615
-  - Id: 40418
-    AegisName: C_Head_Item_23723
-    Name: (服飾)歡樂暑假髮帶
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2633
+
 
   - Id: 40924
     AegisName: C_Head_Item_poporing
@@ -8258,14 +8251,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2564
-  - Id: 40622
-    AegisName: C_Head_Item_22886
-    Name: (服飾)冰果球
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 805
+
 
   - Id: 40385
     AegisName: C_Head_Item_23475
@@ -8341,14 +8327,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2383
-  - Id: 40384
-    AegisName: C_Head_Item_23474
-    Name: (服飾)哥德式洋裝
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2384
+
 
   - Id: 40469
     AegisName: C_Carmen_Miranda's_Hat
@@ -8474,14 +8453,7 @@ Body:
       Costume_Head_Top: true
     ArmorLevel: 1
     View: 2757
-  - Id: 40442
-    AegisName: C_Head_Item_23849
-    Name: (服飾)藍色卡普拉髮圈
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    ArmorLevel: 1
-    View: 2759
+
   - Id: 40436
     AegisName: C_Head_Item_23781
     Name: (服飾)噴火龍頭盔(藍)
@@ -8621,14 +8593,7 @@ Body:
       Costume_Head_Low: true
     ArmorLevel: 1
     View: 2090
-  - Id: 40888
-    AegisName: C_Head_Item_23181
-    Name: (服飾)惡魔波利氣球
-    Type: Armor
-    Locations:
-      Costume_Head_Low: true
-    ArmorLevel: 1
-    View: 2091
+
 
 
 
