@@ -3923,6 +3923,20 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: Black_Mithril_Guard
+        CardsAllowed: true
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Zelunium
+            Amount: 1000
+          - Material: Old_Hilt
+            Amount: 50
+          - Material: Soul_Barmund_Rune2
+            Amount: 100
+          - Material: Ymir_Heart_P_TW
+            Amount: 3
+        ResultItem: Black_Mithril_Guard_LT
       - BaseItem: Tristan_Cape
         CardsAllowed: true
         Materials:

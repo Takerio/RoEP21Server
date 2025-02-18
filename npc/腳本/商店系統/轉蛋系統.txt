@@ -3706,7 +3706,7 @@ function	script	Lunatic_Scroll_15	{
 	}
 	Scroll_15:
 	set #Luck_Scroll,0; dispbottom "轉蛋幸運值歸零";
-	setarray $@Scroll_15_4[0],22654,490628,480452;
+	setarray $@Scroll_15_4[0],22654,460077,19380,490628,480452;
 	set @Scroll_15,$@Scroll_15_4[rand(getarraysize($@Scroll_15_4))];
 	getitem @Scroll_15,1;
 	announce "恭喜玩家 " + strcharinfo(0) + "，從 不要亂塞會壞掉的轉蛋 取得 "+getitemname(@Scroll_15)+"!!",15;
