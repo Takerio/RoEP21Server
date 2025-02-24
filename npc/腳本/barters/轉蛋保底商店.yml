@@ -972,3 +972,61 @@ Body:
            - Index: 0
              Item: Unknown_Item_70026
              Amount: 350
+
+#深能轉蛋
+   - Name: 深能轉蛋
+     Map: prt_in
+     X: 1
+     Y: 1
+     Direction: SouthWest
+     Sprite: 4_4JOB_MAURA
+     Items:
+       - Index: 1
+         Item: Astrolo_Dawn_Boots
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 2
+         Item: Bar_Ab_E_Suits
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+
+#不要亂塞會壞掉的轉蛋
+   - Name: 不要亂塞會壞掉的轉蛋
+     Map: prt_in
+     X: 1
+     Y: 1
+     Direction: SouthWest
+     Sprite: 4_4JOB_MAURA
+     Items:
+       - Index: 1
+         Item: Black_Mithril_Guard
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 2
+         Item: Fake_Alloy_G_Module
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350
+       - Index: 3
+         Item: Tristan_Cape
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Unknown_Item_70026
+             Amount: 350

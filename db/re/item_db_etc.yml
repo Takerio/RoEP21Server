@@ -69398,6 +69398,70 @@ Body:
     SubType: Enchant
     Script: |
       autobonus "{ bonus2 bMagicAddRace,RC_All,20; bonus2 bMagicAddSize,Size_All,20; bonus2 bMagicAddEle,Ele_All,20; bonus2 bMagicAddClass,Class_All,20; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
+  - Id: 312438
+    AegisName: Spirit_Of_Star_01_CN
+    Name: 星魂Lv1
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,10;
+      bonus bMatk,10;
+  - Id: 312439
+    AegisName: Spirit_Of_Star_02_CN
+    Name: 星魂Lv2
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,20;
+      bonus bMatk,20;      
+  - Id: 312440
+    AegisName: Spirit_Of_Star_03_CN
+    Name: 星魂Lv3
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,30;
+      bonus bMatk,30;
+  - Id: 312441
+    AegisName: Spirit_Of_Star_04_CN
+    Name: 星魂Lv4
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,50;
+      bonus bMatk,50;
+      bonus2 bAddRace,RC_All,5;
+      bonus2 bMagicAddRace,RC_All,5;
+  - Id: 312442
+    AegisName: Spirit_Of_Star_05_CN
+    Name: 星魂Lv5
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,60;
+      bonus bMatk,60;
+      bonus2 bAddRace,RC_All,7;
+      bonus2 bMagicAddRace,RC_All,7;
+  - Id: 312443
+    AegisName: Spirit_Of_Star_06_CN
+    Name: 星魂Lv6
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,70;
+      bonus bMatk,70;
+      bonus2 bAddRace,RC_All,9;
+      bonus2 bMagicAddRace,RC_All,9;
+  - Id: 312444
+    AegisName: Spirit_Of_Star_07_CN
+    Name: 星魂Lv7
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAtk,100;
+      bonus bMatk,100;
+      bonus2 bAddRace,RC_All,15;
+      bonus2 bMagicAddRace,RC_All,15;
 
 # 自創道具
   - Id: 2010000

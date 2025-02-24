@@ -3936,7 +3936,7 @@ Body:
             Amount: 100
           - Material: Ymir_Heart_P_TW
             Amount: 3
-        ResultItem: Black_Mithril_Guard_LT
+        ResultItem: GEMS_DarkBlood_LT
       - BaseItem: Tristan_Cape
         CardsAllowed: true
         Materials:

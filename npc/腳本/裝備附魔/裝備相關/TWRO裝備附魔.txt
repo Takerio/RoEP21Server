@@ -5,7 +5,7 @@
 	mes "我是負責幫特殊道具附魔的精靈";
 	mes "哪件裝備要附魔呢?";
 	next;
-	switch(select("鎧甲類:頭盔類(中):鞋子類:飾品類:披肩類")){
+	switch(select("鎧甲類:頭盔類(中):鞋子類:飾品類:披肩類:盾牌類")){
 
 	case 1:
 		mes "[附魔精靈]";
@@ -118,6 +118,17 @@
 		item_enchant 10008;
 		end;
 
+		}
+	case 6:
+		mes "[附魔精靈]";
+		mes "哪件裝備要附魔呢?";
+		next;
+		switch(select("聖之羽翼神盾-LT、吞神魔盾-闇嗜-LT")){
+
+		case 1:
+		close2;
+		item_enchant 10017;
+		end;
 		}
 	}
 
