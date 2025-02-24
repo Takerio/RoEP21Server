@@ -337,6 +337,9 @@
 	son28789:	set @Scroll,28789;goto Scroll_100;
 	son540096:	set @Scroll,540096;goto Scroll_100;
 
+	son470291:	set @Scroll,470291;goto Scroll_100;
+	son450431:	set @Scroll,450431;goto Scroll_100;
+
 	son460077:	set @Scroll,460077;goto Scroll_100;
 	son490628:	set @Scroll,490628;goto Scroll_100;
 	son480452:	set @Scroll,480452;goto Scroll_100;
