@@ -121969,7 +121969,7 @@ Body:
     Slots: 1
     Locations:
       Left_Hand: true
-    ArmorLevel: 1
+    ArmorLevel: 2
     EquipLevelMin: 100
     Refineable: true
     Gradable: true
