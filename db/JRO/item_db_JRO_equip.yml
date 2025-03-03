@@ -6700,9 +6700,120 @@ Body:
       bonus2 bAddSize,Size_All,15;
       bonus2 bMagicAddSize,Size_All,15;
 #月貓仙境
-
-
-
+  - Id: 460057
+    AegisName: Spenta_Armaiti
+    Name: (JRO)斯帕塔阿瑪蒂神盾
+    Type: Armor
+    Weight: 30
+    Defense: 60
+    EquipLevelMin: 100
+    Locations:
+      Left_Hand: true
+    ArmorLevel: 1
+    Refineable: true
+    View: 1
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHPrate,.@r*2;
+      bonus bAtk,.@r*9;
+      bonus bMatk,.@r*9;
+      if(.@r >= 12){
+      bonus bMaxHPrate,10;
+        if(.@r >= 17){
+        bonus2 bResEff,Eff_Freeze,10000;
+        bonus2 bResEff,Eff_Stone,10000;
+        }
+      }
+      if(getskilllv("AL_HEAL") >= 10 || getskilllv("BA_MUSICALLESSON") >= 10){
+      bonus2 bMagicAddEle,Ele_All,20;
+      }
+  - Id: 19411
+    AegisName: Floating_Gioia
+    Name: (JRO)飄浮喬伊亞
+    Type: Armor
+    Weight: 30
+    EquipLevelMin: 10
+    ArmorLevel: 1
+    Locations:
+      Head_Low: true
+    Refineable: false
+    View: 1730
+    Script: |
+      bonus2 bAddRace,RC_All,15;                  
+      bonus2 bMagicAddRace,RC_All,15;
+      bonus2 bResEff,Eff_Fear,10000;
+  - Id: 490029
+    AegisName: Geffenia_Magictool_Ice
+    Name: (JRO)葛帔尼亞冰惡魔道具
+    Type: Armor
+    Buy: 20
+    Weight: 50
+    Defense: 2
+    Slots: 1
+    EquipLevelMin: 100
+    ArmorLevel: 1
+    Locations:
+      Left_Accessory: true
+    Script: |
+      bonus2 bMagicAddSize,Size_All,10;
+      bonus2 bSkillAtk,"WZ_STORMGUST",BaseLevel/3;
+      if(getskilllv("WL_COMET") >= 5){
+      bonus2 bSkillUseSP,"WL_JACKFROST",35;
+      bonus bFixedCastrate,-100;
+      }
+      if(getskilllv("WL_JACKFROST") >= 5){
+      bonus2 bSkillUseSP,"WL_COMET",100;
+      bonus2 bSkillAtk,"WL_COMET",25;
+      }
+      if(getskilllv("WL_STASIS") >= 5){
+      bonus2 bSkillAtk,"WL_FROSTMISTY",50;
+      bonus2 bSkillAtk,"WL_JACKFROST",50;
+      }
+      if(getskilllv("WL_RECOGNIZEDSPELL") >= 5){
+      bonus bDelayrate,-30;
+      }
+      bonus2 bSkillCooldown,"SS_REIKETSUHOU",-200;
+      bonus2 bSkillAtk,"SS_REIKETSUHOU",25;      
+  - Id: 22212
+    AegisName: Hollow_Shoes
+    Name: (JRO)空虛之靴
+    Type: Armor
+    Buy: 2000000
+    Weight: 50
+    Defense: 15
+    Slots: 1
+    EquipLevelMin: 260
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 2
+    Locations:
+      Left_Accessory: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bSpl,.@r;
+      bonus bCastrate,-(.@r*2);
+      bonus2 bMagicAtkEle,Ele_All,(.@r/2)*3;
+      if(.@g >= 1){
+      bonus bDex,-(.@r*3);
+      bonus bDelayrate,-(.@r*2);
+        if(.@g >= 2){
+        bonus2 bMagicAddClass,Class_Boss,(.@r/2)*3;
+          if(.@g >= 3){
+          bonus2 bMagicAtkEle,Ele_Fire,30;
+          bonus2 bMagicAtkEle,Ele_Earth,30;
+          bonus2 bMagicAtkEle,Ele_Water,30;
+          bonus2 bMagicAtkEle,Ele_Dark,30;
+          bonus2 bMagicAtkEle,Ele_Poison,30;
+            if(.@g >= 4){
+            skill "GC_HALLUCINATIONWALK",4;
+            skill "PF_FOGWALL",1;
+            bonus bFixedCast,-500;
+            }
+          }
+        }
+      }
+      
 
 
 

@@ -345,7 +345,7 @@ bonus2 bSkillCooldown,sk,-t;          技能 sk 獨立延遲/冷卻(Cooldown) - 
 bonus2 bAddEle,e,x;                  物理攻擊 e 屬性的單位時, 增加 x% 的傷害 (增加屬性傷害/對屬性敵人增加傷害)
 bonus3 bAddEle,e,x,bf;               物理攻擊 e 屬性的單位時, 在 bf 條件下增加 x% 的傷害
 bonus2 bMagicAddEle,e,x;             魔法攻擊 e 屬性的單位時, 增加 x% 的傷害
-bonus2 bSubEle,e,x;                  受到 e 屬性攻擊時, 減少 x% 的傷害 (減少屬性傷害)
+bonus2 bSubEle,e,x;                  受到 e 屬性攻擊時, 減少 x% 的傷害 (減少屬性傷害、屬性抵抗、屬性抗性)
 bonus3 bSubEle,e,x,bf;               受到 e 屬性攻擊時, 在 bf 條件下減少 x% 的傷害
 bonus2 bSubDefEle,e,x;               受到 e 屬性的單位攻擊時, 減少物理防禦 x% 的傷害 
 bonus2 bMagicSubDefEle,e,x;		     受到 e 屬性的單位攻擊時, 減少魔法防禦 x% 的傷害
@@ -422,7 +422,7 @@ bonus2 bExpAddClass,c,x;             當殺死 c 類別的單位所獲得的經�
 bonus2 bAddEff,eff,n;                   攻擊時將有 n/100% 的機率使敵方產生 eff 狀態
 bonus2 bAddEff2,eff,n;                  攻擊時將有 n/100% 的機率使自己產生 eff 狀態
 bonus2 bAddEffWhenHit,eff,n;            受到攻擊時將有 n/100% 的機率使敵方產生 eff 狀態
-bonus2 bResEff,eff,n;                   減少 n/100% 產生 eff 狀態的機率
+bonus2 bResEff,eff,n;                   減少 n/100% 產生 eff 狀態的機率 (減少異常狀態/異常狀態減少)
 
 bonus3 bAddEff,eff,n,atf;               攻擊時將有 n/100% 的機率在 atf 條件下產生 eff 狀態
 bonus4 bAddEff,eff,n,atf,t;             攻擊時將有 n/100% 的機率在 atf 條件下產生 eff 狀態, 持續 t 秒

@@ -21058,3 +21058,325 @@ Body:
         skill "LG_REFLECTDAMAGE",3;
         bonus2 bSubEle,Ele_Undead,50;
         bonus2 bSubEle,Ele_Ghost,-30;
+#(JRO)斯帕塔阿瑪蒂神盾
+  - Combos:
+      - Combo:
+          - Spenta_Armaiti   # 460057
+          - E_Piske_Card   # 300501
+    Script: |
+      bonus2 bMagicAddSize,Size_All,35;
+  - Combos:
+      - Combo:
+          - Spenta_Armaiti   # 460057
+          - Card_49005   # 49005
+    Script: |
+      bonus2 bMagicAddSize,Size_All,35;
+  - Combos:
+      - Combo:
+          - Spenta_Armaiti   # 460057
+          - Card_300137   # 300137          
+    Script: |
+      bonus2 bMagicAddSize,Size_All,35;
+  - Combos:
+        - Spenta_Armaiti   # 460057
+        - Floating_Gioia   # 19411
+    Script: |
+      bonus2 bMagicAddSize,Size_All,15;
+#(JRO)飄浮喬伊亞
+  - Combos:
+      - Combo:
+          - Floating_Gioia   # 19411
+          - Bio_Jam_Es3   # 311932
+    Script: |
+      bonus2 bAddRace,RC_Demon,45;
+      bonus2 bMagicAddRace,RC_Demon,45;
+      bonus2 bAddRace,RC_Plant,45;
+      bonus2 bMagicAddRace,RC_Plant,45; 
+  - Combos:               
+      - Combo:
+          - Floating_Gioia  # 19411
+          - Bio_Jam_Vl3   # 311935
+    Script: |
+      bonus2 bAddRace,RC_Angel,45;
+      bonus2 bMagicAddRace,RC_Angel,45;
+      bonus2 bAddRace,RC_Formless,45;
+      bonus2 bMagicAddRace,RC_Formless,45;           
+  - Combos:
+      - Combo:
+          - Floating_Gioia   # 19411
+          - Bio_Jam_Eq3   # 311938          
+    Script: |
+      bonus2 bAddRace,RC_Insect,45;
+      bonus2 bMagicAddRace,RC_Insect,45;
+      bonus2 bAddRace,RC_DemiHuman,45;
+      bonus2 bMagicAddRace,RC_DemiHuman,45;
+  - Combos:
+      - Combo:
+          - Floating_Gioia   # 19411
+          - Bio_Jam_Hd3   # 311941          
+    Script: |
+      bonus2 bAddRace,RC_Undead,45;
+      bonus2 bMagicAddRace,RC_Undead,45;
+      bonus2 bAddRace,RC_Brute,45;
+      bonus2 bMagicAddRace,RC_Brute,45;
+  - Combos:
+      - Combo:
+          - Floating_Gioia   # 19411
+          - Bio_Jam_Boss   # 311943          
+    Script: |
+      bonus2 bAddClass,Class_Boss,28;
+      bonus2 bMagicAddClass,Class_Boss,28;
+#(JRO)葛帔尼亞冰惡魔道具
+  - Combos:
+      - Combo:
+          - Geffenia_Magictool_Ice     # 490029
+          - AwakenKtullanux_Card    # 27113
+    Script: |
+        bonus2 bMagicAddClass,Class_Boss,20;
+        bonus2 bMagicAddRace,RC_Water,40;
+#(JRO)空虛之靴
+  - Combos:
+      - Combo:
+          - Hollow_Shoes    # 22212
+          - aegis_300472   # 300472
+    Script: |
+        .@r = getequiprefinerycnt(EQI_SHOES);
+        .@g = getenchantgrade();
+        skill "PR_MAGNUS",10;
+        bonus2 bMagicAddRace,RC_All,25;
+        bonus2 bMagicAddEle,Class_All,25;
+        bonus bMaxHPrate,.@r;
+        bonus bMatk,.@r*12;
+        if(.@g >= 1){
+        bonus bDex,-30;
+        bonus bDelayrate,15;
+        }
+  - Combos:
+      - Combo:
+          - Hollow_Shoes    # 22212
+          - Card_50022    # 50022
+    Script: |
+        .@r = getequiprefinerycnt(EQI_SHOES);
+        .@g = getenchantgrade();
+        skill "PR_MAGNUS",10;
+        bonus2 bMagicAddRace,RC_All,25;
+        bonus2 bMagicAddEle,Class_All,25;
+        bonus bMaxHPrate,.@r;
+        bonus bMatk,.@r*12;
+        if(.@g >= 1){
+        bonus bDex,-30;
+        bonus bDelayrate,15;
+        }
+  - Combos:
+      - Combo:
+          - Hollow_Shoes    # 22212
+          - Card_49032    # 49032
+    Script: |
+        .@r = getequiprefinerycnt(EQI_SHOES);
+        .@g = getenchantgrade();
+        skill "PR_MAGNUS",10;
+        bonus2 bMagicAddRace,RC_All,25;
+        bonus2 bMagicAddEle,Class_All,25;
+        bonus bMaxHPrate,.@r;
+        bonus bMatk,.@r*12;
+        if(.@g >= 1){
+        bonus bDex,-30;
+        bonus bDelayrate,15;
+        }
+#靈魂之幽暗夢魘卡片
+  - Combos:
+      - Combo:
+          - Card_49032    # 49032
+          - Temple_Rune_Ring    # 490304
+    Script: |
+        bonus2 bMagicAddClass,Class_All,25;
+        bonus bMaxHPrate,25;
+        bonus bSMatk,20;
+  - Combos:
+      - Combo:
+          - Card_49032    # 49032
+          - Temple_M_Ring    # 490307
+    Script: |
+        bonus2 bMagicAddClass,Class_All,15;
+        bonus bVariableCastrate,-25;
+        bonus bDelayrate,-18;
+  - Combos:
+      - Combo:
+          - Card_49032    # 49032
+          - Card_49024    # 49024
+    Script: |
+        bonus bMatk,200;
+        bonus bDelayrate,-25;
+#武神絲露德卡片
+  - Combos:
+      - Combo:
+          - Card_49024    # 49024
+          - Venom_Rune_Ring    # 490303
+    Script: |
+        bonus bShortAtkRate,27;
+  - Combos:
+      - Combo:
+          - Card_49024    # 49024
+          - Soul_Rune_Ring    # 490302
+    Script: |
+        bonus bLongAtkRate,27;
+  - Combos:
+      - Combo:
+          - Card_49024    # 49024
+          - Temple_Rune_Ring    # 490304
+    Script: |
+        bonus2 bMagicAtkEle,Ele_All,27;
+  - Combos:
+      - Combo:
+          - Card_49024    # 49024
+          - Floating_Gioia   # 19411
+    Script: |
+        bonus bPAtk,40;
+        bonus bSMatk,40;
+  - Combos:
+      - Combo:
+          - Card_49024    # 49024
+          - Card_50021    # 50021
+    Script: |
+        bonus bMaxHPrate,40;
+#(JRO)雷吉麗芙卡片
+  - Combos:
+      - Combo:
+          - Card_50021    # 50021
+          - Venom_Rune_Ring    # 490303
+    Script: |
+        bonus bCritical,40;
+        bonus bHit,100;
+        bonus bPAtk,20;
+  - Combos:
+      - Combo:
+          - Card_50021    # 50021
+          - Soul_Rune_Ring    # 490302
+    Script: |
+        bonus bCritical,40;
+        bonus bHit,100;
+        bonus bPAtk,20;
+  - Combos:
+      - Combo:
+          - Card_50021    # 50021
+          - Temple_Rune_Ring    # 490304
+    Script: |
+        bonus bCastrate,-20;
+        bonus bSMatk,40;
+  - Combos:
+      - Combo:
+          - Card_50021    # 50021
+          - Bio_Jam_Boss   # 311943
+    Script: |
+        bonus bAtk,100;
+        bonus bMatk,100;
+#(JRO)閃亮耀眼喵喵首輪
+  - Combos:
+      - Combo:
+          - Glittering_Cat_Choker    # 490149
+          - Pitaya_Boss_Card    # 300107
+    Script: |
+        bonus4 bAutoSpellOnSkill,"SU_SV_STEMSPEAR","SH_HYUN_ROK_CANNON",getskilllv("SH_HYUN_ROK_CANNON"),1000;
+        bonus4 bAutoSpellOnSkill,"SH_HYUN_ROK_CANNON","SH_HYUN_ROK_CANNON",getskilllv("SH_HYUN_ROK_CANNON"),50;
+        autobonus "{ bonus2 bMagicAddEle,Ele_All,70; }",50,5000,BF_MAGIC,"{ specialeffect2 EF_LAMADAN; }";
+        bonus4 bAutoSpellOnSkill,"SH_HYUN_ROKS_BREEZE","SU_SV_STEMSPEAR",getskilllv("SU_SV_STEMSPEAR"),200;
+#(JRO)不滅指環
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_FS3    # 310729
+    Script: |
+        bonus bShortAtkRate,30;
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_EA3    # 310732
+    Script: |
+        bonus bLongAtkRate,30;
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_HP3    # 310744
+    Script: |
+        bonus bMaxHP,5000;
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_HL3    # 310741
+    Script: |
+        bonus bAtk,80;
+        bonus bMatk,80;
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_SP3    # 310738
+    Script: |
+        bonus2 bMagicAtkEle,Ele_All,24;
+  - Combos:
+      - Combo:
+          - Ameretat    # 490290
+          - Nebula_Of_SH3    # 310735
+    Script: |
+        bonus bCRate,18;
+#(JRO)遺忘永凍之冰  
+  - Combos:
+      - Combo:
+          - perm_frost_oblivion    # 410365
+          - Physical_Grade_5    # 311453
+    Script: |     
+        bonus2 bAddRace,RC_All,28;
+        bonus2 bAddEle,Ele_All,28;
+  - Combos:
+      - Combo:
+          - perm_frost_oblivion    # 410365
+          - Magical_Grade_5    # 311458
+    Script: |     
+        bonus2 bMagicAddRace,RC_All,28;
+        bonus2 bMagicAddEle,Ele_All,28;
+  - Combos:
+      - Combo:
+          - perm_frost_oblivion    # 410365
+          - Cat_Ears_Cape_Blue    # 420327
+    Script: |     
+        bonus2 bAddSize,Size_All,15;
+        bonus2 bMagicAddSize,Size_All,15;
+        bonus bCritical,50;
+        bonus bPerfectHitAddRate,20;
+  - Combos:
+      - Combo:
+          - perm_frost_oblivion    # 410365
+          - Floating_Gioia    # 19411
+    Script: |   
+        bonus2 bAddSize,Size_All,15;
+        bonus2 bMagicAddSize,Size_All,15;
+        bonus bCritical,50;
+        bonus bPerfectHitAddRate,20;  
+#(JRO)黯淡冰川貓耳斗篷
+  - Combos:
+      - Combo:
+          - Cat_Ears_Cape_Blue    # 420327
+          - Magical_Grade_5    # 311458
+    Script: |     
+        .@s = getequiprefinerycnt(EQI_SHOES);
+        .@w = getequiprefinerycnt(EQI_HAND_R);
+        bonus bAspdRate,.@s;
+        bonus bCritical,.@s;
+        bonus bCastrate,-(.@s);
+        bonus bHit,.@s*3;
+        bonus bShortAtkRate,(.@w/2)*4;
+        bonus bLongAtkRate,(.@w/2)*4;
+        bonus2 bMagicAtkEle,Ele_All,(.@w/2)*6;
+  - Combos:
+      - Combo:
+          - Cat_Ears_Cape_Blue    # 420327
+          - Physical_Grade_5    # 311453
+    Script: |  
+        .@s = getequiprefinerycnt(EQI_SHOES);
+        .@w = getequiprefinerycnt(EQI_HAND_R);
+        bonus bAspdRate,.@s;
+        bonus bCritical,.@s;
+        bonus bCastrate,-(.@s);
+        bonus bHit,.@s*3;
+        bonus bShortAtkRate,(.@w/2)*4;
+        bonus bLongAtkRate,(.@w/2)*4;
+        bonus2 bMagicAtkEle,Ele_All,(.@w/2)*6;

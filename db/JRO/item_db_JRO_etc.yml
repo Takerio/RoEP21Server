@@ -866,9 +866,139 @@ Body:
       bonus2 bSkillAtk,"SU_SVG_SPIRIT",5+.@r;
       if (.@r>=10)
          bonus2 bSkillAtk,"SU_SVG_SPIRIT",5;
+  - Id: 300137
+    AegisName: Card_300137
+    Name: (JRO)公主●梅爾卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Fire,50;
+      bonus2 bMagicAtkEle,Ele_Water,50;
+      bonus2 bMagicAtkEle,Ele_Earth,50;
+      bonus2 bMagicAtkEle,Ele_Wind,50;
+  - Id: 49005
+    AegisName: Card_49005
+    Name: 墮落皇女●格恩達爾卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bMagicAtkEle,Ele_All,.@r*5;
+      bonus2 bSubEle,Ele_All,15;
+      bonus bUseSPrate,50;
+  - Id: 50022
+    AegisName: Card_50022
+    Name: (JRO)滅絕古埃及王卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bMagicAddRace,RC_Undead,70;
+      bonus2 bMagicAddRace,RC_Demon,70;
+      bonus2 bMagicAddEle,Ele_Undead,70;
+      bonus2 bMagicAddEle,Ele_Dark,70;
+      bonus2 bSubEle,Ele_All,-30;
+  - Id: 49032
+    AegisName: Card_49032
+    Name: 靈魂之幽暗夢魘卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bMaxHPrate,25;
+      bonus2 bMagicAddClass,Class_All,30;      
+  - Id: 49024
+    AegisName: Card_49024
+    Name: 武神絲露德卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddRace,RC_All,25;                  
+      bonus2 bMagicAddRace,RC_All,25;
+      bonus bMaxHPrate,-20;      
+  - Id: 50021
+    AegisName: Card_50021
+    Name: (JRO)雷吉麗芙卡片
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      if(getequipcardid(EQI_HEAD_MID,0) == 50021){
+      bonus2 bSubEle,Ele_Fire,10;
+      bonus2 bSubEle,Ele_Water,10;
+      bonus2 bSubEle,Ele_Ghost,10;
+      bonus2 bSubEle,Ele_Poison,10;
+      
+      }
 
-
-
+      
+#月貓附魔
+  # - Id: 311932
+  #   AegisName: md_geffen_amet3
+  #   Name: 完美的生物圈寶石(惡魔/植物)
+  #   Type: Card
+  #   SubType: Enchant
+  #   Buy: 0
+  #   Weight: 0
+  #   Script: |
+  #     bonus2 bAddRace,RC_Demon,45; 
+  #     bonus2 bAddRace,RC_Plant,45; 
+  #     bonus2 bMagicAddRace,RC_Plant,45;
+  #     bonus2 bMagicAddRace,RC_Plant,45; 
+  # - Id: 311935
+  #   AegisName: Bio_Jam_Vl3
+  #   Name: 完美的生物圈寶石(無形/天使)
+  #   Type: Card
+  #   SubType: Enchant
+  #   Buy: 0
+  #   Weight: 0
+  #   Script: |
+  #     bonus2 bAddRace,RC_Formless,45; 
+  #     bonus2 bAddRace,RC_Angel,45; 
+  #     bonus2 bMagicAddRace,RC_Formless,45;
+  #     bonus2 bMagicAddRace,RC_Angel,45;
+  # - Id: 311938
+  #   AegisName: Bio_Jam_Eq3
+  #   Name: 完美的生物圈寶石(人形/昆蟲)
+  #   Type: Card
+  #   SubType: Enchant
+  #   Buy: 0
+  #   Weight: 0
+  #   Script: |
+  #     bonus2 bAddRace,RC_DemiHuman,45; 
+  #     bonus2 bAddRace,RC_Insect,45; 
+  #     bonus2 bMagicAddRace,RC_DemiHuman,45;
+  #     bonus2 bMagicAddRace,RC_Insect,45;
+      
 
 
 
