@@ -39528,7 +39528,7 @@ Body:
     GiveAp: 1
     CastCancel: true
     CastTime: 800
-    AfterCastActDelay: 300
+    AfterCastActDelay: 150
     Duration1: 10000
     FixedCastTime: 200
     Requires:
