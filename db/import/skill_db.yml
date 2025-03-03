@@ -144,7 +144,10 @@ Header:
 
 Body:
 
-
+  - Id: 5334
+    Name: WH_CRESCIVE_BOLT
+    Description: 漸進狙擊
+    Cooldown: 150
 #守護神盾
   - Id: 5256
     Name: IG_GUARDIAN_SHIELD
