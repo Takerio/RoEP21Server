@@ -26,7 +26,7 @@ setarray .@questRequiredAmount[0],30;
     end;
     }
 
-trinity,127,93,6	script	每日任務情報66員#li	643,{
+trinity,127,93,6	script	每日任務情報77員#li	643,{
     set .@mvpcard1,30;
 	mes "[每日任務情報員]";
 	mes "我是負責卡片升級任務的學者";
@@ -1626,6 +1626,6 @@ trinity,127,93,6	script	每日任務情報66員#li	643,{
     }
     end;
 OnInit:
-	waitingroom "卡片升級/每日任務666",0;
+	waitingroom "卡片升級/每日任務",0;
 	end;
 }
