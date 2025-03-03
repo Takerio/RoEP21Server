@@ -1626,6 +1626,6 @@ trinity,127,93,6	script	每日任務情報66員#li	643,{
     }
     end;
 OnInit:
-	waitingroom "卡片升級/每日任務",0;
+	waitingroom "卡片升級/每日任務666",0;
 	end;
 }
