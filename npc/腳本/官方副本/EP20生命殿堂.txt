@@ -827,8 +827,8 @@ function	script	unitskilluseid_ba_go1	{
 
 		//副本任務獎勵
 		dispbottom "生命殿堂任務完成，以下是你的獎勵!!"; 
-	set #Instance_Points,#Instance_Points+5;	//副本積分+5
-	dispbottom "副本積分+5";
+	set #Instance_Points,#Instance_Points+10;	//副本積分+5
+	dispbottom "副本積分+10";
 		callfunc "offical_instance_finish",61;
 		dispbottom "目前副本積分 ^0000ff"+#Instance_Points+"^000000 點";
 		getitem 1001456,1;	//循環的果實

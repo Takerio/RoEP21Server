@@ -3923,6 +3923,71 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: Diana_Suits
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Soft_Feather
+            Amount: 100
+          - Material: Beta_Scissore_Ng_Card
+            Amount: 5
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Diana_Suits_LT
+      - BaseItem: Mercury_Suits
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Broken_Shuriken
+            Amount: 100
+          - Material: Dry_Rafflesia_Card
+            Amount: 5
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Mercury_Suits_LT
+      - BaseItem: Bacchus_Armor
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: ClockTower_Lead
+            Amount: 100
+          - Material: Papila_Card
+            Amount: 5
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Bacchus_Armor_LT
+      - BaseItem: Neptune_Uniform
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Piece_Of_Black_Cloth
+            Amount: 100
+          - Material: Alnoldi_Ex_Card
+            Amount: 5
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Neptune_Uniform_LT
+      - BaseItem: Janus_Armor
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Angel_Dream
+            Amount: 100
+          - Material: Poring_Card
+            Amount: 20
+          - Material: Dawn_Heart_TW
+            Amount: 1
+        ResultItem: Janus_Armor_LT
       - BaseItem: Black_Mithril_Guard
         CardsAllowed: true
         Materials:

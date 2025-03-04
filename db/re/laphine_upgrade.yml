@@ -1,4 +1,4 @@
-﻿# This file is a part of rAthena.
+# This file is a part of rAthena.
 #   Copyright(C) 2022 rAthena Development Team
 #   https://rathena.org - https://github.com/rathena
 #
@@ -5666,7 +5666,23 @@ Body:
       - Item: Poenitentia_Planta
       - Item: Poenitentia_Ferrum
 
-
+#冰封的沉寂六花 (凱薩鎧甲LT附魔)
+  - Item: Frozen_S_Flower
+    RandomOptionGroup: Frozen_S_Flower
+    CardsAllowed: true
+    TargetItems:
+      - Item: Ceres_Armor_TW_LT
+      - Item: Jupiter_Armor_TW_LT
+      - Item: Apollo_Armor_TW_LT
+      - Item: Mars_Armor_TW_LT
+      - Item: Vinus_Armor_TW_LT
+      - Item: Vulcan_Armor_TW_LT
+      - Item: Bacchus_Armor_LT
+      - Item: Neptune_Uniform_LT
+      - Item: Diana_Suits_LT
+      - Item: Mercury_Suits_LT
+      - Item: Janus_Armor_LT
+      
 
 #  - Item: Illu_Enhance_Cube
 #    MinimumRefine: 4

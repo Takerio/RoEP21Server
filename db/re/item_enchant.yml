@@ -38502,6 +38502,535 @@ Body:
                 Amount: 10
               - Material: Genesis_Of_Life
                 Amount: 10
+        RandomUpgrades:
+          - Enchant: Signet_Of_Pow1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Pow_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Pow1
+                Chance: 50000
+              - Item: Signet_Of_Pow2
+                Chance: 50000
+          - Enchant: Signet_Of_Pow2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Pow_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Pow2
+                Chance: 50000
+              - Item: Signet_Of_Pow3
+                Chance: 50000
+          - Enchant: Signet_Of_Pow3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Pow_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Pow3
+                Chance: 50000
+              - Item: Signet_Of_Pow4
+                Chance: 50000
+          - Enchant: Signet_Of_Pow4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Pow_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Pow4
+                Chance: 50000
+              - Item: Signet_Of_Pow5
+                Chance: 50000
+          - Enchant: Signet_Of_Con1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Con_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Con1
+                Chance: 50000
+              - Item: Signet_Of_Con2
+                Chance: 50000
+          - Enchant: Signet_Of_Con2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Con_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Con2
+                Chance: 50000
+              - Item: Signet_Of_Con3
+                Chance: 50000
+          - Enchant: Signet_Of_Con3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Con_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Con3
+                Chance: 50000
+              - Item: Signet_Of_Con4
+                Chance: 50000
+          - Enchant: Signet_Of_Con4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Con_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Con4
+                Chance: 50000
+              - Item: Signet_Of_Con5
+                Chance: 50000
+          - Enchant: Signet_Of_Sta1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Sta_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Sta1
+                Chance: 50000
+              - Item: Signet_Of_Sta2
+                Chance: 50000
+          - Enchant: Signet_Of_Sta2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Sta_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Sta2
+                Chance: 50000
+              - Item: Signet_Of_Sta3
+                Chance: 50000
+          - Enchant: Signet_Of_Sta3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Sta_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Sta3
+                Chance: 50000
+              - Item: Signet_Of_Sta4
+                Chance: 50000
+          - Enchant: Signet_Of_Sta4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Sta_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Sta4
+                Chance: 50000
+              - Item: Signet_Of_Sta5
+                Chance: 50000
+          - Enchant: Signet_Of_Spl1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Spl_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Spl1
+                Chance: 50000
+              - Item: Signet_Of_Spl2
+                Chance: 50000
+          - Enchant: Signet_Of_Spl2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Spl_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Spl2
+                Chance: 50000
+              - Item: Signet_Of_Spl3
+                Chance: 50000
+          - Enchant: Signet_Of_Spl3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Spl_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Spl3
+                Chance: 50000
+              - Item: Signet_Of_Spl4
+                Chance: 50000
+          - Enchant: Signet_Of_Spl4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Spl_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Spl4
+                Chance: 50000
+              - Item: Signet_Of_Spl5
+                Chance: 50000
+          - Enchant: Signet_Of_Crt1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Crt_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Crt1
+                Chance: 50000
+              - Item: Signet_Of_Crt2
+                Chance: 50000
+          - Enchant: Signet_Of_Crt2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Crt_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Crt2
+                Chance: 50000
+              - Item: Signet_Of_Crt3
+                Chance: 50000
+          - Enchant: Signet_Of_Crt3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Crt_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Crt3
+                Chance: 50000
+              - Item: Signet_Of_Crt4
+                Chance: 50000
+          - Enchant: Signet_Of_Crt4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Crt_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Crt4
+                Chance: 50000
+              - Item: Signet_Of_Crt5
+                Chance: 50000
+          - Enchant: Signet_Of_Wis1
+            Price: 500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 10
+              - Material: Wis_Meteorite_Fragment
+                Amount: 8
+              - Material: Circul_Of_Life
+                Amount: 5
+              - Material: Fruit_Of_Birth
+                Amount: 4
+              - Material: Fruit_Of_Extinction
+                Amount: 4
+            Items:
+              - Item: Signet_Of_Wis1
+                Chance: 50000
+              - Item: Signet_Of_Wis2
+                Chance: 50000
+          - Enchant: Signet_Of_Wis2
+            Price: 750000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 20
+              - Material: Wis_Meteorite_Fragment
+                Amount: 16
+              - Material: Circul_Of_Life
+                Amount: 10
+              - Material: Fruit_Of_Birth
+                Amount: 8
+              - Material: Fruit_Of_Extinction
+                Amount: 8
+              - Material: Truth_Of_Life
+                Amount: 3
+              - Material: Light_Of_Life
+                Amount: 1
+            Items:
+              - Item: Signet_Of_Wis2
+                Chance: 50000
+              - Item: Signet_Of_Wis3
+                Chance: 50000
+          - Enchant: Signet_Of_Wis3
+            Price: 1500000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 40
+              - Material: Wis_Meteorite_Fragment
+                Amount: 24
+              - Material: Circul_Of_Life
+                Amount: 20
+              - Material: Fruit_Of_Birth
+                Amount: 16
+              - Material: Fruit_Of_Extinction
+                Amount: 16
+              - Material: Truth_Of_Life
+                Amount: 6
+              - Material: Light_Of_Life
+                Amount: 3
+              - Material: Genesis_Of_Life
+                Amount: 2
+            Items:
+              - Item: Signet_Of_Wis3
+                Chance: 50000
+              - Item: Signet_Of_Wis4
+                Chance: 50000
+          - Enchant: Signet_Of_Wis4
+            Price: 3000000
+            Materials:
+              - Material: Energy_Of_Elemental
+                Amount: 80
+              - Material: Wis_Meteorite_Fragment
+                Amount: 32
+              - Material: Circul_Of_Life
+                Amount: 35
+              - Material: Fruit_Of_Birth
+                Amount: 28
+              - Material: Fruit_Of_Extinction
+                Amount: 28
+              - Material: Truth_Of_Life
+                Amount: 12
+              - Material: Light_Of_Life
+                Amount: 5
+              - Material: Genesis_Of_Life
+                Amount: 5
+            Items:
+              - Item: Signet_Of_Wis4
+                Chance: 50000
+              - Item: Signet_Of_Wis5
+                Chance: 50000
 
 
 #凱渥寶樂格鎧甲、凱渥寶樂格長袍

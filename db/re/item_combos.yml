@@ -21078,6 +21078,7 @@ Body:
     Script: |
       bonus2 bMagicAddSize,Size_All,35;
   - Combos:
+      - Combo:
         - Spenta_Armaiti   # 460057
         - Floating_Gioia   # 19411
     Script: |
@@ -21380,3 +21381,253 @@ Body:
         bonus bShortAtkRate,(.@w/2)*4;
         bonus bLongAtkRate,(.@w/2)*4;
         bonus2 bMagicAtkEle,Ele_All,(.@w/2)*6;
+#(JRO)幻獸的耳朵
+  - Combos:
+      - Combo:
+          - Phantom_Ear_    # 410130
+          - GIOIA_Card    # 4576
+    Script: |     
+        bonus2 bSubEle,Ele_All,50;
+        bonus2 bMagicAddClass,Class_All,25;
+  - Combos:
+      - Combo:
+          - Phantom_Ear_    # 410130
+          - Magical_Grade_5    # 311458
+    Script: |     
+        bonus2 bSubEle,Class_All,-50;
+#墨丘利夜行衣-LT
+  - Combos:
+      - Combo:
+          - Mercury_Suits_LT    # 450389
+          - Faceworm_L_Card    # 27167
+    Script: |     
+        bonus2 bSkillAtk,"SS_REIKETSUHOU",25;
+  - Combos:
+      - Combo:
+          - Mercury_Suits_LT    # 450389
+          - Grave_A_Mummy_Card    # 4657
+    Script: |     
+        bonus2 bSkillAtk,"SS_SEKIENHOU",25;
+  - Combos:
+      - Combo:
+          - Mercury_Suits_LT    # 450389
+          - GIOIA_Card    # 4576
+    Script: |     
+        bonus2 bSkillAtk,"SS_RAIDENPOU",30;
+        bonus2 bSubEle,Ele_All,40;
+  - Combos:
+      - Combo:
+          - Mercury_Suits_LT    # 450389
+          - Assulter_Card    # 4246
+    Script: |     
+        bonus bLongAtkRate,15;
+        bonus bCritical,5;
+  - Combos:
+      - Combo:
+          - Mercury_Suits_LT    # 450389
+          - Incant_Samurai_Card    # 4263
+    Script: |     
+        bonus bLongAtkRate,25;
+        bonus bCritical,10;
+#巴克斯裝甲-LT
+  - Combos:
+      - Combo:
+          - Bacchus_Armor_LT    # 450386
+          - Heart_Hunter_Card    # 27149
+    Script: |     
+        bonus bAtk,100;
+        bonus2 bAddRace,RC_All,15;
+  - Combos:
+      - Combo:
+          - Bacchus_Armor_LT    # 450386
+          - Felock_Card    # 27182
+    Script: |     
+        bonus bAtk,100;
+        bonus2 bAddRace,RC_All,35;
+#涅普頓道服-LT
+  - Combos:
+      - Combo:
+          - Neptune_Uniform_LT    # 450387
+          - Khaliz_Knightage_Card   # 4609
+    Script: |     
+        bonus bAtkRate,12;     
+  - Combos:
+      - Combo:
+          - Neptune_Uniform_LT    # 450387
+          - C_Khaliz_Knight_Card   # 27385
+    Script: |     
+        bonus bMatkRate,12;     
+  - Combos:
+      - Combo:
+          - Neptune_Uniform_LT    # 450387
+          - Maya_Card   # 4146
+    Script: |     
+        bonus2 bWeaponSubSize,Size_All,30;
+        bonus2 bMagicSubSize,Size_All,30;
+        bonus bAtkRate,15;
+        bonus bMatkRate,15;     
+#狄安娜外套-LT
+  - Combos:
+      - Combo:
+          - Diana_Suits_LT    # 450388
+          - Matyr_Card   # 4097
+    Script: |     
+        bonus2 bSkillCooldown,"SU_STOOP",-3000;
+        bonus2 bSkillCooldown,"SU_LOPE",-1000;
+        bonus2 bAddRace,RC_All,20;
+        bonus2 bMagicAddRace,RC_All,20;
+  - Combos:
+      - Combo:
+          - Diana_Suits_LT    # 450388
+          - Cutie_Card   # 27152
+    Script: |     
+        bonus2 bSkillCooldown,"SU_STOOP",-6000;
+        bonus2 bSkillCooldown,"SU_LOPE",-4000;
+        bonus2 bAddRace,RC_All,40;
+        bonus2 bMagicAddRace,RC_All,40;
+#雅努斯鎧甲-LT
+  - Combos:
+      - Combo:
+          - Janus_Armor_LT    # 450391
+          - Mastering_Card   # 4197
+    Script: |     
+        .@ga = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bAddSize,RC_All,10;
+        bonus2 bMagicAddSize,RC_All,10;
+        bonus2 bAddSize,RC_All,(.@ga/2)*3;
+        bonus2 bMagicAddSize,RC_All,(.@ga/2)*3;        
+  - Combos:
+      - Combo:
+          - Janus_Armor_LT    # 450391
+          - Big_Eggring_Card   # 4662
+    Script: |     
+        .@ga = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bAddSize,RC_All,15;
+        bonus2 bMagicAddSize,RC_All,15;
+        bonus2 bAddSize,RC_All,(.@ga/3)*6;
+        bonus2 bMagicAddSize,RC_All,(.@ga/3)*6; 
+#擴充凱薩鎧甲(非LT)
+  - Combos:
+      - Combo:
+          - Neptune_Uniform
+          - Khaliz_Knightage_Card
+    Script: |
+      bonus2 bSkillAtk,"SP_SWHOO",20;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",20;
+  - Combos:
+      - Combo:
+          - Neptune_Uniform
+          - Maya_Card
+    Script: |
+      bonus2 bSubSize,Size_All,30;
+      bonus2 bSkillAtk,"SP_SWHOO",40;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",40;
+  - Combos:
+      - Combo:
+          - Neptune_Uniform
+          - Maya_Card_
+    Script: |
+      bonus2 bSubSize,Size_All,30;
+      bonus2 bSkillAtk,"SP_SWHOO",40;
+      bonus2 bSkillAtk,"SJ_FALLINGSTAR",40;
+  - Combos:
+      - Combo:
+          - Bacchus_Armor
+          - Heart_Hunter_Card
+    Script: |
+      bonus2 bSkillAtk,"RL_FIREDANCE",30;
+      autobonus3 "{ bonus bFlee,100; }",1000,3000,"RL_FALLEN_ANGEL";
+  - Combos:
+      - Combo:
+          - Bacchus_Armor
+          - Felock_Card_
+      - Combo:
+          - Bacchus_Armor
+          - Felock_Card
+    Script: |
+      bonus2 bSkillAtk,"RL_D_TAIL",50;
+      bonus2 bSkillCooldown,"RL_D_TAIL",-2000;
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Faceworm_L_Card
+    Script: |
+      bonus2 bSkillAtk,"NJ_HYOUSENSOU",30;
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Gioia_Card_
+      - Combo:
+          - Mercury_Suits
+          - Gioia_Card
+    Script: |
+      bonus2 bSkillAtk,"NJ_HUUJIN",30;
+      bonus2 bSubRace,RC_All,40;
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Assulter_Card
+    Script: |
+      bonus bLongAtkRate,8;
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Incant_Samurai_Card
+    Script: |
+      bonus bLongAtkRate,10;
+      bonus bDelayrate,-20;
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
+          - Mercury_Suits
+          - Incant_Samurai_Card_
+    Script: |
+      bonus bLongAtkRate,10;
+      bonus bDelayrate,-20;
+      autobonus3 "{bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN";
+  - Combos:
+      - Combo:
+          - Diana_Suits
+          - Matyr_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      if(.@r >= 10){
+      bonus bAspdRate,10;
+      bonus2 bSkillCooldown,"SU_STOOP",-3000;
+      }
+  - Combos:
+      - Combo:
+          - Diana_Suits
+          - Cutie_Card_
+      - Combo:
+          - Diana_Suits
+          - Cutie_Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_GARMENT);
+      if(.@r >= 10){
+      bonus bAspdRate,10;
+      bonus2 bSkillCooldown,"SU_STOOP",-3000;
+      bonus2 bMagicAddRace,RC_All,40;
+      }
+#雅努斯鎧甲
+  - Combos:
+      - Combo:
+          - Janus_Armor    # 450390
+          - Mastering_Card   # 4197
+    Script: |     
+        .@ga = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bAddSize,RC_All,6;
+        bonus2 bMagicAddSize,RC_All,6;
+        bonus2 bAddSize,RC_All,(.@ga/2)*3;
+        bonus2 bMagicAddSize,RC_All,(.@ga/2)*3;        
+  - Combos:
+      - Combo:
+          - Janus_Armor    # 450390
+          - Big_Eggring_Card   # 4662
+    Script: |     
+        .@ga = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bAddSize,RC_All,10;
+        bonus2 bMagicAddSize,RC_All,10;
+        bonus2 bAddSize,RC_All,(.@ga/3)*5;
+        bonus2 bMagicAddSize,RC_All,(.@ga/3)*5;

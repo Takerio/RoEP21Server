@@ -6778,7 +6778,7 @@ Body:
     AegisName: Hollow_Shoes
     Name: (JRO)空虛之靴
     Type: Armor
-    Buy: 2000000
+    Buy: 0
     Weight: 50
     Defense: 15
     Slots: 1
@@ -6813,8 +6813,119 @@ Body:
           }
         }
       }
+  - Id: 490149
+    AegisName: Glittering_Cat_Choker
+    Name: (JRO)閃亮耀眼喵喵首輪
+    Type: Armor
+    Buy: 0
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 2
+    Locations:
+      Left_Accessory: true
+    Script: |    
+      bonus bMdef,15;
+      bonus bSpl,20;
+      bonus2 bMagicAddSize,Size_All,15;
+      bonus2 bSkillAtk,"SH_HYUN_ROK_CANNON",BaseLevel/5;
+      bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",BaseLevel/5;
+      bonus2 bSkillCooldown,"SH_HYUN_ROKS_BREEZE",-2100;
+      if(getskilllv("SU_CHATTERIN") >= 5){
+      bonus bMaxHPrate,15;
+      bonus bMagicHPGainValue,100;
+      bonus bMagicSPGainValue,10;
+      }
+      if(getskilllv("SU_NYANGGRASS") >= 5){
+      bonus2 bSkillUseSP,"SU_SV_STEMSPEAR",10;
+      bonus2 bResEff,Eff_Stun,5000;
+      }
+      if(getskilllv("SU_MEOWMEOW") >= 5){
+      bonus2 bMagicAtkEle,Ele_Fire,15;
+      bonus2 bMagicAtkEle,Ele_Water,15;
+      bonus2 bMagicAtkEle,Ele_Wind,15;
+      bonus2 bMagicAtkEle,Ele_Earth,15;
+      bonus2 bMagicAtkEle,Ele_Ghost,15;
       
-
+      }
+  - Id: 490290
+    AegisName: Ameretat
+    Name: (JRO)不滅指環
+    Type: Armor
+    Buy: 0
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    EquipLevelMin: 100
+    Refineable: false
+    ArmorLevel: 1
+    Locations:
+      Right_Accessory: true
+    Script: |  
+      bonus bAllStats,15;
+      bonus bAspdRate,15;
+      bonus bAtkRate,30;
+      bonus bMatkRate,30;
+  - Id: 410365
+    Name: (JRO)遺忘永凍之冰
+    AegisName: perm_frost_oblivion
+    Type: Armor
+    Buy: 0
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    EquipLevelMin: 100
+    Refineable: true
+    ArmorLevel: 1
+    Locations:
+      Head_Mid: true
+    View: 2595
+    Script: |
+      bonus bAtk,BaseLevel;
+      bonus bMatk,BaseLevel;
+      bonus bMaxHP,BaseLevel*25;
+  - Id: 420327
+    Name: (JRO)黯淡冰川貓耳斗篷
+    AegisName: Cat_Ears_Cape_Blue
+    Type: Armor
+    Buy: 0
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    EquipLevelMin: 100
+    Refineable: true
+    ArmorLevel: 1
+    Locations:
+      Head_Low: true
+    View: 2522
+    Script: |
+      bonus2 bAddSize,Size_All,25;
+      bonus2 bMagicAddSize,Size_All,25;
+      bonus bMaxHPrate,-20;
+      bonus bDelayrate,25;
+  - Id: 410130
+    AegisName: Phantom_Ear_
+    Name: (JRO)幻獸的耳朵
+    Type: Armor
+    Weight: 10
+    Defense: 2
+    Refineable: false
+    Slots: 1
+    EquipLevelMin: 100
+    Locations:
+      Head_Mid: true
+    View: 2226
+    Script: |
+      bonus2 bMagicAddSize,Size_All,20;
+      bonus2 bResEff,Eff_Sleep,10000;
+      bonus2 bSkillCooldown,"WL_TELEKINESIS_INTENSE",-42000;
+      bonus2 bSkillCooldown,"WL_COMET",10000;
+      bonus bDelayrate,-15;
+    UnEquipScript: |
+      sc_end SC_TELEKINESIS_INTENSE;
 
 
 

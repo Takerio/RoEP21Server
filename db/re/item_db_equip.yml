@@ -43028,7 +43028,9 @@ Body:
     Name: 影子M.靈魂師鎧甲
     Type: ShadowGear
     Jobs:
-      Spirit_Handler: true
+      Summoner: true
+    Classes:
+      Fourth: true
     Locations:
       Shadow_Armor: true
     Refineable: true
@@ -43038,7 +43040,9 @@ Body:
     Name: 影子M.靈魂師戰靴
     Type: ShadowGear
     Jobs:
-      Spirit_Handler: true
+      Summoner: true
+    Classes:
+      Fourth: true
     Locations:
       Shadow_Shoes: true
     Refineable: true
@@ -43048,7 +43052,9 @@ Body:
     Name: 影子M.靈魂師耳環
     Type: ShadowGear
     Jobs:
-      Spirit_Handler: true
+      Summoner: true
+    Classes:
+      Fourth: true
     Locations:
       Shadow_Right_Accessory: true
     Refineable: true
@@ -43058,7 +43064,9 @@ Body:
     Name: 影子M.靈魂師墜子
     Type: ShadowGear
     Jobs:
-      Spirit_Handler: true
+      Summoner: true
+    Classes:
+      Fourth: true
     Locations:
       Shadow_Left_Accessory: true
     Refineable: true
@@ -45822,72 +45830,73 @@ Body:
          bonus bVariableCastrate,-8;
 
 
-  - Id: 15430
-    AegisName: Unknown_Item_15430
-    Name: 狄安娜外套
-    Type: Armor
-    Buy: 10
-    Weight: 300
-    Slots: 1
-    Jobs:
-      Summoner: true
-    Locations:
-      Armor: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Refineable: true
-    Script: |
-      bonus bDex,getrefine()/4*3; bonus bMaxHPrate,getrefine()/4*3; bonus2 bSkillCooldown,"SU_LOPE",-getrefine()/4*1000; if(getrefine()>9){ if(isequipped(4097)){ bonus bAspdRate,10; bonus2 bSkillCooldown,"SU_STOOP",-3000; } if(isequipped(27152)){ bonus bAspdRate,10; bonus2 bSkillCooldown,"SU_STOOP",-6000; bonus2 bMagicAddRace,RC_All,40; } } if(getrefine()>11){ bonus2 bSkillCooldown,"SU_PURRING]",-20000; autobonus "{ bonus bDex,80; }",20,3000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; autobonus3 "{ bonus bAtk,100; }",1000,3000,"SU_SV_ROOTTWIST","{ specialeffect2 EF_AURABLADE; }"; }
-  - Id: 15431
-    AegisName: Unknown_Item_15431
-    Name: 墨丘利夜行衣
-    Type: Armor
-    Buy: 10
-    Weight: 300
-    Slots: 1
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Armor: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Refineable: true
-    Script: |
-      autobonus3 "{ bonus bDef,300; bonus bMdef,100; bonus2 bSkillCooldown,3011,50000;  }",1000,50000,"KO_MEIKYOUSISUI","{ specialeffect2 EF_AURABLADE; }"; bonus bAllStats,getrefine()/4*2; if(getrefine()>11){ bonus bDelayrate,-12; } if(isequipped(27167)){ bonus2 bSkillAtk,"NJ_HYOUSENSOU",30; } if(isequipped(4576)){ bonus2 bSkillAtk,"NJ_HUUJIN",30; bonus2 bSubEle,Ele_All,40; } if(isequipped(4246)){ bonus bLongAtkRate,8; autobonus3 "{ bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN","{ specialeffect2 EF_AURABLADE; }"; } if(isequipped(4263)){ bonus bLongAtkRate,10; bonus bDelayrate,-20; autobonus3 "{ bonus bDelayrate,-30; }",1000,3000,"NJ_ISSEN","{ specialeffect2 EF_AURABLADE; }"; }
-  - Id: 15432
-    AegisName: Unknown_Item_15432
-    Name: 巴克斯裝甲
-    Type: Armor
-    Buy: 10
-    Weight: 300
-    Slots: 1
-    Jobs:
-      Rebellion: true
-    Locations:
-      Armor: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Refineable: true
-    Script: |
-      bonus bDex,getrefine()/4*3; bonus bAgi,getrefine()/4*3; if(getrefine()>11){ skill "SN_SIGHT",10; bonus2 bSkillCooldown,"RL_R_TRIP",-500; bonus2 bIgnoreDefClassRate,0,getskilllv("GS_SINGLEACTION"); } if(isequipped(27149)){ bonus2 bSkillAtk,"RL_FIREDANCE",30; autobonus3 "{ bonus bFlee,100; }",1000,3000,"RL_FALLEN_ANGEL","{ specialeffect2 EF_AURABLADE; }"; } if(isequipped(27182)){ bonus2 bSkillAtk,"",50; bonus2 bSkillCooldown,"RL_D_TAIL",-2000; }
-  - Id: 15433
-    AegisName: Unknown_Item_15433
-    Name: 涅普頓道服
-    Type: Armor
-    Buy: 10
-    Weight: 300
-    Slots: 1
-    Jobs:
-      SoulLinker: true
-      StarGladiator: true
-    Locations:
-      Armor: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Refineable: true
-    Script: |
-      bonus bAtkRate,getskilllv("TK_RUN")/2; bonus bMatkRate,getskilllv("TK_RUN")/2; bonus bMaxHPrate,getskilllv("TK_RUN")/2*2; bonus bAllStats,getrefine()/4*2; if(getrefine()>11){ bonus bNoCastCancel; bonus2 bSkillCooldown,"SP_SOULREAPER",-60000; bonus2 bFixedCastrate,"SG_HATE",-50; }if(isequipped(4609)){ bonus2 bSkillAtk,"SP_SWHOO",20; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK",20; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK2",20; } if(isequipped(4146)){ bonus2 bWeaponSubSize,Size_Small,30; bonus2 bWeaponSubSize,Size_Medium,30; bonus2 bWeaponSubSize,Size_Large,30; bonus2 bMagicSubSize,Size_Small,30; bonus2 bMagicSubSize,Size_Medium,30; bonus2 bMagicSubSize,Size_Large,30; bonus2 bSkillAtk,"SP_SWHOO",40; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK",40; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK2",40; }
+  # - Id: 15430
+  #   AegisName: Unknown_Item_15430
+  #   Name: 狄安娜外套
+  #   Type: Armor
+  #   Buy: 10
+  #   Weight: 300
+  #   Slots: 1
+  #   Jobs:
+  #     Summoner: true
+  #   Locations:
+  #     Armor: true
+  #   ArmorLevel: 1
+  #   EquipLevelMin: 100
+  #   Refineable: true
+  #   Script: |
+  #     bonus bDex,getrefine()/4*3; bonus bMaxHPrate,getrefine()/4*3; bonus2 bSkillCooldown,"SU_LOPE",-getrefine()/4*1000; if(getrefine()>9){ if(isequipped(4097)){ bonus bAspdRate,10; bonus2 bSkillCooldown,"SU_STOOP",-3000; } if(isequipped(27152)){ bonus bAspdRate,10; bonus2 bSkillCooldown,"SU_STOOP",-6000; bonus2 bMagicAddRace,RC_All,40; } } if(getrefine()>11){ bonus2 bSkillCooldown,"SU_PURRING]",-20000; autobonus "{ bonus bDex,80; }",20,3000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; autobonus3 "{ bonus bAtk,100; }",1000,3000,"SU_SV_ROOTTWIST","{ specialeffect2 EF_AURABLADE; }"; }
+  # - Id: 15431
+  #   AegisName: Unknown_Item_15431
+  #   Name: 墨丘利夜行衣
+  #   Type: Armor
+  #   Buy: 10
+  #   Weight: 300
+  #   Slots: 1
+  #   Jobs:
+  #     KagerouOboro: true
+  #     Ninja: true
+  #     Fourth: true
+  #   Locations:
+  #     Armor: true
+  #   ArmorLevel: 1
+  #   EquipLevelMin: 100
+  #   Refineable: true
+  #   Script: |
+  #     autobonus3 "{ bonus bDef,300; bonus bMdef,100; bonus2 bSkillCooldown,3011,50000;  }",1000,50000,"KO_MEIKYOUSISUI","{ specialeffect2 EF_AURABLADE; }"; bonus bAllStats,getrefine()/4*2; if(getrefine()>11){ bonus bDelayrate,-12; } if(isequipped(27167)){ bonus2 bSkillAtk,"NJ_HYOUSENSOU",30; } if(isequipped(4576)){ bonus2 bSkillAtk,"NJ_HUUJIN",30; bonus2 bSubEle,Ele_All,40; } if(isequipped(4246)){ bonus bLongAtkRate,8; autobonus3 "{ bonus bDelayrate,-20; }",1000,3000,"NJ_ISSEN","{ specialeffect2 EF_AURABLADE; }"; } if(isequipped(4263)){ bonus bLongAtkRate,10; bonus bDelayrate,-20; autobonus3 "{ bonus bDelayrate,-30; }",1000,3000,"NJ_ISSEN","{ specialeffect2 EF_AURABLADE; }"; }
+  # - Id: 15432
+  #   AegisName: Unknown_Item_15432
+  #   Name: 巴克斯裝甲
+  #   Type: Armor
+  #   Buy: 10
+  #   Weight: 300
+  #   Slots: 1
+  #   Jobs:
+  #     Rebellion: true
+  #   Locations:
+  #     Armor: true
+  #   ArmorLevel: 1
+  #   EquipLevelMin: 100
+  #   Refineable: true
+  #   Script: |
+  #     bonus bDex,getrefine()/4*3; bonus bAgi,getrefine()/4*3; if(getrefine()>11){ skill "SN_SIGHT",10; bonus2 bSkillCooldown,"RL_R_TRIP",-500; bonus2 bIgnoreDefClassRate,0,getskilllv("GS_SINGLEACTION"); } if(isequipped(27149)){ bonus2 bSkillAtk,"RL_FIREDANCE",30; autobonus3 "{ bonus bFlee,100; }",1000,3000,"RL_FALLEN_ANGEL","{ specialeffect2 EF_AURABLADE; }"; } if(isequipped(27182)){ bonus2 bSkillAtk,"",50; bonus2 bSkillCooldown,"RL_D_TAIL",-2000; }
+  # - Id: 15433
+  #   AegisName: Unknown_Item_15433
+  #   Name: 涅普頓道服
+  #   Type: Armor
+  #   Buy: 10
+  #   Weight: 300
+  #   Slots: 1
+  #   Jobs:
+  #     SoulLinker: true
+  #     StarGladiator: true
+  #   Locations:
+  #     Armor: true
+  #   ArmorLevel: 1
+  #   EquipLevelMin: 100
+  #   Refineable: true
+  #   Script: |
+  #     bonus bAtkRate,getskilllv("TK_RUN")/2; bonus bMatkRate,getskilllv("TK_RUN")/2; bonus bMaxHPrate,getskilllv("TK_RUN")/2*2; bonus bAllStats,getrefine()/4*2; if(getrefine()>11){ bonus bNoCastCancel; bonus2 bSkillCooldown,"SP_SOULREAPER",-60000; bonus2 bFixedCastrate,"SG_HATE",-50; }if(isequipped(4609)){ bonus2 bSkillAtk,"SP_SWHOO",20; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK",20; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK2",20; } if(isequipped(4146)){ bonus2 bWeaponSubSize,Size_Small,30; bonus2 bWeaponSubSize,Size_Medium,30; bonus2 bWeaponSubSize,Size_Large,30; bonus2 bMagicSubSize,Size_Small,30; bonus2 bMagicSubSize,Size_Medium,30; bonus2 bMagicSubSize,Size_Large,30; bonus2 bSkillAtk,"SP_SWHOO",40; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK",40; bonus2 bSkillAtk,"SJ_FALLINGSTAR_ATK2",40; }
   - Id: 15361
     AegisName: Jupiter_Armor_TW
     Name: 朱比特輕甲
@@ -124871,13 +124880,463 @@ Body:
       bonus bDelayrate,-6;
       bonus2 bAddEle,Ele_All,12;
       bonus2 bMagicAddEle,Ele_All,12;
+#擴充凱薩
+  - Id: 15430
+    AegisName: Diana_Suits
+    Name: 狄安娜外套
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Summoner: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,(.@r/4)*3;
+      bonus bMaxHPrate,(.@r/4)*3;
+      bonus2 bSkillCooldown,"SU_LOPE",-((.@r/4)*100);
+      if(.@r >= 12){
+      bonus2 bSkillCooldown,"SU_PURRING",-20000;
+      autobonus "{bonus bDex,80;}",50,10000,BF_WEAPON;
+      autobonus3 "{bonus bMatk,100;}",1000,3000,"SU_SV_ROOTTWIST";
+      }
+  - Id: 15431
+    AegisName: Mercury_Suits
+    Name: 墨丘利夜行衣
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+      Fourth: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus2 bSkillCooldown,"KO_MEIKYOUSISUI",50000;
+      autobonus3 "{bonus bDef,300;bonus bMdef,100;}",1000,50000,"KO_MEIKYOUSISUI";
+      bonus bAllStats,(.@r/4)*2;
+      if(.@r >= 12){
+      bonus bDelayrate,-10;
+      }
+  - Id: 15432
+    AegisName: Bacchus_Armor
+    Name: 巴克斯裝甲
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      Gunslinger: true
+      Rebellion: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDex,(.@r/4)*3;
+      bonus bAgi,(.@r/4)*3;
+      if(.@r >= 12){
+      skill "SN_SIGHT",10;
+      bonus2 bSkillCooldown,"RL_R_TRIP",-500;
+      bonus2 bIgnoreDefClassRate,Class_Normal,getskilllv("GS_SINGLEACTION");
+      }
+  - Id: 15433
+    AegisName: Neptune_Uniform
+    Name: 涅普頓道服
+    Type: Armor
+    Weight: 300
+    Slots: 1
+    Jobs:
+      SoulLinker: true
+      StarGladiator: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtkRate,getskilllv("TK_RUN")/2;
+      bonus bSMatkRate,getskilllv("TK_RUN")/2;
+      bonus bMaxHPrate,(getskilllv("TK_RUN")/2)*2;
+      bonus bAllStats,(.@r/4)*2;
+      if(.@r >= 12){
+      bonus bNoCastCancel2;
+      bonus2 bSkillCooldown,"SP_SOULREAPER",-60000;
+      bonus2 bFixedCastrate,"SG_HATE",-50;
+      }
+  - Id: 450390
+    AegisName: Janus_Armor
+    Name: 雅努斯鎧甲
+    Type: Armor
+    Weight: 30
+    Slots: 1
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bAtk,100;
+      bonus bMatk,100;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus2 bSkillAtk,"WZ_STORMGUST",(.@r/4)*30;
+      bonus2 bSkillAtk,"WZ_METEOR",(.@r/4)*30;
+      bonus2 bSkillAtk,"WZ_VERMILION",(.@r/4)*30;
+      bonus2 bSkillAtk,"CR_HOLYCROSS",(.@r/4)*30;
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",(.@r/4)*30; 
+                
+      if(.@r >= 12){
+      bonus bDelayRate,-15;
+      }
+      if(BaseClass == Job_SuperNovice){
+      skill "WL_SOULEXPANSION",5;
+      skill "RK_WINDCUTTER",5;
+      }
 
-
-
-
-
-
-
+  - Id: 450389
+    AegisName: Mercury_Suits_LT
+    Name: 墨丘利夜行衣-LT
+    Type: Armor
+    Locations:
+      Armor: true
+    Gradable: true
+    Refineable: true
+    Weight: 30
+    Defense: 30
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,120;
+      bonus bMatk,120;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMat,(.@r/2)*10;
+      bonus2 bSkillAtk,"KO_HUUMARANKA",(.@r/3)*20;
+      bonus2 bSkillAtk,"KO_JYUMONJIKIRI",(.@r/3)*20;
+      bonus2 bMagicAtkEle,Ele_Fire,(.@r/3)*7;
+      bonus2 bMagicAtkEle,Ele_Water,(.@r/3)*7;
+      bonus2 bMagicAtkEle,Ele_Wind,(.@r/3)*7;
+      if(.@r >= 9){
+      bonus bAtkRate,12;
+      bonus bMatkRate,12;
+        if(.@r >= 11){
+        bonus2 bAddRace,RC_All,15; 
+        bonus2 bMagicAddRace,RC_All,15; 
+          if(.@r >= 13){
+          bonus bDelayrate,-15;
+          }
+        }
+      }
+      if(.@g >= 1){
+      autobonus3 "{ bonus bDef,300; bMdef,100; }",1000,30000,"KO_MEIKYOUSISUI";
+      bonus bAtk,(.@r/2)*8;
+      bonus bMatk,(.@r/2)*8;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+      bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= 2){
+        bonus2 bSkillAtk,"SS_KINRYUUHOU",(.@r/3)*5;
+        bonus2 bSkillAtk,"SS_ANTENPOU",(.@r/3)*5;
+        bonus2 bSkillAtk,"SS_KAGENOMAI",(.@r/3)*5;
+        bonus2 bSkillAtk,"SS_FUUMASHOUAKU",(.@r/3)*5;
+          if(.@g >= 3){
+          bonus bPAtk,(.@r/2);
+          bonus bSMatk,(.@r/2);
+          bonus2 bAddSize,Size_All,(.@r/3)*5;
+          bonus2 bMagicAddSize,Size_All,(.@r/3)*5;
+            if(.@g >= 4){
+            bonus2 bSkillAtk,"SS_KINRYUUHOU",(.@r/3)*5;
+            bonus2 bSkillAtk,"SS_ANTENPOU",(.@r/3)*5;
+            bonus2 bSkillAtk,"SS_KAGENOMAI",(.@r/3)*5;
+            bonus2 bSkillAtk,"SS_FUUMASHOUAKU",(.@r/3)*5;
+              if(.@r >= 13){
+              bonus2 bAddEle,Ele_All,15;
+              bonus2 bMagicAddEle,Ele_All,15;
+              }
+            }
+          }
+        }
+      }
+  - Id: 450386
+    AegisName: Bacchus_Armor_LT
+    Name: 巴克斯裝甲-LT
+    Type: Armor
+    Locations:
+      Armor: true
+    Gradable: true
+    Refineable: true
+    Weight: 30
+    Defense: 30
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,150;
+      bonus bAtk,(.@r/2)*15;
+      bonus2 bSkillAtk,"RL_R_TRIP",(.@r/3)*20;
+      bonus2 bSkillAtk,"RL_D_TAIL",(.@r/3)*20;
+      bonus2 bSkillAtk,"RL_SLUGSHOT",(.@r/3)*20;
+      bonus2 bSkillAtk,"RL_HAMMER_OF_GOD",(.@r/3)*20;
+      if(.@r >= 9){
+      bonus bLongAtkRate,15;
+        if(.@r >= 11){
+        bonus2 bAddRace,RC_All,15;
+          if(.@r >= 13){
+          bonus bDelayrate,-15;
+          }
+        }
+      }
+      if(.@g >= 1){
+      skill "SN_SIGHT",10;
+      bonus2 bSkillCooldown,"RL_R_TRIP",-1000;
+      bonus2 bSkillCooldown,"RL_D_TAIL",-4000;
+      bonus2 bSkillCooldown,"RL_SLUGSHOT",-2000;
+      bonus2 bSkillCooldown,RL_HAMMER_OF_GOD,-5000;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= 2){
+        bonus2 bSkillAtk,"NW_WILD_FIRE",(.@r/3)*5;
+        bonus2 bSkillAtk,"NW_THE_VIGILANTE_AT_NIGHT",(.@r/3)*5;
+        bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",(.@r/3)*5;
+          if(.@g >= 3){
+          bonus bPAtk,(.@r/2);
+          bonus2 bAddSize,Size_All,(.@r/3)*5;
+            if(.@g >= 4){
+            bonus2 bSkillAtk,"NW_WILD_FIRE",(.@r/3)*5;
+            bonus2 bSkillAtk,"NW_THE_VIGILANTE_AT_NIGHT",(.@r/3)*5;
+            bonus2 bSkillAtk,"NW_SPIRAL_SHOOTING",(.@r/3)*5;
+              if(.@r >= 13){
+              bonus bLongAtkRate,25;
+              }
+            }
+          }
+        }
+      }
+    UnEquipScript: |
+      sc_end SC_TRUESIGHT;
+  - Id: 450387
+    AegisName: Neptune_Uniform_LT
+    Name: 涅普頓道服-LT
+    Type: Armor
+    Locations:
+      Armor: true
+    Gradable: true
+    Refineable: true
+    Weight: 30
+    Defense: 30
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,120;
+      bonus bMatk,120;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus2 bSkillAtk,"SJ_SOLARBURST",(.@r/3)*20;
+      bonus2 bSkillAtk,"SJ_FULLMOONKICK",(.@r/3)*20;
+      bonus2 bSkillAtk,"SP_SWHOO",(.@r/3)*20;
+      bonus2 bSkillAtk,"SP_CURSEEXPLOSION",(.@r/3)*20;
+      if(.@r >= 9){
+      bonus bMatkRate,12;
+      bonus bAtkRate,12;
+        if(.@r >= 11){
+        bonus2 bAddRace,RC_All,15;
+        bonus2 bMagicAddRace,RC_All,15;
+          if(.@r >= 13){
+          bonus bDelayrate,-15;
+          }
+        }
+      }   
+      if(.@g >= 1){
+      bonus bNoCastCancel;
+      bonus bMaxHPrate,.@r/2;
+      bonus bMaxSPrate,.@r/2;
+      bonus bAtkRate,.@r/2;
+      bonus bMatkRate,.@r/2;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+      bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= 2){
+        bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",(.@r/3)*5;
+        bonus2 bSkillAtk,"SKE_STAR_BURST",(.@r/3)*5;
+        bonus2 bSkillAtk,"SOA_TALISMAN_OF_WHITE_TIGER",(.@r/3)*5;
+        bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",(.@r/3)*5;
+          if(.@g >= 3){
+          bonus bPAtk,.@r/2;
+          bonus bSMatk,.@r/2;
+          bonus2 bAddSize,Size_All,(.@r/3)*5;
+          bonus2 bMagicAddSize,Size_All,(.@r/3)*5;
+            if(.@g >= 4){
+            bonus2 bSkillAtk,"SKE_MIDNIGHT_KICK",(.@r/3)*5;
+            bonus2 bSkillAtk,"SKE_STAR_BURST",(.@r/3)*5;
+            bonus2 bSkillAtk,"SOA_TALISMAN_OF_WHITE_TIGER",(.@r/3)*5;
+            bonus2 bSkillAtk,"SOA_EXORCISM_OF_MALICIOUS_SOUL",(.@r/3)*5;
+              if(.@r >= 13){
+              bonus bShortAtkRate,25;
+              bonus2 bMagicAtkEle,Ele_All,25;
+              }
+            }
+          }
+        }
+      }   
+  - Id: 450388
+    AegisName: Diana_Suits_LT
+    Name: 狄安娜外套-LT
+    Type: Armor
+    Locations:
+      Armor: true
+    Gradable: true
+    Refineable: true
+    Weight: 30
+    Defense: 30
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,120;
+      bonus bMatk,120;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus2 bSkillAtk,"SU_PICKYPECK",(.@r/3)*20;
+      bonus2 bSkillAtk,"SU_LUNATICCARROTBEAT",(.@r/3)*20;
+      bonus2 bSkillAtk,"SU_SV_STEMSPEAR",(.@r/3)*20;
+      bonus2 bSkillAtk,"SU_CN_METEOR",(.@r/3)*20;            
+      if(.@r >= 9){
+      bonus bMatkRate,12;
+      bonus bAtkRate,12;
+        if(.@r >= 11){
+        bonus2 bAddRace,RC_All,15;
+        bonus2 bMagicAddRace,RC_All,15;
+          if(.@r >= 13){
+          bonus bDelayrate,-15;
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus2 bSkillCooldown,"SU_LUNATICCARROTBEAT",-5000;
+      bonus2 bSkillCooldown,"SU_SV_STEMSPEAR",-1000;
+      bonus bAtk,(.@r/2)*8;
+      bonus bMatk,(.@r/2)*8;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+      bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= 2){
+        bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",(.@r/3)*5;
+        bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",(.@r/3)*5;
+          if(.@g >= 3){
+          bonus bPAtk,.@r/2;
+          bonus bSMatk,.@r/2;
+          bonus2 bAddSize,Size_All,(.@r/3)*5;
+          bonus2 bMagicAddSize,Size_All,(.@r/3)*5;
+            if(.@g >= 4){
+            bonus2 bSkillAtk,"SH_HOGOGONG_STRIKE",(.@r/3)*5;
+            bonus2 bSkillAtk,"SH_HYUN_ROKS_BREEZE",(.@r/3)*5;
+              if(.@r >= 13){
+              bonus bLongAtkRate,25;
+              bonus2 bMagicAtkEle,Ele_All,25;
+              }
+            }          
+          }
+        }      
+      
+      }      
+  - Id: 450391
+    AegisName: Janus_Armor_LT
+    Name: 雅努斯鎧甲-LT
+    Type: Armor
+    Locations:
+      Armor: true
+    Gradable: true
+    Refineable: true
+    Weight: 30
+    Defense: 30
+    Slots: 1
+    ArmorLevel: 2
+    EquipLevelMin: 150
+    Trade: 
+      NoDrop: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bAtk,120;
+      bonus bMatk,120;
+      bonus bAtk,(.@r/2)*10;
+      bonus bMatk,(.@r/2)*10;
+      bonus2 bSkillAtk,"WZ_STORMGUST",(.@r/3)*40;
+      bonus2 bSkillAtk,"WZ_METEOR",(.@r/3)*40;
+      bonus2 bSkillAtk,"WZ_VERMILION",(.@r/3)*40;
+      bonus2 bSkillAtk,"CR_HOLYCROSS",(.@r/3)*40;  
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",(.@r/3)*40;  
+                
+      if(.@r >= 9){
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+        if(.@r >= 11){
+        bonus2 bAddRace,RC_All,15;
+        bonus2 bMagicAddRace,RC_All,15;
+          if(.@r >= 13){
+          bonus bDelayRate,-15;
+          }
+        }
+      }
+      if(BaseClass == Job_SuperNovice){
+      skill "GN_CART_TORNADO",10;
+      skill "WL_SOULEXPANSION",5;
+      skill "SO_VARETYR_SPEAR",10;
+      skill "RK_WINDCUTTER",5;
+      bonus2 bSkillCooldown,"SO_VARETYR_SPEAR",-1000;
+      bonus2 bSkillCooldown,"GN_CART_TORNADO",-1000;
+      }
+      
+      if(.@g >= 1){
+      bonus bAtk,(.@r/2)*5;
+      bonus bMatk,(.@r/2)*5;
+      bonus2 bAddSize,Size_All,(.@r/3)*4;
+      bonus2 bMagicAddSize,Size_All,(.@r/3)*4;
+        if(.@g >= 2){
+        bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",(.@r/3)*5;
+        bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",(.@r/3)*5;
+          if(.@g >= 3){
+          bonus bPAtk,.@r/2;
+          bonus bSMatk,.@r/2;
+          bonus2 bAddSize,Size_All,(.@r/3)*5;
+          bonus2 bMagicAddSize,Size_All,(.@r/3)*5;          
+            if(.@g >= 4){
+            bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",(.@r/3)*5;
+            bonus2 bSkillAtk,"HN_NAPALM_VULCAN_STRIKE",(.@r/3)*5;
+              if(.@r >= 13){
+              bonus2 bAddEle,Ele_All,15;
+              bonus2 bMagicAddEle,Ele_All,15;
+              }
+            }
+          }
+        }
+      }
 
 
 
