@@ -50925,4 +50925,2824 @@ Body:
                 Chance: 2500 
               - Item: Spirit_Of_Star_07_CN
                 Chance: 500 
-                             
+# 影子手套菁英石
+  - Id: 10100
+    TargetItems:
+      S_Physical_Weapon: true
+      S_Magical_Weapon: true
+      S_Lucky_Weapon: true
+      S_Dexterous_Weapon: true
+      S_Gemstone_Weapon: true
+      Unfreez_Weapon_S: true
+      S_Neutral_Weapon: true
+      S_Caster_Weapon: true
+      S_Kingbird_Weapon: true
+      S_Cri_Hit_Weapon: true
+      S_Spiritual_Weapon: true
+      S_Solid_Weapon: true
+      S_Penetration_Weapon: true
+      S_Executioner_Weapon: true
+      S_Exorcist_Weapon: true
+      S_Hunting_Weapon: true
+      S_Insect_Net_Weapon: true
+      S_Fishing_Weapon: true
+      S_Dragon_Killer_Weapon: true
+      S_Corrupt_Weapon: true
+      S_Vibration_Weapon: true
+      S_Holy_Water_Weapon: true
+      S_Scissors_Weapon: true
+      S_M_Executioner_Weapon: true
+      S_M_Exorcist_Weapon: true
+      S_M_Hunting_Weapon: true
+      S_M_Insect_Net_Weapon: true
+      S_M_Fishing_Weapon: true
+      S_M_Dragon_K_Weapon: true
+      S_M_Corrupt_Weapon: true
+      S_M_Vibration_Weapon: true
+      S_M_Holy_Water_Weapon: true
+      S_M_Scissors_Weapon: true
+      S_Bearers_Weapon: true
+      S_Enhance_Force_Weapon: true
+      S_Force_Weapon: true
+      S_Enhance_Spirit_Weapon: true
+      S_Spirit_Weapon: true
+      S_Big_Weapon: true
+      S_Medium_Weapon: true
+      S_Small_Weapon: true
+      S_SuperNovice_Weapon: true
+      S_Gunslinger_Weapon: true
+      S_Taekwon_Weapon: true
+      S_Ninja_Weapon: true
+      S_DoramMagical_Weapon: true
+      S_DoramPhysical_Weapon: true
+      S_Runeknight_Weapon: true
+      S_Royalguard_Weapon: true
+      S_Mechanic_weapon: true
+      S_Genetic_Weapon: true
+      S_Archbishop_Weapon: true
+      S_Sura_weapon: true
+      S_Guillotine_Weapon: true
+      S_Shadowchaser_Weapon: true
+      S_Warlock_Weapon: true
+      S_Sorcerer_Weapon: true
+      S_Ranger_Weapon: true
+      S_Minstrel_Weapon: true
+      S_Wanderer_Weapon: true
+      S_Blitz_Weapon: true
+      S_Tension_Weapon: true
+      S_Elegant_Weapon: true
+      S_Healing_Weapon: true
+      S_MortalBlow_Weapon: true
+      S_Exceed_Weapon: true
+      S2_Gemstone_Weapon: true
+      T1_Shadow_Weapon: true
+      T1_Shadow_Shield: true
+      T2_Shadow_Weapon: true
+      T2_Shadow_Shield: true
+      S_Promotion_Weapon: true
+      S_Greed_Weapon: true
+      S_Heal_Weapon: true
+      S_Hiding_Weapon: true
+      S_Cloaking_Weapon: true
+      S_Teleport_Weapon: true
+      S_Steal_Weapon: true
+      S2_Spiritual_Weapon: true
+      S2_Force_Ex_Weapon: true
+      S2_Spirit_M_E_Weapon: true
+      Unfreez_Weapon_S2: true
+      S2_Neutral_Weapon: true
+      Sentimental_Weapone_S: true
+      Enchanting_Weapone_S: true
+      S_Infinity_Weapon: true
+      S_Beginner's_Weapon: true
+      S_Temporal_Transcendent_Weapon: true
+      S_Tempest_Weapon: true
+      S_PerfectSize_Weapon: true
+      S_M_Exo_Co_Weapon: true
+      S_M_Viv_Dr_Weapon: true
+      S_M_Sci_Hu_Weapon: true
+      S_M_Fis_In_Weapon: true
+      S_M_Exe_Ho_Weapon: true
+      S_Hasty_Weapon: true
+      S_Exe_Ho_Weapon: true
+      S_Fis_In_Weapon: true
+      S_Sci_Hu_Weapon: true
+      S_Viv_Dr_Weapon: true
+      S_Exo_Co_Weapon: true
+      S_Ignition_Weapon: true
+      S_F_Breath_Weapon: true
+      S_Aimed_Weapon: true
+      S_Shooting_Weapon: true
+      S_Boomerang_Weapon: true
+      S_Arms_Weapon: true
+      S_Skynetblow_Weapon: true
+      S_TigerCannon_Weapon: true
+      S_Adoramus_Weapon: true
+      S_Magnus_Weapon: true
+      S_Arrowvulcan_Weapon: true
+      S_Reverberation_Weapon: true
+      S_Strain_Weapon: true
+      S_Chain_Weapon: true
+      S_Shadowspell_Weapon: true
+      S_Paint_Weapon: true
+      S_Katar_Weapon: true
+      S_Ripper_Weapon: true
+      S_Grave_Weapon: true
+      S_Varetyr_Weapon: true
+      S_Cannon_Cart_Weapon: true
+      S_Crazy_Weapon: true
+      S_Chain_Press_Weapon: true
+      S_Genesis_Weapon: true
+      S_RK_B_Weapon: true
+      S_LG_B_Weapon: true
+      S_NC_B_Weapon: true
+      S_GN_B_Weapon: true
+      S_GC_B_Weapon: true
+      S_SC_B_Weapon: true
+      S_WL_B_Weapon: true
+      S_SO_B_Weapon: true
+      S_AB_B_Weapon: true
+      S_SR_B_Weapon: true
+      S_RA_B_Weapon: true
+      S_WM_B_Weapon: true
+      S_Tail_Dragon_Weapon: true
+      S_God_Hammer_Weapon: true
+      S_Trip_Weapon: true
+      S_Super_Power_Weapon: true
+      S_Kunai_Weapon: true
+      S_Kamaenraku_Weapon: true
+      S_Pickyrush_Weapon: true
+      S_Catnip_Weapon: true
+      S_Sunshine_Weapon: true
+      S_Stardust_Weapon: true
+      S_S_Weapon: true
+      S_Mammoth_Weapon: true
+      S_SNV_Weapon: true
+      S_Absorb_Weapon: true
+      S_1Para_Weapon: true
+      S_2Para_RK_Weapon: true
+      S_2Para_LG_Weapon: true
+      S_2Para_NC_Weapon: true
+      S_2Para_GN_Weapon: true
+      S_2Para_GC_Weapon: true
+      S_2Para_SC_Weapon: true
+      S_2Para_WL_Weapon: true
+      S_2Para_SO_Weapon: true
+      S_2Para_AB_Weapon: true
+      S_2Para_SR_Weapon: true
+      S_2Para_RA_Weapon: true
+      S_2Para_WM_Weapon: true
+      S_2Para_KO_Weapon: true
+      S_2Para_RL_Weapon: true
+      S_2Para_SJ_Weapon: true
+      S_2Para_SP_Weapon: true
+      S_2Para_SU_Weapon: true
+      S_2Para_NV_Weapon: true
+      S_AutoSpell_Weapon: true
+      S_Durable_Weapon: true
+      S_Clever_Weapon: true
+      S_CriticalHit_Weapon: true
+      S_SU_Weapon: true
+      S_SJ_Weapon: true
+      S_KO_Weapon: true
+      S_RL_Weapon: true
+      S_SP_Weapon: true
+      S_NV_Weapon: true
+      S_KingbirdAnc_Weapon: true
+      S_P_Power_Weapon: true
+      S_M_Spell_Weapon: true
+      S_Concentration_Weapon: true
+      S_Wisdom_Weapon: true
+      S_Stamina_Weapon: true
+      S_Creative_Weapon: true
+      S_Mega_Blitz_Weapon: true
+      Limit_Break_SH_W: true
+      S_EXP_Weapon: true
+      S_Master_Weapon: true
+      21Anni_W_Shadow_TW: true
+      21Anni2_W_Shadow_TW: true
+      21Anni3_W_Shadow_TW: true
+    Reset:
+      Chance: 100000
+      Price: 100000
+      Materials:
+        - Material: Silvervine
+          Amount: 10
+    Order:
+      - Slot: 3
+    Slots:
+      - Slot: 3
+        Price: 1000000
+        Materials:
+          - Material: Shadow_Glove_Elite_Stone
+            Amount: 5
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Physical_AddEle_1
+                Chance: 4267
+              - Item: Physical_AddEle_2
+                Chance: 2134
+              - Item: Physical_AddEle_3
+                Chance: 1423
+              - Item: Physical_AddEle_4
+                Chance: 1067
+              - Item: Physical_AddEle_5
+                Chance: 854
+              - Item: Physical_AddEle_6
+                Chance: 711
+              - Item: Physical_AddEle_7
+                Chance: 610
+              - Item: Physical_AddEle_8
+                Chance: 533
+              - Item: Physical_AddEle_9
+                Chance: 474
+              - Item: Physical_AddEle_10
+                Chance: 427
+              - Item: Magic_AddEle_1
+                Chance: 4267
+              - Item: Magic_AddEle_2
+                Chance: 2134
+              - Item: Magic_AddEle_3
+                Chance: 1423
+              - Item: Magic_AddEle_4
+                Chance: 1067
+              - Item: Magic_AddEle_5
+                Chance: 854
+              - Item: Magic_AddEle_6
+                Chance: 711
+              - Item: Magic_AddEle_7
+                Chance: 610
+              - Item: Magic_AddEle_8
+                Chance: 533
+              - Item: Magic_AddEle_9
+                Chance: 474
+              - Item: Magic_AddEle_10
+                Chance: 427
+              - Item: Physical_AddRace_1
+                Chance: 4267
+              - Item: Physical_AddRace_2
+                Chance: 2134
+              - Item: Physical_AddRace_3
+                Chance: 1423
+              - Item: Physical_AddRace_4
+                Chance: 1067
+              - Item: Physical_AddRace_5
+                Chance: 854
+              - Item: Physical_AddRace_6
+                Chance: 711
+              - Item: Physical_AddRace_7
+                Chance: 610
+              - Item: Physical_AddRace_8
+                Chance: 533
+              - Item: Physical_AddRace_9
+                Chance: 474
+              - Item: Physical_AddRace_10
+                Chance: 427
+              - Item: Magic_AddRace_1
+                Chance: 4267
+              - Item: Magic_AddRace_2
+                Chance: 2134
+              - Item: Magic_AddRace_3
+                Chance: 1423
+              - Item: Magic_AddRace_4
+                Chance: 1067
+              - Item: Magic_AddRace_5
+                Chance: 854
+              - Item: Magic_AddRace_6
+                Chance: 711
+              - Item: Magic_AddRace_7
+                Chance: 610
+              - Item: Magic_AddRace_8
+                Chance: 533
+              - Item: Magic_AddRace_9
+                Chance: 474
+              - Item: Magic_AddRace_10
+                Chance: 427
+              - Item: Physical_AddClass_1
+                Chance: 4267
+              - Item: Physical_AddClass_2
+                Chance: 2134
+              - Item: Physical_AddClass_3
+                Chance: 1423
+              - Item: Physical_AddClass_4
+                Chance: 1067
+              - Item: Physical_AddClass_5
+                Chance: 854
+              - Item: Physical_AddClass_6
+                Chance: 711
+              - Item: Physical_AddClass_7
+                Chance: 610
+              - Item: Physical_AddClass_8
+                Chance: 533
+              - Item: Physical_AddClass_9
+                Chance: 474
+              - Item: Physical_AddClass_10
+                Chance: 427
+              - Item: Magic_AddClass_1
+                Chance: 4267
+              - Item: Magic_AddClass_2
+                Chance: 2134
+              - Item: Magic_AddClass_3
+                Chance: 1423
+              - Item: Magic_AddClass_4
+                Chance: 1067
+              - Item: Magic_AddClass_5
+                Chance: 854
+              - Item: Magic_AddClass_6
+                Chance: 711
+              - Item: Magic_AddClass_7
+                Chance: 610
+              - Item: Magic_AddClass_8
+                Chance: 533
+              - Item: Magic_AddClass_9
+                Chance: 474
+              - Item: Magic_AddClass_10
+                Chance: 427
+              - Item: Physical_AddSize_1
+                Chance: 4267
+              - Item: Physical_AddSize_2
+                Chance: 2134
+              - Item: Physical_AddSize_3
+                Chance: 1423
+              - Item: Physical_AddSize_4
+                Chance: 1067
+              - Item: Physical_AddSize_5
+                Chance: 854
+              - Item: Physical_AddSize_6
+                Chance: 711
+              - Item: Physical_AddSize_7
+                Chance: 610
+              - Item: Physical_AddSize_8
+                Chance: 533
+              - Item: Physical_AddSize_9
+                Chance: 474
+              - Item: Physical_AddSize_10
+                Chance: 427
+              - Item: Magic_AddSize_1
+                Chance: 4267
+              - Item: Magic_AddSize_2
+                Chance: 2134
+              - Item: Magic_AddSize_3
+                Chance: 1423
+              - Item: Magic_AddSize_4
+                Chance: 1067
+              - Item: Magic_AddSize_5
+                Chance: 854
+              - Item: Magic_AddSize_6
+                Chance: 711
+              - Item: Magic_AddSize_7
+                Chance: 610
+              - Item: Magic_AddSize_8
+                Chance: 533
+              - Item: Magic_AddSize_9
+                Chance: 474
+              - Item: Magic_AddSize_10
+                Chance: 427
+# 影子鎧甲菁英石
+  - Id: 10101
+    TargetItems:      
+      S_Dexterous_Armor: true
+      S_Lucky_Armor: true
+      S_Gemstone_Armor: true
+      S_Plasterer's_Armor: true
+      S_Insomniac_Armor: true
+      S_Peerless_Armor: true
+      S_Adurate_Armor: true
+      S_Caster_Armor: true
+      S_Spell_Flow_Armor: true
+      S_Breezy_Armor: true
+      S_Immune_Armor: true
+      S_Hard_Armor: true
+      S_Ancient_Armor: true
+      S_Critical_Armor: true
+      S_Malicious_Armor: true
+      S_Immortal_Armor: true
+      S_Penetration_Armor: true
+      S_ExeHoly_Armor: true
+      S_ExoCorrupt_Armor: true
+      S_DragonVib_Armor: true
+      S_SciHunting_Armor: true
+      S_FishInsect_Armor: true
+      S_M_ExeHoly_Armor: true
+      S_M_ExoCorrupt_Armor: true
+      S_M_DragonVib_Armor: true
+      S_M_SciHunting_Armor: true
+      S_M_FishInsect_Armor: true
+      S_Bearers_Armor: true
+      S_Hasty_Armor: true
+      S_Big_Armor: true
+      S_Medium_Armor: true
+      S_Small_Armor: true
+      S_Reload_Armor: true
+      S_Knight_Armor: true
+      S_Crusader_Armor: true
+      S_Blacksmith_Armor: true
+      S_Alchemist_Armor: true
+      S_Priest_Armor: true
+      S_Monk_Armor: true
+      S_Assassin_Armor: true
+      S_Rogue_Armor: true
+      S_Wizard_Armor: true
+      S_Sage_Armor: true
+      S_Hunter_Armor: true
+      S_Bard_Armor: true
+      S_Dancer_Armor: true
+      S_Rebellion_Armor: true
+      S_Kagerou_Armor: true
+      S_Oboro_Armor: true
+      S_DoramPhysical_Armor: true
+      S_DoramMagical_Armor: true
+      S_Star_Emperor_Armor: true
+      S_Soul_Reaper_Armor: true
+      S_Blitz_Armor: true
+      S_Basis_Armor: true
+      S_Hallowed_Armor: true
+      S_Saharic_Armor: true
+      S_Underneath_Armor: true
+      S_Flam_Armor: true
+      S_Windy_Armor: true
+      S_Envenom_Armor: true
+      S_Damned_Armor: true
+      S_Geist_Armor: true
+      S_Divine_Armor: true
+      S_ColdBolt_Armor: true
+      S_FireBolt_Armor: true
+      S_LightingBolt_Armor: true
+      S_EarthSpike_Armor: true
+      S_Sigrun_Armor: true
+      S_Attack_Armor: true
+      S2_Bearers_Armor: true
+      S_Physical_Armor: true
+      S_Magical_Armor: true
+      T1_Shadow_Armor: true
+      T1_Shadow_Weapon: true
+      T2_Shadow_Armor: true
+      T2_Shadow_Weapon: true
+      S_Promotion_Armor: true
+      S_Greed_Armor: true
+      S_Heal_Armor: true
+      S_Hiding_Armor: true
+      S_Cloaking_Armor: true
+      S_Teleport_Armor: true
+      S_Steal_Armor: true
+      S2_Malicious_Armor: true
+      S2_Caster_Armor: true
+      S2_Reload_Armor: true
+      S_MagicCompose_Armor: true
+      S2_Plasterer's_Armor: true
+      S2_Peerless_Armor: true
+      S_Beginner's_Armor: true
+      S_KingbirdAncient_Armor: true
+      S_Temporal_Transcendent_Armor: true
+      S_Tempest_Armor: true
+      S_PerfectSize_Armor: true
+      S_CriticalHit_Armor: true
+      S_Sonic_Armor: true
+      S_W_Breath_Armor: true
+      S_Cluster_Armor: true
+      S_Arrow_Armor: true
+      S_Tornado_Armor: true
+      S_Vulcan_Armor: true
+      S_Rampage_Armor: true
+      S_Knucklearrow_Armor: true
+      S_Duplelight_Armor: true
+      S_Judex_Armor: true
+      S_Rainstorm_Armor: true
+      S_Metalic_Armor: true
+      S_Jack_Armor: true
+      S_Crimson_Armor: true
+      S_Triangle_Armor: true
+      S_Menace_Armor: true
+      S_Rolling_Armor: true
+      S_Slash_Armor: true
+      S_Dust_Armor: true
+      S_Psychic_Armor: true
+      S_Cart_Tornado_Armor: true
+      S_Spore_Bomb_Armor: true
+      S_Brand_Armor: true
+      S_Banish_Cannon_Armor: true
+      S_Booster_Armor: true
+      S_Tail_Dragon_Armor: true
+      S_God_Hammer_Armor: true
+      S_Trip_Armor: true
+      S_Super_Magic_Armor: true
+      S_Kunai_Armor: true
+      S_Kamaenraku_Armor: true
+      S_Pickyrush_Armor: true
+      S_Catnip_Armor: true
+      S_Sunshine_Armor: true
+      S_Stardust_Armor: true
+      S_S_Armor: true
+      S_FullPene_Armor: true
+      S_FullTemp_Armor: true
+      S_Mammoth_Armor: true
+      S_TrueGem_Armor: true
+      S_M_Mammoth_Armor: true
+      S_1Para_Armor: true
+      S_2Para_Armor: true
+      S_AutoSpell_Armor: true
+      S_M_AutoSpell_Armor: true
+      S_SpellCaster_Armor: true
+      S_R_Bearers_Armor: true
+      S_DK_Armor: true
+      S_IG_Armor: true
+      S_SHC_Armor: true
+      S_ABC_Armor: true
+      S_CD_Armor: true
+      S_IQ_Armor: true
+      S_MT_Armor: true
+      S_BO_Armor: true
+      S_WH_Armor: true
+      S_TR_Armor: true
+      S_AG_Armor: true
+      S_EM_Armor: true
+      S_NW_Armor: true
+      S_SH_Armor: true
+      S_SS_Armor: true
+      S_SKE_Armor: true
+      S_SOA_Armor: true
+      S_HN_Armor: true
+      S_Full_Power_Armor: true
+      S_Full_Rate_Armor: true
+      S_Full_Spell_Armor: true
+      S_SHC_SI_Armor: true
+      S_WH_CB_Armor: true
+      S_SS_KR_Armor: true
+      S_DK_HS_Armor: true
+      S_TR_MF_Armor: true
+      S_NW_WB_Armor: true
+      S_MT_PR_Armor: true
+      S_BO_MD_Armor: true
+      S_HN_TB_Armor: true
+      S_IG_RF_Armor: true
+      S_IQ_BFB_Armor: true
+      S_SU_HB_Armor: true
+      S_CD_DF_Armor: true
+      S_AG_SH_Armor: true
+      S_SKE_SB_Armor: true
+      S_EM_LS_Armor: true
+      S_ABC_FA_Armor: true
+      S_SOA_TOFG_Armor: true
+      Shadow_Armor_Elite_Stone: true
+      Shadow_Armor_S_Box5: true
+      Shadow_Armor_S_Box10: true
+      Shadow_Armor_S_Box30: true
+      F_Shadow_Armor_S_Box5: true
+      F_Shadow_Armor_S_Box10: true
+      F_Shadow_Armor_S_Box30: true
+      Shadow_Armor_S: true
+    Reset:
+      Chance: 100000
+      Price: 100000
+      Materials:
+        - Material: Silvervine
+          Amount: 10
+    Order:
+      - Slot: 3
+      - Slot: 2
+    Slots:
+      - Slot: 3
+        Price: 100000
+        Materials:
+          - Material: Shadow_Armor_Elite_Stone
+            Amount: 5
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Physical_HPDrain_1
+                Chance: 1815
+              - Item: Physical_HPDrain_2
+                Chance: 1634
+              - Item: Physical_HPDrain_3
+                Chance: 1452
+              - Item: Physical_HPDrain_4
+                Chance: 1271
+              - Item: Physical_HPDrain_5
+                Chance: 1089
+              - Item: Physical_HPDrain_6
+                Chance: 908
+              - Item: Physical_HPDrain_7
+                Chance: 726
+              - Item: Physical_HPDrain_8
+                Chance: 545
+              - Item: Physical_HPDrain_9
+                Chance: 363
+              - Item: Physical_HPDrain_10
+                Chance: 182
+              - Item: Physical_SPDrain_1
+                Chance: 1815
+              - Item: Physical_SPDrain_2
+                Chance: 1634
+              - Item: Physical_SPDrain_3
+                Chance: 1452
+              - Item: Physical_SPDrain_4
+                Chance: 1271
+              - Item: Physical_SPDrain_5
+                Chance: 1089
+              - Item: Physical_SPDrain_6
+                Chance: 908
+              - Item: Physical_SPDrain_7
+                Chance: 726
+              - Item: Physical_SPDrain_8
+                Chance: 545
+              - Item: Physical_SPDrain_9
+                Chance: 363
+              - Item: Physical_SPDrain_10
+                Chance: 182
+              - Item: Magic_HPDrain_1
+                Chance: 1815
+              - Item: Magic_HPDrain_2
+                Chance: 1634
+              - Item: Magic_HPDrain_3
+                Chance: 1452
+              - Item: Magic_HPDrain_4
+                Chance: 1271
+              - Item: Magic_HPDrain_5
+                Chance: 1089
+              - Item: Magic_HPDrain_6
+                Chance: 908
+              - Item: Magic_HPDrain_7
+                Chance: 726
+              - Item: Magic_HPDrain_8
+                Chance: 545
+              - Item: Magic_HPDrain_9
+                Chance: 363
+              - Item: Magic_HPDrain_10
+                Chance: 182
+              - Item: Magic_SPDrain_1
+                Chance: 1815
+              - Item: Magic_SPDrain_2
+                Chance: 1634
+              - Item: Magic_SPDrain_3
+                Chance: 1452
+              - Item: Magic_SPDrain_4
+                Chance: 1271
+              - Item: Magic_SPDrain_5
+                Chance: 1089
+              - Item: Magic_SPDrain_6
+                Chance: 908
+              - Item: Magic_SPDrain_7
+                Chance: 726
+              - Item: Magic_SPDrain_8
+                Chance: 545
+              - Item: Magic_SPDrain_9
+                Chance: 363
+              - Item: Magic_SPDrain_10
+                Chance: 182
+              - Item: NearAtkDef_1
+                Chance: 1815
+              - Item: NearAtkDef_2
+                Chance: 1634
+              - Item: NearAtkDef_3
+                Chance: 1452
+              - Item: NearAtkDef_4
+                Chance: 1271
+              - Item: NearAtkDef_5
+                Chance: 1089
+              - Item: NearAtkDef_6
+                Chance: 908
+              - Item: NearAtkDef_7
+                Chance: 726
+              - Item: NearAtkDef_8
+                Chance: 545
+              - Item: NearAtkDef_9
+                Chance: 363
+              - Item: NearAtkDef_10
+                Chance: 182
+              - Item: LongAtkDef_1
+                Chance: 1815
+              - Item: LongAtkDef_2
+                Chance: 1634
+              - Item: LongAtkDef_3
+                Chance: 1452
+              - Item: LongAtkDef_4
+                Chance: 1271
+              - Item: LongAtkDef_5
+                Chance: 1089
+              - Item: LongAtkDef_6
+                Chance: 908
+              - Item: LongAtkDef_7
+                Chance: 726
+              - Item: LongAtkDef_8
+                Chance: 545
+              - Item: LongAtkDef_9
+                Chance: 363
+              - Item: LongAtkDef_10
+                Chance: 182
+              - Item: MagicAtkDef_1
+                Chance: 1815
+              - Item: MagicAtkDef_2
+                Chance: 1634
+              - Item: MagicAtkDef_3
+                Chance: 1452
+              - Item: MagicAtkDef_4
+                Chance: 1271
+              - Item: MagicAtkDef_5
+                Chance: 1089
+              - Item: MagicAtkDef_6
+                Chance: 908
+              - Item: MagicAtkDef_7
+                Chance: 726
+              - Item: MagicAtkDef_8
+                Chance: 545
+              - Item: MagicAtkDef_9
+                Chance: 363
+              - Item: MagicAtkDef_10
+                Chance: 182
+              - Item: SkillCooldown_1
+                Chance: 10
+              - Item: SkillCooldown_2
+                Chance: 20
+              - Item: SkillCooldown_3
+                Chance: 30
+              - Item: SkillCooldown_4
+                Chance: 40
+              - Item: SkillCooldown_5
+                Chance: 50
+              - Item: MaxHPrate_1
+                Chance: 1815
+              - Item: MaxHPrate_2
+                Chance: 1634
+              - Item: MaxHPrate_3
+                Chance: 1452
+              - Item: MaxHPrate_4
+                Chance: 1271
+              - Item: MaxHPrate_5
+                Chance: 1089
+              - Item: MaxHPrate_6
+                Chance: 908
+              - Item: MaxHPrate_7
+                Chance: 726
+              - Item: MaxHPrate_8
+                Chance: 545
+              - Item: MaxHPrate_9
+                Chance: 363
+              - Item: MaxHPrate_10
+                Chance: 182
+              - Item: MaxSPrate_1
+                Chance: 1815
+              - Item: MaxSPrate_2
+                Chance: 1634
+              - Item: MaxSPrate_3
+                Chance: 1452
+              - Item: MaxSPrate_4
+                Chance: 1271
+              - Item: MaxSPrate_5
+                Chance: 1089
+              - Item: MaxSPrate_6
+                Chance: 908
+              - Item: MaxSPrate_7
+                Chance: 726
+              - Item: MaxSPrate_8
+                Chance: 545
+              - Item: MaxSPrate_9
+                Chance: 363
+              - Item: MaxSPrate_10
+                Chance: 182
+              - Item: Flee2_1
+                Chance: 1799
+              - Item: Flee2_2
+                Chance: 1619
+              - Item: Flee2_3
+                Chance: 1439
+              - Item: Flee2_4
+                Chance: 1259
+              - Item: Flee2_5
+                Chance: 1079
+              - Item: Flee2_6
+                Chance: 900
+              - Item: Flee2_7
+                Chance: 720
+              - Item: Flee2_8
+                Chance: 540
+              - Item: Flee2_9
+                Chance: 360
+              - Item: Flee2_10
+                Chance: 270
+
+# 影子戰靴菁英石
+  - Id: 10020
+    TargetItems:      
+      S_Vital_Shoes: true
+      S_Athletic_Shoes: true
+      S_Bloody_Shoes: true
+      S_Liberation_Shoes: true
+      S_Chemical_Shoes: true
+      S_Clamorous_Shoes: true
+      S_Insecticide_Shoes: true
+      S_Fisher_Shoes: true
+      S_Seraphim_Shoes: true
+      S_Beholder_Shoes: true
+      S_Divine_Shoes: true
+      S_Dragoon_Shoes: true
+      S_Gemstone_Shoes: true
+      S_Plasterer's_Shoes: true
+      S_Insomniac_Shoes: true
+      S_Peerless_Shoes: true
+      S_Adurate_Shoes: true
+      S_Caster_Shoes: true
+      S_Spell_Flow_Shoes: true
+      S_Champion_Shoes: true
+      S_Malicious_Shoes: true
+      S_Penetration_Shoes: true
+      S_Tempest_Shoes: true
+      S_Bearers_Shoes: true
+      S_Hasty_Shoes: true
+      S_Expert_Shoes: true
+      S_Beginner_Shoes: true
+      S_Rookie_Shoes: true
+      S_Advanced_Shoes: true
+      S_Reload_Shoes: true
+      S_Knight_Shoes: true
+      S_Crusader_Shoes: true
+      S_Blacksmith_Shoes: true
+      S_Alchemist_Shoes: true
+      S_Priest_Shoes: true
+      S_Monk_Shoes: true
+      S_Assassin_Shoes: true
+      S_Rogue_Shoes: true
+      S_Wizard_Shoes: true
+      S_Sage_Shoes: true
+      S_Hunter_Shoes: true
+      S_Bard_Shoes: true
+      S_Dancer_Shoes: true
+      S_Rebellion_Shoes: true
+      S_Kagerou_Shoes: true
+      S_Oboro_Shoes: true
+      S_DoramPhysical_Shoes: true
+      S_DoramMagical_Shoes: true
+      S_Star_Emperor_Shoes: true
+      S_Soul_Reaper_Shoes: true
+      S_Critical_Shoes: true
+      S_Blitz_Shoes: true
+      S_Healing_Shoes: true
+      S2_Bearers_Shoes: true
+      S_Physical_Shoes: true
+      S_Magical_Shoes: true
+      T1_Shadow_Shoes: true
+      T1_Shadow_R_Accessory: true
+      T2_Shadow_Shoes: true
+      T2_Shadow_R_Accessory: true
+      S_Promotion_Shoes: true
+      S_Greed_Shoes: true
+      S_Heal_Shoes: true
+      S_Hiding_Shoes: true
+      S_Cloaking_Shoes: true
+      S_Teleport_Shoes: true
+      S_Steal_Shoes: true
+      S2_Hasty_Shoes: true
+      S_AllRace_Shoes: true
+      S2_Insomniac_Shoes: true
+      S2_Adurate_Shoes: true
+      S_Beginner's_Shoes: true
+      S_HardChamption_Shoes: true
+      S_Temporal_Transcendent_Shoes: true
+      S_Sonic_Shoes: true
+      S_W_Breath_Shoes: true
+      S_Cluster_Shoes: true
+      S_Arrow_Shoes: true
+      S_Tornado_Shoes: true
+      S_Vulcan_Shoes: true
+      S_Rampage_Shoes: true
+      S_Knucklearrow_Shoes: true
+      S_Duplelight_Shoes: true
+      S_Judex_Shoes: true
+      S_Rainstorm_Shoes: true
+      S_Metalic_Shoes: true
+      S_Jack_Shoes: true
+      S_Crimson_Shoes: true
+      S_Triangle_Shoes: true
+      S_Menace_Shoes: true
+      S_Rolling_Shoes: true
+      S_Slash_Shoes: true
+      S_Dust_Shoes: true
+      S_Psychic_Shoes: true
+      S_Cart_Tornado_Shoes: true
+      S_Spore_Bomb_Shoes: true
+      S_Brand_Shoes: true
+      S_Banish_Cannon_Shoes: true
+      S_Booster_Shoes: true
+      S_Flare_Dance_Shoes: true
+      S_Shatter_Buster_Shoes: true
+      S_Super_Magic_Shoes: true
+      S_Syuriken_Shoes: true
+      S_Huusouka_Shoes: true
+      S_SavageRabbit_Shoes: true
+      S_Silvervine_Shoes: true
+      S_Moonlight_Shoes: true
+      S_Evilcurse_Shoes: true
+      S_FullPene_Shoes: true
+      S_FullTemp_Shoes: true
+      S_Mammoth_Shoes: true
+      S_TrueGem_Shoes: true
+      S_M_Mammoth_Shoes: true
+      S_1Para_Shoes: true
+      S_2Para_Shoes: true
+      S_AutoSpell_Shoes: true
+      S_M_AutoSpell_Shoes: true
+      S_SpellCaster_Shoes: true
+      S_R_Bearers_Shoes: true
+      S_DK_Shoes: true
+      S_IG_Shoes: true
+      S_SHC_Shoes: true
+      S_ABC_Shoes: true
+      S_CD_Shoes: true
+      S_IQ_Shoes: true
+      S_MT_Shoes: true
+      S_BO_Shoes: true
+      S_WH_Shoes: true
+      S_TR_Shoes: true
+      S_AG_Shoes: true
+      S_EM_Shoes: true
+      S_NW_Shoes: true
+      S_SH_Shoes: true
+      S_SS_Shoes: true
+      S_SKE_Shoes: true
+      S_SOA_Shoes: true
+      S_HN_Shoes: true
+      S_Full_Power_Shoes: true
+      S_Full_Rate_Shoes: true
+      S_Full_Spell_Shoes: true
+      S_SHC_SI_Shoes: true
+      S_WH_CB_Shoes: true
+      S_SS_KR_Shoes: true
+      S_DK_HS_Shoes: true
+      S_TR_MF_Shoes: true
+      S_NW_WB_Shoes: true
+      S_MT_PR_Shoes: true
+      S_BO_MD_Shoes: true
+      S_HN_TB_Shoes: true
+      S_IG_RF_Shoes: true
+      S_IQ_BFB_Shoes: true
+      S_SU_HB_Shoes: true
+      S_CD_DF_Shoes: true
+      S_AG_SH_Shoes: true
+      S_SKE_SB_Shoes: true
+      S_EM_LS_Shoes: true
+      S_ABC_FA_Shoes: true
+      S_SOA_TOFG_Shoes: true
+    Reset:
+      Chance: 100000
+      Price: 100000
+      Materials:
+        - Material: Silvervine
+          Amount: 3
+    Order:
+      - Slot: 3
+      - Slot: 2
+    Slots:
+      - Slot: 3
+        Price: 100000
+        Materials:
+          - Material: Shadow_Glove_Elite_Stone
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 1
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 2
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 3
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 4
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+      - Slot: 2
+        Price: 3000000
+        Materials:
+          - Material: Pow_Meteorite_Fragment
+            Amount: 10
+          - Material: Sta_Meteorite_Fragment
+            Amount: 10
+          - Material: Con_Meteorite_Fragment
+            Amount: 10
+          - Material: Crt_Meteorite_Fragment
+            Amount: 10
+          - Material: Spl_Meteorite_Fragment
+            Amount: 10
+          - Material: Wis_Meteorite_Fragment
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Spirit_Of_Star_01_CN
+                Chance: 30000 
+# 影子耳環菁英石
+  - Id: 10021
+    TargetItems:      
+      S_Physical_Earring: true
+      S_Magical_Earring: true
+      S_Power_Earring: true
+      S_Int_Earring: true
+      S_Gemstone_Earring: true
+      Unfreeze_Earing_S: true
+      Vitality_Earing_S: true
+      S_Neutral_Earring: true
+      S_Curse_Lift_Earring: true
+      S_Caster_earring: true
+      S_Infinity_Earring: true
+      S_Hard_Earring: true
+      S_Wise_Earring: true
+      S_Athena_Earring: true
+      S_Spiritual_Earring: true
+      S_Solid_Earring: true
+      S_Penetration_Earring: true
+      S_Tempest_Earring: true
+      S_Bearers_Earring: true
+      S_Force_Earring: true
+      S_Spirit_Earring: true
+      S_Titan_Earring: true
+      S_Boned_Earring: true
+      S_Gigantic_Earring: true
+      S_Swordman_Earring: true
+      S_Merchant_Earring: true
+      S_Acolyte_Earring: true
+      S_Magician_Earring: true
+      S_Thief_Earring: true
+      S_Archer_Earring: true
+      S_Blitz_Earring: true
+      S_Tension_Earring: true
+      S_Elegant_Earring: true
+      S_Restore_Earring: true
+      S_MortalBlow_Earring: true
+      S_AllMighty_Earring: true
+      S2_Gemstone_Earring: true
+      T1_Shadow_R_Accessory: true
+      T2_Shadow_R_Accessory: true
+      S_Promotion_Earring: true
+      S_Greed_Earring: true
+      S_Heal_Earring: true
+      S_Hiding_Earring: true
+      S_Cloaking_Earring: true
+      S_Teleport_Earring: true
+      S_Steal_Earring: true
+      Vitality_Earing_S2: true
+      Sentimental_Earring_S: true
+      Enchanting_Earring_S: true
+      S_Beginner's_Earring: true
+      S_Temporal_Transcendent_Earring: true
+      S_Ignition_Earing: true
+      S_F_Breath_Earing: true
+      S_Aimed_Earing: true
+      S_Shooting_Earing: true
+      S_Boomerang_Earing: true
+      S_Arms_Earing: true
+      S_Skynetblow_Earing: true
+      S_Tigercannon_Earing: true
+      S_Adoramus_Earing: true
+      S_Magnus_Earing: true
+      S_Arrowvulcan_Earing: true
+      S_Reverberation_Earing: true
+      S_Strain_Earing: true
+      S_Chain_Earing: true
+      S_Shadowspell_Earing: true
+      S_Paint_Earing: true
+      S_Katar_Earing: true
+      S_Ripper_Earing: true
+      S_Grave_Earing: true
+      S_Varetyr_Earing: true
+      S_Cannon_Cart_Earing: true
+      S_Crazy_Earing: true
+      S_Chain_Press_Earing: true
+      S_Genesis_Earing: true
+      S_Booster_Earing: true
+      S_Flare_Dance_Earing: true
+      S_Shatter_Buster_Earing: true
+      S_Super_Power_Earing: true
+      S_Syuriken_Earing: true
+      S_Huusouka_Earing: true
+      S_SavageRabbit_Earing: true
+      S_Silvervine_Earing: true
+      S_Moonlight_Earring: true
+      S_Evilcurse_Earring: true
+      S_FullPene_Earring: true
+      S_FullTemp_Earring: true
+      S_Mammoth_Earring: true
+      S_TrueGem_Earring: true
+      S_M_Mammoth_Earring: true
+      S_1Para_Earing: true
+      S_2Para_Earing: true
+      S_AutoSpell_Earring: true
+      S_M_AutoSpell_Earring: true
+      S_SpellCaster_Earring: true
+      S_R_Bearers_Earring: true
+      S_DK_Earring: true
+      S_IG_Earring: true
+      S_SHC_Earring: true
+      S_ABC_Earring: true
+      S_CD_Earring: true
+      S_IQ_Earring: true
+      S_MT_Earring: true
+      S_BO_Earring: true
+      S_WH_Earring: true
+      S_TR_Earring: true
+      S_AG_Earring: true
+      S_EM_Earring: true
+      S_NW_Earring: true
+      S_SH_Earring: true
+      S_SS_Earring: true
+      S_SKE_Earring: true
+      S_SOA_Earring: true
+      S_HN_Earring: true
+      S_Focusing_Earring: true
+      S_Stout_Earring: true
+      S_Centering_Earring: true
+      S_Witty_Earring: true
+      S_SHC_EC_Earring: true
+      S_WH_GS_Earring: true
+      S_SS_SR_Earring: true
+      S_DK_SS_Earring: true
+      S_TR_RW_Earring: true
+      S_NW_SO_Earring: true
+      S_MT_MS_Earring: true
+      S_BO_EP_Earring: true
+      S_HN_VJ_Earring: true
+      S_IG_OC_Earring: true
+      S_IQ_EB_Earring: true
+      S_SU_CS_Earring: true
+      S_CD_AR_Earring: true
+      S_AG_FB_Earring: true
+      S_SKE_NS_Earring: true
+      S_EM_CO_Earring: true
+      S_ABC_AF_Earring: true
+      S_SOA_TOWB_Earring: true
+    Reset:
+      Chance: 100000
+      Price: 100000
+      Materials:
+        - Material: Silvervine
+          Amount: 3
+    Order:
+      - Slot: 3
+      - Slot: 2
+    Slots:
+      - Slot: 3
+        Price: 100000
+        Materials:
+          - Material: Shadow_Glove_Elite_Stone
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 1
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 2
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 3
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 4
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+      - Slot: 2
+        Price: 3000000
+        Materials:
+          - Material: Pow_Meteorite_Fragment
+            Amount: 10
+          - Material: Sta_Meteorite_Fragment
+            Amount: 10
+          - Material: Con_Meteorite_Fragment
+            Amount: 10
+          - Material: Crt_Meteorite_Fragment
+            Amount: 10
+          - Material: Spl_Meteorite_Fragment
+            Amount: 10
+          - Material: Wis_Meteorite_Fragment
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Spirit_Of_Star_01_CN
+                Chance: 30000 
+# 影子墜子菁英石
+  - Id: 10022
+    TargetItems:      
+      S_Physical_Pendant: true
+      S_Magical_Pendant: true
+      S_Int_Pendant: true
+      S_Power_Pendant: true
+      S_Gemstone_Pendent: true
+      Unfreeze_Pendent_S: true
+      Vitality_Pendant_S: true
+      S_Neutral_Pendent: true
+      S_Curse_Lift_Pendent: true
+      S_Caster_Pendant: true
+      S_Infinity_Pendant: true
+      S_Resist_Spell_Pendant: true
+      S_Rapid_Pendant: true
+      S_Spiritual_Pendent: true
+      S_Immortal_Pendant: true
+      S_Penetration_Pendent: true
+      S_Tempest_Pendent: true
+      S_Bearers_Pendent: true
+      S_Force_Pendant: true
+      S_Spirit_Pendant: true
+      S_Titan_Pendant: true
+      S_Boned_Pendant: true
+      S_Gigantic_Pendant: true
+      S_Swordman_Pendant: true
+      S_Merchant_Pendant: true
+      S_Acolyte_Pendant: true
+      S_Thief_Pendant: true
+      S_Magician_Pendant: true
+      S_Archer_Pendant: true
+      S_Blitz_Pendent: true
+      S_Tension_Pendent: true
+      S_Elegant_Pendent: true
+      S_Restore_Pendent: true
+      S_MortalBlow_Pendent: true
+      S_AllMighty_Pendant: true
+      T1_Shadow_L_Accessory: true
+      T2_Shadow_L_Accessory: true
+      S_Promotion_Pendant: true
+      S_Greed_Pendant: true
+      S_Heal_Pendant: true
+      S_Hiding_Pendant: true
+      S_Cloaking_Pendant: true
+      S_Teleport_Pendant: true
+      S_Steal_Pendant: true
+      S2_Bearers_Pendent: true
+      S2_Curse_Lift_Pendent: true
+      Sentimental_Pendant_S: true
+      Enchanting_Pendant_S: true
+      S_Beginner's_Pendant: true
+      S_Temporal_Transcendent_Pendant: true
+      S_Ignition_Pendant: true
+      S_F_Breath_Pendant: true
+      S_Aimed_Pendant: true
+      S_Shooting_Pendant: true
+      S_Boomerang_Pendant: true
+      S_Arms_Pendant: true
+      S_Skynetblow_Pendant: true
+      S_Tigercannon_Pendant: true
+      S_Adoramus_Pendant: true
+      S_Magnus_Pendant: true
+      S_Arrowvulcan_Pendant: true
+      S_Reverberation_Pendant: true
+      S_Strain_Pendant: true
+      S_Chain_Pendant: true
+      S_Shadowspell_Pendant: true
+      S_Paint_Pendant: true
+      S_Katar_Pendant: true
+      S_Ripper_Pendant: true
+      S_Grave_Pendant: true
+      S_Varetyr_Pendant: true
+      S_Cannon_Cart_Pendant: true
+      S_Crazy_Pendant: true
+      S_Chain_Press_Pendant: true
+      S_Genesis_Pendant: true
+      S_Booster_Pandent: true
+      S_Flare_Dance_Pendant: true
+      S_Shatter_B_Pendant: true
+      S_Super_Power_Pendant: true
+      S_Syuriken_Pendant: true
+      S_Huusouka_Pendant: true
+      S_SavageRabbit_Pendant: true
+      S_Silvervine_Pendant: true
+      S_Moonlight_Pendant: true
+      S_Evilcurse_Pendant: true
+      S_FullPene_Pendant: true
+      S_FullTemp_Pendant: true
+      S_Mammoth_Pendant: true
+      S_TrueGem_Pendant: true
+      S_M_Mammoth_Pendant: true
+      S_1Para_Pendant: true
+      S_2Para_Pendant: true
+      S_AutoSpell_Pendant: true
+      S_M_AutoSpell_Pendant: true
+      S_SpellCaster_Pendant: true
+      S_R_Bearers_Pendant: true
+      S_DK_Pendant: true
+      S_IG_Pendant: true
+      S_SHC_Pendant: true
+      S_ABC_Pendant: true
+      S_CD_Pendant: true
+      S_IQ_Pendant: true
+      S_MT_Pendant: true
+      S_BO_Pendant: true
+      S_WH_Pendant: true
+      S_TR_Pendant: true
+      S_AG_Pendant: true
+      S_EM_Pendant: true
+      S_NW_Pendant: true
+      S_SH_Pendant: true
+      S_SS_Pendant: true
+      S_SKE_Pendant: true
+      S_SOA_Pendant: true
+      S_HN_Pendant: true
+      S_Focusing_Pendant: true
+      S_Stout_Pendant: true
+      S_Centering_Pendant: true
+      S_Witty_Pendant: true
+      S_SHC_EC_Pendant: true
+      S_WH_GS_Pendant: true
+      S_SS_SR_Pendant: true
+      S_DK_SS_Pendant: true
+      S_TR_RW_Pendant: true
+      S_NW_SO_Pendant: true
+      S_MT_MS_Pendant: true
+      S_BO_EP_Pendant: true
+      S_HN_VJ_Pendant: true
+      S_IG_OC_Pendant: true
+      S_IQ_EB_Pendant: true
+      S_SU_CS_Pendant: true
+      S_CD_AR_Pendant: true
+      S_AG_FB_Pendant: true
+      S_SKE_NS_Pendant: true
+      S_EM_CO_Pendant: true
+      S_ABC_AF_Pendant: true
+      S_SOA_TOWB_Pendant: true
+    Reset:
+      Chance: 100000
+      Price: 100000
+      Materials:
+        - Material: Silvervine
+          Amount: 3
+    Order:
+      - Slot: 3
+      - Slot: 2
+    Slots:
+      - Slot: 3
+        Price: 100000
+        Materials:
+          - Material: Shadow_Glove_Elite_Stone
+            Amount: 3
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 1
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 2
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 3
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+          - Enchantgrade: 4
+            Items:
+              - Item: Luck5
+                Chance: 1500
+              - Item: Luck4
+                Chance: 2000
+              - Item: Luck3
+                Chance: 3000
+              - Item: Luck2
+                Chance: 3500
+              - Item: Luck1
+                Chance: 4500
+              - Item: Vitality5
+                Chance: 1500
+              - Item: Vitality4
+                Chance: 2000
+              - Item: Vitality3
+                Chance: 3000
+              - Item: Vitality2
+                Chance: 3500
+              - Item: Vitality1
+                Chance: 4500
+              - Item: Agility5
+                Chance: 1500
+              - Item: Agility4
+                Chance: 2000
+              - Item: Agility3
+                Chance: 3000
+              - Item: Agility2
+                Chance: 3500
+              - Item: Agility1
+                Chance: 4500
+              - Item: Dexterity5
+                Chance: 1500
+              - Item: Dexterity4
+                Chance: 2000
+              - Item: Dexterity3
+                Chance: 3000
+              - Item: Dexterity2
+                Chance: 3500
+              - Item: Dexterity1
+                Chance: 4500
+              - Item: Inteligence5
+                Chance: 1500
+              - Item: Inteligence4
+                Chance: 2000
+              - Item: Inteligence3
+                Chance: 3000
+              - Item: Inteligence2
+                Chance: 3500
+              - Item: Inteligence1
+                Chance: 4400
+              - Item: Strength5
+                Chance: 1500
+              - Item: Strength4
+                Chance: 2000
+              - Item: Strength3
+                Chance: 3000
+              - Item: Strength2
+                Chance: 3500
+              - Item: Strength1
+                Chance: 4400
+              - Item: Neev_STR_1
+                Chance: 1000
+              - Item: Neev_STR_2
+                Chance: 800
+              - Item: Neev_STR_3
+                Chance: 400
+              - Item: Neev_AGI_1
+                Chance: 1000
+              - Item: Neev_AGI_2
+                Chance: 800
+              - Item: Neev_AGI_3
+                Chance: 400
+              - Item: Neev_INT_1
+                Chance: 1000
+              - Item: Neev_INT_2
+                Chance: 800
+              - Item: Neev_INT_3
+                Chance: 400
+              - Item: Neev_DEX_1
+                Chance: 1000
+              - Item: Neev_DEX_2
+                Chance: 800
+              - Item: Neev_DEX_3
+                Chance: 400
+              - Item: Neev_LUK_1
+                Chance: 1000
+              - Item: Neev_LUK_2
+                Chance: 800
+              - Item: Neev_LUK_3
+                Chance: 400
+              - Item: Neev_VIT_1
+                Chance: 1000
+              - Item: Neev_VIT_2
+                Chance: 800
+              - Item: Neev_VIT_3
+                Chance: 400
+      - Slot: 2
+        Price: 3000000
+        Materials:
+          - Material: Pow_Meteorite_Fragment
+            Amount: 10
+          - Material: Sta_Meteorite_Fragment
+            Amount: 10
+          - Material: Con_Meteorite_Fragment
+            Amount: 10
+          - Material: Crt_Meteorite_Fragment
+            Amount: 10
+          - Material: Spl_Meteorite_Fragment
+            Amount: 10
+          - Material: Wis_Meteorite_Fragment
+            Amount: 10
+        Chance: 100000
+        Enchants:
+          - Enchantgrade: 0
+            Items:
+              - Item: Spirit_Of_Star_01_CN
+                Chance: 30000 
+                               

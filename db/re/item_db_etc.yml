@@ -59076,41 +59076,42 @@ Body:
 
 #影裝強化石
   - Id: 70101
-    AegisName: Unknown_Item_70101
+    AegisName: Shadow_Glove_Elite_Stone
     Name: 影子手套菁英石
     Type: Etc
     Flags:
       BuyingStore: true
   - Id: 70102
-    AegisName: Unknown_Item_70102
+    AegisName: Shadow_Shield_Elite_Stone
     Name: 影子神盾菁英石
     Type: Etc
     Flags:
       BuyingStore: true
   - Id: 70103
-    AegisName: Unknown_Item_70103
+    AegisName: Shadow_Armor_Elite_Stone
     Name: 影子鎧甲菁英石
     Type: Etc
     Flags:
       BuyingStore: true
   - Id: 70104
-    AegisName: Unknown_Item_70104
+    AegisName: Shadow_Boots_Elite_Stone
     Name: 影子戰靴菁英石
     Type: Etc
     Flags:
       BuyingStore: true
   - Id: 70105
-    AegisName: Unknown_Item_70105
+    AegisName: Shadow_Earring_Elite_Stone
     Name: 影子耳環菁英石
     Type: Etc
     Flags:
       BuyingStore: true
   - Id: 70106
-    AegisName: Unknown_Item_70106
+    AegisName: Shadow_Pendant_Elite_Stone
     Name: 影子墜子菁英石
     Type: Etc
     Flags:
       BuyingStore: true
+
 
   - Id: 70107
     AegisName: Unknown_Item_70107
@@ -66683,7 +66684,12 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
-
+  - Id: 210000
+    AegisName: item_enchant_godfea
+    Name: 吞神羽翼祝福礦石
+    Type: Etc
+    Flags:
+      BuyingStore: true
 
 
 #Episode21 英雄時代
@@ -70807,3 +70813,1301 @@ Body:
   #     bonus2 bMagicAddRace,5,55;
   #     bonus2 bMagicAtkEle,1,55;
   #     bonus2 bMagicAtkEle,6,55;
+
+# 影子手套菁英石附魔
+  - Id: 980001
+    AegisName: Physical_AddEle_1
+    Name: 對敵物理屬性傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,1;
+  - Id: 980002
+    AegisName: Physical_AddEle_2
+    Name: 對敵物理屬性傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,2;
+  - Id: 980003
+    AegisName: Physical_AddEle_3
+    Name: 對敵物理屬性傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,3;
+  - Id: 980004
+    AegisName: Physical_AddEle_4
+    Name: 對敵物理屬性傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,4;
+  - Id: 980005
+    AegisName: Physical_AddEle_5
+    Name: 對敵物理屬性傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,5;
+  - Id: 980006
+    AegisName: Physical_AddEle_6
+    Name: 對敵物理屬性傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,6;
+  - Id: 980007
+    AegisName: Physical_AddEle_7
+    Name: 對敵物理屬性傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,7;
+  - Id: 980008
+    AegisName: Physical_AddEle_8
+    Name: 對敵物理屬性傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,8;
+  - Id: 980009
+    AegisName: Physical_AddEle_9
+    Name: 對敵物理屬性傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,9;
+  - Id: 980010
+    AegisName: Physical_AddEle_10
+    Name: 對敵物理屬性傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddEle,Ele_All,10;
+  - Id: 980011
+    AegisName: Magic_AddEle_1
+    Name: 對敵魔法屬性傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,1;
+  - Id: 980012
+    AegisName: Magic_AddEle_2
+    Name: 對敵魔法屬性傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,2;
+  - Id: 980013
+    AegisName: Magic_AddEle_3
+    Name: 對敵魔法屬性傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,3;
+  - Id: 980014
+    AegisName: Magic_AddEle_4
+    Name: 對敵魔法屬性傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,4;
+  - Id: 980015
+    AegisName: Magic_AddEle_5
+    Name: 對敵魔法屬性傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,5;
+  - Id: 980016
+    AegisName: Magic_AddEle_6
+    Name: 對敵魔法屬性傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,6;
+  - Id: 980017
+    AegisName: Magic_AddEle_7
+    Name: 對敵魔法屬性傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,7;
+  - Id: 980018
+    AegisName: Magic_AddEle_8
+    Name: 對敵魔法屬性傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,8;
+  - Id: 980019
+    AegisName: Magic_AddEle_9
+    Name: 對敵魔法屬性傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,9;
+  - Id: 980020
+    AegisName: Magic_AddEle_10
+    Name: 對敵魔法屬性傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,10;
+  - Id: 980021
+    AegisName: Physical_AddRace_1
+    Name: 對敵物理種族傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,1;
+  - Id: 980022
+    AegisName: Physical_AddRace_2
+    Name: 對敵物理種族傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,2;
+  - Id: 980023
+    AegisName: Physical_AddRace_3
+    Name: 對敵物理種族傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,3;
+  - Id: 980024
+    AegisName: Physical_AddRace_4
+    Name: 對敵物理種族傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,4;
+  - Id: 980025
+    AegisName: Physical_AddRace_5
+    Name: 對敵物理種族傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,5;
+  - Id: 980026
+    AegisName: Physical_AddRace_6
+    Name: 對敵物理種族傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,6;
+  - Id: 980027
+    AegisName: Physical_AddRace_7
+    Name: 對敵物理種族傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,7;
+  - Id: 980028
+    AegisName: Physical_AddRace_8
+    Name: 對敵物理種族傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,8;
+  - Id: 980029
+    AegisName: Physical_AddRace_9
+    Name: 對敵物理種族傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,9;
+  - Id: 980030
+    AegisName: Physical_AddRace_10
+    Name: 對敵物理種族傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddRace,RC_All,10;
+  - Id: 980031
+    AegisName: Magic_AddRace_1
+    Name: 對敵魔法種族傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,1;
+  - Id: 980032
+    AegisName: Magic_AddRace_2
+    Name: 對敵魔法種族傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,2;
+  - Id: 980033
+    AegisName: Magic_AddRace_3
+    Name: 對敵魔法種族傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,3;
+  - Id: 980034
+    AegisName: Magic_AddRace_4
+    Name: 對敵魔法種族傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,4;
+  - Id: 980035
+    AegisName: Magic_AddRace_5
+    Name: 對敵魔法種族傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,5;
+  - Id: 980036
+    AegisName: Magic_AddRace_6
+    Name: 對敵魔法種族傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,6;
+  - Id: 980037
+    AegisName: Magic_AddRace_7
+    Name: 對敵魔法種族傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,7;
+  - Id: 980038
+    AegisName: Magic_AddRace_8
+    Name: 對敵魔法種族傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,8;
+  - Id: 980039
+    AegisName: Magic_AddRace_9
+    Name: 對敵魔法種族傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,9;
+  - Id: 980040
+    AegisName: Magic_AddRace_10
+    Name: 對敵魔法種族傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddRace,RC_All,10;
+  - Id: 980041
+    AegisName: Physical_AddClass_1
+    Name: 對敵物理階級傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,1;
+  - Id: 980042
+    AegisName: Physical_AddClass_2
+    Name: 對敵物理階級傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,2;
+  - Id: 980043
+    AegisName: Physical_AddClass_3
+    Name: 對敵物理階級傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,3;
+  - Id: 980044
+    AegisName: Physical_AddClass_4
+    Name: 對敵物理階級傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,4;
+  - Id: 980045
+    AegisName: Physical_AddClass_5
+    Name: 對敵物理階級傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+  - Id: 980046
+    AegisName: Physical_AddClass_6
+    Name: 對敵物理階級傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,6;
+  - Id: 980047
+    AegisName: Physical_AddClass_7
+    Name: 對敵物理階級傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,7;
+  - Id: 980048
+    AegisName: Physical_AddClass_8
+    Name: 對敵物理階級傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,8;
+  - Id: 980049
+    AegisName: Physical_AddClass_9
+    Name: 對敵物理階級傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,9;
+  - Id: 980050
+    AegisName: Physical_AddClass_10
+    Name: 對敵物理階級傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddClass,Class_All,10;
+  - Id: 980051
+    AegisName: Magic_AddClass_1
+    Name: 對敵魔法階級傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,1;
+  - Id: 980052
+    AegisName: Magic_AddClass_2
+    Name: 對敵魔法階級傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,2;
+  - Id: 980053
+    AegisName: Magic_AddClass_3
+    Name: 對敵魔法階級傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,3;
+  - Id: 980054
+    AegisName: Magic_AddClass_4
+    Name: 對敵魔法階級傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,4;
+  - Id: 980055
+    AegisName: Magic_AddClass_5
+    Name: 對敵魔法階級傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,5;
+  - Id: 980056
+    AegisName: Magic_AddClass_6
+    Name: 對敵魔法階級傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,6;
+  - Id: 980057
+    AegisName: Magic_AddClass_7
+    Name: 對敵魔法階級傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,7;
+  - Id: 980058
+    AegisName: Magic_AddClass_8
+    Name: 對敵魔法階級傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,8;
+  - Id: 980059
+    AegisName: Magic_AddClass_9
+    Name: 對敵魔法階級傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,9;
+  - Id: 980060
+    AegisName: Magic_AddClass_10
+    Name: 對敵魔法階級傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddClass,Class_All,10;
+  - Id: 980061
+    AegisName: Physical_AddSize_1
+    Name: 對敵物理體型傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,1;
+  - Id: 980062
+    AegisName: Physical_AddSize_2
+    Name: 對敵物理體型傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,2;
+  - Id: 980063
+    AegisName: Physical_AddSize_3
+    Name: 對敵物理體型傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,3;
+  - Id: 980064
+    AegisName: Physical_AddSize_4
+    Name: 對敵物理體型傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,4;
+  - Id: 980065
+    AegisName: Physical_AddSize_5
+    Name: 對敵物理體型傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,5;
+  - Id: 980066
+    AegisName: Physical_AddSize_6
+    Name: 對敵物理體型傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,6;
+  - Id: 980067
+    AegisName: Physical_AddSize_7
+    Name: 對敵物理體型傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,7;
+  - Id: 980068
+    AegisName: Physical_AddSize_8
+    Name: 對敵物理體型傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,8;
+  - Id: 980069
+    AegisName: Physical_AddSize_9
+    Name: 對敵物理體型傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,9;
+  - Id: 980070
+    AegisName: Physical_AddSize_10
+    Name: 對敵物理體型傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bAddSize,Size_All,10;
+  - Id: 980071
+    AegisName: Magic_AddSize_1
+    Name: 對敵魔法體型傷害增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,1;
+  - Id: 980072
+    AegisName: Magic_AddSize_2
+    Name: 對敵魔法體型傷害增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,2;
+  - Id: 980073
+    AegisName: Magic_AddSize_3
+    Name: 對敵魔法體型傷害增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,3;
+  - Id: 980074
+    AegisName: Magic_AddSize_4
+    Name: 對敵魔法體型傷害增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,4;
+  - Id: 980075
+    AegisName: Magic_AddSize_5
+    Name: 對敵魔法體型傷害增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,5;
+  - Id: 980076
+    AegisName: Magic_AddSize_6
+    Name: 對敵魔法體型傷害增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,6;
+  - Id: 980077
+    AegisName: Magic_AddSize_7
+    Name: 對敵魔法體型傷害增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,7;
+  - Id: 980078
+    AegisName: Magic_AddSize_8
+    Name: 對敵魔法體型傷害增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,8;
+  - Id: 980079
+    AegisName: Magic_AddSize_9
+    Name: 對敵魔法體型傷害增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,9;
+  - Id: 980080
+    AegisName: Magic_AddSize_10
+    Name: 對敵魔法體型傷害增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bMagicAddSize,Size_All,10;
+# 影子鎧甲菁英石附魔
+  - Id: 980081
+    AegisName: Physical_HPDrain_1
+    Name: 物理吸收HP石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,1;
+  - Id: 980082
+    AegisName: Physical_HPDrain_2
+    Name: 物理吸收HP石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,2;
+  - Id: 980083
+    AegisName: Physical_HPDrain_3
+    Name: 物理吸收HP石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,3;
+  - Id: 980084
+    AegisName: Physical_HPDrain_4
+    Name: 物理吸收HP石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,4;
+  - Id: 980085
+    AegisName: Physical_HPDrain_5
+    Name: 物理吸收HP石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,5;
+  - Id: 980086
+    AegisName: Physical_HPDrain_6
+    Name: 物理吸收HP石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,6;
+  - Id: 980087
+    AegisName: Physical_HPDrain_7
+    Name: 物理吸收HP石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,7;
+  - Id: 980088
+    AegisName: Physical_HPDrain_8
+    Name: 物理吸收HP石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,8;
+  - Id: 980089
+    AegisName: Physical_HPDrain_9
+    Name: 物理吸收HP石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,9;
+  - Id: 980090
+    AegisName: Physical_HPDrain_10
+    Name: 物理吸收HP石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,20,10;
+  - Id: 980091
+    AegisName: Physical_SPDrain_1
+    Name: 物理吸收SP石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,1;
+  - Id: 980092
+    AegisName: Physical_SPDrain_2
+    Name: 物理吸收SP石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,2;
+  - Id: 980093
+    AegisName: Physical_SPDrain_3
+    Name: 物理吸收SP石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,3;
+  - Id: 980094
+    AegisName: Physical_SPDrain_4
+    Name: 物理吸收SP石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,4;
+  - Id: 980095
+    AegisName: Physical_SPDrain_5
+    Name: 物理吸收SP石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,5;
+  - Id: 980096
+    AegisName: Physical_SPDrain_6
+    Name: 物理吸收SP石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,6;
+  - Id: 980097
+    AegisName: Physical_SPDrain_7
+    Name: 物理吸收SP石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,7;
+  - Id: 980098
+    AegisName: Physical_SPDrain_8
+    Name: 物理吸收SP石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,8;
+  - Id: 980099
+    AegisName: Physical_SPDrain_9
+    Name: 物理吸收SP石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,9;
+  - Id: 980100
+    AegisName: Physical_SPDrain_10
+    Name: 物理吸收SP石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bHPDrainRate,10,10;
+  - Id: 980101
+    AegisName: Magic_HPDrain_1
+    Name: 魔法吸收HP石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,100;
+  - Id: 980102
+    AegisName: Magic_HPDrain_2
+    Name: 魔法吸收HP石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,200;
+  - Id: 980103
+    AegisName: Magic_HPDrain_3
+    Name: 魔法吸收HP石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,300;
+  - Id: 980104
+    AegisName: Magic_HPDrain_4
+    Name: 魔法吸收HP石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,400;
+  - Id: 980105
+    AegisName: Magic_HPDrain_5
+    Name: 魔法吸收HP石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,500;
+  - Id: 980106
+    AegisName: Magic_HPDrain_6
+    Name: 魔法吸收HP石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,600;
+  - Id: 980107
+    AegisName: Magic_HPDrain_7
+    Name: 魔法吸收HP石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,700;
+  - Id: 980108
+    AegisName: Magic_HPDrain_8
+    Name: 魔法吸收HP石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,800;
+  - Id: 980109
+    AegisName: Magic_HPDrain_9
+    Name: 魔法吸收HP石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,900;
+  - Id: 980110
+    AegisName: Magic_HPDrain_10
+    Name: 魔法吸收HP石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicHPGainValue,1000;
+  - Id: 980111
+    AegisName: Magic_SPDrain_1
+    Name: 魔法吸收SP石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,50;
+  - Id: 980112
+    AegisName: Magic_SPDrain_2
+    Name: 魔法吸收SP石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,100;
+  - Id: 980113
+    AegisName: Magic_SPDrain_3
+    Name: 魔法吸收SP石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,150;
+  - Id: 980114
+    AegisName: Magic_SPDrain_4
+    Name: 魔法吸收SP石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,200;
+  - Id: 980115
+    AegisName: Magic_SPDrain_5
+    Name: 魔法吸收SP石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,250;
+  - Id: 980116
+    AegisName: Magic_SPDrain_6
+    Name: 魔法吸收SP石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,300;
+  - Id: 980117
+    AegisName: Magic_SPDrain_7
+    Name: 魔法吸收SP石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,350;
+  - Id: 980118
+    AegisName: Magic_SPDrain_8
+    Name: 魔法吸收SP石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,400;
+  - Id: 980119
+    AegisName: Magic_SPDrain_9
+    Name: 魔法吸收SP石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,450;
+  - Id: 980120
+    AegisName: Magic_SPDrain_10
+    Name: 魔法吸收SP石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicSPGainValue,500;
+  - Id: 980121
+    AegisName: NearAtkDef_1
+    Name: 受到近距離傷害減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,1;
+  - Id: 980122
+    AegisName: NearAtkDef_2
+    Name: 受到近距離傷害減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,2;
+  - Id: 980123
+    AegisName: NearAtkDef_3
+    Name: 受到近距離傷害減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,3;
+  - Id: 980124
+    AegisName: NearAtkDef_4
+    Name: 受到近距離傷害減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,4;
+  - Id: 980125
+    AegisName: NearAtkDef_5
+    Name: 受到近距離傷害減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,5;
+  - Id: 980126
+    AegisName: NearAtkDef_6
+    Name: 受到近距離傷害減少石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,6;
+  - Id: 980127
+    AegisName: NearAtkDef_7
+    Name: 受到近距離傷害減少石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,7;
+  - Id: 980128
+    AegisName: NearAtkDef_8
+    Name: 受到近距離傷害減少石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,8;
+  - Id: 980129
+    AegisName: NearAtkDef_9
+    Name: 受到近距離傷害減少石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,9;
+  - Id: 980130
+    AegisName: NearAtkDef_10
+    Name: 受到近距離傷害減少石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bNearAtkDef,10;
+  - Id: 980131
+    AegisName: LongAtkDef_1
+    Name: 受到遠距離傷害減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,1;
+  - Id: 980132
+    AegisName: LongAtkDef_2
+    Name: 受到遠距離傷害減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,2;
+  - Id: 980133
+    AegisName: LongAtkDef_3
+    Name: 受到遠距離傷害減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,3;
+  - Id: 980134
+    AegisName: LongAtkDef_4
+    Name: 受到遠距離傷害減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,4;
+  - Id: 980135
+    AegisName: LongAtkDef_5
+    Name: 受到遠距離傷害減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,5;
+  - Id: 980136
+    AegisName: LongAtkDef_6
+    Name: 受到遠距離傷害減少石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,6;
+  - Id: 980137
+    AegisName: LongAtkDef_7
+    Name: 受到遠距離傷害減少石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,7;
+  - Id: 980138
+    AegisName: LongAtkDef_8
+    Name: 受到遠距離傷害減少石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,8;
+  - Id: 980139
+    AegisName: LongAtkDef_9
+    Name: 受到遠距離傷害減少石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,9;
+  - Id: 980140
+    AegisName: LongAtkDef_10
+    Name: 受到遠距離傷害減少石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bLongAtkDef,10;
+  - Id: 980141
+    AegisName: MagicAtkDef_1
+    Name: 受到魔法傷害減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,1;
+  - Id: 980142
+    AegisName: MagicAtkDef_2
+    Name: 受到魔法傷害減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,2;
+  - Id: 980143
+    AegisName: MagicAtkDef_3
+    Name: 受到魔法傷害減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,3;
+  - Id: 980144
+    AegisName: MagicAtkDef_4
+    Name: 受到魔法傷害減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,4;
+  - Id: 980145
+    AegisName: MagicAtkDef_5
+    Name: 受到魔法傷害減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,5;
+  - Id: 980146
+    AegisName: MagicAtkDef_6
+    Name: 受到魔法傷害減少石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,6;
+  - Id: 980147
+    AegisName: MagicAtkDef_7
+    Name: 受到魔法傷害減少石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,7;
+  - Id: 980148
+    AegisName: MagicAtkDef_8
+    Name: 受到魔法傷害減少石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,8;
+  - Id: 980149
+    AegisName: MagicAtkDef_9
+    Name: 受到魔法傷害減少石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,9;
+  - Id: 980150
+    AegisName: MagicAtkDef_10
+    Name: 受到魔法傷害減少石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMagicAtkDef,10;
+  - Id: 980151
+    AegisName: SkillCooldown_1
+    Name: 獨立冷卻減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bSkillCooldown,-100;
+  - Id: 980152
+    AegisName: SkillCooldown_2
+    Name: 獨立冷卻減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bSkillCooldown,-200;
+  - Id: 980153
+    AegisName: SkillCooldown_3
+    Name: 獨立冷卻減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bSkillCooldown,-300;
+  - Id: 980154
+    AegisName: SkillCooldown_4
+    Name: 獨立冷卻減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bSkillCooldown,-400;
+  - Id: 980155
+    AegisName: SkillCooldown_5
+    Name: 獨立冷卻減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bSkillCooldown,-500;
+  - Id: 980156
+    AegisName: MaxHPrate_1
+    Name: MHP增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,1;
+  - Id: 980157
+    AegisName: MaxHPrate_2
+    Name: MHP增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,2;
+  - Id: 980158
+    AegisName: MaxHPrate_3
+    Name: MHP增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,3;
+  - Id: 980159
+    AegisName: MaxHPrate_4
+    Name: MHP增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,4;
+  - Id: 980160
+    AegisName: MaxHPrate_5
+    Name: MHP增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,5;
+  - Id: 980161
+    AegisName: MaxHPrate_6
+    Name: MHP增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,6;
+  - Id: 980162
+    AegisName: MaxHPrate_7
+    Name: MHP增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,7;
+  - Id: 980163
+    AegisName: MaxHPrate_8
+    Name: MHP增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,8;
+  - Id: 980164
+    AegisName: MaxHPrate_9
+    Name: MHP增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,9;
+  - Id: 980165
+    AegisName: MaxHPrate_10
+    Name: MHP增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxHPrate,10;
+  - Id: 980166
+    AegisName: MaxSPrate_1
+    Name: MSP增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,1;
+  - Id: 980167
+    AegisName: MaxSPrate_2
+    Name: MSP增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,2;
+  - Id: 980168
+    AegisName: MaxSPrate_3
+    Name: MSP增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,3;
+  - Id: 980169
+    AegisName: MaxSPrate_4
+    Name: MSP增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,4;
+  - Id: 980170
+    AegisName: MaxSPrate_5
+    Name: MSP增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,5;
+  - Id: 980171
+    AegisName: MaxSPrate_6
+    Name: MSP增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,6;
+  - Id: 980172
+    AegisName: MaxSPrate_7
+    Name: MSP增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,7;
+  - Id: 980173
+    AegisName: MaxSPrate_8
+    Name: MSP增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,8;
+  - Id: 980174
+    AegisName: MaxSPrate_9
+    Name: MSP增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,9;
+  - Id: 980175
+    AegisName: MaxSPrate_10
+    Name: MSP增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bMaxSPrate,10;
+  - Id: 980176
+    AegisName: Flee2_1
+    Name: 完全迴避增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,1;
+  - Id: 980177
+    AegisName: Flee2_2
+    Name: 完全迴避增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,2;
+  - Id: 980178
+    AegisName: Flee2_3
+    Name: 完全迴避增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,3;
+  - Id: 980179
+    AegisName: Flee2_4
+    Name: 完全迴避增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,4;
+  - Id: 980180
+    AegisName: Flee2_5
+    Name: 完全迴避增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,5;
+  - Id: 980181
+    AegisName: Flee2_6
+    Name: 完全迴避增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,6;
+  - Id: 980182
+    AegisName: Flee2_7
+    Name: 完全迴避增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,7;
+  - Id: 980183
+    AegisName: Flee2_8
+    Name: 完全迴避增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,8;
+  - Id: 980184
+    AegisName: Flee2_9
+    Name: 完全迴避增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,9;
+  - Id: 980185
+    AegisName: Flee2_10
+    Name: 完全迴避增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee2,10;

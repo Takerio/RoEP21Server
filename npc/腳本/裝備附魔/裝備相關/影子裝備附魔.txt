@@ -1,0 +1,38 @@
+vdistrict1,76,10,6	script	附魔精靈	661,{
+
+	mes "[附魔精靈]";
+	mes "你好呀~";
+	mes "我是負責幫影子裝備附魔的精靈";
+	mes "哪件裝備要附魔呢?";
+	next;
+	switch(select("使用影子菁英石附魔")){
+
+	case 1:
+		mes "[附魔精靈]";
+		mes "哪件裝備要附魔呢?";
+		next;
+		switch(select("影子手套菁英石:影子鎧甲菁英石")){
+
+		case 1:
+		close2;
+		item_enchant 10100;
+		end;
+		case 2:
+		close2;
+		item_enchant 10101;
+		end;
+		
+
+		}
+
+
+	}
+
+OnInit:
+	waitingroom "影子裝備附魔",0;
+	end;	
+}
+
+
+
+

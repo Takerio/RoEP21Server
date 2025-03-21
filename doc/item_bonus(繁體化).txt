@@ -335,6 +335,7 @@ bonus bNoCastCancel2;                防止詠唱被打斷	(防斷詠)			註：G
 bonus bDelayrate,-n;                  所有技能共通延遲(AfterCastActDelay) - n%
 bonus2 bSkillDelay,sk,-t;             技能 sk 共通延遲(AfterCastActDelay) - t 毫秒
 bonus2 bSkillCooldown,sk,-t;          技能 sk 獨立延遲/冷卻(Cooldown) - t 毫秒
+bonus bSkillCooldown,-t;		所有技能獨立延遲 - t 毫秒 (熊貓)
 
 =======================================
 |3. 指定群組 - Group-specific Bonuses |
@@ -517,7 +518,7 @@ bonus3 bStateNoRecoverRace,r,x,t;     物理攻擊 r 種族的單位時, 將有 
 
 獲得血量/魔力 - HP/SP gain
 ------------
-bonus bHPGainValue,n;                 物理攻擊殺死魔物時可以得到 n 點 HP
+bonus bHPGainValue,n;                 物理攻擊殺死魔物時可以得到 n 點 HP (擊倒怪物/擊倒魔物時)
 bonus bSPGainValue,n;                 物理攻擊殺死魔物時可以得到 n 點 SP
 bonus2 bSPGainRace,r,n;               物理攻擊殺死 r 種族魔物時可以得到 n 點 SP
 bonus bLongHPGainValue,n;     		  遠程物理攻擊殺死魔物時可以得到 n 點 HP

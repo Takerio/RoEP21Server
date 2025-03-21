@@ -21631,3 +21631,165 @@ Body:
         bonus2 bMagicAddSize,RC_All,10;
         bonus2 bAddSize,RC_All,(.@ga/3)*5;
         bonus2 bMagicAddSize,RC_All,(.@ga/3)*5;
+#(JRO)憤怒的指環
+  - Combos:
+      - Combo:
+          - Anulus_Ira    # 490110
+          - Mechaspider_Card   # 27180
+    Script: |     
+        if(getskilllv("IQ_WILL_OF_FAITH") >= 10){
+        bonus2 bSkillCooldown,"IQ_EXPOSION_BLASTER",-200;
+        bonus2 bAddRace,20;
+        skill "RA_UNLIMIT",3;
+        bonus2 bSkillCooldown,"RA_UNLIMIT",-120000;
+        }
+  - Combos:
+      - Combo:
+          - Anulus_Ira    # 490110
+          - aegis_300471   # 300471
+    Script: |     
+        if(getskilllv("HN_SPIRAL_PIERCE_MAX") >= 10){
+        bonus bLongAtkRate,30;
+        skill "RA_UNLIMIT",3;
+        bonus2 bSkillCooldown,"RA_UNLIMIT",-120000;        
+        }
+#(JRO)療育鈴鐺
+  - Combos:
+      - Combo:
+          - Item_JRO_420302    # 420302
+          - Bacsojin_Card   # 4372
+    Script: |     
+        skill "SOA_SOUL_OF_HEAVEN_AND_EARTH",10;
+#(JRO)銀爪戒指
+  - Combos:
+      - Combo:
+          - Ring_of_SilverClaw    # 490243
+          - IFN_Phreeoni_Card   # 4649
+    Script: |     
+        bonus bCritical,-100;
+#(JRO)元素寶石
+  - Combos:
+      - Combo:
+          - Elemental_Jewel    # 490453
+          - Card_300137   # 300137
+    Script: |     
+        bonus2 bMagicAddRace,RC_All,20;
+        bonus2 bMagicAtkEle,Ele_Poison,50;
+#(JRO)帕祖祖的戒指
+  - Combos:
+      - Combo:
+          - Ring_of_Pazuzu    # 490098
+          - Card_300137   # 300137
+    Script: |     
+        bonus2 bMagicAddClass,Class_Boss,25;
+        bonus2 bSubEle,Ele_All,15;
+        if(getskilllv("HN_SELFSTUDY_SOCERY") >= 10){
+        bonus4 bAutoSpellOnSkill,"HN_METEOR_STORM_BUSTER","WL_COMET",1,200;
+        }
+        if(getskilllv("SS_ANTENPOU") >= 10){
+        bonus bMaxHPrate,35;
+        bonus2 bSkillCooldown,"WL_COMET",-16000;
+        bonus4 bAutoSpellOnSkill,"SS_SEKIENHOU","SS_RAIDENPOU",10,1000;
+        }
+        if(getskilllv("AG_CLIMAX") >= 5){
+        bonus2 bSkillCooldown,"AG_CLIMAX",-240000;
+        bonus2 bSkillCooldown,"AG_ALL_BLOOM",-600;
+        bonus2 bSkillCooldown,"AG_DESTRUCTIVE_HURRICANE",-600;
+        }
+#(JRO)太陽眼鏡
+  - Combos:
+      - Combo:
+          - Sunglasses_JRO    # 50042
+          - Mob_Scarf   # 28502
+    Script: |   
+        bonus2 bSubEle,Ele_All,20;
+        .@a = (readparam(bStr)+readparam(bLuk))/80;
+        .@b = (readparam(bAgi)+readparam(bVit))/80;
+        .@c = (readparam(bInt)+readparam(bDex))/80;
+        bonus bMaxHPrate,5*.@b;
+        bonus2 bAddClass,Class_All,6*.@a;
+        bonus bMatk,120*.@c;
+        bonus bCritical,5*.@a;
+        bonus bAspdRate,5*.@b;
+        bonus bVariableCastrate,-3*.@c;
+        bonus bCritAtkRate,10*.@a;
+        bonus2 bSubRace,RC_DemiHuman,((2*.@b)+2);
+        bonus2 bSubRace,RC_Player_Human,((2*.@b)+2);
+        bonus bHealPower,10*.@c;
+  - Combos:
+      - Combo:
+          - Sunglasses_JRO    # 50042
+          - Mob_Scarf_LT    # 420425 
+    Script: |   
+        bonus2 bSubEle,Ele_All,20;
+        .@sl = (readparam(bStr)+readparam(bLuk));
+        .@av = (readparam(bAgi)+readparam(bVit));
+        .@id = (readparam(bInt)+readparam(bDex));
+        .@pc = (readparam(bPow) + readparam(bCrt))/60;
+        .@sc = (readparam(bSpl) + readparam(bCon))/60;
+        .@sw = (readparam(bSta) + readparam(bWis))/60;
+        
+        bonus2 bSubRace,RC_Player_Human,2;
+        bonus2 bSubRace,RC_Player_Doram,2;
+        bonus2 bAddRace,RC_All,15;
+        bonus2 bMagicAddRace,RC_All,15;
+        bonus2 bAddClass,Class_All,(.@sl/80)*5;
+        bonus bCritical,(.@sl/80)*5;
+        bonus bCritAtkRate,(.@sl/80)*15;
+        bonus bMatk,(.@id/80)*150;
+        bonus bFixedCast,-((.@id/80)*100);
+        bonus bHealPower,(.@id/80)*10;
+        bonus bAspdRate,(.@av/80)*7;
+        bonus bMaxHPrate,(.@av/80)*7;
+        bonus2 bSubRace,RC_Player_Human,(.@av/80)*2;
+        bonus2 bSubRace,RC_Player_Doram,(.@av/80)*2;     
+        bonus bAtk,.@pc*120;
+        bonus bCRate,.@pc*7;
+        bonus2 bMagicAddRace,RC_All,.@sc*7;
+        bonus bFixedCast,-(.@sc*100);
+        bonus bShortAtkRate,.@sw*15;
+        bonus bLongAtkRate,.@sw*15;
+        bonus2 bMagicAtkEle,Ele_All,.@sw*15;
+#暴徒領巾-LT
+  - Combos:
+      - Combo:  
+          - Mob_Scarf_LT    # 420425
+          - Sunglasses
+      - Combo:
+          - Mob_Scarf_LT    # 420425
+          - Sunglasses_
+      - Combo:
+          - Mob_Scarf_LT    # 420425
+          - Glasses
+      - Combo:
+          - Mob_Scarf_LT    # 420425
+          - Glasses_
+    Script: |   
+        .@sl = (readparam(bStr)+readparam(bLuk));
+        .@av = (readparam(bAgi)+readparam(bVit));
+        .@id = (readparam(bInt)+readparam(bDex));
+        .@pc = (readparam(bPow) + readparam(bCrt))/60;
+        .@sc = (readparam(bSpl) + readparam(bCon))/60;
+        .@sw = (readparam(bSta) + readparam(bWis))/60;
+        
+        bonus2 bSubRace,RC_Player_Human,2;
+        bonus2 bSubRace,RC_Player_Doram,2;
+        bonus2 bAddRace,RC_All,15;
+        bonus2 bMagicAddRace,RC_All,15;
+        bonus2 bAddClass,Class_All,(.@sl/80)*5;
+        bonus bCritical,(.@sl/80)*5;
+        bonus bCritAtkRate,(.@sl/80)*15;
+        bonus bMatk,(.@id/80)*150;
+        bonus bFixedCast,-((.@id/80)*100);
+        bonus bHealPower,(.@id/80)*10;
+        bonus bAspdRate,(.@av/80)*7;
+        bonus bMaxHPrate,(.@av/80)*7;
+        bonus2 bSubRace,RC_Player_Human,(.@av/80)*2;
+        bonus2 bSubRace,RC_Player_Doram,(.@av/80)*2;     
+        bonus bAtk,.@pc*120;
+        bonus bCRate,.@pc*7;
+        bonus2 bMagicAddRace,RC_All,.@sc*7;
+        bonus bFixedCast,-(.@sc*100);
+        bonus bShortAtkRate,.@sw*15;
+        bonus bLongAtkRate,.@sw*15;
+        bonus2 bMagicAtkEle,Ele_All,.@sw*15;

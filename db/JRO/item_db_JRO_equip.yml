@@ -5814,21 +5814,8 @@ Body:
       bonus bMaxHP,100*readparam(bVit);
       bonus bDef,2*readparam(bVit);
 
-  - Id: 490243
-    AegisName: aegis_490243
-    Name: 銀爪戒指
-    Type: Armor
-    Weight: 100
-    Slots: 1
-    Locations:
-      Both_Accessory: true
-    ArmorLevel: 1
-    EquipLevelMin: 100
-    Script: |
-      bonus bCritical,50;
-      bonus bAtkRate,10;
-      bonus2 bSubRace,RC_Player_Human,3;
-      bonus bCritAtkRate,BaseLevel/5;
+
+
 
 #夏季產包2016
 
@@ -6917,6 +6904,7 @@ Body:
     EquipLevelMin: 100
     Locations:
       Head_Mid: true
+    ArmorLevel: 1
     View: 2226
     Script: |
       bonus2 bMagicAddSize,Size_All,20;
@@ -6926,7 +6914,195 @@ Body:
       bonus bDelayrate,-15;
     UnEquipScript: |
       sc_end SC_TELEKINESIS_INTENSE;
-
+  - Id: 490110
+    AegisName: Anulus_Ira
+    Name: (JRO)憤怒的指環
+    Type: Armor
+    Weight: 10
+    Defense: 2
+    Refineable: false
+    Slots: 1
+    EquipLevelMin: 100
+    ArmorLevel: 1
+    Locations:
+      Both_Accessory: true
+    Script: |
+      bonus bPow,15;
+      bonus bAtkRate,15;
+      bonus2 bSkillAtk,"IQ_EXPOSION_BLASTER",BaseLevel/4;
+      bonus2 bSkillAtk,"HN_SPIRAL_PIERCE_MAX",BaseLevel/3;
+      if(getskilllv("AL_DP") >= 10){
+      bonus bLongAtkRate,18;
+      }
+      if(getskilllv("AL_DEMONBANE") >= 10){
+      bonus bPerfectHitAddRate,20;
+      }
+      bonus bDelayrate,-15;
+      bonus bHPGainValue,100;    
+      bonus bSPGainValue,10;
+  - Id: 420302
+    AegisName: Item_JRO_420302
+    Name: (JRO)療育鈴鐺
+    Type: Armor
+    Refineable: false
+    Slots: 1
+    ArmorLevel: 1
+    Locations:
+      Head_Low: true
+    Weight: 10
+    EquipLevelMin: 100
+    View: 2483
+    Script: |
+      bonus2 bRegenPercentHP,5,1000;
+      bonus bMaxHpRate,getskilllv("MG_SAFETYWALL")*2;
+      bonus bHealPower,300;
+      bonus2 bSkillCooldown,"AB_CHEAL",-2000;
+    UnEquipScript: |
+      heal -2000000,0;
+  - Id: 490243
+    AegisName: Ring_of_SilverClaw
+    Name: (JRO)銀爪戒指
+    Type: Armor
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 1
+    EquipLevelMin: 100
+    Script: |
+      bonus bCritical,50;
+      bonus bAtkRate,10;
+      bonus bCritAtkRate,BaseLevel/5;
+  - Id: 480045
+    AegisName: Guardian_Soul
+    Name: (JRO)守護靈魂外袍
+    Type: Armor
+    Buy: 20
+    Weight: 30
+    Defense: 25
+    Locations:
+      Garment: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Refineable: true
+    Gradable: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      set .@sl,readparam(bStr) + readparam(bLuk);
+      set .@av,readparam(bAgi) + readparam(bVit);
+      set .@id,readparam(bInt) + readparam(bDex);
+      bonus2 bSubRace,RC_DemiHuman,5;
+      bonus2 bSubRace,RC_Player_Doram,5;
+      bonus2 bSubEle,Ele_Ghost,-7;
+      bonus2 bSubEle,Ele_Holy,-7;
+      skill "WZ_HEAVENDRIVE",3;
+      bonus bAtk,(.@sl/18)*15;
+      bonus bDelayrate,-(.@sl/18);
+      bonus2 bSubEle,Ele_Undead,(.@sl/18)*6;
+      bonus2 bSubEle,Ele_Dark,(.@sl/18)*6;
+      bonus bAspdRate,(.@av/18)*2;
+      bonus bMaxHPrate,(.@av/18)*2;
+      bonus2 bSubEle,Ele_Fire,(.@av/18)*6;
+      bonus2 bSubEle,Ele_Water,(.@av/18)*6;     
+      bonus bMatk,(.@id/18)*15;
+      bonus bCastrate,-.@id;  
+      bonus2 bSubEle,Ele_Wind,(.@id/18)*6;
+      bonus2 bSubEle,Ele_Earth,(.@id/18)*6;         
+      if(.@g >= 1){
+      bonus bRes,30;
+      bonus bMRes,30;
+      bonus2 bAddEle,Ele_All,10;
+      bonus2 bMagicAddEle,Ele_All,10;
+      bonus2 bSubEle,Ele_Neutral,10;
+        if(.@r >= 17){
+        bonus2 bAddClass,Class_Boss,(.@r/2)*3;
+        }
+      }
+  - Id: 490453
+    AegisName: Elemental_Jewel
+    Name: (JRO)元素寶石
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    EquipLevelMin: 200
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 1
+    Refineable: false
+    Script: |
+      bonus bSpl,12;
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus2 bSkillCooldown,"SO_VARETYR_SPEAR",-1000;
+      bonus2 bSkillCooldown,"EM_VENOM_SWAMP",-600;
+      bonus2 bSkillAtk,"SO_VARETYR_SPEAR",BaseLevel/3;
+      
+      bonus2 bSkillAtk,"EM_CONFLAGRATION",BaseLevel/7;
+      bonus2 bSkillAtk,"EM_DIAMOND_STORM",BaseLevel/7;
+      bonus2 bSkillAtk,"EM_LIGHTNING_LAND",BaseLevel/7;
+      bonus2 bSkillAtk,"EM_TERRA_DRIVE",BaseLevel/7;      
+      bonus2 bSkillAtk,"SO_VARETYR_SPEAR",BaseLevel/7;
+  - Id: 490098
+    AegisName: Ring_of_Pazuzu
+    Name: (JRO)帕祖祖的戒指
+    Type: Armor
+    Buy: 20
+    Weight: 10
+    Slots: 1
+    EquipLevelMin: 100
+    Locations:
+      Left_Accessory: true
+    ArmorLevel: 1
+    Refineable: false
+    Script: |
+      bonus bSpl,7;
+      bonus2 bMagicAddSize,Size_All,15;
+      bonus2 bSkillAtk,"AG_STORM_CANNON",BaseLevel/5;
+      bonus2 bSkillAtk,"AG_CRIMSON_ARROW",BaseLevel/5;
+      bonus2 bSkillAtk,"HN_JUPITEL_THUNDER_STORM",BaseLevel/5;
+      bonus2 bSkillAtk,"HN_METEOR_STORM_BUSTER",BaseLevel/5;
+      bonus2 bSkillAtk,"SS_SEKIENHOU",BaseLevel/5;
+      bonus2 bSkillAtk,"SS_RAIDENPOU",BaseLevel/5;
+      bonus2 bSkillAtk,"WL_TETRAVORTEX",BaseLevel;
+      bonus2 bSkillAtk,"WL_CHAINLIGHTNING",BaseLevel/2;
+      bonus2 bSkillAtk,"WL_CRIMSONROCK",BaseLevel/2;
+      bonus2 bSkillCooldown,"AG_STORM_CANNON",-50;
+      bonus2 bSkillCooldown,"AG_CRIMSON_ARROW",-50;
+      bonus2 bSkillCooldown,"HN_JUPITEL_THUNDER_STORM",-400;
+      bonus2 bSkillCooldown,"HN_METEOR_STORM_BUSTER",-750;
+      bonus2 bSkillCooldown,"SS_SEKIENHOU",-400;
+      bonus2 bSkillCooldown,"SS_RAIDENPOU",-400;
+      bonus2 bMagicAtkEle,Ele_Fire,20;
+      bonus2 bMagicAtkEle,Ele_Wind,20;
+      bonus bDelayrate,-20;
+  - Id: 50042
+    AegisName: Sunglasses_JRO
+    Name: (JRO)太陽眼鏡
+    Type: Armor
+    Buy: 5000
+    Weight: 100
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    ArmorLevel: 1
+    View: 12
+    Script: |
+      .@sv = readparam(bStr) + readparam(bVit);
+      .@ia = readparam(bInt) + readparam(bAgi);
+      .@ld = readparam(bLuk) + readparam(bDex);
+      bonus bAtk,100;
+      bonus bMatk,100;
+      bonus2 bSubEle,Ele_All,-20;
+      bonus bShortAtkRate,(.@sv/80)*10;
+      bonus bPow,(.@sv/80)*5;
+      bonus2 bMagicAtkEle,Ele_All,(.@ia/80)*10;
+      bonus bSpl,(.@ia/80)*5;
+      bonus bLongAtkRate,(.@ld/80)*10;
+      bonus bCon,(.@ia/80)*5;
+      
+      
+      
 
 
 

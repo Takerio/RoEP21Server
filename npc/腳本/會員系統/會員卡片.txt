@@ -18,21 +18,32 @@ OnPCOpenRouletteFilter:
 	mes "MVP點數：^0088FF"+#MVP_Points+"^000000";
 	mes "世界BOSS積分：^0088FF"+#Worl_Boss_Points01+"^000000";
 	next;
-	switch(select("開啟內掛","更改背景音樂","廣播服務","隨身倉庫","記憶撿物","修理裝備","隱藏設定","狩獵任務擊殺提醒","卡點自救")) {
+	switch(select("開啟內掛","更換字體顏色","更改背景音樂","廣播服務","隨身倉庫","記憶撿物","修理裝備","隱藏設定","狩獵任務擊殺提醒","卡點自救")) {
 
 	case 1:
 	callfunc "Oro_Bot";
 	end;
 
 	case 2:
+				setarray .@color$,"1.(重置顏色)^FFFFFF","2.(黑框粉字)^FF99FF","3.(黑框藍字)^99FFFF","4.(黑框紫字)^9F88FF","5.(黑框綠字)^99FF99","6.(粉框黑字)^FF99FF","7.(藍框黑字)^99FFFF","8.(黃框黑字)^FFFF33","9.(綠框黑字)^99FF99","10.(綠框粉字)^FF99FF";
+			for ( .@i = 0; .@i < getarraysize(.@color$); .@i++ )
+			.@menu$ += "- "+.@color$[.@i]+""+strcharinfo(0)+"^000000:";
+			.@Selection = select(.@menu$)-1;
+			mes " 您確定要選擇此顏色嗎？";
+			next;
+			if ( select(" ^5599FF確定更改"," ^FF99FF取消對話^000000") == 2 )
+			end;
+			setfont .@Selection;
+			end;
+	case 3:
 	callfunc "main_sound";
 	end;
 
-	case 3:
+	case 4:
 	callfunc "Megaphone";
 	end;
 
-	case 4:
+	case 5:
 	switch(select("倉庫1服務","倉庫2服務","倉庫3服務")) {
 		case 1:
 		close2;
@@ -50,19 +61,19 @@ OnPCOpenRouletteFilter:
 		end;
 		}
 
-	case 5:
+	case 6:
 	callfunc "Autoloot";
 	end;
 
-	case 6:
+	case 7:
 	callfunc "Rrc_Main_0";
 	end;
 
-	case 7:
+	case 8:
 	callfunc "HIDE_MOD";
 	end;
 
-	case 8:
+	case 9:
 	mes "[狩獵任務管理員]";
 	mes "擊殺提醒是否開啟";
 	next;
@@ -77,7 +88,7 @@ OnPCOpenRouletteFilter:
 	close;
 	}
 
-	case 9:
+	case 10:
 	callfunc "self_help";
 	end;
 	}
