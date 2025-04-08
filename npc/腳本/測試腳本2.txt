@@ -31,7 +31,7 @@ Onsell:
 				dispbottom "- 此次販售一共獲得 ^0000FF"+.@total+"^000000 z.",0xFFFF90;
 			else
 				mes "- 您沒有設置中的道具可以販賣.";
-			close;
+			end;
 /*Onallstatus:
     atcommand "@str 30000";
     atcommand "@agi 30000";
