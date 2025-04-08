@@ -56,7 +56,6 @@ Onsend:
 		callfunc "Give_to_SameMap";
 		break;
 	}
-	close;
 	end;
 Ontestequip:
 	if(strcharinfo(3) != "bago_01"){
@@ -116,7 +115,6 @@ Ontestequip:
 Ontest:
 	mes getiteminfo(.@selectId,5);
 	close;
-	end;
 /*Onfollow:
 	// get the party member names
 	getpartymember getcharid(1),0;
