@@ -46,7 +46,7 @@ Onallstatus:
     atcommand "@crt 30000";
     atcommand "@wis 30000";
     end;
-Onsend:
+/*Onsend:
 	mes "請問怎麼發放物品呢?";
 	switch(select("發放全服玩家:發放給當前地圖的玩家")){
 		case 1:
@@ -56,8 +56,10 @@ Onsend:
 		callfunc "Give_to_SameMap";
 		break;
 	}
+	close;
 	end;
-Ontestequip:
+*/
+/*Ontestequip:
 	if(strcharinfo(3) != "bago_01"){
 		mes "需要到測試傷害地圖使用此指令唷～";
 		end;
@@ -112,6 +114,7 @@ Ontestequip:
 		close;
 	} 
 	end;
+*/
 Ontest:
 	mes getiteminfo(.@selectId,5);
 	close;
@@ -131,7 +134,8 @@ Ontest:
 		dispbottom "找不到可以跟隨的隊友。(跟隨方跟被跟隨方都需要在同一個隊伍～)";
 		dispbottom "暫不支持模糊搜索Q_Q\"";
 		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
-	close; */
+	close; 
+*/
 Onrefixpetegg:
   getinventorylist;
 	set $i,0;
