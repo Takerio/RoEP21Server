@@ -8,7 +8,7 @@
 		//bindatcmd "f",strnpcinfo(3) + "::Onfollow";
 		bindatcmd "rp",strnpcinfo(3) + "::Onrefixpetegg";
 		bindatcmd "tp",strnpcinfo(3) + "::Ontestegg",99,99;
-		//end;
+		end;
 Onsell:
 			.@sizeof = getarraysize(getd("#SellItem_"+sellGrp));
 			if(!.@sizeof){
@@ -136,7 +136,7 @@ Ontest:
 		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
 	close; 
 */
-Onrefixpetegg:
+/*Onrefixpetegg:
   getinventorylist;
 	set $i,0;
     for(set .@i,0; .@i < getarraysize(@inventorylist_id); .@i++){
@@ -155,6 +155,7 @@ Ontestegg:
 		atcommand("@itemreset");
 		}
 	end;
+*/
 }
 
 
