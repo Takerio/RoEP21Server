@@ -13,6 +13,8 @@
     }
 
 
+
+
 /*
 = 適合範圍: 熊貓RA
 = 副本名<<EP18.0-沉沒之塔-Constallation Tower>>
@@ -56,26 +58,484 @@ trinity	mapflag	noteleport // 主城無法飛
 	
 	
 trinity,37,33,5	script	萊蒂西亞#12	4_4JOB_LETICIA,{
-	setarray str$[0],"案子1","案子2";
-	for(set .@i,0;.@i <getarraysize(str$);.@i++){
-		mes str$[.@i];
+
+ //測試副本 
+
+
+
+	//調試入口	
+	//cutin "4job_leticia_02",2;
+	mes "[萊蒂西亞]";
+	mes "^888800無限樓層挑戰限時30分鐘^000000";
+	mes "^FF0000每日挑戰1次晚上12點重置次數^000000";
+	mes "^FF0000每週日晚上12點重置樓數^000000";
+	mes "^FF0000挑戰一定樓層會獲得屬性加成^000000";
+	mes "15樓 ALL+1 對BOSS魔法與物理傷害+1%";
+	mes "35樓 ALL+2 對BOSS魔法與物理傷害+2%";
+	mes "55樓 ALL+3 對BOSS魔法與物理傷害+3%";
+	mes "75樓 ALL+4 對BOSS魔法與物理傷害+4%";
+	mes "100樓 ALL+5 對BOSS魔法與物理傷害+5%";
+	mes "150樓 ALL+6 對BOSS魔法與物理傷害+6%";
+	mes "*******************************";
+	if(sinkbonus)
+	mes "^550088你目前挑戰最高層第"+sinkbonus+"層^000000";
+	mes "^A42D00今日你還有^FF0000 "+(.time-sink_ta_co)+" ^000000^A42D00次機會挑戰";
+	/*
+		setdialogalign(DIALOG_ALIGN_MIDDLE);
+		setdialogalign(DIALOG_ALIGN_CENTER);
+		setdialogalign(DIALOG_ALIGN_TOP);
+		setdialogsize(500,500);
+    */
+	next;
+	if(sink_ta_co>=.time){
+		mes "你今日的挑戰機會已用完";
+		close;
 		
 	}
-	switch(select("選擇?:一個:二")){
-		case 1:
-		input str$;
-		if(strstr(str$,"一個")){
-			goto s2;
-		}else{};
-		break;
-		case 2:{
-		s2:
-		dispbottom "找到一個";
-		break;
+	//調試入口	
+//入場等級設定
+		if (BaseLevel < 99){
+			mes "[沉沒之塔]";
+			mes "等級不足99";
+			close;
 		}
-		case 3:
-		break;
-	}
-	close;
+//入場人數設定		
+		getpartymember getcharid(1);
+		if($@partymembercount>12){
+			mes "[沉沒之塔]";
+			mes "隊伍人數過多";
+			close;
+		}
+		
+		
+		.@charleston_time = checkquest(30599,PLAYTIME);
+		if (.@charleston_time == 2) {
+			mes "^0000ff可以再次進入沉沒之塔。^000000";
+			erasequest 30599;
+			close; 
+		} else {
+			.@party_id = getcharid(1);
+			.@p_name$ = getpartyname(.@party_id);
+			.@md_name$ = "沉沒之塔";
+			if (!.@party_id) {
+				mes "請先組成一支隊伍。";
+				close;
+			}
+			if (getcharid(0) == getpartyleader(.@party_id,2))
+				set .@menu$, "開啟沉沒之塔:進入沉沒之塔:取消";
+			else
+				set .@menu$, ":進入沉沒之塔:取消";
+			switch(select(.@menu$)) {
+				case 1:
+					if(instance_mapname("1@mcd") != "") {
+						mes "- 副本不能重複開啟。 -";
+						close;
+					}
+					.@instance = instance_create(.@md_name$);
+					set getinstancevar('party_id,instance_id(IM_PARTY)),getcharid(1);					
+					if (.@instance < 0) {
+							mes "隊伍名稱: "+.@p_name$;
+							mes "隊    長: "+strcharinfo(0);
+							mes "^0000ff"+.@md_name$+" ^000000- 創建副本失敗!";
+							close;
+					}
+					mes "^ff0000可以再次進入沉沒之塔了。^000000";
+					close;
+				case 2:
+						if(!instance_id(IM_PARTY)){
+							mes "還未生成副本";
+							close;
+						}							
+						if ( getinstancevar('Win,instance_id(IM_PARTY)) ) {
+							mes "[沉沒之塔]";
+							mes "副本已經結束";
+							close;
+						}
+						if ( getinstancevar('start,instance_id(IM_PARTY)) ) {
+							mes "[沉沒之塔]";
+							mes "副本已經開始";
+							close;
+						}
+						if ( getinstancevar('start_game,instance_id(IM_PARTY)) ) {
+							mes "[沉沒之塔]";
+							mes "副本已經開啟.無法再進入了";
+							close;
+						}
+					switch(instance_enter("沉沒之塔")) {
+						case 0:
+							sink_ta_co++;
+							//setquest 30599; //state=1
+							end;	
+						case 1:
+							mes "只有註冊過的成員可以進入副本 "+"沉沒之塔"+"。";
+							close;
+						case 2:
+							mes "副本進度 "+"沉沒之塔"+" 不存在。";
+							mes "隊長還沒有建立副本進度。";
+							close;
+						case 3:
+							mes "不明錯誤.";
+							close;
+					}
+				case 3:
+					end;	
+			}
+		}
+end;
+Oninit:
+waitingroom "奇怪的沉沒之船",0;
+.time = 1;
+end;
 }
 
+
+
+
+1@ch_u,8,55,5	script	萊蒂西亞#122_n	4_4JOB_LETICIA,{
+
+	if(getcharid(0)!= getpartyleader(getcharid(1),2)){
+
+		mes "[萊蒂西亞]";
+		mes "讓隊長過來";
+		close;
+	}
+	getpartymember 'party_id;
+	.@party_co = $@partymembercount;
+	mes "[萊蒂西亞]";
+	mes "隊伍人數為: "+.@party_co+"人,每層魔物數量將會按人數的數量翻倍";
+	mes "挑戰開始前.請確定最終人數!";
+	next;
+	if(select("確定好了!開始挑戰:取消")==2)end;
+	getpartymember 'party_id;
+	.@party_co = $@partymembercount;
+		'party_co = .@party_co;
+		'start = 1;
+		donpcevent instance_npcname("#sink_mob_n")+"::OnEnable";
+		hideonnpc instance_npcname(strnpcinfo(0));
+		mapannounce 'sink_map$, "挑戰時間開始限時30分鐘",bc_map,"0x00ff99";
+		initnpctimer;
+	end;
+Ontimer1500000:
+			mapannounce 'sink_map$, "挑戰時間還省下5分鐘",bc_map,"0x00ff99";
+			end;
+Ontimer1680000:
+			mapannounce 'sink_map$, "挑戰時間還省下2分鐘",bc_map,"0x00ff99";
+			end;
+Ontimer1740000:
+			mapannounce 'sink_map$, "挑戰時間還省下1分鐘",bc_map,"0x00ff99";
+			end;
+Ontimer1800000:
+			mapannounce 'sink_map$, "挑戰時間結束",bc_map,"0x00ff99";
+			mapwarp 'sink_map$,"SavePoint",0,0;
+			end;			
+OnInstanceInit:
+	//disablenpc instance_npcname("#BOSS房間入口");
+	end;	
+}
+
+
+
+
+1@ch_u,0,0,5	script	#sink_conf_n	-1,{
+	end;
+OnInstanceInit:
+	//設置每五層BOSS魔物隨機ID
+		setarray 'mob_MVP_id[0],22422,22421,22420,22373,22372,22370,22371,22364,22363,22362,22180,22179,22178,22177,22176,22175,22174,21996,21982;
+
+	//設置魔物隨機ID
+		setarray 'mob_id[0],1038,1039,1046,1059,1086,1087,1112,1115;
+		//1871,1873,1719,1492,1147,1688,1583,2068,3074,2156,2087,2165,1623,1389,1046,1272,1150,1115,2253,1059,2251,1039,1785,2249,2255,1418,1157,2202,1685,1734,1658,1630,1038,1511,2362,1885,1751,1086,1768,3741,2441,2442,1832,1112,1312,1251,1087,1252,1190,1159,1917,22418,22417,22416,22415,22414,22413,22412,3208,3209,3210,3211,3212,3213,3226,3227,3228,3229,3230,3231,3232;
+
+//	setarray 'mob_id[0],1002;
+	'mob_count = 3;//基礎魔物數量  總數為: 人數*'mob_count
+	
+	
+
+	'sink_map$ = instance_mapname("1@ch_u");
+	
+	for(.@i = 0 ;.@i < 5 ;.@i++){
+
+		'point_x1[.@i] = 6 + 85*.@i ;
+		'point_y1[.@i] = 16 ;	
+		'point_x2[.@i] = 35 + 85*.@i ;
+		'point_y2[.@i] = 59 ;	
+
+		'point_start_x[.@i] = 10 + 85*.@i ;
+		'point_start_y[.@i] = 55 ;
+
+		'point_jump_x[.@i] = 45 + 85*.@i ;
+		'point_jump_y[.@i] = 29 ;
+	}	
+
+	'sink_floor = 0;
+	end;
+
+}
+
+1@ch_u,47,23,5	script	#沉沒之塔跳躍裝置1	10007,{
+	mapwarp 'sink_map$,'sink_map$,96,55;
+	end;
+OnInstanceInit:
+	hideonnpc instance_npcname(strnpcinfo(0));
+	end;
+}
+
+1@ch_u,132,23,5	script	#沉沒之塔跳躍裝置2	10007,{
+	mapwarp 'sink_map$,'sink_map$,181,55;
+	end;
+OnInstanceInit:
+	hideonnpc instance_npcname(strnpcinfo(0));
+	end;
+}
+1@ch_u,217,23,5	script	#沉沒之塔跳躍裝置3	10007,{
+	mapwarp 'sink_map$,'sink_map$,266,55;
+	end;
+OnInstanceInit:
+	hideonnpc instance_npcname(strnpcinfo(0));
+	end;
+}
+1@ch_u,302,23,5	script	#沉沒之塔跳躍裝置4	10007,{
+	mapwarp 'sink_map$,'sink_map$,352,55;
+	end;
+OnInstanceInit:
+	hideonnpc instance_npcname(strnpcinfo(0));
+	end;
+}
+
+
+
+1@ch_u,387,23,5	script	#沉沒之塔跳躍裝置5	10007,{
+	
+	if(getcharid(0)== getpartyleader(getcharid(1),2)){
+		
+		
+	
+		if(select("繼續挑戰下層:領獎勵並結束")==2){
+			'win = 1;
+			mapannounce 'sink_map$, "[沉沒之塔]: 本次挑戰結束.請前來領獎",bc_map,"0x00ff00";
+			callfunc "sinkreward_n",'sink_floor;
+			warp "SavePoint",0,0;
+		}
+		else {
+			'start_game = 1;
+			hideonnpc instance_npcname("#沉沒之塔跳躍裝置1");
+			hideonnpc instance_npcname("#沉沒之塔跳躍裝置2");
+			hideonnpc instance_npcname("#沉沒之塔跳躍裝置3");
+			hideonnpc instance_npcname("#沉沒之塔跳躍裝置4");
+			hideonnpc instance_npcname("#沉沒之塔跳躍裝置5");
+
+			mapwarp 'sink_map$,'sink_map$,11,55;
+			cleanmap 'sink_map$;
+		}
+	}
+	else {
+		if(!'win)end;
+		callfunc "sinkreward_n",'sink_floor;
+		warp "SavePoint",0,0;
+	}
+	end;
+OnInstanceInit:
+	hideonnpc instance_npcname(strnpcinfo(0));
+	end;
+}
+
+
+1@ch_u,0,0,5	script	#sink_mob_n	-1,{
+	end;
+OnEnable:
+
+	callfunc "沉沒之塔魔物調用_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+	end;
+OnMyMobDead:
+
+	
+	set .@mob_dead_num,mobcount('sink_map$,instance_npcname(strnpcinfo(0))+"::OnMyMobDead");
+	if (.@mob_dead_num < 1) {
+		if(('sink_floor+1)>=10 && ('sink_floor+1)%10==0)
+		announce "[沉沒之塔] : "+getpartyname('party_id)+"隊伍已通關第"+('sink_floor+1)+"層，獲得神秘能力的加持",0;
+		
+		mapannounce 'sink_map$, "[沉沒之塔]: 地下第 "+('sink_floor+1)+" 層魔物清除完畢",bc_map,"0x00ff00";
+
+		.@floor = 'sink_floor % 5;	
+		hideoffnpc instance_npcname("#沉沒之塔跳躍裝置"+(.@floor+1));
+		
+		//movenpc instance_npcname("#沉沒之塔跳躍裝置"),'point_jump_x[.@floor],'point_jump_y[.@floor];
+		'sink_floor++;
+		//debugmes ""+'sink_floor;
+			getpartymember 'party_id;
+		.@party_co = $@partymembercount;
+		callfunc "沉沒之塔魔物調用_n",'sink_floor,'mob_count*'party_co,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+		IF('sink_floor % 5 == 4 && 'sink_floor>=4)
+		callfunc "沉沒之塔魔物調用_n2",'sink_floor,1,instance_npcname(strnpcinfo(0))+"::OnMyMobDead";
+
+		
+
+
+	}
+	else
+		mapannounce 'sink_map$, "[沉沒之塔]: 地下第 "+('sink_floor+1)+" 層內剩餘魔物數量為 - " + .@mob_dead_num,bc_map,"0x00ff99";
+	end;
+}
+
+//設置獲得樓層屬性能力
+-	script	#sink_mob_b	-1,{
+	end;
+
+//每日挑戰次數重置時間
+OnClock0000:
+	query_sql("SELECT `key` FROM `char_reg_num` where `key` = 'sink_ta_co'",.@key$);
+	if(!getarraysize(.@key$))end;
+	query_sql("update `char_reg_num` set `value`= '0' where `key` = 'sink_ta_co'");	
+	end;
+//週日重置時間
+OnSun2359:
+	query_sql("SELECT `key` FROM `char_reg_num` where `key` = 'sinkbonus'",.@key$);
+	if(!getarraysize(.@key$))end;
+	query_sql("update `char_reg_num` set `value`= '0' where `key` = 'sinkbonus'");	
+	end;
+
+
+//官方設置不能使用 原地復活之證
+OnPCUseTokenFilter:
+if(instance_id(IM_PARTY)){
+if(strcharinfo(3)==getinstancevar('sink_map$,instance_id(IM_PARTY))){
+	processhalt;
+	dispbottom "這裡無法使用原地復活之證";
+	end;
+}
+}
+
+	end;
+OnPCStatCalcEvent:
+
+if(sinkbonus>=15 && sinkbonus< 35){
+		bonus bAllStats,1; 
+		bonus2 bAddClass,Class_Boss,1;
+		bonus2 bMagicAddClass,Class_Boss,1;
+}
+else if(sinkbonus>=35 && sinkbonus< 55){
+		bonus bAllStats,2; 
+		bonus2 bAddClass,Class_Boss,2;
+		bonus2 bMagicAddClass,Class_Boss,2;
+}
+else if(sinkbonus>=55 && sinkbonus< 75){
+		bonus bAllStats,3; 
+		bonus2 bAddClass,Class_Boss,3;
+		bonus2 bMagicAddClass,Class_Boss,3;
+}
+else if(sinkbonus>=75 && sinkbonus< 100){
+		bonus bAllStats,4; 
+		bonus2 bAddClass,Class_Boss,4;
+		bonus2 bMagicAddClass,Class_Boss,4;
+
+}
+else if(sinkbonus>=100 && sinkbonus< 150){
+		bonus bAllStats,5; 
+		bonus2 bAddClass,Class_Boss,5;
+		bonus2 bMagicAddClass,Class_Boss,5;
+
+}
+else if(sinkbonus>=150){
+
+		bonus bAllStats,6; 
+		bonus2 bAddClass,Class_Boss,6;
+		bonus2 bMagicAddClass,Class_Boss,6;
+
+}
+
+
+
+end;
+}
+//獎勵設置 樓層疊加模式
+function	script	sinkreward_n	{
+		//設置獎勵  getarg(0) 表示樓層數
+			getitem 6635,getarg(0)/2;					
+			if(sinkbonus<getarg(0)){
+				sinkbonus = getarg(0);	
+			}
+			recalculatestat;
+			return;
+}
+
+
+
+
+function	script	沉沒之塔魔物調用_n	{
+	.@level = getarg(0);//1樓層等級
+	.@mob_count = getarg(1);//樓層魔物數量
+	.@label$ = getarg(2);
+	.@floor = 'sink_floor % 5;
+	for(.@i=0;.@i < .@mob_count;.@i++){
+			areamonster 'sink_map$,'point_x1[.@floor],'point_y1[.@floor],'point_x2[.@floor],'point_y2[.@floor],"--ja--",'mob_id[rand(getarraysize('mob_id))],1,.@label$;
+			.@mob_uid = $@mobid[0];
+			//隨機屬性調整
+			setunitdata .@mob_uid,UMOB_SIZE,rand(3);
+			setunitdata .@mob_uid,UMOB_MODE,103298709;
+			setunitdata .@mob_uid,UMOB_ELETYPE,rand(10);
+			setunitdata .@mob_uid,UMOB_ELELEVEL,4;
+			setunitdata .@mob_uid,UMOB_RACE,rand(10);
+
+			getunitdata .@mob_uid,.@array;
+			//四轉屬性 物理抗性與魔法抗性
+			setunitdata .@mob_uid,UMOB_RES,.@array[UMOB_RES]+'sink_floor*2;
+			setunitdata .@mob_uid,UMOB_MRES,.@array[UMOB_MRES]+'sink_floor*2;		
+			//
+			setunitdata .@mob_uid,UMOB_ATKMIN,.@array[UMOB_ATKMIN]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_ATKMAX,.@array[UMOB_ATKMAX]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_MATKMIN,.@array[UMOB_MATKMIN]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_MATKMAX,.@array[UMOB_MATKMAX]+'sink_floor*100;
+	
+	
+	
+			
+			
+			
+			//基礎減傷
+			setunitdata .@mob_uid,UMOB_DAMAGETAKEN,'sink_floor > 30?1:10;
+			//最大HP
+			setunitdata .@mob_uid,UMOB_MAXHP,.@array[UMOB_MAXHP]>2100000000?2100000000:.@array[UMOB_MAXHP]*'sink_floor;	
+
+		}
+		return;
+}
+
+
+function	script	沉沒之塔魔物調用_n2	{
+	.@level = getarg(0);//1樓層等級
+	.@mob_count = getarg(1);//樓層魔物數量
+	.@label$ = getarg(2);
+	.@floor = 'sink_floor % 5;
+	for(.@i=0;.@i < .@mob_count;.@i++){
+			areamonster 'sink_map$,'point_x1[.@floor],'point_y1[.@floor],'point_x2[.@floor],'point_y2[.@floor],"--ja--",'mob_MVP_id[rand(getarraysize('mob_MVP_id))],1,.@label$;
+			.@mob_uid = $@mobid[0];
+			//隨機屬性調整
+			setunitdata .@mob_uid,UMOB_SIZE,rand(3);
+			setunitdata .@mob_uid,UMOB_MODE,103298709;
+			setunitdata .@mob_uid,UMOB_ELETYPE,rand(10);
+			setunitdata .@mob_uid,UMOB_ELELEVEL,4;
+			setunitdata .@mob_uid,UMOB_RACE,rand(10);
+
+			getunitdata .@mob_uid,.@array;
+			//四轉屬性 物理抗性與魔法抗性
+			setunitdata .@mob_uid,UMOB_RES,.@array[UMOB_RES]+'sink_floor*2;
+			setunitdata .@mob_uid,UMOB_MRES,.@array[UMOB_MRES]+'sink_floor*2;		
+			//
+			setunitdata .@mob_uid,UMOB_ATKMIN,.@array[UMOB_ATKMIN]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_ATKMAX,.@array[UMOB_ATKMAX]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_MATKMIN,.@array[UMOB_MATKMIN]+'sink_floor*100;
+			setunitdata .@mob_uid,UMOB_MATKMAX,.@array[UMOB_MATKMAX]+'sink_floor*100;
+	
+	
+	
+			
+			
+			
+			//基礎減傷
+			setunitdata .@mob_uid,UMOB_DAMAGETAKEN,'sink_floor > 30?1:10;
+			//最大HP
+			setunitdata .@mob_uid,UMOB_MAXHP,.@array[UMOB_MAXHP]>2100000000?2100000000:.@array[UMOB_MAXHP]*'sink_floor;	
+
+		}
+		return;
+}
