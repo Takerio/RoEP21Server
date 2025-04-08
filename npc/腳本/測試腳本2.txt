@@ -147,7 +147,7 @@ Onrefixpetegg:
 			
         }
     }
-    close;
+    end;
 Ontestegg:
 		atcommand("@itemreset");
 	    for(set .@i,960400;.@i <= 960556;.@i++){
