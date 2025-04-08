@@ -1,4 +1,4 @@
--	script	RandomItem	-1,{
+/*-	script	RandomItem	-1,{
 
 /*
 OnPCKillMvpEvent:
@@ -25,7 +25,7 @@ setarray .@questRequiredAmount[0],30;
     } 
     end;
     }
-
+*/
 trinity,127,93,6	script	每日任務情報員#li	643,{
     set .@mvpcard1,30;
 	mes "[每日任務情報員]";

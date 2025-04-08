@@ -32,7 +32,7 @@ Onsell:
 			else
 				mes "- 您沒有設置中的道具可以販賣.";
 			end;
-/*Onallstatus:
+Onallstatus:
     atcommand "@str 30000";
     atcommand "@agi 30000";
     atcommand "@vit 30000";
@@ -46,7 +46,7 @@ Onsell:
     atcommand "@crt 30000";
     atcommand "@wis 30000";
     end;
-*/
+
 /*Onsend:
 	mes "請問怎麼發放物品呢?";
 	switch(select("發放全服玩家:發放給當前地圖的玩家")){
@@ -137,7 +137,7 @@ Ontest:
 		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
 	close; 
 */
-/*Onrefixpetegg:
+Onrefixpetegg:
   getinventorylist;
 	set $i,0;
     for(set .@i,0; .@i < getarraysize(@inventorylist_id); .@i++){
@@ -156,7 +156,7 @@ Ontestegg:
 		atcommand("@itemreset");
 		}
 	end;
-*/
+
 }
 
 
