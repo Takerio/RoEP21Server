@@ -1,13 +1,15 @@
   
 	-	script	test_pet	-1,{
-		set .target_account_id,2000002;
-		end;
-		if (getcharid(3) != .target_account_id) {end;}
+		
 		
         OnPCAddItemFilter:
+	   	set .target_account_id,2000002;
+		if (getcharid(3) != .target_account_id) {end;}
+
         set @additem_nameid$,@additem_nameid;
         debugmes "寵物編號：" + @additem_nameid$;
         end;
+		
     }
 
 
