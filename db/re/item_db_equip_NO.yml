@@ -978,18 +978,6 @@ Body:
     Script: |
       skill "SA_SPELLBREAKER",2;
 
-  - Id: 420425
-    AegisName: Mob_Scarf_LT
-    Name: 暴徒領巾-LT
-    Type: Armor
-    Buy: 10
-    Weight: 100
-    Locations:
-      Head_Low: true
-    ArmorLevel: 2
-    View: 975
-    Script: |
-      skill "SA_SPELLBREAKER",2;
 
 #玩具工廠的遺跡(席琳基米)
 #官方怪物掉落
@@ -4376,3 +4364,17 @@ Body:
           }
         }  
       }
+  - Id: 420425
+    AegisName: Mob_Scarf_LT
+    Name: 暴徒領巾
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Locations:
+      Head_Low: true
+    ArmorLevel: 1
+    View: 975
+    Script: |
+      skill "SA_SPELLBREAKER",2;
+      skill "RG_COMPULSION",5;
+      

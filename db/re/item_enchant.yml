@@ -51724,7 +51724,7 @@ Body:
                 Chance: 270
 
 # 影子戰靴菁英石
-  - Id: 10020
+  - Id: 10102
     TargetItems:      
       S_Vital_Shoes: true
       S_Athletic_Shoes: true
@@ -51889,7 +51889,7 @@ Body:
       Price: 100000
       Materials:
         - Material: Silvervine
-          Amount: 3
+          Amount: 10
     Order:
       - Slot: 3
       - Slot: 2
@@ -51897,521 +51897,173 @@ Body:
       - Slot: 3
         Price: 100000
         Materials:
-          - Material: Shadow_Glove_Elite_Stone
-            Amount: 3
+          - Material: Shadow_Boots_Elite_Stone
+            Amount: 5
         Chance: 100000
         Enchants:
           - Enchantgrade: 0
             Items:
-              - Item: Luck5
-                Chance: 1500
-              - Item: Luck4
-                Chance: 2000
-              - Item: Luck3
-                Chance: 3000
-              - Item: Luck2
-                Chance: 3500
-              - Item: Luck1
-                Chance: 4500
-              - Item: Vitality5
-                Chance: 1500
-              - Item: Vitality4
-                Chance: 2000
-              - Item: Vitality3
-                Chance: 3000
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Vitality1
-                Chance: 4500
-              - Item: Agility5
-                Chance: 1500
-              - Item: Agility4
-                Chance: 2000
-              - Item: Agility3
-                Chance: 3000
-              - Item: Agility2
-                Chance: 3500
-              - Item: Agility1
-                Chance: 4500
-              - Item: Dexterity5
-                Chance: 1500
-              - Item: Dexterity4
-                Chance: 2000
-              - Item: Dexterity3
-                Chance: 3000
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Dexterity1
-                Chance: 4500
-              - Item: Inteligence5
-                Chance: 1500
-              - Item: Inteligence4
-                Chance: 2000
-              - Item: Inteligence3
-                Chance: 3000
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Inteligence1
-                Chance: 4400
-              - Item: Strength5
-                Chance: 1500
-              - Item: Strength4
-                Chance: 2000
-              - Item: Strength3
-                Chance: 3000
-              - Item: Strength2
-                Chance: 3500
-              - Item: Strength1
-                Chance: 4400
-              - Item: Neev_STR_1
-                Chance: 1000
-              - Item: Neev_STR_2
-                Chance: 800
-              - Item: Neev_STR_3
-                Chance: 400
-              - Item: Neev_AGI_1
-                Chance: 1000
-              - Item: Neev_AGI_2
-                Chance: 800
-              - Item: Neev_AGI_3
-                Chance: 400
-              - Item: Neev_INT_1
-                Chance: 1000
-              - Item: Neev_INT_2
-                Chance: 800
-              - Item: Neev_INT_3
-                Chance: 400
-              - Item: Neev_DEX_1
-                Chance: 1000
-              - Item: Neev_DEX_2
-                Chance: 800
-              - Item: Neev_DEX_3
-                Chance: 400
-              - Item: Neev_LUK_1
-                Chance: 1000
-              - Item: Neev_LUK_2
-                Chance: 800
-              - Item: Neev_LUK_3
-                Chance: 400
-              - Item: Neev_VIT_1
-                Chance: 1000
-              - Item: Neev_VIT_2
-                Chance: 800
-              - Item: Neev_VIT_3
-                Chance: 400
-          - Enchantgrade: 1
-            Items:
-              - Item: Luck5
-                Chance: 1500
-              - Item: Luck4
-                Chance: 2000
-              - Item: Luck3
-                Chance: 3000
-              - Item: Luck2
-                Chance: 3500
-              - Item: Luck1
-                Chance: 4500
-              - Item: Vitality5
-                Chance: 1500
-              - Item: Vitality4
-                Chance: 2000
-              - Item: Vitality3
-                Chance: 3000
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Vitality1
-                Chance: 4500
-              - Item: Agility5
-                Chance: 1500
-              - Item: Agility4
-                Chance: 2000
-              - Item: Agility3
-                Chance: 3000
-              - Item: Agility2
-                Chance: 3500
-              - Item: Agility1
-                Chance: 4500
-              - Item: Dexterity5
-                Chance: 1500
-              - Item: Dexterity4
-                Chance: 2000
-              - Item: Dexterity3
-                Chance: 3000
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Dexterity1
-                Chance: 4500
-              - Item: Inteligence5
-                Chance: 1500
-              - Item: Inteligence4
-                Chance: 2000
-              - Item: Inteligence3
-                Chance: 3000
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Inteligence1
-                Chance: 4400
-              - Item: Strength5
-                Chance: 1500
-              - Item: Strength4
-                Chance: 2000
-              - Item: Strength3
-                Chance: 3000
-              - Item: Strength2
-                Chance: 3500
-              - Item: Strength1
-                Chance: 4400
-              - Item: Neev_STR_1
-                Chance: 1000
-              - Item: Neev_STR_2
-                Chance: 800
-              - Item: Neev_STR_3
-                Chance: 400
-              - Item: Neev_AGI_1
-                Chance: 1000
-              - Item: Neev_AGI_2
-                Chance: 800
-              - Item: Neev_AGI_3
-                Chance: 400
-              - Item: Neev_INT_1
-                Chance: 1000
-              - Item: Neev_INT_2
-                Chance: 800
-              - Item: Neev_INT_3
-                Chance: 400
-              - Item: Neev_DEX_1
-                Chance: 1000
-              - Item: Neev_DEX_2
-                Chance: 800
-              - Item: Neev_DEX_3
-                Chance: 400
-              - Item: Neev_LUK_1
-                Chance: 1000
-              - Item: Neev_LUK_2
-                Chance: 800
-              - Item: Neev_LUK_3
-                Chance: 400
-              - Item: Neev_VIT_1
-                Chance: 1000
-              - Item: Neev_VIT_2
-                Chance: 800
-              - Item: Neev_VIT_3
-                Chance: 400
-          - Enchantgrade: 2
-            Items:
-              - Item: Luck5
-                Chance: 1500
-              - Item: Luck4
-                Chance: 2000
-              - Item: Luck3
-                Chance: 3000
-              - Item: Luck2
-                Chance: 3500
-              - Item: Luck1
-                Chance: 4500
-              - Item: Vitality5
-                Chance: 1500
-              - Item: Vitality4
-                Chance: 2000
-              - Item: Vitality3
-                Chance: 3000
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Vitality1
-                Chance: 4500
-              - Item: Agility5
-                Chance: 1500
-              - Item: Agility4
-                Chance: 2000
-              - Item: Agility3
-                Chance: 3000
-              - Item: Agility2
-                Chance: 3500
-              - Item: Agility1
-                Chance: 4500
-              - Item: Dexterity5
-                Chance: 1500
-              - Item: Dexterity4
-                Chance: 2000
-              - Item: Dexterity3
-                Chance: 3000
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Dexterity1
-                Chance: 4500
-              - Item: Inteligence5
-                Chance: 1500
-              - Item: Inteligence4
-                Chance: 2000
-              - Item: Inteligence3
-                Chance: 3000
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Inteligence1
-                Chance: 4400
-              - Item: Strength5
-                Chance: 1500
-              - Item: Strength4
-                Chance: 2000
-              - Item: Strength3
-                Chance: 3000
-              - Item: Strength2
-                Chance: 3500
-              - Item: Strength1
-                Chance: 4400
-              - Item: Neev_STR_1
-                Chance: 1000
-              - Item: Neev_STR_2
-                Chance: 800
-              - Item: Neev_STR_3
-                Chance: 400
-              - Item: Neev_AGI_1
-                Chance: 1000
-              - Item: Neev_AGI_2
-                Chance: 800
-              - Item: Neev_AGI_3
-                Chance: 400
-              - Item: Neev_INT_1
-                Chance: 1000
-              - Item: Neev_INT_2
-                Chance: 800
-              - Item: Neev_INT_3
-                Chance: 400
-              - Item: Neev_DEX_1
-                Chance: 1000
-              - Item: Neev_DEX_2
-                Chance: 800
-              - Item: Neev_DEX_3
-                Chance: 400
-              - Item: Neev_LUK_1
-                Chance: 1000
-              - Item: Neev_LUK_2
-                Chance: 800
-              - Item: Neev_LUK_3
-                Chance: 400
-              - Item: Neev_VIT_1
-                Chance: 1000
-              - Item: Neev_VIT_2
-                Chance: 800
-              - Item: Neev_VIT_3
-                Chance: 400
-          - Enchantgrade: 3
-            Items:
-              - Item: Luck5
-                Chance: 1500
-              - Item: Luck4
-                Chance: 2000
-              - Item: Luck3
-                Chance: 3000
-              - Item: Luck2
-                Chance: 3500
-              - Item: Luck1
-                Chance: 4500
-              - Item: Vitality5
-                Chance: 1500
-              - Item: Vitality4
-                Chance: 2000
-              - Item: Vitality3
-                Chance: 3000
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Vitality1
-                Chance: 4500
-              - Item: Agility5
-                Chance: 1500
-              - Item: Agility4
-                Chance: 2000
-              - Item: Agility3
-                Chance: 3000
-              - Item: Agility2
-                Chance: 3500
-              - Item: Agility1
-                Chance: 4500
-              - Item: Dexterity5
-                Chance: 1500
-              - Item: Dexterity4
-                Chance: 2000
-              - Item: Dexterity3
-                Chance: 3000
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Dexterity1
-                Chance: 4500
-              - Item: Inteligence5
-                Chance: 1500
-              - Item: Inteligence4
-                Chance: 2000
-              - Item: Inteligence3
-                Chance: 3000
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Inteligence1
-                Chance: 4400
-              - Item: Strength5
-                Chance: 1500
-              - Item: Strength4
-                Chance: 2000
-              - Item: Strength3
-                Chance: 3000
-              - Item: Strength2
-                Chance: 3500
-              - Item: Strength1
-                Chance: 4400
-              - Item: Neev_STR_1
-                Chance: 1000
-              - Item: Neev_STR_2
-                Chance: 800
-              - Item: Neev_STR_3
-                Chance: 400
-              - Item: Neev_AGI_1
-                Chance: 1000
-              - Item: Neev_AGI_2
-                Chance: 800
-              - Item: Neev_AGI_3
-                Chance: 400
-              - Item: Neev_INT_1
-                Chance: 1000
-              - Item: Neev_INT_2
-                Chance: 800
-              - Item: Neev_INT_3
-                Chance: 400
-              - Item: Neev_DEX_1
-                Chance: 1000
-              - Item: Neev_DEX_2
-                Chance: 800
-              - Item: Neev_DEX_3
-                Chance: 400
-              - Item: Neev_LUK_1
-                Chance: 1000
-              - Item: Neev_LUK_2
-                Chance: 800
-              - Item: Neev_LUK_3
-                Chance: 400
-              - Item: Neev_VIT_1
-                Chance: 1000
-              - Item: Neev_VIT_2
-                Chance: 800
-              - Item: Neev_VIT_3
-                Chance: 400
-          - Enchantgrade: 4
-            Items:
-              - Item: Luck5
-                Chance: 1500
-              - Item: Luck4
-                Chance: 2000
-              - Item: Luck3
-                Chance: 3000
-              - Item: Luck2
-                Chance: 3500
-              - Item: Luck1
-                Chance: 4500
-              - Item: Vitality5
-                Chance: 1500
-              - Item: Vitality4
-                Chance: 2000
-              - Item: Vitality3
-                Chance: 3000
-              - Item: Vitality2
-                Chance: 3500
-              - Item: Vitality1
-                Chance: 4500
-              - Item: Agility5
-                Chance: 1500
-              - Item: Agility4
-                Chance: 2000
-              - Item: Agility3
-                Chance: 3000
-              - Item: Agility2
-                Chance: 3500
-              - Item: Agility1
-                Chance: 4500
-              - Item: Dexterity5
-                Chance: 1500
-              - Item: Dexterity4
-                Chance: 2000
-              - Item: Dexterity3
-                Chance: 3000
-              - Item: Dexterity2
-                Chance: 3500
-              - Item: Dexterity1
-                Chance: 4500
-              - Item: Inteligence5
-                Chance: 1500
-              - Item: Inteligence4
-                Chance: 2000
-              - Item: Inteligence3
-                Chance: 3000
-              - Item: Inteligence2
-                Chance: 3500
-              - Item: Inteligence1
-                Chance: 4400
-              - Item: Strength5
-                Chance: 1500
-              - Item: Strength4
-                Chance: 2000
-              - Item: Strength3
-                Chance: 3000
-              - Item: Strength2
-                Chance: 3500
-              - Item: Strength1
-                Chance: 4400
-              - Item: Neev_STR_1
-                Chance: 1000
-              - Item: Neev_STR_2
-                Chance: 800
-              - Item: Neev_STR_3
-                Chance: 400
-              - Item: Neev_AGI_1
-                Chance: 1000
-              - Item: Neev_AGI_2
-                Chance: 800
-              - Item: Neev_AGI_3
-                Chance: 400
-              - Item: Neev_INT_1
-                Chance: 1000
-              - Item: Neev_INT_2
-                Chance: 800
-              - Item: Neev_INT_3
-                Chance: 400
-              - Item: Neev_DEX_1
-                Chance: 1000
-              - Item: Neev_DEX_2
-                Chance: 800
-              - Item: Neev_DEX_3
-                Chance: 400
-              - Item: Neev_LUK_1
-                Chance: 1000
-              - Item: Neev_LUK_2
-                Chance: 800
-              - Item: Neev_LUK_3
-                Chance: 400
-              - Item: Neev_VIT_1
-                Chance: 1000
-              - Item: Neev_VIT_2
-                Chance: 800
-              - Item: Neev_VIT_3
-                Chance: 400
-      - Slot: 2
-        Price: 3000000
-        Materials:
-          - Material: Pow_Meteorite_Fragment
-            Amount: 10
-          - Material: Sta_Meteorite_Fragment
-            Amount: 10
-          - Material: Con_Meteorite_Fragment
-            Amount: 10
-          - Material: Crt_Meteorite_Fragment
-            Amount: 10
-          - Material: Spl_Meteorite_Fragment
-            Amount: 10
-          - Material: Wis_Meteorite_Fragment
-            Amount: 10
-        Chance: 100000
-        Enchants:
-          - Enchantgrade: 0
-            Items:
-              - Item: Spirit_Of_Star_01_CN
-                Chance: 30000 
+              - Item: Cri_add_1
+                Chance: 2273
+              - Item: Cri_add_2
+                Chance: 2045
+              - Item: Cri_add_3
+                Chance: 1818
+              - Item: Cri_add_4
+                Chance: 1591
+              - Item: Cri_add_5
+                Chance: 1364
+              - Item: Cri_add_6
+                Chance: 1136
+              - Item: Cri_add_7
+                Chance: 909
+              - Item: Cri_add_8
+                Chance: 682
+              - Item: Cri_add_9
+                Chance: 455
+              - Item: Cri_add_10
+                Chance: 227
+              - Item: Flee_add_1
+                Chance: 2273
+              - Item: Flee_add_2
+                Chance: 2045
+              - Item: Flee_add_3
+                Chance: 1818
+              - Item: Flee_add_4
+                Chance: 1591
+              - Item: Flee_add_5
+                Chance: 1364
+              - Item: Flee_add_6
+                Chance: 1136
+              - Item: Flee_add_7
+                Chance: 909
+              - Item: Flee_add_8
+                Chance: 682
+              - Item: Flee_add_9
+                Chance: 455
+              - Item: Flee_add_10
+                Chance: 227
+              - Item: AspdRate_add_1
+                Chance: 2273
+              - Item: AspdRate_add_2
+                Chance: 2045
+              - Item: AspdRate_add_3
+                Chance: 1818
+              - Item: AspdRate_add_4
+                Chance: 1591
+              - Item: AspdRate_add_5
+                Chance: 1364
+              - Item: AspdRate_add_6
+                Chance: 1136
+              - Item: AspdRate_add_7
+                Chance: 909
+              - Item: AspdRate_add_8
+                Chance: 682
+              - Item: AspdRate_add_9
+                Chance: 455
+              - Item: AspdRate_add_10
+                Chance: 227
+              - Item: Hit_add_1
+                Chance: 2273
+              - Item: Hit_add_2
+                Chance: 2045
+              - Item: Hit_add_3
+                Chance: 1818
+              - Item: Hit_add_4
+                Chance: 1591
+              - Item: Hit_add_5
+                Chance: 1364
+              - Item: Hit_add_6
+                Chance: 1136
+              - Item: Hit_add_7
+                Chance: 909
+              - Item: Hit_add_8
+                Chance: 682
+              - Item: Hit_add_9
+                Chance: 455
+              - Item: Hit_add_10
+                Chance: 227
+              - Item: FixedCastL_1
+                Chance: 2273
+              - Item: FixedCastL_2
+                Chance: 2045
+              - Item: FixedCastL_3
+                Chance: 1818
+              - Item: FixedCastL_4
+                Chance: 1591
+              - Item: FixedCastL_5
+                Chance: 1364
+              - Item: FixedCastL_6
+                Chance: 1136
+              - Item: FixedCastL_7
+                Chance: 909
+              - Item: FixedCastL_8
+                Chance: 682
+              - Item: FixedCastL_9
+                Chance: 455
+              - Item: FixedCastL_10
+                Chance: 227
+              - Item: VariableCastrateL_1
+                Chance: 2273
+              - Item: VariableCastrateL_2
+                Chance: 2045
+              - Item: VariableCastrateL_3
+                Chance: 1818
+              - Item: VariableCastrateL_4
+                Chance: 1591
+              - Item: VariableCastrateL_5
+                Chance: 1364
+              - Item: VariableCastrateL_6
+                Chance: 1136
+              - Item: VariableCastrateL_7
+                Chance: 909
+              - Item: VariableCastrateL_8
+                Chance: 682
+              - Item: VariableCastrateL_9
+                Chance: 455
+              - Item: VariableCastrateL_10
+                Chance: 227
+              - Item: Exp_add_1
+                Chance: 2273
+              - Item: Exp_add_2
+                Chance: 2045
+              - Item: Exp_add_3
+                Chance: 1818
+              - Item: Exp_add_4
+                Chance: 1591
+              - Item: Exp_add_5
+                Chance: 1364
+              - Item: Exp_add_6
+                Chance: 1136
+              - Item: Exp_add_7
+                Chance: 909
+              - Item: Exp_add_8
+                Chance: 682
+              - Item: Exp_add_9
+                Chance: 455
+              - Item: Exp_add_10
+                Chance: 227
+              - Item: Drop_add_1
+                Chance: 2273
+              - Item: Drop_add_2
+                Chance: 2045
+              - Item: Drop_add_3
+                Chance: 1818
+              - Item: Drop_add_4
+                Chance: 1591
+              - Item: Drop_add_5
+                Chance: 1364
+              - Item: Drop_add_6
+                Chance: 1136
+              - Item: Drop_add_7
+                Chance: 909
+              - Item: Drop_add_8
+                Chance: 682
+              - Item: Drop_add_9
+                Chance: 455
+              - Item: Drop_add_10
+                Chance: 227
+
 # 影子耳環菁英石
   - Id: 10021
     TargetItems:      

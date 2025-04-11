@@ -72111,3 +72111,565 @@ Body:
     Buy: 20
     Script: |
       bonus bFlee2,10;
+# 影子戰靴菁英石附魔
+  - Id: 980186
+    AegisName: Cri_add_1
+    Name: 暴擊增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,1;
+  - Id: 980187
+    AegisName: Cri_add_2
+    Name: 暴擊增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,2;
+  - Id: 980188
+    AegisName: Cri_add_3
+    Name: 暴擊增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,3;
+  - Id: 980189
+    AegisName: Cri_add_4
+    Name: 暴擊增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,4;
+  - Id: 980190
+    AegisName: Cri_add_5
+    Name: 暴擊增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,5;
+  - Id: 980191
+    AegisName: Cri_add_6
+    Name: 暴擊增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,6;
+  - Id: 980192
+    AegisName: Cri_add_7
+    Name: 暴擊增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,7;
+  - Id: 980193
+    AegisName: Cri_add_8
+    Name: 暴擊增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,8;
+  - Id: 980194
+    AegisName: Cri_add_9
+    Name: 暴擊增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,9;
+  - Id: 980195
+    AegisName: Cri_add_10
+    Name: 暴擊增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bCritical,10;
+  - Id: 980196
+    AegisName: Flee_add_1
+    Name: 迴避增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,10;
+  - Id: 980197
+    AegisName: Flee_add_2
+    Name: 迴避增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,20;
+  - Id: 980198
+    AegisName: Flee_add_3
+    Name: 迴避增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,30;
+  - Id: 980199
+    AegisName: Flee_add_4
+    Name: 迴避增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,40;
+  - Id: 980200
+    AegisName: Flee_add_5
+    Name: 迴避增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,50;
+  - Id: 980201
+    AegisName: Flee_add_6
+    Name: 迴避增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,60;
+  - Id: 980202
+    AegisName: Flee_add_7
+    Name: 迴避增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,70;
+  - Id: 980203
+    AegisName: Flee_add_8
+    Name: 迴避增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,80;
+  - Id: 980204
+    AegisName: Flee_add_9
+    Name: 迴避增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,90;
+  - Id: 980205
+    AegisName: Flee_add_10
+    Name: 迴避增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFlee,100;
+  - Id: 980206
+    AegisName: AspdRate_add_1
+    Name: 攻擊速度增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,1;
+  - Id: 980207
+    AegisName: AspdRate_add_2
+    Name: 攻擊速度增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,2;
+  - Id: 980208
+    AegisName: AspdRate_add_3
+    Name: 攻擊速度增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,3;
+  - Id: 980209
+    AegisName: AspdRate_add_4
+    Name: 攻擊速度增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,4;
+  - Id: 980210
+    AegisName: AspdRate_add_5
+    Name: 攻擊速度增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,5;
+  - Id: 980211
+    AegisName: AspdRate_add_6
+    Name: 攻擊速度增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,6;
+  - Id: 980212
+    AegisName: AspdRate_add_7
+    Name: 攻擊速度增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,7;
+  - Id: 980213
+    AegisName: AspdRate_add_8
+    Name: 攻擊速度增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,8;
+  - Id: 980214
+    AegisName: AspdRate_add_9
+    Name: 攻擊速度增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,9;
+  - Id: 980215
+    AegisName: AspdRate_add_10
+    Name: 攻擊速度增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bAspdRate,10;
+  - Id: 980216
+    AegisName: Hit_add_1
+    Name: 命中增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,10;
+  - Id: 980217
+    AegisName: Hit_add_2
+    Name: 命中增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,20;
+  - Id: 980218
+    AegisName: Hit_add_3
+    Name: 命中增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,30;
+  - Id: 980219
+    AegisName: Hit_add_4
+    Name: 命中增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,40;
+  - Id: 980220
+    AegisName: Hit_add_5
+    Name: 命中增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,50;
+  - Id: 980221
+    AegisName: Hit_add_6
+    Name: 命中增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,60;
+  - Id: 980222
+    AegisName: Hit_add_7
+    Name: 命中增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,70;
+  - Id: 980223
+    AegisName: Hit_add_8
+    Name: 命中增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,80;
+  - Id: 980224
+    AegisName: Hit_add_9
+    Name: 命中增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,90;
+  - Id: 980225
+    AegisName: Hit_add_10
+    Name: 命中增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bHit,100;
+  - Id: 980226
+    AegisName: FixedCastL_1
+    Name: 固定詠唱減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-50;
+  - Id: 980227
+    AegisName: FixedCastL_2
+    Name: 固定詠唱減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-100;
+  - Id: 980228
+    AegisName: FixedCastL_3
+    Name: 固定詠唱減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-150;
+  - Id: 980229
+    AegisName: FixedCastL_4
+    Name: 固定詠唱減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-200;
+  - Id: 980230
+    AegisName: FixedCastL_5
+    Name: 固定詠唱減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-250;
+  - Id: 980231
+    AegisName: FixedCastL_6
+    Name: 固定詠唱減少石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-300;
+  - Id: 980232
+    AegisName: FixedCastL_7
+    Name: 固定詠唱減少石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-350;
+  - Id: 980233
+    AegisName: FixedCastL_8
+    Name: 固定詠唱減少石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-400;
+  - Id: 980234
+    AegisName: FixedCastL_9
+    Name: 固定詠唱減少石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-450;
+  - Id: 980235
+    AegisName: FixedCastL_10
+    Name: 固定詠唱減少石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bFixedCast,-500;
+  - Id: 980236
+    AegisName: VariableCastrateL_1
+    Name: 變動詠唱減少石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-1;
+  - Id: 980237
+    AegisName: VariableCastrateL_2
+    Name: 變動詠唱減少石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-2;
+  - Id: 980238
+    AegisName: VariableCastrateL_3
+    Name: 變動詠唱減少石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-3;
+  - Id: 980239
+    AegisName: VariableCastrateL_4
+    Name: 變動詠唱減少石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-4;
+  - Id: 980240
+    AegisName: VariableCastrateL_5
+    Name: 變動詠唱減少石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-5;
+  - Id: 980241
+    AegisName: VariableCastrateL_6
+    Name: 變動詠唱減少石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-6;
+  - Id: 980242
+    AegisName: VariableCastrateL_7
+    Name: 變動詠唱減少石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-7;
+  - Id: 980243
+    AegisName: VariableCastrateL_8
+    Name: 變動詠唱減少石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-8;
+  - Id: 980244
+    AegisName: VariableCastrateL_9
+    Name: 變動詠唱減少石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-9;
+  - Id: 980245
+    AegisName: VariableCastrateL_10
+    Name: 變動詠唱減少石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus bVariableCastrate,-10;
+  - Id: 980246
+    AegisName: Exp_add_1
+    Name: 經驗增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,5;
+  - Id: 980247
+    AegisName: Exp_add_2
+    Name: 經驗增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,10;
+  - Id: 980248
+    AegisName: Exp_add_3
+    Name: 經驗增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,15;
+  - Id: 980249
+    AegisName: Exp_add_4
+    Name: 經驗增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,20;
+  - Id: 980250
+    AegisName: Exp_add_5
+    Name: 經驗增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,25;
+  - Id: 980251
+    AegisName: Exp_add_6
+    Name: 經驗增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,30;
+  - Id: 980252
+    AegisName: Exp_add_7
+    Name: 經驗增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,35;
+  - Id: 980253
+    AegisName: Exp_add_8
+    Name: 經驗增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,40;
+  - Id: 980254
+    AegisName: Exp_add_9
+    Name: 經驗增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,45;
+  - Id: 980255
+    AegisName: Exp_add_10
+    Name: 經驗增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bExpAddRace,RC_All,50;
+  - Id: 980256
+    AegisName: Drop_add_1
+    Name: 掉寶增加石1
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,2;
+  - Id: 980257
+    AegisName: Drop_add_2
+    Name: 掉寶增加石2
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,4;
+  - Id: 980258
+    AegisName: Drop_add_3
+    Name: 掉寶增加石3
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,6;
+  - Id: 980259
+    AegisName: Drop_add_4
+    Name: 掉寶增加石4
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,8;
+  - Id: 980260
+    AegisName: Drop_add_5
+    Name: 掉寶增加石5
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,10;
+  - Id: 980261
+    AegisName: Drop_add_6
+    Name: 掉寶增加石6
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,12;
+  - Id: 980262
+    AegisName: Drop_add_7
+    Name: 掉寶增加石7
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,14;
+  - Id: 980263
+    AegisName: Drop_add_8
+    Name: 掉寶增加石8
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,16;
+  - Id: 980264
+    AegisName: Drop_add_9
+    Name: 掉寶增加石9
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,18;
+  - Id: 980265
+    AegisName: Drop_add_10
+    Name: 掉寶增加石10
+    Type: Card
+    Buy: 20
+    Script: |
+      bonus2 bDropAddRace,RC_All,20;
+

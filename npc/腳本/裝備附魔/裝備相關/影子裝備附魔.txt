@@ -11,7 +11,7 @@ vdistrict1,76,10,6	script	附魔精靈	661,{
 		mes "[附魔精靈]";
 		mes "哪件裝備要附魔呢?";
 		next;
-		switch(select("影子手套菁英石:影子鎧甲菁英石")){
+		switch(select("影子手套菁英石:影子鎧甲菁英石:影子戰靴菁英石")){
 
 		case 1:
 		close2;
@@ -21,7 +21,10 @@ vdistrict1,76,10,6	script	附魔精靈	661,{
 		close2;
 		item_enchant 10101;
 		end;
-		
+		case 3:
+		close2;
+		item_enchant 10102;
+		end;		
 
 		}
 

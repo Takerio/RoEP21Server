@@ -14,8 +14,8 @@ OnClock0259:
 //活動時間
 OnClock0300:
 	$ditu=rand(1,10);
-	setarray $@Dragon_Mod$[1],"普隆德拉","夢羅克","吉芬","愛爾貝塔","艾爾帕蘭","姜餅城","毀葛","崑崙","龍之城","汶巴拉";
-	setarray $@moncitymap$[1],"prontera","morocc","geffen","alberta","aldebaran","xmas","hugel","gonryun","louyang","umbala";
+	setarray $@Dragon_Mod$[1],"普隆德拉","夢羅克","吉芬","愛爾貝塔","艾爾帕蘭","姜餅城","毀葛","崑崙","汶巴拉";
+	setarray $@moncitymap$[1],"prontera","morocc","geffen","alberta","aldebaran","xmas","hugel","gonryun","umbala";
 	set $@Dragon01,200;
 	monster $@moncitymap$[$ditu],0,0,"小型龍族",27091,70,"Dragon_Kill::OnMobKilled01";
 	monster $@moncitymap$[$ditu],0,0,"小型龍族",27092,70,"Dragon_Kill::OnMobKilled01";
