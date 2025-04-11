@@ -31,7 +31,7 @@ Onsell:
 				dispbottom "- 此次販售一共獲得 ^0000FF"+.@total+"^000000 z.",0xFFFF90;
 			else
 				mes "- 您沒有設置中的道具可以販賣.";
-			close;
+			end;
 Onallstatus:
     atcommand "@str 30000";
     atcommand "@agi 30000";
@@ -46,7 +46,8 @@ Onallstatus:
     atcommand "@crt 30000";
     atcommand "@wis 30000";
     end;
-Onsend:
+
+/*Onsend:
 	mes "請問怎麼發放物品呢?";
 	switch(select("發放全服玩家:發放給當前地圖的玩家")){
 		case 1:
@@ -58,7 +59,8 @@ Onsend:
 	}
 	close;
 	end;
-Ontestequip:
+*/
+/*Ontestequip:
 	if(strcharinfo(3) != "bago_01"){
 		mes "需要到測試傷害地圖使用此指令唷～";
 		end;
@@ -113,10 +115,10 @@ Ontestequip:
 		close;
 	} 
 	end;
+*/
 Ontest:
 	mes getiteminfo(.@selectId,5);
 	close;
-	end;
 /*Onfollow:
 	// get the party member names
 	getpartymember getcharid(1),0;
@@ -133,7 +135,8 @@ Ontest:
 		dispbottom "找不到可以跟隨的隊友。(跟隨方跟被跟隨方都需要在同一個隊伍～)";
 		dispbottom "暫不支持模糊搜索Q_Q\"";
 		dispbottom "指令為 @f <要跟隨隊伍中的角色名稱>";
-	close; */
+	close; 
+*/
 Onrefixpetegg:
   getinventorylist;
 	set $i,0;
@@ -145,7 +148,7 @@ Onrefixpetegg:
 			
         }
     }
-    close;
+    end;
 Ontestegg:
 		atcommand("@itemreset");
 	    for(set .@i,960400;.@i <= 960556;.@i++){
@@ -153,6 +156,7 @@ Ontestegg:
 		atcommand("@itemreset");
 		}
 	end;
+
 }
 
 

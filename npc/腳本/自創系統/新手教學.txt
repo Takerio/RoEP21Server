@@ -3,25 +3,9 @@ trinity,117,77,4	script	新手教學員#new02	10348,{
 	mes "[新手教學員]";
 	mes "新手冒險家啊，你需要什麼服務呢?";
 	next;
-	menu "申請經驗&掉寶加倍",L_ko5,"推薦練等地點",L_map,"推薦賺錢方式",L_ko1,"領取 新手服飾",L_ko2,"領取 新年紅包(同一帳號只能領取一次~)",H_newyear,getgmlevel()>=90?"GM在線設置":"",L_GM,"取消",L_ko00;
+	menu "申請經驗&掉寶加倍",L_ko5,"推薦練等地點",L_map,"推薦賺錢方式",L_ko1,"領取 新手服飾",L_ko2,getgmlevel()>=90?"GM在線設置":"",L_GM,"取消",L_ko00;
 
-H_newyear:
-	if ( #Happy_new_year == 1 ) {
-	mes "[新手教學員]";
-	mes "你已經領取過過年紅包了～～";
-	close;
-	}
-	else if(BaseLevel == 275){
-	set #Happy_new_year,1;
-	getitem 81017,5; // 紅利轉蛋(1)
-	getitem 80064,5; // 紅利轉蛋(2)
-	getitem 61005,3; // 3E rb
-	close;
-	}else{
-		mes "[新手教學員]";
-		mes "等級需要達到275才能領取紅包唷~~";
-		close;
-	}
+
 
 L_ko1:
 	mes "[新手教學員]";
