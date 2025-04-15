@@ -3030,7 +3030,7 @@ Body:
       bonus2 bSkillAtk,"GC_ROLLINGCUTTER",BaseLevel/5; 
       bonus2 bSkillAtk,"GC_CROSSRIPPERSLASHER",BaseLevel/5;
   - Id: 32245
-    AegisName: Unknown_Item_32245
+    AegisName: RingOfThought_TW #Unknown_Item_32245
     Name: 思念之戒
     Type: Armor
     Buy: 10
@@ -4377,4 +4377,254 @@ Body:
     Script: |
       skill "SA_SPELLBREAKER",2;
       skill "RG_COMPULSION",5;
-      
+  - Id: 480554
+    AegisName: C_M_Cape_LT
+    Name: 變幻莫測魔術斗篷-LT
+    Type: Armor
+    SubType: Garment
+    Buy: 20
+    Weight: 50
+    Defense: 0
+    Slots: 1
+    EquipLevelMin: 100
+    Refineable: true
+    Gradable: true
+    View: 0
+    ArmorLevel: 2
+    Locations:
+      Garment: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMatk,15*(.@r/2);
+      bonus bSpl,.@r/2;
+      bonus2 bMagicAtkEle,Ele_All,(.@r/3)*7;
+      if (.@r >= 7) {
+      bonus bMatkRate,15;
+        if (.@r >= 9) {
+        bonus5 bAutoSpell,"AB_JUDEX",10,200,BF_SHORT,1;
+        bonus5 bAutoSpell,"LG_RAYOFGENESIS",7,200,BF_SHORT,0;        
+        bonus5 bAutoSpell,"AB_JUDEX",10,100,BF_LONG,1;
+        bonus5 bAutoSpell,"LG_RAYOFGENESIS",7,100,BF_LONG,0;        
+          if(.@r >= 11){
+          bonus2 bMagicAddSize,Size_All,15;
+            if(.@r >= 13){
+              if(Class == Job_Shadow_Chaser){
+              bonus bMatk,150;
+              bonus2 bMagicAddRace,RC_All,15;
+              bonus5 bAutoSpell,"AG_CRIMSON_ARROW",5,200,BF_SHORT,1;
+              bonus5 bAutoSpell,"AG_CRIMSON_ARROW",5,100,BF_LONG,1;        
+              bonus5 bAutoSpell,"HN_HELLS_DRIVE",10,200,BF_SHORT,1;
+              bonus5 bAutoSpell,"HN_HELLS_DRIVE",10,100,BF_LONG,1;
+              bonus5 bAutoSpell,"HN_JACK_FROST_NOVA",10,50,BF_SHORT,1;
+              bonus5 bAutoSpell,"HN_JACK_FROST_NOVA",10,25,BF_LONG,1;
+              bonus5 bAutoSpell,"EM_LIGHTNING_LAND",5,50,BF_SHORT,1;
+              bonus5 bAutoSpell,"EM_LIGHTNING_LAND",5,25,BF_LONG,1;
+            }
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus2 bIgnoreMdefClassRate,Class_All,30;
+        if(.@g >= 2){
+        bonus2 bMagicAddEle,Ele_All,15;
+          if(.@g >= 3){
+          bonus2 bMagicAtkEle,Ele_All,15;
+            if(.@g >= 4){
+            skill "WL_RECOGNIZEDSPELL",1;
+
+            }
+          }
+        }
+      }
+    UnEquipScript: |
+      sc_end SC_RECOGNIZEDSPELL;
+  - Id: 450433
+    AegisName: Dark_Snake_King_Charm
+    Name: 墨蛇君護身符
+    Type: Armor
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 1
+    Locations:
+      Armor: true
+    Weight: 50
+    Slot: 1
+    Script: |
+      if(BaseLevel < 99){
+      bonus bAtk,100;
+      bonus bMatk,100;
+      bonus bSpeedRate,25;
+      bonus2 bExpAddRace,RC_All,20;
+      }
+      if(BaseLevel > 99 && BaseLevel < 200){
+      bonus bAtk,50;
+      bonus bMatk,50;
+      bonus bSpeedRate,25;
+      bonus2 bExpAddRace,RC_All,10;      
+      }
+      if(BaseLevel > 199){
+      bonus2 bExpAddRace,RC_All,-30;
+      bonus bCritical,-10;
+      bonus bCritAtkRate,-30;
+      bonus bPAtk,5;
+      bonus bSMatk,5;
+      bonus2 bAddEle,Ele_All,10;
+      bonus2 bMagicAddEle,Ele_All,10;
+      }
+  - Id: 450434
+    AegisName: DS_King_Charm_LT
+    Name: 墨蛇君護身符-LT
+    Type: Armor
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 2
+    Locations:
+      Armor: true
+    Weight: 50
+    Slot: 1
+    Script: |
+      if(BaseLevel < 99){
+      bonus bAtk,200;
+      bonus bMatk,200;
+      bonus bSpeedRate,25;
+      bonus2 bExpAddRace,RC_All,50;
+      }
+      if(BaseLevel > 99 && BaseLevel < 200){
+      bonus bAtk,100;
+      bonus bMatk,100;
+      bonus bSpeedRate,25;
+      bonus2 bExpAddRace,RC_All,30;      
+      }
+      if(BaseLevel > 199){
+      bonus2 bExpAddRace,RC_All,-30;
+      bonus bCritical,-10;
+      bonus bCritAtkRate,-30;
+      bonus bPAtk,15;
+      bonus bSMatk,15;
+      bonus2 bAddEle,Ele_All,30;
+      bonus2 bMagicAddEle,Ele_All,30;
+      }     
+  - Id: 480526
+    AegisName: Occult_Nature_Cape_LT
+    Name: 曼妙自然之力斗篷-LT
+    Type: Armor
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 2
+    Weight: 10
+    Slots: 1
+    EquipLevelMin: 150
+    Locations:
+      Garment: true
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMatk,(.@r/2)*15;
+      bonus bSpl,.@r/2;
+      bonus2 bMagicAtkEle,Ele_Water,(.@r/3)*10;
+      bonus2 bMagicAtkEle,Ele_Earth,(.@r/3)*10;
+      if(.@r >= 7){
+      bonus bMatkRate,15;
+        if(.@r >= 9){
+        bonus2 bSkillAtk,"AG_FROZEN_SLASH",20;
+        bonus2 bSkillAtk,"AG_ROCK_DOWN",20;
+        bonus2 bSkillAtk,"EM_DIAMOND_STORM",20;
+        bonus2 bSkillAtk,"EM_TERRA_DRIVE",20;
+          if(.@r >= 11){
+          bonus bDelayrate,-12;
+            if(.@r >= 12){
+            bonus2 bMagicAddSize,Size_All,15;
+              if(.@r >= 13){
+              bonus2 bIgnoreMdefClassRate,Class_Boss,10;
+              }
+            }
+          }
+  
+        }
+      }
+      if(.@g >= 1){
+      bonus bMatkRate,8;
+        if(.@g >= 2){
+        bonus2 bMagicAddEle,Ele_All,12;
+          if(.@g >= 3){
+          bonus2 bMagicAtkEle,Ele_Water,20;
+          bonus2 bMagicAtkEle,Ele_Earth,20;
+            if(.@g >= 4){
+            bonus2 bMagicAddRace,RC_All,15;
+            }          
+          }
+        }
+      }
+  - Id: 480482
+    AegisName: Tele_WG_Cape_LT
+    Name: 念動風神斗篷-LT
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    EquipLevelMin: 150
+    Locations:
+      Garment: true
+    Refineable: true
+    Gradable: true
+    ArmorLevel: 2
+    Script: |
+      .@r = getrefine();
+      .@g = getenchantgrade();
+      bonus bMatk,(.@r/2)*15;
+      bonus bSpl,.@r/2;
+      bonus2 bMagicAtkEle,Ele_Wind,(.@r/3)*10;
+      bonus2 bMagicAtkEle,Ele_Ghost,(.@r/3)*10;
+      if(.@r >= 7){
+      bonus bMatkRate,15;
+        if(.@r >= 9){
+        bonus2 bSkillAtk,"AG_SOUL_VC_STRIKE",20;
+        bonus2 bSkillAtk,"EM_LIGHTNING_LAND",20;
+          if(.@r >= 11){
+          bonus bDelayrate,-12;
+            if(.@r >= 12){
+            bonus2 bMagicAddSize,Size_All,15;
+              if(.@r >= 13){
+              bonus2 bIgnoreMdefClassRate,Class_Boss,10;
+              }            
+            }
+          }
+        }
+      }
+      if(.@g >= 1){
+      bonus bMatkRate,8;
+        if(.@g >= 2){
+        bonus2 bMagicAddEle,Ele_All,12;
+          if(.@g >= 3){
+          bonus2 bMagicAtkEle,Ele_Wind,20;
+          bonus2 bMagicAtkEle,Ele_Ghost,20;
+            if(.@g >= 4){
+            bonus2 bMagicAddRace,RC_All,15;
+            }
+          }
+        }
+      }
+  - Id: 490596
+    AegisName: RingOfThought_LT
+    Name: 思念之戒-LT
+    Type: Armor
+    Weight: 10
+    Slots: 1
+    Locations:
+      Right_Accessory: true
+    EquipLevelMin: 150
+    ArmorLevel: 2
+    Script: |
+      bonus bMdef,10;
+      bonus bDelayrate,-7;
+      bonus bAspdRate,10;
+      skill "AL_TELEPORT",1;
+      bonus bAtkRate,10; 
+      bonus bMatkRate,10;
+      if(BaseLevel >= 200){
+      bonus bAtkRate,10; 
+      bonus bMatkRate,10;
+      }
+    UnEquipScript: |
+
+    

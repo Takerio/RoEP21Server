@@ -4841,37 +4841,37 @@ Body:
       bonus2 bSubEle,Ele_Water,20;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Seyren_Card
     Script: |
       bonus bCritical,15; bonus2 bAddSize,0,6; bonus2 bAddSize,1,6; bonus2 bAddSize,2,6;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Katrinn_Card
     Script: |
       bonus bMdef,20; bonus2 bMagicAtkEle,Ele_All,6;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Magaleta_Card
     Script: |
       bonus bDef,20; bonus2 bSubEle,10,6;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Eremes_Card
     Script: |
       bonus bFlee,20; skill "TF_HIDING",1; bonus2 bUseSPValue,"TF_HIDING",250;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Shecil_Card
     Script: |
       bonus bHit,20; bonus bSPGainOnAttack,1;
   - Combos:
       - Combo:
-          - Unknown_Item_32245
+          - RingOfThought_TW
           - B_Harword_Card
     Script: |
       bonus bAspd,2; bonus5 bAutoSpell,"RG_STRIPHELM",3,10,BF_WEAPON,1;
@@ -11149,7 +11149,7 @@ Body:
 #曼妙自然之力斗篷
   - Combos:
       - Combo:
-          - Pisces_Manteau_J
+          - Occult_Nature_Cape
           - Ep172_Bh_Staff
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
@@ -11163,7 +11163,7 @@ Body:
       }
   - Combos:
       - Combo:
-          - Pisces_Manteau_J
+          - Occult_Nature_Cape
           - Ep172_1h_Book2
     Script: |
       .@r = getequiprefinerycnt(EQI_HAND_R);
@@ -21793,3 +21793,185 @@ Body:
         bonus bShortAtkRate,.@sw*15;
         bonus bLongAtkRate,.@sw*15;
         bonus2 bMagicAtkEle,Ele_All,.@sw*15;
+#曼妙自然之力斗篷-LT
+  - Combos:
+      - Combo:  
+          - Occult_Nature_Cape_LT    # 480526
+          - Faceworm_L_Card          # 27167
+    Script: |  
+        .@r = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bMagicAtkEle,Ele_Water,10;
+        if(.@r >= 14){
+            if(Class == Job_Arch_Mage){
+            skill "EM_DIAMOND_STORM",4;
+            }
+            if(Class == Job_Elemental_Master){
+            skill "AG_RAIN_OF_CRYSTAL",4;
+            }
+        }
+  - Combos:
+      - Combo:  
+          - Occult_Nature_Cape_LT    # 480526
+          - Arc_Elder_Card           # 4629
+    Script: |  
+        .@r = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bMagicAtkEle,Ele_Earth,10;
+        if(.@r >= 14){
+            if(Class == Job_Arch_Mage){
+            skill "EM_TERRA_DRIVE",4;
+            }
+            if(Class == Job_Elemental_Master){
+            skill "AG_STRANTUM_TREMOR",4;
+            }
+        }
+  - Combos:
+      - Combo:  
+          - Occult_Nature_Cape_LT    # 480526
+          - Polluted_Spi_Q_Card      # 27362
+    Script: | 
+        .@r = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bMagicAtkEle,Ele_Earth,30;
+        bonus2 bMagicAtkEle,Ele_Water,30;
+        bonus2 bSubEle,Ele_All,20;
+        if(.@r >= 14){
+            if(Class == Job_Arch_Mage){
+            skill "EM_DIAMOND_STORM",5;
+            skill "EM_TERRA_DRIVE",5;
+            }
+            if(Class == Job_Elemental_Master){
+            skill "AG_STRANTUM_TREMOR",5;
+            skill "AG_RAIN_OF_CRYSTAL",5;
+            }
+        } 
+#念動風神斗篷-LT 
+  - Combos:
+      - Combo:  
+          - Tele_WG_Cape_LT    # 480482
+          - Ceila_Card      # 4568
+    Script: | 
+        .@r = getequiprefinerycnt(EQI_GARMENT);
+        bonus2 bMagicAtkEle,Ele_Wind,10+(.@r/2)*3;
+        if(.@r >= 12){
+        bonus5 bAutoSpell,"SA_VIOLENTGALE",3,30,BF_MAGIC,0;
+        }
+  - Combos:
+      - Combo:  
+          - Tele_WG_Cape_LT    # 480482
+          - Katrinn_Card      # 4366
+    Script: | 
+        bonus2 bMagicAtkEle,Ele_Ghost,30;
+        bonus2 bMagicAddSize,Size_All,15;
+#思念之戒-LT
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Seyren_Card      # 4357
+    Script: |
+        bonus bMaxHPrate,50;
+        bonus bAtk,120;
+        bonus bLongAtkDef,5;
+        bonus bIgnoreDefRace,RC_All;
+    UnEquipScript: |
+      heal 0,-2000;
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Katrinn_Card     # 4365
+    Script: |
+        bonus bMatk,120;
+        bonus bNearAtkDef,5;
+        bonus2 bMagicAtkEle,Ele_All,40;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Magaleta_Card      # 4363
+    Script: |
+        bonus bDef,200;
+        bonus bMdef,80;
+        bonus bMaxHPrate,40;
+        bonus2 bSubEle,Ele_All,15;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Eremes_Card      # 4359
+    Script: |
+        bonus bCritical,30;
+        bonus bCritAtkRate,50;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Shecil_Card      # 4367
+    Script: |
+        bonus2 bSPDrainRate,20,1;
+        bonus bLongAtkRate,40;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - B_Harword_Card    # 4361
+    Script: |
+        bonus bIgnoreDefRace,RC_All;
+        bonus bShortAtkRate,40;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Seyren_Card     # 4689
+    Script: |
+        bonus2 bAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"RK_IGNITIONBREAK",-1000;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Katrinn_Card     # 4686
+    Script: |
+        bonus2 bMagicAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"WL_CRIMSONROCK",-1500;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Magaleta_Card      # 4685
+    Script: |
+        bonus2 bMagicAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"AB_ADORAMUS",-1000;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Eremes_Card      # 4684
+    Script: |
+        bonus2 bAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"GC_DARKCROW",-10000;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Shecil_Card      # 4687
+    Script: |
+        bonus2 bAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"RA_ARROWSTORM",-1500;
+    UnEquipScript: |
+      heal 0,-2000;        
+  - Combos:
+      - Combo:  
+          - RingOfThought_LT    # 490596
+          - Real_Harword_Card     # 4688
+    Script: |
+        bonus2 bAddSize,Size_All,25;
+        bonus2 bSkillCooldown,"NC_AXETORNADO",-2000;
+    UnEquipScript: |
+      heal 0,-2000;       

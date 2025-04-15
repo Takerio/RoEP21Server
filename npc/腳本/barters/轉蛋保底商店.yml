@@ -399,7 +399,7 @@ Body:
              Item: Unknown_Item_70026
              Amount: 200
        - Index: 7
-         Item: Pisces_Manteau_J
+         Item: Occult_Nature_Cape
          Stock: 0
          Zeny: 0
          RequiredItems:
@@ -465,7 +465,7 @@ Body:
              Item: Unknown_Item_70026
              Amount: 200
        - Index: 7
-         Item: Unknown_Item_32245
+         Item: RingOfThought_TW
          Stock: 0
          Zeny: 0
          RequiredItems:

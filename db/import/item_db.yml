@@ -1728,7 +1728,7 @@ Body:
          bonus2 bMagicAddRace,RC_All,15;
       }
   - Id: 480276
-    AegisName: Pisces_Manteau_J
+    AegisName: Occult_Nature_Cape
     Name: 曼妙自然之力斗篷
     Type: Armor
     Weight: 200

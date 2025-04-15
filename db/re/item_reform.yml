@@ -3923,6 +3923,21 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: RingOfThought_TW
+        MinimumRefine: 0
+        MaximumRefine: 0
+        Materials:
+          - Material: Acc_Stone_3
+            Amount: 100
+          - Material: Zelunium
+            Amount: 600
+          - Material: Soul_Barmund_Rune2
+            Amount: 30
+          - Material: Pieces_Of_Grudge
+            Amount: 1000
+          - Material: Thought_Soul
+            Amount: 1          
+        ResultItem: RingOfThought_LT
       - BaseItem: Diana_Suits
         MinimumRefine: 9
         MaximumRefine: 20
