@@ -29,6 +29,7 @@ L_ko2:
 	set Costume_Equip,1;
 	getitem 44690,1; // (ªA¹¢)½ñ¬Kºµºµ´U
 	getitem 44689,1; // (ªA¹¢)®·ÂÎºô
+	getitem 450433,1; // ¾¥³D§gÅ@¨­²Å
 	close;
 
 L_ko3:

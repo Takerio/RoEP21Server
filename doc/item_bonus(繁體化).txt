@@ -360,7 +360,7 @@ bonus2 bAddClass,c,x;                物理攻擊 c 類別的單位時, 增加 x
 bonus2 bMagicAddClass,c,x;           魔法攻擊 c 類別的單位時, 增加 x% 的傷害
 bonus2 bSubClass,c,x;                受到 c 類別的單位攻擊時, 減少 x% 的傷害
 
-bonus2 bAddSize,s,x;                 物理攻擊 s 體型的單位時, 增加 x% 的傷害 (體型物理傷害)
+bonus2 bAddSize,s,x;                 物理攻擊 s 體型的單位時, 增加 x% 的傷害 (體型物理傷害) 體型敵人傷害 
 bonus2 bMagicAddSize,s,x;            魔法攻擊 s 體型的單位時, 增加 x% 的傷害 (體型魔法傷害)
 bonus2 bSubSize,s,x;                 受到 s 體型的單位攻擊時, 減少 x% 的傷害 (減少體型傷害/體型減少傷害)
 bonus2 bWeaponSubSize,s,x;			 受到 s 體型的物理攻擊時, 減少 x% 的傷害

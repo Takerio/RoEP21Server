@@ -4381,7 +4381,6 @@ Body:
     AegisName: C_M_Cape_LT
     Name: 變幻莫測魔術斗篷-LT
     Type: Armor
-    SubType: Garment
     Buy: 20
     Weight: 50
     Defense: 0

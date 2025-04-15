@@ -59176,6 +59176,12 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+  - Id: 1001798
+    AegisName: Thought_Soul
+    Name: 思念體咒怨
+    Type: Etc
+    Flags:
+      BuyingStore: true
   - Id: 25339
     AegisName: RTC_Coin_TW
     Name: 2023ROS支援之證

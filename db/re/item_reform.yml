@@ -3923,6 +3923,66 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: Changeable_Magic_Cape
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Bar_D_Pu_Rune
+            Amount: 12
+          - Material: Bar_D_St_Rune
+            Amount: 12
+          - Material: Bar_D_Fl_Rune
+            Amount: 12
+          - Material: Bar_D_Ea_Rune
+            Amount: 12
+          - Material: Ymir_Heart_P_TW
+            Amount: 1         
+        ResultItem: C_M_Cape_LT
+      - BaseItem: Dark_Snake_King_Charm
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Limpid_Celestial_Robe
+            Amount: 100
+          - Material: Cloud_Piece
+            Amount: 100
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Ymir_Heart_P_TW
+            Amount: 1         
+        ResultItem: DS_King_Charm_LT
+      - BaseItem: Occult_Nature_Cape
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Zelunium
+            Amount: 1000
+          - Material: Barmund_Plain_Essence
+            Amount: 80
+          - Material: Fate_Fragment
+            Amount: 80
+          - Material: Ymir_Heart_P_TW
+            Amount: 3          
+        ResultItem: Occult_Nature_Cape_LT
+      - BaseItem: Tele_WG_Cape
+        MinimumRefine: 9
+        MaximumRefine: 20
+        Materials:
+          - Material: Armor_Stone_3
+            Amount: 100
+          - Material: Zelunium
+            Amount: 1000
+          - Material: Barmund_Plain_Essence
+            Amount: 80
+          - Material: Pieces_Of_Sentiment
+            Amount: 2000
+          - Material: Ymir_Heart_P_TW
+            Amount: 3          
+        ResultItem: Tele_WG_Cape_LT    
       - BaseItem: RingOfThought_TW
         MinimumRefine: 0
         MaximumRefine: 0
@@ -3933,7 +3993,7 @@ Body:
             Amount: 600
           - Material: Soul_Barmund_Rune2
             Amount: 30
-          - Material: Pieces_Of_Grudge
+          - Material: Cursed_Fragment # Pieces_Of_Grudge
             Amount: 1000
           - Material: Thought_Soul
             Amount: 1          
