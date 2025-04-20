@@ -21975,3 +21975,28 @@ Body:
         bonus2 bSkillCooldown,"NC_AXETORNADO",-2000;
     UnEquipScript: |
       heal 0,-2000;       
+# 墨蛇君護身符附魔
+  - Combos:
+      - Combo:  
+          - BSK_Card1   # 313781
+          - Dark_Snake_Lord_Card    # 4330
+    Script: |
+        bonus bAtk,30;
+        bonus bMatk,30;
+  - Combos:
+      - Combo:  
+          - BSK_Card1   # 313781
+          - SLD_Dark_Snake_Card # 4544
+    Script: |
+        bonus bAtk,15;
+        bonus bMatk,15;
+# 滅世魔靴
+  - Combos:
+      - Combo:  
+          - Destroy_World_Boots   # 470095
+          - Dark_Lord_Card    # 4168
+    Script: |
+        bonus bMatk,50;
+        bonus2 bMagicAddClass,Class_Boss,30;
+        bonus5 bAutoSpellWhenHit,"WL_COMET",5,300,BF_WEAPON,1;
+        autobonus "{ bonus bInt,30; bonus bMatkRate,20; }",15,10000,BF_MAGIC,"{ specialeffect2 EF_LAMADAN; }";
