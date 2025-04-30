@@ -121063,7 +121063,7 @@ Body:
         Rate: 30
       - Item: WitchsBroomStick
         Rate: 10
-      - Item: aegis_300294
+      - Item: Jeniffer_Card
         Rate: 1
         StealProtected: true
   - Id: 20178

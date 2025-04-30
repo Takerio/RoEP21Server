@@ -22026,3 +22026,130 @@ Body:
       bonus bFlee,.@ACC_L*5;
       bonus2 bIgnoreDefRaceRate,RC_All,70;
       bonus2 bIgnoreMdefRaceRate,RC_All,70;
+# 魔力星環-LT
+  - Combos: 
+      - Combo:
+          - Star_Force_Ring_LT  # 490619
+          - Magic_Circle_LT     # 420301
+    Script: |
+        bonus bCastrate,-10;
+        bonus bFixedCast,-100;
+        bonus bSMatk,5;
+  - Combos: 
+      - Combo:
+          - Star_Force_Ring_LT  # 490619
+          - Magic_Star_TW_LT     # 410256
+    Script: |
+        bonus bCastrate,-10;
+        bonus bFixedCast,-100;
+        bonus bSMatk,5;
+  - Combos: 
+      - Combo:
+          - Star_Force_Ring_LT  # 490619
+          - Magic_Circle_LT     # 420301
+          - Magic_Star_TW_LT     # 410256
+    Script: |     
+        bonus2 bMagicAddClass,Class_Boss,20;
+        bonus5 bAutoSpell,"WL_RECOGNIZEDSPELL",1,10,BF_MAGIC,0;    
+# 奇蹟屬性石
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - ELVIRA_Card     # 4577
+    Script: |
+        bonus bSpl,5;
+        bonus2 bMagicAddClass,Class_All,15;
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - Headless_Mule_Card     # 27125
+    Script: |
+        bonus bSpl,5;
+        bonus2 bMagicAddClass,Class_All,15;
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - Dy_Card     # 27262
+    Script: |
+        bonus bSpl,5;
+        bonus2 bMagicAddClass,Class_All,15;
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - Mavka_Card     # 27161
+    Script: |
+        bonus bSpl,5;
+        bonus2 bMagicAddClass,Class_All,15;
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - Jeniffer_Card    # 300294
+    Script: |
+        bonus bSpl,5;
+        bonus2 bMagicAddClass,Class_All,15;
+
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - GIOIA_Card    # 4576
+    Script: |
+        .@c = getequiparmorlv(EQI_GARMENT);
+        bonus2 bSubEle,Ele_Poison,30;
+        bonus2 bIgnoreMdefClassRate,Class_All,30;
+        bonus bSpl,10;
+        bonus2 bMagicAddClass,Class_All,30;
+        if(.@c >= 2){
+        bonus2 bMagicAddEle,Ele_All,20;
+        }
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - SLD_P_Spi_Q_Card    # 300201
+    Script: |
+        .@c = getequiparmorlv(EQI_GARMENT);
+        bonus2 bSubEle,Ele_Poison,30;
+        bonus2 bIgnoreMdefClassRate,Class_All,30;
+        bonus bSpl,10;
+        bonus2 bMagicAddClass,Class_All,30;
+        if(.@c >= 2){
+        bonus2 bMagicAddEle,Ele_All,20;
+        }
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - C_Himel_Card    # 27381
+    Script: |
+        .@c = getequiparmorlv(EQI_GARMENT);
+        bonus2 bSubEle,Ele_Poison,30;
+        bonus2 bIgnoreMdefClassRate,Class_All,30;
+        bonus bSpl,10;
+        bonus2 bMagicAddClass,Class_All,30;
+        if(.@c >= 2){
+        bonus2 bMagicAddEle,Ele_All,20;
+        }
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - ILL_Abysmal_Witch_Card    # 300145
+    Script: |
+        .@c = getequiparmorlv(EQI_GARMENT);
+        bonus2 bSubEle,Ele_Poison,30;
+        bonus2 bIgnoreMdefClassRate,Class_All,30;
+        bonus bSpl,10;
+        bonus2 bMagicAddClass,Class_All,30;
+        if(.@c >= 2){
+        bonus2 bMagicAddEle,Ele_All,20;
+        }
+  - Combos: 
+      - Combo:
+          - Miracle_Stone  # 490704
+          - GIOIA_Card    # 4576
+    Script: |
+        .@c = getequiparmorlv(EQI_GARMENT);
+        bonus2 bSubEle,Ele_Poison,30;
+        bonus2 bIgnoreMdefClassRate,Class_All,30;
+        bonus bSpl,10;
+        bonus2 bMagicAddClass,Class_All,30;
+        if(.@c >= 2){
+        bonus2 bMagicAddEle,Ele_All,20;
+        }

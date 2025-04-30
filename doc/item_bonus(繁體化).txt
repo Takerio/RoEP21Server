@@ -471,7 +471,7 @@ bonus2 bWeaponComaRace,r,n;             物理攻擊 r 種族的單位時, 有 n
 bonus3 bAutoSpell,sk,y,n;       		攻擊時有 n/10% 的機率自動詠唱 y 級技能 sk (支援技能名)
 bonus3 bAutoSpellWhenHit,sk,y,n;		被攻擊時有 n/10% 的機率自動詠唱 y 級技能 sk (支援技能名)
 
-bonus4 bAutoSpell,sk,y,n,i;          	攻擊時有 n/10% 的機率在 i 條件下自動詠唱 y 級技能 sk
+bonus4 bAutoSpell,sk,y,n,i;          	攻擊時有 n/10% 的機率在 i 條件下自動詠唱 y 級技能 sk變動詠唱
 bonus5 bAutoSpell,sk,y,n,bf,i;       	攻擊時有 n/10% 的機率在 i 和 bf 條件下自動詠唱 y 級技能 sk
 bonus4 bAutoSpellWhenHit,sk,y,n,i;   	被攻擊時有 n/10% 的機率在 i 條件下自動詠唱 y 級技能 sk
 bonus5 bAutoSpellWhenHit,sk,y,n,bf,i;	被攻擊時有 n/10% 的機率在 i 和 bf 條件下自動詠唱 y 級技能 sk 

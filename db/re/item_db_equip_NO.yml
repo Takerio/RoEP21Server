@@ -4392,6 +4392,8 @@ Body:
     ArmorLevel: 2
     Locations:
       Garment: true
+    UnEquipScript: |
+      sc_end SC_RECOGNIZEDSPELL;
     Script: |
       .@r = getrefine();
       .@g = getenchantgrade();
@@ -4436,8 +4438,7 @@ Body:
           }
         }
       }
-    UnEquipScript: |
-      sc_end SC_RECOGNIZEDSPELL;
+
   - Id: 450433
     AegisName: Dark_Snake_King_Charm
     Name: 墨蛇君護身符

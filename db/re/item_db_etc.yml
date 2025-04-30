@@ -14925,7 +14925,7 @@ Body:
       bonus2 bSubEle,Ele_Neutral,15;
       bonus2 bMagicAtkEle,Ele_Poison,3*getrefine();
   - Id: 300294
-    AegisName: aegis_300294
+    AegisName: Jeniffer_Card
     Name: 珍妮佛卡片
     Type: Card
     Weight: 10
@@ -49589,7 +49589,7 @@ Body:
       bonus bLongAtkRate,4*(getrefine()/3);
   - Id: 300382
     AegisName: Aquila_Card
-    Name: 天鷹座卡片
+    Name: 阿奎拉卡片
     Type: Card
     Weight: 10
     Locations:
@@ -67977,13 +67977,13 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus bCritical,7;
+      bonus bCritical,25;
       bonus bCRate,5;
       bonus bMaxSPrate,-15;
       if(readparam(bLuk)>=120){ 
       bonus bCritical,10; 
       }
-      if(readparam(bCritical)>=110){ 
+      if(readparam(bCrt)>=100){ 
       bonus bCritAtkRate,50; 
       bonus bCRate,5; 
       }

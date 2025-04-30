@@ -1,4 +1,4 @@
-﻿# This file is a part of rAthena.
+# This file is a part of rAthena.
 #   Copyright(C) 2021 rAthena Development Team
 #   https://rathena.org - https://github.com/rathena
 #
@@ -125337,8 +125337,39 @@ Body:
           }
         }
       }
-
-
+  - Id: 490619
+    AegisName: Star_Force_Ring_LT
+    Name: 魔力星環-LT
+    Type: Armor
+    Buy: 10
+    Weight: 300
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 100
+    Script: |
+      bonus bCastrate,-25;
+      bonus bAspd,2;
+      bonus bFixedCast,-100;
+      autobonus "{ bonus bSMatk,10; }",50,5000,BF_MAGIC || BF_WEAPON,"{ specialeffect2 EF_LAMADAN; }";
+  - Id: 490704
+    AegisName: Miracle_Stone
+    Name: 奇蹟屬性石
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Slots: 1
+    ArmorLevel: 2
+    Locations:
+      Both_Accessory: true
+    ArmorLevel: 2
+    EquipLevelMin: 130
+    Script: |
+      bonus bMdef,10;
+      bonus bMatkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus bDelayrate,-5;
 
 
 

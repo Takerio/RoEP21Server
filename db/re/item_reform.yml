@@ -3923,6 +3923,18 @@ Body:
   #防具改造箱(高級)
   - Item: C_Armor_Reform_3
     BaseItems:
+      - BaseItem: Star_Force_Ring_TW
+        MinimumRefine: 0
+        MaximumRefine: 0
+        Materials:
+          - Material: Acc_Stone_3
+            Amount: 100
+          - Material: Meteorite_Fragment
+            Amount: 200
+          - Material: Magic_Silverbar
+            Amount: 1        
+        ResultItem: Star_Force_Ring_LT
+
       - BaseItem: Changeable_Magic_Cape
         MinimumRefine: 9
         MaximumRefine: 20

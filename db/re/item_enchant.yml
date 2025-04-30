@@ -51495,7 +51495,7 @@ Body:
       Shadow_Armor_S: true
     Reset:
       Chance: 100000
-      Price: 100000
+      Price: 0
       Materials:
         - Material: Silvervine
           Amount: 10
