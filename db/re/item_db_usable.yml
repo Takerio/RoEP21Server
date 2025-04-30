@@ -36272,8 +36272,21 @@ Body:
     Script: |
       item_reform();
 
-
-
+# 影子鋼鐵裝備
+  - Id: 2200007
+    AegisName: Shadow_9_Refine_Hammer_10_Steel
+    Name: 忽克連超高級影子鋼鐵精煉鎚Lv.10
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
+  - Id: 2200008
+    AegisName: Shadow_9_Refine_Hammer_20_Steel
+    Name: 忽克連超高級影子鋼鐵精煉鎚Lv.20
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_upgrade();
 
 
 

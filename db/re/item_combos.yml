@@ -22000,3 +22000,29 @@ Body:
         bonus2 bMagicAddClass,Class_Boss,30;
         bonus5 bAutoSpellWhenHit,"WL_COMET",5,300,BF_WEAPON,1;
         autobonus "{ bonus bInt,30; bonus bMatkRate,20; }",15,10000,BF_MAGIC,"{ specialeffect2 EF_LAMADAN; }";
+# 影子鋼鐵套裝
+  - Combos: 
+      - Combo:
+          - item_2200000
+          - item_2200001
+          - item_2200002
+          - item_2200003
+          - item_2200004
+          - item_2200005
+    Script: |
+      .@armor = getequiprefinerycnt(EQI_SHADOW_ARMOR);
+      .@weapon = getequiprefinerycnt(EQI_SHADOW_WEAPON);
+      .@shield = getequiprefinerycnt(EQI_SHADOW_SHIELD);
+      .@shoes = getequiprefinerycnt(EQI_SHADOW_SHOES);
+      .@ACC_R = getequiprefinerycnt(EQI_SHADOW_ACC_R);
+      .@ACC_L = getequiprefinerycnt(EQI_SHADOW_ACC_L);
+      
+      bonus2 bAddMonsterDropItem,999,1000;
+      bonus bMatk,.@weapon*5;
+      bonus bBaseAtk,.@armor*5;
+      bonus bDef,.@shield*5; 
+      bonus bMdef,.@shoes*1;  
+      bonus bHit,.@ACC_R*5;  
+      bonus bFlee,.@ACC_L*5;
+      bonus2 bIgnoreDefRaceRate,RC_All,70;
+      bonus2 bIgnoreMdefRaceRate,RC_All,70;

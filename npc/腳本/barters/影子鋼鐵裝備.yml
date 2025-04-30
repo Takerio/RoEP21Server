@@ -1,0 +1,70 @@
+﻿Header:
+  Type: BARTER_DB
+  Version: 1
+
+Body:
+
+#影子鋼鐵裝備
+   - Name: 影子鋼鐵裝備兌換員
+     Map: prontera
+     X: 1
+     Y: 1
+     Direction: SouthWest
+     Sprite: 4_F_NOVICE2
+     Items:
+       - Index: 0
+         Item: item_2200000
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 1
+         Item: item_2200001
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 2
+         Item: item_2200002
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 3
+         Item: item_2200003
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 4
+         Item: item_2200004
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 5
+         Item: item_2200005
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Lv_Coin
+             Amount: 100
+       - Index: 6
+         Item: Shadow_9_Refine_Hammer_10_Steel
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Steel
+             Amount: 200

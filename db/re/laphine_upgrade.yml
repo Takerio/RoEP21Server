@@ -6713,7 +6713,29 @@ Body:
       - Item: 21Anni3_W_Shadow_TW
 
 
-
+# 影子鋼鐵裝備精煉
+  - Item: Shadow_9_Refine_Hammer_10_Steel
+    ResultRefine: 10
+    MaximumRefine: 9
+    CardsAllowed: true
+    TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
+  - Item: Shadow_9_Refine_Hammer_20_Steel
+    ResultRefine: 20
+    MaximumRefine: 19
+    CardsAllowed: true
+    TargetItems:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
 
 
 

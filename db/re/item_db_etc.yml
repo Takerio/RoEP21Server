@@ -2979,7 +2979,7 @@ Body:
     Name: 鋼鐵
     Type: Etc
     Buy: 1000
-    Weight: 100
+    Weight: 1
   - Id: 1000
     AegisName: Star_Crumb
     Name: 星星的角
@@ -72678,4 +72678,48 @@ Body:
     Buy: 20
     Script: |
       bonus2 bDropAddRace,RC_All,20;
+# 墨蛇君護身符附魔
+  - Id: 313781
+    AegisName: BSK_Card1
+    Name: 墨蛇君幻藥
+    Type: Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus bAtk,(.@r/3)*50;
+      bonus bDef,(.@r/3)*40;
+      bonus bMdef,(.@r/3)*5;
+      if(.@r >= 12){
+      bonus2 bHPDrainRate,70,1;
+      }
+  - Id: 313782
+    AegisName: BSK_Card2
+    Name: 墨蛇君披巾
+    Type: Card
+    Script: |
+      .@r = getequiprefinerycnt(EQI_ARMOR);
+      bonus bMatk,(.@r/3)*40;
+      bonus bDef,(.@r/3)*40;
+      bonus bMdef,(.@r/3)*5;
+      if(.@r >= 12){
+      bonus autobonus "{bonus bMagicHPGainValue,500;}",40,9200,BF_MAGIC;
+      
+      }
+  - Id: 313783
+    AegisName: BSK_Card3
+    Name: 墨蛇君道士之劍
+    Type: Card
+    Script: |
+
+  - Id: 313784
+    AegisName: BSK_Card4
+    Name: 墨蛇君太極盤
+    Type: Card
+    Script: |
+
+  - Id: 313785
+    AegisName: BSK_Card5
+    Name: 墨蛇君冕旒
+    Type: Card
+    Script: |
+
 

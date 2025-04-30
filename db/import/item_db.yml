@@ -10517,7 +10517,7 @@ Body:
       Container: true
     Script: |
       getitem rand(90000,91400),1;
-  ## 所有技能卡片
+## 所有技能卡片
   # 技能卡片 - 劍士
   - Id: 970000
     AegisName: card_skill_SM_SWORD
@@ -13662,3 +13662,86 @@ Body:
       Both_Accessory: true
     Script: |
       set maxLv,callfunc("skill_Card","LG_RAYOFGENESIS");
+
+# 影子鋼鐵裝備
+  - Id: 2200006
+    AegisName: item_2200006
+    Name: 影子鋼鐵套裝箱
+    Type: Usable
+    Flags:
+      Container: true
+    Trade:
+      NoDrop: true
+    Script: |
+      getitem 2200000,1;
+      getitem 2200001,1;
+      getitem 2200002,1;
+      getitem 2200003,1;
+      getitem 2200004,1;
+      getitem 2200005,1;
+  - Id: 2200000
+    AegisName: item_2200000
+    Name: 影子鋼鐵手套
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMatk,.@r*5;
+  - Id: 2200001
+    AegisName: item_2200001
+    Name: 影子鋼鐵鎧甲
+    Type: Shadowgear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bBaseAtk,.@r*5;
+  - Id: 2200002
+    AegisName: item_2200002
+    Name: 影子鋼鐵盾牌
+    Type: Shadowgear
+    Locations:
+      Shadow_Shield: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bDef,.@r*5; 
+  - Id: 2200003
+    AegisName: item_2200003
+    Name: 影子鋼鐵戰靴
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,.@r*1;  
+  - Id: 2200004
+    AegisName: item_2200004
+    Name: 影子鋼鐵耳環
+    Type: Shadowgear
+    Locations:
+      Shadow_Right_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bHit,.@r*5;  
+  - Id: 2200005
+    AegisName: item_2200005
+    Name: 影子鋼鐵墜子
+    Type: Shadowgear
+    Locations:
+      Shadow_Left_Accessory: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bFlee,.@r*5;

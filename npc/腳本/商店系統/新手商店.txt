@@ -12,51 +12,56 @@
 	mes "^i[61172]可以在新手訓練任務中取得!";
 	mes "請選擇你要購買的內容";
 	next;
-	switch(select("見習武器:仙境武器:貴族裝備:帝國裝備:恩典裝備:幻象裝備:灰狼裝備:戰魂頭盔:附魔戰魂頭盔:取消")){
+	switch(select("影子鋼鐵裝備:見習武器:仙境武器:貴族裝備:帝國裝備:恩典裝備:幻象裝備:灰狼裝備:戰魂頭盔:附魔戰魂頭盔:取消")){
 
 	case 1:
 	close2;
-	callshop "見習武器兌換員";
+	callshop "影子鋼鐵裝備兌換員";
 	end;
 
 	case 2:
 	close2;
-	callshop "仙境武器兌換員";
+	callshop "見習武器兌換員";
 	end;
 
 	case 3:
 	close2;
-	callshop "貴族裝備兌換員";
+	callshop "仙境武器兌換員";
 	end;
 
 	case 4:
 	close2;
-	callshop "帝國裝備兌換員";
+	callshop "貴族裝備兌換員";
 	end;
 
 	case 5:
 	close2;
-	callshop "恩典裝備兌換員";
+	callshop "帝國裝備兌換員";
 	end;
 
 	case 6:
+	close2;
+	callshop "恩典裝備兌換員";
+	end;
+
+	case 7:
 	close2;
 	callshop "幻象裝備兌換";
 	end;
 
 
-	case 7:
+	case 8:
 	close2;
 	callshop "灰狼裝備兌換2";
 	end;
 
 
-	case 8:
+	case 9:
 	close2;
 	callshop "戰魂頭盔製作";
 	end;
 
-	case 9:
+	case 10:
 	mes "[競技研究師]";
 	mes "只要給我新手金幣跟Zeny";
 	mes "我就能幫你附魔各種戰魂頭盔";
@@ -1300,7 +1305,7 @@ Rac_netx:
 	}
 }
 
-	case 10:
+	case 11:
 	close;
 	}
 
