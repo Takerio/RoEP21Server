@@ -59176,6 +59176,12 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+  - Id: 1001830
+    AegisName: Magic_Silverbar
+    Name: 魔力銀塊
+    Type: Etc
+    Flags:
+      BuyingStore: true
   - Id: 1001798
     AegisName: Thought_Soul
     Name: 思念體咒怨

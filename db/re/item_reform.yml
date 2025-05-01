@@ -3931,6 +3931,8 @@ Body:
             Amount: 100
           - Material: Meteorite_Fragment
             Amount: 200
+          - Material: Betelgeuse_Soul
+            Amount: 30
           - Material: Magic_Silverbar
             Amount: 1        
         ResultItem: Star_Force_Ring_LT
