@@ -5109,7 +5109,19 @@ Body:
       - Item: Old_Cart_Acc
         Amount: 1
 
-
+#影子神力鋼鐵精靈轉換箱
+  - Item: S_Steel_spirit_box
+    RewardGroup: S_STEEL_SPIRIT_BOX
+    RequiredRequirementsCount: 6
+    MinimumRefine: 7
+    MaximumRefine: 20
+    Requirements:
+      - Item: item_2200000
+      - Item: item_2200001
+      - Item: item_2200002
+      - Item: item_2200003
+      - Item: item_2200004
+      - Item: item_2200005
 
 
 

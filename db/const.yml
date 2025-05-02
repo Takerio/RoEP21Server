@@ -382,6 +382,9 @@ Body:
   - Name: RC2_EP19
     Value: 11
 
+  #神力鋼鐵精靈轉換箱
+  - Name: IG_S_STEEL_SPIRIT_BOX
+    Value: 2200021
   #舊版服飾
   # - Name: IG_HATBOX_1400
   #   Value: 950000

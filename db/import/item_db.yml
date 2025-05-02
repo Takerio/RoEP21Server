@@ -13745,3 +13745,16 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bFlee,.@r*5;
+  - Id: 2200020
+    AegisName: S_Steel
+    Name: 超合金鋼鐵
+    Type: Etc
+    Flags:
+      BuyingStore: true
+  - Id: 2200021
+    AegisName: S_Steel_spirit_box
+    Name: 影子神力鋼鐵精靈轉換箱
+    Type: Delayconsume
+    Weight: 10
+    Script: |
+      laphine_synthesis();

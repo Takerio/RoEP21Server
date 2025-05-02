@@ -59182,6 +59182,7 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+
   - Id: 1001798
     AegisName: Thought_Soul
     Name: 思念體咒怨

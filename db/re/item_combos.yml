@@ -19179,15 +19179,11 @@ Body:
       .@ACC_L = getequiprefinerycnt(EQI_SHADOW_ACC_L);
       skill "SM_MAGNUM",10;
       bonus2 bSkillCooldown,"SM_MAGNUM",60000; 
-      
+      bonus bAllTraitStats,5;
       if(.@ACC_R + .@ACC_L >= 20)
       {
       bonus bNoKnockback;
       bonus bNoWalkDelay;
-      bonus bAllTraitStats,7;
-      }
-      if(.@ACC_R + .@ACC_L == 40)
-      {
       bonus2 bResEff,Eff_Stone,10000; 
       bonus2 bResEff,Eff_Freeze,10000; 
       bonus2 bResEff,Eff_Stun,10000; 
@@ -19198,9 +19194,9 @@ Body:
       bonus2 bResEff,Eff_Confusion,10000; 
       bonus2 bResEff,Eff_Blind,10000; 
       bonus2 bResEff,Eff_Bleeding,10000; 
-      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,20000,"SM_MAGNUM","{ active_transform 2417,20000; }";
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,6000,"SM_MAGNUM","{ active_transform 2417,6000; }";
       }else{
-      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,10000,"SM_MAGNUM","{ active_transform 2417,10000; }";
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,3000,"SM_MAGNUM","{ active_transform 2417,3000; }";
       }
   - Combos: # 影子神力鋼鐵套裝
       - Combo:
@@ -19211,15 +19207,11 @@ Body:
       .@shoes = getequiprefinerycnt(EQI_SHADOW_SHOES);
       skill "SM_MAGNUM",10;
       bonus2 bSkillCooldown,"SM_MAGNUM",60000; 
-      
+      bonus bAllTraitStats,5;
       if(.@armor + .@shoes >= 20)
       {
       bonus bNoKnockback;
       bonus bNoWalkDelay;
-      bonus bAllTraitStats,7;
-      }
-      if(.@armor + .@shoes == 40)
-      {
       bonus2 bResEff,Eff_Stone,10000; 
       bonus2 bResEff,Eff_Freeze,10000; 
       bonus2 bResEff,Eff_Stun,10000; 
@@ -19230,9 +19222,9 @@ Body:
       bonus2 bResEff,Eff_Confusion,10000; 
       bonus2 bResEff,Eff_Blind,10000; 
       bonus2 bResEff,Eff_Bleeding,10000; 
-      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,20000,"SM_MAGNUM","{ active_transform 2417,20000; }";
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,6000,"SM_MAGNUM","{ active_transform 2417,6000; }";
       }else{
-      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,10000,"SM_MAGNUM","{ active_transform 2417,10000; }";
+      autobonus3 "{bonus2 bSubRace,RC_All,100;}",10000,3000,"SM_MAGNUM","{ active_transform 2417,3000; }";
       }
   - Combos: # 影子全能LT
       - Combo:

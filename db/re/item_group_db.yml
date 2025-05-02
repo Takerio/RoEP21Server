@@ -25771,3 +25771,20 @@ Body:
           - Item: hat_91399
             Rate: 7
           - Item: hat_91400
+  #影子神力鋼鐵精靈轉換箱
+  - Group: S_STEEL_SPIRIT_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Index: 0
+            Item: item_2200009
+            Rate: 1
+          - Index: 1
+            Item: item_2200011
+            Rate: 1
+          - Index: 2
+            Item: item_2200012
+            Rate: 1
+          - Index: 3
+            Item: item_2200013
+            Rate: 1
