@@ -8,6 +8,7 @@
 trinity,134,65,4	script	紅利商店	564,{
 
 On001:
+callfunc "weight_judge";
 	message strcharinfo(0),"此商店只能使用[紅利]進行交易."; //此處告訴玩家此商店使用什麼作為商店貨幣
 	dispbottom "您現在還有紅利 [ "+#Dividend_Points+" ] 點"; //有多少點數
 	callshop "Gym_Points_Shop",1; //開啟商店

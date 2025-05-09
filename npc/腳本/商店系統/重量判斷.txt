@@ -1,0 +1,6 @@
+function	script	weight_judge	{
+
+    if( Weight*100/MaxWeight >= 70) {dispbottom "重量大於70%不能購買唷～";return end;} 
+    
+return;
+}

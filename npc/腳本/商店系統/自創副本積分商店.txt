@@ -6,7 +6,7 @@
 -	shop	Instance_S_Points_Shop2	-1,512:-1 //生成商店，腳本名字需要和下面腳本中名字叫對應
 //腳本開始
 trinity,88,33,4	script	自創副本積分商店	564,{
-
+	callfunc "weight_judge";
 	message strcharinfo(0),"此商店只能使用[自創副本積分]進行交易."; //此處告訴玩家此商店使用什麼作為商店貨幣
 	dispbottom "您現在還有自創副本積分 [ "+#Instance_S_Points+" ] 點"; //有多少點數
 	callshop "Instance_S_Points_Shop2",1; //開啟商店
