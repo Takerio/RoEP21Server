@@ -53,7 +53,8 @@ OnBotMain:
 		.@f2 = getmapflag(@bot_Map$,MF_GVG_CASTLE);
 		.@f3 = getmapflag(@bot_Map$,MF_GVG_DUNGEON);
 		.@f4 = getmapflag(@bot_Map$,MF_TOWN);
-		if (.@f1 || .@f2 || .@f3 ||.@f4) {
+		.@f5 = getmapflag(@bot_Map$,mf_noteleport);
+		if (.@f1 || .@f2 || .@f3 ||.@f4 ||.@f5) {
 			mes "當前地圖內無法使用本服務!!";
 			dispbottom "[ 掛機 ]: 當前地圖內無法使用本服務!!",0xFF0000;
 			close;
