@@ -11,6 +11,7 @@ OnPCLoginEvent:
 
 OnPCKillMvpEvent:
 
+	if(killedrid == 2411){end;}
 	// ??????
 	if (#drop_event) end;
 
