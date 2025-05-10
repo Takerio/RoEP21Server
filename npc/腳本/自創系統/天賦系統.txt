@@ -1,6 +1,6 @@
 
 trinity,80,65,4	script	天賦管理員	10056,{
-//set #Talent_EXP,10000;
+
 	if (#day_Talent < gettime(8)){
 	set #Talent_Quest_01,2;	//天賦任務
 	set #Talent_Quest_02,2;	//天賦任務
@@ -15,11 +15,12 @@ trinity,80,65,4	script	天賦管理員	10056,{
 	if(#Talent_LV>=6 && #Talent_LV<=10){ set #Talent_EXP_Max,10; }
 	if(#Talent_LV>=11 && #Talent_LV<=20){ set #Talent_EXP_Max,10; }
 	if(#Talent_LV>=21 && #Talent_LV<=40){ set #Talent_EXP_Max,20; }
+	if(#Talent_LV>=41 && #Talent_LV<=100){ set #Talent_EXP_Max,20; }
 	if(#Talent_EXP>=#Talent_EXP_Max){ set #Talent_EXP,#Talent_EXP - #Talent_EXP_Max; set #Talent_LV,#Talent_LV + 1; set Talent_Points,Talent_Points + 1; dispbottom "天賦等級提升為 ^0000ff"+#Talent_LV+"^000000 級"; }
 
 Talent_end:
 	mes "[天賦管理員]";
-	mes "天賦等級：^0000FF"+#Talent_LV+"/40^000000級";
+	mes "天賦等級：^0000FF"+#Talent_LV+"/100^000000級";
 	mes "天賦經驗：^0000FF"+#Talent_EXP+"^000000/"+#Talent_EXP_Max+"";
 	mes "天賦點數：^0000FF"+Talent_Points+"^000000/"+#Talent_LV+"";
 	mes "你想要進行那個服務?";
@@ -793,17 +794,29 @@ Talent_end:
 				mes " ^0000FF[樞機主教天賦情報]^000000";
 				if(Talent_ADORAMUS_ATK==0){ mes "【謳歌專精】"; mes "每提升1級，謳歌技能傷害+10%"; }
 				if(Talent_ADORAMUS_ATK>0){ mes "【謳歌專精】等級："+Talent_ADORAMUS_ATK+"/10"; mes " 附加能力：^0000FF謳歌技能傷害 + "+Talent_ADORAMUS_ATK*10+"%^000000"; }
+
+				if(Talent_ADORAMUS_DELAY==0){ mes "【謳歌冷卻】"; mes "每提升1級，謳歌技能冷卻時間減少0.02秒"; }
+				if(Talent_ADORAMUS_DELAY>0){ mes "【謳歌冷卻】"; mes " 附加能力：^0000FF謳歌技能冷卻時間減少 "+Talent_ADORAMUS_DELAY*20 + "毫秒^000000"; }
+
 				if(Talent_JUDEX_ATK==0){ mes "【審判專精】"; mes "每提升1級，審判技能傷害+10%"; }
 				if(Talent_JUDEX_ATK>0){ mes "【審判專精】等級："+Talent_JUDEX_ATK+"/10"; mes " 附加能力：^0000FF審判技能傷害 + "+Talent_JUDEX_ATK*10+"%^000000"; }
 
 				if(Talent_ARBITRIUM_ATK==0){ mes "【制裁專精】"; mes "每提升1級，制裁謳歌技能傷害+5%"; }
 				if(Talent_ARBITRIUM_ATK>0){ mes "【制裁專精】等級："+Talent_ARBITRIUM_ATK+"/10"; mes " 附加能力：^0000FF審判技能傷害 + "+Talent_ARBITRIUM_ATK*5+"%^000000"; }
+
+				if(Talent_ARBITRIUM_DELAY==0){ mes "【制裁冷卻】"; mes "每提升1級，制裁謳歌技能冷卻時間減少0.02秒"; }
+				if(Talent_ARBITRIUM_DELAY>0){ mes "【制裁冷卻】等級："+Talent_ARBITRIUM_DELAY+"/10"; mes " 附加能力：^0000FF制裁謳歌技能冷卻減少"+Talent_ARBITRIUM_DELAY*20 + "毫秒^000000"; }
+
+
 				if(Talent_PNEUMATICUS_ATK==0){ mes "【驅魔專精】"; mes "每提升1級，驅魔風暴技能傷害+5%"; }
-				if(Talent_PNEUMATICUS_ATK>0){ mes "【驅魔專精】等級："+Talent_PNEUMATICUS_ATK+"/5"; mes " 附加能力：^0000FF審判技能傷害 + "+Talent_PNEUMATICUS_ATK*5+"%^000000"; }
+				if(Talent_PNEUMATICUS_ATK>0){ mes "【驅魔專精】等級："+Talent_PNEUMATICUS_ATK+"/10"; mes " 附加能力：^0000FF審判技能傷害 + "+Talent_PNEUMATICUS_ATK*5+"%^000000"; }
+
+				if(Talent_PNEUMATICUS_DELAY==0){ mes "【驅魔冷卻】"; mes "每提升1級，驅魔風暴技能冷卻減少0.02秒"; }
+				if(Talent_PNEUMATICUS_DELAY>0){ mes "【驅魔冷卻】等級："+Talent_PNEUMATICUS_DELAY+"/10"; mes " 附加能力：^0000FF驅魔風暴技能冷卻減少 "+Talent_PNEUMATICUS_DELAY*20 + "毫秒^000000"; }
 
 				mes "你想要提升那個樞機主教天賦?";
 				next;
-				switch(select("謳歌專精 ("+Talent_ADORAMUS_ATK+"/10):審判專精 ("+Talent_JUDEX_ATK+"/10):制裁專精 ("+Talent_ARBITRIUM_ATK+"/10):驅魔專精 ("+Talent_PNEUMATICUS_ATK+"/10):回上層")) {
+				switch(select("謳歌專精 ("+Talent_ADORAMUS_ATK+"/10):謳歌冷卻 ("+Talent_ADORAMUS_DELAY+"/10):審判專精 ("+Talent_JUDEX_ATK+"/10):制裁專精 ("+Talent_ARBITRIUM_ATK+"/10):制裁冷卻 ("+Talent_ARBITRIUM_DELAY+"/10):驅魔專精 ("+Talent_PNEUMATICUS_ATK+"/10):驅魔冷卻 ("+Talent_PNEUMATICUS_DELAY+"/10):回上層")) {
 
 				case 1:
 					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
@@ -816,6 +829,15 @@ Talent_end:
 
 				case 2:
 					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
+					if(Talent_ADORAMUS_DELAY==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
+					set Talent_Points,Talent_Points - 1;
+					set Talent_ADORAMUS_DELAY,Talent_ADORAMUS_DELAY + 1;
+					status_calc();
+					dispbottom "謳歌冷卻等級提升為 "+Talent_ADORAMUS_DELAY+"";
+					goto Talent_next2_5;
+
+				case 3:
+					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
 					if(Talent_JUDEX_ATK==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
 					set Talent_Points,Talent_Points - 1;
 					set Talent_JUDEX_ATK,Talent_JUDEX_ATK + 1;
@@ -823,7 +845,7 @@ Talent_end:
 					dispbottom "審判專精等級提升為 "+Talent_JUDEX_ATK+"";
 					goto Talent_next2_5;
 
-				case 3:
+				case 4:
 					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
 					if(Talent_ARBITRIUM_ATK==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
 					set Talent_Points,Talent_Points - 1;
@@ -832,7 +854,16 @@ Talent_end:
 					dispbottom "審判專精等級提升為 "+Talent_ARBITRIUM_ATK+"";
 					goto Talent_next2_5;
 
-				case 4:
+				case 5:
+					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
+					if(Talent_ARBITRIUM_DELAY==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
+					set Talent_Points,Talent_Points - 1;
+					set Talent_ARBITRIUM_DELAY,Talent_ARBITRIUM_DELAY + 1;
+					status_calc();
+					dispbottom "制裁冷卻等級提升為 "+Talent_ARBITRIUM_DELAY+"";
+					goto Talent_next2_5;
+
+				case 6:
 					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
 					if(Talent_PNEUMATICUS_ATK==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
 					set Talent_Points,Talent_Points - 1;
@@ -841,7 +872,16 @@ Talent_end:
 					dispbottom "驅魔專精等級提升為 "+Talent_PNEUMATICUS_ATK+"";
 					goto Talent_next2_5;
 
-				case 5:
+				case 7:
+					if(Talent_Points==0){mes "[天賦管理員]"; mes "天賦點數不夠!"; close;}
+					if(Talent_PNEUMATICUS_DELAY==10){mes "[天賦管理員]"; mes "這個天賦已經滿級了!"; close;}
+					set Talent_Points,Talent_Points - 1;
+					set Talent_PNEUMATICUS_DELAY,Talent_PNEUMATICUS_DELAY + 1;
+					status_calc();
+					dispbottom "驅魔冷卻等級提升為 "+Talent_PNEUMATICUS_DELAY+"";
+					goto Talent_next2_5;
+
+				case 8:
 					goto Talent_next2;
 				}
 
@@ -1836,6 +1876,7 @@ Talent_end:
 			//新
 			set Talent_CROSS_RAIN_ATK,0;
 			set Talent_ARBITRIUM_ATK,0;
+			set Talent_ARBITRIUM_DELAY,0;
 			set Talent_PNEUMATICUS_ATK,0;
 			set Talent_ROSEBLOSSOM_ATK,0;
 			set Talent_METALIC_FURY_ATK,0;
@@ -1895,6 +1936,7 @@ Talent_end:
 			set Talent_TRIANGLESHOT_ATK,0;
 			set Talent_FATALMENACE_ATK,0;
 			set Talent_ADORAMUS_ATK,0;
+			set Talent_ADORAMUS_DELAY,0;
 			set Talent_JUDEX_ATK,0;
 			set Talent_HIGHNESSHEAL_Heal,0;
 			set Talent_CHEAL_Heal,0;

@@ -13758,3 +13758,17 @@ Body:
     Weight: 10
     Script: |
       laphine_synthesis();
+
+  - Id: 2500001
+    AegisName: point_randow_box
+    Name: 點數抽抽樂箱
+    Type: Usable
+    Buy: 20
+    Script: |
+      set .@r,rand(0,100);
+      if(.@r < 1){getitem 61029,5;}
+      else if(.@r < 15){getitem 61055,1;}
+      else if(.@r < 25){getitem 61011,rand(1,2);}
+      else if(.@r < 30){getitem 61033,rand(1,2);}
+      else if(.@r < 50){getitem 61052,rand(1,2);}
+      else{getitem 61007,rand(1,2);}

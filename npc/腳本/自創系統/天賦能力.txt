@@ -98,15 +98,20 @@ OnPCStatCalcEvent:
 
 	//大主教
 	if(Talent_ADORAMUS_ATK>0){ bonus2 bSkillAtk,"AB_ADORAMUS",Talent_ADORAMUS_ATK*10; }
+
+	if(Talent_ADORAMUS_DELAY>0){ bonus2 bSkillCooldown,"AB_ADORAMUS",-(20*Talent_ADORAMUS_DELAY); } // 謳歌冷卻
+
 	//if(Talent_JUDEX_ATK>0){ bonus2 bSkillAtk,"AB_JUDEX",Talent_JUDEX_ATK*10; }
 	if(Talent_HIGHNESSHEAL_Heal>0){ bonus2 bSkillHeal,"AB_HIGHNESSHEAL",Talent_HIGHNESSHEAL_Heal*10; }
 	if(Talent_CHEAL_Heal>0){ bonus2 bSkillHeal,"AB_CHEAL",Talent_CHEAL_Heal*10; }
 	if(Talent_HIGHNESSHEAL_Cool>0){ bonus2 bSkillCooldown,"AB_HIGHNESSHEAL",-Talent_HIGHNESSHEAL_Cool*500; }
 	if(Talent_CHEAL_Cool>0){ bonus2 bSkillCooldown,"AB_CHEAL",-Talent_CHEAL_Cool*100; }
 	if(Talent_ARBITRIUM_ATK>0){ bonus2 bSkillAtk,"CD_ARBITRIUM",Talent_ARBITRIUM_ATK*5; }
-	if(Talent_PNEUMATICUS_ATK>0){ bonus2 bSkillAtk,"CD_PNEUMATICUS_PROCELLA",Talent_PNEUMATICUS_ATK*5; }
+	if(Talent_ARBITRIUM_ATK>0){ bonus2 bSkillCooldown,"AB_ADORAMUS",-(20*Talent_ADORAMUS_DELAY); } // 制裁冷卻
 
-	//十字影武
+	if(Talent_PNEUMATICUS_ATK>0){ bonus2 bSkillAtk,"CD_PNEUMATICUS_PROCELLA",Talent_PNEUMATICUS_ATK*5; }
+	if(Talent_PNEUMATICUS_DELAY>0){ bonus2 bSkillCooldown,"CD_PNEUMATICUS_PROCELLA",-(20*Talent_PNEUMATICUS_DELAY); } // 驅魔冷卻
+	//十字影武
 	if(Talent_SAVAGE_IMPACT_ATK>0){ bonus2 bSkillAtk,"SHC_SAVAGE_IMPACT",Talent_SAVAGE_IMPACT_ATK*5; }
 	if(Talent_SHADOW_STAB_ATK>0){ bonus2 bSkillAtk,"SHC_SHADOW_STAB",Talent_SHADOW_STAB_ATK*5; }
 	if(Talent_ETERNAL_SLASH_ATK>0){ bonus2 bSkillAtk,"SHC_ETERNAL_SLASH",Talent_ETERNAL_SLASH_ATK*5; }

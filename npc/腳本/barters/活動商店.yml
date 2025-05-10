@@ -1,0 +1,156 @@
+﻿Header:
+  Type: BARTER_DB
+  Version: 1
+
+Body:
+# 活動商店
+   - Name: 活動商店
+     Map: prt_in
+     X: 1
+     Y: 1
+     Direction: SouthWest
+     Sprite: 4_4JOB_MAURA
+     Items:
+       - Index: 1
+         Item: point_randow_box
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 20
+       - Index: 2
+         Item: Blacksmith_Blessing
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 1
+       - Index: 3
+         Item: Lunatic_Scroll_01
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 4
+         Item: Lunatic_Scroll_02
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 5
+         Item: Lunatic_Scroll_03
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 6
+         Item: Lunatic_Scroll_04
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 7
+         Item: Lunatic_Scroll_05
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 8
+         Item: Lunatic_Scroll_06
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 9
+         Item: Lunatic_Scroll_07
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 10
+         Item: Lunatic_Scroll_08
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 11
+         Item: Lunatic_Scroll_09
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 12
+         Item: Lunatic_Scroll_10
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 13
+         Item: Lunatic_Scroll_11
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 14
+         Item: Lunatic_Scroll_12
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 15
+         Item: Lunatic_Scroll_13
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 16
+         Item: Lunatic_Scroll_14
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+       - Index: 17
+         Item: Lunatic_Scroll_15
+         Stock: 0
+         Zeny: 0
+         RequiredItems:
+           - Index: 0
+             Item: Rose_Lucky
+             Amount: 2
+
+
+
+
+
+
+

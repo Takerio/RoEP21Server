@@ -152,6 +152,10 @@ Footer:
     - Path: npc/腳本/barters/推廣商店.yml
     - Path: npc/腳本/barters/王家狩獵.yml
     - Path: npc/腳本/barters/贊助服飾.yml
+
+    
+    - Path: npc/腳本/barters/活動商店.yml
+
     - Path: npc/腳本/barters/王卡碎片.yml
 
     - Path: npc/腳本/barters/神器製作.yml
