@@ -1,0 +1,12 @@
+trinity,123,90,4	script	特殊活動商店	10184,{
+
+	callshop "活動商店";
+	end;
+	
+
+OnInit:
+	waitingroom "特殊活動商店",0;
+	end;
+}
+
+

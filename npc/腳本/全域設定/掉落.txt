@@ -1,8 +1,29 @@
--	script	RandomItem	-1,{
-        // ï¿½ï¿½ï¿½æ?–å??ï¿½ï¿½ï¿½ï¿½ï¿½é?­ï¿½ï¿½ï¿½ï¿?
-OnNPCKillEvent:
-    .@m = killedrid;
-    addmonsterdrop .@m,950017,20;
+-	script	DropEvent	-1,{
 
-   	end;
+OnPCLoginEvent:
+	// ??????????????
+	if (#last_reset_day != gettime(6)) {
+		#drop_event = 0;
+		#drop_event_count = 0;
+		#last_reset_day = gettime(6);
+	}
+	end;
+
+OnPCKillMvpEvent:
+
+	// ??????
+	if (#drop_event) end;
+
+	// ?????5% ???
+	if (rand(100) > 95) {
+		getitem 2500000, 1;
+		#drop_event_count++;
+	}
+
+	// ??????
+	if (#drop_event_count >= 100) {
+		#drop_event = 1;
+		dispbottom "??????????";
+	}
+	end;
 }

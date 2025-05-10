@@ -72735,4 +72735,8 @@ Body:
     Type: Card
     Script: |
 
-
+# 自創活動道具
+  - Id: 2500000
+    AegisName: Rose_Lucky
+    Name: 愛妳的玫瑰
+    Type: Etc
