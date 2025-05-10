@@ -66088,7 +66088,13 @@ Body:
     AegisName: Unknown_Item_93013
     Name: 贊助特效石(頭中)
     Type: Etc
-
+    Script: |
+      bonus bShortAtkRate,10;
+      bonus bLongAtkRate,10;
+      bonus2 bMagicAtkEle,Ele_All,10;
+      bonus2 bDropAddRace,RC_All,30;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;	
   - Id: 93014
     AegisName: Unknown_Item_93014
     Name: 贊助特效石(披肩)

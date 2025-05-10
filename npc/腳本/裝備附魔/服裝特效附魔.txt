@@ -156,6 +156,7 @@ case 2:
 	mes "你想要強化哪種魔石?";
 	next;
 	menu 
+	
 	countitem(25059)>=1?"幽靈特效石(頭中)":"",Mag25059,
 	countitem(25136)>=1?"雷電特效石(頭中)":"",Mag25136,
 	countitem(25138)>=1?"收縮特效石(頭中)":"",Mag25138,
@@ -172,6 +173,7 @@ case 2:
 	countitem(70123)>=1?"奇蹟仙境特效石(頭中)":"",Mag70123,
 	countitem(93001)>=1?"雷霆特效石(頭中)":"",Mag93001,
 	countitem(93007)>=1?"贊助特效石(頭中)":"",Mag93007,
+	countitem(93013)>=1?"贊助特效石(頭中)":"",Mag93013,
 
 
 	//countitem(25140)>=1?"巨大特效石(頭中)":"",Mag25140,
@@ -197,7 +199,7 @@ case 2:
 	Mag70123: callfunc "fumoEffectA2",70123,70124,500000,rand(1,100); end;
 	Mag93001: callfunc "fumoEffectA2",93001,83001,500000,rand(1,100); end;
 	Mag93007: callfunc "fumoEffectA2",93007,83007,500000,rand(1,100); end;
-
+	Mag93013: callfunc "fumoEffectA2",93013,83007,500000,rand(1,100); end;
 
 	//Mag25140: callfunc "fumoEffectA2",25140,29163,500000,rand(1,100); end;
 	//Mag60152: callfunc "fumoEffectA2",60152,60727,500000,rand(1,100); end;
