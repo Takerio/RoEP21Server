@@ -65,10 +65,10 @@
 #     Storage               If the stack is applied to the player's storage. (Default: false)
 #     GuildStorage          If the stack is applied to the player's guild storage. (Default: false)
 #   NoUse:                  Conditions when the item is unusable. (Default: null)
-#     Override              Group level to override these conditions. (Default: 100)
+#     Override              Group level to override these conditions.
 #     Sitting               If the item can not be used while sitting. (Default: false)
 #   Trade:                  Trade restrictions. (Default: null)
-#     Override              Group level to override these conditions. (Default: 100)
+#     Override              Group level to override these conditions.
 #     NoDrop                If the item can not be dropped. (Default: false)
 #     NoTrade               If the item can not be traded. (Default: false)
 #     TradePartner          If the item can not be traded to the player's partner. (Default: false)
@@ -81,31 +81,96 @@
 #   Script                  Script to execute when the item is used/equipped. (Default: null)
 #   EquipScript             Script to execute when the item is equipped. (Default: null)
 #   UnEquipScript           Script to execute when the item is unequipped or when a rental item expires. (Default: null)
+# NoDrop 如果項目不能被丟棄。 （默認：假）
+# NoTrade 如果該項目不能交易。 （默認：假）
+# TradePartner 如果物品不能交易給玩家的伙伴。 （默認：假）
+# NoSell 如果商品無法出售。 （默認：假）
+# NoCart 如果物品不能放入購物車。 （默認：假）
+# NoStorage 如果項目不能放入存儲中。 （默認：假）
+# NoGuildStorage 如果該物品不能放入公會倉庫。 （默認：假）
+# NoMail 如果該項目不能放入郵件中。 （默認：假）
+# NoAuction 如果物品不能被拍賣。 （默認：假）
 ###########################################################################
 
 Header:
   Type: ITEM_DB
   Version: 3
 
-Footer:
-  Imports:
-    - Path: db/re/item_db_usable.yml
-    - Path: db/re/item_db_etc.yml
-    - Path: db/re/item_db_laphine.yml
-    - Path: db/re/item_db_reform.yml
+Body:
 
-    - Path: db/re/item_db_equip.yml
-    - Path: db/re/item_db_equip_NO.yml
-    - Path: db/re/item_db_Weapon.yml
-
-    - Path: db/re/item_db_Costume.yml
-    - Path: db/re/item_db_Costume_Garment.yml
-    - Path: db/re/item_db_Costume_NO.yml
-
-    #JRO相關
-    - Path: db/JRO/item_db_JRO_equip.yml
-    - Path: db/JRO/item_db_JRO_usable.yml
-    - Path: db/JRO/item_db_JRO_etc.yml
-
-    #自創裝備
-    - Path: db/re/item_db_equip_custom.yml
+#新手裝備
+  - Id: 3000000
+    AegisName: SW_Newbie1
+    Name: 多蘭之劍
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 1000
+    Attack: 70
+    # Range: 1
+    Slots: 0
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Novice: true
+      Rogue: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
+      Fourth: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 0
+    Refineable: true
+    # Gradable: true
+    Script: |
+      bonus2 bHPDrainRate,50,4;
+  
+  - Id: 3000000
+    AegisName: SW_Newbie2
+    Name: 狂擊之劍
+    Type: Weapon
+    SubType: 1hSword
+    Weight: 1000
+    Attack: 70
+    # Range: 1
+    Slots: 0
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Novice: true
+      Rogue: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Third: true
+      Normal: true
+      Upper: true
+      Baby: true
+      Fourth: true
+    Classes:
+      Fourth: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 0
+    Refineable: true
+    # Gradable: true
+    Script: |
+      bonus2 bHPDrainRate,50,4;

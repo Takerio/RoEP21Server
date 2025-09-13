@@ -1,4 +1,4 @@
 login_ip: 127.0.0.1
 login_port: 6900
-char_ip: 127.0.0.1
+char_ip: 59.126.72.117
 char_port: 6121
