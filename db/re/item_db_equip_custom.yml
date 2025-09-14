@@ -100,8 +100,8 @@ Body:
 
 #新手裝備
   - Id: 3000000
-    AegisName: SW_Newbie1
-    Name: 多蘭之劍
+    AegisName: Dawnblade
+    Name: 黎明劍
     Type: Weapon
     SubType: 1hSword
     Weight: 1000
@@ -122,9 +122,6 @@ Body:
       Thief: true
     Classes:
       All_Third: true
-      Normal: true
-      Upper: true
-      Baby: true
       Fourth: true
     Classes:
       Fourth: true
@@ -138,8 +135,8 @@ Body:
       bonus2 bHPDrainRate,50,4;
   
   - Id: 3000000
-    AegisName: SW_Newbie2
-    Name: 狂擊之劍
+    AegisName: AzureShadowSword
+    Name: 蒼影劍
     Type: Weapon
     SubType: 1hSword
     Weight: 1000
@@ -160,9 +157,6 @@ Body:
       Thief: true
     Classes:
       All_Third: true
-      Normal: true
-      Upper: true
-      Baby: true
       Fourth: true
     Classes:
       Fourth: true
